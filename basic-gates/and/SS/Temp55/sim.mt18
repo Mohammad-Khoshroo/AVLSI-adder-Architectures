@@ -1,0 +1,86 @@
+$DATA1 SOURCE='HSPICE' VERSION='P-2019.06-SP1-1 win64' PARAM_COUNT=2
+.TITLE 'run_ss_corner'
+ index            beta             t_out_a_b0_w1_lh t_out_a_b0_w1_hl
+                  t_out_a_b0_w2_lh t_out_a_b0_w2_hl t_out_a_b1_w1_lh
+                  t_out_a_b1_w1_hl t_out_a_b1_w2_lh t_out_a_b1_w2_hl
+                  t_out_b_a0_w1_lh t_out_b_a0_w1_hl t_out_b_a0_w2_lh
+                  t_out_b_a0_w2_hl t_out_b_a1_w1_lh t_out_b_a1_w1_hl
+                  t_out_b_a1_w2_lh t_out_b_a1_w2_hl tplh_out_m1     
+                  tplh_out_m2      tplh_out_m3      tplh_out_m4     
+                  tplh_out_m5      tplh_out_m6      tplh_out        
+                  tphl_out_m1      tphl_out_m2      tphl_out_m3     
+                  tphl_out_m4      tphl_out_m5      tphl_out_m6     
+                  tphl_out         tp_out           tp_global_max   
+                  voh_val          vol_val          p_avg           
+                  p_max            pdp              i_avg           
+                  i_peak           temper           alter#          
+ 1                   1.0000           failed           failed       
+                     failed           failed         3.569e-11      
+                     failed           failed         6.023e-11      
+                     failed           failed           failed       
+                     failed         3.923e-11          failed       
+                     failed           failed           failed       
+                     failed           failed           failed       
+                     failed           failed           failed       
+                     failed           failed           failed       
+                     failed           failed           failed       
+                     failed           failed           failed       
+                     1.0723        -9.221e-02        2.039e-05      
+                   3.338e-04          failed        -1.765e-05      
+                  -1.915e-04         55.0000        4               
+ 2                   2.0000           failed           failed       
+                     failed           failed         3.722e-11      
+                     failed           failed         5.014e-11      
+                     failed           failed           failed       
+                     failed         4.098e-11          failed       
+                     failed         6.400e-11          failed       
+                     failed           failed           failed       
+                     failed           failed           failed       
+                     failed           failed           failed       
+                     failed           failed           failed       
+                     failed           failed           failed       
+                     1.0857        -6.311e-02        2.772e-05      
+                   3.885e-04          failed        -2.328e-05      
+                  -3.642e-04         55.0000        4               
+ 3                   3.0000           failed           failed       
+                     failed           failed         4.176e-11      
+                     failed           failed         4.890e-11      
+                     failed           failed           failed       
+                     failed         4.557e-11          failed       
+                     failed         5.765e-11          failed       
+                     failed           failed           failed       
+                     failed           failed           failed       
+                     failed           failed           failed       
+                     failed           failed           failed       
+                     failed           failed           failed       
+                     1.0950        -5.405e-02        3.493e-05      
+                   4.220e-04          failed        -2.882e-05      
+                  -5.191e-04         55.0000        4               
+ 4                   4.0000           failed           failed       
+                     failed           failed         4.688e-11      
+                     failed           failed         4.961e-11      
+                     failed           failed           failed       
+                     failed         5.069e-11          failed       
+                     failed         5.594e-11          failed       
+                     failed           failed           failed       
+                     failed           failed           failed       
+                     failed           failed           failed       
+                     failed           failed           failed       
+                     failed           failed           failed       
+                     1.1025        -4.899e-02        4.209e-05      
+                   5.261e-04          failed        -3.429e-05      
+                  -6.616e-04         55.0000        4               
+ 5                   5.0000           failed           failed       
+                     failed           failed         5.215e-11      
+                     failed           failed         5.103e-11      
+                     failed           failed           failed       
+                     failed         5.597e-11          failed       
+                     failed         5.590e-11          failed       
+                     failed           failed           failed       
+                     failed           failed           failed       
+                     failed           failed           failed       
+                     failed           failed           failed       
+                     failed           failed           failed       
+                     1.1103        -4.540e-02        4.918e-05      
+                   6.479e-04          failed        -3.972e-05      
+                  -7.976e-04         55.0000        4               

@@ -1,0 +1,34 @@
+ ├── LaTeX
+ │   ├── Report.pdf
+ │   ├── Report.tex
+ ├── adder
+ │   ├── full_adder.inc
+ │   ├── RCA.inc
+ │   ├── FA
+ │   │   ├── TT 
+ │   │   ├── func
+ │   │   ├── sim.lis
+ │   │   └── sim.sp
+ │   ├── nand-based-FA
+ │   └── RCA8
+ ├── basic-gates
+ │   ├── custom_gates.inc
+ │   ├── and
+ │   ├── inv
+ │   ├── mux2-1
+ │   ├── nand
+ │   ├── nor
+ │   ├── or
+ │   ├── xnor
+ │   ├── xnor-sym
+ │   ├── xor
+ │   └── xor-sym
+ └── utils
+    ├── sim-gen.py
+    ├── io-vec-gen.py
+    ├── json2tex.py
+    ├── mod-mtX.py
+    ├── mt2json.py
+    ├── plot.py
+    ├── truth-table-gen.py
+    └── crn90g_2d5_lk_v1d2p1.l

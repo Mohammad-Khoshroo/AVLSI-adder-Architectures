@@ -1,0 +1,2274 @@
+****** HSPICE -- P-2019.06-SP1-1 win64 (Sep 27 2019) ******
+Input File: sim.sp
+lic:
+lic: FLEXlm: SDK_12.3
+lic: USER:   Mohammad-Khohsroo    HOSTNAME: DESKTOP-GMQQFUO
+lic: HOSTID: "d03957231988"       PID:      20124
+lic: Using FLEXlm license file:
+lic: 27000@DESKTOP-GMQQFUO
+lic: Checkout 1 hspice
+lic: License/Maintenance for hspice will expire on 30-dec-2030/2020.12
+lic: 1(in_use)/99(total) FLOATING license(s) on SERVER 27000@DESKTOP-GMQQFUO
+lic:
+
+ init: begin read circuit files, cpu clock= 4.19E-01
+       option search = C:/synopsys/Hspice_P-2019.06-SP1-1/parts/behave/
+       option search = C:/synopsys/Hspice_P-2019.06-SP1-1/parts/AD/
+       option search = C:/synopsys/Hspice_P-2019.06-SP1-1/parts/XILINX/
+       option search = C:/synopsys/Hspice_P-2019.06-SP1-1/parts/TLINE/
+       option search = C:/synopsys/Hspice_P-2019.06-SP1-1/parts/TI/
+       option search = C:/synopsys/Hspice_P-2019.06-SP1-1/parts/SIGNET/
+       option search = C:/synopsys/Hspice_P-2019.06-SP1-1/parts/PCI/
+       option search = C:/synopsys/Hspice_P-2019.06-SP1-1/parts/LIN_TEC
+                         H/
+       option search = C:/synopsys/Hspice_P-2019.06-SP1-1/parts/PET/
+       option search = C:/synopsys/Hspice_P-2019.06-SP1-1/parts/DI0/
+       option search = C:/synopsys/Hspice_P-2019.06-SP1-1/parts/COMLINE
+                         /
+       option search = C:/synopsys/Hspice_P-2019.06-SP1-1/parts/BURR_BR
+                         M/
+       option search = C:/synopsys/Hspice_P-2019.06-SP1-1/parts/BJT/
+       option nomod
+       option post =     2.00
+       option probe
+       option runlvl =     6.00
+ init: end read circuit files, cpu clock= 4.24E-01 peak memory=      80 mb
+ init: begin check errors, cpu clock= 4.24E-01
+ init: end check errors, cpu clock= 4.29E-01 peak memory=      80 mb
+ init: begin setup matrix, pivot=     0 cpu clock= 4.29E-01
+       establish matrix -- done, cpu clock= 4.29E-01 peak memory=      80 mb
+       re-order matrix -- done, cpu clock= 4.29E-01 peak memory=      80 mb
+ init: end setup matrix, cpu clock= 4.30E-01 peak memory=      80 mb
+ sweep: temp temp1 begin, start=  1.00E+01 stop=  7.00E+01 #sweeps =   5
+ temperature: temperature=  1.00E+01
+ sweep: data            data1            begin, #sweeps =   5
+ data: data=beta_sweep      beta            =    1.00E+00
+ dcop: begin dcop, cpu clock= 4.31E-01
+ dcop: end dcop, cpu clock= 4.32E-01 peak memory=      80 mb tot_iter=       3
+ output: D:\UT.CE\Term-06\VLSI\CA\CA01\basic-gates\or\sim.mt0
+ sweep: tran tran1    begin, stop_t=  1.70E-09 #sweeps=**** cpu clock= 4.32E-01
+ tran: time= 1.7139E-10 tot_iter=      57 conv_iter=      23 cpu clock= 4.33E-01
+ tran: time= 3.4812E-10 tot_iter=     206 conv_iter=      75 cpu clock= 4.35E-01
+ tran: time= 5.1178E-10 tot_iter=     430 conv_iter=     154 cpu clock= 4.37E-01
+ tran: time= 6.8326E-10 tot_iter=     655 conv_iter=     240 cpu clock= 4.40E-01
+ tran: time= 8.6382E-10 tot_iter=     769 conv_iter=     286 cpu clock= 4.41E-01
+ tran: time= 1.0200E-09 tot_iter=     845 conv_iter=     313 cpu clock= 4.41E-01
+ tran: time= 1.2000E-09 tot_iter=     906 conv_iter=     336 cpu clock= 4.42E-01
+ tran: time= 1.3617E-09 tot_iter=    1140 conv_iter=     420 cpu clock= 4.44E-01
+ tran: time= 1.5359E-09 tot_iter=    1324 conv_iter=     487 cpu clock= 4.46E-01
+ tran: time= 1.7000E-09 tot_iter=    1528 conv_iter=     559 cpu clock= 4.49E-01
+ sweep: tran tran1    end, cpu clock= 4.49E-01 peak memory=      80 mb
+ data: data=beta_sweep      beta            =    2.00E+00
+ dcop: begin dcop, cpu clock= 4.51E-01
+ dcop: end dcop, cpu clock= 4.51E-01 peak memory=      80 mb tot_iter=       6
+ output: D:\UT.CE\Term-06\VLSI\CA\CA01\basic-gates\or\sim.mt0
+ sweep: tran tran2    begin, stop_t=  1.70E-09 #sweeps=**** cpu clock= 4.51E-01
+ tran: time= 1.7248E-10 tot_iter=      47 conv_iter=      19 cpu clock= 4.51E-01
+ tran: time= 3.5649E-10 tot_iter=     197 conv_iter=      72 cpu clock= 4.53E-01
+ tran: time= 5.1104E-10 tot_iter=     428 conv_iter=     154 cpu clock= 4.56E-01
+ tran: time= 6.8025E-10 tot_iter=     623 conv_iter=     228 cpu clock= 4.58E-01
+ tran: time= 8.5163E-10 tot_iter=     747 conv_iter=     275 cpu clock= 4.59E-01
+ tran: time= 1.0200E-09 tot_iter=     817 conv_iter=     300 cpu clock= 4.59E-01
+ tran: time= 1.1944E-09 tot_iter=     878 conv_iter=     322 cpu clock= 4.60E-01
+ tran: time= 1.3605E-09 tot_iter=    1141 conv_iter=     419 cpu clock= 4.63E-01
+ tran: time= 1.5315E-09 tot_iter=    1311 conv_iter=     481 cpu clock= 4.64E-01
+ tran: time= 1.7000E-09 tot_iter=    1521 conv_iter=     556 cpu clock= 4.66E-01
+ sweep: tran tran2    end, cpu clock= 4.66E-01 peak memory=      80 mb
+ data: data=beta_sweep      beta            =    3.00E+00
+ dcop: begin dcop, cpu clock= 4.67E-01
+ dcop: end dcop, cpu clock= 4.67E-01 peak memory=      80 mb tot_iter=       9
+ output: D:\UT.CE\Term-06\VLSI\CA\CA01\basic-gates\or\sim.mt0
+ sweep: tran tran3    begin, stop_t=  1.70E-09 #sweeps=**** cpu clock= 4.67E-01
+ tran: time= 1.7018E-10 tot_iter=      43 conv_iter=      18 cpu clock= 4.68E-01
+ tran: time= 3.4286E-10 tot_iter=     205 conv_iter=      79 cpu clock= 4.70E-01
+ tran: time= 5.1028E-10 tot_iter=     460 conv_iter=     170 cpu clock= 4.72E-01
+ tran: time= 6.8221E-10 tot_iter=     673 conv_iter=     251 cpu clock= 4.74E-01
+ tran: time= 8.6423E-10 tot_iter=     788 conv_iter=     296 cpu clock= 4.76E-01
+ tran: time= 1.0200E-09 tot_iter=     854 conv_iter=     320 cpu clock= 4.76E-01
+ tran: time= 1.2000E-09 tot_iter=     912 conv_iter=     342 cpu clock= 4.77E-01
+ tran: time= 1.3628E-09 tot_iter=    1153 conv_iter=     430 cpu clock= 4.79E-01
+ tran: time= 1.5457E-09 tot_iter=    1354 conv_iter=     503 cpu clock= 4.81E-01
+ tran: time= 1.7000E-09 tot_iter=    1570 conv_iter=     580 cpu clock= 4.83E-01
+ sweep: tran tran3    end, cpu clock= 4.83E-01 peak memory=      80 mb
+ data: data=beta_sweep      beta            =    4.00E+00
+ dcop: begin dcop, cpu clock= 4.84E-01
+ dcop: end dcop, cpu clock= 4.84E-01 peak memory=      80 mb tot_iter=      12
+ output: D:\UT.CE\Term-06\VLSI\CA\CA01\basic-gates\or\sim.mt0
+ sweep: tran tran4    begin, stop_t=  1.70E-09 #sweeps=**** cpu clock= 4.84E-01
+ tran: time= 1.7090E-10 tot_iter=      45 conv_iter=      18 cpu clock= 4.84E-01
+ tran: time= 3.4330E-10 tot_iter=     201 conv_iter=      75 cpu clock= 4.86E-01
+ tran: time= 5.1513E-10 tot_iter=     441 conv_iter=     162 cpu clock= 4.88E-01
+ tran: time= 6.8189E-10 tot_iter=     636 conv_iter=     234 cpu clock= 4.90E-01
+ tran: time= 8.6995E-10 tot_iter=     760 conv_iter=     283 cpu clock= 4.92E-01
+ tran: time= 1.0200E-09 tot_iter=     827 conv_iter=     307 cpu clock= 4.92E-01
+ tran: time= 1.2000E-09 tot_iter=     886 conv_iter=     329 cpu clock= 4.93E-01
+ tran: time= 1.3617E-09 tot_iter=    1117 conv_iter=     415 cpu clock= 4.95E-01
+ tran: time= 1.5455E-09 tot_iter=    1304 conv_iter=     483 cpu clock= 4.97E-01
+ tran: time= 1.7000E-09 tot_iter=    1510 conv_iter=     558 cpu clock= 4.99E-01
+ sweep: tran tran4    end, cpu clock= 4.99E-01 peak memory=      80 mb
+ data: data=beta_sweep      beta            =    5.00E+00
+ dcop: begin dcop, cpu clock= 5.00E-01
+ dcop: end dcop, cpu clock= 5.00E-01 peak memory=      80 mb tot_iter=      15
+ output: D:\UT.CE\Term-06\VLSI\CA\CA01\basic-gates\or\sim.mt0
+ sweep: tran tran5    begin, stop_t=  1.70E-09 #sweeps=**** cpu clock= 5.00E-01
+ tran: time= 1.7132E-10 tot_iter=      45 conv_iter=      18 cpu clock= 5.01E-01
+ tran: time= 3.4025E-10 tot_iter=     199 conv_iter=      74 cpu clock= 5.02E-01
+ tran: time= 5.1118E-10 tot_iter=     423 conv_iter=     160 cpu clock= 5.04E-01
+ tran: time= 6.8175E-10 tot_iter=     616 conv_iter=     230 cpu clock= 5.06E-01
+ tran: time= 8.5501E-10 tot_iter=     742 conv_iter=     279 cpu clock= 5.07E-01
+ tran: time= 1.0200E-09 tot_iter=     818 conv_iter=     306 cpu clock= 5.08E-01
+ tran: time= 1.2000E-09 tot_iter=     878 conv_iter=     329 cpu clock= 5.09E-01
+ tran: time= 1.3616E-09 tot_iter=    1126 conv_iter=     421 cpu clock= 5.11E-01
+ tran: time= 1.5411E-09 tot_iter=    1305 conv_iter=     487 cpu clock= 5.13E-01
+ tran: time= 1.7000E-09 tot_iter=    1494 conv_iter=     556 cpu clock= 5.15E-01
+ sweep: tran tran5    end, cpu clock= 5.15E-01 peak memory=      80 mb
+ sweep: data            data            1 end
+ temperature: temperature=  2.50E+01
+ sweep: data            data1            begin, #sweeps =   5
+ data: data=beta_sweep      beta            =    1.00E+00
+ dcop: begin dcop, cpu clock= 5.16E-01
+ dcop: end dcop, cpu clock= 5.16E-01 peak memory=      80 mb tot_iter=      18
+ output: D:\UT.CE\Term-06\VLSI\CA\CA01\basic-gates\or\sim.mt1
+ sweep: tran tran1    begin, stop_t=  1.70E-09 #sweeps=**** cpu clock= 5.17E-01
+ tran: time= 1.7179E-10 tot_iter=      57 conv_iter=      23 cpu clock= 5.17E-01
+ tran: time= 3.4123E-10 tot_iter=     201 conv_iter=      75 cpu clock= 5.19E-01
+ tran: time= 5.1573E-10 tot_iter=     423 conv_iter=     153 cpu clock= 5.21E-01
+ tran: time= 6.8412E-10 tot_iter=     650 conv_iter=     240 cpu clock= 5.23E-01
+ tran: time= 8.5915E-10 tot_iter=     766 conv_iter=     286 cpu clock= 5.25E-01
+ tran: time= 1.0200E-09 tot_iter=     835 conv_iter=     310 cpu clock= 5.25E-01
+ tran: time= 1.2000E-09 tot_iter=     899 conv_iter=     334 cpu clock= 5.26E-01
+ tran: time= 1.3623E-09 tot_iter=    1143 conv_iter=     423 cpu clock= 5.28E-01
+ tran: time= 1.5523E-09 tot_iter=    1334 conv_iter=     493 cpu clock= 5.30E-01
+ tran: time= 1.7000E-09 tot_iter=    1556 conv_iter=     576 cpu clock= 5.32E-01
+ sweep: tran tran1    end, cpu clock= 5.32E-01 peak memory=      80 mb
+ data: data=beta_sweep      beta            =    2.00E+00
+ dcop: begin dcop, cpu clock= 5.34E-01
+ dcop: end dcop, cpu clock= 5.34E-01 peak memory=      80 mb tot_iter=      21
+ output: D:\UT.CE\Term-06\VLSI\CA\CA01\basic-gates\or\sim.mt1
+ sweep: tran tran2    begin, stop_t=  1.70E-09 #sweeps=**** cpu clock= 5.34E-01
+ tran: time= 1.7283E-10 tot_iter=      47 conv_iter=      19 cpu clock= 5.35E-01
+ tran: time= 3.4290E-10 tot_iter=     198 conv_iter=      73 cpu clock= 5.36E-01
+ tran: time= 5.1617E-10 tot_iter=     415 conv_iter=     151 cpu clock= 5.39E-01
+ tran: time= 6.8191E-10 tot_iter=     634 conv_iter=     235 cpu clock= 5.41E-01
+ tran: time= 8.6290E-10 tot_iter=     763 conv_iter=     286 cpu clock= 5.42E-01
+ tran: time= 1.0200E-09 tot_iter=     828 conv_iter=     309 cpu clock= 5.43E-01
+ tran: time= 1.2000E-09 tot_iter=     887 conv_iter=     331 cpu clock= 5.43E-01
+ tran: time= 1.3621E-09 tot_iter=    1136 conv_iter=     423 cpu clock= 5.46E-01
+ tran: time= 1.5388E-09 tot_iter=    1321 conv_iter=     489 cpu clock= 5.47E-01
+ tran: time= 1.7000E-09 tot_iter=    1525 conv_iter=     561 cpu clock= 5.50E-01
+ sweep: tran tran2    end, cpu clock= 5.50E-01 peak memory=      80 mb
+ data: data=beta_sweep      beta            =    3.00E+00
+ dcop: begin dcop, cpu clock= 5.50E-01
+ dcop: end dcop, cpu clock= 5.50E-01 peak memory=      80 mb tot_iter=      24
+ output: D:\UT.CE\Term-06\VLSI\CA\CA01\basic-gates\or\sim.mt1
+ sweep: tran tran3    begin, stop_t=  1.70E-09 #sweeps=**** cpu clock= 5.50E-01
+ tran: time= 1.7042E-10 tot_iter=      44 conv_iter=      18 cpu clock= 5.51E-01
+ tran: time= 3.4888E-10 tot_iter=     193 conv_iter=      73 cpu clock= 5.53E-01
+ tran: time= 5.1253E-10 tot_iter=     434 conv_iter=     156 cpu clock= 5.55E-01
+ tran: time= 6.8030E-10 tot_iter=     630 conv_iter=     229 cpu clock= 5.57E-01
+ tran: time= 8.6064E-10 tot_iter=     748 conv_iter=     275 cpu clock= 5.58E-01
+ tran: time= 1.0200E-09 tot_iter=     818 conv_iter=     299 cpu clock= 5.59E-01
+ tran: time= 1.1914E-09 tot_iter=     877 conv_iter=     321 cpu clock= 5.59E-01
+ tran: time= 1.3628E-09 tot_iter=    1105 conv_iter=     407 cpu clock= 5.61E-01
+ tran: time= 1.5402E-09 tot_iter=    1283 conv_iter=     470 cpu clock= 5.63E-01
+ tran: time= 1.7000E-09 tot_iter=    1491 conv_iter=     545 cpu clock= 5.65E-01
+ sweep: tran tran3    end, cpu clock= 5.65E-01 peak memory=      80 mb
+ data: data=beta_sweep      beta            =    4.00E+00
+ dcop: begin dcop, cpu clock= 5.66E-01
+ dcop: end dcop, cpu clock= 5.66E-01 peak memory=      80 mb tot_iter=      27
+ output: D:\UT.CE\Term-06\VLSI\CA\CA01\basic-gates\or\sim.mt1
+ sweep: tran tran4    begin, stop_t=  1.70E-09 #sweeps=**** cpu clock= 5.66E-01
+ tran: time= 1.7118E-10 tot_iter=      44 conv_iter=      18 cpu clock= 5.67E-01
+ tran: time= 3.4228E-10 tot_iter=     212 conv_iter=      80 cpu clock= 5.68E-01
+ tran: time= 5.1046E-10 tot_iter=     437 conv_iter=     161 cpu clock= 5.71E-01
+ tran: time= 6.8090E-10 tot_iter=     611 conv_iter=     227 cpu clock= 5.73E-01
+ tran: time= 8.6747E-10 tot_iter=     734 conv_iter=     276 cpu clock= 5.74E-01
+ tran: time= 1.0200E-09 tot_iter=     808 conv_iter=     302 cpu clock= 5.75E-01
+ tran: time= 1.2000E-09 tot_iter=     871 conv_iter=     326 cpu clock= 5.75E-01
+ tran: time= 1.3621E-09 tot_iter=    1117 conv_iter=     417 cpu clock= 5.78E-01
+ tran: time= 1.5451E-09 tot_iter=    1301 conv_iter=     484 cpu clock= 5.79E-01
+ tran: time= 1.7000E-09 tot_iter=    1505 conv_iter=     557 cpu clock= 5.81E-01
+ sweep: tran tran4    end, cpu clock= 5.81E-01 peak memory=      80 mb
+ data: data=beta_sweep      beta            =    5.00E+00
+ dcop: begin dcop, cpu clock= 5.82E-01
+ dcop: end dcop, cpu clock= 5.82E-01 peak memory=      80 mb tot_iter=      30
+ output: D:\UT.CE\Term-06\VLSI\CA\CA01\basic-gates\or\sim.mt1
+ sweep: tran tran5    begin, stop_t=  1.70E-09 #sweeps=**** cpu clock= 5.82E-01
+ tran: time= 1.7170E-10 tot_iter=      45 conv_iter=      18 cpu clock= 5.83E-01
+ tran: time= 3.4735E-10 tot_iter=     199 conv_iter=      75 cpu clock= 5.84E-01
+ tran: time= 5.1559E-10 tot_iter=     435 conv_iter=     162 cpu clock= 5.87E-01
+ tran: time= 6.8106E-10 tot_iter=     612 conv_iter=     227 cpu clock= 5.88E-01
+ tran: time= 8.6091E-10 tot_iter=     749 conv_iter=     280 cpu clock= 5.90E-01
+ tran: time= 1.0200E-09 tot_iter=     828 conv_iter=     308 cpu clock= 5.90E-01
+ tran: time= 1.2000E-09 tot_iter=     892 conv_iter=     332 cpu clock= 5.91E-01
+ tran: time= 1.3617E-09 tot_iter=    1118 conv_iter=     417 cpu clock= 5.93E-01
+ tran: time= 1.5317E-09 tot_iter=    1290 conv_iter=     480 cpu clock= 5.95E-01
+ tran: time= 1.7000E-09 tot_iter=    1486 conv_iter=     551 cpu clock= 5.97E-01
+ sweep: tran tran5    end, cpu clock= 5.97E-01 peak memory=      80 mb
+ sweep: data            data            1 end
+ temperature: temperature=  4.00E+01
+ sweep: data            data1            begin, #sweeps =   5
+ data: data=beta_sweep      beta            =    1.00E+00
+ dcop: begin dcop, cpu clock= 5.99E-01
+ dcop: end dcop, cpu clock= 5.99E-01 peak memory=      80 mb tot_iter=      33
+ output: D:\UT.CE\Term-06\VLSI\CA\CA01\basic-gates\or\sim.mt2
+ sweep: tran tran1    begin, stop_t=  1.70E-09 #sweeps=**** cpu clock= 5.99E-01
+ tran: time= 1.7154E-10 tot_iter=      52 conv_iter=      21 cpu clock= 6.00E-01
+ tran: time= 3.4445E-10 tot_iter=     204 conv_iter=      75 cpu clock= 6.01E-01
+ tran: time= 5.1536E-10 tot_iter=     415 conv_iter=     151 cpu clock= 6.04E-01
+ tran: time= 6.8060E-10 tot_iter=     636 conv_iter=     234 cpu clock= 6.06E-01
+ tran: time= 8.6088E-10 tot_iter=     751 conv_iter=     280 cpu clock= 6.07E-01
+ tran: time= 1.0200E-09 tot_iter=     817 conv_iter=     303 cpu clock= 6.08E-01
+ tran: time= 1.2000E-09 tot_iter=     878 conv_iter=     325 cpu clock= 6.08E-01
+ tran: time= 1.3609E-09 tot_iter=    1123 conv_iter=     415 cpu clock= 6.10E-01
+ tran: time= 1.5310E-09 tot_iter=    1310 conv_iter=     483 cpu clock= 6.12E-01
+ tran: time= 1.7000E-09 tot_iter=    1508 conv_iter=     554 cpu clock= 6.14E-01
+ sweep: tran tran1    end, cpu clock= 6.14E-01 peak memory=      80 mb
+ data: data=beta_sweep      beta            =    2.00E+00
+ dcop: begin dcop, cpu clock= 6.15E-01
+ dcop: end dcop, cpu clock= 6.16E-01 peak memory=      80 mb tot_iter=      36
+ output: D:\UT.CE\Term-06\VLSI\CA\CA01\basic-gates\or\sim.mt2
+ sweep: tran tran2    begin, stop_t=  1.70E-09 #sweeps=**** cpu clock= 6.16E-01
+ tran: time= 1.7321E-10 tot_iter=      47 conv_iter=      19 cpu clock= 6.16E-01
+ tran: time= 3.4150E-10 tot_iter=     197 conv_iter=      73 cpu clock= 6.18E-01
+ tran: time= 5.1052E-10 tot_iter=     412 conv_iter=     150 cpu clock= 6.20E-01
+ tran: time= 6.8350E-10 tot_iter=     612 conv_iter=     225 cpu clock= 6.22E-01
+ tran: time= 8.6419E-10 tot_iter=     736 conv_iter=     273 cpu clock= 6.23E-01
+ tran: time= 1.0200E-09 tot_iter=     804 conv_iter=     297 cpu clock= 6.24E-01
+ tran: time= 1.2000E-09 tot_iter=     864 conv_iter=     319 cpu clock= 6.24E-01
+ tran: time= 1.3616E-09 tot_iter=    1104 conv_iter=     406 cpu clock= 6.27E-01
+ tran: time= 1.5385E-09 tot_iter=    1297 conv_iter=     478 cpu clock= 6.29E-01
+ tran: time= 1.7000E-09 tot_iter=    1503 conv_iter=     550 cpu clock= 6.31E-01
+ sweep: tran tran2    end, cpu clock= 6.31E-01 peak memory=      80 mb
+ data: data=beta_sweep      beta            =    3.00E+00
+ dcop: begin dcop, cpu clock= 6.31E-01
+ dcop: end dcop, cpu clock= 6.31E-01 peak memory=      80 mb tot_iter=      39
+ output: D:\UT.CE\Term-06\VLSI\CA\CA01\basic-gates\or\sim.mt2
+ sweep: tran tran3    begin, stop_t=  1.70E-09 #sweeps=**** cpu clock= 6.31E-01
+ tran: time= 1.7068E-10 tot_iter=      45 conv_iter=      18 cpu clock= 6.32E-01
+ tran: time= 3.4150E-10 tot_iter=     190 conv_iter=      71 cpu clock= 6.34E-01
+ tran: time= 5.1342E-10 tot_iter=     428 conv_iter=     155 cpu clock= 6.36E-01
+ tran: time= 6.8212E-10 tot_iter=     614 conv_iter=     224 cpu clock= 6.38E-01
+ tran: time= 8.7332E-10 tot_iter=     731 conv_iter=     271 cpu clock= 6.39E-01
+ tran: time= 1.0200E-09 tot_iter=     797 conv_iter=     295 cpu clock= 6.40E-01
+ tran: time= 1.2000E-09 tot_iter=     855 conv_iter=     317 cpu clock= 6.40E-01
+ tran: time= 1.3601E-09 tot_iter=    1088 conv_iter=     405 cpu clock= 6.42E-01
+ tran: time= 1.5400E-09 tot_iter=    1278 conv_iter=     473 cpu clock= 6.44E-01
+ tran: time= 1.7000E-09 tot_iter=    1470 conv_iter=     544 cpu clock= 6.46E-01
+ sweep: tran tran3    end, cpu clock= 6.46E-01 peak memory=      80 mb
+ data: data=beta_sweep      beta            =    4.00E+00
+ dcop: begin dcop, cpu clock= 6.47E-01
+ dcop: end dcop, cpu clock= 6.47E-01 peak memory=      80 mb tot_iter=      42
+ output: D:\UT.CE\Term-06\VLSI\CA\CA01\basic-gates\or\sim.mt2
+ sweep: tran tran4    begin, stop_t=  1.70E-09 #sweeps=**** cpu clock= 6.47E-01
+ tran: time= 1.7144E-10 tot_iter=      44 conv_iter=      18 cpu clock= 6.48E-01
+ tran: time= 3.4262E-10 tot_iter=     209 conv_iter=      79 cpu clock= 6.49E-01
+ tran: time= 5.1161E-10 tot_iter=     445 conv_iter=     165 cpu clock= 6.52E-01
+ tran: time= 6.8049E-10 tot_iter=     624 conv_iter=     232 cpu clock= 6.53E-01
+ tran: time= 8.5746E-10 tot_iter=     744 conv_iter=     280 cpu clock= 6.55E-01
+ tran: time= 1.0200E-09 tot_iter=     828 conv_iter=     309 cpu clock= 6.56E-01
+ tran: time= 1.2000E-09 tot_iter=     889 conv_iter=     332 cpu clock= 6.56E-01
+ tran: time= 1.3629E-09 tot_iter=    1118 conv_iter=     417 cpu clock= 6.58E-01
+ tran: time= 1.5455E-09 tot_iter=    1299 conv_iter=     483 cpu clock= 6.60E-01
+ tran: time= 1.7000E-09 tot_iter=    1494 conv_iter=     555 cpu clock= 6.62E-01
+ sweep: tran tran4    end, cpu clock= 6.62E-01 peak memory=      80 mb
+ data: data=beta_sweep      beta            =    5.00E+00
+ dcop: begin dcop, cpu clock= 6.63E-01
+ dcop: end dcop, cpu clock= 6.63E-01 peak memory=      80 mb tot_iter=      45
+ output: D:\UT.CE\Term-06\VLSI\CA\CA01\basic-gates\or\sim.mt2
+ sweep: tran tran5    begin, stop_t=  1.70E-09 #sweeps=**** cpu clock= 6.63E-01
+ tran: time= 1.7210E-10 tot_iter=      45 conv_iter=      18 cpu clock= 6.63E-01
+ tran: time= 3.4487E-10 tot_iter=     195 conv_iter=      73 cpu clock= 6.65E-01
+ tran: time= 5.1449E-10 tot_iter=     431 conv_iter=     160 cpu clock= 6.67E-01
+ tran: time= 6.8180E-10 tot_iter=     595 conv_iter=     223 cpu clock= 6.69E-01
+ tran: time= 8.6506E-10 tot_iter=     726 conv_iter=     273 cpu clock= 6.70E-01
+ tran: time= 1.0200E-09 tot_iter=     804 conv_iter=     301 cpu clock= 6.71E-01
+ tran: time= 1.2000E-09 tot_iter=     868 conv_iter=     325 cpu clock= 6.72E-01
+ tran: time= 1.3629E-09 tot_iter=    1098 conv_iter=     411 cpu clock= 6.74E-01
+ tran: time= 1.5450E-09 tot_iter=    1287 conv_iter=     480 cpu clock= 6.76E-01
+ tran: time= 1.7000E-09 tot_iter=    1478 conv_iter=     550 cpu clock= 6.78E-01
+ sweep: tran tran5    end, cpu clock= 6.78E-01 peak memory=      80 mb
+ sweep: data            data            1 end
+ temperature: temperature=  5.50E+01
+ sweep: data            data1            begin, #sweeps =   5
+ data: data=beta_sweep      beta            =    1.00E+00
+ dcop: begin dcop, cpu clock= 6.79E-01
+ dcop: end dcop, cpu clock= 6.79E-01 peak memory=      79 mb tot_iter=      48
+ output: D:\UT.CE\Term-06\VLSI\CA\CA01\basic-gates\or\sim.mt3
+ sweep: tran tran1    begin, stop_t=  1.70E-09 #sweeps=**** cpu clock= 6.80E-01
+ tran: time= 1.7152E-10 tot_iter=      47 conv_iter=      19 cpu clock= 6.80E-01
+ tran: time= 3.4046E-10 tot_iter=     197 conv_iter=      71 cpu clock= 6.82E-01
+ tran: time= 5.1221E-10 tot_iter=     430 conv_iter=     153 cpu clock= 6.84E-01
+ tran: time= 6.8374E-10 tot_iter=     631 conv_iter=     228 cpu clock= 6.86E-01
+ tran: time= 8.5209E-10 tot_iter=     745 conv_iter=     274 cpu clock= 6.88E-01
+ tran: time= 1.0200E-09 tot_iter=     815 conv_iter=     299 cpu clock= 6.88E-01
+ tran: time= 1.2000E-09 tot_iter=     877 conv_iter=     321 cpu clock= 6.89E-01
+ tran: time= 1.3612E-09 tot_iter=    1104 conv_iter=     405 cpu clock= 6.91E-01
+ tran: time= 1.5374E-09 tot_iter=    1295 conv_iter=     475 cpu clock= 6.93E-01
+ tran: time= 1.7000E-09 tot_iter=    1487 conv_iter=     543 cpu clock= 6.95E-01
+ sweep: tran tran1    end, cpu clock= 6.95E-01 peak memory=      79 mb
+ data: data=beta_sweep      beta            =    2.00E+00
+ dcop: begin dcop, cpu clock= 6.97E-01
+ dcop: end dcop, cpu clock= 6.97E-01 peak memory=      79 mb tot_iter=      51
+ output: D:\UT.CE\Term-06\VLSI\CA\CA01\basic-gates\or\sim.mt3
+ sweep: tran tran2    begin, stop_t=  1.70E-09 #sweeps=**** cpu clock= 6.97E-01
+ tran: time= 1.7021E-10 tot_iter=      44 conv_iter=      18 cpu clock= 6.97E-01
+ tran: time= 3.4230E-10 tot_iter=     198 conv_iter=      73 cpu clock= 6.99E-01
+ tran: time= 5.1299E-10 tot_iter=     417 conv_iter=     151 cpu clock= 7.01E-01
+ tran: time= 6.8036E-10 tot_iter=     629 conv_iter=     231 cpu clock= 7.03E-01
+ tran: time= 8.5247E-10 tot_iter=     754 conv_iter=     281 cpu clock= 7.04E-01
+ tran: time= 1.0200E-09 tot_iter=     826 conv_iter=     306 cpu clock= 7.05E-01
+ tran: time= 1.2000E-09 tot_iter=     887 conv_iter=     328 cpu clock= 7.06E-01
+ tran: time= 1.3623E-09 tot_iter=    1120 conv_iter=     413 cpu clock= 7.08E-01
+ tran: time= 1.5423E-09 tot_iter=    1315 conv_iter=     485 cpu clock= 7.10E-01
+ tran: time= 1.7000E-09 tot_iter=    1524 conv_iter=     559 cpu clock= 7.12E-01
+ sweep: tran tran2    end, cpu clock= 7.12E-01 peak memory=      79 mb
+ data: data=beta_sweep      beta            =    3.00E+00
+ dcop: begin dcop, cpu clock= 7.12E-01
+ dcop: end dcop, cpu clock= 7.12E-01 peak memory=      79 mb tot_iter=      54
+ output: D:\UT.CE\Term-06\VLSI\CA\CA01\basic-gates\or\sim.mt3
+ sweep: tran tran3    begin, stop_t=  1.70E-09 #sweeps=**** cpu clock= 7.12E-01
+ tran: time= 1.7097E-10 tot_iter=      45 conv_iter=      18 cpu clock= 7.13E-01
+ tran: time= 3.4282E-10 tot_iter=     197 conv_iter=      73 cpu clock= 7.14E-01
+ tran: time= 5.1197E-10 tot_iter=     454 conv_iter=     165 cpu clock= 7.17E-01
+ tran: time= 6.8034E-10 tot_iter=     651 conv_iter=     238 cpu clock= 7.19E-01
+ tran: time= 8.5004E-10 tot_iter=     775 conv_iter=     288 cpu clock= 7.20E-01
+ tran: time= 1.0200E-09 tot_iter=     846 conv_iter=     313 cpu clock= 7.21E-01
+ tran: time= 1.2000E-09 tot_iter=     907 conv_iter=     336 cpu clock= 7.21E-01
+ tran: time= 1.3608E-09 tot_iter=    1134 conv_iter=     421 cpu clock= 7.24E-01
+ tran: time= 1.5428E-09 tot_iter=    1319 conv_iter=     486 cpu clock= 7.26E-01
+ tran: time= 1.7000E-09 tot_iter=    1517 conv_iter=     556 cpu clock= 7.28E-01
+ sweep: tran tran3    end, cpu clock= 7.28E-01 peak memory=      79 mb
+ data: data=beta_sweep      beta            =    4.00E+00
+ dcop: begin dcop, cpu clock= 7.29E-01
+ dcop: end dcop, cpu clock= 7.29E-01 peak memory=      79 mb tot_iter=      57
+ output: D:\UT.CE\Term-06\VLSI\CA\CA01\basic-gates\or\sim.mt3
+ sweep: tran tran4    begin, stop_t=  1.70E-09 #sweeps=**** cpu clock= 7.29E-01
+ tran: time= 1.7174E-10 tot_iter=      44 conv_iter=      18 cpu clock= 7.30E-01
+ tran: time= 3.4542E-10 tot_iter=     200 conv_iter=      77 cpu clock= 7.31E-01
+ tran: time= 5.1399E-10 tot_iter=     429 conv_iter=     160 cpu clock= 7.34E-01
+ tran: time= 6.8005E-10 tot_iter=     606 conv_iter=     229 cpu clock= 7.36E-01
+ tran: time= 8.6007E-10 tot_iter=     738 conv_iter=     281 cpu clock= 7.37E-01
+ tran: time= 1.0200E-09 tot_iter=     818 conv_iter=     310 cpu clock= 7.38E-01
+ tran: time= 1.2000E-09 tot_iter=     874 conv_iter=     331 cpu clock= 7.38E-01
+ tran: time= 1.3633E-09 tot_iter=    1118 conv_iter=     421 cpu clock= 7.41E-01
+ tran: time= 1.5306E-09 tot_iter=    1289 conv_iter=     485 cpu clock= 7.42E-01
+ tran: time= 1.7000E-09 tot_iter=    1490 conv_iter=     557 cpu clock= 7.44E-01
+ sweep: tran tran4    end, cpu clock= 7.44E-01 peak memory=      79 mb
+ data: data=beta_sweep      beta            =    5.00E+00
+ dcop: begin dcop, cpu clock= 7.45E-01
+ dcop: end dcop, cpu clock= 7.45E-01 peak memory=      79 mb tot_iter=      60
+ output: D:\UT.CE\Term-06\VLSI\CA\CA01\basic-gates\or\sim.mt3
+ sweep: tran tran5    begin, stop_t=  1.70E-09 #sweeps=**** cpu clock= 7.45E-01
+ tran: time= 1.7251E-10 tot_iter=      45 conv_iter=      18 cpu clock= 7.46E-01
+ tran: time= 3.4377E-10 tot_iter=     199 conv_iter=      75 cpu clock= 7.47E-01
+ tran: time= 5.1195E-10 tot_iter=     417 conv_iter=     156 cpu clock= 7.50E-01
+ tran: time= 6.8117E-10 tot_iter=     584 conv_iter=     220 cpu clock= 7.51E-01
+ tran: time= 8.6467E-10 tot_iter=     731 conv_iter=     276 cpu clock= 7.53E-01
+ tran: time= 1.0200E-09 tot_iter=     808 conv_iter=     303 cpu clock= 7.53E-01
+ tran: time= 1.2000E-09 tot_iter=     869 conv_iter=     326 cpu clock= 7.54E-01
+ tran: time= 1.3603E-09 tot_iter=    1122 conv_iter=     418 cpu clock= 7.57E-01
+ tran: time= 1.5376E-09 tot_iter=    1303 conv_iter=     483 cpu clock= 7.58E-01
+ tran: time= 1.7000E-09 tot_iter=    1493 conv_iter=     553 cpu clock= 7.60E-01
+ sweep: tran tran5    end, cpu clock= 7.60E-01 peak memory=      79 mb
+ sweep: data            data            1 end
+ temperature: temperature=  7.00E+01
+ sweep: data            data1            begin, #sweeps =   5
+ data: data=beta_sweep      beta            =    1.00E+00
+ dcop: begin dcop, cpu clock= 7.61E-01
+ dcop: end dcop, cpu clock= 7.62E-01 peak memory=      79 mb tot_iter=      63
+ output: D:\UT.CE\Term-06\VLSI\CA\CA01\basic-gates\or\sim.mt4
+ sweep: tran tran1    begin, stop_t=  1.70E-09 #sweeps=**** cpu clock= 7.62E-01
+ tran: time= 1.7168E-10 tot_iter=      46 conv_iter=      19 cpu clock= 7.62E-01
+ tran: time= 3.5410E-10 tot_iter=     205 conv_iter=      75 cpu clock= 7.64E-01
+ tran: time= 5.1494E-10 tot_iter=     410 conv_iter=     146 cpu clock= 7.66E-01
+ tran: time= 6.8058E-10 tot_iter=     604 conv_iter=     219 cpu clock= 7.68E-01
+ tran: time= 8.5986E-10 tot_iter=     719 conv_iter=     264 cpu clock= 7.70E-01
+ tran: time= 1.0200E-09 tot_iter=     794 conv_iter=     292 cpu clock= 7.70E-01
+ tran: time= 1.2000E-09 tot_iter=     858 conv_iter=     315 cpu clock= 7.71E-01
+ tran: time= 1.3614E-09 tot_iter=    1091 conv_iter=     399 cpu clock= 7.73E-01
+ tran: time= 1.5444E-09 tot_iter=    1268 conv_iter=     463 cpu clock= 7.75E-01
+ tran: time= 1.7000E-09 tot_iter=    1461 conv_iter=     531 cpu clock= 7.77E-01
+ sweep: tran tran1    end, cpu clock= 7.77E-01 peak memory=      79 mb
+ data: data=beta_sweep      beta            =    2.00E+00
+ dcop: begin dcop, cpu clock= 7.78E-01
+ dcop: end dcop, cpu clock= 7.78E-01 peak memory=      79 mb tot_iter=      66
+ output: D:\UT.CE\Term-06\VLSI\CA\CA01\basic-gates\or\sim.mt4
+ sweep: tran tran2    begin, stop_t=  1.70E-09 #sweeps=**** cpu clock= 7.78E-01
+ tran: time= 1.7051E-10 tot_iter=      44 conv_iter=      18 cpu clock= 7.79E-01
+ tran: time= 3.4247E-10 tot_iter=     212 conv_iter=      78 cpu clock= 7.81E-01
+ tran: time= 5.1556E-10 tot_iter=     433 conv_iter=     156 cpu clock= 7.83E-01
+ tran: time= 6.8259E-10 tot_iter=     630 conv_iter=     229 cpu clock= 7.85E-01
+ tran: time= 8.5513E-10 tot_iter=     754 conv_iter=     278 cpu clock= 7.86E-01
+ tran: time= 1.0200E-09 tot_iter=     829 conv_iter=     306 cpu clock= 7.87E-01
+ tran: time= 1.2000E-09 tot_iter=     891 conv_iter=     329 cpu clock= 7.87E-01
+ tran: time= 1.3627E-09 tot_iter=    1126 conv_iter=     415 cpu clock= 7.90E-01
+ tran: time= 1.5381E-09 tot_iter=    1320 conv_iter=     485 cpu clock= 7.92E-01
+ tran: time= 1.7000E-09 tot_iter=    1520 conv_iter=     556 cpu clock= 7.93E-01
+ sweep: tran tran2    end, cpu clock= 7.93E-01 peak memory=      79 mb
+ data: data=beta_sweep      beta            =    3.00E+00
+ dcop: begin dcop, cpu clock= 7.94E-01
+ dcop: end dcop, cpu clock= 7.94E-01 peak memory=      79 mb tot_iter=      69
+ output: D:\UT.CE\Term-06\VLSI\CA\CA01\basic-gates\or\sim.mt4
+ sweep: tran tran3    begin, stop_t=  1.70E-09 #sweeps=**** cpu clock= 7.94E-01
+ tran: time= 1.7128E-10 tot_iter=      45 conv_iter=      18 cpu clock= 7.95E-01
+ tran: time= 3.4225E-10 tot_iter=     208 conv_iter=      78 cpu clock= 7.96E-01
+ tran: time= 5.1111E-10 tot_iter=     447 conv_iter=     165 cpu clock= 7.99E-01
+ tran: time= 6.8224E-10 tot_iter=     653 conv_iter=     243 cpu clock= 8.01E-01
+ tran: time= 8.5359E-10 tot_iter=     775 conv_iter=     292 cpu clock= 8.03E-01
+ tran: time= 1.0200E-09 tot_iter=     841 conv_iter=     315 cpu clock= 8.03E-01
+ tran: time= 1.2000E-09 tot_iter=     900 conv_iter=     337 cpu clock= 8.04E-01
+ tran: time= 1.3606E-09 tot_iter=    1142 conv_iter=     426 cpu clock= 8.07E-01
+ tran: time= 1.5438E-09 tot_iter=    1318 conv_iter=     489 cpu clock= 8.08E-01
+ tran: time= 1.7000E-09 tot_iter=    1517 conv_iter=     560 cpu clock= 8.11E-01
+ sweep: tran tran3    end, cpu clock= 8.11E-01 peak memory=      79 mb
+ data: data=beta_sweep      beta            =    4.00E+00
+ dcop: begin dcop, cpu clock= 8.12E-01
+ dcop: end dcop, cpu clock= 8.12E-01 peak memory=      79 mb tot_iter=      72
+ output: D:\UT.CE\Term-06\VLSI\CA\CA01\basic-gates\or\sim.mt4
+ sweep: tran tran4    begin, stop_t=  1.70E-09 #sweeps=**** cpu clock= 8.12E-01
+ tran: time= 1.7205E-10 tot_iter=      44 conv_iter=      18 cpu clock= 8.12E-01
+ tran: time= 3.4183E-10 tot_iter=     177 conv_iter=      67 cpu clock= 8.14E-01
+ tran: time= 5.1186E-10 tot_iter=     397 conv_iter=     145 cpu clock= 8.16E-01
+ tran: time= 6.8012E-10 tot_iter=     578 conv_iter=     214 cpu clock= 8.18E-01
+ tran: time= 8.5642E-10 tot_iter=     706 conv_iter=     265 cpu clock= 8.19E-01
+ tran: time= 1.0200E-09 tot_iter=     779 conv_iter=     292 cpu clock= 8.20E-01
+ tran: time= 1.2000E-09 tot_iter=     841 conv_iter=     315 cpu clock= 8.21E-01
+ tran: time= 1.3615E-09 tot_iter=    1082 conv_iter=     407 cpu clock= 8.23E-01
+ tran: time= 1.5321E-09 tot_iter=    1279 conv_iter=     478 cpu clock= 8.25E-01
+ tran: time= 1.7000E-09 tot_iter=    1471 conv_iter=     547 cpu clock= 8.27E-01
+ sweep: tran tran4    end, cpu clock= 8.27E-01 peak memory=      79 mb
+ data: data=beta_sweep      beta            =    5.00E+00
+ dcop: begin dcop, cpu clock= 8.28E-01
+ dcop: end dcop, cpu clock= 8.28E-01 peak memory=      79 mb tot_iter=      75
+ output: D:\UT.CE\Term-06\VLSI\CA\CA01\basic-gates\or\sim.mt4
+ sweep: tran tran5    begin, stop_t=  1.70E-09 #sweeps=**** cpu clock= 8.28E-01
+ tran: time= 1.7289E-10 tot_iter=      44 conv_iter=      18 cpu clock= 8.29E-01
+ tran: time= 3.4594E-10 tot_iter=     198 conv_iter=      75 cpu clock= 8.30E-01
+ tran: time= 5.1677E-10 tot_iter=     432 conv_iter=     161 cpu clock= 8.32E-01
+ tran: time= 6.8032E-10 tot_iter=     589 conv_iter=     221 cpu clock= 8.34E-01
+ tran: time= 8.6566E-10 tot_iter=     727 conv_iter=     274 cpu clock= 8.35E-01
+ tran: time= 1.0200E-09 tot_iter=     809 conv_iter=     304 cpu clock= 8.36E-01
+ tran: time= 1.2000E-09 tot_iter=     869 conv_iter=     327 cpu clock= 8.37E-01
+ tran: time= 1.3607E-09 tot_iter=    1094 conv_iter=     411 cpu clock= 8.39E-01
+ tran: time= 1.5442E-09 tot_iter=    1274 conv_iter=     476 cpu clock= 8.41E-01
+ tran: time= 1.7000E-09 tot_iter=    1464 conv_iter=     545 cpu clock= 8.43E-01
+ sweep: tran tran5    end, cpu clock= 8.43E-01 peak memory=      79 mb
+ sweep: data            data            1 end
+ sweep: temp temp1 end
+>info:         ***** hspice job concluded
+ init: begin read circuit files, cpu clock= 8.97E-01
+       option search = C:/synopsys/Hspice_P-2019.06-SP1-1/parts/behave/
+       option search = C:/synopsys/Hspice_P-2019.06-SP1-1/parts/AD/
+       option search = C:/synopsys/Hspice_P-2019.06-SP1-1/parts/XILINX/
+       option search = C:/synopsys/Hspice_P-2019.06-SP1-1/parts/TLINE/
+       option search = C:/synopsys/Hspice_P-2019.06-SP1-1/parts/TI/
+       option search = C:/synopsys/Hspice_P-2019.06-SP1-1/parts/SIGNET/
+       option search = C:/synopsys/Hspice_P-2019.06-SP1-1/parts/PCI/
+       option search = C:/synopsys/Hspice_P-2019.06-SP1-1/parts/LIN_TEC
+                         H/
+       option search = C:/synopsys/Hspice_P-2019.06-SP1-1/parts/PET/
+       option search = C:/synopsys/Hspice_P-2019.06-SP1-1/parts/DI0/
+       option search = C:/synopsys/Hspice_P-2019.06-SP1-1/parts/COMLINE
+                         /
+       option search = C:/synopsys/Hspice_P-2019.06-SP1-1/parts/BURR_BR
+                         M/
+       option search = C:/synopsys/Hspice_P-2019.06-SP1-1/parts/BJT/
+       option nomod
+       option post =     2.00
+       option probe
+       option runlvl =     6.00
+       option post =     2.00
+       option probe
+       option runlvl =     6.00
+ init: end read circuit files, cpu clock= 9.03E-01 peak memory=      79 mb
+ init: begin check errors, cpu clock= 9.03E-01
+ init: end check errors, cpu clock= 9.06E-01 peak memory=      80 mb
+ init: begin setup matrix, pivot=     0 cpu clock= 9.06E-01
+       establish matrix -- done, cpu clock= 9.06E-01 peak memory=      80 mb
+       re-order matrix -- done, cpu clock= 9.06E-01 peak memory=      80 mb
+ init: end setup matrix, cpu clock= 9.06E-01 peak memory=      80 mb
+ sweep: temp temp1 begin, start=  1.00E+01 stop=  7.00E+01 #sweeps =   5
+ temperature: temperature=  1.00E+01
+ sweep: data            data1            begin, #sweeps =   5
+ data: data=beta_sweep      beta            =    1.00E+00
+ dcop: begin dcop, cpu clock= 9.07E-01
+ dcop: end dcop, cpu clock= 9.07E-01 peak memory=      80 mb tot_iter=       3
+ output: D:\UT.CE\Term-06\VLSI\CA\CA01\basic-gates\or\sim.mt5
+ sweep: tran tran1    begin, stop_t=  1.70E-09 #sweeps=**** cpu clock= 9.08E-01
+ tran: time= 1.7112E-10 tot_iter=      47 conv_iter=      19 cpu clock= 9.08E-01
+ tran: time= 3.5228E-10 tot_iter=     210 conv_iter=      77 cpu clock= 9.10E-01
+ tran: time= 5.1655E-10 tot_iter=     480 conv_iter=     173 cpu clock= 9.13E-01
+ tran: time= 6.8363E-10 tot_iter=     694 conv_iter=     255 cpu clock= 9.15E-01
+ tran: time= 8.5754E-10 tot_iter=     815 conv_iter=     301 cpu clock= 9.16E-01
+ tran: time= 1.0200E-09 tot_iter=     887 conv_iter=     327 cpu clock= 9.17E-01
+ tran: time= 1.2000E-09 tot_iter=     950 conv_iter=     350 cpu clock= 9.18E-01
+ tran: time= 1.3619E-09 tot_iter=    1211 conv_iter=     446 cpu clock= 9.20E-01
+ tran: time= 1.5601E-09 tot_iter=    1424 conv_iter=     523 cpu clock= 9.22E-01
+ tran: time= 1.7000E-09 tot_iter=    1639 conv_iter=     601 cpu clock= 9.24E-01
+ sweep: tran tran1    end, cpu clock= 9.24E-01 peak memory=      80 mb
+ data: data=beta_sweep      beta            =    2.00E+00
+ dcop: begin dcop, cpu clock= 9.26E-01
+ dcop: end dcop, cpu clock= 9.26E-01 peak memory=      80 mb tot_iter=       6
+ output: D:\UT.CE\Term-06\VLSI\CA\CA01\basic-gates\or\sim.mt5
+ sweep: tran tran2    begin, stop_t=  1.70E-09 #sweeps=**** cpu clock= 9.26E-01
+ tran: time= 1.7278E-10 tot_iter=      46 conv_iter=      19 cpu clock= 9.27E-01
+ tran: time= 3.5018E-10 tot_iter=     200 conv_iter=      74 cpu clock= 9.28E-01
+ tran: time= 5.1377E-10 tot_iter=     439 conv_iter=     159 cpu clock= 9.31E-01
+ tran: time= 6.8337E-10 tot_iter=     644 conv_iter=     237 cpu clock= 9.33E-01
+ tran: time= 8.5436E-10 tot_iter=     759 conv_iter=     282 cpu clock= 9.34E-01
+ tran: time= 1.0200E-09 tot_iter=     827 conv_iter=     306 cpu clock= 9.34E-01
+ tran: time= 1.2000E-09 tot_iter=     888 conv_iter=     329 cpu clock= 9.35E-01
+ tran: time= 1.3630E-09 tot_iter=    1133 conv_iter=     419 cpu clock= 9.37E-01
+ tran: time= 1.5426E-09 tot_iter=    1319 conv_iter=     486 cpu clock= 9.39E-01
+ tran: time= 1.7000E-09 tot_iter=    1530 conv_iter=     560 cpu clock= 9.41E-01
+ sweep: tran tran2    end, cpu clock= 9.41E-01 peak memory=      80 mb
+ data: data=beta_sweep      beta            =    3.00E+00
+ dcop: begin dcop, cpu clock= 9.42E-01
+ dcop: end dcop, cpu clock= 9.42E-01 peak memory=      80 mb tot_iter=       9
+ output: D:\UT.CE\Term-06\VLSI\CA\CA01\basic-gates\or\sim.mt5
+ sweep: tran tran3    begin, stop_t=  1.70E-09 #sweeps=**** cpu clock= 9.42E-01
+ tran: time= 1.7028E-10 tot_iter=      43 conv_iter=      18 cpu clock= 9.42E-01
+ tran: time= 3.4261E-10 tot_iter=     201 conv_iter=      75 cpu clock= 9.44E-01
+ tran: time= 5.1039E-10 tot_iter=     414 conv_iter=     149 cpu clock= 9.46E-01
+ tran: time= 6.8036E-10 tot_iter=     642 conv_iter=     234 cpu clock= 9.48E-01
+ tran: time= 8.7108E-10 tot_iter=     764 conv_iter=     283 cpu clock= 9.49E-01
+ tran: time= 1.0200E-09 tot_iter=     828 conv_iter=     305 cpu clock= 9.50E-01
+ tran: time= 1.2000E-09 tot_iter=     887 conv_iter=     327 cpu clock= 9.51E-01
+ tran: time= 1.3621E-09 tot_iter=    1136 conv_iter=     418 cpu clock= 9.53E-01
+ tran: time= 1.5400E-09 tot_iter=    1318 conv_iter=     483 cpu clock= 9.55E-01
+ tran: time= 1.7000E-09 tot_iter=    1528 conv_iter=     558 cpu clock= 9.57E-01
+ sweep: tran tran3    end, cpu clock= 9.57E-01 peak memory=      80 mb
+ data: data=beta_sweep      beta            =    4.00E+00
+ dcop: begin dcop, cpu clock= 9.57E-01
+ dcop: end dcop, cpu clock= 9.57E-01 peak memory=      80 mb tot_iter=      12
+ output: D:\UT.CE\Term-06\VLSI\CA\CA01\basic-gates\or\sim.mt5
+ sweep: tran tran4    begin, stop_t=  1.70E-09 #sweeps=**** cpu clock= 9.58E-01
+ tran: time= 1.7069E-10 tot_iter=      45 conv_iter=      18 cpu clock= 9.58E-01
+ tran: time= 3.4287E-10 tot_iter=     198 conv_iter=      73 cpu clock= 9.60E-01
+ tran: time= 5.1536E-10 tot_iter=     445 conv_iter=     164 cpu clock= 9.62E-01
+ tran: time= 6.8205E-10 tot_iter=     628 conv_iter=     232 cpu clock= 9.64E-01
+ tran: time= 8.5606E-10 tot_iter=     762 conv_iter=     286 cpu clock= 9.65E-01
+ tran: time= 1.0200E-09 tot_iter=     841 conv_iter=     314 cpu clock= 9.66E-01
+ tran: time= 1.2000E-09 tot_iter=     901 conv_iter=     337 cpu clock= 9.66E-01
+ tran: time= 1.3612E-09 tot_iter=    1136 conv_iter=     423 cpu clock= 9.69E-01
+ tran: time= 1.5447E-09 tot_iter=    1321 conv_iter=     492 cpu clock= 9.71E-01
+ tran: time= 1.7000E-09 tot_iter=    1522 conv_iter=     563 cpu clock= 9.73E-01
+ sweep: tran tran4    end, cpu clock= 9.73E-01 peak memory=      80 mb
+ data: data=beta_sweep      beta            =    5.00E+00
+ dcop: begin dcop, cpu clock= 9.74E-01
+ dcop: end dcop, cpu clock= 9.74E-01 peak memory=      80 mb tot_iter=      15
+ output: D:\UT.CE\Term-06\VLSI\CA\CA01\basic-gates\or\sim.mt5
+ sweep: tran tran5    begin, stop_t=  1.70E-09 #sweeps=**** cpu clock= 9.74E-01
+ tran: time= 1.7117E-10 tot_iter=      45 conv_iter=      18 cpu clock= 9.74E-01
+ tran: time= 3.4344E-10 tot_iter=     198 conv_iter=      73 cpu clock= 9.76E-01
+ tran: time= 5.1381E-10 tot_iter=     425 conv_iter=     156 cpu clock= 9.79E-01
+ tran: time= 6.8129E-10 tot_iter=     600 conv_iter=     222 cpu clock= 9.80E-01
+ tran: time= 8.6546E-10 tot_iter=     740 conv_iter=     276 cpu clock= 9.82E-01
+ tran: time= 1.0200E-09 tot_iter=     825 conv_iter=     307 cpu clock= 9.83E-01
+ tran: time= 1.2000E-09 tot_iter=     892 conv_iter=     332 cpu clock= 9.83E-01
+ tran: time= 1.3608E-09 tot_iter=    1151 conv_iter=     428 cpu clock= 9.86E-01
+ tran: time= 1.5422E-09 tot_iter=    1330 conv_iter=     493 cpu clock= 9.87E-01
+ tran: time= 1.7000E-09 tot_iter=    1554 conv_iter=     574 cpu clock= 9.90E-01
+ sweep: tran tran5    end, cpu clock= 9.90E-01 peak memory=      80 mb
+ sweep: data            data            1 end
+ temperature: temperature=  2.50E+01
+ sweep: data            data1            begin, #sweeps =   5
+ data: data=beta_sweep      beta            =    1.00E+00
+ dcop: begin dcop, cpu clock= 9.91E-01
+ dcop: end dcop, cpu clock= 9.91E-01 peak memory=      80 mb tot_iter=      18
+ output: D:\UT.CE\Term-06\VLSI\CA\CA01\basic-gates\or\sim.mt6
+ sweep: tran tran1    begin, stop_t=  1.70E-09 #sweeps=**** cpu clock= 9.91E-01
+ tran: time= 1.7133E-10 tot_iter=      47 conv_iter=      19 cpu clock= 9.92E-01
+ tran: time= 3.5816E-10 tot_iter=     203 conv_iter=      74 cpu clock= 9.94E-01
+ tran: time= 5.1140E-10 tot_iter=     433 conv_iter=     155 cpu clock= 9.96E-01
+ tran: time= 6.8181E-10 tot_iter=     644 conv_iter=     237 cpu clock= 9.98E-01
+ tran: time= 8.5023E-10 tot_iter=     758 conv_iter=     281 cpu clock= 9.99E-01
+ tran: time= 1.0200E-09 tot_iter=     834 conv_iter=     309 cpu clock= 1.00E+00
+ tran: time= 1.2000E-09 tot_iter=     898 conv_iter=     333 cpu clock= 1.00E+00
+ tran: time= 1.3632E-09 tot_iter=    1131 conv_iter=     419 cpu clock= 1.00E+00
+ tran: time= 1.5454E-09 tot_iter=    1330 conv_iter=     490 cpu clock= 1.00E+00
+ tran: time= 1.7000E-09 tot_iter=    1539 conv_iter=     566 cpu clock= 1.01E+00
+ sweep: tran tran1    end, cpu clock= 1.01E+00 peak memory=      80 mb
+ data: data=beta_sweep      beta            =    2.00E+00
+ dcop: begin dcop, cpu clock= 1.01E+00
+ dcop: end dcop, cpu clock= 1.01E+00 peak memory=      80 mb tot_iter=      21
+ output: D:\UT.CE\Term-06\VLSI\CA\CA01\basic-gates\or\sim.mt6
+ sweep: tran tran2    begin, stop_t=  1.70E-09 #sweeps=**** cpu clock= 1.01E+00
+ tran: time= 1.7294E-10 tot_iter=      46 conv_iter=      19 cpu clock= 1.01E+00
+ tran: time= 3.5106E-10 tot_iter=     212 conv_iter=      78 cpu clock= 1.01E+00
+ tran: time= 5.1442E-10 tot_iter=     474 conv_iter=     172 cpu clock= 1.01E+00
+ tran: time= 6.8146E-10 tot_iter=     677 conv_iter=     249 cpu clock= 1.01E+00
+ tran: time= 8.5495E-10 tot_iter=     792 conv_iter=     293 cpu clock= 1.02E+00
+ tran: time= 1.0200E-09 tot_iter=     861 conv_iter=     317 cpu clock= 1.02E+00
+ tran: time= 1.2000E-09 tot_iter=     922 conv_iter=     339 cpu clock= 1.02E+00
+ tran: time= 1.3604E-09 tot_iter=    1165 conv_iter=     428 cpu clock= 1.02E+00
+ tran: time= 1.5332E-09 tot_iter=    1352 conv_iter=     496 cpu clock= 1.02E+00
+ tran: time= 1.7000E-09 tot_iter=    1574 conv_iter=     575 cpu clock= 1.02E+00
+ sweep: tran tran2    end, cpu clock= 1.02E+00 peak memory=      80 mb
+ data: data=beta_sweep      beta            =    3.00E+00
+ dcop: begin dcop, cpu clock= 1.02E+00
+ dcop: end dcop, cpu clock= 1.02E+00 peak memory=      80 mb tot_iter=      24
+ output: D:\UT.CE\Term-06\VLSI\CA\CA01\basic-gates\or\sim.mt6
+ sweep: tran tran3    begin, stop_t=  1.70E-09 #sweeps=**** cpu clock= 1.02E+00
+ tran: time= 1.7058E-10 tot_iter=      43 conv_iter=      18 cpu clock= 1.02E+00
+ tran: time= 3.4538E-10 tot_iter=     191 conv_iter=      72 cpu clock= 1.03E+00
+ tran: time= 5.1243E-10 tot_iter=     424 conv_iter=     154 cpu clock= 1.03E+00
+ tran: time= 6.8246E-10 tot_iter=     642 conv_iter=     235 cpu clock= 1.03E+00
+ tran: time= 8.5760E-10 tot_iter=     759 conv_iter=     282 cpu clock= 1.03E+00
+ tran: time= 1.0200E-09 tot_iter=     828 conv_iter=     307 cpu clock= 1.03E+00
+ tran: time= 1.2000E-09 tot_iter=     888 conv_iter=     329 cpu clock= 1.03E+00
+ tran: time= 1.3625E-09 tot_iter=    1136 conv_iter=     420 cpu clock= 1.03E+00
+ tran: time= 1.5339E-09 tot_iter=    1323 conv_iter=     486 cpu clock= 1.04E+00
+ tran: time= 1.7000E-09 tot_iter=    1533 conv_iter=     561 cpu clock= 1.04E+00
+ sweep: tran tran3    end, cpu clock= 1.04E+00 peak memory=      80 mb
+ data: data=beta_sweep      beta            =    4.00E+00
+ dcop: begin dcop, cpu clock= 1.04E+00
+ dcop: end dcop, cpu clock= 1.04E+00 peak memory=      80 mb tot_iter=      27
+ output: D:\UT.CE\Term-06\VLSI\CA\CA01\basic-gates\or\sim.mt6
+ sweep: tran tran4    begin, stop_t=  1.70E-09 #sweeps=**** cpu clock= 1.04E+00
+ tran: time= 1.7097E-10 tot_iter=      44 conv_iter=      18 cpu clock= 1.04E+00
+ tran: time= 3.4707E-10 tot_iter=     182 conv_iter=      68 cpu clock= 1.04E+00
+ tran: time= 5.1609E-10 tot_iter=     410 conv_iter=     152 cpu clock= 1.04E+00
+ tran: time= 6.8111E-10 tot_iter=     585 conv_iter=     217 cpu clock= 1.05E+00
+ tran: time= 8.5916E-10 tot_iter=     710 conv_iter=     267 cpu clock= 1.05E+00
+ tran: time= 1.0200E-09 tot_iter=     787 conv_iter=     294 cpu clock= 1.05E+00
+ tran: time= 1.2000E-09 tot_iter=     855 conv_iter=     319 cpu clock= 1.05E+00
+ tran: time= 1.3620E-09 tot_iter=    1091 conv_iter=     407 cpu clock= 1.05E+00
+ tran: time= 1.5330E-09 tot_iter=    1259 conv_iter=     468 cpu clock= 1.05E+00
+ tran: time= 1.7000E-09 tot_iter=    1470 conv_iter=     543 cpu clock= 1.05E+00
+ sweep: tran tran4    end, cpu clock= 1.05E+00 peak memory=      80 mb
+ data: data=beta_sweep      beta            =    5.00E+00
+ dcop: begin dcop, cpu clock= 1.05E+00
+ dcop: end dcop, cpu clock= 1.05E+00 peak memory=      80 mb tot_iter=      30
+ output: D:\UT.CE\Term-06\VLSI\CA\CA01\basic-gates\or\sim.mt6
+ sweep: tran tran5    begin, stop_t=  1.70E-09 #sweeps=**** cpu clock= 1.05E+00
+ tran: time= 1.7143E-10 tot_iter=      45 conv_iter=      18 cpu clock= 1.06E+00
+ tran: time= 3.4367E-10 tot_iter=     208 conv_iter=      77 cpu clock= 1.06E+00
+ tran: time= 5.1033E-10 tot_iter=     437 conv_iter=     161 cpu clock= 1.06E+00
+ tran: time= 6.8164E-10 tot_iter=     613 conv_iter=     228 cpu clock= 1.06E+00
+ tran: time= 8.6435E-10 tot_iter=     761 conv_iter=     283 cpu clock= 1.06E+00
+ tran: time= 1.0200E-09 tot_iter=     851 conv_iter=     315 cpu clock= 1.06E+00
+ tran: time= 1.2000E-09 tot_iter=     912 conv_iter=     338 cpu clock= 1.06E+00
+ tran: time= 1.3619E-09 tot_iter=    1171 conv_iter=     435 cpu clock= 1.07E+00
+ tran: time= 1.5360E-09 tot_iter=    1354 conv_iter=     502 cpu clock= 1.07E+00
+ tran: time= 1.7000E-09 tot_iter=    1574 conv_iter=     582 cpu clock= 1.07E+00
+ sweep: tran tran5    end, cpu clock= 1.07E+00 peak memory=      80 mb
+ sweep: data            data            1 end
+ temperature: temperature=  4.00E+01
+ sweep: data            data1            begin, #sweeps =   5
+ data: data=beta_sweep      beta            =    1.00E+00
+ dcop: begin dcop, cpu clock= 1.07E+00
+ dcop: end dcop, cpu clock= 1.07E+00 peak memory=      80 mb tot_iter=      33
+ output: D:\UT.CE\Term-06\VLSI\CA\CA01\basic-gates\or\sim.mt7
+ sweep: tran tran1    begin, stop_t=  1.70E-09 #sweeps=**** cpu clock= 1.07E+00
+ tran: time= 1.7150E-10 tot_iter=      52 conv_iter=      21 cpu clock= 1.07E+00
+ tran: time= 3.5834E-10 tot_iter=     214 conv_iter=      78 cpu clock= 1.07E+00
+ tran: time= 5.1676E-10 tot_iter=     436 conv_iter=     155 cpu clock= 1.08E+00
+ tran: time= 6.8119E-10 tot_iter=     643 conv_iter=     233 cpu clock= 1.08E+00
+ tran: time= 8.6439E-10 tot_iter=     760 conv_iter=     278 cpu clock= 1.08E+00
+ tran: time= 1.0200E-09 tot_iter=     840 conv_iter=     307 cpu clock= 1.08E+00
+ tran: time= 1.2000E-09 tot_iter=     903 conv_iter=     330 cpu clock= 1.08E+00
+ tran: time= 1.3637E-09 tot_iter=    1175 conv_iter=     431 cpu clock= 1.08E+00
+ tran: time= 1.5378E-09 tot_iter=    1399 conv_iter=     513 cpu clock= 1.09E+00
+ tran: time= 1.7000E-09 tot_iter=    1621 conv_iter=     594 cpu clock= 1.09E+00
+ sweep: tran tran1    end, cpu clock= 1.09E+00 peak memory=      80 mb
+ data: data=beta_sweep      beta            =    2.00E+00
+ dcop: begin dcop, cpu clock= 1.09E+00
+ dcop: end dcop, cpu clock= 1.09E+00 peak memory=      80 mb tot_iter=      36
+ output: D:\UT.CE\Term-06\VLSI\CA\CA01\basic-gates\or\sim.mt7
+ sweep: tran tran2    begin, stop_t=  1.70E-09 #sweeps=**** cpu clock= 1.09E+00
+ tran: time= 1.7317E-10 tot_iter=      46 conv_iter=      19 cpu clock= 1.09E+00
+ tran: time= 3.5267E-10 tot_iter=     215 conv_iter=      80 cpu clock= 1.09E+00
+ tran: time= 5.1255E-10 tot_iter=     436 conv_iter=     158 cpu clock= 1.09E+00
+ tran: time= 6.8305E-10 tot_iter=     655 conv_iter=     241 cpu clock= 1.10E+00
+ tran: time= 8.5226E-10 tot_iter=     765 conv_iter=     283 cpu clock= 1.10E+00
+ tran: time= 1.0200E-09 tot_iter=     837 conv_iter=     309 cpu clock= 1.10E+00
+ tran: time= 1.2000E-09 tot_iter=     900 conv_iter=     332 cpu clock= 1.10E+00
+ tran: time= 1.3625E-09 tot_iter=    1138 conv_iter=     421 cpu clock= 1.10E+00
+ tran: time= 1.5510E-09 tot_iter=    1321 conv_iter=     486 cpu clock= 1.10E+00
+ tran: time= 1.7000E-09 tot_iter=    1522 conv_iter=     558 cpu clock= 1.10E+00
+ sweep: tran tran2    end, cpu clock= 1.10E+00 peak memory=      80 mb
+ data: data=beta_sweep      beta            =    3.00E+00
+ dcop: begin dcop, cpu clock= 1.11E+00
+ dcop: end dcop, cpu clock= 1.11E+00 peak memory=      80 mb tot_iter=      39
+ output: D:\UT.CE\Term-06\VLSI\CA\CA01\basic-gates\or\sim.mt7
+ sweep: tran tran3    begin, stop_t=  1.70E-09 #sweeps=**** cpu clock= 1.11E+00
+ tran: time= 1.7080E-10 tot_iter=      43 conv_iter=      18 cpu clock= 1.11E+00
+ tran: time= 3.5027E-10 tot_iter=     193 conv_iter=      72 cpu clock= 1.11E+00
+ tran: time= 5.1570E-10 tot_iter=     427 conv_iter=     157 cpu clock= 1.11E+00
+ tran: time= 6.8128E-10 tot_iter=     632 conv_iter=     235 cpu clock= 1.11E+00
+ tran: time= 8.5707E-10 tot_iter=     743 conv_iter=     279 cpu clock= 1.11E+00
+ tran: time= 1.0200E-09 tot_iter=     814 conv_iter=     304 cpu clock= 1.11E+00
+ tran: time= 1.2000E-09 tot_iter=     881 conv_iter=     329 cpu clock= 1.11E+00
+ tran: time= 1.3631E-09 tot_iter=    1124 conv_iter=     420 cpu clock= 1.12E+00
+ tran: time= 1.5332E-09 tot_iter=    1315 conv_iter=     490 cpu clock= 1.12E+00
+ tran: time= 1.7000E-09 tot_iter=    1531 conv_iter=     567 cpu clock= 1.12E+00
+ sweep: tran tran3    end, cpu clock= 1.12E+00 peak memory=      80 mb
+ data: data=beta_sweep      beta            =    4.00E+00
+ dcop: begin dcop, cpu clock= 1.12E+00
+ dcop: end dcop, cpu clock= 1.12E+00 peak memory=      80 mb tot_iter=      42
+ output: D:\UT.CE\Term-06\VLSI\CA\CA01\basic-gates\or\sim.mt7
+ sweep: tran tran4    begin, stop_t=  1.70E-09 #sweeps=**** cpu clock= 1.12E+00
+ tran: time= 1.7128E-10 tot_iter=      44 conv_iter=      18 cpu clock= 1.12E+00
+ tran: time= 3.4512E-10 tot_iter=     196 conv_iter=      74 cpu clock= 1.12E+00
+ tran: time= 5.1375E-10 tot_iter=     460 conv_iter=     171 cpu clock= 1.13E+00
+ tran: time= 6.8057E-10 tot_iter=     639 conv_iter=     238 cpu clock= 1.13E+00
+ tran: time= 8.6532E-10 tot_iter=     769 conv_iter=     289 cpu clock= 1.13E+00
+ tran: time= 1.0200E-09 tot_iter=     847 conv_iter=     317 cpu clock= 1.13E+00
+ tran: time= 1.2000E-09 tot_iter=     909 conv_iter=     340 cpu clock= 1.13E+00
+ tran: time= 1.3620E-09 tot_iter=    1154 conv_iter=     430 cpu clock= 1.13E+00
+ tran: time= 1.5349E-09 tot_iter=    1325 conv_iter=     492 cpu clock= 1.14E+00
+ tran: time= 1.7000E-09 tot_iter=    1536 conv_iter=     569 cpu clock= 1.14E+00
+ sweep: tran tran4    end, cpu clock= 1.14E+00 peak memory=      80 mb
+ data: data=beta_sweep      beta            =    5.00E+00
+ dcop: begin dcop, cpu clock= 1.14E+00
+ dcop: end dcop, cpu clock= 1.14E+00 peak memory=      80 mb tot_iter=      45
+ output: D:\UT.CE\Term-06\VLSI\CA\CA01\basic-gates\or\sim.mt7
+ sweep: tran tran5    begin, stop_t=  1.70E-09 #sweeps=**** cpu clock= 1.14E+00
+ tran: time= 1.7172E-10 tot_iter=      45 conv_iter=      18 cpu clock= 1.14E+00
+ tran: time= 3.4114E-10 tot_iter=     189 conv_iter=      71 cpu clock= 1.14E+00
+ tran: time= 5.1216E-10 tot_iter=     427 conv_iter=     157 cpu clock= 1.14E+00
+ tran: time= 6.8047E-10 tot_iter=     584 conv_iter=     217 cpu clock= 1.14E+00
+ tran: time= 8.5275E-10 tot_iter=     729 conv_iter=     272 cpu clock= 1.15E+00
+ tran: time= 1.0200E-09 tot_iter=     811 conv_iter=     301 cpu clock= 1.15E+00
+ tran: time= 1.2000E-09 tot_iter=     873 conv_iter=     324 cpu clock= 1.15E+00
+ tran: time= 1.3619E-09 tot_iter=    1136 conv_iter=     424 cpu clock= 1.15E+00
+ tran: time= 1.5380E-09 tot_iter=    1324 conv_iter=     492 cpu clock= 1.15E+00
+ tran: time= 1.7000E-09 tot_iter=    1533 conv_iter=     568 cpu clock= 1.15E+00
+ sweep: tran tran5    end, cpu clock= 1.15E+00 peak memory=      80 mb
+ sweep: data            data            1 end
+ temperature: temperature=  5.50E+01
+ sweep: data            data1            begin, #sweeps =   5
+ data: data=beta_sweep      beta            =    1.00E+00
+ dcop: begin dcop, cpu clock= 1.16E+00
+ dcop: end dcop, cpu clock= 1.16E+00 peak memory=      80 mb tot_iter=      48
+ output: D:\UT.CE\Term-06\VLSI\CA\CA01\basic-gates\or\sim.mt8
+ sweep: tran tran1    begin, stop_t=  1.70E-09 #sweeps=**** cpu clock= 1.16E+00
+ tran: time= 1.7189E-10 tot_iter=      52 conv_iter=      21 cpu clock= 1.16E+00
+ tran: time= 3.4783E-10 tot_iter=     205 conv_iter=      74 cpu clock= 1.16E+00
+ tran: time= 5.1349E-10 tot_iter=     444 conv_iter=     158 cpu clock= 1.16E+00
+ tran: time= 6.8249E-10 tot_iter=     661 conv_iter=     240 cpu clock= 1.16E+00
+ tran: time= 8.6505E-10 tot_iter=     775 conv_iter=     284 cpu clock= 1.16E+00
+ tran: time= 1.0200E-09 tot_iter=     845 conv_iter=     308 cpu clock= 1.16E+00
+ tran: time= 1.2000E-09 tot_iter=     913 conv_iter=     333 cpu clock= 1.17E+00
+ tran: time= 1.3605E-09 tot_iter=    1145 conv_iter=     417 cpu clock= 1.17E+00
+ tran: time= 1.5472E-09 tot_iter=    1346 conv_iter=     492 cpu clock= 1.17E+00
+ tran: time= 1.7000E-09 tot_iter=    1565 conv_iter=     572 cpu clock= 1.17E+00
+ sweep: tran tran1    end, cpu clock= 1.17E+00 peak memory=      80 mb
+ data: data=beta_sweep      beta            =    2.00E+00
+ dcop: begin dcop, cpu clock= 1.17E+00
+ dcop: end dcop, cpu clock= 1.17E+00 peak memory=      80 mb tot_iter=      51
+ output: D:\UT.CE\Term-06\VLSI\CA\CA01\basic-gates\or\sim.mt8
+ sweep: tran tran2    begin, stop_t=  1.70E-09 #sweeps=**** cpu clock= 1.17E+00
+ tran: time= 1.7014E-10 tot_iter=      44 conv_iter=      18 cpu clock= 1.17E+00
+ tran: time= 3.4099E-10 tot_iter=     206 conv_iter=      77 cpu clock= 1.18E+00
+ tran: time= 5.1633E-10 tot_iter=     439 conv_iter=     159 cpu clock= 1.18E+00
+ tran: time= 6.8130E-10 tot_iter=     646 conv_iter=     238 cpu clock= 1.18E+00
+ tran: time= 8.5032E-10 tot_iter=     763 conv_iter=     283 cpu clock= 1.18E+00
+ tran: time= 1.0200E-09 tot_iter=     842 conv_iter=     311 cpu clock= 1.18E+00
+ tran: time= 1.2000E-09 tot_iter=     909 conv_iter=     336 cpu clock= 1.18E+00
+ tran: time= 1.3626E-09 tot_iter=    1130 conv_iter=     420 cpu clock= 1.18E+00
+ tran: time= 1.5432E-09 tot_iter=    1307 conv_iter=     484 cpu clock= 1.19E+00
+ tran: time= 1.7000E-09 tot_iter=    1498 conv_iter=     555 cpu clock= 1.19E+00
+ sweep: tran tran2    end, cpu clock= 1.19E+00 peak memory=      80 mb
+ data: data=beta_sweep      beta            =    3.00E+00
+ dcop: begin dcop, cpu clock= 1.19E+00
+ dcop: end dcop, cpu clock= 1.19E+00 peak memory=      80 mb tot_iter=      54
+ output: D:\UT.CE\Term-06\VLSI\CA\CA01\basic-gates\or\sim.mt8
+ sweep: tran tran3    begin, stop_t=  1.70E-09 #sweeps=**** cpu clock= 1.19E+00
+ tran: time= 1.7096E-10 tot_iter=      43 conv_iter=      18 cpu clock= 1.19E+00
+ tran: time= 3.5196E-10 tot_iter=     201 conv_iter=      77 cpu clock= 1.19E+00
+ tran: time= 5.1112E-10 tot_iter=     429 conv_iter=     159 cpu clock= 1.19E+00
+ tran: time= 6.8198E-10 tot_iter=     628 conv_iter=     235 cpu clock= 1.20E+00
+ tran: time= 8.5749E-10 tot_iter=     738 conv_iter=     278 cpu clock= 1.20E+00
+ tran: time= 1.0200E-09 tot_iter=     814 conv_iter=     305 cpu clock= 1.20E+00
+ tran: time= 1.2000E-09 tot_iter=     878 conv_iter=     329 cpu clock= 1.20E+00
+ tran: time= 1.3633E-09 tot_iter=    1133 conv_iter=     422 cpu clock= 1.20E+00
+ tran: time= 1.5359E-09 tot_iter=    1343 conv_iter=     500 cpu clock= 1.20E+00
+ tran: time= 1.7000E-09 tot_iter=    1549 conv_iter=     574 cpu clock= 1.20E+00
+ sweep: tran tran3    end, cpu clock= 1.20E+00 peak memory=      80 mb
+ data: data=beta_sweep      beta            =    4.00E+00
+ dcop: begin dcop, cpu clock= 1.21E+00
+ dcop: end dcop, cpu clock= 1.21E+00 peak memory=      80 mb tot_iter=      57
+ output: D:\UT.CE\Term-06\VLSI\CA\CA01\basic-gates\or\sim.mt8
+ sweep: tran tran4    begin, stop_t=  1.70E-09 #sweeps=**** cpu clock= 1.21E+00
+ tran: time= 1.7160E-10 tot_iter=      44 conv_iter=      18 cpu clock= 1.21E+00
+ tran: time= 3.4341E-10 tot_iter=     200 conv_iter=      76 cpu clock= 1.21E+00
+ tran: time= 5.1237E-10 tot_iter=     421 conv_iter=     157 cpu clock= 1.21E+00
+ tran: time= 6.8046E-10 tot_iter=     582 conv_iter=     218 cpu clock= 1.21E+00
+ tran: time= 8.6817E-10 tot_iter=     695 conv_iter=     262 cpu clock= 1.21E+00
+ tran: time= 1.0200E-09 tot_iter=     774 conv_iter=     290 cpu clock= 1.21E+00
+ tran: time= 1.2000E-09 tot_iter=     835 conv_iter=     313 cpu clock= 1.21E+00
+ tran: time= 1.3625E-09 tot_iter=    1080 conv_iter=     406 cpu clock= 1.22E+00
+ tran: time= 1.5382E-09 tot_iter=    1249 conv_iter=     467 cpu clock= 1.22E+00
+ tran: time= 1.7000E-09 tot_iter=    1449 conv_iter=     539 cpu clock= 1.22E+00
+ sweep: tran tran4    end, cpu clock= 1.22E+00 peak memory=      80 mb
+ data: data=beta_sweep      beta            =    5.00E+00
+ dcop: begin dcop, cpu clock= 1.22E+00
+ dcop: end dcop, cpu clock= 1.22E+00 peak memory=      80 mb tot_iter=      60
+ output: D:\UT.CE\Term-06\VLSI\CA\CA01\basic-gates\or\sim.mt8
+ sweep: tran tran5    begin, stop_t=  1.70E-09 #sweeps=**** cpu clock= 1.22E+00
+ tran: time= 1.7204E-10 tot_iter=      45 conv_iter=      18 cpu clock= 1.22E+00
+ tran: time= 3.4195E-10 tot_iter=     184 conv_iter=      69 cpu clock= 1.22E+00
+ tran: time= 5.1392E-10 tot_iter=     431 conv_iter=     157 cpu clock= 1.23E+00
+ tran: time= 6.8065E-10 tot_iter=     598 conv_iter=     222 cpu clock= 1.23E+00
+ tran: time= 8.5406E-10 tot_iter=     739 conv_iter=     275 cpu clock= 1.23E+00
+ tran: time= 1.0200E-09 tot_iter=     824 conv_iter=     305 cpu clock= 1.23E+00
+ tran: time= 1.2000E-09 tot_iter=     886 conv_iter=     329 cpu clock= 1.23E+00
+ tran: time= 1.3630E-09 tot_iter=    1120 conv_iter=     416 cpu clock= 1.23E+00
+ tran: time= 1.5336E-09 tot_iter=    1306 conv_iter=     484 cpu clock= 1.24E+00
+ tran: time= 1.7000E-09 tot_iter=    1509 conv_iter=     559 cpu clock= 1.24E+00
+ sweep: tran tran5    end, cpu clock= 1.24E+00 peak memory=      80 mb
+ sweep: data            data            1 end
+ temperature: temperature=  7.00E+01
+ sweep: data            data1            begin, #sweeps =   5
+ data: data=beta_sweep      beta            =    1.00E+00
+ dcop: begin dcop, cpu clock= 1.24E+00
+ dcop: end dcop, cpu clock= 1.24E+00 peak memory=      80 mb tot_iter=      63
+ output: D:\UT.CE\Term-06\VLSI\CA\CA01\basic-gates\or\sim.mt9
+ sweep: tran tran1    begin, stop_t=  1.70E-09 #sweeps=**** cpu clock= 1.24E+00
+ tran: time= 1.7264E-10 tot_iter=      57 conv_iter=      23 cpu clock= 1.24E+00
+ tran: time= 3.4788E-10 tot_iter=     217 conv_iter=      78 cpu clock= 1.24E+00
+ tran: time= 5.1463E-10 tot_iter=     432 conv_iter=     151 cpu clock= 1.24E+00
+ tran: time= 6.8024E-10 tot_iter=     648 conv_iter=     234 cpu clock= 1.25E+00
+ tran: time= 8.6162E-10 tot_iter=     764 conv_iter=     279 cpu clock= 1.25E+00
+ tran: time= 1.0200E-09 tot_iter=     837 conv_iter=     305 cpu clock= 1.25E+00
+ tran: time= 1.2000E-09 tot_iter=     905 conv_iter=     330 cpu clock= 1.25E+00
+ tran: time= 1.3612E-09 tot_iter=    1148 conv_iter=     419 cpu clock= 1.25E+00
+ tran: time= 1.5477E-09 tot_iter=    1336 conv_iter=     487 cpu clock= 1.25E+00
+ tran: time= 1.7000E-09 tot_iter=    1541 conv_iter=     561 cpu clock= 1.25E+00
+ sweep: tran tran1    end, cpu clock= 1.25E+00 peak memory=      80 mb
+ data: data=beta_sweep      beta            =    2.00E+00
+ dcop: begin dcop, cpu clock= 1.26E+00
+ dcop: end dcop, cpu clock= 1.26E+00 peak memory=      80 mb tot_iter=      66
+ output: D:\UT.CE\Term-06\VLSI\CA\CA01\basic-gates\or\sim.mt9
+ sweep: tran tran2    begin, stop_t=  1.70E-09 #sweeps=**** cpu clock= 1.26E+00
+ tran: time= 1.7036E-10 tot_iter=      44 conv_iter=      18 cpu clock= 1.26E+00
+ tran: time= 3.4457E-10 tot_iter=     210 conv_iter=      78 cpu clock= 1.26E+00
+ tran: time= 5.1050E-10 tot_iter=     423 conv_iter=     153 cpu clock= 1.26E+00
+ tran: time= 6.8167E-10 tot_iter=     639 conv_iter=     237 cpu clock= 1.26E+00
+ tran: time= 8.5074E-10 tot_iter=     749 conv_iter=     280 cpu clock= 1.26E+00
+ tran: time= 1.0200E-09 tot_iter=     821 conv_iter=     306 cpu clock= 1.26E+00
+ tran: time= 1.2000E-09 tot_iter=     882 conv_iter=     329 cpu clock= 1.27E+00
+ tran: time= 1.3633E-09 tot_iter=    1134 conv_iter=     423 cpu clock= 1.27E+00
+ tran: time= 1.5499E-09 tot_iter=    1315 conv_iter=     487 cpu clock= 1.27E+00
+ tran: time= 1.7000E-09 tot_iter=    1520 conv_iter=     561 cpu clock= 1.27E+00
+ sweep: tran tran2    end, cpu clock= 1.27E+00 peak memory=      80 mb
+ data: data=beta_sweep      beta            =    3.00E+00
+ dcop: begin dcop, cpu clock= 1.27E+00
+ dcop: end dcop, cpu clock= 1.27E+00 peak memory=      80 mb tot_iter=      69
+ output: D:\UT.CE\Term-06\VLSI\CA\CA01\basic-gates\or\sim.mt9
+ sweep: tran tran3    begin, stop_t=  1.70E-09 #sweeps=**** cpu clock= 1.27E+00
+ tran: time= 1.7116E-10 tot_iter=      43 conv_iter=      18 cpu clock= 1.27E+00
+ tran: time= 3.4544E-10 tot_iter=     208 conv_iter=      78 cpu clock= 1.27E+00
+ tran: time= 5.1454E-10 tot_iter=     433 conv_iter=     159 cpu clock= 1.28E+00
+ tran: time= 6.8059E-10 tot_iter=     619 conv_iter=     232 cpu clock= 1.28E+00
+ tran: time= 8.5924E-10 tot_iter=     736 conv_iter=     278 cpu clock= 1.28E+00
+ tran: time= 1.0200E-09 tot_iter=     806 conv_iter=     303 cpu clock= 1.28E+00
+ tran: time= 1.2000E-09 tot_iter=     866 conv_iter=     326 cpu clock= 1.28E+00
+ tran: time= 1.3615E-09 tot_iter=    1096 conv_iter=     413 cpu clock= 1.28E+00
+ tran: time= 1.5369E-09 tot_iter=    1277 conv_iter=     481 cpu clock= 1.29E+00
+ tran: time= 1.7000E-09 tot_iter=    1495 conv_iter=     559 cpu clock= 1.29E+00
+ sweep: tran tran3    end, cpu clock= 1.29E+00 peak memory=      80 mb
+ data: data=beta_sweep      beta            =    4.00E+00
+ dcop: begin dcop, cpu clock= 1.29E+00
+ dcop: end dcop, cpu clock= 1.29E+00 peak memory=      80 mb tot_iter=      72
+ output: D:\UT.CE\Term-06\VLSI\CA\CA01\basic-gates\or\sim.mt9
+ sweep: tran tran4    begin, stop_t=  1.70E-09 #sweeps=**** cpu clock= 1.29E+00
+ tran: time= 1.7194E-10 tot_iter=      44 conv_iter=      18 cpu clock= 1.29E+00
+ tran: time= 3.4104E-10 tot_iter=     191 conv_iter=      72 cpu clock= 1.29E+00
+ tran: time= 5.1045E-10 tot_iter=     423 conv_iter=     157 cpu clock= 1.29E+00
+ tran: time= 6.8080E-10 tot_iter=     592 conv_iter=     222 cpu clock= 1.29E+00
+ tran: time= 8.5180E-10 tot_iter=     719 conv_iter=     272 cpu clock= 1.30E+00
+ tran: time= 1.0200E-09 tot_iter=     794 conv_iter=     299 cpu clock= 1.30E+00
+ tran: time= 1.2000E-09 tot_iter=     855 conv_iter=     322 cpu clock= 1.30E+00
+ tran: time= 1.3632E-09 tot_iter=    1087 conv_iter=     409 cpu clock= 1.30E+00
+ tran: time= 1.5414E-09 tot_iter=    1266 conv_iter=     475 cpu clock= 1.30E+00
+ tran: time= 1.7000E-09 tot_iter=    1467 conv_iter=     547 cpu clock= 1.30E+00
+ sweep: tran tran4    end, cpu clock= 1.30E+00 peak memory=      80 mb
+ data: data=beta_sweep      beta            =    5.00E+00
+ dcop: begin dcop, cpu clock= 1.30E+00
+ dcop: end dcop, cpu clock= 1.30E+00 peak memory=      80 mb tot_iter=      75
+ output: D:\UT.CE\Term-06\VLSI\CA\CA01\basic-gates\or\sim.mt9
+ sweep: tran tran5    begin, stop_t=  1.70E-09 #sweeps=**** cpu clock= 1.30E+00
+ tran: time= 1.7237E-10 tot_iter=      44 conv_iter=      18 cpu clock= 1.30E+00
+ tran: time= 3.4610E-10 tot_iter=     187 conv_iter=      71 cpu clock= 1.31E+00
+ tran: time= 5.1089E-10 tot_iter=     410 conv_iter=     151 cpu clock= 1.31E+00
+ tran: time= 6.8009E-10 tot_iter=     573 conv_iter=     215 cpu clock= 1.31E+00
+ tran: time= 8.5425E-10 tot_iter=     706 conv_iter=     265 cpu clock= 1.31E+00
+ tran: time= 1.0200E-09 tot_iter=     778 conv_iter=     291 cpu clock= 1.31E+00
+ tran: time= 1.2000E-09 tot_iter=     839 conv_iter=     314 cpu clock= 1.31E+00
+ tran: time= 1.3633E-09 tot_iter=    1070 conv_iter=     401 cpu clock= 1.31E+00
+ tran: time= 1.5328E-09 tot_iter=    1253 conv_iter=     467 cpu clock= 1.32E+00
+ tran: time= 1.7000E-09 tot_iter=    1459 conv_iter=     544 cpu clock= 1.32E+00
+ sweep: tran tran5    end, cpu clock= 1.32E+00 peak memory=      80 mb
+ sweep: data            data            1 end
+ sweep: temp temp1 end
+>info:         ***** hspice job concluded
+ init: begin read circuit files, cpu clock= 1.36E+00
+       option search = C:/synopsys/Hspice_P-2019.06-SP1-1/parts/behave/
+       option search = C:/synopsys/Hspice_P-2019.06-SP1-1/parts/AD/
+       option search = C:/synopsys/Hspice_P-2019.06-SP1-1/parts/XILINX/
+       option search = C:/synopsys/Hspice_P-2019.06-SP1-1/parts/TLINE/
+       option search = C:/synopsys/Hspice_P-2019.06-SP1-1/parts/TI/
+       option search = C:/synopsys/Hspice_P-2019.06-SP1-1/parts/SIGNET/
+       option search = C:/synopsys/Hspice_P-2019.06-SP1-1/parts/PCI/
+       option search = C:/synopsys/Hspice_P-2019.06-SP1-1/parts/LIN_TEC
+                         H/
+       option search = C:/synopsys/Hspice_P-2019.06-SP1-1/parts/PET/
+       option search = C:/synopsys/Hspice_P-2019.06-SP1-1/parts/DI0/
+       option search = C:/synopsys/Hspice_P-2019.06-SP1-1/parts/COMLINE
+                         /
+       option search = C:/synopsys/Hspice_P-2019.06-SP1-1/parts/BURR_BR
+                         M/
+       option search = C:/synopsys/Hspice_P-2019.06-SP1-1/parts/BJT/
+       option nomod
+       option post =     2.00
+       option probe
+       option runlvl =     6.00
+       option post =     2.00
+       option probe
+       option runlvl =     6.00
+       option post =     2.00
+       option probe
+       option runlvl =     6.00
+ init: end read circuit files, cpu clock= 1.36E+00 peak memory=      79 mb
+ init: begin check errors, cpu clock= 1.36E+00
+ init: end check errors, cpu clock= 1.36E+00 peak memory=      80 mb
+ init: begin setup matrix, pivot=     0 cpu clock= 1.36E+00
+       establish matrix -- done, cpu clock= 1.36E+00 peak memory=      80 mb
+       re-order matrix -- done, cpu clock= 1.36E+00 peak memory=      80 mb
+ init: end setup matrix, cpu clock= 1.36E+00 peak memory=      80 mb
+ sweep: temp temp1 begin, start=  1.00E+01 stop=  7.00E+01 #sweeps =   5
+ temperature: temperature=  1.00E+01
+ sweep: data            data1            begin, #sweeps =   5
+ data: data=beta_sweep      beta            =    1.00E+00
+ dcop: begin dcop, cpu clock= 1.37E+00
+ dcop: end dcop, cpu clock= 1.37E+00 peak memory=      80 mb tot_iter=       3
+ output: D:\UT.CE\Term-06\VLSI\CA\CA01\basic-gates\or\sim.mt10
+ sweep: tran tran1    begin, stop_t=  1.70E-09 #sweeps=**** cpu clock= 1.37E+00
+ tran: time= 1.7062E-10 tot_iter=      48 conv_iter=      19 cpu clock= 1.37E+00
+ tran: time= 3.4149E-10 tot_iter=     199 conv_iter=      72 cpu clock= 1.37E+00
+ tran: time= 5.1096E-10 tot_iter=     427 conv_iter=     155 cpu clock= 1.37E+00
+ tran: time= 6.8304E-10 tot_iter=     629 conv_iter=     231 cpu clock= 1.37E+00
+ tran: time= 8.6890E-10 tot_iter=     746 conv_iter=     276 cpu clock= 1.37E+00
+ tran: time= 1.0200E-09 tot_iter=     811 conv_iter=     299 cpu clock= 1.38E+00
+ tran: time= 1.1912E-09 tot_iter=     871 conv_iter=     321 cpu clock= 1.38E+00
+ tran: time= 1.3605E-09 tot_iter=    1108 conv_iter=     409 cpu clock= 1.38E+00
+ tran: time= 1.5409E-09 tot_iter=    1278 conv_iter=     470 cpu clock= 1.38E+00
+ tran: time= 1.7000E-09 tot_iter=    1489 conv_iter=     546 cpu clock= 1.38E+00
+ sweep: tran tran1    end, cpu clock= 1.38E+00 peak memory=      80 mb
+ data: data=beta_sweep      beta            =    2.00E+00
+ dcop: begin dcop, cpu clock= 1.38E+00
+ dcop: end dcop, cpu clock= 1.38E+00 peak memory=      80 mb tot_iter=       6
+ output: D:\UT.CE\Term-06\VLSI\CA\CA01\basic-gates\or\sim.mt10
+ sweep: tran tran2    begin, stop_t=  1.70E-09 #sweeps=**** cpu clock= 1.38E+00
+ tran: time= 1.7302E-10 tot_iter=      52 conv_iter=      21 cpu clock= 1.38E+00
+ tran: time= 3.4796E-10 tot_iter=     207 conv_iter=      75 cpu clock= 1.39E+00
+ tran: time= 5.1172E-10 tot_iter=     425 conv_iter=     153 cpu clock= 1.39E+00
+ tran: time= 6.8242E-10 tot_iter=     625 conv_iter=     228 cpu clock= 1.39E+00
+ tran: time= 8.5644E-10 tot_iter=     750 conv_iter=     276 cpu clock= 1.39E+00
+ tran: time= 1.0200E-09 tot_iter=     824 conv_iter=     302 cpu clock= 1.39E+00
+ tran: time= 1.2000E-09 tot_iter=     884 conv_iter=     324 cpu clock= 1.39E+00
+ tran: time= 1.3627E-09 tot_iter=    1130 conv_iter=     416 cpu clock= 1.39E+00
+ tran: time= 1.5355E-09 tot_iter=    1305 conv_iter=     481 cpu clock= 1.40E+00
+ tran: time= 1.7000E-09 tot_iter=    1515 conv_iter=     558 cpu clock= 1.40E+00
+ sweep: tran tran2    end, cpu clock= 1.40E+00 peak memory=      80 mb
+ data: data=beta_sweep      beta            =    3.00E+00
+ dcop: begin dcop, cpu clock= 1.40E+00
+ dcop: end dcop, cpu clock= 1.40E+00 peak memory=      80 mb tot_iter=       9
+ output: D:\UT.CE\Term-06\VLSI\CA\CA01\basic-gates\or\sim.mt10
+ sweep: tran tran3    begin, stop_t=  1.70E-09 #sweeps=**** cpu clock= 1.40E+00
+ tran: time= 1.7022E-10 tot_iter=      45 conv_iter=      18 cpu clock= 1.40E+00
+ tran: time= 3.5032E-10 tot_iter=     212 conv_iter=      80 cpu clock= 1.40E+00
+ tran: time= 5.1359E-10 tot_iter=     449 conv_iter=     164 cpu clock= 1.40E+00
+ tran: time= 6.8110E-10 tot_iter=     633 conv_iter=     232 cpu clock= 1.41E+00
+ tran: time= 8.6591E-10 tot_iter=     763 conv_iter=     281 cpu clock= 1.41E+00
+ tran: time= 1.0200E-09 tot_iter=     826 conv_iter=     303 cpu clock= 1.41E+00
+ tran: time= 1.2000E-09 tot_iter=     883 conv_iter=     325 cpu clock= 1.41E+00
+ tran: time= 1.3630E-09 tot_iter=    1126 conv_iter=     413 cpu clock= 1.41E+00
+ tran: time= 1.5335E-09 tot_iter=    1299 conv_iter=     474 cpu clock= 1.41E+00
+ tran: time= 1.7000E-09 tot_iter=    1510 conv_iter=     549 cpu clock= 1.41E+00
+ sweep: tran tran3    end, cpu clock= 1.41E+00 peak memory=      80 mb
+ data: data=beta_sweep      beta            =    4.00E+00
+ dcop: begin dcop, cpu clock= 1.41E+00
+ dcop: end dcop, cpu clock= 1.42E+00 peak memory=      80 mb tot_iter=      12
+ output: D:\UT.CE\Term-06\VLSI\CA\CA01\basic-gates\or\sim.mt10
+ sweep: tran tran4    begin, stop_t=  1.70E-09 #sweeps=**** cpu clock= 1.42E+00
+ tran: time= 1.7095E-10 tot_iter=      46 conv_iter=      18 cpu clock= 1.42E+00
+ tran: time= 3.4684E-10 tot_iter=     208 conv_iter=      78 cpu clock= 1.42E+00
+ tran: time= 5.1152E-10 tot_iter=     451 conv_iter=     165 cpu clock= 1.42E+00
+ tran: time= 6.8099E-10 tot_iter=     641 conv_iter=     236 cpu clock= 1.42E+00
+ tran: time= 8.6696E-10 tot_iter=     771 conv_iter=     287 cpu clock= 1.42E+00
+ tran: time= 1.0200E-09 tot_iter=     833 conv_iter=     309 cpu clock= 1.42E+00
+ tran: time= 1.2000E-09 tot_iter=     890 conv_iter=     331 cpu clock= 1.42E+00
+ tran: time= 1.3626E-09 tot_iter=    1164 conv_iter=     433 cpu clock= 1.43E+00
+ tran: time= 1.5434E-09 tot_iter=    1343 conv_iter=     498 cpu clock= 1.43E+00
+ tran: time= 1.7000E-09 tot_iter=    1564 conv_iter=     576 cpu clock= 1.43E+00
+ sweep: tran tran4    end, cpu clock= 1.43E+00 peak memory=      80 mb
+ data: data=beta_sweep      beta            =    5.00E+00
+ dcop: begin dcop, cpu clock= 1.43E+00
+ dcop: end dcop, cpu clock= 1.43E+00 peak memory=      80 mb tot_iter=      15
+ output: D:\UT.CE\Term-06\VLSI\CA\CA01\basic-gates\or\sim.mt10
+ sweep: tran tran5    begin, stop_t=  1.70E-09 #sweeps=**** cpu clock= 1.43E+00
+ tran: time= 1.7174E-10 tot_iter=      45 conv_iter=      18 cpu clock= 1.43E+00
+ tran: time= 3.4168E-10 tot_iter=     209 conv_iter=      80 cpu clock= 1.43E+00
+ tran: time= 5.1397E-10 tot_iter=     462 conv_iter=     173 cpu clock= 1.44E+00
+ tran: time= 6.8192E-10 tot_iter=     652 conv_iter=     243 cpu clock= 1.44E+00
+ tran: time= 8.5470E-10 tot_iter=     789 conv_iter=     297 cpu clock= 1.44E+00
+ tran: time= 1.0200E-09 tot_iter=     859 conv_iter=     322 cpu clock= 1.44E+00
+ tran: time= 1.2000E-09 tot_iter=     920 conv_iter=     345 cpu clock= 1.44E+00
+ tran: time= 1.3625E-09 tot_iter=    1176 conv_iter=     439 cpu clock= 1.44E+00
+ tran: time= 1.5326E-09 tot_iter=    1357 conv_iter=     505 cpu clock= 1.45E+00
+ tran: time= 1.7000E-09 tot_iter=    1584 conv_iter=     588 cpu clock= 1.45E+00
+ sweep: tran tran5    end, cpu clock= 1.45E+00 peak memory=      80 mb
+ sweep: data            data            1 end
+ temperature: temperature=  2.50E+01
+ sweep: data            data1            begin, #sweeps =   5
+ data: data=beta_sweep      beta            =    1.00E+00
+ dcop: begin dcop, cpu clock= 1.45E+00
+ dcop: end dcop, cpu clock= 1.45E+00 peak memory=      80 mb tot_iter=      18
+ output: D:\UT.CE\Term-06\VLSI\CA\CA01\basic-gates\or\sim.mt11
+ sweep: tran tran1    begin, stop_t=  1.70E-09 #sweeps=**** cpu clock= 1.45E+00
+ tran: time= 1.7081E-10 tot_iter=      47 conv_iter=      19 cpu clock= 1.45E+00
+ tran: time= 3.4271E-10 tot_iter=     199 conv_iter=      72 cpu clock= 1.45E+00
+ tran: time= 5.1498E-10 tot_iter=     412 conv_iter=     148 cpu clock= 1.45E+00
+ tran: time= 6.8344E-10 tot_iter=     607 conv_iter=     220 cpu clock= 1.46E+00
+ tran: time= 8.6487E-10 tot_iter=     721 conv_iter=     264 cpu clock= 1.46E+00
+ tran: time= 1.0200E-09 tot_iter=     787 conv_iter=     287 cpu clock= 1.46E+00
+ tran: time= 1.2000E-09 tot_iter=     849 conv_iter=     309 cpu clock= 1.46E+00
+ tran: time= 1.3610E-09 tot_iter=    1092 conv_iter=     397 cpu clock= 1.46E+00
+ tran: time= 1.5342E-09 tot_iter=    1266 conv_iter=     458 cpu clock= 1.46E+00
+ tran: time= 1.7000E-09 tot_iter=    1480 conv_iter=     534 cpu clock= 1.46E+00
+ sweep: tran tran1    end, cpu clock= 1.46E+00 peak memory=      80 mb
+ data: data=beta_sweep      beta            =    2.00E+00
+ dcop: begin dcop, cpu clock= 1.47E+00
+ dcop: end dcop, cpu clock= 1.47E+00 peak memory=      80 mb tot_iter=      21
+ output: D:\UT.CE\Term-06\VLSI\CA\CA01\basic-gates\or\sim.mt11
+ sweep: tran tran2    begin, stop_t=  1.70E-09 #sweeps=**** cpu clock= 1.47E+00
+ tran: time= 1.7292E-10 tot_iter=      47 conv_iter=      19 cpu clock= 1.47E+00
+ tran: time= 3.5209E-10 tot_iter=     210 conv_iter=      75 cpu clock= 1.47E+00
+ tran: time= 5.1465E-10 tot_iter=     432 conv_iter=     155 cpu clock= 1.47E+00
+ tran: time= 6.8137E-10 tot_iter=     616 conv_iter=     224 cpu clock= 1.47E+00
+ tran: time= 8.5624E-10 tot_iter=     738 conv_iter=     271 cpu clock= 1.47E+00
+ tran: time= 1.0200E-09 tot_iter=     809 conv_iter=     296 cpu clock= 1.47E+00
+ tran: time= 1.2000E-09 tot_iter=     868 conv_iter=     318 cpu clock= 1.48E+00
+ tran: time= 1.3618E-09 tot_iter=    1097 conv_iter=     401 cpu clock= 1.48E+00
+ tran: time= 1.5386E-09 tot_iter=    1280 conv_iter=     468 cpu clock= 1.48E+00
+ tran: time= 1.7000E-09 tot_iter=    1482 conv_iter=     541 cpu clock= 1.48E+00
+ sweep: tran tran2    end, cpu clock= 1.48E+00 peak memory=      80 mb
+ data: data=beta_sweep      beta            =    3.00E+00
+ dcop: begin dcop, cpu clock= 1.48E+00
+ dcop: end dcop, cpu clock= 1.48E+00 peak memory=      80 mb tot_iter=      24
+ output: D:\UT.CE\Term-06\VLSI\CA\CA01\basic-gates\or\sim.mt11
+ sweep: tran tran3    begin, stop_t=  1.70E-09 #sweeps=**** cpu clock= 1.48E+00
+ tran: time= 1.7057E-10 tot_iter=      45 conv_iter=      18 cpu clock= 1.48E+00
+ tran: time= 3.5160E-10 tot_iter=     197 conv_iter=      74 cpu clock= 1.48E+00
+ tran: time= 5.1626E-10 tot_iter=     415 conv_iter=     151 cpu clock= 1.49E+00
+ tran: time= 6.8359E-10 tot_iter=     609 conv_iter=     223 cpu clock= 1.49E+00
+ tran: time= 8.6031E-10 tot_iter=     737 conv_iter=     272 cpu clock= 1.49E+00
+ tran: time= 1.0200E-09 tot_iter=     804 conv_iter=     296 cpu clock= 1.49E+00
+ tran: time= 1.2000E-09 tot_iter=     863 conv_iter=     318 cpu clock= 1.49E+00
+ tran: time= 1.3606E-09 tot_iter=    1118 conv_iter=     411 cpu clock= 1.49E+00
+ tran: time= 1.5479E-09 tot_iter=    1304 conv_iter=     478 cpu clock= 1.50E+00
+ tran: time= 1.7000E-09 tot_iter=    1505 conv_iter=     550 cpu clock= 1.50E+00
+ sweep: tran tran3    end, cpu clock= 1.50E+00 peak memory=      80 mb
+ data: data=beta_sweep      beta            =    4.00E+00
+ dcop: begin dcop, cpu clock= 1.50E+00
+ dcop: end dcop, cpu clock= 1.50E+00 peak memory=      80 mb tot_iter=      27
+ output: D:\UT.CE\Term-06\VLSI\CA\CA01\basic-gates\or\sim.mt11
+ sweep: tran tran4    begin, stop_t=  1.70E-09 #sweeps=**** cpu clock= 1.50E+00
+ tran: time= 1.7132E-10 tot_iter=      45 conv_iter=      18 cpu clock= 1.50E+00
+ tran: time= 3.4957E-10 tot_iter=     214 conv_iter=      81 cpu clock= 1.50E+00
+ tran: time= 5.1421E-10 tot_iter=     453 conv_iter=     168 cpu clock= 1.50E+00
+ tran: time= 6.8019E-10 tot_iter=     639 conv_iter=     237 cpu clock= 1.50E+00
+ tran: time= 8.7119E-10 tot_iter=     772 conv_iter=     289 cpu clock= 1.50E+00
+ tran: time= 1.0200E-09 tot_iter=     836 conv_iter=     311 cpu clock= 1.51E+00
+ tran: time= 1.2000E-09 tot_iter=     892 conv_iter=     333 cpu clock= 1.51E+00
+ tran: time= 1.3628E-09 tot_iter=    1157 conv_iter=     431 cpu clock= 1.51E+00
+ tran: time= 1.5434E-09 tot_iter=    1346 conv_iter=     500 cpu clock= 1.51E+00
+ tran: time= 1.7000E-09 tot_iter=    1560 conv_iter=     575 cpu clock= 1.51E+00
+ sweep: tran tran4    end, cpu clock= 1.51E+00 peak memory=      80 mb
+ data: data=beta_sweep      beta            =    5.00E+00
+ dcop: begin dcop, cpu clock= 1.51E+00
+ dcop: end dcop, cpu clock= 1.51E+00 peak memory=      80 mb tot_iter=      30
+ output: D:\UT.CE\Term-06\VLSI\CA\CA01\basic-gates\or\sim.mt11
+ sweep: tran tran5    begin, stop_t=  1.70E-09 #sweeps=**** cpu clock= 1.51E+00
+ tran: time= 1.7213E-10 tot_iter=      45 conv_iter=      18 cpu clock= 1.51E+00
+ tran: time= 3.4596E-10 tot_iter=     191 conv_iter=      71 cpu clock= 1.52E+00
+ tran: time= 5.1250E-10 tot_iter=     416 conv_iter=     153 cpu clock= 1.52E+00
+ tran: time= 6.8166E-10 tot_iter=     594 conv_iter=     219 cpu clock= 1.52E+00
+ tran: time= 8.5473E-10 tot_iter=     716 conv_iter=     267 cpu clock= 1.52E+00
+ tran: time= 1.0200E-09 tot_iter=     785 conv_iter=     291 cpu clock= 1.52E+00
+ tran: time= 1.2000E-09 tot_iter=     844 conv_iter=     313 cpu clock= 1.52E+00
+ tran: time= 1.3628E-09 tot_iter=    1117 conv_iter=     413 cpu clock= 1.52E+00
+ tran: time= 1.5343E-09 tot_iter=    1297 conv_iter=     479 cpu clock= 1.53E+00
+ tran: time= 1.7000E-09 tot_iter=    1503 conv_iter=     552 cpu clock= 1.53E+00
+ sweep: tran tran5    end, cpu clock= 1.53E+00 peak memory=      80 mb
+ sweep: data            data            1 end
+ temperature: temperature=  4.00E+01
+ sweep: data            data1            begin, #sweeps =   5
+ data: data=beta_sweep      beta            =    1.00E+00
+ dcop: begin dcop, cpu clock= 1.53E+00
+ dcop: end dcop, cpu clock= 1.53E+00 peak memory=      80 mb tot_iter=      33
+ output: D:\UT.CE\Term-06\VLSI\CA\CA01\basic-gates\or\sim.mt12
+ sweep: tran tran1    begin, stop_t=  1.70E-09 #sweeps=**** cpu clock= 1.53E+00
+ tran: time= 1.7102E-10 tot_iter=      47 conv_iter=      19 cpu clock= 1.53E+00
+ tran: time= 3.4223E-10 tot_iter=     192 conv_iter=      70 cpu clock= 1.53E+00
+ tran: time= 5.1042E-10 tot_iter=     392 conv_iter=     141 cpu clock= 1.53E+00
+ tran: time= 6.8270E-10 tot_iter=     600 conv_iter=     220 cpu clock= 1.54E+00
+ tran: time= 8.7200E-10 tot_iter=     715 conv_iter=     265 cpu clock= 1.54E+00
+ tran: time= 1.0200E-09 tot_iter=     780 conv_iter=     288 cpu clock= 1.54E+00
+ tran: time= 1.2000E-09 tot_iter=     842 conv_iter=     310 cpu clock= 1.54E+00
+ tran: time= 1.3608E-09 tot_iter=    1069 conv_iter=     393 cpu clock= 1.54E+00
+ tran: time= 1.5355E-09 tot_iter=    1261 conv_iter=     461 cpu clock= 1.54E+00
+ tran: time= 1.7000E-09 tot_iter=    1472 conv_iter=     536 cpu clock= 1.54E+00
+ sweep: tran tran1    end, cpu clock= 1.54E+00 peak memory=      80 mb
+ data: data=beta_sweep      beta            =    2.00E+00
+ dcop: begin dcop, cpu clock= 1.55E+00
+ dcop: end dcop, cpu clock= 1.55E+00 peak memory=      80 mb tot_iter=      36
+ output: D:\UT.CE\Term-06\VLSI\CA\CA01\basic-gates\or\sim.mt12
+ sweep: tran tran2    begin, stop_t=  1.70E-09 #sweeps=**** cpu clock= 1.55E+00
+ tran: time= 1.7316E-10 tot_iter=      47 conv_iter=      19 cpu clock= 1.55E+00
+ tran: time= 3.4653E-10 tot_iter=     193 conv_iter=      71 cpu clock= 1.55E+00
+ tran: time= 5.1086E-10 tot_iter=     424 conv_iter=     155 cpu clock= 1.55E+00
+ tran: time= 6.8181E-10 tot_iter=     624 conv_iter=     230 cpu clock= 1.55E+00
+ tran: time= 8.6497E-10 tot_iter=     742 conv_iter=     277 cpu clock= 1.55E+00
+ tran: time= 1.0200E-09 tot_iter=     817 conv_iter=     304 cpu clock= 1.55E+00
+ tran: time= 1.2000E-09 tot_iter=     878 conv_iter=     326 cpu clock= 1.55E+00
+ tran: time= 1.3615E-09 tot_iter=    1116 conv_iter=     413 cpu clock= 1.56E+00
+ tran: time= 1.5332E-09 tot_iter=    1307 conv_iter=     483 cpu clock= 1.56E+00
+ tran: time= 1.7000E-09 tot_iter=    1503 conv_iter=     553 cpu clock= 1.56E+00
+ sweep: tran tran2    end, cpu clock= 1.56E+00 peak memory=      80 mb
+ data: data=beta_sweep      beta            =    3.00E+00
+ dcop: begin dcop, cpu clock= 1.56E+00
+ dcop: end dcop, cpu clock= 1.56E+00 peak memory=      80 mb tot_iter=      39
+ output: D:\UT.CE\Term-06\VLSI\CA\CA01\basic-gates\or\sim.mt12
+ sweep: tran tran3    begin, stop_t=  1.70E-09 #sweeps=**** cpu clock= 1.56E+00
+ tran: time= 1.7093E-10 tot_iter=      45 conv_iter=      18 cpu clock= 1.56E+00
+ tran: time= 3.5194E-10 tot_iter=     196 conv_iter=      73 cpu clock= 1.56E+00
+ tran: time= 5.1401E-10 tot_iter=     424 conv_iter=     154 cpu clock= 1.57E+00
+ tran: time= 6.8147E-10 tot_iter=     619 conv_iter=     229 cpu clock= 1.57E+00
+ tran: time= 8.5941E-10 tot_iter=     750 conv_iter=     280 cpu clock= 1.57E+00
+ tran: time= 1.0200E-09 tot_iter=     819 conv_iter=     305 cpu clock= 1.57E+00
+ tran: time= 1.2000E-09 tot_iter=     879 conv_iter=     327 cpu clock= 1.57E+00
+ tran: time= 1.3610E-09 tot_iter=    1129 conv_iter=     419 cpu clock= 1.57E+00
+ tran: time= 1.5381E-09 tot_iter=    1312 conv_iter=     485 cpu clock= 1.57E+00
+ tran: time= 1.7000E-09 tot_iter=    1525 conv_iter=     562 cpu clock= 1.58E+00
+ sweep: tran tran3    end, cpu clock= 1.58E+00 peak memory=      80 mb
+ data: data=beta_sweep      beta            =    4.00E+00
+ dcop: begin dcop, cpu clock= 1.58E+00
+ dcop: end dcop, cpu clock= 1.58E+00 peak memory=      80 mb tot_iter=      42
+ output: D:\UT.CE\Term-06\VLSI\CA\CA01\basic-gates\or\sim.mt12
+ sweep: tran tran4    begin, stop_t=  1.70E-09 #sweeps=**** cpu clock= 1.58E+00
+ tran: time= 1.7170E-10 tot_iter=      45 conv_iter=      18 cpu clock= 1.58E+00
+ tran: time= 3.4574E-10 tot_iter=     200 conv_iter=      75 cpu clock= 1.58E+00
+ tran: time= 5.1029E-10 tot_iter=     426 conv_iter=     158 cpu clock= 1.58E+00
+ tran: time= 6.8171E-10 tot_iter=     611 conv_iter=     228 cpu clock= 1.58E+00
+ tran: time= 8.6799E-10 tot_iter=     745 conv_iter=     280 cpu clock= 1.58E+00
+ tran: time= 1.0200E-09 tot_iter=     806 conv_iter=     301 cpu clock= 1.59E+00
+ tran: time= 1.2000E-09 tot_iter=     865 conv_iter=     323 cpu clock= 1.59E+00
+ tran: time= 1.3602E-09 tot_iter=    1124 conv_iter=     418 cpu clock= 1.59E+00
+ tran: time= 1.5326E-09 tot_iter=    1307 conv_iter=     484 cpu clock= 1.59E+00
+ tran: time= 1.7000E-09 tot_iter=    1535 conv_iter=     565 cpu clock= 1.59E+00
+ sweep: tran tran4    end, cpu clock= 1.59E+00 peak memory=      80 mb
+ data: data=beta_sweep      beta            =    5.00E+00
+ dcop: begin dcop, cpu clock= 1.59E+00
+ dcop: end dcop, cpu clock= 1.59E+00 peak memory=      80 mb tot_iter=      45
+ output: D:\UT.CE\Term-06\VLSI\CA\CA01\basic-gates\or\sim.mt12
+ sweep: tran tran5    begin, stop_t=  1.70E-09 #sweeps=**** cpu clock= 1.59E+00
+ tran: time= 1.7256E-10 tot_iter=      45 conv_iter=      18 cpu clock= 1.59E+00
+ tran: time= 3.4323E-10 tot_iter=     185 conv_iter=      69 cpu clock= 1.60E+00
+ tran: time= 5.1585E-10 tot_iter=     433 conv_iter=     161 cpu clock= 1.60E+00
+ tran: time= 6.8032E-10 tot_iter=     605 conv_iter=     226 cpu clock= 1.60E+00
+ tran: time= 8.5260E-10 tot_iter=     751 conv_iter=     282 cpu clock= 1.60E+00
+ tran: time= 1.0200E-09 tot_iter=     825 conv_iter=     308 cpu clock= 1.60E+00
+ tran: time= 1.2000E-09 tot_iter=     884 conv_iter=     330 cpu clock= 1.60E+00
+ tran: time= 1.3632E-09 tot_iter=    1124 conv_iter=     417 cpu clock= 1.60E+00
+ tran: time= 1.5376E-09 tot_iter=    1303 conv_iter=     482 cpu clock= 1.61E+00
+ tran: time= 1.7000E-09 tot_iter=    1513 conv_iter=     556 cpu clock= 1.61E+00
+ sweep: tran tran5    end, cpu clock= 1.61E+00 peak memory=      80 mb
+ sweep: data            data            1 end
+ temperature: temperature=  5.50E+01
+ sweep: data            data1            begin, #sweeps =   5
+ data: data=beta_sweep      beta            =    1.00E+00
+ dcop: begin dcop, cpu clock= 1.61E+00
+ dcop: end dcop, cpu clock= 1.61E+00 peak memory=      80 mb tot_iter=      48
+ output: D:\UT.CE\Term-06\VLSI\CA\CA01\basic-gates\or\sim.mt13
+ sweep: tran tran1    begin, stop_t=  1.70E-09 #sweeps=**** cpu clock= 1.61E+00
+ tran: time= 1.7124E-10 tot_iter=      47 conv_iter=      19 cpu clock= 1.61E+00
+ tran: time= 3.5689E-10 tot_iter=     194 conv_iter=      70 cpu clock= 1.61E+00
+ tran: time= 5.1128E-10 tot_iter=     405 conv_iter=     146 cpu clock= 1.62E+00
+ tran: time= 6.8181E-10 tot_iter=     601 conv_iter=     218 cpu clock= 1.62E+00
+ tran: time= 8.5815E-10 tot_iter=     719 conv_iter=     264 cpu clock= 1.62E+00
+ tran: time= 1.0200E-09 tot_iter=     786 conv_iter=     288 cpu clock= 1.62E+00
+ tran: time= 1.2000E-09 tot_iter=     850 conv_iter=     311 cpu clock= 1.62E+00
+ tran: time= 1.3616E-09 tot_iter=    1087 conv_iter=     397 cpu clock= 1.62E+00
+ tran: time= 1.5453E-09 tot_iter=    1267 conv_iter=     460 cpu clock= 1.62E+00
+ tran: time= 1.7000E-09 tot_iter=    1456 conv_iter=     530 cpu clock= 1.63E+00
+ sweep: tran tran1    end, cpu clock= 1.63E+00 peak memory=      80 mb
+ data: data=beta_sweep      beta            =    2.00E+00
+ dcop: begin dcop, cpu clock= 1.63E+00
+ dcop: end dcop, cpu clock= 1.63E+00 peak memory=      80 mb tot_iter=      51
+ output: D:\UT.CE\Term-06\VLSI\CA\CA01\basic-gates\or\sim.mt13
+ sweep: tran tran2    begin, stop_t=  1.70E-09 #sweeps=**** cpu clock= 1.63E+00
+ tran: time= 1.7343E-10 tot_iter=      47 conv_iter=      19 cpu clock= 1.63E+00
+ tran: time= 3.5370E-10 tot_iter=     193 conv_iter=      72 cpu clock= 1.63E+00
+ tran: time= 5.1227E-10 tot_iter=     397 conv_iter=     146 cpu clock= 1.63E+00
+ tran: time= 6.8014E-10 tot_iter=     592 conv_iter=     218 cpu clock= 1.63E+00
+ tran: time= 8.5138E-10 tot_iter=     716 conv_iter=     267 cpu clock= 1.64E+00
+ tran: time= 1.0200E-09 tot_iter=     782 conv_iter=     290 cpu clock= 1.64E+00
+ tran: time= 1.2000E-09 tot_iter=     843 conv_iter=     312 cpu clock= 1.64E+00
+ tran: time= 1.3624E-09 tot_iter=    1071 conv_iter=     395 cpu clock= 1.64E+00
+ tran: time= 1.5414E-09 tot_iter=    1245 conv_iter=     456 cpu clock= 1.64E+00
+ tran: time= 1.7000E-09 tot_iter=    1451 conv_iter=     528 cpu clock= 1.64E+00
+ sweep: tran tran2    end, cpu clock= 1.64E+00 peak memory=      80 mb
+ data: data=beta_sweep      beta            =    3.00E+00
+ dcop: begin dcop, cpu clock= 1.64E+00
+ dcop: end dcop, cpu clock= 1.64E+00 peak memory=      80 mb tot_iter=      54
+ output: D:\UT.CE\Term-06\VLSI\CA\CA01\basic-gates\or\sim.mt13
+ sweep: tran tran3    begin, stop_t=  1.70E-09 #sweeps=**** cpu clock= 1.64E+00
+ tran: time= 1.7129E-10 tot_iter=      45 conv_iter=      18 cpu clock= 1.64E+00
+ tran: time= 3.4537E-10 tot_iter=     195 conv_iter=      73 cpu clock= 1.65E+00
+ tran: time= 5.1351E-10 tot_iter=     429 conv_iter=     158 cpu clock= 1.65E+00
+ tran: time= 6.8323E-10 tot_iter=     635 conv_iter=     235 cpu clock= 1.65E+00
+ tran: time= 8.5896E-10 tot_iter=     765 conv_iter=     286 cpu clock= 1.65E+00
+ tran: time= 1.0200E-09 tot_iter=     833 conv_iter=     311 cpu clock= 1.65E+00
+ tran: time= 1.2000E-09 tot_iter=     890 conv_iter=     333 cpu clock= 1.65E+00
+ tran: time= 1.3618E-09 tot_iter=    1132 conv_iter=     424 cpu clock= 1.66E+00
+ tran: time= 1.5396E-09 tot_iter=    1314 conv_iter=     489 cpu clock= 1.66E+00
+ tran: time= 1.7000E-09 tot_iter=    1525 conv_iter=     565 cpu clock= 1.66E+00
+ sweep: tran tran3    end, cpu clock= 1.66E+00 peak memory=      80 mb
+ data: data=beta_sweep      beta            =    4.00E+00
+ dcop: begin dcop, cpu clock= 1.66E+00
+ dcop: end dcop, cpu clock= 1.66E+00 peak memory=      80 mb tot_iter=      57
+ output: D:\UT.CE\Term-06\VLSI\CA\CA01\basic-gates\or\sim.mt13
+ sweep: tran tran4    begin, stop_t=  1.70E-09 #sweeps=**** cpu clock= 1.66E+00
+ tran: time= 1.7210E-10 tot_iter=      45 conv_iter=      18 cpu clock= 1.66E+00
+ tran: time= 3.4075E-10 tot_iter=     214 conv_iter=      82 cpu clock= 1.66E+00
+ tran: time= 5.1229E-10 tot_iter=     443 conv_iter=     165 cpu clock= 1.66E+00
+ tran: time= 6.8239E-10 tot_iter=     641 conv_iter=     239 cpu clock= 1.67E+00
+ tran: time= 8.6947E-10 tot_iter=     774 conv_iter=     291 cpu clock= 1.67E+00
+ tran: time= 1.0200E-09 tot_iter=     844 conv_iter=     316 cpu clock= 1.67E+00
+ tran: time= 1.2000E-09 tot_iter=     904 conv_iter=     338 cpu clock= 1.67E+00
+ tran: time= 1.3602E-09 tot_iter=    1157 conv_iter=     430 cpu clock= 1.67E+00
+ tran: time= 1.5434E-09 tot_iter=    1341 conv_iter=     497 cpu clock= 1.67E+00
+ tran: time= 1.7000E-09 tot_iter=    1579 conv_iter=     583 cpu clock= 1.68E+00
+ sweep: tran tran4    end, cpu clock= 1.68E+00 peak memory=      80 mb
+ data: data=beta_sweep      beta            =    5.00E+00
+ dcop: begin dcop, cpu clock= 1.68E+00
+ dcop: end dcop, cpu clock= 1.68E+00 peak memory=      80 mb tot_iter=      60
+ output: D:\UT.CE\Term-06\VLSI\CA\CA01\basic-gates\or\sim.mt13
+ sweep: tran tran5    begin, stop_t=  1.70E-09 #sweeps=**** cpu clock= 1.68E+00
+ tran: time= 1.7298E-10 tot_iter=      45 conv_iter=      18 cpu clock= 1.68E+00
+ tran: time= 3.4318E-10 tot_iter=     191 conv_iter=      70 cpu clock= 1.68E+00
+ tran: time= 5.1053E-10 tot_iter=     412 conv_iter=     150 cpu clock= 1.68E+00
+ tran: time= 6.8220E-10 tot_iter=     590 conv_iter=     218 cpu clock= 1.68E+00
+ tran: time= 8.6155E-10 tot_iter=     726 conv_iter=     270 cpu clock= 1.68E+00
+ tran: time= 1.0200E-09 tot_iter=     809 conv_iter=     300 cpu clock= 1.68E+00
+ tran: time= 1.1954E-09 tot_iter=     866 conv_iter=     322 cpu clock= 1.68E+00
+ tran: time= 1.3614E-09 tot_iter=    1113 conv_iter=     413 cpu clock= 1.69E+00
+ tran: time= 1.5401E-09 tot_iter=    1296 conv_iter=     480 cpu clock= 1.69E+00
+ tran: time= 1.7000E-09 tot_iter=    1496 conv_iter=     550 cpu clock= 1.69E+00
+ sweep: tran tran5    end, cpu clock= 1.69E+00 peak memory=      80 mb
+ sweep: data            data            1 end
+ temperature: temperature=  7.00E+01
+ sweep: data            data1            begin, #sweeps =   5
+ data: data=beta_sweep      beta            =    1.00E+00
+ dcop: begin dcop, cpu clock= 1.69E+00
+ dcop: end dcop, cpu clock= 1.69E+00 peak memory=      80 mb tot_iter=      63
+ output: D:\UT.CE\Term-06\VLSI\CA\CA01\basic-gates\or\sim.mt14
+ sweep: tran tran1    begin, stop_t=  1.70E-09 #sweeps=**** cpu clock= 1.69E+00
+ tran: time= 1.7146E-10 tot_iter=      47 conv_iter=      19 cpu clock= 1.69E+00
+ tran: time= 3.5610E-10 tot_iter=     190 conv_iter=      69 cpu clock= 1.69E+00
+ tran: time= 5.1529E-10 tot_iter=     400 conv_iter=     142 cpu clock= 1.70E+00
+ tran: time= 6.8272E-10 tot_iter=     588 conv_iter=     211 cpu clock= 1.70E+00
+ tran: time= 8.6897E-10 tot_iter=     705 conv_iter=     256 cpu clock= 1.70E+00
+ tran: time= 1.0200E-09 tot_iter=     775 conv_iter=     282 cpu clock= 1.70E+00
+ tran: time= 1.2000E-09 tot_iter=     836 conv_iter=     305 cpu clock= 1.70E+00
+ tran: time= 1.3614E-09 tot_iter=    1079 conv_iter=     392 cpu clock= 1.70E+00
+ tran: time= 1.5459E-09 tot_iter=    1256 conv_iter=     455 cpu clock= 1.71E+00
+ tran: time= 1.7000E-09 tot_iter=    1461 conv_iter=     528 cpu clock= 1.71E+00
+ sweep: tran tran1    end, cpu clock= 1.71E+00 peak memory=      80 mb
+ data: data=beta_sweep      beta            =    2.00E+00
+ dcop: begin dcop, cpu clock= 1.71E+00
+ dcop: end dcop, cpu clock= 1.71E+00 peak memory=      80 mb tot_iter=      66
+ output: D:\UT.CE\Term-06\VLSI\CA\CA01\basic-gates\or\sim.mt14
+ sweep: tran tran2    begin, stop_t=  1.70E-09 #sweeps=**** cpu clock= 1.71E+00
+ tran: time= 1.7008E-10 tot_iter=      44 conv_iter=      18 cpu clock= 1.71E+00
+ tran: time= 3.5083E-10 tot_iter=     210 conv_iter=      76 cpu clock= 1.71E+00
+ tran: time= 5.1526E-10 tot_iter=     413 conv_iter=     149 cpu clock= 1.71E+00
+ tran: time= 6.8385E-10 tot_iter=     629 conv_iter=     231 cpu clock= 1.72E+00
+ tran: time= 8.5102E-10 tot_iter=     749 conv_iter=     278 cpu clock= 1.72E+00
+ tran: time= 1.0200E-09 tot_iter=     816 conv_iter=     302 cpu clock= 1.72E+00
+ tran: time= 1.2000E-09 tot_iter=     879 conv_iter=     324 cpu clock= 1.72E+00
+ tran: time= 1.3629E-09 tot_iter=    1131 conv_iter=     415 cpu clock= 1.72E+00
+ tran: time= 1.5402E-09 tot_iter=    1302 conv_iter=     477 cpu clock= 1.72E+00
+ tran: time= 1.7000E-09 tot_iter=    1505 conv_iter=     548 cpu clock= 1.72E+00
+ sweep: tran tran2    end, cpu clock= 1.72E+00 peak memory=      80 mb
+ data: data=beta_sweep      beta            =    3.00E+00
+ dcop: begin dcop, cpu clock= 1.73E+00
+ dcop: end dcop, cpu clock= 1.73E+00 peak memory=      80 mb tot_iter=      69
+ output: D:\UT.CE\Term-06\VLSI\CA\CA01\basic-gates\or\sim.mt14
+ sweep: tran tran3    begin, stop_t=  1.70E-09 #sweeps=**** cpu clock= 1.73E+00
+ tran: time= 1.7147E-10 tot_iter=      45 conv_iter=      18 cpu clock= 1.73E+00
+ tran: time= 3.4393E-10 tot_iter=     206 conv_iter=      77 cpu clock= 1.73E+00
+ tran: time= 5.1622E-10 tot_iter=     455 conv_iter=     168 cpu clock= 1.73E+00
+ tran: time= 6.8114E-10 tot_iter=     639 conv_iter=     237 cpu clock= 1.73E+00
+ tran: time= 8.6983E-10 tot_iter=     771 conv_iter=     290 cpu clock= 1.73E+00
+ tran: time= 1.0200E-09 tot_iter=     837 conv_iter=     313 cpu clock= 1.73E+00
+ tran: time= 1.1942E-09 tot_iter=     896 conv_iter=     335 cpu clock= 1.74E+00
+ tran: time= 1.3631E-09 tot_iter=    1134 conv_iter=     424 cpu clock= 1.74E+00
+ tran: time= 1.5349E-09 tot_iter=    1332 conv_iter=     495 cpu clock= 1.74E+00
+ tran: time= 1.7000E-09 tot_iter=    1544 conv_iter=     570 cpu clock= 1.74E+00
+ sweep: tran tran3    end, cpu clock= 1.74E+00 peak memory=      80 mb
+ data: data=beta_sweep      beta            =    4.00E+00
+ dcop: begin dcop, cpu clock= 1.74E+00
+ dcop: end dcop, cpu clock= 1.74E+00 peak memory=      80 mb tot_iter=      72
+ output: D:\UT.CE\Term-06\VLSI\CA\CA01\basic-gates\or\sim.mt14
+ sweep: tran tran4    begin, stop_t=  1.70E-09 #sweeps=**** cpu clock= 1.74E+00
+ tran: time= 1.7250E-10 tot_iter=      45 conv_iter=      18 cpu clock= 1.74E+00
+ tran: time= 3.4432E-10 tot_iter=     198 conv_iter=      73 cpu clock= 1.75E+00
+ tran: time= 5.1508E-10 tot_iter=     440 conv_iter=     161 cpu clock= 1.75E+00
+ tran: time= 6.8067E-10 tot_iter=     624 conv_iter=     230 cpu clock= 1.75E+00
+ tran: time= 8.5975E-10 tot_iter=     758 conv_iter=     283 cpu clock= 1.75E+00
+ tran: time= 1.0200E-09 tot_iter=     828 conv_iter=     309 cpu clock= 1.75E+00
+ tran: time= 1.1901E-09 tot_iter=     887 conv_iter=     331 cpu clock= 1.75E+00
+ tran: time= 1.3621E-09 tot_iter=    1138 conv_iter=     422 cpu clock= 1.75E+00
+ tran: time= 1.5423E-09 tot_iter=    1325 conv_iter=     490 cpu clock= 1.76E+00
+ tran: time= 1.7000E-09 tot_iter=    1533 conv_iter=     563 cpu clock= 1.76E+00
+ sweep: tran tran4    end, cpu clock= 1.76E+00 peak memory=      80 mb
+ data: data=beta_sweep      beta            =    5.00E+00
+ dcop: begin dcop, cpu clock= 1.76E+00
+ dcop: end dcop, cpu clock= 1.76E+00 peak memory=      80 mb tot_iter=      75
+ output: D:\UT.CE\Term-06\VLSI\CA\CA01\basic-gates\or\sim.mt14
+ sweep: tran tran5    begin, stop_t=  1.70E-09 #sweeps=**** cpu clock= 1.76E+00
+ tran: time= 1.7326E-10 tot_iter=      45 conv_iter=      18 cpu clock= 1.76E+00
+ tran: time= 3.4505E-10 tot_iter=     196 conv_iter=      74 cpu clock= 1.76E+00
+ tran: time= 5.1293E-10 tot_iter=     440 conv_iter=     163 cpu clock= 1.77E+00
+ tran: time= 6.8052E-10 tot_iter=     609 conv_iter=     227 cpu clock= 1.77E+00
+ tran: time= 8.6598E-10 tot_iter=     754 conv_iter=     283 cpu clock= 1.77E+00
+ tran: time= 1.0200E-09 tot_iter=     836 conv_iter=     313 cpu clock= 1.77E+00
+ tran: time= 1.2000E-09 tot_iter=     896 conv_iter=     336 cpu clock= 1.77E+00
+ tran: time= 1.3604E-09 tot_iter=    1147 conv_iter=     428 cpu clock= 1.77E+00
+ tran: time= 1.5361E-09 tot_iter=    1321 conv_iter=     493 cpu clock= 1.78E+00
+ tran: time= 1.7000E-09 tot_iter=    1520 conv_iter=     566 cpu clock= 1.78E+00
+ sweep: tran tran5    end, cpu clock= 1.78E+00 peak memory=      80 mb
+ sweep: data            data            1 end
+ sweep: temp temp1 end
+>info:         ***** hspice job concluded
+ init: begin read circuit files, cpu clock= 1.82E+00
+       option search = C:/synopsys/Hspice_P-2019.06-SP1-1/parts/behave/
+       option search = C:/synopsys/Hspice_P-2019.06-SP1-1/parts/AD/
+       option search = C:/synopsys/Hspice_P-2019.06-SP1-1/parts/XILINX/
+       option search = C:/synopsys/Hspice_P-2019.06-SP1-1/parts/TLINE/
+       option search = C:/synopsys/Hspice_P-2019.06-SP1-1/parts/TI/
+       option search = C:/synopsys/Hspice_P-2019.06-SP1-1/parts/SIGNET/
+       option search = C:/synopsys/Hspice_P-2019.06-SP1-1/parts/PCI/
+       option search = C:/synopsys/Hspice_P-2019.06-SP1-1/parts/LIN_TEC
+                         H/
+       option search = C:/synopsys/Hspice_P-2019.06-SP1-1/parts/PET/
+       option search = C:/synopsys/Hspice_P-2019.06-SP1-1/parts/DI0/
+       option search = C:/synopsys/Hspice_P-2019.06-SP1-1/parts/COMLINE
+                         /
+       option search = C:/synopsys/Hspice_P-2019.06-SP1-1/parts/BURR_BR
+                         M/
+       option search = C:/synopsys/Hspice_P-2019.06-SP1-1/parts/BJT/
+       option nomod
+       option post =     2.00
+       option probe
+       option runlvl =     6.00
+       option post =     2.00
+       option probe
+       option runlvl =     6.00
+       option post =     2.00
+       option probe
+       option runlvl =     6.00
+       option post =     2.00
+       option probe
+       option runlvl =     6.00
+ init: end read circuit files, cpu clock= 1.83E+00 peak memory=      79 mb
+ init: begin check errors, cpu clock= 1.83E+00
+ init: end check errors, cpu clock= 1.84E+00 peak memory=      80 mb
+ init: begin setup matrix, pivot=     0 cpu clock= 1.84E+00
+       establish matrix -- done, cpu clock= 1.84E+00 peak memory=      80 mb
+       re-order matrix -- done, cpu clock= 1.84E+00 peak memory=      80 mb
+ init: end setup matrix, cpu clock= 1.84E+00 peak memory=      80 mb
+ sweep: temp temp1 begin, start=  1.00E+01 stop=  7.00E+01 #sweeps =   5
+ temperature: temperature=  1.00E+01
+ sweep: data            data1            begin, #sweeps =   5
+ data: data=beta_sweep      beta            =    1.00E+00
+ dcop: begin dcop, cpu clock= 1.84E+00
+ dcop: end dcop, cpu clock= 1.84E+00 peak memory=      80 mb tot_iter=       3
+ output: D:\UT.CE\Term-06\VLSI\CA\CA01\basic-gates\or\sim.mt15
+ sweep: tran tran1    begin, stop_t=  1.70E-09 #sweeps=**** cpu clock= 1.84E+00
+ tran: time= 1.7173E-10 tot_iter=      47 conv_iter=      19 cpu clock= 1.84E+00
+ tran: time= 3.5557E-10 tot_iter=     204 conv_iter=      75 cpu clock= 1.84E+00
+ tran: time= 5.1286E-10 tot_iter=     424 conv_iter=     153 cpu clock= 1.85E+00
+ tran: time= 6.8330E-10 tot_iter=     626 conv_iter=     232 cpu clock= 1.85E+00
+ tran: time= 8.6410E-10 tot_iter=     753 conv_iter=     281 cpu clock= 1.86E+00
+ tran: time= 1.0200E-09 tot_iter=     819 conv_iter=     304 cpu clock= 1.86E+00
+ tran: time= 1.2000E-09 tot_iter=     880 conv_iter=     326 cpu clock= 1.86E+00
+ tran: time= 1.3619E-09 tot_iter=    1113 conv_iter=     411 cpu clock= 1.86E+00
+ tran: time= 1.5518E-09 tot_iter=    1302 conv_iter=     479 cpu clock= 1.87E+00
+ tran: time= 1.7000E-09 tot_iter=    1509 conv_iter=     553 cpu clock= 1.87E+00
+ sweep: tran tran1    end, cpu clock= 1.87E+00 peak memory=      80 mb
+ data: data=beta_sweep      beta            =    2.00E+00
+ dcop: begin dcop, cpu clock= 1.87E+00
+ dcop: end dcop, cpu clock= 1.87E+00 peak memory=      80 mb tot_iter=       6
+ output: D:\UT.CE\Term-06\VLSI\CA\CA01\basic-gates\or\sim.mt15
+ sweep: tran tran2    begin, stop_t=  1.70E-09 #sweeps=**** cpu clock= 1.87E+00
+ tran: time= 1.7035E-10 tot_iter=      43 conv_iter=      18 cpu clock= 1.87E+00
+ tran: time= 3.4418E-10 tot_iter=     200 conv_iter=      75 cpu clock= 1.88E+00
+ tran: time= 5.1223E-10 tot_iter=     396 conv_iter=     143 cpu clock= 1.88E+00
+ tran: time= 6.8116E-10 tot_iter=     591 conv_iter=     218 cpu clock= 1.88E+00
+ tran: time= 8.5474E-10 tot_iter=     719 conv_iter=     267 cpu clock= 1.88E+00
+ tran: time= 1.0200E-09 tot_iter=     787 conv_iter=     291 cpu clock= 1.88E+00
+ tran: time= 1.1910E-09 tot_iter=     846 conv_iter=     312 cpu clock= 1.89E+00
+ tran: time= 1.3639E-09 tot_iter=    1098 conv_iter=     407 cpu clock= 1.89E+00
+ tran: time= 1.5319E-09 tot_iter=    1277 conv_iter=     472 cpu clock= 1.89E+00
+ tran: time= 1.7000E-09 tot_iter=    1493 conv_iter=     548 cpu clock= 1.89E+00
+ sweep: tran tran2    end, cpu clock= 1.89E+00 peak memory=      80 mb
+ data: data=beta_sweep      beta            =    3.00E+00
+ dcop: begin dcop, cpu clock= 1.89E+00
+ dcop: end dcop, cpu clock= 1.89E+00 peak memory=      80 mb tot_iter=       9
+ output: D:\UT.CE\Term-06\VLSI\CA\CA01\basic-gates\or\sim.mt15
+ sweep: tran tran3    begin, stop_t=  1.70E-09 #sweeps=**** cpu clock= 1.89E+00
+ tran: time= 1.7098E-10 tot_iter=      43 conv_iter=      18 cpu clock= 1.89E+00
+ tran: time= 3.4949E-10 tot_iter=     214 conv_iter=      82 cpu clock= 1.89E+00
+ tran: time= 5.1504E-10 tot_iter=     453 conv_iter=     168 cpu clock= 1.90E+00
+ tran: time= 6.8099E-10 tot_iter=     644 conv_iter=     241 cpu clock= 1.90E+00
+ tran: time= 8.6354E-10 tot_iter=     770 conv_iter=     290 cpu clock= 1.90E+00
+ tran: time= 1.0200E-09 tot_iter=     830 conv_iter=     311 cpu clock= 1.90E+00
+ tran: time= 1.2000E-09 tot_iter=     888 conv_iter=     332 cpu clock= 1.90E+00
+ tran: time= 1.3616E-09 tot_iter=    1140 conv_iter=     426 cpu clock= 1.90E+00
+ tran: time= 1.5399E-09 tot_iter=    1326 conv_iter=     494 cpu clock= 1.91E+00
+ tran: time= 1.7000E-09 tot_iter=    1514 conv_iter=     563 cpu clock= 1.91E+00
+ sweep: tran tran3    end, cpu clock= 1.91E+00 peak memory=      80 mb
+ data: data=beta_sweep      beta            =    4.00E+00
+ dcop: begin dcop, cpu clock= 1.91E+00
+ dcop: end dcop, cpu clock= 1.91E+00 peak memory=      80 mb tot_iter=      12
+ output: D:\UT.CE\Term-06\VLSI\CA\CA01\basic-gates\or\sim.mt15
+ sweep: tran tran4    begin, stop_t=  1.70E-09 #sweeps=**** cpu clock= 1.91E+00
+ tran: time= 1.7142E-10 tot_iter=      44 conv_iter=      18 cpu clock= 1.91E+00
+ tran: time= 3.4598E-10 tot_iter=     196 conv_iter=      73 cpu clock= 1.91E+00
+ tran: time= 5.1303E-10 tot_iter=     408 conv_iter=     152 cpu clock= 1.91E+00
+ tran: time= 6.8042E-10 tot_iter=     584 conv_iter=     219 cpu clock= 1.92E+00
+ tran: time= 8.5808E-10 tot_iter=     723 conv_iter=     273 cpu clock= 1.92E+00
+ tran: time= 1.0200E-09 tot_iter=     791 conv_iter=     297 cpu clock= 1.92E+00
+ tran: time= 1.2000E-09 tot_iter=     852 conv_iter=     320 cpu clock= 1.92E+00
+ tran: time= 1.3632E-09 tot_iter=    1112 conv_iter=     419 cpu clock= 1.92E+00
+ tran: time= 1.5382E-09 tot_iter=    1302 conv_iter=     489 cpu clock= 1.92E+00
+ tran: time= 1.7000E-09 tot_iter=    1519 conv_iter=     569 cpu clock= 1.93E+00
+ sweep: tran tran4    end, cpu clock= 1.93E+00 peak memory=      80 mb
+ data: data=beta_sweep      beta            =    5.00E+00
+ dcop: begin dcop, cpu clock= 1.93E+00
+ dcop: end dcop, cpu clock= 1.93E+00 peak memory=      80 mb tot_iter=      15
+ output: D:\UT.CE\Term-06\VLSI\CA\CA01\basic-gates\or\sim.mt15
+ sweep: tran tran5    begin, stop_t=  1.70E-09 #sweeps=**** cpu clock= 1.93E+00
+ tran: time= 1.7183E-10 tot_iter=      45 conv_iter=      18 cpu clock= 1.93E+00
+ tran: time= 3.4632E-10 tot_iter=     216 conv_iter=      81 cpu clock= 1.93E+00
+ tran: time= 5.1466E-10 tot_iter=     439 conv_iter=     167 cpu clock= 1.93E+00
+ tran: time= 6.8084E-10 tot_iter=     614 conv_iter=     235 cpu clock= 1.93E+00
+ tran: time= 8.6043E-10 tot_iter=     761 conv_iter=     291 cpu clock= 1.94E+00
+ tran: time= 1.0200E-09 tot_iter=     828 conv_iter=     315 cpu clock= 1.94E+00
+ tran: time= 1.1932E-09 tot_iter=     885 conv_iter=     336 cpu clock= 1.94E+00
+ tran: time= 1.3629E-09 tot_iter=    1117 conv_iter=     426 cpu clock= 1.94E+00
+ tran: time= 1.5338E-09 tot_iter=    1307 conv_iter=     496 cpu clock= 1.94E+00
+ tran: time= 1.7000E-09 tot_iter=    1511 conv_iter=     572 cpu clock= 1.94E+00
+ sweep: tran tran5    end, cpu clock= 1.94E+00 peak memory=      80 mb
+ sweep: data            data            1 end
+ temperature: temperature=  2.50E+01
+ sweep: data            data1            begin, #sweeps =   5
+ data: data=beta_sweep      beta            =    1.00E+00
+ dcop: begin dcop, cpu clock= 1.94E+00
+ dcop: end dcop, cpu clock= 1.94E+00 peak memory=      80 mb tot_iter=      18
+ output: D:\UT.CE\Term-06\VLSI\CA\CA01\basic-gates\or\sim.mt16
+ sweep: tran tran1    begin, stop_t=  1.70E-09 #sweeps=**** cpu clock= 1.94E+00
+ tran: time= 1.7185E-10 tot_iter=      52 conv_iter=      21 cpu clock= 1.95E+00
+ tran: time= 3.4288E-10 tot_iter=     202 conv_iter=      76 cpu clock= 1.95E+00
+ tran: time= 5.1394E-10 tot_iter=     415 conv_iter=     152 cpu clock= 1.95E+00
+ tran: time= 6.8214E-10 tot_iter=     636 conv_iter=     236 cpu clock= 1.95E+00
+ tran: time= 8.6573E-10 tot_iter=     764 conv_iter=     286 cpu clock= 1.95E+00
+ tran: time= 1.0200E-09 tot_iter=     838 conv_iter=     312 cpu clock= 1.95E+00
+ tran: time= 1.2000E-09 tot_iter=     902 conv_iter=     335 cpu clock= 1.95E+00
+ tran: time= 1.3621E-09 tot_iter=    1150 conv_iter=     424 cpu clock= 1.96E+00
+ tran: time= 1.5514E-09 tot_iter=    1341 conv_iter=     494 cpu clock= 1.96E+00
+ tran: time= 1.7000E-09 tot_iter=    1541 conv_iter=     564 cpu clock= 1.96E+00
+ sweep: tran tran1    end, cpu clock= 1.96E+00 peak memory=      80 mb
+ data: data=beta_sweep      beta            =    2.00E+00
+ dcop: begin dcop, cpu clock= 1.96E+00
+ dcop: end dcop, cpu clock= 1.96E+00 peak memory=      80 mb tot_iter=      21
+ output: D:\UT.CE\Term-06\VLSI\CA\CA01\basic-gates\or\sim.mt16
+ sweep: tran tran2    begin, stop_t=  1.70E-09 #sweeps=**** cpu clock= 1.96E+00
+ tran: time= 1.7049E-10 tot_iter=      43 conv_iter=      18 cpu clock= 1.96E+00
+ tran: time= 3.4447E-10 tot_iter=     189 conv_iter=      70 cpu clock= 1.96E+00
+ tran: time= 5.1342E-10 tot_iter=     445 conv_iter=     163 cpu clock= 1.97E+00
+ tran: time= 6.8071E-10 tot_iter=     653 conv_iter=     243 cpu clock= 1.97E+00
+ tran: time= 8.5339E-10 tot_iter=     779 conv_iter=     292 cpu clock= 1.97E+00
+ tran: time= 1.0200E-09 tot_iter=     841 conv_iter=     314 cpu clock= 1.97E+00
+ tran: time= 1.2000E-09 tot_iter=     902 conv_iter=     336 cpu clock= 1.97E+00
+ tran: time= 1.3633E-09 tot_iter=    1143 conv_iter=     424 cpu clock= 1.97E+00
+ tran: time= 1.5340E-09 tot_iter=    1328 conv_iter=     491 cpu clock= 1.98E+00
+ tran: time= 1.7000E-09 tot_iter=    1531 conv_iter=     562 cpu clock= 1.98E+00
+ sweep: tran tran2    end, cpu clock= 1.98E+00 peak memory=      80 mb
+ data: data=beta_sweep      beta            =    3.00E+00
+ dcop: begin dcop, cpu clock= 1.98E+00
+ dcop: end dcop, cpu clock= 1.98E+00 peak memory=      80 mb tot_iter=      24
+ output: D:\UT.CE\Term-06\VLSI\CA\CA01\basic-gates\or\sim.mt16
+ sweep: tran tran3    begin, stop_t=  1.70E-09 #sweeps=**** cpu clock= 1.98E+00
+ tran: time= 1.7132E-10 tot_iter=      43 conv_iter=      18 cpu clock= 1.98E+00
+ tran: time= 3.4293E-10 tot_iter=     197 conv_iter=      75 cpu clock= 1.98E+00
+ tran: time= 5.1204E-10 tot_iter=     417 conv_iter=     156 cpu clock= 1.98E+00
+ tran: time= 6.8134E-10 tot_iter=     619 conv_iter=     232 cpu clock= 1.99E+00
+ tran: time= 8.7039E-10 tot_iter=     755 conv_iter=     285 cpu clock= 1.99E+00
+ tran: time= 1.0200E-09 tot_iter=     815 conv_iter=     306 cpu clock= 1.99E+00
+ tran: time= 1.1914E-09 tot_iter=     873 conv_iter=     327 cpu clock= 1.99E+00
+ tran: time= 1.3620E-09 tot_iter=    1101 conv_iter=     414 cpu clock= 1.99E+00
+ tran: time= 1.5341E-09 tot_iter=    1292 conv_iter=     483 cpu clock= 1.99E+00
+ tran: time= 1.7000E-09 tot_iter=    1481 conv_iter=     552 cpu clock= 1.99E+00
+ sweep: tran tran3    end, cpu clock= 1.99E+00 peak memory=      80 mb
+ data: data=beta_sweep      beta            =    4.00E+00
+ dcop: begin dcop, cpu clock= 1.99E+00
+ dcop: end dcop, cpu clock= 1.99E+00 peak memory=      80 mb tot_iter=      27
+ output: D:\UT.CE\Term-06\VLSI\CA\CA01\basic-gates\or\sim.mt16
+ sweep: tran tran4    begin, stop_t=  1.70E-09 #sweeps=**** cpu clock= 1.99E+00
+ tran: time= 1.7174E-10 tot_iter=      44 conv_iter=      18 cpu clock= 1.99E+00
+ tran: time= 3.4415E-10 tot_iter=     210 conv_iter=      78 cpu clock= 2.00E+00
+ tran: time= 5.1567E-10 tot_iter=     428 conv_iter=     159 cpu clock= 2.00E+00
+ tran: time= 6.8434E-10 tot_iter=     604 conv_iter=     226 cpu clock= 2.00E+00
+ tran: time= 8.5164E-10 tot_iter=     748 conv_iter=     281 cpu clock= 2.00E+00
+ tran: time= 1.0200E-09 tot_iter=     811 conv_iter=     303 cpu clock= 2.00E+00
+ tran: time= 1.1908E-09 tot_iter=     869 conv_iter=     324 cpu clock= 2.00E+00
+ tran: time= 1.3603E-09 tot_iter=    1103 conv_iter=     412 cpu clock= 2.00E+00
+ tran: time= 1.5307E-09 tot_iter=    1283 conv_iter=     479 cpu clock= 2.01E+00
+ tran: time= 1.7000E-09 tot_iter=    1512 conv_iter=     562 cpu clock= 2.01E+00
+ sweep: tran tran4    end, cpu clock= 2.01E+00 peak memory=      80 mb
+ data: data=beta_sweep      beta            =    5.00E+00
+ dcop: begin dcop, cpu clock= 2.01E+00
+ dcop: end dcop, cpu clock= 2.01E+00 peak memory=      80 mb tot_iter=      30
+ output: D:\UT.CE\Term-06\VLSI\CA\CA01\basic-gates\or\sim.mt16
+ sweep: tran tran5    begin, stop_t=  1.70E-09 #sweeps=**** cpu clock= 2.01E+00
+ tran: time= 1.7223E-10 tot_iter=      45 conv_iter=      18 cpu clock= 2.01E+00
+ tran: time= 3.4597E-10 tot_iter=     195 conv_iter=      73 cpu clock= 2.01E+00
+ tran: time= 5.1114E-10 tot_iter=     415 conv_iter=     156 cpu clock= 2.01E+00
+ tran: time= 6.8117E-10 tot_iter=     606 conv_iter=     232 cpu clock= 2.02E+00
+ tran: time= 8.6093E-10 tot_iter=     757 conv_iter=     289 cpu clock= 2.02E+00
+ tran: time= 1.0200E-09 tot_iter=     835 conv_iter=     317 cpu clock= 2.02E+00
+ tran: time= 1.2000E-09 tot_iter=     894 conv_iter=     339 cpu clock= 2.02E+00
+ tran: time= 1.3632E-09 tot_iter=    1125 conv_iter=     426 cpu clock= 2.02E+00
+ tran: time= 1.5367E-09 tot_iter=    1313 conv_iter=     496 cpu clock= 2.02E+00
+ tran: time= 1.7000E-09 tot_iter=    1528 conv_iter=     575 cpu clock= 2.03E+00
+ sweep: tran tran5    end, cpu clock= 2.03E+00 peak memory=      80 mb
+ sweep: data            data            1 end
+ temperature: temperature=  4.00E+01
+ sweep: data            data1            begin, #sweeps =   5
+ data: data=beta_sweep      beta            =    1.00E+00
+ dcop: begin dcop, cpu clock= 2.03E+00
+ dcop: end dcop, cpu clock= 2.03E+00 peak memory=      80 mb tot_iter=      33
+ output: D:\UT.CE\Term-06\VLSI\CA\CA01\basic-gates\or\sim.mt17
+ sweep: tran tran1    begin, stop_t=  1.70E-09 #sweeps=**** cpu clock= 2.03E+00
+ tran: time= 1.7248E-10 tot_iter=      57 conv_iter=      23 cpu clock= 2.03E+00
+ tran: time= 3.4188E-10 tot_iter=     215 conv_iter=      81 cpu clock= 2.03E+00
+ tran: time= 5.1069E-10 tot_iter=     426 conv_iter=     154 cpu clock= 2.03E+00
+ tran: time= 6.8129E-10 tot_iter=     628 conv_iter=     230 cpu clock= 2.03E+00
+ tran: time= 8.5925E-10 tot_iter=     756 conv_iter=     278 cpu clock= 2.04E+00
+ tran: time= 1.0200E-09 tot_iter=     829 conv_iter=     305 cpu clock= 2.04E+00
+ tran: time= 1.2000E-09 tot_iter=     891 conv_iter=     327 cpu clock= 2.04E+00
+ tran: time= 1.3613E-09 tot_iter=    1135 conv_iter=     414 cpu clock= 2.04E+00
+ tran: time= 1.5303E-09 tot_iter=    1311 conv_iter=     477 cpu clock= 2.04E+00
+ tran: time= 1.7000E-09 tot_iter=    1511 conv_iter=     549 cpu clock= 2.04E+00
+ sweep: tran tran1    end, cpu clock= 2.04E+00 peak memory=      80 mb
+ data: data=beta_sweep      beta            =    2.00E+00
+ dcop: begin dcop, cpu clock= 2.04E+00
+ dcop: end dcop, cpu clock= 2.04E+00 peak memory=      80 mb tot_iter=      36
+ output: D:\UT.CE\Term-06\VLSI\CA\CA01\basic-gates\or\sim.mt17
+ sweep: tran tran2    begin, stop_t=  1.70E-09 #sweeps=**** cpu clock= 2.04E+00
+ tran: time= 1.7068E-10 tot_iter=      44 conv_iter=      18 cpu clock= 2.04E+00
+ tran: time= 3.4947E-10 tot_iter=     204 conv_iter=      76 cpu clock= 2.05E+00
+ tran: time= 5.1399E-10 tot_iter=     439 conv_iter=     159 cpu clock= 2.05E+00
+ tran: time= 6.8045E-10 tot_iter=     617 conv_iter=     226 cpu clock= 2.05E+00
+ tran: time= 8.5643E-10 tot_iter=     749 conv_iter=     277 cpu clock= 2.05E+00
+ tran: time= 1.0200E-09 tot_iter=     812 conv_iter=     299 cpu clock= 2.05E+00
+ tran: time= 1.2000E-09 tot_iter=     870 conv_iter=     321 cpu clock= 2.05E+00
+ tran: time= 1.3631E-09 tot_iter=    1109 conv_iter=     410 cpu clock= 2.06E+00
+ tran: time= 1.5333E-09 tot_iter=    1277 conv_iter=     471 cpu clock= 2.06E+00
+ tran: time= 1.7000E-09 tot_iter=    1475 conv_iter=     541 cpu clock= 2.06E+00
+ sweep: tran tran2    end, cpu clock= 2.06E+00 peak memory=      80 mb
+ data: data=beta_sweep      beta            =    3.00E+00
+ dcop: begin dcop, cpu clock= 2.06E+00
+ dcop: end dcop, cpu clock= 2.06E+00 peak memory=      80 mb tot_iter=      39
+ output: D:\UT.CE\Term-06\VLSI\CA\CA01\basic-gates\or\sim.mt17
+ sweep: tran tran3    begin, stop_t=  1.70E-09 #sweeps=**** cpu clock= 2.06E+00
+ tran: time= 1.7156E-10 tot_iter=      43 conv_iter=      18 cpu clock= 2.06E+00
+ tran: time= 3.4416E-10 tot_iter=     200 conv_iter=      76 cpu clock= 2.06E+00
+ tran: time= 5.1153E-10 tot_iter=     433 conv_iter=     162 cpu clock= 2.06E+00
+ tran: time= 6.8171E-10 tot_iter=     626 conv_iter=     236 cpu clock= 2.07E+00
+ tran: time= 8.6071E-10 tot_iter=     765 conv_iter=     289 cpu clock= 2.07E+00
+ tran: time= 1.0200E-09 tot_iter=     828 conv_iter=     311 cpu clock= 2.07E+00
+ tran: time= 1.2000E-09 tot_iter=     887 conv_iter=     334 cpu clock= 2.07E+00
+ tran: time= 1.3625E-09 tot_iter=    1139 conv_iter=     427 cpu clock= 2.07E+00
+ tran: time= 1.5438E-09 tot_iter=    1326 conv_iter=     495 cpu clock= 2.07E+00
+ tran: time= 1.7000E-09 tot_iter=    1545 conv_iter=     573 cpu clock= 2.08E+00
+ sweep: tran tran3    end, cpu clock= 2.08E+00 peak memory=      80 mb
+ data: data=beta_sweep      beta            =    4.00E+00
+ dcop: begin dcop, cpu clock= 2.08E+00
+ dcop: end dcop, cpu clock= 2.08E+00 peak memory=      80 mb tot_iter=      42
+ output: D:\UT.CE\Term-06\VLSI\CA\CA01\basic-gates\or\sim.mt17
+ sweep: tran tran4    begin, stop_t=  1.70E-09 #sweeps=**** cpu clock= 2.08E+00
+ tran: time= 1.7208E-10 tot_iter=      44 conv_iter=      18 cpu clock= 2.08E+00
+ tran: time= 3.4203E-10 tot_iter=     184 conv_iter=      68 cpu clock= 2.08E+00
+ tran: time= 5.1017E-10 tot_iter=     404 conv_iter=     151 cpu clock= 2.08E+00
+ tran: time= 6.8045E-10 tot_iter=     572 conv_iter=     217 cpu clock= 2.08E+00
+ tran: time= 8.6775E-10 tot_iter=     720 conv_iter=     274 cpu clock= 2.08E+00
+ tran: time= 1.0200E-09 tot_iter=     781 conv_iter=     295 cpu clock= 2.08E+00
+ tran: time= 1.2000E-09 tot_iter=     839 conv_iter=     317 cpu clock= 2.09E+00
+ tran: time= 1.3610E-09 tot_iter=    1074 conv_iter=     405 cpu clock= 2.09E+00
+ tran: time= 1.5328E-09 tot_iter=    1256 conv_iter=     473 cpu clock= 2.09E+00
+ tran: time= 1.7000E-09 tot_iter=    1458 conv_iter=     545 cpu clock= 2.09E+00
+ sweep: tran tran4    end, cpu clock= 2.09E+00 peak memory=      80 mb
+ data: data=beta_sweep      beta            =    5.00E+00
+ dcop: begin dcop, cpu clock= 2.09E+00
+ dcop: end dcop, cpu clock= 2.09E+00 peak memory=      80 mb tot_iter=      45
+ output: D:\UT.CE\Term-06\VLSI\CA\CA01\basic-gates\or\sim.mt17
+ sweep: tran tran5    begin, stop_t=  1.70E-09 #sweeps=**** cpu clock= 2.09E+00
+ tran: time= 1.7258E-10 tot_iter=      45 conv_iter=      18 cpu clock= 2.09E+00
+ tran: time= 3.4516E-10 tot_iter=     179 conv_iter=      67 cpu clock= 2.10E+00
+ tran: time= 5.1547E-10 tot_iter=     390 conv_iter=     147 cpu clock= 2.10E+00
+ tran: time= 6.8231E-10 tot_iter=     562 conv_iter=     214 cpu clock= 2.10E+00
+ tran: time= 8.5209E-10 tot_iter=     715 conv_iter=     272 cpu clock= 2.10E+00
+ tran: time= 1.0200E-09 tot_iter=     796 conv_iter=     300 cpu clock= 2.10E+00
+ tran: time= 1.1948E-09 tot_iter=     853 conv_iter=     322 cpu clock= 2.10E+00
+ tran: time= 1.3615E-09 tot_iter=    1087 conv_iter=     411 cpu clock= 2.10E+00
+ tran: time= 1.5316E-09 tot_iter=    1280 conv_iter=     482 cpu clock= 2.11E+00
+ tran: time= 1.7000E-09 tot_iter=    1477 conv_iter=     555 cpu clock= 2.11E+00
+ sweep: tran tran5    end, cpu clock= 2.11E+00 peak memory=      80 mb
+ sweep: data            data            1 end
+ temperature: temperature=  5.50E+01
+ sweep: data            data1            begin, #sweeps =   5
+ data: data=beta_sweep      beta            =    1.00E+00
+ dcop: begin dcop, cpu clock= 2.11E+00
+ dcop: end dcop, cpu clock= 2.11E+00 peak memory=      80 mb tot_iter=      48
+ output: D:\UT.CE\Term-06\VLSI\CA\CA01\basic-gates\or\sim.mt18
+ sweep: tran tran1    begin, stop_t=  1.70E-09 #sweeps=**** cpu clock= 2.11E+00
+ tran: time= 1.7036E-10 tot_iter=      54 conv_iter=      22 cpu clock= 2.11E+00
+ tran: time= 3.5121E-10 tot_iter=     202 conv_iter=      77 cpu clock= 2.11E+00
+ tran: time= 5.1658E-10 tot_iter=     418 conv_iter=     154 cpu clock= 2.11E+00
+ tran: time= 6.8281E-10 tot_iter=     639 conv_iter=     239 cpu clock= 2.12E+00
+ tran: time= 8.5022E-10 tot_iter=     760 conv_iter=     288 cpu clock= 2.12E+00
+ tran: time= 1.0200E-09 tot_iter=     828 conv_iter=     312 cpu clock= 2.12E+00
+ tran: time= 1.2000E-09 tot_iter=     892 conv_iter=     335 cpu clock= 2.12E+00
+ tran: time= 1.3622E-09 tot_iter=    1132 conv_iter=     420 cpu clock= 2.12E+00
+ tran: time= 1.5322E-09 tot_iter=    1325 conv_iter=     491 cpu clock= 2.12E+00
+ tran: time= 1.7000E-09 tot_iter=    1514 conv_iter=     558 cpu clock= 2.12E+00
+ sweep: tran tran1    end, cpu clock= 2.12E+00 peak memory=      80 mb
+ data: data=beta_sweep      beta            =    2.00E+00
+ dcop: begin dcop, cpu clock= 2.13E+00
+ dcop: end dcop, cpu clock= 2.13E+00 peak memory=      80 mb tot_iter=      51
+ output: D:\UT.CE\Term-06\VLSI\CA\CA01\basic-gates\or\sim.mt18
+ sweep: tran tran2    begin, stop_t=  1.70E-09 #sweeps=**** cpu clock= 2.13E+00
+ tran: time= 1.7090E-10 tot_iter=      44 conv_iter=      18 cpu clock= 2.13E+00
+ tran: time= 3.5481E-10 tot_iter=     195 conv_iter=      73 cpu clock= 2.13E+00
+ tran: time= 5.1365E-10 tot_iter=     408 conv_iter=     148 cpu clock= 2.13E+00
+ tran: time= 6.8131E-10 tot_iter=     592 conv_iter=     217 cpu clock= 2.13E+00
+ tran: time= 8.5461E-10 tot_iter=     720 conv_iter=     267 cpu clock= 2.13E+00
+ tran: time= 1.0200E-09 tot_iter=     782 conv_iter=     289 cpu clock= 2.13E+00
+ tran: time= 1.2000E-09 tot_iter=     842 conv_iter=     311 cpu clock= 2.14E+00
+ tran: time= 1.3638E-09 tot_iter=    1095 conv_iter=     404 cpu clock= 2.14E+00
+ tran: time= 1.5357E-09 tot_iter=    1271 conv_iter=     469 cpu clock= 2.14E+00
+ tran: time= 1.7000E-09 tot_iter=    1480 conv_iter=     542 cpu clock= 2.14E+00
+ sweep: tran tran2    end, cpu clock= 2.14E+00 peak memory=      80 mb
+ data: data=beta_sweep      beta            =    3.00E+00
+ dcop: begin dcop, cpu clock= 2.14E+00
+ dcop: end dcop, cpu clock= 2.14E+00 peak memory=      80 mb tot_iter=      54
+ output: D:\UT.CE\Term-06\VLSI\CA\CA01\basic-gates\or\sim.mt18
+ sweep: tran tran3    begin, stop_t=  1.70E-09 #sweeps=**** cpu clock= 2.14E+00
+ tran: time= 1.7176E-10 tot_iter=      43 conv_iter=      18 cpu clock= 2.14E+00
+ tran: time= 3.4088E-10 tot_iter=     204 conv_iter=      77 cpu clock= 2.14E+00
+ tran: time= 5.1495E-10 tot_iter=     403 conv_iter=     150 cpu clock= 2.15E+00
+ tran: time= 6.8119E-10 tot_iter=     580 conv_iter=     217 cpu clock= 2.15E+00
+ tran: time= 8.5793E-10 tot_iter=     716 conv_iter=     270 cpu clock= 2.15E+00
+ tran: time= 1.0200E-09 tot_iter=     778 conv_iter=     292 cpu clock= 2.15E+00
+ tran: time= 1.2000E-09 tot_iter=     837 conv_iter=     314 cpu clock= 2.15E+00
+ tran: time= 1.3615E-09 tot_iter=    1091 conv_iter=     406 cpu clock= 2.15E+00
+ tran: time= 1.5402E-09 tot_iter=    1278 conv_iter=     475 cpu clock= 2.15E+00
+ tran: time= 1.7000E-09 tot_iter=    1507 conv_iter=     557 cpu clock= 2.16E+00
+ sweep: tran tran3    end, cpu clock= 2.16E+00 peak memory=      80 mb
+ data: data=beta_sweep      beta            =    4.00E+00
+ dcop: begin dcop, cpu clock= 2.16E+00
+ dcop: end dcop, cpu clock= 2.16E+00 peak memory=      80 mb tot_iter=      57
+ output: D:\UT.CE\Term-06\VLSI\CA\CA01\basic-gates\or\sim.mt18
+ sweep: tran tran4    begin, stop_t=  1.70E-09 #sweeps=**** cpu clock= 2.16E+00
+ tran: time= 1.7244E-10 tot_iter=      44 conv_iter=      18 cpu clock= 2.16E+00
+ tran: time= 3.4030E-10 tot_iter=     194 conv_iter=      72 cpu clock= 2.16E+00
+ tran: time= 5.1220E-10 tot_iter=     412 conv_iter=     154 cpu clock= 2.16E+00
+ tran: time= 6.8142E-10 tot_iter=     576 conv_iter=     218 cpu clock= 2.17E+00
+ tran: time= 8.6397E-10 tot_iter=     729 conv_iter=     276 cpu clock= 2.17E+00
+ tran: time= 1.0200E-09 tot_iter=     806 conv_iter=     304 cpu clock= 2.17E+00
+ tran: time= 1.2000E-09 tot_iter=     863 conv_iter=     325 cpu clock= 2.17E+00
+ tran: time= 1.3613E-09 tot_iter=    1101 conv_iter=     412 cpu clock= 2.17E+00
+ tran: time= 1.5315E-09 tot_iter=    1269 conv_iter=     474 cpu clock= 2.17E+00
+ tran: time= 1.7000E-09 tot_iter=    1477 conv_iter=     550 cpu clock= 2.17E+00
+ sweep: tran tran4    end, cpu clock= 2.17E+00 peak memory=      80 mb
+ data: data=beta_sweep      beta            =    5.00E+00
+ dcop: begin dcop, cpu clock= 2.17E+00
+ dcop: end dcop, cpu clock= 2.17E+00 peak memory=      80 mb tot_iter=      60
+ output: D:\UT.CE\Term-06\VLSI\CA\CA01\basic-gates\or\sim.mt18
+ sweep: tran tran5    begin, stop_t=  1.70E-09 #sweeps=**** cpu clock= 2.17E+00
+ tran: time= 1.7294E-10 tot_iter=      45 conv_iter=      18 cpu clock= 2.17E+00
+ tran: time= 3.4452E-10 tot_iter=     184 conv_iter=      69 cpu clock= 2.18E+00
+ tran: time= 5.1224E-10 tot_iter=     393 conv_iter=     148 cpu clock= 2.18E+00
+ tran: time= 6.8010E-10 tot_iter=     556 conv_iter=     213 cpu clock= 2.18E+00
+ tran: time= 8.5659E-10 tot_iter=     710 conv_iter=     271 cpu clock= 2.18E+00
+ tran: time= 1.0200E-09 tot_iter=     786 conv_iter=     298 cpu clock= 2.18E+00
+ tran: time= 1.2000E-09 tot_iter=     845 conv_iter=     320 cpu clock= 2.18E+00
+ tran: time= 1.3621E-09 tot_iter=    1080 conv_iter=     408 cpu clock= 2.19E+00
+ tran: time= 1.5327E-09 tot_iter=    1265 conv_iter=     476 cpu clock= 2.19E+00
+ tran: time= 1.7000E-09 tot_iter=    1466 conv_iter=     550 cpu clock= 2.19E+00
+ sweep: tran tran5    end, cpu clock= 2.19E+00 peak memory=      80 mb
+ sweep: data            data            1 end
+ temperature: temperature=  7.00E+01
+ sweep: data            data1            begin, #sweeps =   5
+ data: data=beta_sweep      beta            =    1.00E+00
+ dcop: begin dcop, cpu clock= 2.19E+00
+ dcop: end dcop, cpu clock= 2.19E+00 peak memory=      80 mb tot_iter=      63
+ output: D:\UT.CE\Term-06\VLSI\CA\CA01\basic-gates\or\sim.mt19
+ sweep: tran tran1    begin, stop_t=  1.70E-09 #sweeps=**** cpu clock= 2.19E+00
+ tran: time= 1.7050E-10 tot_iter=      54 conv_iter=      22 cpu clock= 2.19E+00
+ tran: time= 3.4104E-10 tot_iter=     193 conv_iter=      72 cpu clock= 2.19E+00
+ tran: time= 5.1172E-10 tot_iter=     411 conv_iter=     148 cpu clock= 2.20E+00
+ tran: time= 6.8009E-10 tot_iter=     633 conv_iter=     234 cpu clock= 2.20E+00
+ tran: time= 8.5830E-10 tot_iter=     763 conv_iter=     284 cpu clock= 2.20E+00
+ tran: time= 1.0200E-09 tot_iter=     830 conv_iter=     308 cpu clock= 2.20E+00
+ tran: time= 1.1916E-09 tot_iter=     890 conv_iter=     330 cpu clock= 2.20E+00
+ tran: time= 1.3604E-09 tot_iter=    1142 conv_iter=     423 cpu clock= 2.20E+00
+ tran: time= 1.5372E-09 tot_iter=    1324 conv_iter=     489 cpu clock= 2.21E+00
+ tran: time= 1.7000E-09 tot_iter=    1498 conv_iter=     549 cpu clock= 2.21E+00
+ sweep: tran tran1    end, cpu clock= 2.21E+00 peak memory=      80 mb
+ data: data=beta_sweep      beta            =    2.00E+00
+ dcop: begin dcop, cpu clock= 2.21E+00
+ dcop: end dcop, cpu clock= 2.21E+00 peak memory=      80 mb tot_iter=      66
+ output: D:\UT.CE\Term-06\VLSI\CA\CA01\basic-gates\or\sim.mt19
+ sweep: tran tran2    begin, stop_t=  1.70E-09 #sweeps=**** cpu clock= 2.21E+00
+ tran: time= 1.7116E-10 tot_iter=      44 conv_iter=      18 cpu clock= 2.21E+00
+ tran: time= 3.5281E-10 tot_iter=     191 conv_iter=      73 cpu clock= 2.21E+00
+ tran: time= 5.1449E-10 tot_iter=     410 conv_iter=     150 cpu clock= 2.21E+00
+ tran: time= 6.8237E-10 tot_iter=     603 conv_iter=     223 cpu clock= 2.22E+00
+ tran: time= 8.6420E-10 tot_iter=     735 conv_iter=     274 cpu clock= 2.22E+00
+ tran: time= 1.0200E-09 tot_iter=     802 conv_iter=     298 cpu clock= 2.22E+00
+ tran: time= 1.2000E-09 tot_iter=     863 conv_iter=     320 cpu clock= 2.22E+00
+ tran: time= 1.3631E-09 tot_iter=    1100 conv_iter=     408 cpu clock= 2.22E+00
+ tran: time= 1.5356E-09 tot_iter=    1282 conv_iter=     473 cpu clock= 2.22E+00
+ tran: time= 1.7000E-09 tot_iter=    1494 conv_iter=     549 cpu clock= 2.22E+00
+ sweep: tran tran2    end, cpu clock= 2.22E+00 peak memory=      80 mb
+ data: data=beta_sweep      beta            =    3.00E+00
+ dcop: begin dcop, cpu clock= 2.23E+00
+ dcop: end dcop, cpu clock= 2.23E+00 peak memory=      80 mb tot_iter=      69
+ output: D:\UT.CE\Term-06\VLSI\CA\CA01\basic-gates\or\sim.mt19
+ sweep: tran tran3    begin, stop_t=  1.70E-09 #sweeps=**** cpu clock= 2.23E+00
+ tran: time= 1.7200E-10 tot_iter=      43 conv_iter=      18 cpu clock= 2.23E+00
+ tran: time= 3.4603E-10 tot_iter=     198 conv_iter=      74 cpu clock= 2.23E+00
+ tran: time= 5.1109E-10 tot_iter=     403 conv_iter=     149 cpu clock= 2.23E+00
+ tran: time= 6.8119E-10 tot_iter=     581 conv_iter=     216 cpu clock= 2.23E+00
+ tran: time= 8.6985E-10 tot_iter=     723 conv_iter=     270 cpu clock= 2.23E+00
+ tran: time= 1.0200E-09 tot_iter=     791 conv_iter=     294 cpu clock= 2.23E+00
+ tran: time= 1.2000E-09 tot_iter=     853 conv_iter=     317 cpu clock= 2.23E+00
+ tran: time= 1.3639E-09 tot_iter=    1101 conv_iter=     407 cpu clock= 2.24E+00
+ tran: time= 1.5318E-09 tot_iter=    1271 conv_iter=     470 cpu clock= 2.24E+00
+ tran: time= 1.7000E-09 tot_iter=    1485 conv_iter=     545 cpu clock= 2.24E+00
+ sweep: tran tran3    end, cpu clock= 2.24E+00 peak memory=      80 mb
+ data: data=beta_sweep      beta            =    4.00E+00
+ dcop: begin dcop, cpu clock= 2.24E+00
+ dcop: end dcop, cpu clock= 2.24E+00 peak memory=      80 mb tot_iter=      72
+ output: D:\UT.CE\Term-06\VLSI\CA\CA01\basic-gates\or\sim.mt19
+ sweep: tran tran4    begin, stop_t=  1.70E-09 #sweeps=**** cpu clock= 2.24E+00
+ tran: time= 1.7281E-10 tot_iter=      44 conv_iter=      18 cpu clock= 2.24E+00
+ tran: time= 3.4577E-10 tot_iter=     190 conv_iter=      71 cpu clock= 2.24E+00
+ tran: time= 5.1557E-10 tot_iter=     404 conv_iter=     150 cpu clock= 2.25E+00
+ tran: time= 6.8146E-10 tot_iter=     564 conv_iter=     211 cpu clock= 2.25E+00
+ tran: time= 8.5236E-10 tot_iter=     707 conv_iter=     265 cpu clock= 2.25E+00
+ tran: time= 1.0200E-09 tot_iter=     794 conv_iter=     296 cpu clock= 2.25E+00
+ tran: time= 1.2000E-09 tot_iter=     852 conv_iter=     318 cpu clock= 2.25E+00
+ tran: time= 1.3626E-09 tot_iter=    1104 conv_iter=     410 cpu clock= 2.25E+00
+ tran: time= 1.5381E-09 tot_iter=    1277 conv_iter=     475 cpu clock= 2.25E+00
+ tran: time= 1.7000E-09 tot_iter=    1478 conv_iter=     547 cpu clock= 2.26E+00
+ sweep: tran tran4    end, cpu clock= 2.26E+00 peak memory=      80 mb
+ data: data=beta_sweep      beta            =    5.00E+00
+ dcop: begin dcop, cpu clock= 2.26E+00
+ dcop: end dcop, cpu clock= 2.26E+00 peak memory=      80 mb tot_iter=      75
+ output: D:\UT.CE\Term-06\VLSI\CA\CA01\basic-gates\or\sim.mt19
+ sweep: tran tran5    begin, stop_t=  1.70E-09 #sweeps=**** cpu clock= 2.26E+00
+ tran: time= 1.7331E-10 tot_iter=      44 conv_iter=      18 cpu clock= 2.26E+00
+ tran: time= 3.4156E-10 tot_iter=     167 conv_iter=      63 cpu clock= 2.26E+00
+ tran: time= 5.1429E-10 tot_iter=     372 conv_iter=     138 cpu clock= 2.26E+00
+ tran: time= 6.8054E-10 tot_iter=     526 conv_iter=     199 cpu clock= 2.26E+00
+ tran: time= 8.6661E-10 tot_iter=     680 conv_iter=     257 cpu clock= 2.26E+00
+ tran: time= 1.0200E-09 tot_iter=     755 conv_iter=     284 cpu clock= 2.26E+00
+ tran: time= 1.2000E-09 tot_iter=     813 conv_iter=     306 cpu clock= 2.27E+00
+ tran: time= 1.3628E-09 tot_iter=    1049 conv_iter=     393 cpu clock= 2.27E+00
+ tran: time= 1.5367E-09 tot_iter=    1235 conv_iter=     461 cpu clock= 2.27E+00
+ tran: time= 1.7000E-09 tot_iter=    1438 conv_iter=     535 cpu clock= 2.27E+00
+ sweep: tran tran5    end, cpu clock= 2.27E+00 peak memory=      80 mb
+ sweep: data            data            1 end
+ sweep: temp temp1 end
+>info:         ***** hspice job concluded
+ init: begin read circuit files, cpu clock= 2.31E+00
+       option search = C:/synopsys/Hspice_P-2019.06-SP1-1/parts/behave/
+       option search = C:/synopsys/Hspice_P-2019.06-SP1-1/parts/AD/
+       option search = C:/synopsys/Hspice_P-2019.06-SP1-1/parts/XILINX/
+       option search = C:/synopsys/Hspice_P-2019.06-SP1-1/parts/TLINE/
+       option search = C:/synopsys/Hspice_P-2019.06-SP1-1/parts/TI/
+       option search = C:/synopsys/Hspice_P-2019.06-SP1-1/parts/SIGNET/
+       option search = C:/synopsys/Hspice_P-2019.06-SP1-1/parts/PCI/
+       option search = C:/synopsys/Hspice_P-2019.06-SP1-1/parts/LIN_TEC
+                         H/
+       option search = C:/synopsys/Hspice_P-2019.06-SP1-1/parts/PET/
+       option search = C:/synopsys/Hspice_P-2019.06-SP1-1/parts/DI0/
+       option search = C:/synopsys/Hspice_P-2019.06-SP1-1/parts/COMLINE
+                         /
+       option search = C:/synopsys/Hspice_P-2019.06-SP1-1/parts/BURR_BR
+                         M/
+       option search = C:/synopsys/Hspice_P-2019.06-SP1-1/parts/BJT/
+       option nomod
+       option post =     2.00
+       option probe
+       option runlvl =     6.00
+       option post =     2.00
+       option probe
+       option runlvl =     6.00
+       option post =     2.00
+       option probe
+       option runlvl =     6.00
+       option post =     2.00
+       option probe
+       option runlvl =     6.00
+       option post =     2.00
+       option probe
+       option runlvl =     6.00
+ init: end read circuit files, cpu clock= 2.32E+00 peak memory=      72 mb
+ init: begin check errors, cpu clock= 2.32E+00
+ init: end check errors, cpu clock= 2.32E+00 peak memory=      72 mb
+ init: begin setup matrix, pivot=     0 cpu clock= 2.32E+00
+       establish matrix -- done, cpu clock= 2.32E+00 peak memory=      72 mb
+       re-order matrix -- done, cpu clock= 2.32E+00 peak memory=      72 mb
+ init: end setup matrix, cpu clock= 2.32E+00 peak memory=      72 mb
+ sweep: temp temp1 begin, start=  1.00E+01 stop=  7.00E+01 #sweeps =   5
+ temperature: temperature=  1.00E+01
+ sweep: data            data1            begin, #sweeps =   5
+ data: data=beta_sweep      beta            =    1.00E+00
+ dcop: begin dcop, cpu clock= 2.32E+00
+ dcop: end dcop, cpu clock= 2.32E+00 peak memory=      72 mb tot_iter=       3
+ output: D:\UT.CE\Term-06\VLSI\CA\CA01\basic-gates\or\sim.mt20
+ sweep: tran tran1    begin, stop_t=  1.70E-09 #sweeps=**** cpu clock= 2.32E+00
+ tran: time= 1.7003E-10 tot_iter=      47 conv_iter=      19 cpu clock= 2.32E+00
+ tran: time= 3.5142E-10 tot_iter=     203 conv_iter=      73 cpu clock= 2.32E+00
+ tran: time= 5.1461E-10 tot_iter=     417 conv_iter=     148 cpu clock= 2.33E+00
+ tran: time= 6.8290E-10 tot_iter=     628 conv_iter=     225 cpu clock= 2.33E+00
+ tran: time= 8.6993E-10 tot_iter=     745 conv_iter=     271 cpu clock= 2.33E+00
+ tran: time= 1.0200E-09 tot_iter=     830 conv_iter=     302 cpu clock= 2.33E+00
+ tran: time= 1.2000E-09 tot_iter=     892 conv_iter=     325 cpu clock= 2.33E+00
+ tran: time= 1.3625E-09 tot_iter=    1143 conv_iter=     417 cpu clock= 2.33E+00
+ tran: time= 1.5328E-09 tot_iter=    1317 conv_iter=     478 cpu clock= 2.34E+00
+ tran: time= 1.7000E-09 tot_iter=    1530 conv_iter=     554 cpu clock= 2.34E+00
+ sweep: tran tran1    end, cpu clock= 2.34E+00 peak memory=      72 mb
+ data: data=beta_sweep      beta            =    2.00E+00
+ dcop: begin dcop, cpu clock= 2.34E+00
+ dcop: end dcop, cpu clock= 2.34E+00 peak memory=      72 mb tot_iter=       6
+ output: D:\UT.CE\Term-06\VLSI\CA\CA01\basic-gates\or\sim.mt20
+ sweep: tran tran2    begin, stop_t=  1.70E-09 #sweeps=**** cpu clock= 2.34E+00
+ tran: time= 1.7204E-10 tot_iter=      47 conv_iter=      19 cpu clock= 2.34E+00
+ tran: time= 3.4339E-10 tot_iter=     217 conv_iter=      77 cpu clock= 2.34E+00
+ tran: time= 5.1420E-10 tot_iter=     444 conv_iter=     159 cpu clock= 2.35E+00
+ tran: time= 6.8348E-10 tot_iter=     663 conv_iter=     240 cpu clock= 2.35E+00
+ tran: time= 8.5569E-10 tot_iter=     777 conv_iter=     285 cpu clock= 2.35E+00
+ tran: time= 1.0200E-09 tot_iter=     854 conv_iter=     312 cpu clock= 2.35E+00
+ tran: time= 1.2000E-09 tot_iter=     913 conv_iter=     334 cpu clock= 2.35E+00
+ tran: time= 1.3629E-09 tot_iter=    1195 conv_iter=     440 cpu clock= 2.35E+00
+ tran: time= 1.5585E-09 tot_iter=    1400 conv_iter=     513 cpu clock= 2.35E+00
+ tran: time= 1.7000E-09 tot_iter=    1628 conv_iter=     596 cpu clock= 2.36E+00
+ sweep: tran tran2    end, cpu clock= 2.36E+00 peak memory=      72 mb
+ data: data=beta_sweep      beta            =    3.00E+00
+ dcop: begin dcop, cpu clock= 2.36E+00
+ dcop: end dcop, cpu clock= 2.36E+00 peak memory=      72 mb tot_iter=       9
+ output: D:\UT.CE\Term-06\VLSI\CA\CA01\basic-gates\or\sim.mt20
+ sweep: tran tran3    begin, stop_t=  1.70E-09 #sweeps=**** cpu clock= 2.36E+00
+ tran: time= 1.7363E-10 tot_iter=      48 conv_iter=      19 cpu clock= 2.36E+00
+ tran: time= 3.4169E-10 tot_iter=     208 conv_iter=      77 cpu clock= 2.36E+00
+ tran: time= 5.1123E-10 tot_iter=     442 conv_iter=     158 cpu clock= 2.36E+00
+ tran: time= 6.8256E-10 tot_iter=     657 conv_iter=     237 cpu clock= 2.36E+00
+ tran: time= 8.6698E-10 tot_iter=     785 conv_iter=     287 cpu clock= 2.37E+00
+ tran: time= 1.0200E-09 tot_iter=     858 conv_iter=     312 cpu clock= 2.37E+00
+ tran: time= 1.2000E-09 tot_iter=     920 conv_iter=     335 cpu clock= 2.37E+00
+ tran: time= 1.3607E-09 tot_iter=    1177 conv_iter=     431 cpu clock= 2.37E+00
+ tran: time= 1.5334E-09 tot_iter=    1384 conv_iter=     503 cpu clock= 2.37E+00
+ tran: time= 1.7000E-09 tot_iter=    1596 conv_iter=     578 cpu clock= 2.37E+00
+ sweep: tran tran3    end, cpu clock= 2.37E+00 peak memory=      72 mb
+ data: data=beta_sweep      beta            =    4.00E+00
+ dcop: begin dcop, cpu clock= 2.37E+00
+ dcop: end dcop, cpu clock= 2.37E+00 peak memory=      72 mb tot_iter=      12
+ output: D:\UT.CE\Term-06\VLSI\CA\CA01\basic-gates\or\sim.mt20
+ sweep: tran tran4    begin, stop_t=  1.70E-09 #sweeps=**** cpu clock= 2.37E+00
+ tran: time= 1.7005E-10 tot_iter=      45 conv_iter=      18 cpu clock= 2.37E+00
+ tran: time= 3.5238E-10 tot_iter=     230 conv_iter=      87 cpu clock= 2.38E+00
+ tran: time= 5.1276E-10 tot_iter=     461 conv_iter=     171 cpu clock= 2.38E+00
+ tran: time= 6.8094E-10 tot_iter=     660 conv_iter=     243 cpu clock= 2.38E+00
+ tran: time= 8.5381E-10 tot_iter=     795 conv_iter=     297 cpu clock= 2.38E+00
+ tran: time= 1.0200E-09 tot_iter=     863 conv_iter=     321 cpu clock= 2.38E+00
+ tran: time= 1.2000E-09 tot_iter=     923 conv_iter=     343 cpu clock= 2.38E+00
+ tran: time= 1.3603E-09 tot_iter=    1178 conv_iter=     437 cpu clock= 2.39E+00
+ tran: time= 1.5460E-09 tot_iter=    1375 conv_iter=     507 cpu clock= 2.39E+00
+ tran: time= 1.7000E-09 tot_iter=    1595 conv_iter=     586 cpu clock= 2.39E+00
+ sweep: tran tran4    end, cpu clock= 2.39E+00 peak memory=      72 mb
+ data: data=beta_sweep      beta            =    5.00E+00
+ dcop: begin dcop, cpu clock= 2.39E+00
+ dcop: end dcop, cpu clock= 2.39E+00 peak memory=      72 mb tot_iter=      15
+ output: D:\UT.CE\Term-06\VLSI\CA\CA01\basic-gates\or\sim.mt20
+ sweep: tran tran5    begin, stop_t=  1.70E-09 #sweeps=**** cpu clock= 2.39E+00
+ tran: time= 1.7074E-10 tot_iter=      45 conv_iter=      18 cpu clock= 2.39E+00
+ tran: time= 3.4416E-10 tot_iter=     221 conv_iter=      85 cpu clock= 2.39E+00
+ tran: time= 5.1184E-10 tot_iter=     459 conv_iter=     171 cpu clock= 2.40E+00
+ tran: time= 6.8200E-10 tot_iter=     658 conv_iter=     243 cpu clock= 2.40E+00
+ tran: time= 8.6102E-10 tot_iter=     787 conv_iter=     295 cpu clock= 2.40E+00
+ tran: time= 1.0200E-09 tot_iter=     852 conv_iter=     318 cpu clock= 2.40E+00
+ tran: time= 1.2000E-09 tot_iter=     911 conv_iter=     340 cpu clock= 2.40E+00
+ tran: time= 1.3605E-09 tot_iter=    1146 conv_iter=     428 cpu clock= 2.40E+00
+ tran: time= 1.5308E-09 tot_iter=    1337 conv_iter=     497 cpu clock= 2.40E+00
+ tran: time= 1.7000E-09 tot_iter=    1539 conv_iter=     571 cpu clock= 2.41E+00
+ sweep: tran tran5    end, cpu clock= 2.41E+00 peak memory=      72 mb
+ sweep: data            data            1 end
+ temperature: temperature=  2.50E+01
+ sweep: data            data1            begin, #sweeps =   5
+ data: data=beta_sweep      beta            =    1.00E+00
+ dcop: begin dcop, cpu clock= 2.41E+00
+ dcop: end dcop, cpu clock= 2.41E+00 peak memory=      72 mb tot_iter=      18
+ output: D:\UT.CE\Term-06\VLSI\CA\CA01\basic-gates\or\sim.mt21
+ sweep: tran tran1    begin, stop_t=  1.70E-09 #sweeps=**** cpu clock= 2.41E+00
+ tran: time= 1.7020E-10 tot_iter=      47 conv_iter=      19 cpu clock= 2.41E+00
+ tran: time= 3.4437E-10 tot_iter=     204 conv_iter=      73 cpu clock= 2.41E+00
+ tran: time= 5.1130E-10 tot_iter=     445 conv_iter=     157 cpu clock= 2.41E+00
+ tran: time= 6.8075E-10 tot_iter=     630 conv_iter=     226 cpu clock= 2.42E+00
+ tran: time= 8.6407E-10 tot_iter=     739 conv_iter=     269 cpu clock= 2.42E+00
+ tran: time= 1.0200E-09 tot_iter=     815 conv_iter=     296 cpu clock= 2.42E+00
+ tran: time= 1.2000E-09 tot_iter=     879 conv_iter=     319 cpu clock= 2.42E+00
+ tran: time= 1.3617E-09 tot_iter=    1123 conv_iter=     412 cpu clock= 2.42E+00
+ tran: time= 1.5424E-09 tot_iter=    1326 conv_iter=     485 cpu clock= 2.42E+00
+ tran: time= 1.7000E-09 tot_iter=    1523 conv_iter=     554 cpu clock= 2.42E+00
+ sweep: tran tran1    end, cpu clock= 2.42E+00 peak memory=      72 mb
+ data: data=beta_sweep      beta            =    2.00E+00
+ dcop: begin dcop, cpu clock= 2.43E+00
+ dcop: end dcop, cpu clock= 2.43E+00 peak memory=      72 mb tot_iter=      21
+ output: D:\UT.CE\Term-06\VLSI\CA\CA01\basic-gates\or\sim.mt21
+ sweep: tran tran2    begin, stop_t=  1.70E-09 #sweeps=**** cpu clock= 2.43E+00
+ tran: time= 1.7245E-10 tot_iter=      47 conv_iter=      19 cpu clock= 2.43E+00
+ tran: time= 3.5671E-10 tot_iter=     224 conv_iter=      79 cpu clock= 2.43E+00
+ tran: time= 5.1249E-10 tot_iter=     443 conv_iter=     156 cpu clock= 2.43E+00
+ tran: time= 6.8274E-10 tot_iter=     652 conv_iter=     233 cpu clock= 2.43E+00
+ tran: time= 8.6447E-10 tot_iter=     774 conv_iter=     280 cpu clock= 2.43E+00
+ tran: time= 1.0200E-09 tot_iter=     848 conv_iter=     307 cpu clock= 2.44E+00
+ tran: time= 1.2000E-09 tot_iter=     909 conv_iter=     330 cpu clock= 2.44E+00
+ tran: time= 1.3630E-09 tot_iter=    1162 conv_iter=     423 cpu clock= 2.44E+00
+ tran: time= 1.5330E-09 tot_iter=    1360 conv_iter=     494 cpu clock= 2.44E+00
+ tran: time= 1.7000E-09 tot_iter=    1576 conv_iter=     571 cpu clock= 2.44E+00
+ sweep: tran tran2    end, cpu clock= 2.44E+00 peak memory=      72 mb
+ data: data=beta_sweep      beta            =    3.00E+00
+ dcop: begin dcop, cpu clock= 2.44E+00
+ dcop: end dcop, cpu clock= 2.44E+00 peak memory=      72 mb tot_iter=      24
+ output: D:\UT.CE\Term-06\VLSI\CA\CA01\basic-gates\or\sim.mt21
+ sweep: tran tran3    begin, stop_t=  1.70E-09 #sweeps=**** cpu clock= 2.44E+00
+ tran: time= 1.7417E-10 tot_iter=      48 conv_iter=      19 cpu clock= 2.44E+00
+ tran: time= 3.4202E-10 tot_iter=     198 conv_iter=      74 cpu clock= 2.44E+00
+ tran: time= 5.1152E-10 tot_iter=     451 conv_iter=     164 cpu clock= 2.45E+00
+ tran: time= 6.8075E-10 tot_iter=     658 conv_iter=     240 cpu clock= 2.45E+00
+ tran: time= 8.6812E-10 tot_iter=     780 conv_iter=     288 cpu clock= 2.45E+00
+ tran: time= 1.0200E-09 tot_iter=     856 conv_iter=     315 cpu clock= 2.45E+00
+ tran: time= 1.2000E-09 tot_iter=     918 conv_iter=     338 cpu clock= 2.45E+00
+ tran: time= 1.3617E-09 tot_iter=    1180 conv_iter=     435 cpu clock= 2.46E+00
+ tran: time= 1.5558E-09 tot_iter=    1376 conv_iter=     504 cpu clock= 2.46E+00
+ tran: time= 1.7000E-09 tot_iter=    1575 conv_iter=     576 cpu clock= 2.46E+00
+ sweep: tran tran3    end, cpu clock= 2.46E+00 peak memory=      72 mb
+ data: data=beta_sweep      beta            =    4.00E+00
+ dcop: begin dcop, cpu clock= 2.46E+00
+ dcop: end dcop, cpu clock= 2.46E+00 peak memory=      72 mb tot_iter=      27
+ output: D:\UT.CE\Term-06\VLSI\CA\CA01\basic-gates\or\sim.mt21
+ sweep: tran tran4    begin, stop_t=  1.70E-09 #sweeps=**** cpu clock= 2.46E+00
+ tran: time= 1.7038E-10 tot_iter=      45 conv_iter=      18 cpu clock= 2.46E+00
+ tran: time= 3.4337E-10 tot_iter=     216 conv_iter=      84 cpu clock= 2.46E+00
+ tran: time= 5.1065E-10 tot_iter=     444 conv_iter=     166 cpu clock= 2.46E+00
+ tran: time= 6.8376E-10 tot_iter=     640 conv_iter=     237 cpu clock= 2.47E+00
+ tran: time= 8.6172E-10 tot_iter=     751 conv_iter=     282 cpu clock= 2.47E+00
+ tran: time= 1.0200E-09 tot_iter=     824 conv_iter=     309 cpu clock= 2.47E+00
+ tran: time= 1.2000E-09 tot_iter=     886 conv_iter=     332 cpu clock= 2.47E+00
+ tran: time= 1.3608E-09 tot_iter=    1149 conv_iter=     429 cpu clock= 2.47E+00
+ tran: time= 1.5414E-09 tot_iter=    1338 conv_iter=     496 cpu clock= 2.47E+00
+ tran: time= 1.7000E-09 tot_iter=    1542 conv_iter=     568 cpu clock= 2.48E+00
+ sweep: tran tran4    end, cpu clock= 2.48E+00 peak memory=      72 mb
+ data: data=beta_sweep      beta            =    5.00E+00
+ dcop: begin dcop, cpu clock= 2.48E+00
+ dcop: end dcop, cpu clock= 2.48E+00 peak memory=      72 mb tot_iter=      30
+ output: D:\UT.CE\Term-06\VLSI\CA\CA01\basic-gates\or\sim.mt21
+ sweep: tran tran5    begin, stop_t=  1.70E-09 #sweeps=**** cpu clock= 2.48E+00
+ tran: time= 1.7109E-10 tot_iter=      45 conv_iter=      18 cpu clock= 2.48E+00
+ tran: time= 3.4527E-10 tot_iter=     211 conv_iter=      79 cpu clock= 2.48E+00
+ tran: time= 5.1503E-10 tot_iter=     427 conv_iter=     158 cpu clock= 2.48E+00
+ tran: time= 6.8102E-10 tot_iter=     615 conv_iter=     228 cpu clock= 2.48E+00
+ tran: time= 8.6304E-10 tot_iter=     741 conv_iter=     278 cpu clock= 2.48E+00
+ tran: time= 1.0200E-09 tot_iter=     820 conv_iter=     306 cpu clock= 2.48E+00
+ tran: time= 1.2000E-09 tot_iter=     882 conv_iter=     329 cpu clock= 2.48E+00
+ tran: time= 1.3605E-09 tot_iter=    1120 conv_iter=     417 cpu clock= 2.49E+00
+ tran: time= 1.5339E-09 tot_iter=    1297 conv_iter=     481 cpu clock= 2.49E+00
+ tran: time= 1.7000E-09 tot_iter=    1508 conv_iter=     557 cpu clock= 2.49E+00
+ sweep: tran tran5    end, cpu clock= 2.49E+00 peak memory=      72 mb
+ sweep: data            data            1 end
+ temperature: temperature=  4.00E+01
+ sweep: data            data1            begin, #sweeps =   5
+ data: data=beta_sweep      beta            =    1.00E+00
+ dcop: begin dcop, cpu clock= 2.49E+00
+ dcop: end dcop, cpu clock= 2.49E+00 peak memory=      72 mb tot_iter=      33
+ output: D:\UT.CE\Term-06\VLSI\CA\CA01\basic-gates\or\sim.mt22
+ sweep: tran tran1    begin, stop_t=  1.70E-09 #sweeps=**** cpu clock= 2.49E+00
+ tran: time= 1.7040E-10 tot_iter=      47 conv_iter=      19 cpu clock= 2.49E+00
+ tran: time= 3.4112E-10 tot_iter=     207 conv_iter=      75 cpu clock= 2.50E+00
+ tran: time= 5.1199E-10 tot_iter=     440 conv_iter=     158 cpu clock= 2.50E+00
+ tran: time= 6.8417E-10 tot_iter=     661 conv_iter=     243 cpu clock= 2.50E+00
+ tran: time= 8.6445E-10 tot_iter=     768 conv_iter=     284 cpu clock= 2.50E+00
+ tran: time= 1.0200E-09 tot_iter=     842 conv_iter=     310 cpu clock= 2.50E+00
+ tran: time= 1.2000E-09 tot_iter=     904 conv_iter=     333 cpu clock= 2.50E+00
+ tran: time= 1.3607E-09 tot_iter=    1145 conv_iter=     420 cpu clock= 2.51E+00
+ tran: time= 1.5588E-09 tot_iter=    1346 conv_iter=     491 cpu clock= 2.51E+00
+ tran: time= 1.7000E-09 tot_iter=    1531 conv_iter=     556 cpu clock= 2.51E+00
+ sweep: tran tran1    end, cpu clock= 2.51E+00 peak memory=      72 mb
+ data: data=beta_sweep      beta            =    2.00E+00
+ dcop: begin dcop, cpu clock= 2.51E+00
+ dcop: end dcop, cpu clock= 2.51E+00 peak memory=      72 mb tot_iter=      36
+ output: D:\UT.CE\Term-06\VLSI\CA\CA01\basic-gates\or\sim.mt22
+ sweep: tran tran2    begin, stop_t=  1.70E-09 #sweeps=**** cpu clock= 2.51E+00
+ tran: time= 1.7268E-10 tot_iter=      47 conv_iter=      19 cpu clock= 2.51E+00
+ tran: time= 3.4167E-10 tot_iter=     224 conv_iter=      80 cpu clock= 2.51E+00
+ tran: time= 5.1433E-10 tot_iter=     451 conv_iter=     162 cpu clock= 2.52E+00
+ tran: time= 6.8441E-10 tot_iter=     665 conv_iter=     240 cpu clock= 2.52E+00
+ tran: time= 8.6603E-10 tot_iter=     781 conv_iter=     285 cpu clock= 2.52E+00
+ tran: time= 1.0200E-09 tot_iter=     857 conv_iter=     312 cpu clock= 2.52E+00
+ tran: time= 1.2000E-09 tot_iter=     920 conv_iter=     335 cpu clock= 2.52E+00
+ tran: time= 1.3636E-09 tot_iter=    1158 conv_iter=     421 cpu clock= 2.52E+00
+ tran: time= 1.5627E-09 tot_iter=    1368 conv_iter=     497 cpu clock= 2.53E+00
+ tran: time= 1.7000E-09 tot_iter=    1575 conv_iter=     572 cpu clock= 2.53E+00
+ sweep: tran tran2    end, cpu clock= 2.53E+00 peak memory=      72 mb
+ data: data=beta_sweep      beta            =    3.00E+00
+ dcop: begin dcop, cpu clock= 2.53E+00
+ dcop: end dcop, cpu clock= 2.53E+00 peak memory=      72 mb tot_iter=      39
+ output: D:\UT.CE\Term-06\VLSI\CA\CA01\basic-gates\or\sim.mt22
+ sweep: tran tran3    begin, stop_t=  1.70E-09 #sweeps=**** cpu clock= 2.53E+00
+ tran: time= 1.7004E-10 tot_iter=      45 conv_iter=      18 cpu clock= 2.53E+00
+ tran: time= 3.4684E-10 tot_iter=     207 conv_iter=      78 cpu clock= 2.53E+00
+ tran: time= 5.1229E-10 tot_iter=     441 conv_iter=     163 cpu clock= 2.53E+00
+ tran: time= 6.8178E-10 tot_iter=     638 conv_iter=     236 cpu clock= 2.54E+00
+ tran: time= 8.5620E-10 tot_iter=     756 conv_iter=     283 cpu clock= 2.54E+00
+ tran: time= 1.0200E-09 tot_iter=     824 conv_iter=     308 cpu clock= 2.54E+00
+ tran: time= 1.2000E-09 tot_iter=     884 conv_iter=     330 cpu clock= 2.54E+00
+ tran: time= 1.3628E-09 tot_iter=    1115 conv_iter=     415 cpu clock= 2.54E+00
+ tran: time= 1.5425E-09 tot_iter=    1295 conv_iter=     480 cpu clock= 2.54E+00
+ tran: time= 1.7000E-09 tot_iter=    1498 conv_iter=     552 cpu clock= 2.54E+00
+ sweep: tran tran3    end, cpu clock= 2.54E+00 peak memory=      72 mb
+ data: data=beta_sweep      beta            =    4.00E+00
+ dcop: begin dcop, cpu clock= 2.54E+00
+ dcop: end dcop, cpu clock= 2.54E+00 peak memory=      72 mb tot_iter=      42
+ output: D:\UT.CE\Term-06\VLSI\CA\CA01\basic-gates\or\sim.mt22
+ sweep: tran tran4    begin, stop_t=  1.70E-09 #sweeps=**** cpu clock= 2.54E+00
+ tran: time= 1.7073E-10 tot_iter=      45 conv_iter=      18 cpu clock= 2.54E+00
+ tran: time= 3.4729E-10 tot_iter=     201 conv_iter=      75 cpu clock= 2.55E+00
+ tran: time= 5.1342E-10 tot_iter=     423 conv_iter=     155 cpu clock= 2.55E+00
+ tran: time= 6.8299E-10 tot_iter=     608 conv_iter=     224 cpu clock= 2.55E+00
+ tran: time= 8.6257E-10 tot_iter=     721 conv_iter=     269 cpu clock= 2.55E+00
+ tran: time= 1.0200E-09 tot_iter=     796 conv_iter=     296 cpu clock= 2.55E+00
+ tran: time= 1.2000E-09 tot_iter=     858 conv_iter=     319 cpu clock= 2.55E+00
+ tran: time= 1.3615E-09 tot_iter=    1099 conv_iter=     407 cpu clock= 2.56E+00
+ tran: time= 1.5320E-09 tot_iter=    1288 conv_iter=     476 cpu clock= 2.56E+00
+ tran: time= 1.7000E-09 tot_iter=    1495 conv_iter=     550 cpu clock= 2.56E+00
+ sweep: tran tran4    end, cpu clock= 2.56E+00 peak memory=      72 mb
+ data: data=beta_sweep      beta            =    5.00E+00
+ dcop: begin dcop, cpu clock= 2.56E+00
+ dcop: end dcop, cpu clock= 2.56E+00 peak memory=      72 mb tot_iter=      45
+ output: D:\UT.CE\Term-06\VLSI\CA\CA01\basic-gates\or\sim.mt22
+ sweep: tran tran5    begin, stop_t=  1.70E-09 #sweeps=**** cpu clock= 2.56E+00
+ tran: time= 1.7147E-10 tot_iter=      45 conv_iter=      18 cpu clock= 2.56E+00
+ tran: time= 3.4755E-10 tot_iter=     206 conv_iter=      78 cpu clock= 2.56E+00
+ tran: time= 5.1150E-10 tot_iter=     443 conv_iter=     163 cpu clock= 2.56E+00
+ tran: time= 6.8161E-10 tot_iter=     639 conv_iter=     236 cpu clock= 2.57E+00
+ tran: time= 8.5237E-10 tot_iter=     761 conv_iter=     284 cpu clock= 2.57E+00
+ tran: time= 1.0200E-09 tot_iter=     844 conv_iter=     313 cpu clock= 2.57E+00
+ tran: time= 1.2000E-09 tot_iter=     906 conv_iter=     336 cpu clock= 2.57E+00
+ tran: time= 1.3611E-09 tot_iter=    1150 conv_iter=     425 cpu clock= 2.57E+00
+ tran: time= 1.5433E-09 tot_iter=    1341 conv_iter=     494 cpu clock= 2.57E+00
+ tran: time= 1.7000E-09 tot_iter=    1555 conv_iter=     572 cpu clock= 2.58E+00
+ sweep: tran tran5    end, cpu clock= 2.58E+00 peak memory=      72 mb
+ sweep: data            data            1 end
+ temperature: temperature=  5.50E+01
+ sweep: data            data1            begin, #sweeps =   5
+ data: data=beta_sweep      beta            =    1.00E+00
+ dcop: begin dcop, cpu clock= 2.58E+00
+ dcop: end dcop, cpu clock= 2.58E+00 peak memory=      72 mb tot_iter=      48
+ output: D:\UT.CE\Term-06\VLSI\CA\CA01\basic-gates\or\sim.mt23
+ sweep: tran tran1    begin, stop_t=  1.70E-09 #sweeps=**** cpu clock= 2.58E+00
+ tran: time= 1.7061E-10 tot_iter=      47 conv_iter=      19 cpu clock= 2.58E+00
+ tran: time= 3.5252E-10 tot_iter=     202 conv_iter=      73 cpu clock= 2.58E+00
+ tran: time= 5.1471E-10 tot_iter=     422 conv_iter=     149 cpu clock= 2.58E+00
+ tran: time= 6.8021E-10 tot_iter=     627 conv_iter=     226 cpu clock= 2.58E+00
+ tran: time= 8.6351E-10 tot_iter=     738 conv_iter=     268 cpu clock= 2.59E+00
+ tran: time= 1.0200E-09 tot_iter=     807 conv_iter=     292 cpu clock= 2.59E+00
+ tran: time= 1.2000E-09 tot_iter=     868 conv_iter=     314 cpu clock= 2.59E+00
+ tran: time= 1.3621E-09 tot_iter=    1106 conv_iter=     399 cpu clock= 2.59E+00
+ tran: time= 1.5490E-09 tot_iter=    1268 conv_iter=     458 cpu clock= 2.59E+00
+ tran: time= 1.7000E-09 tot_iter=    1450 conv_iter=     523 cpu clock= 2.59E+00
+ sweep: tran tran1    end, cpu clock= 2.59E+00 peak memory=      72 mb
+ data: data=beta_sweep      beta            =    2.00E+00
+ dcop: begin dcop, cpu clock= 2.59E+00
+ dcop: end dcop, cpu clock= 2.59E+00 peak memory=      72 mb tot_iter=      51
+ output: D:\UT.CE\Term-06\VLSI\CA\CA01\basic-gates\or\sim.mt23
+ sweep: tran tran2    begin, stop_t=  1.70E-09 #sweeps=**** cpu clock= 2.59E+00
+ tran: time= 1.7294E-10 tot_iter=      47 conv_iter=      19 cpu clock= 2.60E+00
+ tran: time= 3.5738E-10 tot_iter=     216 conv_iter=      79 cpu clock= 2.60E+00
+ tran: time= 5.1611E-10 tot_iter=     437 conv_iter=     156 cpu clock= 2.60E+00
+ tran: time= 6.8158E-10 tot_iter=     644 conv_iter=     233 cpu clock= 2.60E+00
+ tran: time= 8.6763E-10 tot_iter=     759 conv_iter=     278 cpu clock= 2.60E+00
+ tran: time= 1.0200E-09 tot_iter=     822 conv_iter=     300 cpu clock= 2.60E+00
+ tran: time= 1.2000E-09 tot_iter=     880 conv_iter=     321 cpu clock= 2.60E+00
+ tran: time= 1.3627E-09 tot_iter=    1113 conv_iter=     406 cpu clock= 2.61E+00
+ tran: time= 1.5384E-09 tot_iter=    1326 conv_iter=     483 cpu clock= 2.61E+00
+ tran: time= 1.7000E-09 tot_iter=    1536 conv_iter=     557 cpu clock= 2.61E+00
+ sweep: tran tran2    end, cpu clock= 2.61E+00 peak memory=      72 mb
+ data: data=beta_sweep      beta            =    3.00E+00
+ dcop: begin dcop, cpu clock= 2.61E+00
+ dcop: end dcop, cpu clock= 2.61E+00 peak memory=      72 mb tot_iter=      54
+ output: D:\UT.CE\Term-06\VLSI\CA\CA01\basic-gates\or\sim.mt23
+ sweep: tran tran3    begin, stop_t=  1.70E-09 #sweeps=**** cpu clock= 2.61E+00
+ tran: time= 1.7039E-10 tot_iter=      45 conv_iter=      18 cpu clock= 2.61E+00
+ tran: time= 3.5134E-10 tot_iter=     219 conv_iter=      83 cpu clock= 2.61E+00
+ tran: time= 5.1320E-10 tot_iter=     448 conv_iter=     166 cpu clock= 2.62E+00
+ tran: time= 6.8369E-10 tot_iter=     644 conv_iter=     239 cpu clock= 2.62E+00
+ tran: time= 8.5476E-10 tot_iter=     751 conv_iter=     281 cpu clock= 2.62E+00
+ tran: time= 1.0200E-09 tot_iter=     825 conv_iter=     307 cpu clock= 2.62E+00
+ tran: time= 1.2000E-09 tot_iter=     885 conv_iter=     329 cpu clock= 2.62E+00
+ tran: time= 1.3629E-09 tot_iter=    1129 conv_iter=     419 cpu clock= 2.62E+00
+ tran: time= 1.5497E-09 tot_iter=    1322 conv_iter=     488 cpu clock= 2.62E+00
+ tran: time= 1.7000E-09 tot_iter=    1524 conv_iter=     561 cpu clock= 2.63E+00
+ sweep: tran tran3    end, cpu clock= 2.63E+00 peak memory=      72 mb
+ data: data=beta_sweep      beta            =    4.00E+00
+ dcop: begin dcop, cpu clock= 2.63E+00
+ dcop: end dcop, cpu clock= 2.63E+00 peak memory=      72 mb tot_iter=      57
+ output: D:\UT.CE\Term-06\VLSI\CA\CA01\basic-gates\or\sim.mt23
+ sweep: tran tran4    begin, stop_t=  1.70E-09 #sweeps=**** cpu clock= 2.63E+00
+ tran: time= 1.7110E-10 tot_iter=      45 conv_iter=      18 cpu clock= 2.63E+00
+ tran: time= 3.4207E-10 tot_iter=     200 conv_iter=      76 cpu clock= 2.63E+00
+ tran: time= 5.1629E-10 tot_iter=     433 conv_iter=     159 cpu clock= 2.63E+00
+ tran: time= 6.8250E-10 tot_iter=     634 conv_iter=     235 cpu clock= 2.63E+00
+ tran: time= 8.6372E-10 tot_iter=     750 conv_iter=     281 cpu clock= 2.64E+00
+ tran: time= 1.0200E-09 tot_iter=     824 conv_iter=     307 cpu clock= 2.64E+00
+ tran: time= 1.2000E-09 tot_iter=     884 conv_iter=     330 cpu clock= 2.64E+00
+ tran: time= 1.3621E-09 tot_iter=    1135 conv_iter=     425 cpu clock= 2.64E+00
+ tran: time= 1.5362E-09 tot_iter=    1339 conv_iter=     498 cpu clock= 2.64E+00
+ tran: time= 1.7000E-09 tot_iter=    1539 conv_iter=     569 cpu clock= 2.64E+00
+ sweep: tran tran4    end, cpu clock= 2.64E+00 peak memory=      72 mb
+ data: data=beta_sweep      beta            =    5.00E+00
+ dcop: begin dcop, cpu clock= 2.64E+00
+ dcop: end dcop, cpu clock= 2.64E+00 peak memory=      72 mb tot_iter=      60
+ output: D:\UT.CE\Term-06\VLSI\CA\CA01\basic-gates\or\sim.mt23
+ sweep: tran tran5    begin, stop_t=  1.70E-09 #sweeps=**** cpu clock= 2.64E+00
+ tran: time= 1.7187E-10 tot_iter=      44 conv_iter=      18 cpu clock= 2.65E+00
+ tran: time= 3.4311E-10 tot_iter=     214 conv_iter=      81 cpu clock= 2.65E+00
+ tran: time= 5.1508E-10 tot_iter=     459 conv_iter=     169 cpu clock= 2.65E+00
+ tran: time= 6.8078E-10 tot_iter=     637 conv_iter=     235 cpu clock= 2.65E+00
+ tran: time= 8.5732E-10 tot_iter=     758 conv_iter=     283 cpu clock= 2.65E+00
+ tran: time= 1.0200E-09 tot_iter=     838 conv_iter=     311 cpu clock= 2.65E+00
+ tran: time= 1.2000E-09 tot_iter=     902 conv_iter=     335 cpu clock= 2.65E+00
+ tran: time= 1.3620E-09 tot_iter=    1130 conv_iter=     420 cpu clock= 2.66E+00
+ tran: time= 1.5329E-09 tot_iter=    1308 conv_iter=     486 cpu clock= 2.66E+00
+ tran: time= 1.7000E-09 tot_iter=    1519 conv_iter=     562 cpu clock= 2.66E+00
+ sweep: tran tran5    end, cpu clock= 2.66E+00 peak memory=      72 mb
+ sweep: data            data            1 end
+ temperature: temperature=  7.00E+01
+ sweep: data            data1            begin, #sweeps =   5
+ data: data=beta_sweep      beta            =    1.00E+00
+ dcop: begin dcop, cpu clock= 2.66E+00
+ dcop: end dcop, cpu clock= 2.66E+00 peak memory=      72 mb tot_iter=      63
+ output: D:\UT.CE\Term-06\VLSI\CA\CA01\basic-gates\or\sim.mt24
+ sweep: tran tran1    begin, stop_t=  1.70E-09 #sweeps=**** cpu clock= 2.66E+00
+ tran: time= 1.7085E-10 tot_iter=      47 conv_iter=      19 cpu clock= 2.66E+00
+ tran: time= 3.5133E-10 tot_iter=     211 conv_iter=      76 cpu clock= 2.67E+00
+ tran: time= 5.1424E-10 tot_iter=     434 conv_iter=     153 cpu clock= 2.67E+00
+ tran: time= 6.8211E-10 tot_iter=     637 conv_iter=     229 cpu clock= 2.67E+00
+ tran: time= 8.6019E-10 tot_iter=     748 conv_iter=     271 cpu clock= 2.67E+00
+ tran: time= 1.0200E-09 tot_iter=     818 conv_iter=     296 cpu clock= 2.67E+00
+ tran: time= 1.2000E-09 tot_iter=     881 conv_iter=     319 cpu clock= 2.67E+00
+ tran: time= 1.3603E-09 tot_iter=    1125 conv_iter=     407 cpu clock= 2.67E+00
+ tran: time= 1.5492E-09 tot_iter=    1302 conv_iter=     471 cpu clock= 2.67E+00
+ tran: time= 1.7000E-09 tot_iter=    1483 conv_iter=     535 cpu clock= 2.68E+00
+ sweep: tran tran1    end, cpu clock= 2.68E+00 peak memory=      72 mb
+ data: data=beta_sweep      beta            =    2.00E+00
+ dcop: begin dcop, cpu clock= 2.68E+00
+ dcop: end dcop, cpu clock= 2.68E+00 peak memory=      72 mb tot_iter=      66
+ output: D:\UT.CE\Term-06\VLSI\CA\CA01\basic-gates\or\sim.mt24
+ sweep: tran tran2    begin, stop_t=  1.70E-09 #sweeps=**** cpu clock= 2.68E+00
+ tran: time= 1.7322E-10 tot_iter=      47 conv_iter=      19 cpu clock= 2.68E+00
+ tran: time= 3.5526E-10 tot_iter=     220 conv_iter=      79 cpu clock= 2.68E+00
+ tran: time= 5.1051E-10 tot_iter=     440 conv_iter=     157 cpu clock= 2.68E+00
+ tran: time= 6.8301E-10 tot_iter=     647 conv_iter=     234 cpu clock= 2.69E+00
+ tran: time= 8.6515E-10 tot_iter=     758 conv_iter=     277 cpu clock= 2.69E+00
+ tran: time= 1.0200E-09 tot_iter=     817 conv_iter=     297 cpu clock= 2.69E+00
+ tran: time= 1.2000E-09 tot_iter=     875 conv_iter=     318 cpu clock= 2.69E+00
+ tran: time= 1.3630E-09 tot_iter=    1130 conv_iter=     411 cpu clock= 2.69E+00
+ tran: time= 1.5487E-09 tot_iter=    1334 conv_iter=     484 cpu clock= 2.69E+00
+ tran: time= 1.7000E-09 tot_iter=    1536 conv_iter=     556 cpu clock= 2.69E+00
+ sweep: tran tran2    end, cpu clock= 2.69E+00 peak memory=      72 mb
+ data: data=beta_sweep      beta            =    3.00E+00
+ dcop: begin dcop, cpu clock= 2.69E+00
+ dcop: end dcop, cpu clock= 2.69E+00 peak memory=      72 mb tot_iter=      69
+ output: D:\UT.CE\Term-06\VLSI\CA\CA01\basic-gates\or\sim.mt24
+ sweep: tran tran3    begin, stop_t=  1.70E-09 #sweeps=**** cpu clock= 2.69E+00
+ tran: time= 1.7067E-10 tot_iter=      45 conv_iter=      18 cpu clock= 2.69E+00
+ tran: time= 3.4120E-10 tot_iter=     209 conv_iter=      79 cpu clock= 2.70E+00
+ tran: time= 5.1585E-10 tot_iter=     435 conv_iter=     160 cpu clock= 2.70E+00
+ tran: time= 6.8141E-10 tot_iter=     631 conv_iter=     233 cpu clock= 2.70E+00
+ tran: time= 8.5552E-10 tot_iter=     749 conv_iter=     281 cpu clock= 2.70E+00
+ tran: time= 1.0200E-09 tot_iter=     824 conv_iter=     308 cpu clock= 2.70E+00
+ tran: time= 1.2000E-09 tot_iter=     887 conv_iter=     332 cpu clock= 2.71E+00
+ tran: time= 1.3603E-09 tot_iter=    1125 conv_iter=     419 cpu clock= 2.71E+00
+ tran: time= 1.5432E-09 tot_iter=    1324 conv_iter=     491 cpu clock= 2.71E+00
+ tran: time= 1.7000E-09 tot_iter=    1529 conv_iter=     564 cpu clock= 2.71E+00
+ sweep: tran tran3    end, cpu clock= 2.71E+00 peak memory=      72 mb
+ data: data=beta_sweep      beta            =    4.00E+00
+ dcop: begin dcop, cpu clock= 2.71E+00
+ dcop: end dcop, cpu clock= 2.71E+00 peak memory=      72 mb tot_iter=      72
+ output: D:\UT.CE\Term-06\VLSI\CA\CA01\basic-gates\or\sim.mt24
+ sweep: tran tran4    begin, stop_t=  1.70E-09 #sweeps=**** cpu clock= 2.71E+00
+ tran: time= 1.7147E-10 tot_iter=      45 conv_iter=      18 cpu clock= 2.71E+00
+ tran: time= 3.4777E-10 tot_iter=     205 conv_iter=      78 cpu clock= 2.71E+00
+ tran: time= 5.1177E-10 tot_iter=     424 conv_iter=     156 cpu clock= 2.72E+00
+ tran: time= 6.8133E-10 tot_iter=     611 conv_iter=     226 cpu clock= 2.72E+00
+ tran: time= 8.6614E-10 tot_iter=     739 conv_iter=     277 cpu clock= 2.72E+00
+ tran: time= 1.0200E-09 tot_iter=     812 conv_iter=     303 cpu clock= 2.72E+00
+ tran: time= 1.2000E-09 tot_iter=     871 conv_iter=     326 cpu clock= 2.72E+00
+ tran: time= 1.3626E-09 tot_iter=    1093 conv_iter=     407 cpu clock= 2.72E+00
+ tran: time= 1.5300E-09 tot_iter=    1285 conv_iter=     478 cpu clock= 2.73E+00
+ tran: time= 1.7000E-09 tot_iter=    1486 conv_iter=     549 cpu clock= 2.73E+00
+ sweep: tran tran4    end, cpu clock= 2.73E+00 peak memory=      72 mb
+ data: data=beta_sweep      beta            =    5.00E+00
+ dcop: begin dcop, cpu clock= 2.73E+00
+ dcop: end dcop, cpu clock= 2.73E+00 peak memory=      72 mb tot_iter=      75
+ output: D:\UT.CE\Term-06\VLSI\CA\CA01\basic-gates\or\sim.mt24
+ sweep: tran tran5    begin, stop_t=  1.70E-09 #sweeps=**** cpu clock= 2.73E+00
+ tran: time= 1.7228E-10 tot_iter=      44 conv_iter=      18 cpu clock= 2.73E+00
+ tran: time= 3.4212E-10 tot_iter=     224 conv_iter=      85 cpu clock= 2.73E+00
+ tran: time= 5.1588E-10 tot_iter=     442 conv_iter=     165 cpu clock= 2.73E+00
+ tran: time= 6.8039E-10 tot_iter=     614 conv_iter=     231 cpu clock= 2.73E+00
+ tran: time= 8.5756E-10 tot_iter=     735 conv_iter=     278 cpu clock= 2.74E+00
+ tran: time= 1.0200E-09 tot_iter=     813 conv_iter=     306 cpu clock= 2.74E+00
+ tran: time= 1.2000E-09 tot_iter=     876 conv_iter=     330 cpu clock= 2.74E+00
+ tran: time= 1.3626E-09 tot_iter=    1099 conv_iter=     411 cpu clock= 2.74E+00
+ tran: time= 1.5339E-09 tot_iter=    1273 conv_iter=     473 cpu clock= 2.74E+00
+ tran: time= 1.7000E-09 tot_iter=    1479 conv_iter=     546 cpu clock= 2.74E+00
+ sweep: tran tran5    end, cpu clock= 2.74E+00 peak memory=      72 mb
+ sweep: data            data            1 end
+ sweep: temp temp1 end
+>info:         ***** hspice job concluded
+ lic: Release hspice token(s)

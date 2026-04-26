@@ -1,0 +1,24 @@
+* "simulator" "HSPICE" 
+* "version" "P-2019.06-SP1-1 win64"
+* "format" "HSP"
+* "rundate" "03:28:10 04/14/2026 "
+* "netlist" "sim.sp "
+* "runtitle" "run_fs_corner"
+* time =    0.            
+* temperature =   10.0000        
+*** BEGIN: Saved Operating Point ***                     
+.option 
++ gmindc=   1.0000p       
+.nodeset
++ ina =   0.            
++ inb =   0.            
++ out = 999.9537m       
++ vdd =   1.0000        
++ vss =   0.            
++ xxor.in1_bar = 999.9863m       
++ xxor.in2_bar = 999.9679m       
++ xxor.x1 =   3.2222u       
++ xxor.x2 = 861.9395m       
++ xxor.y1 = 999.9754m       
++ xxor.y2 = 999.9769m       
+***   END: Saved Operating Point ***                     

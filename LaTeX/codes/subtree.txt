@@ -1,0 +1,24 @@
+ │   ├── Gate-Name
+ │   │   ├── FF
+ │   │   ├── FS
+ │   │   ├── SF
+ │   │   ├── SS
+ │   │   ├── TT
+ │   │   │   ├── Temp10
+ │   │   │   │   ├── sim.mtX
+ │   │   │   │   ├── sim.trX
+ │   │   │   │   └── sim_eval.mtX
+ │   │   │   │   └── sim_eval.mtX.json
+ │   │   │   ├── Temp25
+ │   │   │   ├── Temp40
+ │   │   │   ├── Temp55
+ │   │   │   ├── Temp70
+ │   │   │   ├── sim.tr0
+ │   │   │   ├── sim.tr1
+ │   │   │   ├── sim.tr2
+ │   │   │   ├── sim.tr3
+ │   │   │   └── sim.tr4
+ │   │   ├── latex_tables_from_json.txt
+ │   │   ├── organize.sh
+ │   │   ├── sim.lis
+ │   │   └── sim.sp

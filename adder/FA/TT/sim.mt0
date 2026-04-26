@@ -1,0 +1,108 @@
+$DATA1 SOURCE='HSPICE' VERSION='P-2019.06-SP1-1 win64' PARAM_COUNT=0
+.TITLE '********************* hspice fa gates modeling **********************'
+ t_s_a_b0c0_w1_lh t_s_a_b0c0_w1_hl t_s_a_b0c0_w2_lh t_s_a_b0c0_w2_hl
+ t_cout_a_b0c0_w1_lh t_cout_a_b0c0_w1_hl t_cout_a_b0c0_w2_lh
+ t_cout_a_b0c0_w2_hl t_s_a_b1c0_w1_lh t_s_a_b1c0_w1_hl
+ t_s_a_b1c0_w2_lh t_s_a_b1c0_w2_hl t_cout_a_b1c0_w1_lh
+ t_cout_a_b1c0_w1_hl t_cout_a_b1c0_w2_lh t_cout_a_b1c0_w2_hl
+ t_s_a_b0c1_w1_lh t_s_a_b0c1_w1_hl t_s_a_b0c1_w2_lh t_s_a_b0c1_w2_hl
+ t_cout_a_b0c1_w1_lh t_cout_a_b0c1_w1_hl t_cout_a_b0c1_w2_lh
+ t_cout_a_b0c1_w2_hl t_s_a_b1c1_w1_lh t_s_a_b1c1_w1_hl
+ t_s_a_b1c1_w2_lh t_s_a_b1c1_w2_hl t_cout_a_b1c1_w1_lh
+ t_cout_a_b1c1_w1_hl t_cout_a_b1c1_w2_lh t_cout_a_b1c1_w2_hl
+ t_s_b_a0c0_w1_lh t_s_b_a0c0_w1_hl t_s_b_a0c0_w2_lh t_s_b_a0c0_w2_hl
+ t_cout_b_a0c0_w1_lh t_cout_b_a0c0_w1_hl t_cout_b_a0c0_w2_lh
+ t_cout_b_a0c0_w2_hl t_s_b_a1c0_w1_lh t_s_b_a1c0_w1_hl
+ t_s_b_a1c0_w2_lh t_s_b_a1c0_w2_hl t_cout_b_a1c0_w1_lh
+ t_cout_b_a1c0_w1_hl t_cout_b_a1c0_w2_lh t_cout_b_a1c0_w2_hl
+ t_s_b_a0c1_w1_lh t_s_b_a0c1_w1_hl t_s_b_a0c1_w2_lh t_s_b_a0c1_w2_hl
+ t_cout_b_a0c1_w1_lh t_cout_b_a0c1_w1_hl t_cout_b_a0c1_w2_lh
+ t_cout_b_a0c1_w2_hl t_s_b_a1c1_w1_lh t_s_b_a1c1_w1_hl
+ t_s_b_a1c1_w2_lh t_s_b_a1c1_w2_hl t_cout_b_a1c1_w1_lh
+ t_cout_b_a1c1_w1_hl t_cout_b_a1c1_w2_lh t_cout_b_a1c1_w2_hl
+ t_s_c_a0b0_w1_lh t_s_c_a0b0_w1_hl t_s_c_a0b0_w2_lh t_s_c_a0b0_w2_hl
+ t_cout_c_a0b0_w1_lh t_cout_c_a0b0_w1_hl t_cout_c_a0b0_w2_lh
+ t_cout_c_a0b0_w2_hl t_s_c_a1b0_w1_lh t_s_c_a1b0_w1_hl
+ t_s_c_a1b0_w2_lh t_s_c_a1b0_w2_hl t_cout_c_a1b0_w1_lh
+ t_cout_c_a1b0_w1_hl t_cout_c_a1b0_w2_lh t_cout_c_a1b0_w2_hl
+ t_s_c_a0b1_w1_lh t_s_c_a0b1_w1_hl t_s_c_a0b1_w2_lh t_s_c_a0b1_w2_hl
+ t_cout_c_a0b1_w1_lh t_cout_c_a0b1_w1_hl t_cout_c_a0b1_w2_lh
+ t_cout_c_a0b1_w2_hl t_s_c_a1b1_w1_lh t_s_c_a1b1_w1_hl
+ t_s_c_a1b1_w2_lh t_s_c_a1b1_w2_hl t_cout_c_a1b1_w1_lh
+ t_cout_c_a1b1_w1_hl t_cout_c_a1b1_w2_lh t_cout_c_a1b1_w2_hl
+ tplh_s_m1        tplh_s_m2        tplh_s_m3        tplh_s_m4       
+ tplh_s_m5        tplh_s_m6        tplh_s_m7        tplh_s_m8       
+ tplh_s_m9        tplh_s_m10       tplh_s_m11       tplh_s_m12      
+ tplh_s_m13       tplh_s_m14       tplh_s_m15       tplh_s_m16      
+ tplh_s_m17       tplh_s_m18       tplh_s_m19       tplh_s_m20      
+ tplh_s_m21       tplh_s_m22       tplh_s           tphl_s_m1       
+ tphl_s_m2        tphl_s_m3        tphl_s_m4        tphl_s_m5       
+ tphl_s_m6        tphl_s_m7        tphl_s_m8        tphl_s_m9       
+ tphl_s_m10       tphl_s_m11       tphl_s_m12       tphl_s_m13      
+ tphl_s_m14       tphl_s_m15       tphl_s_m16       tphl_s_m17      
+ tphl_s_m18       tphl_s_m19       tphl_s_m20       tphl_s_m21      
+ tphl_s_m22       tphl_s           tp_s             tplh_cout_m1    
+ tplh_cout_m2     tplh_cout_m3     tplh_cout_m4     tplh_cout_m5    
+ tplh_cout_m6     tplh_cout_m7     tplh_cout_m8     tplh_cout_m9    
+ tplh_cout_m10    tplh_cout_m11    tplh_cout_m12    tplh_cout_m13   
+ tplh_cout_m14    tplh_cout_m15    tplh_cout_m16    tplh_cout_m17   
+ tplh_cout_m18    tplh_cout_m19    tplh_cout_m20    tplh_cout_m21   
+ tplh_cout_m22    tplh_cout        tphl_cout_m1     tphl_cout_m2    
+ tphl_cout_m3     tphl_cout_m4     tphl_cout_m5     tphl_cout_m6    
+ tphl_cout_m7     tphl_cout_m8     tphl_cout_m9     tphl_cout_m10   
+ tphl_cout_m11    tphl_cout_m12    tphl_cout_m13    tphl_cout_m14   
+ tphl_cout_m15    tphl_cout_m16    tphl_cout_m17    tphl_cout_m18   
+ tphl_cout_m19    tphl_cout_m20    tphl_cout_m21    tphl_cout_m22   
+ tphl_cout        tp_cout          tp_global_max    voh_val         
+ vol_val          p_avg            p_max            pdp             
+ i_avg            i_peak           temper           alter#          
+  1.927e-10          failed           failed         1.890e-10      
+    failed           failed           failed           failed       
+ -1.180e-10        1.439e-10        1.519e-10          failed       
+  4.745e-11          failed           failed         5.386e-11      
+ -1.519e-10        1.514e-10        1.518e-10          failed       
+  1.899e-10       -1.164e-10          failed         1.881e-10      
+  1.049e-10       -1.564e-10          failed         1.140e-10      
+ -1.178e-10          failed         1.510e-10        5.385e-11      
+  1.822e-10       -1.090e-10          failed         1.840e-10      
+    failed           failed           failed           failed       
+ -1.092e-10        1.370e-10        1.520e-10          failed       
+  4.929e-11          failed           failed         6.557e-11      
+ -1.509e-10        1.431e-10        1.452e-10          failed       
+  1.817e-10       -1.154e-10          failed         1.815e-10      
+  9.838e-11       -1.477e-10          failed         1.140e-10      
+ -1.092e-10          failed         1.502e-10        6.554e-11      
+  7.809e-11       -1.076e-10          failed         7.794e-11      
+    failed           failed           failed           failed       
+ -1.087e-10        3.386e-11        4.000e-11          failed       
+  5.918e-11          failed           failed         5.767e-11      
+    failed         3.453e-11        3.999e-11          failed       
+  5.912e-11          failed           failed         5.767e-11      
+  7.855e-11       -1.508e-10          failed         7.794e-11      
+    failed           failed           failed           failed       
+    failed           failed           failed           failed       
+    failed           failed           failed           failed       
+    failed           failed           failed           failed       
+    failed           failed           failed           failed       
+    failed           failed           failed           failed       
+    failed           failed           failed           failed       
+    failed           failed           failed           failed       
+    failed           failed           failed           failed       
+    failed           failed           failed           failed       
+    failed           failed           failed           failed       
+    failed           failed           failed           failed       
+    failed           failed           failed           failed       
+    failed           failed           failed           failed       
+    failed           failed           failed           failed       
+    failed           failed           failed           failed       
+    failed           failed           failed           failed       
+    failed           failed           failed           failed       
+    failed           failed           failed           failed       
+    failed           failed           failed           failed       
+    failed           failed           failed           failed       
+    failed           failed           failed           failed       
+    failed           failed           failed           failed       
+    failed           failed           failed           failed       
+    failed           failed           failed           failed       
+    failed         1.346e-04        1.059e-03          failed       
+ -1.296e-04       -1.131e-03         25.0000        1               

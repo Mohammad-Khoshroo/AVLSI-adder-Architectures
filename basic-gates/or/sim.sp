@@ -1,0 +1,164 @@
+******************** HSPICE BASIC GATES MODELING ********************
+*
+*   Mohammad Khoshroo - 810102441 
+*   Spring 2026
+*   AVLSI Course - by Dr. Vahdat
+*   Thechnolegy - crn90g_2d5_lk_v1d2p1.l (90nm)
+*   Standard MOSFET Model Name : nch , pch
+*   OR2 SIMULATION
+*   TEMP(℃) 10/25/40/55/70
+*   CORNER TT/SS/FF/SF/FS
+*
+**************************** PARAMETERS *****************************
+
+.OPTION NOMOD
+.LIB "../../utils/crn90g_2d5_lk_v1d2p1.l" TT
+.INC "../custom_gates.inc"
+
+.PARAM Vdd_val = 1                  $ supply-1 voltage
+.PARAM Vss_val = 0                  $ supply-0 voltage
+.PARAM beta = 2                     $ un/up
+.PARAM L = 180n                     $ Channel length
+.PARAM Wn_min = 1u                  $ Minimum Transistor width for n-types
+.PARAM Wp_min = 'beta * Wn_min'     $ Minimum Transistor width for p-types
+
+
+****************************** CIRCUIT ******************************
+
+Xor inA inB out Vdd Vss OR2     $ OR2 GATE Under TEST/SIMULATION
+
+************************* SIMULATION SETTING ************************
+
+* Supplys Voltage Node
+Vdd Vdd 0 DC 'Vdd_val'
+Vss Vss 0 DC 'Vss_val'
+
+.TRAN 0.01p 1.7n SWEEP DATA=beta_sweep
+.TEMP 10 25 40 55 70
+.DATA beta_sweep
+beta  
+1        
+2     
+3
+4
+5
+.ENDDATA
+
+
+* ===================================================================
+* Timing & Delay
+
+VinA inA 0 PWL(0p 0  150p 0  180p 'Vdd_val'  390p 'Vdd_val'  420p 0  750p 0  780p 'Vdd_val'  990p 'Vdd_val'  1020p 0  1800p 0  1830p 'Vdd_val'  2400p 'Vdd_val')
+VinB inB 0 PWL(0p 0  600p 0  630p 'Vdd_val'  1200p 'Vdd_val'  1230p 0  1350p 0  1380p 'Vdd_val'  1590p 'Vdd_val'  1620p 0  1950p 0  1980p 'Vdd_val'  2190p 'Vdd_val'  2220p 0  2400p 0)
+
+* -------------------------------------------------------------------
+* TEST 1: inB=0, inA changes (Window: 0p to 600p)
+* -------------------------------------------------------------------
+.MEASURE TRAN t_out_A_B0_w1_LH TRIG V(inA) VAL='0.5 * Vdd_val' RISE=1 TARG V(out) VAL='0.5 * Vdd_val' RISE=1 FROM=60p TO=270p
+.MEASURE TRAN t_out_A_B0_w1_HL TRIG V(inA) VAL='0.5 * Vdd_val' RISE=1 TARG V(out) VAL='0.5 * Vdd_val' FALL=1 FROM=60p TO=270p
+.MEASURE TRAN t_out_A_B0_w2_LH TRIG V(inA) VAL='0.5 * Vdd_val' FALL=1 TARG V(out) VAL='0.5 * Vdd_val' RISE=1 FROM=300p TO=540p
+.MEASURE TRAN t_out_A_B0_w2_HL TRIG V(inA) VAL='0.5 * Vdd_val' FALL=1 TARG V(out) VAL='0.5 * Vdd_val' FALL=1 FROM=300p TO=540p
+
+* -------------------------------------------------------------------
+* TEST 2: inB=1, inA changes (Window: 600p to 1200p)
+* -------------------------------------------------------------------
+.MEASURE TRAN t_out_A_B1_w1_LH TRIG V(inA) VAL='0.5 * Vdd_val' RISE=1 TARG V(out) VAL='0.5 * Vdd_val' RISE=1 FROM=660p TO=870p
+.MEASURE TRAN t_out_A_B1_w1_HL TRIG V(inA) VAL='0.5 * Vdd_val' RISE=1 TARG V(out) VAL='0.5 * Vdd_val' FALL=1 FROM=660p TO=870p
+.MEASURE TRAN t_out_A_B1_w2_LH TRIG V(inA) VAL='0.5 * Vdd_val' FALL=1 TARG V(out) VAL='0.5 * Vdd_val' RISE=1 FROM=900p TO=1140p
+.MEASURE TRAN t_out_A_B1_w2_HL TRIG V(inA) VAL='0.5 * Vdd_val' FALL=1 TARG V(out) VAL='0.5 * Vdd_val' FALL=1 FROM=900p TO=1140p
+
+* -------------------------------------------------------------------
+* TEST 3: inA=0, inB changes (Window: 1200p to 1800p)
+* -------------------------------------------------------------------
+.MEASURE TRAN t_out_B_A0_w1_LH TRIG V(inB) VAL='0.5 * Vdd_val' RISE=1 TARG V(out) VAL='0.5 * Vdd_val' RISE=1 FROM=1260p TO=1470p
+.MEASURE TRAN t_out_B_A0_w1_HL TRIG V(inB) VAL='0.5 * Vdd_val' RISE=1 TARG V(out) VAL='0.5 * Vdd_val' FALL=1 FROM=1260p TO=1470p
+.MEASURE TRAN t_out_B_A0_w2_LH TRIG V(inB) VAL='0.5 * Vdd_val' FALL=1 TARG V(out) VAL='0.5 * Vdd_val' RISE=1 FROM=1500p TO=1740p
+.MEASURE TRAN t_out_B_A0_w2_HL TRIG V(inB) VAL='0.5 * Vdd_val' FALL=1 TARG V(out) VAL='0.5 * Vdd_val' FALL=1 FROM=1500p TO=1740p
+
+* -------------------------------------------------------------------
+* TEST 4: inA=1, inB changes (Window: 1800p to 2400p)
+* -------------------------------------------------------------------
+.MEASURE TRAN t_out_B_A1_w1_LH TRIG V(inB) VAL='0.5 * Vdd_val' RISE=1 TARG V(out) VAL='0.5 * Vdd_val' RISE=1 FROM=1860p TO=2070p
+.MEASURE TRAN t_out_B_A1_w1_HL TRIG V(inB) VAL='0.5 * Vdd_val' RISE=1 TARG V(out) VAL='0.5 * Vdd_val' FALL=1 FROM=1860p TO=2070p
+.MEASURE TRAN t_out_B_A1_w2_LH TRIG V(inB) VAL='0.5 * Vdd_val' FALL=1 TARG V(out) VAL='0.5 * Vdd_val' RISE=1 FROM=2100p TO=2340p
+.MEASURE TRAN t_out_B_A1_w2_HL TRIG V(inB) VAL='0.5 * Vdd_val' FALL=1 TARG V(out) VAL='0.5 * Vdd_val' FALL=1 FROM=2100p TO=2340p
+
+* ===================================================================
+* Final Delay Calculations (Separated tpLH, tpHL, and Averaged tp)
+* ===================================================================
+* --- Delays for Output: out ---
+* Maximum Low-to-High (tpLH) for out
+.MEASURE TRAN tpLH_out_m1 PARAM='MAX(t_out_A_B0_w1_LH, t_out_A_B0_w2_LH)'
+.MEASURE TRAN tpLH_out_m2 PARAM='MAX(tpLH_out_m1, t_out_A_B1_w1_LH)'
+.MEASURE TRAN tpLH_out_m3 PARAM='MAX(tpLH_out_m2, t_out_A_B1_w2_LH)'
+.MEASURE TRAN tpLH_out_m4 PARAM='MAX(tpLH_out_m3, t_out_B_A0_w1_LH)'
+.MEASURE TRAN tpLH_out_m5 PARAM='MAX(tpLH_out_m4, t_out_B_A0_w2_LH)'
+.MEASURE TRAN tpLH_out_m6 PARAM='MAX(tpLH_out_m5, t_out_B_A1_w1_LH)'
+.MEASURE TRAN tpLH_out PARAM='MAX(tpLH_out_m6, t_out_B_A1_w2_LH)'
+* Maximum High-to-Low (tpHL) for out
+.MEASURE TRAN tpHL_out_m1 PARAM='MAX(t_out_A_B0_w1_HL, t_out_A_B0_w2_HL)'
+.MEASURE TRAN tpHL_out_m2 PARAM='MAX(tpHL_out_m1, t_out_A_B1_w1_HL)'
+.MEASURE TRAN tpHL_out_m3 PARAM='MAX(tpHL_out_m2, t_out_A_B1_w2_HL)'
+.MEASURE TRAN tpHL_out_m4 PARAM='MAX(tpHL_out_m3, t_out_B_A0_w1_HL)'
+.MEASURE TRAN tpHL_out_m5 PARAM='MAX(tpHL_out_m4, t_out_B_A0_w2_HL)'
+.MEASURE TRAN tpHL_out_m6 PARAM='MAX(tpHL_out_m5, t_out_B_A1_w1_HL)'
+.MEASURE TRAN tpHL_out PARAM='MAX(tpHL_out_m6, t_out_B_A1_w2_HL)'
+* Average tp for out
+.MEASURE TRAN tp_out PARAM='(tpLH_out + tpHL_out) / 2'
+
+* --- GLOBAL Worst Case Delay ---
+.MEASURE TRAN tp_global_max PARAM='tp_out'
+
+
+* ===================================================================
+* Output Voltage Level (Vo)
+
+.MEASURE TRAN VOH_val MAX V(out)
+.MEASURE TRAN VOL_val MIN V(out)
+
+* ===================================================================
+* Power (P)
+
+.MEASURE TRAN P_avg AVG POWER           $ Average Power
+.MEASURE TRAN P_max MAX POWER           $ Maximum (Peak) Power
+.MEASURE TRAN PDP PARAM = 'P_avg * tp_out'  $ Power-Delay Product (PDP)
+
+* ===================================================================
+* Current (I)
+
+.MEASURE TRAN I_avg AVG  I(Vdd)
+.MEASURE TRAN I_peak MIN I(Vdd)
+
+*************************** OUTPUT SETTING **************************
+
+.OPTION POST= 2 PROBE RUNLVL=6
+.PROBE V(inA) V(inB) V(out)
+
+.ALTER  Run_SF_Corner
+.DEL LIB "../../utils/crn90g_2d5_lk_v1d2p1.l" TT   $ Delete previous Corner Models
+.LIB "../../utils/crn90g_2d5_lk_v1d2p1.l" SF       $ Add new Corner Models
+.OPTION POST= 2 PROBE RUNLVL=6
+.PROBE V(inA) V(inB) V(out)
+
+.ALTER  Run_FS_Corner
+.DEL LIB "../../utils/crn90g_2d5_lk_v1d2p1.l" TT
+.LIB "../../utils/crn90g_2d5_lk_v1d2p1.l" FS
+.OPTION POST= 2 PROBE RUNLVL=6
+.PROBE V(inA) V(inB) V(out)
+
+.ALTER  Run_SS_Corner
+.DEL LIB "../../utils/crn90g_2d5_lk_v1d2p1.l" TT
+.LIB "../../utils/crn90g_2d5_lk_v1d2p1.l" SS
+.OPTION POST= 2 PROBE RUNLVL=6
+.PROBE V(inA) V(inB) V(out)
+
+.ALTER  Run_FF_Corner
+.DEL LIB "../../utils/crn90g_2d5_lk_v1d2p1.l" TT
+.LIB "../../utils/crn90g_2d5_lk_v1d2p1.l" FF
+.OPTION POST= 2 PROBE RUNLVL=6
+.PROBE V(inA) V(inB) V(out)
+
+
+* Each output file includes data for a fixed TEMP+Corner with beta parameter sweep
+
+.END
