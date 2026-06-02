@@ -3,8 +3,8 @@ import re
 import math
 import json
 
-BASE_DIR = "."
-FILE_PATTERN = r'\_eval\.mt\d+$'
+BASE_DIR = "./simulations/low-power-vs-high-performance/static/"
+FILE_PATTERN = r'\.mt\d+$'
 
 def scientific_to_si(num_str):
     try:
@@ -48,7 +48,6 @@ def parse_mt_to_json(filepath, filename):
 
     tokens = []
     
-    # عبور از خطوط متادیتا و خواندن تمام توکن ها
     for line in lines:
         line_stripped = line.strip()
         if not line_stripped:
@@ -67,11 +66,9 @@ def parse_mt_to_json(filepath, filename):
     headers = []
     i = 0
     
-    # خواندن هدرها تا رسیدن به اولین مقدار عددی (شروع داده ها) یا کلمه failed
     while i < len(tokens):
         token = tokens[i]
         
-        # اگر توکن یک عدد است یا کلمه failed است، یعنی هدرها تمام شده و به دیتا رسیدیم
         if is_number(token) or token.lower() == 'failed':
             break
             
@@ -83,10 +80,8 @@ def parse_mt_to_json(filepath, filename):
         print(f"Warning: No headers found in {filename}. Skipping.")
         return
 
-    # بقیه توکن ها دیتا هستند
     data_tokens = []
     while i < len(tokens):
-        # نادیده گرفتن index اگر وسط دیتا تکرار شده باشد (مربوط به ساختار قبلی)
         if tokens[i].lower() == 'index':
             i += 1
             continue
@@ -111,7 +106,6 @@ def parse_mt_to_json(filepath, filename):
     if len(data_tokens) % record_len != 0:
         print(f"Warning: Data tokens ({len(data_tokens)}) is not an exact multiple of headers ({record_len}) in {filename}.")
 
-    # پیدا کردن ایندکس کلید برای ذخیره در JSON (اولویت با alter# سپس index سپس اولین ستون)
     id_index = 0
     if 'alter#' in headers:
         id_index = headers.index('alter#')
@@ -138,13 +132,11 @@ def parse_mt_to_json(filepath, filename):
                 
             record_dict[h] = param_obj
 
-        # تعیین شناسه یکتای هر رکورد
         try:
             idx_key = str(int(float(chunk[id_index])))
         except:
             idx_key = str(chunk[id_index])
 
-        # برای جلوگیری از جایگزینی رکوردهای هم نام
         while idx_key in json_data["records_by_index"]:
             idx_key += "_dup"
 

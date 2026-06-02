@@ -3,7 +3,11 @@
 \usepackage{booktabs}
 \usepackage{multicol}
 \usepackage{graphicx}
+\usepackage{tabularx}
+\usepackage[table]{xcolor}
 \usepackage{xcolor}
+\usepackage{makecell}
+\usepackage{amsmath, bm}
 \usepackage{listings}
 \usepackage{caption}
 \usepackage{fancyhdr}
@@ -134,17 +138,17 @@
     morestring=[b]',
     morestring=[b]",
     stringstyle=\color{SpString},
-    basicstyle=\ttfamily\color{black}, 
+    basicstyle=\ttfamily\color{black},
 }
 
 \lstdefinelanguage{DirTree}{
-    basicstyle=\ttfamily\color{black},
-    % تبدیل خطوط گرافیکی به علائم ساده کیبورد برای سازگاری ۱۰۰٪
-    literate=
+basicstyle=\ttfamily\color{black},
+% تبدیل خطوط گرافیکی به علائم ساده کیبورد برای سازگاری ۱۰۰٪
+literate=
     {├}{|-}2
-    {─}{-}1
-    {└}{`-}2
-    {│}{|}1
+{─}{-}1
+{└}{`-}2
+{│}{|}1
 }
 
 
@@ -152,13 +156,13 @@
 
 \newcommand{\newimage}[4][\columnwidth]{
     \begin{center}
+        \phantomsection
         \includegraphics[width=#1]{#2}
-        \captionsetup{font=footnotesize, skip = 5pt}
+        \captionsetup{font=footnotesize, skip=5pt, hypcap=false}
         \captionof{figure}{#3}
         \label{#4}
     \end{center}
 }
-
 
 
 
@@ -191,7 +195,7 @@
 %       % تنظیمات کپشن مخصوص کد
 %       \captionsetup{type=lstlisting, font=scriptsize, skip=4pt}
 %       \captionof{lstlisting}{#3\label{#4}}
-      
+
 %       % استفاده از resizebox برای کنترل اندازه
 %       \resizebox{#1\columnwidth}{!}{%
 %         \begin{minipage}{\columnwidth}
@@ -308,7 +312,7 @@
 
             \vspace{1.5cm}
             {\hrule height 1pt} \vspace{0.5cm}
-            {\large \textbf{\assignmentsubtitle}} \\[0.3cm] 
+            {\large \textbf{\assignmentsubtitle}} \\[0.3cm]
             {\Large \textbf{\assignmenttitle}} \\[0.3cm]
             {\large \textbf{\coursename}}
             \vspace{0.5cm} \hrule \vspace{1cm}
@@ -370,3 +374,27 @@
 
     \setcounter{page}{1}
 }
+
+
+
+% \newcode[1]{SPICE}{codes/params.sp}{پارامتر‌های تعریف شده برای شبیه‌سازی}{code:param}
+% \newtable{ابعاد ترانزیستور‌های گیت‌های پایه}{tab:WnWp}
+% {|c|c|c|c|c|}
+% {
+%     \hline
+%     \textbf{$C_p$} & \textbf{$W_p$} & \textbf{$C_n$} & \textbf{$W_n$} & \textbf{Gate} \\
+%     \hline
+%     \hline
+%     1 & $\beta\mu m$ & 1 & $1\mu m$ & NOT/INV \\
+%     \hline
+%     1 & $\beta\mu m$ & 2 & $2\mu m$ & NAND \\
+%     \hline
+%     2 & $2\beta\mu m$ & 1 & $1\mu m$ & NOR \\
+%     \hline
+%     2 & $2\beta\mu m$ & 2 & $2\mu m$ & XOR \\
+%     \hline
+%     2 & $2\beta\mu m$ & 2 & $2\mu m$ & MUX \\
+%     \hline
+% }
+
+% \newimage[0.35\textwidth]{images/corners.png}{گوشه‌های طراحی}{fig:corners}
