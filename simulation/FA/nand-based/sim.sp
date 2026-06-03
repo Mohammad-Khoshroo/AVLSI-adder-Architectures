@@ -3,7 +3,7 @@
 *   Mohammad Khoshroo - 810102441 
 *   Spring 2026
 *   AVLSI Course - by Dr. Vahdat
-*   Thechnolegy - crn90g_2d5_lk_v1d2p1.l (90nm)
+*   Thechnolegy - crn90g_2d5_lk_v1d2p1.lib (90nm)
 *   Standard MOSFET Model Name : nch , pch
 *   FA NAND BASED SIMULATION
 *   TEMP(℃) 25
@@ -12,7 +12,7 @@
 **************************** PARAMETERS *****************************
 
 .OPTION NOMOD
-.LIB "../../utils/crn90g_2d5_lk_v1d2p1.l" TT
+.LIB "../../utils/crn90g_2d5_lk_v1d2p1.lib" TT
 .INC "../full_adder.inc"
 
 .PARAM Vdd_val = 1                  $ supply-1 voltage

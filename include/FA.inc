@@ -6,7 +6,7 @@
 *   Standard MOSFET Model Name : nch , pch
 *
 *
-.INC "../basic-gates/custom_gates.inc"
+.INC "basic_gates.inc"
 *
 ****************** FULL ADDER Gate-Level .SUBCKT ********************
 

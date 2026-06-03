@@ -12,7 +12,7 @@
 **************************** PARAMETERS *****************************
 
 .OPTION NOMOD
-.LIB "../../utils/crn90g_2d5_lk_v1d2p1.l" TT
+.LIB "../../utils/crn90g_2d5_lk_v1d2p1.lib" TT
 .INC "../basic_gates.inc"
 
 .PARAM Vdd_val = 1                  $ supply-1 voltage
@@ -232,26 +232,26 @@ Vsel sel 0 PWL(0p 0  2000p 0  2050p 'Vdd_val'  4000p 'Vdd_val'  4050p 0  6000p 0
 .PROBE V(inA) V(inB) V(sel) V(out)
 
 .ALTER  Run_SF_Corner
-.DEL LIB "../../utils/crn90g_2d5_lk_v1d2p1.l" TT   $ Delete previous Corner Models
-.LIB "../../utils/crn90g_2d5_lk_v1d2p1.l" SF       $ Add new Corner Models
+.DEL LIB "../../utils/crn90g_2d5_lk_v1d2p1.lib" TT   $ Delete previous Corner Models
+.LIB "../../utils/crn90g_2d5_lk_v1d2p1.lib" SF       $ Add new Corner Models
 .OPTION POST= 2 PROBE RUNLVL=6
 .PROBE V(inA) V(inB) V(sel) V(out)
 
 .ALTER  Run_FS_Corner
-.DEL LIB "../../utils/crn90g_2d5_lk_v1d2p1.l" TT
-.LIB "../../utils/crn90g_2d5_lk_v1d2p1.l" FS
+.DEL LIB "../../utils/crn90g_2d5_lk_v1d2p1.lib" TT
+.LIB "../../utils/crn90g_2d5_lk_v1d2p1.lib" FS
 .OPTION POST= 2 PROBE RUNLVL=6
 .PROBE V(inA) V(inB) V(sel) V(out)
 
 .ALTER  Run_SS_Corner
-.DEL LIB "../../utils/crn90g_2d5_lk_v1d2p1.l" TT
-.LIB "../../utils/crn90g_2d5_lk_v1d2p1.l" SS
+.DEL LIB "../../utils/crn90g_2d5_lk_v1d2p1.lib" TT
+.LIB "../../utils/crn90g_2d5_lk_v1d2p1.lib" SS
 .OPTION POST= 2 PROBE RUNLVL=6
 .PROBE V(inA) V(inB) V(sel) V(out)
 
 .ALTER  Run_FF_Corner
-.DEL LIB "../../utils/crn90g_2d5_lk_v1d2p1.l" TT
-.LIB "../../utils/crn90g_2d5_lk_v1d2p1.l" FF
+.DEL LIB "../../utils/crn90g_2d5_lk_v1d2p1.lib" TT
+.LIB "../../utils/crn90g_2d5_lk_v1d2p1.lib" FF
 .OPTION POST= 2 PROBE RUNLVL=6
 .PROBE V(inA) V(inB) V(sel) V(out)
 

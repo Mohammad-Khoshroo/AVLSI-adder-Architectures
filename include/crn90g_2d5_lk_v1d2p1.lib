@@ -256,7 +256,7 @@
 *     =========================
 *     .temp 25.000
 *     .param vdd=2.5
-*     .lib 'crn90g_2d5_lk_v1d2p1.l' TT_25
+*     .lib 'crn90g_2d5_lk_v1d2p1.lib' TT_25
 *     Vgs g 0 -2.5
 *     Vbs b 0 0.000
 *     Vss0 s0 0 -0.000
@@ -284,8 +284,8 @@
 *     +        newtol numdgt=7 relmos=1e-4 absmos=1e-8 relv=1e-4 relvdc=1e-4 ingold=2 gmindc=1e-18
 *
 *     .temp 25.000
-*     .lib 'crn90g_2d5_lk_v1d2p1.l' stat
-*     .lib 'crn90g_2d5_lk_v1d2p1.l' MC
+*     .lib 'crn90g_2d5_lk_v1d2p1.lib' stat
+*     .lib 'crn90g_2d5_lk_v1d2p1.lib' MC
 *
 *     Vgs g 0 1.0
 *     Vss s 0 0
@@ -331,7 +331,7 @@
 +dpeta0nrf        = 0			drdswprf         = 0                           
 +cfnrf            = '1.38E-10+3.1E-11*0'
 +cfprf            = '1.38E-10+3.1E-11*0'
-.lib 'crn90g_2d5_lk_v1d2p1.l' RF_MOS
+.lib 'crn90g_2d5_lk_v1d2p1.lib' RF_MOS
 .ENDL TT_RFMOS
 
 ******************************  LIBRARY OF SNSP CORNER CASE  ******************************
@@ -360,7 +360,7 @@
 +dpeta0nrf        = 0			drdswprf         = -50                         
 +cfnrf            = '1.283E-10+3.1E-11*0'
 +cfprf            = '1.283E-10+3.1E-11*0'
-.lib 'crn90g_2d5_lk_v1d2p1.l' RF_MOS
+.lib 'crn90g_2d5_lk_v1d2p1.lib' RF_MOS
 .ENDL SS_RFMOS
 
 ******************************  LIBRARY OF FNFP CORNER CASE  ******************************
@@ -389,7 +389,7 @@
 +dpeta0nrf        = 3.0e-16		drdswprf         = 50                                        
 +cfnrf            = '1.477E-10+3.1E-11*0'
 +cfprf            = '1.477E-10+3.1E-11*0'
-.lib 'crn90g_2d5_lk_v1d2p1.l' RF_MOS
+.lib 'crn90g_2d5_lk_v1d2p1.lib' RF_MOS
 .ENDL FF_RFMOS
 
 ******************************  LIBRARY OF SNFP CORNER CASE  ******************************
@@ -419,7 +419,7 @@
 +dpeta0nrf        = '-3e-16*A1Nrf'			drdswprf         = '-50*A1Prf'                       
 +cfnrf = '1.38E-10*(1-0.070*A4NPrf)+3.1E-11*0'
 +cfprf = '1.38E-10*(1-0.070*A4NPrf)+3.1E-11*0'
-.lib 'crn90g_2d5_lk_v1d2p1.l' RF_MOS
+.lib 'crn90g_2d5_lk_v1d2p1.lib' RF_MOS
 .ENDL SF_RFMOS
 
 ******************************  LIBRARY OF FNSP CORNER CASE  ******************************
@@ -449,11 +449,11 @@
 +dpeta0nrf        = '-3e-16*A1Nrf'			drdswprf         = '-50*A1Prf'                       
 +cfnrf = '1.38E-10*(1-0.070*A4NPrf)+3.1E-11*0'
 +cfprf = '1.38E-10*(1-0.070*A4NPrf)+3.1E-11*0'
-.lib 'crn90g_2d5_lk_v1d2p1.l' RF_MOS
+.lib 'crn90g_2d5_lk_v1d2p1.lib' RF_MOS
 .ENDL FS_RFMOS
 ******************************  LIBRARY OF Monte-Carlo CASE  ******************************
 .LIB MC_RFMOS
-*.lib 'crn90g_2d5_lk_v1d2p1.l' stat
+*.lib 'crn90g_2d5_lk_v1d2p1.lib' stat
 .param
 +parn1rf=AGAUSS(0,1,1)
 +parn2rf=AGAUSS(0,1,1)
@@ -497,7 +497,7 @@
 +cfprf             = '1.3800e-010+(1.6582e-012)*A1RF+(1.3199e-012)*A2RF+(5.9636e-014)*A3RF+(-2.2231e-013)*A4RF+3.1E-11*0'
 +dlcdscdprf        = '0.0000e+000'
 
-.lib 'crn90g_2d5_lk_v1d2p1.l' RF_MOS
+.lib 'crn90g_2d5_lk_v1d2p1.lib' RF_MOS
 .ENDL MC_RFMOS
 ***************************************************************
 *                                                             *
@@ -533,7 +533,7 @@
 +cfnrf_25	= '1.18E-10+3.0E-11*0'
 +cfprf_25	= '1.18E-10+3.0E-11*0'
 
-.lib 'crn90g_2d5_lk_v1d2p1.l' RF_MOS25
+.lib 'crn90g_2d5_lk_v1d2p1.lib' RF_MOS25
 .ENDL TT_RFMOS25
 ******************************  LIBRARY OF SNSP CORNER CASE  ******************************
 .LIB SS_RFMOS25
@@ -564,7 +564,7 @@
 +cfnrf_25	= '1.097E-10+3.0E-11*0'
 +cfprf_25	= '1.097E-10+3.0E-11*0'
 
-.lib 'crn90g_2d5_lk_v1d2p1.l' RF_MOS25
+.lib 'crn90g_2d5_lk_v1d2p1.lib' RF_MOS25
 .ENDL SS_RFMOS25
 ******************************  LIBRARY OF FNFP CORNER CASE  ******************************
 .LIB FF_RFMOS25
@@ -595,7 +595,7 @@
 +cfnrf_25	= '1.2626E-10+3.0E-11*0'
 +cfprf_25	= '1.2626E-10+3.0E-11*0'
 
-.lib 'crn90g_2d5_lk_v1d2p1.l' RF_MOS25
+.lib 'crn90g_2d5_lk_v1d2p1.lib' RF_MOS25
 .ENDL FF_RFMOS25
 ******************************  LIBRARY OF SNFP CORNER CASE  ******************************
 .LIB SF_RFMOS25
@@ -627,7 +627,7 @@
 +cfnrf_25 = '1.180E-10*(1-0.070*A4Nrf_25) + 3.0E-11*0'
 +cfprf_25 = '1.180E-10*(1-0.070*A4Prf_25) + 3.0E-11*0'
 
-.lib 'crn90g_2d5_lk_v1d2p1.l' RF_MOS25
+.lib 'crn90g_2d5_lk_v1d2p1.lib' RF_MOS25
 .ENDL SF_RFMOS25
 ******************************  LIBRARY OF FNSP CORNER CASE  ******************************
 .LIB FS_RFMOS25
@@ -659,11 +659,11 @@
 +cfnrf_25 = '1.180E-10*(1-0.070*A4Nrf_25) + 3.0E-11*0'
 +cfprf_25 = '1.180E-10*(1-0.070*A4Prf_25) + 3.0E-11*0'
 
-.lib 'crn90g_2d5_lk_v1d2p1.l' RF_MOS25
+.lib 'crn90g_2d5_lk_v1d2p1.lib' RF_MOS25
 .ENDL FS_RFMOS25
 ******************************  LIBRARY OF Monte-Carlo CASE  ******************************
 .lib MC_RFMOS25
-*.lib 'crn90g_2d5_lk_v1d2p1.l' stat
+*.lib 'crn90g_2d5_lk_v1d2p1.lib' stat
 .param
 +parn1rf_25=AGAUSS(0,1,1)
 +parn2rf_25=AGAUSS(0,1,1)
@@ -711,7 +711,7 @@
 +dleta0prf_25      = '0.0000e+000'
 +dlk2prf_25        = '0.0000e+000'
 
-.lib 'crn90g_2d5_lk_v1d2p1.l' RF_MOS25
+.lib 'crn90g_2d5_lk_v1d2p1.lib' RF_MOS25
 .endl MC_RFMOS25
 
 ********************************************************
@@ -728,7 +728,7 @@
 + cm5_mimfac      = 1.0
 + rsub_mimfac     = 1.0
 + csub_mimfac     = 1.0
-.lib 'crn90g_2d5_lk_v1d2p1.l' RF_MIM
+.lib 'crn90g_2d5_lk_v1d2p1.lib' RF_MIM
 .ENDL TT_RFMIM
 
 .LIB FF_RFMIM
@@ -742,7 +742,7 @@
 + cm5_mimfac      = 0.931
 + rsub_mimfac     = 0.8
 + csub_mimfac     = 1.25
-.lib 'crn90g_2d5_lk_v1d2p1.l' RF_MIM
+.lib 'crn90g_2d5_lk_v1d2p1.lib' RF_MIM
 .ENDL FF_RFMIM
 
 .LIB SS_RFMIM
@@ -756,7 +756,7 @@
 + cm5_mimfac      = 1.074
 + rsub_mimfac     = 1.2
 + csub_mimfac     = 0.833
-.lib 'crn90g_2d5_lk_v1d2p1.l' RF_MIM
+.lib 'crn90g_2d5_lk_v1d2p1.lib' RF_MIM
 .ENDL SS_RFMIM
 
 .LIB MC_RFMIM
@@ -770,7 +770,7 @@
 + cm5_mimfac      = 1.0
 + rsub_mimfac     = 1.0
 + csub_mimfac     = 1.0
-.lib 'crn90g_2d5_lk_v1d2p1.l' RF_MIM
+.lib 'crn90g_2d5_lk_v1d2p1.lib' RF_MIM
 .ENDL MC_RFMIM
 
 ********************************************************
@@ -784,7 +784,7 @@
 + cm9_indfac=1.0
 + csub_indfac=1.0
 + rsub_indfac=1.0
-.lib 'crn90g_2d5_lk_v1d2p1.l' RF_IND
+.lib 'crn90g_2d5_lk_v1d2p1.lib' RF_IND
 .ENDL TT_RFIND
 
 .LIB FF_RFIND
@@ -795,7 +795,7 @@
 + cm9_indfac=0.913
 + csub_indfac=1.25
 + rsub_indfac=0.8
-.lib 'crn90g_2d5_lk_v1d2p1.l' RF_IND
+.lib 'crn90g_2d5_lk_v1d2p1.lib' RF_IND
 .ENDL FF_RFIND
 
 .LIB SS_RFIND
@@ -806,7 +806,7 @@
 + cm9_indfac=1.07
 + csub_indfac=0.8333
 + rsub_indfac=1.2
-.lib 'crn90g_2d5_lk_v1d2p1.l' RF_IND
+.lib 'crn90g_2d5_lk_v1d2p1.lib' RF_IND
 .ENDL SS_RFIND
 
 .LIB MC_RFIND
@@ -819,7 +819,7 @@
 +cm9_indfac      = '1.0000e+000+(2.6646e-002)*A1_rfind+(7.6681e-003)*A2_rfind+(-1.3724e-002)*A3_rfind'
 +csub_indfac     = '1.0000e+000+(-7.0497e-002)*A1_rfind+(-1.7888e-002)*A2_rfind+(1.2793e-001)*A3_rfind'
 +rsub_indfac     = '1.0000e+000+(6.7780e-002)*A1_rfind+(1.9297e-002)*A2_rfind+(4.2380e-002)*A3_rfind'
-.lib 'crn90g_2d5_lk_v1d2p1.l' RF_IND
+.lib 'crn90g_2d5_lk_v1d2p1.lib' RF_IND
 .ENDL MC_RFIND
 
 ********************************************************
@@ -833,7 +833,7 @@
 + csub_mvfacrf  = 1
 + toxm_varrf=23.3  ndep0_varrf=1.1  pndep_varrf=1.2E-12 
 + fac_varrf=1.0 rs0_varrf=22.0 dxl_varrf=0 dxw_varrf=0
-.lib 'crn90g_2d5_lk_v1d2p1.l' RF_MVAR
+.lib 'crn90g_2d5_lk_v1d2p1.lib' RF_MVAR
 .ENDL TT_RFMVAR
 
 .LIB FF_RFMVAR
@@ -844,7 +844,7 @@
 + csub_mvfacrf  = 1.25
 + toxm_varrf=22.3  ndep0_varrf=1.305   pndep_varrf=1.4E-12 
 + fac_varrf=4.0 rs0_varrf=1.0 dxl_varrf=-5.0E-9 dxw_varrf=8E-9
-.lib 'crn90g_2d5_lk_v1d2p1.l' RF_MVAR
+.lib 'crn90g_2d5_lk_v1d2p1.lib' RF_MVAR
 .ENDL FF_RFMVAR
 
 .LIB SS_RFMVAR
@@ -855,11 +855,11 @@
 + csub_mvfacrf  = 0.833
 + toxm_varrf=24.3  ndep0_varrf=0.85   pndep_varrf=1.0E-12 
 + fac_varrf=0.32 rs0_varrf=250 dxl_varrf=5.0E-9 dxw_varrf=-8E-9
-.lib 'crn90g_2d5_lk_v1d2p1.l' RF_MVAR
+.lib 'crn90g_2d5_lk_v1d2p1.lib' RF_MVAR
 .ENDL SS_RFMVAR
 
 .LIB MC_RFMVAR
-*.lib 'crn90g_2d5_lk_v1d2p1.l' stat
+*.lib 'crn90g_2d5_lk_v1d2p1.lib' stat
 .param
 +random1_CAPrf=AGAUSS(0,0.22,4)
 +random2_CAPrf=AGAUSS(0,0.18,4)
@@ -879,7 +879,7 @@
 +pndep_varrf       = '1.2E-12 * (1 + ran_CAP1rf)'
 +fac_varrf         = 'pow((1+ran_CAP2rf),13.7)'
 +rs0_varrf         = '22*pow((1-ran_CAP2rf),20.2)'
-.lib 'crn90g_2d5_lk_v1d2p1.l'  RF_MVAR
+.lib 'crn90g_2d5_lk_v1d2p1.lib'  RF_MVAR
 .ENDL MC_RFMVAR
 
 ********************************************************
@@ -892,7 +892,7 @@
 + rsub_mvfacrf25 = 1
 + csub_mvfacrf25  = 1
 + Cgmin_Varrf25= 1     dCg_Varrf25= 1     dxl_varrf25= 0     dxw_varrf25= 0
-.lib 'crn90g_2d5_lk_v1d2p1.l' RF_MVAR25
+.lib 'crn90g_2d5_lk_v1d2p1.lib' RF_MVAR25
 .ENDL TT_RFMVAR25
 
 .LIB FF_RFMVAR25
@@ -902,7 +902,7 @@
 + rsub_mvfacrf25 = 0.8
 + csub_mvfacrf25  = 1.25
 + Cgmin_Varrf25= 1.08     dCg_Varrf25= 1.0361     dxl_varrf25= 1.0E-08     dxw_varrf25= 1.2E-08
-.lib 'crn90g_2d5_lk_v1d2p1.l' RF_MVAR25
+.lib 'crn90g_2d5_lk_v1d2p1.lib' RF_MVAR25
 .ENDL FF_RFMVAR25
 
 .LIB SS_RFMVAR25
@@ -912,11 +912,11 @@
 + rsub_mvfacrf25 = 1.2
 + csub_mvfacrf25  = 0.833
 + Cgmin_Varrf25= 0.92     dCg_Varrf25= 0.9639     dxl_varrf25= -1.0E-08     dxw_varrf25= -1.2E-08
-.lib 'crn90g_2d5_lk_v1d2p1.l' RF_MVAR25
+.lib 'crn90g_2d5_lk_v1d2p1.lib' RF_MVAR25
 .ENDL SS_RFMVAR25
 
 .LIB MC_RFMVAR25
-*.lib 'crn90g_2d5_lk_v1d2p1.l' stat
+*.lib 'crn90g_2d5_lk_v1d2p1.lib' stat
 .param
 +random_CAPrf25=AGAUSS(0,0.13,4)
 +A1_CAPrf25='par1*5.9981e+00' A2_CAPrf25='par2*4.3156e+00' A3_CAPrf25='par3*3.6829e+00' A4_CAPrf25='par4*1.1056e+00'
@@ -928,7 +928,7 @@
 + dxl_varrf25         = '0.0000e+000+(-1.2593e-009)*A1_CAPrf25+(-1.5918e-009)*A2_CAPrf25+(-2.9340e-009)*A3_CAPrf25+(2.5052e-010)*A4_CAPrf25'
 + dxw_varrf25         = '0.0000e+000+(1.7421e-009)*A1_CAPrf25+(8.9385e-010)*A2_CAPrf25+(4.0158e-009)*A3_CAPrf25+(-1.9599e-010)*A4_CAPrf25'
 + Cgmin_Varrf25         = '1+random_CAPrf25'
-.lib 'crn90g_2d5_lk_v1d2p1.l' RF_MVAR25
+.lib 'crn90g_2d5_lk_v1d2p1.lib' RF_MVAR25
 .ENDL MC_RFMVAR25
 
 ********************************************************
@@ -939,21 +939,21 @@
 .param
 +CJ_fac= 1          CJSW_fac= 1         L_fac= 1         Rm_fac= 1                  
 +Rsub_fac= 1        Csub_fac= 1         Rwell_fac= 1     Csti_fac= 1
-.lib 'crn90g_2d5_lk_v1d2p1.l' RF_JVAR
+.lib 'crn90g_2d5_lk_v1d2p1.lib' RF_JVAR
 .ENDL TT_RFJVAR
 
 .LIB FF_RFJVAR
 .param
 +CJ_fac= 0.93          CJSW_fac= 0.93         L_fac= 0.9762         Rm_fac= 0.9                  
 +Rsub_fac= 1.2         Csub_fac= 0.83333      Rwell_fac= 0.85       Csti_fac= 0.93
-.lib 'crn90g_2d5_lk_v1d2p1.l' RF_JVAR
+.lib 'crn90g_2d5_lk_v1d2p1.lib' RF_JVAR
 .ENDL FF_RFJVAR
 
 .LIB SS_RFJVAR
 .param
 +CJ_fac= 1.07         CJSW_fac= 1.07        L_fac= 1.0235          Rm_fac= 1.1                  
 +Rsub_fac= 0.8        Csub_fac= 1.25        Rwell_fac= 1.15        Csti_fac= 1.07
-.lib 'crn90g_2d5_lk_v1d2p1.l' RF_JVAR
+.lib 'crn90g_2d5_lk_v1d2p1.lib' RF_JVAR
 .ENDL SS_RFJVAR
 
 .LIB MC_RFJVAR
@@ -970,7 +970,7 @@
 +Csub_fac= '1 + 2.4*JVAR_1'   
 +Rwell_fac= '1 + 2.4*JVAR_1'     
 +Csti_fac= '1+JVAR_2' 
-.lib 'crn90g_2d5_lk_v1d2p1.l' RF_JVAR
+.lib 'crn90g_2d5_lk_v1d2p1.lib' RF_JVAR
 .ENDL MC_RFJVAR
 
 ********************************************************
@@ -981,7 +981,7 @@
 +par_rporf=AGAUSS(0,1,1)
 +r_rppolyworf = 402.10 rend_rppolyworf = 86.7u  dxw_rppolyworf = 0.0 dxl_rppolyworf = 0.0
 +rpol_fac=1   rpocox_fac=1   rporsub_fac=1  rpocsub_fac=1
-.lib 'crn90g_2d5_lk_v1d2p1.l' RF_RES_RPO
+.lib 'crn90g_2d5_lk_v1d2p1.lib' RF_RES_RPO
 .ENDL TT_RFRES_RPO
 
 .LIB SS_RFRES_RPO
@@ -989,7 +989,7 @@
 +par_rporf=AGAUSS(0,1,1)
 +r_rppolyworf='402.1*1.15'     rend_rppolyworf='86.7u*1.6'     dxw_rppolyworf = 0.035u dxl_rppolyworf = 0.0u
 +rpol_fac=1.0235   rpocox_fac=1.111   rporsub_fac=0.8  rpocsub_fac=1.25
-.lib  'crn90g_2d5_lk_v1d2p1.l' RF_RES_RPO
+.lib  'crn90g_2d5_lk_v1d2p1.lib' RF_RES_RPO
 .ENDL SS_RFRES_RPO
 
 .LIB FF_RFRES_RPO
@@ -997,7 +997,7 @@
 +par_rporf=AGAUSS(0,1,1)
 +r_rppolyworf = '402.1*0.85'   rend_rppolyworf='86.7u*0.4'      dxw_rppolyworf = -0.035u dxl_rppolyworf = 0.0u
 +rpol_fac=0.9762   rpocox_fac=0.9074   rporsub_fac=1.2  rpocsub_fac=0.833
-.lib  'crn90g_2d5_lk_v1d2p1.l' RF_RES_RPO
+.lib  'crn90g_2d5_lk_v1d2p1.lib' RF_RES_RPO
 .ENDL FF_RFRES_RPO
 
 .LIB MC_RFRES_RPO
@@ -1011,7 +1011,7 @@
 +dxl_rppolyworf = 0.0
 +dxw_rppolyworf = '0.0258u*par_dwpporf'
 +rpol_fac=1   rpocox_fac=1   rporsub_fac=1  rpocsub_fac=1
-.lib 'crn90g_2d5_lk_v1d2p1.l' RF_RES_RPO
+.lib 'crn90g_2d5_lk_v1d2p1.lib' RF_RES_RPO
 .ENDL MC_RFRES_RPO
 
 **********************************************************************
@@ -1020,7 +1020,7 @@
 + par_sarf=AGAUSS(0,1,1)
 +r_rppolylrf  = 10.77  r_rppolysrf  = 10.77     dxw_rppolysrf = 0.0
 +sal_fac=1    sacox_fac=1    sarsub_fac=1   sacsub_fac =1
-.lib 'crn90g_2d5_lk_v1d2p1.l' RF_RES_SA
+.lib 'crn90g_2d5_lk_v1d2p1.lib' RF_RES_SA
 .ENDL TT_RFRES_SA
 
 .LIB SS_RFRES_SA
@@ -1028,7 +1028,7 @@
 + par_sarf=AGAUSS(0,1,1)
 +r_rppolylrf  = '10.77 +2.15 ' r_rppolysrf  = '10.77 +2.26'  dxw_rppolysrf = 0.012u
 +sal_fac=1.0235    sacox_fac=1.111    sarsub_fac=0.8   sacsub_fac =1.25
-.lib  'crn90g_2d5_lk_v1d2p1.l' RF_RES_SA
+.lib  'crn90g_2d5_lk_v1d2p1.lib' RF_RES_SA
 .ENDL SS_RFRES_SA
 
 .LIB FF_RFRES_SA
@@ -1036,7 +1036,7 @@
 + par_sarf=AGAUSS(0,1,1)
 +r_rppolylrf  = '10.77 -2.15 ' r_rppolysrf  = '10.77 -2.26'   dxw_rppolysrf = -0.03u
 +sal_fac=0.9762    sacox_fac=0.9074    sarsub_fac=1.2   sacsub_fac =0.833
-.lib  'crn90g_2d5_lk_v1d2p1.l' RF_RES_SA
+.lib  'crn90g_2d5_lk_v1d2p1.lib' RF_RES_SA
 .ENDL FF_RFRES_SA
 
 .LIB MC_RFRES_SA
@@ -1049,7 +1049,7 @@
 +dxl_rppolysrf = 0.0
 +dxw_rppolysrf = '0.0069u*par_dwsapporf'
 +sal_fac=1    sacox_fac=1    sarsub_fac=1   sacsub_fac =1
-.lib  'crn90g_2d5_lk_v1d2p1.l' RF_RES_SA
+.lib  'crn90g_2d5_lk_v1d2p1.lib' RF_RES_SA
 .ENDL MC_RFRES_SA
 
 ***********************************************************************
@@ -1062,7 +1062,7 @@
 + l_momfac=1
 + r_momfac=1
 + par_rfmom=AGAUSS(0,1,1)
-.lib 'crn90g_2d5_lk_v1d2p1.l' RFRTMOM
+.lib 'crn90g_2d5_lk_v1d2p1.lib' RFRTMOM
 .ENDL TT_RFRTMOM
 
 ************* Library of slow corner **********************************
@@ -1072,7 +1072,7 @@
 + l_momfac=1.0235
 + r_momfac=1.3
 + par_rfmom=AGAUSS(0,1,1)
-.lib 'crn90g_2d5_lk_v1d2p1.l' RFRTMOM
+.lib 'crn90g_2d5_lk_v1d2p1.lib' RFRTMOM
 .ENDL SS_RFRTMOM
 
 ************* Library of fast corner **********************************
@@ -1082,7 +1082,7 @@
 + l_momfac=0.9762
 + r_momfac=0.7
 + par_rfmom=AGAUSS(0,1,1)
-.lib 'crn90g_2d5_lk_v1d2p1.l' RFRTMOM
+.lib 'crn90g_2d5_lk_v1d2p1.lib' RFRTMOM
 .ENDL FF_RFRTMOM
 **************************************************************************************************
 *
@@ -2636,7 +2636,7 @@ R_sub 5 gnode 'rsub_mvfacrf*rsub'
 C_sub 5 gnode 'csub_mvfacrf*193.5f/rsub' 
 .ends moscap_rf
 
-.lib 'crn90g_2d5_lk_v1d2p1.l' DIO_MVDNWPSUB
+.lib 'crn90g_2d5_lk_v1d2p1.lib' DIO_MVDNWPSUB
 .ENDL RF_MVAR
 
 .LIB RF_MVAR25
@@ -2697,7 +2697,7 @@ R_sub 5 gnode 'rsub_mvfacrf25*rsub'
 C_sub 5 gnode 'csub_mvfacrf25*193.5f/rsub'
 .ends moscap_rf25
 
-.lib 'crn90g_2d5_lk_v1d2p1.l' DIO_MVDNWPSUB25
+.lib 'crn90g_2d5_lk_v1d2p1.lib' DIO_MVDNWPSUB25
 .ENDL RF_MVAR25
 
 .lib DIO_MVDNWPSUB
@@ -2775,8 +2775,8 @@ Csub 30 gnode '(1.935e-13/((0.5*1/((1/(880*w/6/((l+0.56u)*nr+0.2u)+1100*3u/((l+0
 
 .ends xjvar
 
-.lib 'crn90g_2d5_lk_v1d2p1.l' DIO_PDIO_XJ
-.lib 'crn90g_2d5_lk_v1d2p1.l' DIO_DNWPSUB_XJ
+.lib 'crn90g_2d5_lk_v1d2p1.lib' DIO_PDIO_XJ
+.lib 'crn90g_2d5_lk_v1d2p1.lib' DIO_DNWPSUB_XJ
 .ENDL RF_JVAR
 
 .LIB DIO_PDIO_XJ
@@ -3043,7 +3043,7 @@ lb n2 b 'total_l*l_momfac'
 ***************************************************************
 ******************************    LIBRARY OF TYPICAL CASE    ******************************
 .LIB TT
-.lib 'crn90g_2d5_lk_v1d2p1.l' CCO_pre_simu
+.lib 'crn90g_2d5_lk_v1d2p1.lib' CCO_pre_simu
 .param
 +parn1=AGAUSS(0,1,1)
 +parn2=AGAUSS(0,1,1)
@@ -3064,12 +3064,12 @@ lb n2 b 'total_l*l_momfac'
 +ntoxp          = 1             dlvoffp        = 0             dk2p           = 0
 +cfn            = '1.38E-10+3.1E-11*ccoflag'
 +cfp            = '1.38E-10+3.1E-11*ccoflag'
-.lib 'crn90g_2d5_lk_v1d2p1.l' MOS
+.lib 'crn90g_2d5_lk_v1d2p1.lib' MOS
 .ENDL TT
 
 ******************************  LIBRARY OF SNSP CORNER CASE  ******************************
 .LIB SS
-.lib 'crn90g_2d5_lk_v1d2p1.l' CCO_pre_simu
+.lib 'crn90g_2d5_lk_v1d2p1.lib' CCO_pre_simu
 .param
 +parn1=AGAUSS(0,1,1)
 +parn2=AGAUSS(0,1,1)
@@ -3090,12 +3090,12 @@ lb n2 b 'total_l*l_momfac'
 +ntoxp          = -3.0          dlvoffp        = 0             dk2p           = 4.5e-3
 +cfn            = '1.283E-10+3.1E-11*ccoflag'
 +cfp            = '1.283E-10+3.1E-11*ccoflag'
-.lib 'crn90g_2d5_lk_v1d2p1.l' MOS
+.lib 'crn90g_2d5_lk_v1d2p1.lib' MOS
 .ENDL SS
 
 ******************************  LIBRARY OF FNFP CORNER CASE  ******************************
 .LIB FF
-.lib 'crn90g_2d5_lk_v1d2p1.l' CCO_pre_simu
+.lib 'crn90g_2d5_lk_v1d2p1.lib' CCO_pre_simu
 .param
 +parn1=AGAUSS(0,1,1)
 +parn2=AGAUSS(0,1,1)
@@ -3116,12 +3116,12 @@ lb n2 b 'total_l*l_momfac'
 +ntoxp          = 5.0           dlvoffp        = -5.5e-10        dk2p           = -4.5e-3
 +cfn            = '1.477E-10+3.1E-11*ccoflag'
 +cfp            = '1.477E-10+3.1E-11*ccoflag'
-.lib 'crn90g_2d5_lk_v1d2p1.l' MOS
+.lib 'crn90g_2d5_lk_v1d2p1.lib' MOS
 .ENDL FF
 
 ******************************  LIBRARY OF SNFP CORNER CASE  ******************************
 .LIB SF
-.lib 'crn90g_2d5_lk_v1d2p1.l' CCO_pre_simu
+.lib 'crn90g_2d5_lk_v1d2p1.lib' CCO_pre_simu
 .param
 +parn1=AGAUSS(0,1,1)
 +parn2=AGAUSS(0,1,1)
@@ -3142,12 +3142,12 @@ lb n2 b 'total_l*l_momfac'
 +dk2p = '0.0045*A1P'                     
 +cfn = '1.38E-10*(1-0.070*A4NP)+3.1E-11*ccoflag'
 +cfp = '1.38E-10*(1-0.070*A4NP)+3.1E-11*ccoflag'
-.lib 'crn90g_2d5_lk_v1d2p1.l' MOS
+.lib 'crn90g_2d5_lk_v1d2p1.lib' MOS
 .ENDL SF
 
 ******************************  LIBRARY OF FNSP CORNER CASE  ******************************
 .LIB FS
-.lib 'crn90g_2d5_lk_v1d2p1.l' CCO_pre_simu
+.lib 'crn90g_2d5_lk_v1d2p1.lib' CCO_pre_simu
 .param
 +parn1=AGAUSS(0,1,1)
 +parn2=AGAUSS(0,1,1)
@@ -3168,7 +3168,7 @@ lb n2 b 'total_l*l_momfac'
 +dk2p = '0.0045*A1P'                     
 +cfn = '1.38E-10*(1-0.070*A4NP)+3.1E-11*ccoflag'
 +cfp = '1.38E-10*(1-0.070*A4NP)+3.1E-11*ccoflag'
-.lib 'crn90g_2d5_lk_v1d2p1.l' MOS
+.lib 'crn90g_2d5_lk_v1d2p1.lib' MOS
 .ENDL FS
 
 *******************************************************************************************
@@ -3181,7 +3181,7 @@ lb n2 b 'total_l*l_momfac'
 ***************************************************************
 ******************************    LIBRARY OF TYPICAL CASE    ******************************
 .LIB TT_hvt
-.lib 'crn90g_2d5_lk_v1d2p1.l' CCO_pre_simu_hvt
+.lib 'crn90g_2d5_lk_v1d2p1.lib' CCO_pre_simu_hvt
 .param
 +parn1_hvt=AGAUSS(0,1,1)
 +parn2_hvt=AGAUSS(0,1,1)
@@ -3202,12 +3202,12 @@ lb n2 b 'total_l*l_momfac'
 +drdswp_hvt     = 0             ntoxp_hvt      = 1             dpvsatp_hvt    = 0
 +cfn_hvt        = '1.38E-10+3.1E-11*ccoflag_hvt'
 +cfp_hvt        = '1.38E-10+3.1E-11*ccoflag_hvt'
-.lib 'crn90g_2d5_lk_v1d2p1.l' MOS_hvt
+.lib 'crn90g_2d5_lk_v1d2p1.lib' MOS_hvt
 .ENDL TT_hvt
 
 ******************************  LIBRARY OF SNSP CORNER CASE  ******************************
 .LIB SS_hvt
-.lib 'crn90g_2d5_lk_v1d2p1.l' CCO_pre_simu_hvt
+.lib 'crn90g_2d5_lk_v1d2p1.lib' CCO_pre_simu_hvt
 .param
 +parn1_hvt=AGAUSS(0,1,1)
 +parn2_hvt=AGAUSS(0,1,1)
@@ -3228,12 +3228,12 @@ lb n2 b 'total_l*l_momfac'
 +drdswp_hvt     = -110          ntoxp_hvt      = -3.0          dpvsatp_hvt    = 0
 +cfn_hvt        = '1.283E-10+3.1E-11*ccoflag_hvt'
 +cfp_hvt        = '1.283E-10+3.1E-11*ccoflag_hvt'
-.lib 'crn90g_2d5_lk_v1d2p1.l' MOS_hvt
+.lib 'crn90g_2d5_lk_v1d2p1.lib' MOS_hvt
 .ENDL SS_hvt
 
 ******************************  LIBRARY OF FNFP CORNER CASE  ******************************
 .LIB FF_hvt
-.lib 'crn90g_2d5_lk_v1d2p1.l' CCO_pre_simu_hvt
+.lib 'crn90g_2d5_lk_v1d2p1.lib' CCO_pre_simu_hvt
 .param
 +parn1_hvt=AGAUSS(0,1,1)
 +parn2_hvt=AGAUSS(0,1,1)
@@ -3254,12 +3254,12 @@ lb n2 b 'total_l*l_momfac'
 +drdswp_hvt     = 90            ntoxp_hvt      = 5.0           dpvsatp_hvt    = -8e-11
 +cfn_hvt        = '1.477E-10+3.1E-11*ccoflag_hvt'
 +cfp_hvt        = '1.477E-10+3.1E-11*ccoflag_hvt'
-.lib 'crn90g_2d5_lk_v1d2p1.l' MOS_hvt
+.lib 'crn90g_2d5_lk_v1d2p1.lib' MOS_hvt
 .ENDL FF_hvt
 
 ******************************  LIBRARY OF SNFP CORNER CASE  ******************************
 .LIB SF_hvt
-.lib 'crn90g_2d5_lk_v1d2p1.l' CCO_pre_simu_hvt
+.lib 'crn90g_2d5_lk_v1d2p1.lib' CCO_pre_simu_hvt
 .param
 +parn1_hvt=AGAUSS(0,1,1)
 +parn2_hvt=AGAUSS(0,1,1)
@@ -3281,12 +3281,12 @@ lb n2 b 'total_l*l_momfac'
 +ntoxp_hvt = '1 + -4.0000e+00*A4NP_hvt'        dpvsatp_hvt    = '8e-11*A1P_hvt'
 +cfn_hvt = '1.38E-10*(1-0.070*A4NP_hvt)+3.1E-11*ccoflag_hvt'
 +cfp_hvt = '1.38E-10*(1-0.070*A4NP_hvt)+3.1E-11*ccoflag_hvt'
-.lib 'crn90g_2d5_lk_v1d2p1.l' MOS_hvt
+.lib 'crn90g_2d5_lk_v1d2p1.lib' MOS_hvt
 .ENDL SF_hvt
 
 ******************************  LIBRARY OF FNSP CORNER CASE  ******************************
 .LIB FS_hvt
-.lib 'crn90g_2d5_lk_v1d2p1.l' CCO_pre_simu_hvt
+.lib 'crn90g_2d5_lk_v1d2p1.lib' CCO_pre_simu_hvt
 .param
 +parn1_hvt=AGAUSS(0,1,1)
 +parn2_hvt=AGAUSS(0,1,1)
@@ -3308,7 +3308,7 @@ lb n2 b 'total_l*l_momfac'
 +ntoxp_hvt = '1 + -4.0000e+00*A4NP_hvt'        dpvsatp_hvt    = '8e-11*A1P_hvt'
 +cfn_hvt = '1.38E-10*(1-0.070*A4NP_hvt)+3.1E-11*ccoflag_hvt'
 +cfp_hvt = '1.38E-10*(1-0.070*A4NP_hvt)+3.1E-11*ccoflag_hvt'
-.lib 'crn90g_2d5_lk_v1d2p1.l' MOS_hvt
+.lib 'crn90g_2d5_lk_v1d2p1.lib' MOS_hvt
 .ENDL FS_hvt
 *******************************************************************************************
 *
@@ -3320,7 +3320,7 @@ lb n2 b 'total_l*l_momfac'
 ***************************************************************
 ******************************    LIBRARY OF TYPICAL CASE    ******************************
 .LIB TT_lvt
-.lib 'crn90g_2d5_lk_v1d2p1.l' CCO_pre_simu_lvt
+.lib 'crn90g_2d5_lk_v1d2p1.lib' CCO_pre_simu_lvt
 .param
 +parn1_lvt=AGAUSS(0,1,1)
 +parn2_lvt=AGAUSS(0,1,1)
@@ -3344,12 +3344,12 @@ lb n2 b 'total_l*l_momfac'
 +dpvsatp_lvt    = 0             dlvsatp_lvt    = 0
 +cfn_lvt        = '1.38E-10+3.1E-11*ccoflag_lvt'
 +cfp_lvt        = '1.38E-10+3.1E-11*ccoflag_lvt'
-.lib 'crn90g_2d5_lk_v1d2p1.l' MOS_lvt
+.lib 'crn90g_2d5_lk_v1d2p1.lib' MOS_lvt
 .ENDL TT_lvt
 
 ******************************  LIBRARY OF SNSP CORNER CASE  ******************************
 .LIB SS_lvt
-.lib 'crn90g_2d5_lk_v1d2p1.l' CCO_pre_simu_lvt
+.lib 'crn90g_2d5_lk_v1d2p1.lib' CCO_pre_simu_lvt
 .param
 +parn1_lvt=AGAUSS(0,1,1)
 +parn2_lvt=AGAUSS(0,1,1)
@@ -3373,12 +3373,12 @@ lb n2 b 'total_l*l_momfac'
 +dpvsatp_lvt    = 0             dlvsatp_lvt    = 0
 +cfn_lvt        = '1.283E-10+3.1E-11*ccoflag_lvt'
 +cfp_lvt        = '1.283E-10+3.1E-11*ccoflag_lvt'
-.lib 'crn90g_2d5_lk_v1d2p1.l' MOS_lvt
+.lib 'crn90g_2d5_lk_v1d2p1.lib' MOS_lvt
 .ENDL SS_lvt
 
 ******************************  LIBRARY OF FNFP CORNER CASE  ******************************
 .LIB FF_lvt
-.lib 'crn90g_2d5_lk_v1d2p1.l' CCO_pre_simu_lvt
+.lib 'crn90g_2d5_lk_v1d2p1.lib' CCO_pre_simu_lvt
 .param
 +parn1_lvt=AGAUSS(0,1,1)
 +parn2_lvt=AGAUSS(0,1,1)
@@ -3402,12 +3402,12 @@ lb n2 b 'total_l*l_momfac'
 +dpvsatp_lvt    = -1.3e-10      dlvsatp_lvt    = -6.5e-4
 +cfn_lvt        = '1.477E-10+3.1E-11*ccoflag_lvt'
 +cfp_lvt        = '1.477E-10+3.1E-11*ccoflag_lvt'
-.lib 'crn90g_2d5_lk_v1d2p1.l' MOS_lvt
+.lib 'crn90g_2d5_lk_v1d2p1.lib' MOS_lvt
 .ENDL FF_lvt
 
 ******************************  LIBRARY OF SNFP CORNER CASE  ******************************
 .LIB SF_lvt
-.lib 'crn90g_2d5_lk_v1d2p1.l' CCO_pre_simu_lvt
+.lib 'crn90g_2d5_lk_v1d2p1.lib' CCO_pre_simu_lvt
 .param
 +parn1_lvt=AGAUSS(0,1,1)
 +parn2_lvt=AGAUSS(0,1,1)
@@ -3431,12 +3431,12 @@ lb n2 b 'total_l*l_momfac'
 +dpeta0p_lvt = '-1e-16*A1P_lvt'                dpvsatp_lvt = '1.3e-10*A1P_lvt'               dlvsatp_lvt = '0.00065*A1P_lvt'                         
 +cfn_lvt = '1.38E-10*(1-0.070*A4NP_lvt)+3.1E-11*ccoflag_lvt'
 +cfp_lvt = '1.38E-10*(1-0.070*A4NP_lvt)+3.1E-11*ccoflag_lvt'
-.lib 'crn90g_2d5_lk_v1d2p1.l' MOS_lvt
+.lib 'crn90g_2d5_lk_v1d2p1.lib' MOS_lvt
 .ENDL SF_lvt
 
 ******************************  LIBRARY OF FNSP CORNER CASE  ******************************
 .LIB FS_lvt
-.lib 'crn90g_2d5_lk_v1d2p1.l' CCO_pre_simu_lvt
+.lib 'crn90g_2d5_lk_v1d2p1.lib' CCO_pre_simu_lvt
 .param
 +parn1_lvt=AGAUSS(0,1,1)
 +parn2_lvt=AGAUSS(0,1,1)
@@ -3460,7 +3460,7 @@ lb n2 b 'total_l*l_momfac'
 +dpeta0p_lvt = '-1e-16*A1P_lvt'                dpvsatp_lvt = '1.3e-10*A1P_lvt'               dlvsatp_lvt = '0.00065*A1P_lvt'                         
 +cfn_lvt = '1.38E-10*(1-0.070*A4NP_lvt)+3.1E-11*ccoflag_lvt'
 +cfp_lvt = '1.38E-10*(1-0.070*A4NP_lvt)+3.1E-11*ccoflag_lvt'
-.lib 'crn90g_2d5_lk_v1d2p1.l' MOS_lvt
+.lib 'crn90g_2d5_lk_v1d2p1.lib' MOS_lvt
 .ENDL FS_lvt
 
 *******************************************************************************************
@@ -3473,7 +3473,7 @@ lb n2 b 'total_l*l_momfac'
 ***************************************************************
 ******************************    LIBRARY OF TYPICAL CASE    ******************************
 .LIB TT_25
-.lib 'crn90g_2d5_lk_v1d2p1.l' CCO_pre_simu_25
+.lib 'crn90g_2d5_lk_v1d2p1.lib' CCO_pre_simu_25
 .param
 +parn1_25=AGAUSS(0,1,1)
 +parn2_25=AGAUSS(0,1,1)
@@ -3498,12 +3498,12 @@ lb n2 b 'total_l*l_momfac'
 +dxwp_25         = 0             dxlp_25         = 0             
 +cfp_25          = '1.180E-10+3.0E-11*ccoflag_25'
 
-.lib 'crn90g_2d5_lk_v1d2p1.l' MOS_25
+.lib 'crn90g_2d5_lk_v1d2p1.lib' MOS_25
 .ENDL TT_25
 
 ******************************  LIBRARY OF SNSP CORNER CASE  ******************************
 .LIB SS_25
-.lib 'crn90g_2d5_lk_v1d2p1.l' CCO_pre_simu_25
+.lib 'crn90g_2d5_lk_v1d2p1.lib' CCO_pre_simu_25
 .param
 +parn1_25=AGAUSS(0,1,1)
 +parn2_25=AGAUSS(0,1,1)
@@ -3528,12 +3528,12 @@ lb n2 b 'total_l*l_momfac'
 +dxwp_25         = -1.20E-08     dxlp_25         = 1.000E-08     
 +cfp_25          = '1.097E-10+3.0E-11*ccoflag_25'
 
-.lib 'crn90g_2d5_lk_v1d2p1.l' MOS_25
+.lib 'crn90g_2d5_lk_v1d2p1.lib' MOS_25
 .ENDL SS_25
 
 ******************************  LIBRARY OF FNFP CORNER CASE  ******************************
 .LIB FF_25
-.lib 'crn90g_2d5_lk_v1d2p1.l' CCO_pre_simu_25
+.lib 'crn90g_2d5_lk_v1d2p1.lib' CCO_pre_simu_25
 .param
 +parn1_25=AGAUSS(0,1,1)
 +parn2_25=AGAUSS(0,1,1)
@@ -3558,12 +3558,12 @@ lb n2 b 'total_l*l_momfac'
 +dxwp_25         = 1.200E-08     dxlp_25         = -1.000E-08    
 +cfp_25          = '1.263E-10+3.0E-11*ccoflag_25'
 
-.lib 'crn90g_2d5_lk_v1d2p1.l' MOS_25
+.lib 'crn90g_2d5_lk_v1d2p1.lib' MOS_25
 .ENDL FF_25
 
 ******************************  LIBRARY OF SNFP CORNER CASE  ******************************
 .LIB SF_25
-.lib 'crn90g_2d5_lk_v1d2p1.l' CCO_pre_simu_25
+.lib 'crn90g_2d5_lk_v1d2p1.lib' CCO_pre_simu_25
 .param
 +parn1_25=AGAUSS(0,1,1)
 +parn2_25=AGAUSS(0,1,1)
@@ -3587,12 +3587,12 @@ lb n2 b 'total_l*l_momfac'
 +dlvsatp_25 = '0.001*A1P_25'                  dxwp_25 = '1.2e-08*A3P_25'                   dxlp_25 = '1e-08*A2P_25'                     
 +cfp_25 = '1.180E-10*(1-0.070*A4P_25) + 3.0E-11*ccoflag_25'
 
-.lib 'crn90g_2d5_lk_v1d2p1.l' MOS_25
+.lib 'crn90g_2d5_lk_v1d2p1.lib' MOS_25
 .ENDL SF_25
 
 ******************************  LIBRARY OF FNSP CORNER CASE  ******************************
 .LIB FS_25
-.lib 'crn90g_2d5_lk_v1d2p1.l' CCO_pre_simu_25
+.lib 'crn90g_2d5_lk_v1d2p1.lib' CCO_pre_simu_25
 .param
 +parn1_25=AGAUSS(0,1,1)
 +parn2_25=AGAUSS(0,1,1)
@@ -3616,7 +3616,7 @@ lb n2 b 'total_l*l_momfac'
 +dlvsatp_25 = '0.001*A1P_25'                  dxwp_25 = '1.2e-08*A3P_25'                   dxlp_25 = '1e-08*A2P_25'                     
 +cfp_25 = '1.180E-10*(1-0.070*A4P_25) + 3.0E-11*ccoflag_25'
 
-.lib 'crn90g_2d5_lk_v1d2p1.l' MOS_25
+.lib 'crn90g_2d5_lk_v1d2p1.lib' MOS_25
 .ENDL FS_25
 
 *******************************************************************************************
@@ -3630,7 +3630,7 @@ lb n2 b 'total_l*l_momfac'
 *
 ******************************    LIBRARY OF TYPICAL CASE    ******************************
 .LIB TT_na
-.lib 'crn90g_2d5_lk_v1d2p1.l' CCO_pre_simu_na
+.lib 'crn90g_2d5_lk_v1d2p1.lib' CCO_pre_simu_na
 .param
 +toxn_na        = 2.33E-09      cjn_na         = 1.4400E-04    cjswn_na       = 1.6000E-10    
 +cjswgn_na      = 1.3900E-10    cgon_na        = 8.54E-11      cgln_na        = 1.3600E-10    
@@ -3638,12 +3638,12 @@ lb n2 b 'total_l*l_momfac'
 +dxw_na         = -5.0E-09      dlvthn_na      = 0             dwvthn_na      = 0             
 +ntoxn_na       = 1
 +cfn_na         = '1.38E-10+3.1E-11*ccoflag_na'
-.lib 'crn90g_2d5_lk_v1d2p1.l' MOS_na
+.lib 'crn90g_2d5_lk_v1d2p1.lib' MOS_na
 .ENDL TT_na
 
 ******************************  LIBRARY OF SNSP CORNER CASE  ******************************
 .LIB SS_na
-.lib 'crn90g_2d5_lk_v1d2p1.l' CCO_pre_simu_na
+.lib 'crn90g_2d5_lk_v1d2p1.lib' CCO_pre_simu_na
 .param
 +toxn_na        = 2.39E-09      cjn_na         = 1.541E-04     cjswn_na       = 1.712E-10     
 +cjswgn_na      = 1.4873E-10    cgon_na        = 7.9422E-11    cgln_na        = 1.2648E-10    
@@ -3652,12 +3652,12 @@ lb n2 b 'total_l*l_momfac'
 +dlvthn_na      = 3.0E-09       dwvthn_na      = 3.0E-09       
 +ntoxn_na       = -0.8
 +cfn_na         = '1.283E-10+3.1E-11*ccoflag_na'
-.lib 'crn90g_2d5_lk_v1d2p1.l' MOS_na
+.lib 'crn90g_2d5_lk_v1d2p1.lib' MOS_na
 .ENDL SS_na
 
 ******************************  LIBRARY OF FNFP CORNER CASE  ******************************
 .LIB FF_na
-.lib 'crn90g_2d5_lk_v1d2p1.l' CCO_pre_simu_na
+.lib 'crn90g_2d5_lk_v1d2p1.lib' CCO_pre_simu_na
 .param
 +toxn_na        = 2.27E-09      cjn_na         = 1.339E-04     cjswn_na       = 1.488E-10     
 +cjswgn_na      = 1.293E-10     cgon_na        = 9.1378E-11    cgln_na        = 1.4552E-10    
@@ -3666,12 +3666,12 @@ lb n2 b 'total_l*l_momfac'
 +dlvthn_na      = -3.5E-09      dwvthn_na      = -3.0E-09      
 +ntoxn_na       = 2.7
 +cfn_na         = '1.477E-10+3.1E-11*ccoflag_na'
-.lib 'crn90g_2d5_lk_v1d2p1.l' MOS_na
+.lib 'crn90g_2d5_lk_v1d2p1.lib' MOS_na
 .ENDL FF_na
 
 ******************************  LIBRARY OF SNFP CORNER CASE  ******************************
 .LIB SF_na
-.lib 'crn90g_2d5_lk_v1d2p1.l' CCO_pre_simu_na
+.lib 'crn90g_2d5_lk_v1d2p1.lib' CCO_pre_simu_na
 .param
 +toxn_na        = 2.33E-09      cjn_na         = 1.541E-04     cjswn_na       = 1.712E-10     
 +cjswgn_na      = 1.4873E-10    cgon_na        = 8.54E-11      cgln_na        = 1.3600E-10    
@@ -3679,12 +3679,12 @@ lb n2 b 'total_l*l_momfac'
 +dxw_na         = -5.0E-09      dlvthn_na      = 2.8E-09       dwvthn_na      = 1.0E-09       
 +ntoxn_na       = 1
 +cfn_na         = '1.38E-10+3.1E-11*ccoflag_na'
-.lib 'crn90g_2d5_lk_v1d2p1.l' MOS_na
+.lib 'crn90g_2d5_lk_v1d2p1.lib' MOS_na
 .ENDL SF_na
 
 ******************************  LIBRARY OF FNSP CORNER CASE  ******************************
 .LIB FS_na
-.lib 'crn90g_2d5_lk_v1d2p1.l' CCO_pre_simu_na
+.lib 'crn90g_2d5_lk_v1d2p1.lib' CCO_pre_simu_na
 .param
 +toxn_na        = 2.33E-09      cjn_na         = 1.339E-04     cjswn_na       = 1.488E-10     
 +cjswgn_na      = 1.293E-10     cgon_na        = 8.54E-11      cgln_na        = 1.3600E-10    
@@ -3692,7 +3692,7 @@ lb n2 b 'total_l*l_momfac'
 +dxw_na         = -5.0E-09      dlvthn_na      = -3.4E-09      dwvthn_na      = -1.0E-09      
 +ntoxn_na       = 1
 +cfn_na         = '1.38E-10+3.1E-11*ccoflag_na'
-.lib 'crn90g_2d5_lk_v1d2p1.l' MOS_na
+.lib 'crn90g_2d5_lk_v1d2p1.lib' MOS_na
 .ENDL FS_na
 
 *******************************************************************************************
@@ -3705,7 +3705,7 @@ lb n2 b 'total_l*l_momfac'
 *************************************************************************
 ******************************    LIBRARY OF TYPICAL CASE    ******************************
 .LIB TT_na25
-.lib 'crn90g_2d5_lk_v1d2p1.l' CCO_pre_simu_na25
+.lib 'crn90g_2d5_lk_v1d2p1.lib' CCO_pre_simu_na25
 .param
 +toxn_na25        = 5.54E-09    dxl_na25         = 0           dxw_na25         = 0           
 +dvthn_na25       = 0           dlvthn_na25      = 0           du0n_na25        = 0           
@@ -3713,12 +3713,12 @@ lb n2 b 'total_l*l_momfac'
 +cgon_na25        = 2.3E-11     cgln_na25        = 1.60E-10    
 +hdifn_na25       = 1.25E-07    
 +cfn_na25         = '1.18E-10+3.0E-11*ccoflag_na25'
-.lib 'crn90g_2d5_lk_v1d2p1.l' MOS_na25
+.lib 'crn90g_2d5_lk_v1d2p1.lib' MOS_na25
 .ENDL TT_na25
 
 ******************************  LIBRARY OF SNSP CORNER CASE  ******************************
 .LIB SS_na25
-.lib 'crn90g_2d5_lk_v1d2p1.l' CCO_pre_simu_na25
+.lib 'crn90g_2d5_lk_v1d2p1.lib' CCO_pre_simu_na25
 .param
 +toxn_na25        = 5.84E-09    dxl_na25         = 1.00E-08    dxw_na25         = -1.20E-08   
 +dvthn_na25       = 0.055       dlvthn_na25      = 3.5E-08     du0n_na25        = -0.5E-03    
@@ -3726,12 +3726,12 @@ lb n2 b 'total_l*l_momfac'
 +cgon_na25        = 2.14E-11    cgln_na25        = 1.488E-10   
 +hdifn_na25       = 1.25E-07   
 +cfn_na25         = '1.097E-10+3.0E-11*ccoflag_na25'
-.lib 'crn90g_2d5_lk_v1d2p1.l' MOS_na25
+.lib 'crn90g_2d5_lk_v1d2p1.lib' MOS_na25
 .ENDL SS_na25
 
 ******************************  LIBRARY OF FNFP CORNER CASE  ******************************
 .LIB FF_na25
-.lib 'crn90g_2d5_lk_v1d2p1.l' CCO_pre_simu_na25
+.lib 'crn90g_2d5_lk_v1d2p1.lib' CCO_pre_simu_na25
 .param
 +toxn_na25        = 5.24E-09    dxl_na25         = -1.00E-08   dxw_na25         = 1.20E-08    
 +dvthn_na25       = -0.055      dlvthn_na25      = -3.5E-08    du0n_na25        = 0.5E-03     
@@ -3739,12 +3739,12 @@ lb n2 b 'total_l*l_momfac'
 +cgon_na25        = 2.46E-11    cgln_na25        = 1.712E-10   
 +hdifn_na25       = 1.25E-07 
 +cfn_na25         = '1.263E-10+3.0E-11*ccoflag_na25'
-.lib 'crn90g_2d5_lk_v1d2p1.l' MOS_na25
+.lib 'crn90g_2d5_lk_v1d2p1.lib' MOS_na25
 .ENDL FF_na25
 
 ******************************  LIBRARY OF SNFP CORNER CASE  ******************************
 .LIB SF_na25
-.lib 'crn90g_2d5_lk_v1d2p1.l' CCO_pre_simu_na25
+.lib 'crn90g_2d5_lk_v1d2p1.lib' CCO_pre_simu_na25
 .param
 +toxn_na25        = 5.54E-09    dxl_na25         = 0           dxw_na25         = 0           
 +dvthn_na25       = 0.055       dlvthn_na25      = 3.5E-08     du0n_na25        = -0.5E-03    
@@ -3752,12 +3752,12 @@ lb n2 b 'total_l*l_momfac'
 +cgon_na25        = 2.3E-11     cgln_na25        = 1.60E-10    
 +hdifn_na25       = 1.25E-07  
 +cfn_na25         = '1.18E-10+3.0E-11*ccoflag_na25'
-.lib 'crn90g_2d5_lk_v1d2p1.l' MOS_na25
+.lib 'crn90g_2d5_lk_v1d2p1.lib' MOS_na25
 .ENDL SF_na25
 
 ******************************  LIBRARY OF FNSP CORNER CASE  ******************************
 .LIB FS_na25
-.lib 'crn90g_2d5_lk_v1d2p1.l' CCO_pre_simu_na25
+.lib 'crn90g_2d5_lk_v1d2p1.lib' CCO_pre_simu_na25
 .param
 +toxn_na25        = 5.54E-09    dxl_na25         = 0           dxw_na25         = 0           
 +dvthn_na25       = -0.055       dlvthn_na25      = -3.5E-08    du0n_na25        = 0.5E-03     
@@ -3765,7 +3765,7 @@ lb n2 b 'total_l*l_momfac'
 +cgon_na25        = 2.3E-11     cgln_na25        = 1.60E-10    
 +hdifn_na25       = 1.25E-07 
 +cfn_na25         = '1.18E-10+3.0E-11*ccoflag_na25'
-.lib 'crn90g_2d5_lk_v1d2p1.l' MOS_na25
+.lib 'crn90g_2d5_lk_v1d2p1.lib' MOS_na25
 .ENDL FS_na25
 *******************************************************************************************
 *
@@ -3854,8 +3854,8 @@ lb n2 b 'total_l*l_momfac'
 ***************************************************************
 ***********************************************************************************************
 .lib MC
-*.lib 'crn90g_2d5_lk_v1d2p1.l' stat
-.lib 'crn90g_2d5_lk_v1d2p1.l' CCO_pre_simu
+*.lib 'crn90g_2d5_lk_v1d2p1.lib' stat
+.lib 'crn90g_2d5_lk_v1d2p1.lib' CCO_pre_simu
 .param
 +parn1=AGAUSS(0,1,1)
 +parn2=AGAUSS(0,1,1)
@@ -3900,7 +3900,7 @@ lb n2 b 'total_l*l_momfac'
 
 +dlcdscdp        = '0.0000e+000'
 
-.lib 'crn90g_2d5_lk_v1d2p1.l' MOS
+.lib 'crn90g_2d5_lk_v1d2p1.lib' MOS
 .endl MC
 ***********************************************************************************************
 *
@@ -3912,8 +3912,8 @@ lb n2 b 'total_l*l_momfac'
 ***************************************************************
 ***********************************************************************************************
 .lib MC_hvt
-*.lib 'crn90g_2d5_lk_v1d2p1.l' stat
-.lib 'crn90g_2d5_lk_v1d2p1.l' CCO_pre_simu_hvt
+*.lib 'crn90g_2d5_lk_v1d2p1.lib' stat
+.lib 'crn90g_2d5_lk_v1d2p1.lib' CCO_pre_simu_hvt
 .param
 +parn1_hvt=AGAUSS(0,1,1)
 +parn2_hvt=AGAUSS(0,1,1)
@@ -3961,7 +3961,7 @@ lb n2 b 'total_l*l_momfac'
 +dlcdscdn_hvt    = '0.0000e+000'
 +dpvoffp_hvt     = '0.0000e+000'
 
-.lib 'crn90g_2d5_lk_v1d2p1.l' MOS_hvt
+.lib 'crn90g_2d5_lk_v1d2p1.lib' MOS_hvt
 .endl MC_hvt
 ***********************************************************************************************
 *
@@ -3973,8 +3973,8 @@ lb n2 b 'total_l*l_momfac'
 ***************************************************************
 ***********************************************************************************************
 .lib MC_lvt
-*.lib 'crn90g_2d5_lk_v1d2p1.l' stat
-.lib 'crn90g_2d5_lk_v1d2p1.l' CCO_pre_simu_lvt
+*.lib 'crn90g_2d5_lk_v1d2p1.lib' stat
+.lib 'crn90g_2d5_lk_v1d2p1.lib' CCO_pre_simu_lvt
 .param
 +parn1_lvt=AGAUSS(0,1,1)
 +parn2_lvt=AGAUSS(0,1,1)
@@ -4030,7 +4030,7 @@ lb n2 b 'total_l*l_momfac'
 +dlcdscdn_lvt    = '0.0000e+000'
 +dlcitn_lvt      = '0.0000e+000'
 
-.lib 'crn90g_2d5_lk_v1d2p1.l' MOS_lvt
+.lib 'crn90g_2d5_lk_v1d2p1.lib' MOS_lvt
 .endl MC_lvt
 ***********************************************************************************************
 *
@@ -4042,8 +4042,8 @@ lb n2 b 'total_l*l_momfac'
 ***************************************************************
 ***********************************************************************************************
 .lib MC_25
-*.lib 'crn90g_2d5_lk_v1d2p1.l' stat
-.lib 'crn90g_2d5_lk_v1d2p1.l' CCO_pre_simu_25 
+*.lib 'crn90g_2d5_lk_v1d2p1.lib' stat
+.lib 'crn90g_2d5_lk_v1d2p1.lib' CCO_pre_simu_25 
 .param
 +parn1_25=AGAUSS(0,1,1)
 +parn2_25=AGAUSS(0,1,1)
@@ -4091,7 +4091,7 @@ lb n2 b 'total_l*l_momfac'
 +dleta0p_25      = '0.0000e+000'
 +dlk2p_25        = '0.0000e+000'
 
-.lib 'crn90g_2d5_lk_v1d2p1.l' MOS_25
+.lib 'crn90g_2d5_lk_v1d2p1.lib' MOS_25
 .endl MC_25
 ***********************************************************************************************************************************************
 *
@@ -4150,7 +4150,7 @@ MAIN n1 n22 n3 n4 nch w=w l=l ad=ad as=as pd=pd ps=ps nrd=nrd nrs=nrs m=multi nf
 .param ku0_wpe='(1+ku0we_eff/(sc*scale*sc*scale+sc0*sc0)*wpeflag)/(1+ku0we_eff/(scref*scref+sc0*sc0)*wpeflag)'
 
 *** Rg *** 
-.lib 'crn90g_2d5_lk_v1d2p1.l' TT_RES_rg
+.lib 'crn90g_2d5_lk_v1d2p1.lib' TT_RES_rg
 xrg n2 n22 rnpolyrg ll='(w/3/nf/nf)*rgflag+1e-8' ww='l+dxln ' m=multi scale='1'
 
 *** Thermal Noise ***
@@ -6147,7 +6147,7 @@ MAIN n1 n22 n3 n4 pch w=w l=l ad=ad as=as pd=pd ps=ps nrd=nrd nrs=nrs m=multi nf
 .param ku0_wpe='(1+ku0we_eff/(sc*scale*sc*scale+sc0*sc0)*wpeflag)/(1+ku0we_eff/(scref*scref+sc0*sc0)*wpeflag)'
 
 *** Rg ***
-.lib 'crn90g_2d5_lk_v1d2p1.l' TT_RES_rg
+.lib 'crn90g_2d5_lk_v1d2p1.lib' TT_RES_rg
 xrg n2 n22 rppolyrg ll='(w/3/nf/nf)*rgflag+1e-8' ww='l+dxlp ' m=multi scale='1'
 
 *** Thermal Noise ***
@@ -12980,7 +12980,7 @@ MAIN n1 n22 n3 n4 nch_hvt w=w l=l ad=ad as=as pd=pd ps=ps nrd=nrd nrs=nrs m=mult
 .param ku0_wpe_hvt='(1+ku0we_eff/(sc*scale*sc*scale+sc0*sc0)*wpeflag)/(1+ku0we_eff/(scref*scref+sc0*sc0)*wpeflag)'
 
 *** Rg ***
-.lib 'crn90g_2d5_lk_v1d2p1.l' TT_RES_rg
+.lib 'crn90g_2d5_lk_v1d2p1.lib' TT_RES_rg
 xrg n2 n22 rnpolyrg ll='(w/3/nf/nf)*rgflag+1e-8' ww='l+dxln_hvt ' m=multi scale='1' 
 
 .MODEL nch_hvt.1 NMOS	(	LMIN     = '1.0000E-05-(dxln_hvt+dlmisn_hvt)'     LMAX     = 2.001E-05              
@@ -15611,7 +15611,7 @@ MAIN n1 n22 n3 n4 pch_hvt w=w l=l ad=ad as=as pd=pd ps=ps nrd=nrd nrs=nrs m=mult
 .param ku0_wpe_hvt='(1+ku0we_eff/(sc*scale*sc*scale+sc0*sc0)*wpeflag)/(1+ku0we_eff/(scref*scref+sc0*sc0)*wpeflag)'
 
 *** Rg ***
-.lib 'crn90g_2d5_lk_v1d2p1.l' TT_RES_rg
+.lib 'crn90g_2d5_lk_v1d2p1.lib' TT_RES_rg
 xrg n2 n22 rppolyrg ll='(w/3/nf/nf)*rgflag+1e-8' ww='l+dxlp_hvt ' m=multi scale='1' 
 
 .MODEL pch_hvt.1 PMOS	(	LMIN     = '1.0000E-05-(dxlp_hvt+dlmisp_hvt)'     LMAX     = 2.001E-05              
@@ -22170,7 +22170,7 @@ MAIN n1 n22 n3 n4 nch_lvt w=w l=l ad=ad as=as pd=pd ps=ps nrd=nrd nrs=nrs m=mult
 .param ku0_wpe_lvt='(1+ku0we_eff/(sc*scale*sc*scale+sc0*sc0)*wpeflag)/(1+ku0we_eff/(scref*scref+sc0*sc0)*wpeflag)'
 
 *** Rg ***
-.lib 'crn90g_2d5_lk_v1d2p1.l' TT_RES_rg
+.lib 'crn90g_2d5_lk_v1d2p1.lib' TT_RES_rg
 xrg n2 n22 rnpolyrg ll='(w/3/nf/nf)*rgflag+1e-8' ww='l+dxln_lvt ' m=multi scale='1' 
 
 .MODEL nch_lvt.1 NMOS	(	LMIN     = '1.0000E-05-(dxln_lvt+dlmisn_lvt)'     LMAX     = 2.001E-05              
@@ -25048,7 +25048,7 @@ MAIN n1 n22 n3 n4 pch_lvt w=w l=l ad=ad as=as pd=pd ps=ps nrd=nrd nrs=nrs m=mult
 .param ku0_wpe_lvt='(1+ku0we_eff/(sc*scale*sc*scale+sc0*sc0)*wpeflag)/(1+ku0we_eff/(scref*scref+sc0*sc0)*wpeflag)'
 
 *** Rg ***
-.lib 'crn90g_2d5_lk_v1d2p1.l' TT_RES_rg
+.lib 'crn90g_2d5_lk_v1d2p1.lib' TT_RES_rg
 xrg n2 n22 rppolyrg ll='(w/3/nf/nf)*rgflag+1e-8' ww='l+dxlp_lvt ' m=multi scale='1' 
 
 .MODEL pch_lvt.1 PMOS	(	LMIN     = '1.0000E-05-(dxlp_lvt+dlmisp_lvt)'     LMAX     = 2.001E-05              
@@ -33044,7 +33044,7 @@ MAIN n1 n22 n3 n4 nch_25 w=w l=l ad=ad as=as pd=pd ps=ps nrd=nrd nrs=nrs m=multi
 .param ku0_wpe_25='(1+ku0we_eff/(sc*scale*sc*scale+sc0*sc0)*wpeflag)/(1+ku0we_eff/(scref*scref+sc0*sc0)*wpeflag)'
 
 *** Rg ***
-.lib 'crn90g_2d5_lk_v1d2p1.l' TT_RES_rg
+.lib 'crn90g_2d5_lk_v1d2p1.lib' TT_RES_rg
 xrg n2 n22 rnpolyrg ll='(w/3)*rgflag+1e-8' ww='l+dxln_25 ' m=multi scale='1' 
 
 .MODEL nch_25.1 NMOS	(	LMIN     = '1.0000E-05-(dxln_25+dlmisn_25)'      LMAX     = 9.001E-04              
@@ -35219,7 +35219,7 @@ MAIN n1 n22 n3 n4 pch_25 w=w l=l ad=ad as=as pd=pd ps=ps nrd=nrd nrs=nrs m=multi
 .param ku0_wpe_25='(1+ku0we_eff/(sc*scale*sc*scale+sc0*sc0)*wpeflag)/(1+ku0we_eff/(scref*scref+sc0*sc0)*wpeflag)'
 
 *** Rg ***
-.lib 'crn90g_2d5_lk_v1d2p1.l' TT_RES_rg
+.lib 'crn90g_2d5_lk_v1d2p1.lib' TT_RES_rg
 xrg n2 n22 rppolyrg ll='(w/3)*rgflag+1e-8' ww='l+dxlp_25 ' m=multi scale='1' 
 
 .MODEL pch_25.1 PMOS	(	LMIN     = '1.0000E-05-(dxlp_25+dlmisp_25)'      LMAX     = 900e-6                 
@@ -40629,7 +40629,7 @@ xrg n2 n22 rppolyrg ll='(w/3)*rgflag+1e-8' ww='l+dxlp_25 ' m=multi scale='1'
 MAIN n1 n22 n3 n4 nch_na w=w l=l ad=ad as=as pd=pd ps=ps nrd=nrd nrs=nrs m=multi nf=nf sa=sa sb=sb sd=sd
 
 *** Rg ***
-.lib 'crn90g_2d5_lk_v1d2p1.l' TT_RES_rg
+.lib 'crn90g_2d5_lk_v1d2p1.lib' TT_RES_rg
 xrg n2 n22 rnpolyrg ll='(w/3/nf/nf)*rgflag+1e-8' ww='l+dxl_na ' m=multi scale='1' 
 
 .MODEL nch_na.1 NMOS	(	LMIN     = '1.0000E-05-dxl_na'      LMAX     = 2.001E-05                
@@ -43520,7 +43520,7 @@ xrg n2 n22 rnpolyrg ll='(w/3/nf/nf)*rgflag+1e-8' ww='l+dxl_na ' m=multi scale='1
 MAIN n1 n22 n3 n4 nch_na25 w=w l=l ad=ad as=as pd=pd ps=ps nrd=nrd nrs=nrs m=multi sa=sa sb=sb
 
 *** Rg ***
-.lib 'crn90g_2d5_lk_v1d2p1.l' TT_RES_rg
+.lib 'crn90g_2d5_lk_v1d2p1.lib' TT_RES_rg
 xrg n2 n22 rnpolyrg ll='(w/3)*rgflag+1e-8' ww='l+dxl_na25 ' m=multi scale='1' 
 
 .MODEL nch_na25.1 NMOS	(	LMIN     = '1.0000E-05-dxl_na25'    LMAX     = 9.001E-04                
@@ -44389,7 +44389,7 @@ xrg n2 n22 rnpolyrg ll='(w/3)*rgflag+1e-8' ww='l+dxl_na25 ' m=multi scale='1'
 .param
 +bfa    = 1        isa    = 1        nfa    = 1        rba    = 1        rea    = 1        
 +rca    = 1        rbma   = 1        cjea   = 1        cjca   = 1        
-.lib 'crn90g_2d5_lk_v1d2p1.l' BIP
+.lib 'crn90g_2d5_lk_v1d2p1.lib' BIP
 .ENDL TT_BIP
 
 ******************************  LIBRARY OF SS CORNER CASE  ******************************
@@ -44397,7 +44397,7 @@ xrg n2 n22 rnpolyrg ll='(w/3)*rgflag+1e-8' ww='l+dxl_na25 ' m=multi scale='1'
 .param
 +bfa    = 0.85     isa    = 0.7      nfa    = 1.0025   rba    = 1.2      rea    = 1.2      
 +rca    = 1.2      rbma   = 1.2      cjea   = 1.07     cjca   = 1.07     
-.lib 'crn90g_2d5_lk_v1d2p1.l' BIP
+.lib 'crn90g_2d5_lk_v1d2p1.lib' BIP
 .ENDL SS_BIP
 
 ******************************  LIBRARY OF FF CORNER CASE  ******************************
@@ -44405,7 +44405,7 @@ xrg n2 n22 rnpolyrg ll='(w/3)*rgflag+1e-8' ww='l+dxl_na25 ' m=multi scale='1'
 .param
 +bfa    = 1.15     isa    = 1.3      nfa    = 0.9975   rba    = 0.8      rea    = 0.8      
 +rca    = 0.8      rbma   = 0.8      cjea   = 0.93     cjca   = 0.93     
-.lib 'crn90g_2d5_lk_v1d2p1.l' BIP
+.lib 'crn90g_2d5_lk_v1d2p1.lib' BIP
 .ENDL FF_BIP
 
 ******************************    LIBRARY OF STATISTICAL CASE    ******************************
@@ -44424,7 +44424,7 @@ xrg n2 n22 rnpolyrg ll='(w/3)*rgflag+1e-8' ww='l+dxl_na25 ' m=multi scale='1'
 +rbma            = '1.0000e+000+(6.6667e-002)*P1_90bjt'
 +cjea            = '1.0000e+000+(2.3333e-002)*P1_90bjt'
 +cjca            = '1.0000e+000+(2.3333e-002)*P1_90bjt'
-.lib 'crn90g_2d5_lk_v1d2p1.l' BIP
+.lib 'crn90g_2d5_lk_v1d2p1.lib' BIP
 .ENDL MC_BIP
 
 *******************************************************************************************
@@ -44524,7 +44524,7 @@ xrg n2 n22 rnpolyrg ll='(w/3)*rgflag+1e-8' ww='l+dxl_na25 ' m=multi scale='1'
 .param
 +bfb    = 1        isb    = 1        nfb    = 1        rbb    = 1        reb    = 1        
 +rcb    = 1        rbmb   = 1        cjeb   = 1        cjcb   = 1        
-.lib 'crn90g_2d5_lk_v1d2p1.l' BIP_NPN
+.lib 'crn90g_2d5_lk_v1d2p1.lib' BIP_NPN
 .ENDL TT_BIP_NPN
 
 ******************************  LIBRARY OF SS CORNER CASE  ******************************
@@ -44532,7 +44532,7 @@ xrg n2 n22 rnpolyrg ll='(w/3)*rgflag+1e-8' ww='l+dxl_na25 ' m=multi scale='1'
 .param
 +bfb    = 0.85     isb    = 0.7      nfb    = 1.0025   rbb    = 1.2      reb    = 1.2      
 +rcb    = 1.2      rbmb   = 1.2      cjeb   = 1.07     cjcb   = 1.07     
-.lib 'crn90g_2d5_lk_v1d2p1.l' BIP_NPN
+.lib 'crn90g_2d5_lk_v1d2p1.lib' BIP_NPN
 .ENDL SS_BIP_NPN
 
 ******************************  LIBRARY OF FF CORNER CASE  ******************************
@@ -44540,7 +44540,7 @@ xrg n2 n22 rnpolyrg ll='(w/3)*rgflag+1e-8' ww='l+dxl_na25 ' m=multi scale='1'
 .param
 +bfb    = 1.15     isb    = 1.3      nfb    = 0.9975   rbb    = 0.8      reb    = 0.8      
 +rcb    = 0.8      rbmb   = 0.8      cjeb   = 0.93     cjcb   = 0.93     
-.lib 'crn90g_2d5_lk_v1d2p1.l' BIP_NPN
+.lib 'crn90g_2d5_lk_v1d2p1.lib' BIP_NPN
 .ENDL FF_BIP_NPN
 
 ******************************    LIBRARY OF STATISTICAL CASE    ******************************
@@ -44559,7 +44559,7 @@ xrg n2 n22 rnpolyrg ll='(w/3)*rgflag+1e-8' ww='l+dxl_na25 ' m=multi scale='1'
 +rbmb            = '1.0000e+000+(6.6667e-002)*N1_90bjt'
 +cjeb            = '1.0000e+000+(2.3333e-002)*N1_90bjt'
 +cjcb            = '1.0000e+000+(2.3333e-002)*N1_90bjt'
-.lib 'crn90g_2d5_lk_v1d2p1.l' BIP_NPN
+.lib 'crn90g_2d5_lk_v1d2p1.lib' BIP_NPN
 .ENDL MC_BIP_NPN
 
 *******************************************************************************************
@@ -44654,21 +44654,21 @@ xrg n2 n22 rnpolyrg ll='(w/3)*rgflag+1e-8' ww='l+dxl_na25 ' m=multi scale='1'
 .param
 +is_d= 1         jsw_d= 1         n_d= 1         rs_d= 1                  
 +cj_d= 1         cjsw_d= 1         
-.lib 'crn90g_2d5_lk_v1d2p1.l' DIO
+.lib 'crn90g_2d5_lk_v1d2p1.lib' DIO
 .ENDL TT_DIO
 ******************* CORNER_LIB OF SLOW MODEL *****************************
 .LIB SS_DIO
 .param
 +is_d= 0.7         jsw_d= 0.5         n_d= 1.0025         rs_d= 1.2                  
 +cj_d= 1.07        cjsw_d= 1.07         
-.lib 'crn90g_2d5_lk_v1d2p1.l' DIO
+.lib 'crn90g_2d5_lk_v1d2p1.lib' DIO
 .ENDL SS_DIO
 ******************* CORNER_LIB OF FAST MODEL *****************************
 .LIB FF_DIO
 .param
 +is_d= 1.3         jsw_d= 2         n_d= 0.9975         rs_d= 0.8                  
 +cj_d= 0.93        cjsw_d= 0.93         
-.lib 'crn90g_2d5_lk_v1d2p1.l' DIO
+.lib 'crn90g_2d5_lk_v1d2p1.lib' DIO
 .ENDL FF_DIO
 **************************************************************************
 *
@@ -44747,21 +44747,21 @@ xrg n2 n22 rnpolyrg ll='(w/3)*rgflag+1e-8' ww='l+dxl_na25 ' m=multi scale='1'
 .param
 +is_d_hvt= 1         jsw_d_hvt= 1         n_d_hvt= 1         rs_d_hvt= 1                  
 +cj_d_hvt= 1         cjsw_d_hvt= 1         
-.lib 'crn90g_2d5_lk_v1d2p1.l' DIO_hvt
+.lib 'crn90g_2d5_lk_v1d2p1.lib' DIO_hvt
 .ENDL TT_DIO_hvt
 ******************************    LIBRARY OF SLOW CASE    ******************************
 .LIB SS_DIO_hvt
 .param
 +is_d_hvt= 0.7         jsw_d_hvt= 0.5         n_d_hvt= 1.0025         rs_d_hvt= 1.2                  
 +cj_d_hvt= 1.07        cjsw_d_hvt= 1.07         
-.lib 'crn90g_2d5_lk_v1d2p1.l' DIO_hvt
+.lib 'crn90g_2d5_lk_v1d2p1.lib' DIO_hvt
 .ENDL SS_DIO_hvt
 ******************************    LIBRARY OF FAST CASE    ******************************
 .LIB FF_DIO_hvt
 .param
 +is_d_hvt= 1.3         jsw_d_hvt= 2         n_d_hvt= 0.9975         rs_d_hvt= 0.8                  
 +cj_d_hvt= 0.93        cjsw_d_hvt= 0.93
-.lib 'crn90g_2d5_lk_v1d2p1.l' DIO_hvt
+.lib 'crn90g_2d5_lk_v1d2p1.lib' DIO_hvt
 .ENDL FF_DIO_hvt
 **************************************************************************
 *
@@ -44823,21 +44823,21 @@ xrg n2 n22 rnpolyrg ll='(w/3)*rgflag+1e-8' ww='l+dxl_na25 ' m=multi scale='1'
 .param
 +is_d_lvt= 1         jsw_d_lvt= 1         n_d_lvt= 1         rs_d_lvt= 1                  
 +cj_d_lvt= 1         cjsw_d_lvt= 1         
-.lib 'crn90g_2d5_lk_v1d2p1.l' DIO_lvt
+.lib 'crn90g_2d5_lk_v1d2p1.lib' DIO_lvt
 .ENDL TT_DIO_lvt
 ******************* CORNER_LIB OF SLOW MODEL *****************************
 .LIB SS_DIO_lvt
 .param
 +is_d_lvt= 0.7       jsw_d_lvt= 0.5       n_d_lvt= 1.0025     rs_d_lvt= 1.2                  
 +cj_d_lvt= 1.07      cjsw_d_lvt= 1.07         
-.lib 'crn90g_2d5_lk_v1d2p1.l' DIO_lvt
+.lib 'crn90g_2d5_lk_v1d2p1.lib' DIO_lvt
 .ENDL SS_DIO_lvt
 ******************* CORNER_LIB OF FAST MODEL *****************************
 .LIB FF_DIO_lvt
 .param
 +is_d_lvt= 1.3       jsw_d_lvt= 2         n_d_lvt= 0.9975     rs_d_lvt= 0.8                  
 +cj_d_lvt= 0.93      cjsw_d_lvt= 0.93         
-.lib 'crn90g_2d5_lk_v1d2p1.l' DIO_lvt
+.lib 'crn90g_2d5_lk_v1d2p1.lib' DIO_lvt
 .ENDL FF_DIO_lvt
 **************************************************************************
 *
@@ -44899,21 +44899,21 @@ xrg n2 n22 rnpolyrg ll='(w/3)*rgflag+1e-8' ww='l+dxl_na25 ' m=multi scale='1'
 .param
 +is_d_25 = 1.0     jsw_d_25 = 1.0      n_d_25    = 1.000 
 +rs_d_25 = 1.0     cj_d_25  = 1.00     cjsw_d_25 = 1.00 
-.lib 'crn90g_2d5_lk_v1d2p1.l' DIO_25
+.lib 'crn90g_2d5_lk_v1d2p1.lib' DIO_25
 .ENDL TT_DIO_25
 ******************************    LIBRARY OF SLOW CASE    ******************************
 .LIB SS_DIO_25
 .param
 +is_d_25 = 0.7     jsw_d_25 = 0.5      n_d_25    = 1.0025 
 +rs_d_25 = 1.2     cj_d_25  = 1.07     cjsw_d_25 = 1.07 
-.lib 'crn90g_2d5_lk_v1d2p1.l' DIO_25
+.lib 'crn90g_2d5_lk_v1d2p1.lib' DIO_25
 .ENDL SS_DIO_25
 ******************************    LIBRARY OF FAST CASE    ******************************
 .LIB FF_DIO_25
 .param
 +is_d_25 = 1.3     jsw_d_25 = 2.0      n_d_25    = 0.9975 
 +rs_d_25 = 0.8     cj_d_25  = 0.93     cjsw_d_25 = 0.93 
-.lib 'crn90g_2d5_lk_v1d2p1.l' DIO_25
+.lib 'crn90g_2d5_lk_v1d2p1.lib' DIO_25
 .ENDL FF_DIO_25
 *
 *
@@ -44976,21 +44976,21 @@ xrg n2 n22 rnpolyrg ll='(w/3)*rgflag+1e-8' ww='l+dxl_na25 ' m=multi scale='1'
 .param
 +is_d_na  = 1.0     jsw_d_na  = 1.0      n_d_na     = 1.000 
 +rs_d_na  = 1.0     cj_d_na   = 1.00     cjsw_d_na  = 1.00 
-.lib 'crn90g_2d5_lk_v1d2p1.l' DIO_na
+.lib 'crn90g_2d5_lk_v1d2p1.lib' DIO_na
 .ENDL TT_DIO_na
 ******************************    LIBRARY OF SLOW CASE    ******************************
 .LIB SS_DIO_na
 .param
 +is_d_na  = 0.7     jsw_d_na  = 0.5      n_d_na     = 1.0025
 +rs_d_na  = 1.2     cj_d_na   = 1.07     cjsw_d_na  = 1.07 
-.lib 'crn90g_2d5_lk_v1d2p1.l' DIO_na
+.lib 'crn90g_2d5_lk_v1d2p1.lib' DIO_na
 .ENDL SS_DIO_na
 ******************************    LIBRARY OF FAST CASE    ******************************
 .LIB FF_DIO_na
 .param
 +is_d_na  = 1.3     jsw_d_na  = 2.0      n_d_na     = 0.9975
 +rs_d_na  = 0.8     cj_d_na   = 0.93     cjsw_d_na  = 0.93 
-.lib 'crn90g_2d5_lk_v1d2p1.l' DIO_na
+.lib 'crn90g_2d5_lk_v1d2p1.lib' DIO_na
 .ENDL FF_DIO_na
 *
 *
@@ -45035,21 +45035,21 @@ xrg n2 n22 rnpolyrg ll='(w/3)*rgflag+1e-8' ww='l+dxl_na25 ' m=multi scale='1'
 .param
 +is_d_na25 = 1.0     jsw_d_na25 = 1.0      n_d_na25    = 1.000 
 +rs_d_na25 = 1.0     cj_d_na25  = 1.00     cjsw_d_na25 = 1.00 
-.lib 'crn90g_2d5_lk_v1d2p1.l' DIO_na25
+.lib 'crn90g_2d5_lk_v1d2p1.lib' DIO_na25
 .ENDL TT_DIO_na25
 ******************************    LIBRARY OF SLOW CASE    ******************************
 .LIB SS_DIO_na25
 .param
 +is_d_na25 = 0.7     jsw_d_na25 = 0.5      n_d_na25    = 1.0025 
 +rs_d_na25 = 1.2     cj_d_na25  = 1.07     cjsw_d_na25 = 1.07 
-.lib 'crn90g_2d5_lk_v1d2p1.l' DIO_na25
+.lib 'crn90g_2d5_lk_v1d2p1.lib' DIO_na25
 .ENDL SS_DIO_na25
 ******************************    LIBRARY OF FAST CASE    ******************************
 .LIB FF_DIO_na25
 .param
 +is_d_na25 = 1.3     jsw_d_na25 = 2.0      n_d_na25    = 0.9975 
 +rs_d_na25 = 0.8     cj_d_na25  = 0.93     cjsw_d_na25 = 0.93 
-.lib 'crn90g_2d5_lk_v1d2p1.l' DIO_na25
+.lib 'crn90g_2d5_lk_v1d2p1.lib' DIO_na25
 .ENDL FF_DIO_na25
 *
 *
@@ -45095,21 +45095,21 @@ xrg n2 n22 rnpolyrg ll='(w/3)*rgflag+1e-8' ww='l+dxl_na25 ' m=multi scale='1'
 .param
 +is_d_dnw= 1         jsw_d_dnw= 1         n_d_dnw= 1         rs_d_dnw= 1                  
 +cj_d_dnw= 1         cjsw_d_dnw= 1         
-.lib 'crn90g_2d5_lk_v1d2p1.l' DIO_DNW
+.lib 'crn90g_2d5_lk_v1d2p1.lib' DIO_DNW
 .ENDL TT_DIO_DNW
 ******************* CORNER_LIB OF SLOW MODEL *****************************
 .LIB SS_DIO_DNW
 .param
 +is_d_dnw= 0.7         jsw_d_dnw= 0.5         n_d_dnw= 1.0025        rs_d_dnw= 1.2                  
 +cj_d_dnw= 1.07        cjsw_d_dnw= 1.07         
-.lib 'crn90g_2d5_lk_v1d2p1.l' DIO_DNW
+.lib 'crn90g_2d5_lk_v1d2p1.lib' DIO_DNW
 .ENDL SS_DIO_DNW
 ******************* CORNER_LIB OF FAST MODEL *****************************
 .LIB FF_DIO_DNW
 .param
 +is_d_dnw= 1.3         jsw_d_dnw= 2         n_d_dnw= 0.9975        rs_d_dnw= 0.8                  
 +cj_d_dnw= 0.93        cjsw_d_dnw= 0.93         
-.lib 'crn90g_2d5_lk_v1d2p1.l' DIO_DNW
+.lib 'crn90g_2d5_lk_v1d2p1.lib' DIO_DNW
 .ENDL FF_DIO_DNW
 **************************************************************************
 *
@@ -45171,21 +45171,21 @@ xrg n2 n22 rnpolyrg ll='(w/3)*rgflag+1e-8' ww='l+dxl_na25 ' m=multi scale='1'
 .param
 +is_d_esd= 1         jsw_d_esd= 1         n_d_esd= 1         rs_d_esd= 1                  
 +cj_d_esd= 1         cjsw_d_esd= 1         
-.lib 'crn90g_2d5_lk_v1d2p1.l' DIO_ESD
+.lib 'crn90g_2d5_lk_v1d2p1.lib' DIO_ESD
 .ENDL TT_DIO_ESD
 ******************* CORNER_LIB OF SLOW MODEL *****************************
 .LIB SS_DIO_ESD
 .param
 +is_d_esd= 0.7         jsw_d_esd= 0.5         n_d_esd= 1.0025        rs_d_esd= 1.2                  
 +cj_d_esd= 1.07        cjsw_d_esd= 1.07         
-.lib 'crn90g_2d5_lk_v1d2p1.l' DIO_ESD
+.lib 'crn90g_2d5_lk_v1d2p1.lib' DIO_ESD
 .ENDL SS_DIO_ESD
 ******************* CORNER_LIB OF FAST MODEL *****************************
 .LIB FF_DIO_ESD
 .param
 +is_d_esd= 1.3         jsw_d_esd= 2         n_d_esd= 0.9975        rs_d_esd= 0.8                  
 +cj_d_esd= 0.93        cjsw_d_esd= 0.93         
-.lib 'crn90g_2d5_lk_v1d2p1.l' DIO_ESD
+.lib 'crn90g_2d5_lk_v1d2p1.lib' DIO_ESD
 .ENDL FF_DIO_ESD
 **************************************************************************
 *
@@ -45231,17 +45231,17 @@ xrg n2 n22 rnpolyrg ll='(w/3)*rgflag+1e-8' ww='l+dxl_na25 ' m=multi scale='1'
 ************************************************************************************************************
 .LIB TT_MOS_CAP
 .param toxm_Var=23.3  ndep0_Var=1.105  pndep_Var=5.0E-13 fac_Var=1.0 rs0_Var=42.0 dxl_Var=0 dxw_Var=0
-.lib 'crn90g_2d5_lk_v1d2p1.l' MOS_CAP
+.lib 'crn90g_2d5_lk_v1d2p1.lib' MOS_CAP
 .ENDL TT_MOS_CAP
 ***********************************************************************************************************
 .LIB SS_MOS_CAP
 .param toxm_Var=24.2  ndep0_Var=0.95  pndep_Var=4.0E-13 fac_Var=0.32  rs0_Var=340 dxl_Var=5.0E-9 dxw_Var=-8E-9
-.lib 'crn90g_2d5_lk_v1d2p1.l' MOS_CAP
+.lib 'crn90g_2d5_lk_v1d2p1.lib' MOS_CAP
 .ENDL SS_MOS_CAP
 ***********************************************************************************************************
 .LIB FF_MOS_CAP
 .param toxm_Var=22.4  ndep0_Var=1.25  pndep_Var=6.0E-13 fac_Var=4.2 rs0_Var=1.0 dxl_Var=-5.0E-9 dxw_Var=8E-9
-.lib 'crn90g_2d5_lk_v1d2p1.l' MOS_CAP
+.lib 'crn90g_2d5_lk_v1d2p1.lib' MOS_CAP
 .ENDL FF_MOS_CAP
 ***********************************************************************************************************
 .LIB MC_MOS_CAP
@@ -45258,7 +45258,7 @@ xrg n2 n22 rnpolyrg ll='(w/3)*rgflag+1e-8' ww='l+dxl_na25 ' m=multi scale='1'
 +pndep_Var       = '5.0E-13 * (1 + 1.43 * ran_CAP1)'
 +fac_Var         = 'pow((1+ran_CAP2),13.7)'
 +rs0_Var         = '42*pow((1-ran_CAP2),27.2)'
-.lib 'crn90g_2d5_lk_v1d2p1.l'  MOS_CAP
+.lib 'crn90g_2d5_lk_v1d2p1.lib'  MOS_CAP
 .ENDL MC_MOS_CAP
 ***********************************************************************************************************
 .LIB MOS_CAP
@@ -45303,19 +45303,19 @@ rs   n1  nds rvalue
 .LIB TT_MOS_CAP_25
 .param
 +Cgmin_Var25= 1     dCg_Var25= 1     dxL_Var25= 0     dxW_Var25= 0
-.lib 'crn90g_2d5_lk_v1d2p1.l' MOS_CAP_25
+.lib 'crn90g_2d5_lk_v1d2p1.lib' MOS_CAP_25
 .ENDL TT_MOS_CAP_25
 ******************* CORNER_LIB OF SLOW MODEL *****************************
 .LIB SS_MOS_CAP_25
 .param
 +Cgmin_Var25= 0.9     dCg_Var25= 0.9458     dxL_Var25= 1.0E-08     dxW_Var25= -1.2E-08
-.lib 'crn90g_2d5_lk_v1d2p1.l' MOS_CAP_25
+.lib 'crn90g_2d5_lk_v1d2p1.lib' MOS_CAP_25
 .ENDL SS_MOS_CAP_25
 ******************* CORNER_LIB OF FAST MODEL *****************************
 .LIB FF_MOS_CAP_25
 .param
 +Cgmin_Var25= 1.1     dCg_Var25= 1.0542     dxL_Var25= -1.0E-08     dxW_Var25= 1.2E-08
-.lib 'crn90g_2d5_lk_v1d2p1.l' MOS_CAP_25
+.lib 'crn90g_2d5_lk_v1d2p1.lib' MOS_CAP_25
 .ENDL FF_MOS_CAP_25
 ******************* CORNER_LIB OF MC MODEL *****************************
 .LIB MC_MOS_CAP_25
@@ -45326,7 +45326,7 @@ rs   n1  nds rvalue
 +dxL_Var25         = '0.0000e+000+(-1.2593e-009)*A1_CAP25+(-1.5918e-009)*A2_CAP25+(-2.9340e-009)*A3_CAP25+(2.5052e-010)*A4_CAP25'
 +dxW_Var25         = '0.0000e+000+(1.7421e-009)*A1_CAP25+(8.9385e-010)*A2_CAP25+(4.0158e-009)*A3_CAP25+(-1.9599e-010)*A4_CAP25'
 +Cgmin_Var25       = '1+random_CAP25'
-.lib 'crn90g_2d5_lk_v1d2p1.l' MOS_CAP_25
+.lib 'crn90g_2d5_lk_v1d2p1.lib' MOS_CAP_25
 .ENDL MC_MOS_CAP_25
 **************************************************************************
 *
@@ -45389,7 +45389,7 @@ cg ng nds 'Cgmin+dCg*(1.0+tanh((v(ng,nds)-dVgs)/Vgnorm))'
 +r_rm8_9l        = 0.0214          r_rm8_9s        = 0.0221          r_rm8_9w        = 0.0204       
 +r_rmt		 = 0.005
 
-.lib 'crn90g_2d5_lk_v1d2p1.l' RES
+.lib 'crn90g_2d5_lk_v1d2p1.lib' RES
 .ENDL TT_RES
 
 .LIB SS_RES
@@ -45418,7 +45418,7 @@ cg ng nds 'Cgmin+dCg*(1.0+tanh((v(ng,nds)-dVgs)/Vgnorm))'
 +r_rm8_9l        = '0.0214 * 1.20' r_rm8_9s        = '0.0221 * 1.20' r_rm8_9w        = '0.0204 * 1.20' 
 +r_rmt		 = '0.005*1.2'
 
-.lib 'crn90g_2d5_lk_v1d2p1.l' RES
+.lib 'crn90g_2d5_lk_v1d2p1.lib' RES
 .ENDL SS_RES
 
 .LIB FF_RES
@@ -45447,7 +45447,7 @@ cg ng nds 'Cgmin+dCg*(1.0+tanh((v(ng,nds)-dVgs)/Vgnorm))'
 +r_rm8_9l        = '0.0214 * 0.80' r_rm8_9s        = '0.0221 * 0.80' r_rm8_9w        = '0.0204 * 0.80'  
 +r_rmt		 = '0.005*0.8'
 
-.lib 'crn90g_2d5_lk_v1d2p1.l' RES
+.lib 'crn90g_2d5_lk_v1d2p1.lib' RES
 .ENDL FF_RES
 
 .LIB MC_RES
@@ -45502,7 +45502,7 @@ cg ng nds 'Cgmin+dCg*(1.0+tanh((v(ng,nds)-dVgs)/Vgnorm))'
 +r_rm8_9l        = 0.0214                       r_rm8_9s      = 0.0221                          r_rm8_9w      = 0.0204       
 +r_rmt           = '0.005*(1+0.05*par_rpmt)'
 
-.lib 'crn90g_2d5_lk_v1d2p1.l' RES
+.lib 'crn90g_2d5_lk_v1d2p1.lib' RES
 .ENDL MC_RES
 
 .LIB RES
@@ -46070,7 +46070,7 @@ r1 n1 n2 'rsh/mf*l*scale/(w*scale-dw)*(1+pvc1*(abs(v(n2,n1))/l/scale)+pvc2*(v(n2
 .Param
 +r_rnpolys_rg    = 10.41           dxw_rnpolys_rg  = 0
 +r_rppolys_rg    = 10.77           dxw_rppolys_rg  = 0
-.lib 'crn90g_2d5_lk_v1d2p1.l' RES_rg
+.lib 'crn90g_2d5_lk_v1d2p1.lib' RES_rg
 .ENDL TT_RES_rg
 
 .LIB RES_rg
@@ -46106,7 +46106,7 @@ r1 n1 n2 'rsh/m*ll*scale/(ww*scale-dw)*tfac'
 + cmimbb_mimfac     = 1.0
 + cmimbb2p0_mimfac  = 1.0
 + cm5bb_mimfac      = 1.0
-.lib 'crn90g_2d5_lk_v1d2p1.l' MIM
+.lib 'crn90g_2d5_lk_v1d2p1.lib' MIM
 .ENDL TT_MIM
 
 .LIB FF_MIM
@@ -46115,7 +46115,7 @@ r1 n1 n2 'rsh/m*ll*scale/(ww*scale-dw)*tfac'
 + cmimbb_mimfac     = 0.9
 + cmimbb2p0_mimfac  = 0.85
 + cm5bb_mimfac      = 0.931
-.lib 'crn90g_2d5_lk_v1d2p1.l' MIM
+.lib 'crn90g_2d5_lk_v1d2p1.lib' MIM
 .ENDL FF_MIM
 
 .LIB SS_MIM
@@ -46124,7 +46124,7 @@ r1 n1 n2 'rsh/m*ll*scale/(ww*scale-dw)*tfac'
 + cmimbb_mimfac     = 1.1
 + cmimbb2p0_mimfac  = 1.15
 + cm5bb_mimfac      = 1.074
-.lib 'crn90g_2d5_lk_v1d2p1.l' MIM
+.lib 'crn90g_2d5_lk_v1d2p1.lib' MIM
 .ENDL SS_MIM
 
 .LIB MC_MIM
@@ -46133,7 +46133,7 @@ r1 n1 n2 'rsh/m*ll*scale/(ww*scale-dw)*tfac'
 + cmimbb_mimfac     = '1.0+0.025*mimpar1'
 + cmimbb2p0_mimfac  = '1.0+0.0375*mimpar2'
 + cm5bb_mimfac      = 1.0
-.lib 'crn90g_2d5_lk_v1d2p1.l' MIM
+.lib 'crn90g_2d5_lk_v1d2p1.lib' MIM
 .ENDL MC_MIM
 
 **************************************************************************************************
@@ -46299,7 +46299,7 @@ cox bottom gnode 'cox_para*((1/(5.43673+(2.3367)*(lay-3)))/0.0584104)*cm5bb_mimf
 +rnwo=92.99		rend_rnwo=8.46u		dxw_rnwo=0.0		dxl_rnwo=0.0
 +rpwo=152.56		rend_rpwo=29.5u		dxw_rpwo=0.0		dxl_rpwo=0.0
 
-.lib 'crn90g_2d5_lk_v1d2p1.l' DIS_RES
+.lib 'crn90g_2d5_lk_v1d2p1.lib' DIS_RES
 .ENDL TT_DISRES
 ************** Library of SS corner ******************************
 .LIB SS_DISRES
@@ -46318,7 +46318,7 @@ cox bottom gnode 'cox_para*((1/(5.43673+(2.3367)*(lay-3)))/0.0584104)*cm5bb_mimf
 +rnwo='92.99*1.15'	rend_rnwo='8.46u*1.9'	dxw_rnwo=0.040u		dxl_rnwo=-0.0u
 +rpwo='152.56*1.25'	rend_rpwo='29.5u*1.6'	dxw_rpwo=0.022u		dxl_rpwo=-0.0u
 
-.lib 'crn90g_2d5_lk_v1d2p1.l' DIS_RES
+.lib 'crn90g_2d5_lk_v1d2p1.lib' DIS_RES
 .ENDL SS_DISRES
 ************** Library of FF corner ******************************
 .LIB FF_DISRES
@@ -46337,7 +46337,7 @@ cox bottom gnode 'cox_para*((1/(5.43673+(2.3367)*(lay-3)))/0.0584104)*cm5bb_mimf
 +rnwo='92.99*0.85'	rend_rnwo='8.46u*0.1'	dxw_rnwo=-0.040u	dxl_rnwo=0.0u
 +rpwo='152.56*0.75'	rend_rpwo='29.5u*0.4'	dxw_rpwo=-0.022u	dxl_rpwo=0.0u
 
-.lib 'crn90g_2d5_lk_v1d2p1.l' DIS_RES
+.lib 'crn90g_2d5_lk_v1d2p1.lib' DIS_RES
 .ENDL FF_DISRES
 
 ************** Library of Statistical model ******************************
@@ -46375,12 +46375,12 @@ cox bottom gnode 'cox_para*((1/(5.43673+(2.3367)*(lay-3)))/0.0584104)*cm5bb_mimf
 +rnwo='92.99*(1+0.15/4*par_disrp)'	rend_rnwo='8.46u*(1+0.4487*par_disrendnod)'	dxw_rnwo='0.023u*par_disdwnod'		dxl_rnwo=0.0
 +rpwo='152.56*(1+0.25/4*par_disrp)'	rend_rpwo='29.5u*(1+0.2142*par_disrendpod)'	dxw_rpwo='0.021u*par_disdwpod'		dxl_rpwo=0.0
 
-.lib 'crn90g_2d5_lk_v1d2p1.l' DIS_RES
+.lib 'crn90g_2d5_lk_v1d2p1.lib' DIS_RES
 .endl MC_DISRES
 ***********************************************************************
 .LIB DIS_RES
 
-*.lib 'crn90g_2d5_lk_v1d2p1.l' TT_DIO
+*.lib 'crn90g_2d5_lk_v1d2p1.lib' TT_DIO
 ***********************************     N+POLY silicide resistor (W>=2.0um)     ***********************************
 .subckt rnpolyl_dis n1 n2 body l=length w=width scale=1 mf=1 mismatchflag=0
 .param geo_fac ='1/sqrt(mf*l*scale*w*scale*1e12)'
@@ -46700,7 +46700,7 @@ d5 body n1 nwdio area='mf*((wr*scale-dw)*lr*scale/5.0)' pj='mf*((wr*scale-dw)+2.
 .LIB TT_RTMOM
 .param RTMOM_fac= 1 	
 + par_mom=AGAUSS(0,1,1)
-.lib 'crn90g_2d5_lk_v1d2p1.l' RTMOM
+.lib 'crn90g_2d5_lk_v1d2p1.lib' RTMOM
 .ENDL TT_RTMOM
 
 ************* Library of slow corner **********************************
@@ -46708,7 +46708,7 @@ d5 body n1 nwdio area='mf*((wr*scale-dw)*lr*scale/5.0)' pj='mf*((wr*scale-dw)+2.
 .LIB SS_RTMOM
 .param RTMOM_fac= 1.25	
 + par_mom=AGAUSS(0,1,1)
-.lib 'crn90g_2d5_lk_v1d2p1.l' RTMOM
+.lib 'crn90g_2d5_lk_v1d2p1.lib' RTMOM
 .ENDL SS_RTMOM
 
 ************* Library of fast corner **********************************
@@ -46716,7 +46716,7 @@ d5 body n1 nwdio area='mf*((wr*scale-dw)*lr*scale/5.0)' pj='mf*((wr*scale-dw)+2.
 .LIB FF_RTMOM
 .param RTMOM_fac= 0.75 	
 + par_mom=AGAUSS(0,1,1)
-.lib 'crn90g_2d5_lk_v1d2p1.l' RTMOM
+.lib 'crn90g_2d5_lk_v1d2p1.lib' RTMOM
 .ENDL FF_RTMOM
 
 ************************************************************************

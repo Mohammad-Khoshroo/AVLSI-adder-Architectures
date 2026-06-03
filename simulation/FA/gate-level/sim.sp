@@ -3,7 +3,7 @@
 *   Mohammad Khoshroo - 810102441 
 *   Spring 2026
 *   AVLSI Course - by Dr. Vahdat
-*   Thechnolegy - crn90g_2d5_lk_v1d2p1.l (90nm)
+*   Thechnolegy - crn90g_2d5_lk_v1d2p1.lib (90nm)
 *   Standard MOSFET Model Name : nch , pch
 *   FA SIMULATION
 *   TEMP(℃) 25
@@ -12,7 +12,7 @@
 **************************** PARAMETERS *****************************
 
 .OPTION NOMOD
-.LIB "../../utils/crn90g_2d5_lk_v1d2p1.l" TT
+.LIB "../../utils/crn90g_2d5_lk_v1d2p1.lib" TT
 .INC "../full_adder.inc"
 
 .PARAM Vdd_val = 1                  $ supply-1 voltage
@@ -322,26 +322,26 @@ VCin Cin 0 PWL(0p 0  2400p 0  2460p 'Vdd_val'  4800p 'Vdd_val'  4860p 0  7200p 0
 .PROBE V(in) V(out)
 
 * .ALTER  Run_SF_Corner
-* .DEL LIB "../../utils/crn90g_2d5_lk_v1d2p1.l" TT   $ Delete previous Corner Models
-* .LIB "../../utils/crn90g_2d5_lk_v1d2p1.l" SF       $ Add new Corner Models
+* .DEL LIB "../../utils/crn90g_2d5_lk_v1d2p1.lib" TT   $ Delete previous Corner Models
+* .LIB "../../utils/crn90g_2d5_lk_v1d2p1.lib" SF       $ Add new Corner Models
 * .OPTION POST= 2 PROBE RUNLVL=6
 * .PROBE V(in) V(out)
 
 * .ALTER  Run_FS_Corner
-* .DEL LIB "../../utils/crn90g_2d5_lk_v1d2p1.l" TT
-* .LIB "../../utils/crn90g_2d5_lk_v1d2p1.l" FS
+* .DEL LIB "../../utils/crn90g_2d5_lk_v1d2p1.lib" TT
+* .LIB "../../utils/crn90g_2d5_lk_v1d2p1.lib" FS
 * .OPTION POST= 2 PROBE RUNLVL=6
 * .PROBE V(in) V(out)
 
 * .ALTER  Run_SS_Corner
-* .DEL LIB "../../utils/crn90g_2d5_lk_v1d2p1.l" TT
-* .LIB "../../utils/crn90g_2d5_lk_v1d2p1.l" SS
+* .DEL LIB "../../utils/crn90g_2d5_lk_v1d2p1.lib" TT
+* .LIB "../../utils/crn90g_2d5_lk_v1d2p1.lib" SS
 * .OPTION POST= 2 PROBE RUNLVL=6
 * .PROBE V(in) V(out)
 
 * .ALTER  Run_FF_Corner
-* .DEL LIB "../../utils/crn90g_2d5_lk_v1d2p1.l" TT
-* .LIB "../../utils/crn90g_2d5_lk_v1d2p1.l" FF
+* .DEL LIB "../../utils/crn90g_2d5_lk_v1d2p1.lib" TT
+* .LIB "../../utils/crn90g_2d5_lk_v1d2p1.lib" FF
 * .OPTION POST= 2 PROBE RUNLVL=6
 * .PROBE V(in) V(out)
 

@@ -5,7 +5,7 @@
 *   AVLSI Course - by Dr. Vahdat
 *   Thechnolegy - crn90g_2d5_lk_v1d2p1.lib (90nm)
 *   Standard MOSFET Model Name : nch , pch
-*   NAND-BASED FA FUNCTION-CHECK
+*   FA FUNCTION-CHECK
 *   TEMP(℃) 25
 *   CORNER TT
 *
@@ -26,7 +26,7 @@
 
 ****************************** CIRCUIT ******************************
 
-Xfull_adder A B Cin S Cout Vdd Vss FA_N     $ FA_N Under TEST/SIMULATION
+Xfull_adder A B Cin S Cout Vdd Vss FA_T   $ FA Under TEST/SIMULATION
 
 ************************* SIMULATION SETTING ************************
 

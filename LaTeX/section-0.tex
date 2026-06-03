@@ -38,6 +38,14 @@ $$S = A \oplus B \oplus C_{in}$$
     شماتیک بلوک جمع‌کننده کامل تک‌بیتی
 }{fig:fa-block}
 
+\newcode[1]{spice}{codes/fa-func.sp}{ورودی شبیه‌سازی عملکرد مدارات جمع‌کننده کامل (تمام این شبیه‌سازی‌ها در دمای 25 درجه و در گوشه TT طراحی هستند)}{code:fa-func}
+
+طبق خواسته پروژه می‌بایست با $L=90nm$ و $W_{min}=90nm$ کار می‌کردیم ولی به دلیل محدودیت‌های کتابخانه از ابعاد پروژه اول (یعنی بررسی و طراحی گیت‌های پایه)استفاده کرده‌ایم: $L=180nm$ و $W_{min}=1\mu m$
+
+% \newcode[1]{spice}{codes/param.sp}{پارامتر‌های استفاده شده در شبیه‌سازی}{code:sim-param}
+
+\newcode[1]{spice}{codes/fa-sim.sp}{شبیه‌سازی HSPICE مربوط به عملکرد گیت‌های FA}{code:fa-sim}
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -55,32 +63,9 @@ $$S = A \oplus B \oplus C_{in}$$
 
 \newcode[1]{spice}{codes/fa.sp}{مدل SPICE گیت جمع‌کننده کامل}{code:fa}
 
-% % \newimage[\textwidth]{images/FA-func.png}{
-% %     نتیجه شبیه‌سازی جمع‌کننده کامل
-% % }{fig:fa-gate-func}
-
-% \newtable{بیشینه مقادیر تاخیر و انتقال‌های زمانی در شبیه‌سازی جمع‌کننده کامل \lr{(Full Adder)}}{tab:fa-timing}{|c|c|c|c|c|}{
-%     \hline
-%     \textbf{خروجی} & \textbf{انتقال ورودی \lr{$(A, B, C_{in})$}} & \textbf{\lr{$t_{pLH}$}} & \textbf{\lr{$t_{pHL}$}} & \textbf{\lr{$t_{p}$}} \\
-%     \hline
-%     \hline
-
-%     \multirow{3}{*}{\lr{$S$} (حاصل جمع)}
-%     & \lr{(0,0,0)} $\rightarrow$ \lr{(1,0,0)} & \lr{192.7ps} & - & - \\ \cline{2-5}
-%     & \lr{(1,0,0)} $\rightarrow$ \lr{(0,0,0)} & - & \lr{189ps} & - \\ \cline{2-5}
-%     & \lr{(0,0,0)} $\rightarrow$ \lr{(1,0,0)} / \lr{(1,0,0)} $\rightarrow$ \lr{(0,0,0)} & - & - & \lr{190.85ps} \\
-%     \hline
-
-%     \multirow{3}{*}{\lr{$C_{out}$} (رقم نقلی)}
-%     & \lr{(0,0,1)} $\rightarrow$ \lr{(1,0,1)} & \lr{189.9ps} & - & - \\ \cline{2-5}
-%     & \lr{(1,0,1)} $\rightarrow$ \lr{(0,0,1)} & - & \lr{188.1ps} & - \\ \cline{2-5}
-%     & \lr{(0,0,1)} $\rightarrow$ \lr{(1,0,1)} / \lr{(1,0,1)} $\rightarrow$ \lr{(0,0,1)} & - & - & \lr{189ps} \\
-%     \hline
-
-%     کل مدار
-%     & \lr{(0,0,0)} $\rightarrow$ \lr{(1,0,0)} / \lr{(1,0,0)} $\rightarrow$ \lr{(0,0,0)} & - & - & \lr{190.85ps} \\
-%     \hline
-% }
+\newimage[\textwidth]{images/sim/FA-func.png}{
+    نتیجه شبیه‌سازی جمع‌کننده کامل
+}{fig:fa-gate-func}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -126,32 +111,9 @@ $$
 
 \newcode[1]{spice}{codes/fa-nand.sp}{مدل SPICE مدار جمع‌کننده کامل مبتنی بر گیت \lr{NAND2}}{code:fa-nand}
 
-% \newimage[0.8\textwidth]{images/FA-NAND-func.png}{
-%     نتیجه شبیه‌سازی جمع‌کننده کامل
-% }{fig:fa-nand-func}
-
-% \newtable{بیشینه مقادیر تاخیر و انتقال‌های زمانی در شبیه‌سازی جمع‌کننده کامل \lr{(Full Adder)}}{tab:fa-nand-timing}{|c|c|c|c|c|}{
-%     \hline
-%     \textbf{خروجی} & \textbf{انتقال ورودی \lr{$(A, B, C_{in})$}} & \textbf{\lr{$t_{pLH}$}} & \textbf{\lr{$t_{pHL}$}} & \textbf{\lr{$t_{p}$}} \\
-%     \hline
-%     \hline
-
-%     \multirow{3}{*}{\lr{$S$} (حاصل جمع)}
-%     & \lr{(0,0,0)} $\rightarrow$ \lr{(1,0,0)} & \lr{213.3ps} & - & - \\ \cline{2-5}
-%     & \lr{(1,0,0)} $\rightarrow$ \lr{(0,0,0)} & - & \lr{196.4ps} & - \\ \cline{2-5}
-%     & \lr{(0,0,0)} $\rightarrow$ \lr{(1,0,0)} / \lr{(1,0,0)} $\rightarrow$ \lr{(0,0,0)} & - & - & \lr{204.85ps} \\
-%     \hline
-
-%     \multirow{3}{*}{\lr{$C_{out}$} (رقم نقلی)}
-%     & \lr{(0,0,1)} $\rightarrow$ \lr{(1,0,1)} & \lr{256.6ps} & - & - \\ \cline{2-5}
-%     & \lr{(1,0,1)} $\rightarrow$ \lr{(0,0,1)} & - & \lr{164.4ps} & - \\ \cline{2-5}
-%     & \lr{(0,0,1)} $\rightarrow$ \lr{(1,0,1)} / \lr{(1,0,1)} $\rightarrow$ \lr{(0,0,1)} & - & - & \lr{210.5ps} \\
-%     \hline
-
-%     کل مدار
-%     & \lr{(0,0,1)} $\rightarrow$ \lr{(1,0,1)} / \lr{(1,0,1)} $\rightarrow$ \lr{(0,0,1)} & - & - & \lr{210.5ps} \\
-%     \hline
-% }
+\newimage[\textwidth]{images/sim/FA-func-nand.png}{
+    نتیجه شبیه‌سازی جمع‌کننده کامل
+}{fig:fa-nand-func}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -219,34 +181,12 @@ $$
 }{fig:fa-mirror}
 
 
-\newcode[0.8]{spice}{codes/fa-mirror.sp}{مدل SPICE مدار جمع‌کننده کامل compact شده}{code:fa-nand}
+\newcode[0.8]{spice}{codes/fa-mirror.sp}{مدل SPICE مدار جمع‌کننده کامل compact شده}{code:fa-mirror}
 
-% \newimage[0.8\textwidth]{images/FA-NAND-func.png}{
-%     نتیجه شبیه‌سازی جمع‌کننده کامل
-% }{fig:fa-nand-func}
+\newimage[\textwidth]{images/sim/FA-func-mirror.png}{
+    نتیجه شبیه‌سازی جمع‌کننده کامل
+}{fig:fa-mirror-func}
 
-% \newtable{بیشینه مقادیر تاخیر و انتقال‌های زمانی در شبیه‌سازی جمع‌کننده کامل \lr{(Full Adder)}}{tab:fa-nand-timing}{|c|c|c|c|c|}{
-%     \hline
-%     \textbf{خروجی} & \textbf{انتقال ورودی \lr{$(A, B, C_{in})$}} & \textbf{\lr{$t_{pLH}$}} & \textbf{\lr{$t_{pHL}$}} & \textbf{\lr{$t_{p}$}} \\
-%     \hline
-%     \hline
-
-%     \multirow{3}{*}{\lr{$S$} (حاصل جمع)}
-%     & \lr{(0,0,0)} $\rightarrow$ \lr{(1,0,0)} & \lr{213.3ps} & - & - \\ \cline{2-5}
-%     & \lr{(1,0,0)} $\rightarrow$ \lr{(0,0,0)} & - & \lr{196.4ps} & - \\ \cline{2-5}
-%     & \lr{(0,0,0)} $\rightarrow$ \lr{(1,0,0)} / \lr{(1,0,0)} $\rightarrow$ \lr{(0,0,0)} & - & - & \lr{204.85ps} \\
-%     \hline
-
-%     \multirow{3}{*}{\lr{$C_{out}$} (رقم نقلی)}
-%     & \lr{(0,0,1)} $\rightarrow$ \lr{(1,0,1)} & \lr{256.6ps} & - & - \\ \cline{2-5}
-%     & \lr{(1,0,1)} $\rightarrow$ \lr{(0,0,1)} & - & \lr{164.4ps} & - \\ \cline{2-5}
-%     & \lr{(0,0,1)} $\rightarrow$ \lr{(1,0,1)} / \lr{(1,0,1)} $\rightarrow$ \lr{(0,0,1)} & - & - & \lr{210.5ps} \\
-%     \hline
-
-%     کل مدار
-%     & \lr{(0,0,1)} $\rightarrow$ \lr{(1,0,1)} / \lr{(1,0,1)} $\rightarrow$ \lr{(0,0,1)} & - & - & \lr{210.5ps} \\
-%     \hline
-% }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -261,8 +201,7 @@ $$
 
 \newimage[\textwidth]{images/FA-Transmission.png}{
     شماتیک ترانزیستوری و در سطح گیت مدار جمع‌کننده تک بیت مبتنی بر \lr{Transmission Gate}
-}{fig:fa-فل}
-
+}{fig:fa-tg}
 
 ساختار منطقی این معماری بر پایه سیگنال انتشار (\lr{Propagate}) یعنی $P = A \oplus B$ بنا شده است. با توجه به شکل مدار، ابتدا سیگنال انتشار $P$ و متمم آن $\overline{P}$ تولید می‌شود. همان‌طور که در شماتیک بلوکی و ترانزیستوری مشخص است، این پیاده‌سازی را می‌توان به دو بخش اصلی تقسیم کرد:
 
@@ -283,9 +222,9 @@ $$
 
 \newcode[0.8]{spice}{codes/fa-tg.sp}{مدل SPICE مدار جمع‌کننده کامل مبتنی بر TG}{code:fa-tg}
 
-% \newimage[0.8\textwidth]{images/FA-NAND-func.png}{
-%     نتیجه شبیه‌سازی جمع‌کننده کامل
-% }{fig:fa-nand-func}
+\newimage[\textwidth]{images/sim/FA-func-tg.png}{
+    نتیجه شبیه‌سازی جمع‌کننده کامل
+}{fig:fa-tg-func}
 
 % \newtable{بیشینه مقادیر تاخیر و انتقال‌های زمانی در شبیه‌سازی جمع‌کننده کامل \lr{(Full Adder)}}{tab:fa-nand-timing}{|c|c|c|c|c|}{
 %     \hline

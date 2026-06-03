@@ -6,12 +6,12 @@
   Synopsys, Inc. All other use, reproduction, or distribution of
   this software is strictly prohibited.
   Input File: sim-func.sp                                                       
-  Command line options: C:\synopsys\Hspice_P-2019.06-SP1-1\WIN64\hspice.com -i sim-func.sp -o D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\FA\gate-level\func\sim-func.lis
-  Start time: Wed Jun  3 15:56:19 2026
+  Command line options: C:\synopsys\Hspice_P-2019.06-SP1-1\WIN64\hspice.com -i sim-func.sp -o D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\FA\TG-based\func\sim-func.lis
+  Start time: Wed Jun  3 16:08:55 2026
   lic:  
   lic: FLEXlm: SDK_12.3 
   lic: USER:   Mohammad-Khohsroo    HOSTNAME: DESKTOP-GMQQFUO 
-  lic: HOSTID: "088fc3e7a24d"       PID:      5220 
+  lic: HOSTID: "088fc3e7a24d"       PID:      12264 
   lic: Using FLEXlm license file: 
   lic: 27000@DESKTOP-GMQQFUO 
   lic: Checkout 1 hspice 
@@ -26,16 +26,17 @@
  circuit number to circuit name directory
    number circuitname                     definition         multiplier
         0 main circuit
-        1 xfull_adder.                    fa                 1.00 
-        2 xfull_adder.xxor1.              xor2_sym           1.00 
-        3 xfull_adder.xxor2.              xor2_sym           1.00 
-        4 xfull_adder.xnand1.             nand2              1.00 
-        5 xfull_adder.xnand2.             nand2              1.00 
-        6 xfull_adder.xnand3.             nand2              1.00 
-        7 xfull_adder.xxor1.xinv1.        inv                1.00 
-        8 xfull_adder.xxor1.xinv2.        inv                1.00 
-        9 xfull_adder.xxor2.xinv1.        inv                1.00 
-       10 xfull_adder.xxor2.xinv2.        inv                1.00 
+        1 xfull_adder.                    fa_t               1.00 
+        2 xfull_adder.xinva.              inv                1.00 
+        3 xfull_adder.xinvc.              inv                1.00 
+        4 xfull_adder.xtg_p.              tg                 1.00 
+        5 xfull_adder.xtg_pb.             tg                 1.00 
+        6 xfull_adder.xtg_s1.             tg                 1.00 
+        7 xfull_adder.xtg_s2.             tg                 1.00 
+        8 xfull_adder.xtg_c1.             tg                 1.00 
+        9 xfull_adder.xtg_c2.             tg                 1.00 
+       10 xfull_adder.xinvs.              inv                1.00 
+       11 xfull_adder.xinvco.             inv                1.00 
   
       
  **info** set option symb=1 internally to help for convergence.
@@ -44,7 +45,7 @@
  ******
  runlvl  = 6         bypass  = 2.0000    
   Opening plot unit= 79
- file=D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\FA\gate-level\func\sim-func.pa0
+ file=D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\FA\TG-based\func\sim-func.pa0
 
  **info** dc convergence successful at Newton-Raphson method 
  ******  
@@ -55,14 +56,10 @@
      node    =voltage       node    =voltage       node    =voltage
 
  + 0:a       =   0.       0:b       =   0.       0:cin     =   0.     
- + 0:cout    =   6.4919u  0:s       =   9.0685u  0:vdd     =   1.0000 
- + 0:vss     =   0.       1:nandab  = 999.9935m  1:nandcin = 999.9935m
- + 1:xorab   =  12.4026u  2:in1_bar = 999.9874m  2:in2_bar = 999.9872m
- + 2:x1      =   6.1995u  2:x2      =   7.1655u  2:y1      = 999.9965m
- + 2:y2      = 133.9725m  3:in1_bar = 999.9874m  3:in2_bar = 999.9872m
- + 3:x1      =   4.5332u  3:x2      =   5.4985u  3:y1      = 999.9965m
- + 3:y2      = 133.9828m  4:x       =  32.5488m  5:x       =  32.5563m
- + 6:x       =   4.2102u
+ + 0:cout    =   2.3016u  0:s       =   2.3013u  0:vdd     =   1.0000 
+ + 0:vss     =   0.       1:a_bar   = 999.9699m  1:c_bar   = 999.9833m
+ + 1:cout_bar= 999.9639m  1:p       =   5.9674u  1:p_bar   = 999.9602m
+ + 1:s_bar   = 999.9727m
 
 
           ***** job concluded
@@ -79,12 +76,12 @@
 
 
   ******  Circuit Statistics  ******
-  # nodes       =      26 # elements   =      43
+  # nodes       =      14 # elements   =      31
   # resistors   =       0 # capacitors =       0 # inductors   =       0
   # mutual_inds =       0 # vccs       =       0 # vcvs        =       0
   # cccs        =       0 # ccvs       =       0 # volt_srcs   =       2
   # curr_srcs   =       0 # diodes     =       0 # bjts        =       0
-  # jfets       =       0 # mosfets    =      36 # U elements  =       0
+  # jfets       =       0 # mosfets    =      24 # U elements  =       0
   # T elements  =       0 # W elements =       0 # B elements  =       0
   # S elements  =       0 # P elements =       0 # va device   =       0
   # vector_srcs =       5 # N elements =       0
@@ -93,21 +90,21 @@
   ******  Runtime Statistics (seconds)  ******
 
   analysis           time    # points   tot. iter  conv.iter
-  op point           0.01           1          35
-  transient          0.07         161        1800         641 rev=        62
-  readin             0.13
-  errchk             0.03
+  op point           0.00           1          13
+  transient          0.04         161        1672         602 rev=        68
+  readin             0.10
+  errchk             0.01
   setup              0.00
   output             0.00
 
 
-           peak memory used         71.27 megabytes
-           total cpu time            0.24 seconds
-           total elapsed time        0.27 seconds
-           job started at     15:56:19 06/03/2026
-           job ended   at     15:56:20 06/03/2026
-           job total runtime         0.27 seconds
+           peak memory used         71.30 megabytes
+           total cpu time            0.16 seconds
+           total elapsed time        0.21 seconds
+           job started at     16:08:55 06/03/2026
+           job ended   at     16:08:55 06/03/2026
+           job total runtime         0.21 seconds
 
 
   lic: Release hspice token(s) 
- lic: total license checkout elapse time:        0.03(s)
+ lic: total license checkout elapse time:        0.05(s)

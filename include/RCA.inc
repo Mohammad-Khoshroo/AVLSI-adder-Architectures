@@ -6,7 +6,7 @@
 *   Standard MOSFET Model Name : nch , pch
 *
 *
-.INC "full_adder.inc"
+.INC "FA.inc"
 *
 ************************* RCA-2bit .SUBCKT *************************
 
