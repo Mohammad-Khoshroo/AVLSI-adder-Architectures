@@ -12,8 +12,8 @@
 
 .SUBCKT RCA2 A1 A0 B1 B0 Cin S1 S0 Cout Vdd Vss 
 
-XFA_L    A0  B0  Cin     S0  Cmid    Vdd Vss FA
-XFA_H    A1  B1  Cmid    S1  Cout    Vdd Vss FA
+XFA_L    A0  B0  Cin     S0  Cmid    Vdd Vss FA_T
+XFA_H    A1  B1  Cmid    S1  Cout    Vdd Vss FA_T
 
 .ENDS RCA2
 
