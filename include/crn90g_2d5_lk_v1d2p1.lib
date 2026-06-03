@@ -77,7 +77,7 @@
 *             (b).LIB FF_RFRES_SA:Fast corner model                           *
 *             (c).LIB SS_RFRES_SA:Slow corner model                           *
 *             (d).LIB MC_RFRES_SA:Monte-Carlo RF model                        *
-*                                                                             *
+*                                                                             *                                                                            *
 *          b. Non-salicided poly resistor                                     *
 *                                                                             *
 *             (a).LIB TT_RFRES_RPO:Typical model                              *

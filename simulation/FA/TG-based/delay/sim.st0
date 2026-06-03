@@ -1,0 +1,429 @@
+****** HSPICE -- P-2019.06-SP1-1 win64 (Sep 27 2019) ******
+Input File: sim.sp
+lic:
+lic: FLEXlm: SDK_12.3
+lic: USER:   Mohammad-Khohsroo    HOSTNAME: DESKTOP-GMQQFUO
+lic: HOSTID: "088fc3e7a24d"       PID:      12672
+lic: Using FLEXlm license file:
+lic: 27000@DESKTOP-GMQQFUO
+lic: Checkout 1 hspice
+lic: License/Maintenance for hspice will expire on 30-dec-2030/2020.12
+lic: 1(in_use)/99(total) FLOATING license(s) on SERVER 27000@DESKTOP-GMQQFUO
+lic:
+
+ init: begin read circuit files, cpu clock= 1.88E-01
+       option search = C:/synopsys/Hspice_P-2019.06-SP1-1/parts/behave/
+       option search = C:/synopsys/Hspice_P-2019.06-SP1-1/parts/AD/
+       option search = C:/synopsys/Hspice_P-2019.06-SP1-1/parts/XILINX/
+       option search = C:/synopsys/Hspice_P-2019.06-SP1-1/parts/TLINE/
+       option search = C:/synopsys/Hspice_P-2019.06-SP1-1/parts/TI/
+       option search = C:/synopsys/Hspice_P-2019.06-SP1-1/parts/SIGNET/
+       option search = C:/synopsys/Hspice_P-2019.06-SP1-1/parts/PCI/
+       option search = C:/synopsys/Hspice_P-2019.06-SP1-1/parts/LIN_TEC
+                         H/
+       option search = C:/synopsys/Hspice_P-2019.06-SP1-1/parts/PET/
+       option search = C:/synopsys/Hspice_P-2019.06-SP1-1/parts/DI0/
+       option search = C:/synopsys/Hspice_P-2019.06-SP1-1/parts/COMLINE
+                         /
+       option search = C:/synopsys/Hspice_P-2019.06-SP1-1/parts/BURR_BR
+                         M/
+       option search = C:/synopsys/Hspice_P-2019.06-SP1-1/parts/BJT/
+       option nomod
+       option post =     2.00
+       option probe
+       option runlvl =     6.00
+ init: end read circuit files, cpu clock= 1.95E-01 peak memory=      65 mb
+ init: begin check errors, cpu clock= 1.95E-01
+ init: end check errors, cpu clock= 2.00E-01 peak memory=      65 mb
+ init: begin setup matrix, pivot=     0 cpu clock= 2.00E-01
+       establish matrix -- done, cpu clock= 2.00E-01 peak memory=      65 mb
+       re-order matrix -- done, cpu clock= 2.00E-01 peak memory=      65 mb
+ init: end setup matrix, cpu clock= 2.00E-01 peak memory=      65 mb
+ sweep: data            data1            begin, #sweeps =  24
+ data: data=fa_transission  a_init          =    0.00E+00
+ dcop: begin dcop, cpu clock= 2.01E-01
+ dcop: end dcop, cpu clock= 2.02E-01 peak memory=      65 mb tot_iter=       3
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\FA\TG-based\delay\sim.mt0
+ sweep: tran tran1    begin, stop_t=  5.00E-10 #sweeps=**** cpu clock= 2.02E-01
+ tran: time= 6.5440E-11 tot_iter=      10 conv_iter=       5 cpu clock= 2.02E-01
+ tran: time= 1.0284E-10 tot_iter=      44 conv_iter=      19 cpu clock= 2.03E-01
+ tran: time= 1.5147E-10 tot_iter=     123 conv_iter=      48 cpu clock= 2.06E-01
+ tran: time= 2.0161E-10 tot_iter=     227 conv_iter=      86 cpu clock= 2.09E-01
+ tran: time= 2.5150E-10 tot_iter=     256 conv_iter=      96 cpu clock= 2.10E-01
+ tran: time= 3.0765E-10 tot_iter=     270 conv_iter=     101 cpu clock= 2.11E-01
+ tran: time= 3.6873E-10 tot_iter=     279 conv_iter=     104 cpu clock= 2.11E-01
+ tran: time= 4.1873E-10 tot_iter=     285 conv_iter=     106 cpu clock= 2.11E-01
+ tran: time= 4.6873E-10 tot_iter=     289 conv_iter=     108 cpu clock= 2.11E-01
+ tran: time= 5.0000E-10 tot_iter=     293 conv_iter=     110 cpu clock= 2.11E-01
+ sweep: tran tran1    end, cpu clock= 2.11E-01 peak memory=      65 mb
+ data: data=fa_transission  a_init          =    1.00E+00
+ dcop: begin dcop, cpu clock= 2.12E-01
+ dcop: end dcop, cpu clock= 2.12E-01 peak memory=      65 mb tot_iter=       6
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\FA\TG-based\delay\sim.mt0
+ sweep: tran tran2    begin, stop_t=  5.00E-10 #sweeps=**** cpu clock= 2.12E-01
+ tran: time= 6.5440E-11 tot_iter=      10 conv_iter=       5 cpu clock= 2.13E-01
+ tran: time= 1.0257E-10 tot_iter=      47 conv_iter=      20 cpu clock= 2.14E-01
+ tran: time= 1.5085E-10 tot_iter=     114 conv_iter=      45 cpu clock= 2.16E-01
+ tran: time= 2.0102E-10 tot_iter=     187 conv_iter=      70 cpu clock= 2.18E-01
+ tran: time= 2.5224E-10 tot_iter=     254 conv_iter=      92 cpu clock= 2.20E-01
+ tran: time= 3.0045E-10 tot_iter=     272 conv_iter=      98 cpu clock= 2.21E-01
+ tran: time= 3.5564E-10 tot_iter=     282 conv_iter=     103 cpu clock= 2.21E-01
+ tran: time= 4.1736E-10 tot_iter=     290 conv_iter=     107 cpu clock= 2.21E-01
+ tran: time= 4.6107E-10 tot_iter=     294 conv_iter=     109 cpu clock= 2.21E-01
+ tran: time= 5.0000E-10 tot_iter=     299 conv_iter=     111 cpu clock= 2.22E-01
+ sweep: tran tran2    end, cpu clock= 2.22E-01 peak memory=      65 mb
+ data: data=fa_transission  a_init          =    0.00E+00
+ dcop: begin dcop, cpu clock= 2.22E-01
+ dcop: end dcop, cpu clock= 2.22E-01 peak memory=      65 mb tot_iter=       9
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\FA\TG-based\delay\sim.mt0
+ sweep: tran tran3    begin, stop_t=  5.00E-10 #sweeps=**** cpu clock= 2.23E-01
+ tran: time= 6.5440E-11 tot_iter=      10 conv_iter=       5 cpu clock= 2.23E-01
+ tran: time= 1.0300E-10 tot_iter=      52 conv_iter=      22 cpu clock= 2.24E-01
+ tran: time= 1.5009E-10 tot_iter=     127 conv_iter=      50 cpu clock= 2.27E-01
+ tran: time= 2.0018E-10 tot_iter=     190 conv_iter=      72 cpu clock= 2.28E-01
+ tran: time= 2.5058E-10 tot_iter=     287 conv_iter=     107 cpu clock= 2.31E-01
+ tran: time= 3.0258E-10 tot_iter=     311 conv_iter=     115 cpu clock= 2.32E-01
+ tran: time= 3.5189E-10 tot_iter=     325 conv_iter=     120 cpu clock= 2.32E-01
+ tran: time= 4.0263E-10 tot_iter=     333 conv_iter=     124 cpu clock= 2.33E-01
+ tran: time= 4.5233E-10 tot_iter=     339 conv_iter=     127 cpu clock= 2.33E-01
+ tran: time= 5.0000E-10 tot_iter=     345 conv_iter=     130 cpu clock= 2.33E-01
+ sweep: tran tran3    end, cpu clock= 2.33E-01 peak memory=      65 mb
+ data: data=fa_transission  a_init          =    1.00E+00
+ dcop: begin dcop, cpu clock= 2.34E-01
+ dcop: end dcop, cpu clock= 2.34E-01 peak memory=      65 mb tot_iter=      12
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\FA\TG-based\delay\sim.mt0
+ sweep: tran tran4    begin, stop_t=  5.00E-10 #sweeps=**** cpu clock= 2.34E-01
+ tran: time= 6.5440E-11 tot_iter=      10 conv_iter=       5 cpu clock= 2.34E-01
+ tran: time= 1.0301E-10 tot_iter=      53 conv_iter=      23 cpu clock= 2.36E-01
+ tran: time= 1.5128E-10 tot_iter=     121 conv_iter=      48 cpu clock= 2.38E-01
+ tran: time= 2.0117E-10 tot_iter=     262 conv_iter=      97 cpu clock= 2.42E-01
+ tran: time= 2.5079E-10 tot_iter=     292 conv_iter=     107 cpu clock= 2.42E-01
+ tran: time= 3.0657E-10 tot_iter=     310 conv_iter=     113 cpu clock= 2.43E-01
+ tran: time= 3.5702E-10 tot_iter=     319 conv_iter=     117 cpu clock= 2.43E-01
+ tran: time= 4.0750E-10 tot_iter=     325 conv_iter=     120 cpu clock= 2.43E-01
+ tran: time= 4.5353E-10 tot_iter=     329 conv_iter=     122 cpu clock= 2.44E-01
+ tran: time= 5.0000E-10 tot_iter=     334 conv_iter=     124 cpu clock= 2.44E-01
+ sweep: tran tran4    end, cpu clock= 2.44E-01 peak memory=      65 mb
+ data: data=fa_transission  a_init          =    0.00E+00
+ dcop: begin dcop, cpu clock= 2.44E-01
+ dcop: end dcop, cpu clock= 2.44E-01 peak memory=      65 mb tot_iter=      15
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\FA\TG-based\delay\sim.mt0
+ sweep: tran tran5    begin, stop_t=  5.00E-10 #sweeps=**** cpu clock= 2.44E-01
+ tran: time= 6.5440E-11 tot_iter=      10 conv_iter=       5 cpu clock= 2.45E-01
+ tran: time= 1.0266E-10 tot_iter=      44 conv_iter=      19 cpu clock= 2.46E-01
+ tran: time= 1.5182E-10 tot_iter=     138 conv_iter=      53 cpu clock= 2.49E-01
+ tran: time= 2.0008E-10 tot_iter=     251 conv_iter=      93 cpu clock= 2.52E-01
+ tran: time= 2.5028E-10 tot_iter=     280 conv_iter=     103 cpu clock= 2.53E-01
+ tran: time= 3.0108E-10 tot_iter=     295 conv_iter=     110 cpu clock= 2.53E-01
+ tran: time= 3.6483E-10 tot_iter=     306 conv_iter=     114 cpu clock= 2.53E-01
+ tran: time= 4.1483E-10 tot_iter=     312 conv_iter=     116 cpu clock= 2.54E-01
+ tran: time= 4.6483E-10 tot_iter=     317 conv_iter=     118 cpu clock= 2.54E-01
+ tran: time= 5.0000E-10 tot_iter=     321 conv_iter=     120 cpu clock= 2.54E-01
+ sweep: tran tran5    end, cpu clock= 2.54E-01 peak memory=      65 mb
+ data: data=fa_transission  a_init          =    1.00E+00
+ dcop: begin dcop, cpu clock= 2.54E-01
+ dcop: end dcop, cpu clock= 2.54E-01 peak memory=      65 mb tot_iter=      18
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\FA\TG-based\delay\sim.mt0
+ sweep: tran tran6    begin, stop_t=  5.00E-10 #sweeps=**** cpu clock= 2.54E-01
+ tran: time= 6.5440E-11 tot_iter=      10 conv_iter=       5 cpu clock= 2.55E-01
+ tran: time= 1.0243E-10 tot_iter=      47 conv_iter=      20 cpu clock= 2.56E-01
+ tran: time= 1.5210E-10 tot_iter=     109 conv_iter=      43 cpu clock= 2.58E-01
+ tran: time= 2.0517E-10 tot_iter=     155 conv_iter=      60 cpu clock= 2.59E-01
+ tran: time= 2.5131E-10 tot_iter=     219 conv_iter=      82 cpu clock= 2.61E-01
+ tran: time= 3.0534E-10 tot_iter=     277 conv_iter=     102 cpu clock= 2.63E-01
+ tran: time= 3.5923E-10 tot_iter=     294 conv_iter=     109 cpu clock= 2.64E-01
+ tran: time= 4.0870E-10 tot_iter=     302 conv_iter=     113 cpu clock= 2.64E-01
+ tran: time= 4.5415E-10 tot_iter=     308 conv_iter=     116 cpu clock= 2.64E-01
+ tran: time= 5.0000E-10 tot_iter=     314 conv_iter=     119 cpu clock= 2.65E-01
+ sweep: tran tran6    end, cpu clock= 2.65E-01 peak memory=      66 mb
+ data: data=fa_transission  a_init          =    0.00E+00
+ dcop: begin dcop, cpu clock= 2.65E-01
+ dcop: end dcop, cpu clock= 2.65E-01 peak memory=      66 mb tot_iter=      21
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\FA\TG-based\delay\sim.mt0
+ sweep: tran tran7    begin, stop_t=  5.00E-10 #sweeps=**** cpu clock= 2.65E-01
+ tran: time= 6.5440E-11 tot_iter=      10 conv_iter=       5 cpu clock= 2.66E-01
+ tran: time= 1.0313E-10 tot_iter=      52 conv_iter=      22 cpu clock= 2.67E-01
+ tran: time= 1.5304E-10 tot_iter=     131 conv_iter=      51 cpu clock= 2.70E-01
+ tran: time= 2.0049E-10 tot_iter=     210 conv_iter=      79 cpu clock= 2.72E-01
+ tran: time= 2.5648E-10 tot_iter=     276 conv_iter=     102 cpu clock= 2.74E-01
+ tran: time= 3.0161E-10 tot_iter=     286 conv_iter=     107 cpu clock= 2.74E-01
+ tran: time= 3.6325E-10 tot_iter=     295 conv_iter=     111 cpu clock= 2.75E-01
+ tran: time= 4.1149E-10 tot_iter=     301 conv_iter=     113 cpu clock= 2.75E-01
+ tran: time= 4.6149E-10 tot_iter=     307 conv_iter=     115 cpu clock= 2.75E-01
+ tran: time= 5.0000E-10 tot_iter=     311 conv_iter=     117 cpu clock= 2.75E-01
+ sweep: tran tran7    end, cpu clock= 2.75E-01 peak memory=      68 mb
+ data: data=fa_transission  a_init          =    1.00E+00
+ dcop: begin dcop, cpu clock= 2.76E-01
+ dcop: end dcop, cpu clock= 2.76E-01 peak memory=      68 mb tot_iter=      24
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\FA\TG-based\delay\sim.mt0
+ sweep: tran tran8    begin, stop_t=  5.00E-10 #sweeps=**** cpu clock= 2.76E-01
+ tran: time= 6.5440E-11 tot_iter=      10 conv_iter=       5 cpu clock= 2.76E-01
+ tran: time= 1.0308E-10 tot_iter=      55 conv_iter=      23 cpu clock= 2.77E-01
+ tran: time= 1.5043E-10 tot_iter=     123 conv_iter=      47 cpu clock= 2.80E-01
+ tran: time= 2.0234E-10 tot_iter=     227 conv_iter=      83 cpu clock= 2.83E-01
+ tran: time= 2.5346E-10 tot_iter=     252 conv_iter=      92 cpu clock= 2.83E-01
+ tran: time= 3.0756E-10 tot_iter=     264 conv_iter=      97 cpu clock= 2.84E-01
+ tran: time= 3.6899E-10 tot_iter=     273 conv_iter=     100 cpu clock= 2.84E-01
+ tran: time= 4.1899E-10 tot_iter=     279 conv_iter=     102 cpu clock= 2.84E-01
+ tran: time= 4.6899E-10 tot_iter=     283 conv_iter=     104 cpu clock= 2.84E-01
+ tran: time= 5.0000E-10 tot_iter=     287 conv_iter=     106 cpu clock= 2.84E-01
+ sweep: tran tran8    end, cpu clock= 2.84E-01 peak memory=      71 mb
+ data: data=fa_transission  a_init          =    0.00E+00
+ dcop: begin dcop, cpu clock= 2.84E-01
+ dcop: end dcop, cpu clock= 2.85E-01 peak memory=      71 mb tot_iter=      27
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\FA\TG-based\delay\sim.mt0
+ sweep: tran tran9    begin, stop_t=  5.00E-10 #sweeps=**** cpu clock= 2.85E-01
+ tran: time= 6.5440E-11 tot_iter=      10 conv_iter=       5 cpu clock= 2.85E-01
+ tran: time= 1.0129E-10 tot_iter=      51 conv_iter=      21 cpu clock= 2.86E-01
+ tran: time= 1.5010E-10 tot_iter=     153 conv_iter=      59 cpu clock= 2.89E-01
+ tran: time= 2.0087E-10 tot_iter=     252 conv_iter=      94 cpu clock= 2.92E-01
+ tran: time= 2.5768E-10 tot_iter=     271 conv_iter=     101 cpu clock= 2.93E-01
+ tran: time= 3.0094E-10 tot_iter=     280 conv_iter=     104 cpu clock= 2.93E-01
+ tran: time= 3.7135E-10 tot_iter=     289 conv_iter=     107 cpu clock= 2.93E-01
+ tran: time= 4.2135E-10 tot_iter=     294 conv_iter=     109 cpu clock= 2.93E-01
+ tran: time= 4.7135E-10 tot_iter=     298 conv_iter=     111 cpu clock= 2.93E-01
+ tran: time= 5.0000E-10 tot_iter=     302 conv_iter=     113 cpu clock= 2.93E-01
+ sweep: tran tran9    end, cpu clock= 2.93E-01 peak memory=      71 mb
+ data: data=fa_transission  a_init          =    0.00E+00
+ dcop: begin dcop, cpu clock= 2.94E-01
+ dcop: end dcop, cpu clock= 2.94E-01 peak memory=      71 mb tot_iter=      30
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\FA\TG-based\delay\sim.mt0
+ sweep: tran tran10   begin, stop_t=  5.00E-10 #sweeps=**** cpu clock= 2.94E-01
+ tran: time= 6.5440E-11 tot_iter=      10 conv_iter=       5 cpu clock= 2.94E-01
+ tran: time= 1.0417E-10 tot_iter=      49 conv_iter=      20 cpu clock= 2.95E-01
+ tran: time= 1.5062E-10 tot_iter=     111 conv_iter=      43 cpu clock= 2.97E-01
+ tran: time= 2.0058E-10 tot_iter=     226 conv_iter=      84 cpu clock= 3.00E-01
+ tran: time= 2.5702E-10 tot_iter=     259 conv_iter=      95 cpu clock= 3.01E-01
+ tran: time= 3.0400E-10 tot_iter=     272 conv_iter=     100 cpu clock= 3.02E-01
+ tran: time= 3.5378E-10 tot_iter=     280 conv_iter=     104 cpu clock= 3.02E-01
+ tran: time= 4.0365E-10 tot_iter=     286 conv_iter=     107 cpu clock= 3.02E-01
+ tran: time= 4.7431E-10 tot_iter=     292 conv_iter=     110 cpu clock= 3.02E-01
+ tran: time= 5.0000E-10 tot_iter=     295 conv_iter=     111 cpu clock= 3.03E-01
+ sweep: tran tran10   end, cpu clock= 3.03E-01 peak memory=      71 mb
+ data: data=fa_transission  a_init          =    1.00E+00
+ dcop: begin dcop, cpu clock= 3.03E-01
+ dcop: end dcop, cpu clock= 3.03E-01 peak memory=      71 mb tot_iter=      33
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\FA\TG-based\delay\sim.mt0
+ sweep: tran tran11   begin, stop_t=  5.00E-10 #sweeps=**** cpu clock= 3.03E-01
+ tran: time= 6.5440E-11 tot_iter=      10 conv_iter=       5 cpu clock= 3.03E-01
+ tran: time= 1.0087E-10 tot_iter=      51 conv_iter=      21 cpu clock= 3.05E-01
+ tran: time= 1.5087E-10 tot_iter=     110 conv_iter=      42 cpu clock= 3.06E-01
+ tran: time= 2.0140E-10 tot_iter=     192 conv_iter=      71 cpu clock= 3.09E-01
+ tran: time= 2.5048E-10 tot_iter=     301 conv_iter=     110 cpu clock= 3.12E-01
+ tran: time= 3.0049E-10 tot_iter=     319 conv_iter=     116 cpu clock= 3.12E-01
+ tran: time= 3.5543E-10 tot_iter=     332 conv_iter=     121 cpu clock= 3.13E-01
+ tran: time= 4.1395E-10 tot_iter=     340 conv_iter=     125 cpu clock= 3.13E-01
+ tran: time= 4.5306E-10 tot_iter=     344 conv_iter=     127 cpu clock= 3.13E-01
+ tran: time= 5.0000E-10 tot_iter=     348 conv_iter=     129 cpu clock= 3.13E-01
+ sweep: tran tran11   end, cpu clock= 3.13E-01 peak memory=      71 mb
+ data: data=fa_transission  a_init          =    1.00E+00
+ dcop: begin dcop, cpu clock= 3.14E-01
+ dcop: end dcop, cpu clock= 3.14E-01 peak memory=      71 mb tot_iter=      36
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\FA\TG-based\delay\sim.mt0
+ sweep: tran tran12   begin, stop_t=  5.00E-10 #sweeps=**** cpu clock= 3.14E-01
+ tran: time= 6.5440E-11 tot_iter=      10 conv_iter=       5 cpu clock= 3.14E-01
+ tran: time= 1.0145E-10 tot_iter=      47 conv_iter=      20 cpu clock= 3.15E-01
+ tran: time= 1.5059E-10 tot_iter=     118 conv_iter=      45 cpu clock= 3.17E-01
+ tran: time= 2.0137E-10 tot_iter=     243 conv_iter=      89 cpu clock= 3.21E-01
+ tran: time= 2.5156E-10 tot_iter=     272 conv_iter=      99 cpu clock= 3.22E-01
+ tran: time= 3.0832E-10 tot_iter=     287 conv_iter=     105 cpu clock= 3.22E-01
+ tran: time= 3.6203E-10 tot_iter=     296 conv_iter=     109 cpu clock= 3.22E-01
+ tran: time= 4.1778E-10 tot_iter=     302 conv_iter=     112 cpu clock= 3.22E-01
+ tran: time= 4.6692E-10 tot_iter=     306 conv_iter=     114 cpu clock= 3.23E-01
+ tran: time= 5.0000E-10 tot_iter=     310 conv_iter=     116 cpu clock= 3.23E-01
+ sweep: tran tran12   end, cpu clock= 3.23E-01 peak memory=      71 mb
+ data: data=fa_transission  a_init          =    0.00E+00
+ dcop: begin dcop, cpu clock= 3.23E-01
+ dcop: end dcop, cpu clock= 3.23E-01 peak memory=      71 mb tot_iter=      39
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\FA\TG-based\delay\sim.mt0
+ sweep: tran tran13   begin, stop_t=  5.00E-10 #sweeps=**** cpu clock= 3.23E-01
+ tran: time= 6.5440E-11 tot_iter=      10 conv_iter=       5 cpu clock= 3.24E-01
+ tran: time= 1.0099E-10 tot_iter=      49 conv_iter=      21 cpu clock= 3.25E-01
+ tran: time= 1.5163E-10 tot_iter=     130 conv_iter=      50 cpu clock= 3.27E-01
+ tran: time= 2.0196E-10 tot_iter=     229 conv_iter=      83 cpu clock= 3.30E-01
+ tran: time= 2.5358E-10 tot_iter=     251 conv_iter=      91 cpu clock= 3.31E-01
+ tran: time= 3.0999E-10 tot_iter=     262 conv_iter=      96 cpu clock= 3.31E-01
+ tran: time= 3.7212E-10 tot_iter=     271 conv_iter=      99 cpu clock= 3.31E-01
+ tran: time= 4.2212E-10 tot_iter=     277 conv_iter=     101 cpu clock= 3.31E-01
+ tran: time= 4.7212E-10 tot_iter=     281 conv_iter=     103 cpu clock= 3.31E-01
+ tran: time= 5.0000E-10 tot_iter=     285 conv_iter=     105 cpu clock= 3.31E-01
+ sweep: tran tran13   end, cpu clock= 3.31E-01 peak memory=      71 mb
+ data: data=fa_transission  a_init          =    0.00E+00
+ dcop: begin dcop, cpu clock= 3.32E-01
+ dcop: end dcop, cpu clock= 3.32E-01 peak memory=      71 mb tot_iter=      42
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\FA\TG-based\delay\sim.mt0
+ sweep: tran tran14   begin, stop_t=  5.00E-10 #sweeps=**** cpu clock= 3.32E-01
+ tran: time= 6.5440E-11 tot_iter=      10 conv_iter=       5 cpu clock= 3.32E-01
+ tran: time= 1.0387E-10 tot_iter=      50 conv_iter=      20 cpu clock= 3.33E-01
+ tran: time= 1.5116E-10 tot_iter=     104 conv_iter=      39 cpu clock= 3.35E-01
+ tran: time= 2.0199E-10 tot_iter=     138 conv_iter=      50 cpu clock= 3.36E-01
+ tran: time= 2.5018E-10 tot_iter=     249 conv_iter=      90 cpu clock= 3.39E-01
+ tran: time= 3.0619E-10 tot_iter=     275 conv_iter=      99 cpu clock= 3.40E-01
+ tran: time= 3.5533E-10 tot_iter=     285 conv_iter=     104 cpu clock= 3.40E-01
+ tran: time= 4.1206E-10 tot_iter=     293 conv_iter=     108 cpu clock= 3.40E-01
+ tran: time= 4.6469E-10 tot_iter=     299 conv_iter=     111 cpu clock= 3.41E-01
+ tran: time= 5.0000E-10 tot_iter=     303 conv_iter=     113 cpu clock= 3.41E-01
+ sweep: tran tran14   end, cpu clock= 3.41E-01 peak memory=      71 mb
+ data: data=fa_transission  a_init          =    1.00E+00
+ dcop: begin dcop, cpu clock= 3.41E-01
+ dcop: end dcop, cpu clock= 3.41E-01 peak memory=      71 mb tot_iter=      45
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\FA\TG-based\delay\sim.mt0
+ sweep: tran tran15   begin, stop_t=  5.00E-10 #sweeps=**** cpu clock= 3.41E-01
+ tran: time= 6.5440E-11 tot_iter=      10 conv_iter=       5 cpu clock= 3.42E-01
+ tran: time= 1.0105E-10 tot_iter=      51 conv_iter=      21 cpu clock= 3.43E-01
+ tran: time= 1.5103E-10 tot_iter=     126 conv_iter=      48 cpu clock= 3.46E-01
+ tran: time= 2.0153E-10 tot_iter=     236 conv_iter=      87 cpu clock= 3.49E-01
+ tran: time= 2.5037E-10 tot_iter=     258 conv_iter=      95 cpu clock= 3.50E-01
+ tran: time= 3.0036E-10 tot_iter=     268 conv_iter=     100 cpu clock= 3.50E-01
+ tran: time= 3.5013E-10 tot_iter=     275 conv_iter=     103 cpu clock= 3.50E-01
+ tran: time= 4.2418E-10 tot_iter=     284 conv_iter=     106 cpu clock= 3.51E-01
+ tran: time= 4.7418E-10 tot_iter=     289 conv_iter=     108 cpu clock= 3.51E-01
+ tran: time= 5.0000E-10 tot_iter=     291 conv_iter=     109 cpu clock= 3.51E-01
+ sweep: tran tran15   end, cpu clock= 3.51E-01 peak memory=      71 mb
+ data: data=fa_transission  a_init          =    1.00E+00
+ dcop: begin dcop, cpu clock= 3.51E-01
+ dcop: end dcop, cpu clock= 3.51E-01 peak memory=      71 mb tot_iter=      48
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\FA\TG-based\delay\sim.mt0
+ sweep: tran tran16   begin, stop_t=  5.00E-10 #sweeps=**** cpu clock= 3.52E-01
+ tran: time= 6.5440E-11 tot_iter=      10 conv_iter=       5 cpu clock= 3.52E-01
+ tran: time= 1.0167E-10 tot_iter=      48 conv_iter=      20 cpu clock= 3.53E-01
+ tran: time= 1.5127E-10 tot_iter=     120 conv_iter=      45 cpu clock= 3.55E-01
+ tran: time= 2.0364E-10 tot_iter=     213 conv_iter=      76 cpu clock= 3.58E-01
+ tran: time= 2.5194E-10 tot_iter=     231 conv_iter=      83 cpu clock= 3.58E-01
+ tran: time= 3.0139E-10 tot_iter=     240 conv_iter=      87 cpu clock= 3.58E-01
+ tran: time= 3.6861E-10 tot_iter=     249 conv_iter=      90 cpu clock= 3.58E-01
+ tran: time= 4.1861E-10 tot_iter=     254 conv_iter=      92 cpu clock= 3.59E-01
+ tran: time= 4.6861E-10 tot_iter=     258 conv_iter=      94 cpu clock= 3.59E-01
+ tran: time= 5.0000E-10 tot_iter=     262 conv_iter=      96 cpu clock= 3.59E-01
+ sweep: tran tran16   end, cpu clock= 3.59E-01 peak memory=      71 mb
+ data: data=fa_transission  a_init          =    0.00E+00
+ dcop: begin dcop, cpu clock= 3.59E-01
+ dcop: end dcop, cpu clock= 3.59E-01 peak memory=      71 mb tot_iter=      51
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\FA\TG-based\delay\sim.mt0
+ sweep: tran tran17   begin, stop_t=  5.00E-10 #sweeps=**** cpu clock= 3.59E-01
+ tran: time= 6.5440E-11 tot_iter=      10 conv_iter=       5 cpu clock= 3.60E-01
+ tran: time= 1.0283E-10 tot_iter=      56 conv_iter=      22 cpu clock= 3.61E-01
+ tran: time= 1.5072E-10 tot_iter=     137 conv_iter=      51 cpu clock= 3.63E-01
+ tran: time= 2.0364E-10 tot_iter=     225 conv_iter=      82 cpu clock= 3.65E-01
+ tran: time= 2.5349E-10 tot_iter=     249 conv_iter=      92 cpu clock= 3.66E-01
+ tran: time= 3.0872E-10 tot_iter=     259 conv_iter=      97 cpu clock= 3.67E-01
+ tran: time= 3.6955E-10 tot_iter=     266 conv_iter=     100 cpu clock= 3.67E-01
+ tran: time= 4.1955E-10 tot_iter=     271 conv_iter=     102 cpu clock= 3.67E-01
+ tran: time= 4.6955E-10 tot_iter=     275 conv_iter=     104 cpu clock= 3.67E-01
+ tran: time= 5.0000E-10 tot_iter=     279 conv_iter=     106 cpu clock= 3.67E-01
+ sweep: tran tran17   end, cpu clock= 3.67E-01 peak memory=      71 mb
+ data: data=fa_transission  a_init          =    0.00E+00
+ dcop: begin dcop, cpu clock= 3.68E-01
+ dcop: end dcop, cpu clock= 3.68E-01 peak memory=      71 mb tot_iter=      54
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\FA\TG-based\delay\sim.mt0
+ sweep: tran tran18   begin, stop_t=  5.00E-10 #sweeps=**** cpu clock= 3.68E-01
+ tran: time= 6.5440E-11 tot_iter=      10 conv_iter=       5 cpu clock= 3.68E-01
+ tran: time= 1.0397E-10 tot_iter=      44 conv_iter=      19 cpu clock= 3.69E-01
+ tran: time= 1.5450E-10 tot_iter=      96 conv_iter=      38 cpu clock= 3.71E-01
+ tran: time= 2.0146E-10 tot_iter=     191 conv_iter=      71 cpu clock= 3.73E-01
+ tran: time= 2.5748E-10 tot_iter=     218 conv_iter=      80 cpu clock= 3.74E-01
+ tran: time= 3.0570E-10 tot_iter=     231 conv_iter=      85 cpu clock= 3.74E-01
+ tran: time= 3.5624E-10 tot_iter=     239 conv_iter=      89 cpu clock= 3.74E-01
+ tran: time= 4.0676E-10 tot_iter=     245 conv_iter=      92 cpu clock= 3.74E-01
+ tran: time= 4.5273E-10 tot_iter=     249 conv_iter=      94 cpu clock= 3.75E-01
+ tran: time= 5.0000E-10 tot_iter=     253 conv_iter=      96 cpu clock= 3.75E-01
+ sweep: tran tran18   end, cpu clock= 3.75E-01 peak memory=      71 mb
+ data: data=fa_transission  a_init          =    1.00E+00
+ dcop: begin dcop, cpu clock= 3.75E-01
+ dcop: end dcop, cpu clock= 3.75E-01 peak memory=      71 mb tot_iter=      57
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\FA\TG-based\delay\sim.mt0
+ sweep: tran tran19   begin, stop_t=  5.00E-10 #sweeps=**** cpu clock= 3.76E-01
+ tran: time= 6.5440E-11 tot_iter=      10 conv_iter=       5 cpu clock= 3.76E-01
+ tran: time= 1.0308E-10 tot_iter=      52 conv_iter=      22 cpu clock= 3.77E-01
+ tran: time= 1.5226E-10 tot_iter=     176 conv_iter=      66 cpu clock= 3.80E-01
+ tran: time= 2.0323E-10 tot_iter=     272 conv_iter=     101 cpu clock= 3.83E-01
+ tran: time= 2.5777E-10 tot_iter=     293 conv_iter=     109 cpu clock= 3.84E-01
+ tran: time= 3.0251E-10 tot_iter=     301 conv_iter=     113 cpu clock= 3.84E-01
+ tran: time= 3.5906E-10 tot_iter=     309 conv_iter=     116 cpu clock= 3.84E-01
+ tran: time= 4.0906E-10 tot_iter=     315 conv_iter=     118 cpu clock= 3.84E-01
+ tran: time= 4.5906E-10 tot_iter=     320 conv_iter=     120 cpu clock= 3.84E-01
+ tran: time= 5.0000E-10 tot_iter=     324 conv_iter=     122 cpu clock= 3.84E-01
+ sweep: tran tran19   end, cpu clock= 3.84E-01 peak memory=      71 mb
+ data: data=fa_transission  a_init          =    1.00E+00
+ dcop: begin dcop, cpu clock= 3.85E-01
+ dcop: end dcop, cpu clock= 3.85E-01 peak memory=      71 mb tot_iter=      60
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\FA\TG-based\delay\sim.mt0
+ sweep: tran tran20   begin, stop_t=  5.00E-10 #sweeps=**** cpu clock= 3.85E-01
+ tran: time= 6.5440E-11 tot_iter=      10 conv_iter=       5 cpu clock= 3.85E-01
+ tran: time= 1.0264E-10 tot_iter=      48 conv_iter=      20 cpu clock= 3.86E-01
+ tran: time= 1.5053E-10 tot_iter=     154 conv_iter=      57 cpu clock= 3.89E-01
+ tran: time= 2.0182E-10 tot_iter=     243 conv_iter=      90 cpu clock= 3.92E-01
+ tran: time= 2.5601E-10 tot_iter=     270 conv_iter=      99 cpu clock= 3.92E-01
+ tran: time= 3.0347E-10 tot_iter=     283 conv_iter=     104 cpu clock= 3.93E-01
+ tran: time= 3.5940E-10 tot_iter=     295 conv_iter=     110 cpu clock= 3.93E-01
+ tran: time= 4.1098E-10 tot_iter=     301 conv_iter=     113 cpu clock= 3.93E-01
+ tran: time= 4.5778E-10 tot_iter=     305 conv_iter=     115 cpu clock= 3.93E-01
+ tran: time= 5.0000E-10 tot_iter=     310 conv_iter=     117 cpu clock= 3.94E-01
+ sweep: tran tran20   end, cpu clock= 3.94E-01 peak memory=      71 mb
+ data: data=fa_transission  a_init          =    0.00E+00
+ dcop: begin dcop, cpu clock= 3.94E-01
+ dcop: end dcop, cpu clock= 3.94E-01 peak memory=      71 mb tot_iter=      63
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\FA\TG-based\delay\sim.mt0
+ sweep: tran tran21   begin, stop_t=  5.00E-10 #sweeps=**** cpu clock= 3.94E-01
+ tran: time= 6.5440E-11 tot_iter=      10 conv_iter=       5 cpu clock= 3.95E-01
+ tran: time= 1.0308E-10 tot_iter=      52 conv_iter=      22 cpu clock= 3.96E-01
+ tran: time= 1.5106E-10 tot_iter=     173 conv_iter=      66 cpu clock= 3.99E-01
+ tran: time= 2.0082E-10 tot_iter=     273 conv_iter=     102 cpu clock= 4.02E-01
+ tran: time= 2.5359E-10 tot_iter=     295 conv_iter=     110 cpu clock= 4.02E-01
+ tran: time= 3.1018E-10 tot_iter=     305 conv_iter=     115 cpu clock= 4.03E-01
+ tran: time= 3.7225E-10 tot_iter=     313 conv_iter=     118 cpu clock= 4.03E-01
+ tran: time= 4.2225E-10 tot_iter=     319 conv_iter=     120 cpu clock= 4.03E-01
+ tran: time= 4.7225E-10 tot_iter=     323 conv_iter=     122 cpu clock= 4.03E-01
+ tran: time= 5.0000E-10 tot_iter=     327 conv_iter=     124 cpu clock= 4.03E-01
+ sweep: tran tran21   end, cpu clock= 4.03E-01 peak memory=      71 mb
+ data: data=fa_transission  a_init          =    0.00E+00
+ dcop: begin dcop, cpu clock= 4.04E-01
+ dcop: end dcop, cpu clock= 4.04E-01 peak memory=      71 mb tot_iter=      66
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\FA\TG-based\delay\sim.mt0
+ sweep: tran tran22   begin, stop_t=  5.00E-10 #sweeps=**** cpu clock= 4.04E-01
+ tran: time= 6.5440E-11 tot_iter=      10 conv_iter=       5 cpu clock= 4.04E-01
+ tran: time= 1.0265E-10 tot_iter=      48 conv_iter=      20 cpu clock= 4.05E-01
+ tran: time= 1.5022E-10 tot_iter=     152 conv_iter=      57 cpu clock= 4.09E-01
+ tran: time= 2.0191E-10 tot_iter=     238 conv_iter=      87 cpu clock= 4.11E-01
+ tran: time= 2.5624E-10 tot_iter=     265 conv_iter=      96 cpu clock= 4.11E-01
+ tran: time= 3.0712E-10 tot_iter=     282 conv_iter=     103 cpu clock= 4.12E-01
+ tran: time= 3.5883E-10 tot_iter=     290 conv_iter=     107 cpu clock= 4.12E-01
+ tran: time= 4.1021E-10 tot_iter=     296 conv_iter=     110 cpu clock= 4.12E-01
+ tran: time= 4.5691E-10 tot_iter=     300 conv_iter=     112 cpu clock= 4.12E-01
+ tran: time= 5.0000E-10 tot_iter=     304 conv_iter=     114 cpu clock= 4.12E-01
+ sweep: tran tran22   end, cpu clock= 4.13E-01 peak memory=      71 mb
+ data: data=fa_transission  a_init          =    1.00E+00
+ dcop: begin dcop, cpu clock= 4.13E-01
+ dcop: end dcop, cpu clock= 4.13E-01 peak memory=      71 mb tot_iter=      69
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\FA\TG-based\delay\sim.mt0
+ sweep: tran tran23   begin, stop_t=  5.00E-10 #sweeps=**** cpu clock= 4.13E-01
+ tran: time= 6.5440E-11 tot_iter=      10 conv_iter=       5 cpu clock= 4.13E-01
+ tran: time= 1.0271E-10 tot_iter=      54 conv_iter=      22 cpu clock= 4.15E-01
+ tran: time= 1.5162E-10 tot_iter=     132 conv_iter=      50 cpu clock= 4.17E-01
+ tran: time= 2.0505E-10 tot_iter=     229 conv_iter=      84 cpu clock= 4.19E-01
+ tran: time= 2.5216E-10 tot_iter=     247 conv_iter=      91 cpu clock= 4.20E-01
+ tran: time= 3.0732E-10 tot_iter=     257 conv_iter=      96 cpu clock= 4.20E-01
+ tran: time= 3.6703E-10 tot_iter=     265 conv_iter=      99 cpu clock= 4.21E-01
+ tran: time= 4.1703E-10 tot_iter=     271 conv_iter=     101 cpu clock= 4.21E-01
+ tran: time= 4.6703E-10 tot_iter=     275 conv_iter=     103 cpu clock= 4.21E-01
+ tran: time= 5.0000E-10 tot_iter=     279 conv_iter=     105 cpu clock= 4.21E-01
+ sweep: tran tran23   end, cpu clock= 4.21E-01 peak memory=      71 mb
+ data: data=fa_transission  a_init          =    1.00E+00
+ dcop: begin dcop, cpu clock= 4.21E-01
+ dcop: end dcop, cpu clock= 4.22E-01 peak memory=      71 mb tot_iter=      72
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\FA\TG-based\delay\sim.mt0
+ sweep: tran tran24   begin, stop_t=  5.00E-10 #sweeps=**** cpu clock= 4.22E-01
+ tran: time= 6.5440E-11 tot_iter=      10 conv_iter=       5 cpu clock= 4.22E-01
+ tran: time= 1.0400E-10 tot_iter=      43 conv_iter=      19 cpu clock= 4.23E-01
+ tran: time= 1.5409E-10 tot_iter=      95 conv_iter=      38 cpu clock= 4.24E-01
+ tran: time= 2.0111E-10 tot_iter=     188 conv_iter=      70 cpu clock= 4.27E-01
+ tran: time= 2.5456E-10 tot_iter=     215 conv_iter=      79 cpu clock= 4.27E-01
+ tran: time= 3.0150E-10 tot_iter=     228 conv_iter=      84 cpu clock= 4.28E-01
+ tran: time= 3.5061E-10 tot_iter=     236 conv_iter=      88 cpu clock= 4.28E-01
+ tran: time= 4.1886E-10 tot_iter=     244 conv_iter=      92 cpu clock= 4.28E-01
+ tran: time= 4.6681E-10 tot_iter=     248 conv_iter=      94 cpu clock= 4.29E-01
+ tran: time= 5.0000E-10 tot_iter=     252 conv_iter=      96 cpu clock= 4.29E-01
+ sweep: tran tran24   end, cpu clock= 4.29E-01 peak memory=      71 mb
+ sweep: data            data            1 end
+>info:         ***** hspice job concluded
+ lic: Release hspice token(s)

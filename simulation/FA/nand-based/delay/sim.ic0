@@ -1,7 +1,7 @@
 * "simulator" "HSPICE" 
 * "version" "P-2019.06-SP1-1 win64"
 * "format" "HSP"
-* "rundate" "06:40:23 04/15/2026 "
+* "rundate" "22:11:56 06/03/2026 "
 * "netlist" "sim.sp "
 * "runtitle" "********************* hspice fa gates modeling **********************"
 * time =    0.            

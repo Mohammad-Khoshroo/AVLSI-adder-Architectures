@@ -189,30 +189,6 @@ literate=
 }
 
 
-% % --- دستور جدید برای درج کد با قابلیت تعیین زبان ---
-% \renewcommand{\newcode}[5][1]{%
-%   \begin{figure}[H]
-%     \centering
-%     \begin{minipage}{\columnwidth}
-%       % تنظیمات کپشن مخصوص کد
-%       \captionsetup{type=lstlisting, font=scriptsize, skip=4pt}
-%       \captionof{lstlisting}{#3\label{#4}}
-
-%       % استفاده از resizebox برای کنترل اندازه
-%       \resizebox{#1\columnwidth}{!}{%
-%         \begin{minipage}{\columnwidth}
-%           % مهم: تعیین زبان از آرگومان دوم
-%           \begin{lstlisting}[language=#2]
-% #5 
-%           \end{lstlisting}
-%         \end{minipage}%
-%       }%
-%     \end{minipage}
-%   \end{figure}
-% }
-
-
-% --- روش جایگزین و استاندارد لاتک (استفاده از سایز فونت به جای تغییر مقیاس عکس‌گونه) ---
 \newcommand{\newcodeFont}[5][\footnotesize]{
     \vspace{0.1cm}
     \begin{center}

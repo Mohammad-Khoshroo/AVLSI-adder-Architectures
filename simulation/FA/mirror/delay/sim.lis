@@ -1,0 +1,956 @@
+ ****** HSPICE -- P-2019.06-SP1-1 win64 (Sep 27 2019) ******                    
+  Copyright (c) 1986 - 2026 by Synopsys, Inc. All Rights Reserved.              
+  This software and the associated documentation are proprietary
+  to Synopsys, Inc. This software may only be used in accordance
+  with the terms and conditions of a written license agreement with
+  Synopsys, Inc. All other use, reproduction, or distribution of
+  this software is strictly prohibited.
+  Input File: sim.sp                                                            
+  Command line options: C:\synopsys\Hspice_P-2019.06-SP1-1\WIN64\hspice.com -i sim.sp -o D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\FA\mirror\delay\sim.lis
+  Start time: Wed Jun  3 22:04:17 2026
+  lic:  
+  lic: FLEXlm: SDK_12.3 
+  lic: USER:   Mohammad-Khohsroo    HOSTNAME: DESKTOP-GMQQFUO 
+  lic: HOSTID: "088fc3e7a24d"       PID:      26352 
+  lic: Using FLEXlm license file: 
+  lic: 27000@DESKTOP-GMQQFUO 
+  lic: Checkout 1 hspice 
+  lic: License/Maintenance for hspice will expire on 30-dec-2030/2020.12 
+  lic: 1(in_use)/99(total) FLOATING license(s) on SERVER 27000@DESKTOP-GMQQFUO 
+  lic:   
+** warning ** duplicate temperature 25.0 is defined in .temp. Only the first one will be used.
+1****** HSPICE -- P-2019.06-SP1-1 win64 (Sep 27 2019) ******                    
+ ******  
+ ********************* hspice fa gates modeling **********************
+
+ ****** circuit name directory
+ circuit number to circuit name directory
+   number circuitname                     definition         multiplier
+        0 main circuit
+        1 xfull_adder.                    fa_m               1.00 
+        2 xfull_adder.xinvc.              inv                1.00 
+        3 xfull_adder.xinvs.              inv                1.00 
+
+**warning** NO.2 tran analysis statement is duplicate, ignored!
+  **info** (sim.sp:42) DC voltage reset to initial transient source value in source 0:va. new dc=0.0000D+00
+  
+      
+ **info** set option symb=1 internally to help for convergence.
+ *****************************************************************
+ ******  option summary
+ ******
+ runlvl  = 6         bypass  = 2.0000    
+  Opening plot unit= 79
+ file=D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\FA\mirror\delay\sim.pa0
+
+ **info** dc convergence successful at Newton-Raphson method 
+
+   *** data name = fa_transission , index =     1 ***
+
+ ******
+ ********************* hspice fa gates modeling **********************
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+ tplh_s_a=  85.4882p  targ= 185.4882p   trig= 100.0000p
+  **warning** (sim.sp:75) .MEASURE tphl_s_a never reached the trigger value, Measurement failed! 
+  **warning** (sim.sp:75) .MEASURE tphl_s_a never reached the target value, Measurement failed! 
+   tphl_s_a= failed                          trig= not found
+   tplh_cout_a= failed       targ= not found    trig=  100.0000p
+   tphl_cout_a= failed                          trig= not found
+   tplh_s_b= failed                          trig= not found
+   tphl_s_b= failed                          trig= not found
+   tplh_cout_b= failed                          trig= not found
+   tphl_cout_b= failed                          trig= not found
+   tplh_s_cin= failed                          trig= not found
+   tphl_s_cin= failed                          trig= not found
+   tplh_cout_cin= failed                          trig= not found
+   tphl_cout_cin= failed                          trig= not found
+ voh_val_cout=   1.2704m    at=  82.3800p
+             from=   0.            to= 500.0000p
+ vol_val_cout=-583.3309u    at= 129.2548p
+             from=   0.            to= 500.0000p
+ voh_val_s= 999.9487m    at= 500.0000p
+             from=   0.            to= 500.0000p
+ vol_val_s= -12.6776m    at= 140.3520p
+             from=   0.            to= 500.0000p
+ p_avg=  74.9352u  from=   0.             to= 500.0000p
+ p_max= 488.7208u    at= 125.0000p
+             from=   0.            to= 500.0000p
+ i_avg=   9.7542u  from=   0.             to= 500.0000p
+ i_peak=-227.7551u    at= 169.6248p
+             from=   0.            to= 500.0000p
+
+          ***** job concluded
+ **info** dc convergence successful at Newton-Raphson method 
+
+   *** data name = fa_transission , index =     2 ***
+
+ ******
+ ********************* hspice fa gates modeling **********************
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+   tplh_s_a= failed                          trig= not found
+ tphl_s_a= 104.7591p  targ= 204.7591p   trig= 100.0000p
+   tplh_cout_a= failed                          trig= not found
+   tphl_cout_a= failed       targ= not found    trig=  100.0000p
+   tplh_s_b= failed                          trig= not found
+   tphl_s_b= failed                          trig= not found
+   tplh_cout_b= failed                          trig= not found
+   tphl_cout_b= failed                          trig= not found
+   tplh_s_cin= failed                          trig= not found
+   tphl_s_cin= failed                          trig= not found
+   tplh_cout_cin= failed                          trig= not found
+   tphl_cout_cin= failed                          trig= not found
+ voh_val_cout=   1.5636m    at= 143.4372p
+             from=   0.            to= 500.0000p
+ vol_val_cout=  -1.1178m    at= 100.8860p
+             from=   0.            to= 500.0000p
+ voh_val_s=   1.0355     at= 168.3256p
+             from=   0.            to= 500.0000p
+ vol_val_s=  29.3511u    at= 500.0000p
+             from=   0.            to= 500.0000p
+ p_avg=  61.4847u  from=   0.             to= 500.0000p
+ p_max= 322.2281u    at= 119.5190p
+             from=   0.            to= 500.0000p
+ i_avg=-135.6832u  from=   0.             to= 500.0000p
+ i_peak=  -1.1499m    at= 125.0000p
+             from=   0.            to= 500.0000p
+
+          ***** job concluded
+ **info** dc convergence successful at Newton-Raphson method 
+
+   *** data name = fa_transission , index =     3 ***
+
+ ******
+ ********************* hspice fa gates modeling **********************
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+   tplh_s_a= failed       targ= not found    trig=  100.0000p
+   tphl_s_a= failed                          trig= not found
+ tplh_cout_a=  74.1514p  targ= 174.1514p   trig= 100.0000p
+   tphl_cout_a= failed                          trig= not found
+   tplh_s_b= failed                          trig= not found
+   tphl_s_b= failed                          trig= not found
+   tplh_cout_b= failed                          trig= not found
+   tphl_cout_b= failed                          trig= not found
+   tplh_s_cin= failed                          trig= not found
+   tphl_s_cin= failed                          trig= not found
+   tplh_cout_cin= failed                          trig= not found
+   tphl_cout_cin= failed                          trig= not found
+ voh_val_cout= 999.9367m    at= 500.0000p
+             from=   0.            to= 500.0000p
+ vol_val_cout= -16.1361m    at= 136.2412p
+             from=   0.            to= 500.0000p
+ voh_val_s=   1.0385     at= 193.7448p
+             from=   0.            to= 500.0000p
+ vol_val_s= 136.3876u    at= 500.0000p
+             from=   0.            to= 500.0000p
+ p_avg=  98.4530u  from=   0.             to= 500.0000p
+ p_max= 452.5595u    at= 125.0000p
+             from=   0.            to= 500.0000p
+ i_avg= -31.4423u  from=   0.             to= 500.0000p
+ i_peak=-306.6849u    at= 164.7812p
+             from=   0.            to= 500.0000p
+
+          ***** job concluded
+ **info** dc convergence successful at Newton-Raphson method 
+
+   *** data name = fa_transission , index =     4 ***
+
+ ******
+ ********************* hspice fa gates modeling **********************
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+   tplh_s_a= failed                          trig= not found
+   tphl_s_a= failed       targ= not found    trig=  100.0000p
+   tplh_cout_a= failed                          trig= not found
+ tphl_cout_a= 100.0841p  targ= 200.0841p   trig= 100.0000p
+   tplh_s_b= failed                          trig= not found
+   tphl_s_b= failed                          trig= not found
+   tplh_cout_b= failed                          trig= not found
+   tphl_cout_b= failed                          trig= not found
+   tplh_s_cin= failed                          trig= not found
+   tphl_s_cin= failed                          trig= not found
+   tplh_cout_cin= failed                          trig= not found
+   tphl_cout_cin= failed                          trig= not found
+ voh_val_cout=   1.0312     at= 157.8467p
+             from=   0.            to= 500.0000p
+ vol_val_cout=  23.1358u    at= 500.0000p
+             from=   0.            to= 500.0000p
+ voh_val_s= 999.9604m    at= 500.0000p
+             from=   0.            to= 500.0000p
+ vol_val_s= -10.7021m    at= 234.3785p
+             from=   0.            to= 500.0000p
+ p_avg= 103.0786u  from=   0.             to= 500.0000p
+ p_max= 377.2397u    at= 195.6599p
+             from=   0.            to= 500.0000p
+ i_avg=-161.2708u  from=   0.             to= 500.0000p
+ i_peak=  -1.0694m    at= 124.7013p
+             from=   0.            to= 500.0000p
+
+          ***** job concluded
+ **info** dc convergence successful at Newton-Raphson method 
+
+   *** data name = fa_transission , index =     5 ***
+
+ ******
+ ********************* hspice fa gates modeling **********************
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+   tplh_s_a= failed       targ= not found    trig=  100.0000p
+   tphl_s_a= failed                          trig= not found
+ tplh_cout_a=  72.9810p  targ= 172.9810p   trig= 100.0000p
+   tphl_cout_a= failed                          trig= not found
+   tplh_s_b= failed                          trig= not found
+   tphl_s_b= failed                          trig= not found
+   tplh_cout_b= failed                          trig= not found
+   tphl_cout_b= failed                          trig= not found
+   tplh_s_cin= failed                          trig= not found
+   tphl_s_cin= failed                          trig= not found
+   tplh_cout_cin= failed                          trig= not found
+   tphl_cout_cin= failed                          trig= not found
+ voh_val_cout= 999.9744m    at= 500.0000p
+             from=   0.            to= 500.0000p
+ vol_val_cout= -17.3189m    at= 136.8095p
+             from=   0.            to= 500.0000p
+ voh_val_s=   1.0302     at= 203.0349p
+             from=   0.            to= 500.0000p
+ vol_val_s=  22.0569u    at= 500.0000p
+             from=   0.            to= 500.0000p
+ p_avg=  92.5031u  from=   0.             to= 500.0000p
+ p_max= 452.5840u    at= 125.0000p
+             from=   0.            to= 500.0000p
+ i_avg= -23.8400u  from=   0.             to= 500.0000p
+ i_peak=-321.1997u    at= 170.7931p
+             from=   0.            to= 500.0000p
+
+          ***** job concluded
+ **info** dc convergence successful at Newton-Raphson method 
+
+   *** data name = fa_transission , index =     6 ***
+
+ ******
+ ********************* hspice fa gates modeling **********************
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+   tplh_s_a= failed                          trig= not found
+   tphl_s_a= failed       targ= not found    trig=  100.0000p
+   tplh_cout_a= failed                          trig= not found
+ tphl_cout_a=  99.5132p  targ= 199.5132p   trig= 100.0000p
+   tplh_s_b= failed                          trig= not found
+   tphl_s_b= failed                          trig= not found
+   tplh_cout_b= failed                          trig= not found
+   tphl_cout_b= failed                          trig= not found
+   tplh_s_cin= failed                          trig= not found
+   tphl_s_cin= failed                          trig= not found
+   tplh_cout_cin= failed                          trig= not found
+   tphl_cout_cin= failed                          trig= not found
+ voh_val_cout=   1.0305     at= 154.4685p
+             from=   0.            to= 500.0000p
+ vol_val_cout=  20.7750u    at= 500.0000p
+             from=   0.            to= 500.0000p
+ voh_val_s= 999.9875m    at= 500.0000p
+             from=   0.            to= 500.0000p
+ vol_val_s= -16.6837m    at= 215.8760p
+             from=   0.            to= 500.0000p
+ p_avg=  90.2694u  from=   0.             to= 500.0000p
+ p_max= 369.1502u    at= 193.6318p
+             from=   0.            to= 500.0000p
+ i_avg=-156.2265u  from=   0.             to= 500.0000p
+ i_peak=  -1.0909m    at= 118.1714p
+             from=   0.            to= 500.0000p
+
+          ***** job concluded
+ **info** dc convergence successful at Newton-Raphson method 
+
+   *** data name = fa_transission , index =     7 ***
+
+ ******
+ ********************* hspice fa gates modeling **********************
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+ tplh_s_a=  70.8381p  targ= 170.8381p   trig= 100.0000p
+   tphl_s_a= failed                          trig= not found
+   tplh_cout_a= failed       targ= not found    trig=  100.0000p
+   tphl_cout_a= failed                          trig= not found
+   tplh_s_b= failed                          trig= not found
+   tphl_s_b= failed                          trig= not found
+   tplh_cout_b= failed                          trig= not found
+   tphl_cout_b= failed                          trig= not found
+   tplh_s_cin= failed                          trig= not found
+   tphl_s_cin= failed                          trig= not found
+   tplh_cout_cin= failed                          trig= not found
+   tphl_cout_cin= failed                          trig= not found
+ voh_val_cout=   1.0019     at=  96.9623p
+             from=   0.            to= 500.0000p
+ vol_val_cout= 995.0279m    at= 132.3234p
+             from=   0.            to= 500.0000p
+ voh_val_s= 999.9802m    at= 500.0000p
+             from=   0.            to= 500.0000p
+ vol_val_s= -19.7305m    at= 138.1624p
+             from=   0.            to= 500.0000p
+ p_avg=  60.8352u  from=   0.             to= 500.0000p
+ p_max= 480.8581u    at= 125.0000p
+             from=   0.            to= 500.0000p
+ i_avg=  22.6864u  from=   0.             to= 500.0000p
+ i_peak=-247.9092u    at= 154.5326p
+             from=   0.            to= 500.0000p
+
+          ***** job concluded
+ **info** dc convergence successful at Newton-Raphson method 
+
+   *** data name = fa_transission , index =     8 ***
+
+ ******
+ ********************* hspice fa gates modeling **********************
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+   tplh_s_a= failed                          trig= not found
+ tphl_s_a= 111.3346p  targ= 211.3346p   trig= 100.0000p
+   tplh_cout_a= failed                          trig= not found
+   tphl_cout_a= failed       targ= not found    trig=  100.0000p
+   tplh_s_b= failed                          trig= not found
+   tphl_s_b= failed                          trig= not found
+   tplh_cout_b= failed                          trig= not found
+   tphl_cout_b= failed                          trig= not found
+   tplh_s_cin= failed                          trig= not found
+   tphl_s_cin= failed                          trig= not found
+   tplh_cout_cin= failed                          trig= not found
+   tphl_cout_cin= failed                          trig= not found
+ voh_val_cout=   1.0061     at= 126.1745p
+             from=   0.            to= 500.0000p
+ vol_val_cout= 998.5146m    at=  86.1468p
+             from=   0.            to= 500.0000p
+ voh_val_s=   1.0261     at= 166.9692p
+             from=   0.            to= 500.0000p
+ vol_val_s=  23.5525u    at= 500.0000p
+             from=   0.            to= 500.0000p
+ p_avg=  61.0964u  from=   0.             to= 500.0000p
+ p_max= 292.2060u    at= 125.0000p
+             from=   0.            to= 500.0000p
+ i_avg=-137.1274u  from=   0.             to= 500.0000p
+ i_peak=  -1.0856m    at= 125.0000p
+             from=   0.            to= 500.0000p
+
+          ***** job concluded
+ **info** dc convergence successful at Newton-Raphson method 
+
+   *** data name = fa_transission , index =     9 ***
+
+ ******
+ ********************* hspice fa gates modeling **********************
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+   tplh_s_a= failed                          trig= not found
+   tphl_s_a= failed                          trig= not found
+   tplh_cout_a= failed                          trig= not found
+   tphl_cout_a= failed                          trig= not found
+ tplh_s_b=  75.8297p  targ= 175.8297p   trig= 100.0000p
+   tphl_s_b= failed                          trig= not found
+   tplh_cout_b= failed       targ= not found    trig=  100.0000p
+   tphl_cout_b= failed                          trig= not found
+   tplh_s_cin= failed                          trig= not found
+   tphl_s_cin= failed                          trig= not found
+   tplh_cout_cin= failed                          trig= not found
+   tphl_cout_cin= failed                          trig= not found
+ voh_val_cout=   3.2136m    at=  82.0297p
+             from=   0.            to= 500.0000p
+ vol_val_cout=  -2.4346m    at= 127.0925p
+             from=   0.            to= 500.0000p
+ voh_val_s= 999.9836m    at= 500.0000p
+             from=   0.            to= 500.0000p
+ vol_val_s= -17.0371m    at= 140.0535p
+             from=   0.            to= 500.0000p
+ p_avg=  60.7820u  from=   0.             to= 500.0000p
+ p_max= 520.0042u    at= 125.0000p
+             from=   0.            to= 500.0000p
+ i_avg=  14.6812u  from=   0.             to= 500.0000p
+ i_peak=-248.1656u    at= 163.2894p
+             from=   0.            to= 500.0000p
+
+          ***** job concluded
+ **info** dc convergence successful at Newton-Raphson method 
+
+   *** data name = fa_transission , index =    10 ***
+
+ ******
+ ********************* hspice fa gates modeling **********************
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+   tplh_s_a= failed                          trig= not found
+   tphl_s_a= failed                          trig= not found
+   tplh_cout_a= failed                          trig= not found
+   tphl_cout_a= failed                          trig= not found
+   tplh_s_b= failed                          trig= not found
+ tphl_s_b=  95.3790p  targ= 195.3790p   trig= 100.0000p
+   tplh_cout_b= failed                          trig= not found
+   tphl_cout_b= failed       targ= not found    trig=  100.0000p
+   tplh_s_cin= failed                          trig= not found
+   tphl_s_cin= failed                          trig= not found
+   tplh_cout_cin= failed                          trig= not found
+   tphl_cout_cin= failed                          trig= not found
+ voh_val_cout=   3.1455m    at= 133.1173p
+             from=   0.            to= 500.0000p
+ vol_val_cout=  -2.1306m    at= 100.2315p
+             from=   0.            to= 500.0000p
+ voh_val_s=   1.0355     at= 156.1450p
+             from=   0.            to= 500.0000p
+ vol_val_s=  29.1802u    at= 500.0000p
+             from=   0.            to= 500.0000p
+ p_avg=  54.9724u  from=   0.             to= 500.0000p
+ p_max= 289.7414u    at= 133.1173p
+             from=   0.            to= 500.0000p
+ i_avg=-119.4327u  from=   0.             to= 500.0000p
+ i_peak=-945.2823u    at= 125.0000p
+             from=   0.            to= 500.0000p
+
+          ***** job concluded
+ **info** dc convergence successful at Newton-Raphson method 
+
+   *** data name = fa_transission , index =    11 ***
+
+ ******
+ ********************* hspice fa gates modeling **********************
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+   tplh_s_a= failed                          trig= not found
+   tphl_s_a= failed                          trig= not found
+   tplh_cout_a= failed                          trig= not found
+   tphl_cout_a= failed                          trig= not found
+   tplh_s_b= failed       targ= not found    trig=  100.0000p
+   tphl_s_b= failed                          trig= not found
+ tplh_cout_b=  79.5428p  targ= 179.5428p   trig= 100.0000p
+   tphl_cout_b= failed                          trig= not found
+   tplh_s_cin= failed                          trig= not found
+   tphl_s_cin= failed                          trig= not found
+   tplh_cout_cin= failed                          trig= not found
+   tphl_cout_cin= failed                          trig= not found
+ voh_val_cout= 999.9345m    at= 500.0000p
+             from=   0.            to= 500.0000p
+ vol_val_cout= -16.0465m    at= 139.8418p
+             from=   0.            to= 500.0000p
+ voh_val_s=   1.0384     at= 199.4055p
+             from=   0.            to= 500.0000p
+ vol_val_s= 138.8003u    at= 500.0000p
+             from=   0.            to= 500.0000p
+ p_avg= 102.0430u  from=   0.             to= 500.0000p
+ p_max= 511.1877u    at= 125.0000p
+             from=   0.            to= 500.0000p
+ i_avg= -53.9157u  from=   0.             to= 500.0000p
+ i_peak=-305.9182u    at= 167.3090p
+             from=   0.            to= 500.0000p
+
+          ***** job concluded
+ **info** dc convergence successful at Newton-Raphson method 
+
+   *** data name = fa_transission , index =    12 ***
+
+ ******
+ ********************* hspice fa gates modeling **********************
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+   tplh_s_a= failed                          trig= not found
+   tphl_s_a= failed                          trig= not found
+   tplh_cout_a= failed                          trig= not found
+   tphl_cout_a= failed                          trig= not found
+   tplh_s_b= failed                          trig= not found
+   tphl_s_b= failed       targ= not found    trig=  100.0000p
+   tplh_cout_b= failed                          trig= not found
+ tphl_cout_b=  90.2307p  targ= 190.2307p   trig= 100.0000p
+   tplh_s_cin= failed                          trig= not found
+   tphl_s_cin= failed                          trig= not found
+   tplh_cout_cin= failed                          trig= not found
+   tphl_cout_cin= failed                          trig= not found
+ voh_val_cout=   1.0415     at= 149.0588p
+             from=   0.            to= 500.0000p
+ vol_val_cout=  71.3981u    at= 500.0000p
+             from=   0.            to= 500.0000p
+ voh_val_s= 999.8773m    at= 500.0000p
+             from=   0.            to= 500.0000p
+ vol_val_s=  -6.4010m    at= 218.6204p
+             from=   0.            to= 500.0000p
+ p_avg= 111.4607u  from=   0.             to= 500.0000p
+ p_max= 362.8237u    at= 184.0109p
+             from=   0.            to= 500.0000p
+ i_avg=-150.2650u  from=   0.             to= 500.0000p
+ i_peak=-801.7366u    at= 121.8356p
+             from=   0.            to= 500.0000p
+
+          ***** job concluded
+ **info** dc convergence successful at Newton-Raphson method 
+
+   *** data name = fa_transission , index =    13 ***
+
+ ******
+ ********************* hspice fa gates modeling **********************
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+   tplh_s_a= failed                          trig= not found
+   tphl_s_a= failed                          trig= not found
+   tplh_cout_a= failed                          trig= not found
+   tphl_cout_a= failed                          trig= not found
+   tplh_s_b= failed       targ= not found    trig=  100.0000p
+   tphl_s_b= failed                          trig= not found
+ tplh_cout_b=  62.0860p  targ= 162.0860p   trig= 100.0000p
+   tphl_cout_b= failed                          trig= not found
+   tplh_s_cin= failed                          trig= not found
+   tphl_s_cin= failed                          trig= not found
+   tplh_cout_cin= failed                          trig= not found
+   tphl_cout_cin= failed                          trig= not found
+ voh_val_cout= 999.9748m    at= 500.0000p
+             from=   0.            to= 500.0000p
+ vol_val_cout= -28.0110m    at= 133.1725p
+             from=   0.            to= 500.0000p
+ voh_val_s=   1.0227     at= 196.7125p
+             from=   0.            to= 500.0000p
+ vol_val_s=  34.6551u    at= 500.0000p
+             from=   0.            to= 500.0000p
+ p_avg=  92.6416u  from=   0.             to= 500.0000p
+ p_max= 478.5999u    at= 121.3940p
+             from=   0.            to= 500.0000p
+ i_avg= -27.3096u  from=   0.             to= 500.0000p
+ i_peak=-308.0956u    at= 163.7022p
+             from=   0.            to= 500.0000p
+
+          ***** job concluded
+ **info** dc convergence successful at Newton-Raphson method 
+
+   *** data name = fa_transission , index =    14 ***
+
+ ******
+ ********************* hspice fa gates modeling **********************
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+   tplh_s_a= failed                          trig= not found
+   tphl_s_a= failed                          trig= not found
+   tplh_cout_a= failed                          trig= not found
+   tphl_cout_a= failed                          trig= not found
+   tplh_s_b= failed                          trig= not found
+   tphl_s_b= failed       targ= not found    trig=  100.0000p
+   tplh_cout_b= failed                          trig= not found
+ tphl_cout_b=  94.7051p  targ= 194.7051p   trig= 100.0000p
+   tplh_s_cin= failed                          trig= not found
+   tphl_s_cin= failed                          trig= not found
+   tplh_cout_cin= failed                          trig= not found
+   tphl_cout_cin= failed                          trig= not found
+ voh_val_cout=   1.0312     at= 144.0338p
+             from=   0.            to= 500.0000p
+ vol_val_cout=  19.1445u    at= 500.0000p
+             from=   0.            to= 500.0000p
+ voh_val_s= 999.9885m    at= 500.0000p
+             from=   0.            to= 500.0000p
+ vol_val_s= -16.7455m    at= 211.2262p
+             from=   0.            to= 500.0000p
+ p_avg=  87.8111u  from=   0.             to= 500.0000p
+ p_max= 371.2300u    at= 187.8404p
+             from=   0.            to= 500.0000p
+ i_avg=-143.9931u  from=   0.             to= 500.0000p
+ i_peak=-883.0147u    at= 125.0000p
+             from=   0.            to= 500.0000p
+
+          ***** job concluded
+ **info** dc convergence successful at Newton-Raphson method 
+
+   *** data name = fa_transission , index =    15 ***
+
+ ******
+ ********************* hspice fa gates modeling **********************
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+   tplh_s_a= failed                          trig= not found
+   tphl_s_a= failed                          trig= not found
+   tplh_cout_a= failed                          trig= not found
+   tphl_cout_a= failed                          trig= not found
+ tplh_s_b=  67.9238p  targ= 167.9238p   trig= 100.0000p
+   tphl_s_b= failed                          trig= not found
+   tplh_cout_b= failed       targ= not found    trig=  100.0000p
+   tphl_cout_b= failed                          trig= not found
+   tplh_s_cin= failed                          trig= not found
+   tphl_s_cin= failed                          trig= not found
+   tplh_cout_cin= failed                          trig= not found
+   tphl_cout_cin= failed                          trig= not found
+ voh_val_cout=   1.0031     at=  86.1494p
+             from=   0.            to= 500.0000p
+ vol_val_cout= 993.6269m    at= 134.1152p
+             from=   0.            to= 500.0000p
+ voh_val_s= 999.9709m    at= 500.0000p
+             from=   0.            to= 500.0000p
+ vol_val_s= -19.4041m    at= 137.1310p
+             from=   0.            to= 500.0000p
+ p_avg=  58.9889u  from=   0.             to= 500.0000p
+ p_max= 467.3272u    at= 125.0000p
+             from=   0.            to= 500.0000p
+ i_avg=   3.4486u  from=   0.             to= 500.0000p
+ i_peak=-256.8670u    at= 129.1017p
+             from=   0.            to= 500.0000p
+
+          ***** job concluded
+ **info** dc convergence successful at Newton-Raphson method 
+
+   *** data name = fa_transission , index =    16 ***
+
+ ******
+ ********************* hspice fa gates modeling **********************
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+   tplh_s_a= failed                          trig= not found
+   tphl_s_a= failed                          trig= not found
+   tplh_cout_a= failed                          trig= not found
+   tphl_cout_a= failed                          trig= not found
+   tplh_s_b= failed                          trig= not found
+ tphl_s_b=  98.8792p  targ= 198.8792p   trig= 100.0000p
+   tplh_cout_b= failed                          trig= not found
+   tphl_cout_b= failed       targ= not found    trig=  100.0000p
+   tplh_s_cin= failed                          trig= not found
+   tphl_s_cin= failed                          trig= not found
+   tplh_cout_cin= failed                          trig= not found
+   tphl_cout_cin= failed                          trig= not found
+ voh_val_cout=   1.0106     at= 127.0991p
+             from=   0.            to= 500.0000p
+ vol_val_cout= 996.2769m    at=  83.3608p
+             from=   0.            to= 500.0000p
+ voh_val_s=   1.0338     at= 163.0552p
+             from=   0.            to= 500.0000p
+ vol_val_s=  11.1368u    at= 500.0000p
+             from=   0.            to= 500.0000p
+ p_avg=  54.2048u  from=   0.             to= 500.0000p
+ p_max= 303.2050u    at= 125.0000p
+             from=   0.            to= 500.0000p
+ i_avg=-103.6668u  from=   0.             to= 500.0000p
+ i_peak=-776.9565u    at= 125.0000p
+             from=   0.            to= 500.0000p
+
+          ***** job concluded
+ **info** dc convergence successful at Newton-Raphson method 
+
+   *** data name = fa_transission , index =    17 ***
+
+ ******
+ ********************* hspice fa gates modeling **********************
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+   tplh_s_a= failed                          trig= not found
+   tphl_s_a= failed                          trig= not found
+   tplh_cout_a= failed                          trig= not found
+   tphl_cout_a= failed                          trig= not found
+   tplh_s_b= failed                          trig= not found
+   tphl_s_b= failed                          trig= not found
+   tplh_cout_b= failed                          trig= not found
+   tphl_cout_b= failed                          trig= not found
+ tplh_s_cin=  58.5132p  targ= 158.5132p   trig= 100.0000p
+   tphl_s_cin= failed                          trig= not found
+   tplh_cout_cin= failed       targ= not found    trig=  100.0000p
+   tphl_cout_cin= failed                          trig= not found
+ voh_val_cout=   2.7758m    at=  81.5432p
+             from=   0.            to= 500.0000p
+ vol_val_cout=  -3.6114m    at= 116.5495p
+             from=   0.            to= 500.0000p
+ voh_val_s= 999.9951m    at= 500.0000p
+             from=   0.            to= 500.0000p
+ vol_val_s= -36.7793m    at= 132.9157p
+             from=   0.            to= 500.0000p
+ p_avg=  46.0639u  from=   0.             to= 500.0000p
+ p_max= 523.6834u    at= 119.5571p
+             from=   0.            to= 500.0000p
+ i_avg=   8.8894u  from=   0.             to= 500.0000p
+ i_peak=-218.2698u    at= 135.4975p
+             from=   0.            to= 500.0000p
+
+          ***** job concluded
+ **info** dc convergence successful at Newton-Raphson method 
+
+   *** data name = fa_transission , index =    18 ***
+
+ ******
+ ********************* hspice fa gates modeling **********************
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+   tplh_s_a= failed                          trig= not found
+   tphl_s_a= failed                          trig= not found
+   tplh_cout_a= failed                          trig= not found
+   tphl_cout_a= failed                          trig= not found
+   tplh_s_b= failed                          trig= not found
+   tphl_s_b= failed                          trig= not found
+   tplh_cout_b= failed                          trig= not found
+   tphl_cout_b= failed                          trig= not found
+   tplh_s_cin= failed                          trig= not found
+ tphl_s_cin=  77.3550p  targ= 177.3550p   trig= 100.0000p
+   tplh_cout_cin= failed                          trig= not found
+   tphl_cout_cin= failed       targ= not found    trig=  100.0000p
+ voh_val_cout=   2.9490m    at= 130.1107p
+             from=   0.            to= 500.0000p
+ vol_val_cout=  -1.6488m    at=  81.6978p
+             from=   0.            to= 500.0000p
+ voh_val_s=   1.0439     at= 140.2912p
+             from=   0.            to= 500.0000p
+ vol_val_s=  20.4056u    at= 500.0000p
+             from=   0.            to= 500.0000p
+ p_avg=  48.6987u  from=   0.             to= 500.0000p
+ p_max= 378.2597u    at= 125.0000p
+             from=   0.            to= 500.0000p
+ i_avg= -89.5715u  from=   0.             to= 500.0000p
+ i_peak=-614.5300u    at= 125.0000p
+             from=   0.            to= 500.0000p
+
+          ***** job concluded
+ **info** dc convergence successful at Newton-Raphson method 
+
+   *** data name = fa_transission , index =    19 ***
+
+ ******
+ ********************* hspice fa gates modeling **********************
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+   tplh_s_a= failed                          trig= not found
+   tphl_s_a= failed                          trig= not found
+   tplh_cout_a= failed                          trig= not found
+   tphl_cout_a= failed                          trig= not found
+   tplh_s_b= failed                          trig= not found
+   tphl_s_b= failed                          trig= not found
+   tplh_cout_b= failed                          trig= not found
+   tphl_cout_b= failed                          trig= not found
+   tplh_s_cin= failed       targ= not found    trig=  100.0000p
+   tphl_s_cin= failed                          trig= not found
+ tplh_cout_cin=  70.2586p  targ= 170.2586p   trig= 100.0000p
+   tphl_cout_cin= failed                          trig= not found
+ voh_val_cout= 999.9762m    at= 500.0000p
+             from=   0.            to= 500.0000p
+ vol_val_cout= -18.2287m    at= 131.8291p
+             from=   0.            to= 500.0000p
+ voh_val_s=   1.0294     at= 198.9037p
+             from=   0.            to= 500.0000p
+ vol_val_s=  20.1003u    at= 500.0000p
+             from=   0.            to= 500.0000p
+ p_avg=  89.7209u  from=   0.             to= 500.0000p
+ p_max= 470.1228u    at= 125.0000p
+             from=   0.            to= 500.0000p
+ i_avg= -53.8880u  from=   0.             to= 500.0000p
+ i_peak=-320.4522u    at= 168.0225p
+             from=   0.            to= 500.0000p
+
+          ***** job concluded
+ **info** dc convergence successful at Newton-Raphson method 
+
+   *** data name = fa_transission , index =    20 ***
+
+ ******
+ ********************* hspice fa gates modeling **********************
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+   tplh_s_a= failed                          trig= not found
+   tphl_s_a= failed                          trig= not found
+   tplh_cout_a= failed                          trig= not found
+   tphl_cout_a= failed                          trig= not found
+   tplh_s_b= failed                          trig= not found
+   tphl_s_b= failed                          trig= not found
+   tplh_cout_b= failed                          trig= not found
+   tphl_cout_b= failed                          trig= not found
+   tplh_s_cin= failed                          trig= not found
+   tphl_s_cin= failed       targ= not found    trig=  100.0000p
+   tplh_cout_cin= failed                          trig= not found
+ tphl_cout_cin=  80.7561p  targ= 180.7561p   trig= 100.0000p
+ voh_val_cout=   1.0419     at= 136.8098p
+             from=   0.            to= 500.0000p
+ vol_val_cout=  64.0127u    at= 500.0000p
+             from=   0.            to= 500.0000p
+ voh_val_s= 999.8930m    at= 500.0000p
+             from=   0.            to= 500.0000p
+ vol_val_s=  -5.4669m    at= 207.9806p
+             from=   0.            to= 500.0000p
+ p_avg= 102.8152u  from=   0.             to= 500.0000p
+ p_max= 367.0007u    at= 170.5301p
+             from=   0.            to= 500.0000p
+ i_avg=-135.9402u  from=   0.             to= 500.0000p
+ i_peak=-595.5898u    at= 125.0000p
+             from=   0.            to= 500.0000p
+
+          ***** job concluded
+ **info** dc convergence successful at Newton-Raphson method 
+
+   *** data name = fa_transission , index =    21 ***
+
+ ******
+ ********************* hspice fa gates modeling **********************
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+   tplh_s_a= failed                          trig= not found
+   tphl_s_a= failed                          trig= not found
+   tplh_cout_a= failed                          trig= not found
+   tphl_cout_a= failed                          trig= not found
+   tplh_s_b= failed                          trig= not found
+   tphl_s_b= failed                          trig= not found
+   tplh_cout_b= failed                          trig= not found
+   tphl_cout_b= failed                          trig= not found
+   tplh_s_cin= failed       targ= not found    trig=  100.0000p
+   tphl_s_cin= failed                          trig= not found
+ tplh_cout_cin=  60.0148p  targ= 160.0148p   trig= 100.0000p
+   tphl_cout_cin= failed                          trig= not found
+ voh_val_cout= 999.9762m    at= 500.0000p
+             from=   0.            to= 500.0000p
+ vol_val_cout= -27.3877m    at= 129.4296p
+             from=   0.            to= 500.0000p
+ voh_val_s=   1.0217     at= 193.6714p
+             from=   0.            to= 500.0000p
+ vol_val_s=  34.6919u    at= 500.0000p
+             from=   0.            to= 500.0000p
+ p_avg=  87.0467u  from=   0.             to= 500.0000p
+ p_max= 423.6950u    at= 125.0000p
+             from=   0.            to= 500.0000p
+ i_avg= -57.2164u  from=   0.             to= 500.0000p
+ i_peak=-304.7445u    at= 162.4159p
+             from=   0.            to= 500.0000p
+
+          ***** job concluded
+ **info** dc convergence successful at Newton-Raphson method 
+
+   *** data name = fa_transission , index =    22 ***
+
+ ******
+ ********************* hspice fa gates modeling **********************
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+   tplh_s_a= failed                          trig= not found
+   tphl_s_a= failed                          trig= not found
+   tplh_cout_a= failed                          trig= not found
+   tphl_cout_a= failed                          trig= not found
+   tplh_s_b= failed                          trig= not found
+   tphl_s_b= failed                          trig= not found
+   tplh_cout_b= failed                          trig= not found
+   tphl_cout_b= failed                          trig= not found
+   tplh_s_cin= failed                          trig= not found
+   tphl_s_cin= failed       targ= not found    trig=  100.0000p
+   tplh_cout_cin= failed                          trig= not found
+ tphl_cout_cin=  86.5083p  targ= 186.5083p   trig= 100.0000p
+ voh_val_cout=   1.0339     at= 140.5847p
+             from=   0.            to= 500.0000p
+ vol_val_cout=  16.3760u    at= 500.0000p
+             from=   0.            to= 500.0000p
+ voh_val_s= 999.9692m    at= 500.0000p
+             from=   0.            to= 500.0000p
+ vol_val_s=  -9.0504m    at= 209.7901p
+             from=   0.            to= 500.0000p
+ p_avg=  89.9237u  from=   0.             to= 500.0000p
+ p_max= 365.5891u    at= 179.9894p
+             from=   0.            to= 500.0000p
+ i_avg=-127.0720u  from=   0.             to= 500.0000p
+ i_peak=-642.9971u    at= 125.0000p
+             from=   0.            to= 500.0000p
+
+          ***** job concluded
+ **info** dc convergence successful at Newton-Raphson method 
+
+   *** data name = fa_transission , index =    23 ***
+
+ ******
+ ********************* hspice fa gates modeling **********************
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+   tplh_s_a= failed                          trig= not found
+   tphl_s_a= failed                          trig= not found
+   tplh_cout_a= failed                          trig= not found
+   tphl_cout_a= failed                          trig= not found
+   tplh_s_b= failed                          trig= not found
+   tphl_s_b= failed                          trig= not found
+   tplh_cout_b= failed                          trig= not found
+   tphl_cout_b= failed                          trig= not found
+ tplh_s_cin=  71.4081p  targ= 171.4081p   trig= 100.0000p
+   tphl_s_cin= failed                          trig= not found
+   tplh_cout_cin= failed       targ= not found    trig=  100.0000p
+   tphl_cout_cin= failed                          trig= not found
+ voh_val_cout=   1.0045     at=  85.1909p
+             from=   0.            to= 500.0000p
+ vol_val_cout= 993.4676m    at= 131.9829p
+             from=   0.            to= 500.0000p
+ voh_val_s= 999.9745m    at= 500.0000p
+             from=   0.            to= 500.0000p
+ vol_val_s= -19.4982m    at= 138.4469p
+             from=   0.            to= 500.0000p
+ p_avg=  65.8472u  from=   0.             to= 500.0000p
+ p_max= 558.6333u    at= 125.0000p
+             from=   0.            to= 500.0000p
+ i_avg= -15.4524u  from=   0.             to= 500.0000p
+ i_peak=-319.4678u    at= 125.1322p
+             from=   0.            to= 500.0000p
+
+          ***** job concluded
+ **info** dc convergence successful at Newton-Raphson method 
+
+   *** data name = fa_transission , index =    24 ***
+
+ ******
+ ********************* hspice fa gates modeling **********************
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+   tplh_s_a= failed                          trig= not found
+   tphl_s_a= failed                          trig= not found
+   tplh_cout_a= failed                          trig= not found
+   tphl_cout_a= failed                          trig= not found
+   tplh_s_b= failed                          trig= not found
+   tphl_s_b= failed                          trig= not found
+   tplh_cout_b= failed                          trig= not found
+   tphl_cout_b= failed                          trig= not found
+   tplh_s_cin= failed                          trig= not found
+ tphl_s_cin=  82.7238p  targ= 182.7238p   trig= 100.0000p
+   tplh_cout_cin= failed                          trig= not found
+   tphl_cout_cin= failed       targ= not found    trig=  100.0000p
+ voh_val_cout=   1.0129     at= 127.8419p
+             from=   0.            to= 500.0000p
+ vol_val_cout= 996.4356m    at= 165.1055p
+             from=   0.            to= 500.0000p
+ voh_val_s=   1.0504     at= 149.4920p
+             from=   0.            to= 500.0000p
+ vol_val_s=  57.6170u    at= 500.0000p
+             from=   0.            to= 500.0000p
+ p_avg=  54.1806u  from=   0.             to= 500.0000p
+ p_max= 364.1881u    at= 121.8641p
+             from=   0.            to= 500.0000p
+ i_avg= -88.8160u  from=   0.             to= 500.0000p
+ i_peak=-546.8537u    at= 124.5997p
+             from=   0.            to= 500.0000p
+
+          ***** job concluded
+ ******  
+ ********************* hspice fa gates modeling **********************
+
+ ****** job statistics summary tnom=  25.000 temp=  25.000 ******
+
+  ******  HSPICE Threads Information  ******
+
+  Command Line Threads Count :     1
+  Available CPU Count        :    16
+  Actual Threads Count       :     1
+
+
+  ******  Circuit Statistics  ******
+  # nodes       =      20 # elements   =      33
+  # resistors   =       0 # capacitors =       0 # inductors   =       0
+  # mutual_inds =       0 # vccs       =       0 # vcvs        =       0
+  # cccs        =       0 # ccvs       =       0 # volt_srcs   =       5
+  # curr_srcs   =       0 # diodes     =       0 # bjts        =       0
+  # jfets       =       0 # mosfets    =      28 # U elements  =       0
+  # T elements  =       0 # W elements =       0 # B elements  =       0
+  # S elements  =       0 # P elements =       0 # va device   =       0
+  # vector_srcs =       0 # N elements =       0
+
+
+  ******  Runtime Statistics (seconds)  ******
+
+  analysis           time    # points   tot. iter  conv.iter
+  op point           0.02           1         450
+  transient          0.24     1200024        8063        3007 rev=       392
+  readin             0.11
+  errchk             0.01
+  setup              0.00
+  output             0.00
+
+
+           peak memory used         71.84 megabytes
+           total cpu time            0.38 seconds
+           total elapsed time        0.41 seconds
+           job started at     22:04:17 06/03/2026
+           job ended   at     22:04:17 06/03/2026
+           job total runtime         0.41 seconds
+
+
+  lic: Release hspice token(s) 
+ lic: total license checkout elapse time:        0.02(s)
