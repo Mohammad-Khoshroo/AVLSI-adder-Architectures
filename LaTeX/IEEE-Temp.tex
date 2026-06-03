@@ -169,6 +169,7 @@ literate=
 \newcommand{\newcode}[5][1.0]{
     \vspace{0.1cm}
     \begin{center}
+        \captionsetup{hypcap=false} % <-- این خط هشدار را فقط برای این کد غیرفعال می‌کند
         \resizebox{#1\columnwidth}{!}{%
             \parbox{\linewidth}{%
                 \ifpersiandoc
@@ -186,6 +187,7 @@ literate=
     \end{center}
     \vspace{0.1cm}
 }
+
 
 % % --- دستور جدید برای درج کد با قابلیت تعیین زبان ---
 % \renewcommand{\newcode}[5][1]{%

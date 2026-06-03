@@ -32,8 +32,22 @@
 }
 \setduedate{خرداد ۱۴۰۵}
 \setprojectabstract{
+    در این گزارش، به طراحی پایه‌ای ترین اِلمان محاسباتی یعنی
 
-
+    \textbf{جمع‌کننده‌ها}
+    با معماری‌های متفاوت در سطح ترانزیستوری و بالاتر با استفاده از نرم‌افزار
+    \lr{HSPICE}
+    و براساس
+    \href{run:/include/crn90g_2d5_lk_v1d2p1.lib}{تکنولوژی \lr{nm}90}
+    خواهیم پرداخت.
+    مدارات طراحی‌شده در معماری‌های گوناگون در شرایط دمایی متفاوت و در گوشه
+    \efnote{\lr{Corner}}های
+    مختلف تکنولوژی آزمایش شده و تحت شبیه‌سازی‌های زمانی و عملکردی
+    \efnote{\lr{Functional}}
+    قرار می‌گیرند تا پارامترهای مهمی همچون تاخیر انتشار
+    \efnote{\lr{Propagation Delay}}
+    و توان مصرفی مداراستخراج گردد.
+    در ابتدا با طراحی جمع‌کننده تک بیتی شروع کرده و در نهایت جمع کننده‌های 8 بیتی را مورد بررسی قرار می‌دهیم.
 }
 
 \makecoverpage
@@ -44,21 +58,21 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\section{}
-\input{section1-1}
-\input{section1-2}
-\newpage
-\section{}
-\input{section2-1}
-\newpage
-\input{section2-2}
-\newpage
-\input{section2-3}
-\newpage
-\section{}
-\input{section3-1}
-\section{}
-\input{section4-1}
-\input{section4-2}
+\section{جمع‌کننده کامل تک بیتی}
+\input{section-0}
+% \input{section1-2}
+% \newpage
+\section{جمع کننده‌های انتشار بیت نقلی \lr{CPAs}}
+% \input{section2-1}
+% \newpage
+% \input{section2-2}
+% \newpage
+% \input{section2-3}
+% \newpage
+% \section{}
+% \input{section3-1}
+% \section{}
+% \input{section4-1}
+% \input{section4-2}
 
 \end{document}

@@ -1,0 +1,38 @@
+* "simulator" "HSPICE" 
+* "version" "P-2019.06-SP1-1 win64"
+* "format" "HSP"
+* "rundate" "04:32:11 04/15/2026 "
+* "netlist" "sim.sp "
+* "runtitle" "********************* hspice fa gates modeling **********************"
+* time =    0.            
+* temperature =   25.0000        
+*** BEGIN: Saved Operating Point ***                     
+.option 
++ gmindc=   1.0000p       
+.nodeset
++ a =   0.            
++ b =   0.            
++ cin =   0.            
++ cout =   6.4919u       
++ s =   9.0685u       
++ vdd =   1.0000        
++ vss =   0.            
++ xfull_adder.nandab = 999.9935m       
++ xfull_adder.nandcin = 999.9935m       
++ xfull_adder.xorab =  12.4026u       
++ xfull_adder.xxor1.in1_bar = 999.9874m       
++ xfull_adder.xxor1.in2_bar = 999.9872m       
++ xfull_adder.xxor1.x1 =   6.1995u       
++ xfull_adder.xxor1.x2 =   7.1655u       
++ xfull_adder.xxor1.y1 = 999.9965m       
++ xfull_adder.xxor1.y2 = 133.9725m       
++ xfull_adder.xxor2.in1_bar = 999.9874m       
++ xfull_adder.xxor2.in2_bar = 999.9872m       
++ xfull_adder.xxor2.x1 =   4.5332u       
++ xfull_adder.xxor2.x2 =   5.4985u       
++ xfull_adder.xxor2.y1 = 999.9965m       
++ xfull_adder.xxor2.y2 = 133.9828m       
++ xfull_adder.xnand1.x =  32.5488m       
++ xfull_adder.xnand2.x =  32.5563m       
++ xfull_adder.xnand3.x =   4.2102u       
+***   END: Saved Operating Point ***                     
