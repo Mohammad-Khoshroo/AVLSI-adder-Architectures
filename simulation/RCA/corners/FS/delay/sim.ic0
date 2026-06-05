@@ -1,0 +1,96 @@
+* "simulator" "HSPICE" 
+* "version" "P-2019.06-SP1-1 win64"
+* "format" "HSP"
+* "rundate" "21:21:02 06/05/2026 "
+* "netlist" "sim.sp "
+* "runtitle" "************************* hspice rca modeling ***********************"
+* time =    0.            
+* temperature =   25.0000        
+*** BEGIN: Saved Operating Point ***                     
+.option 
++ gmindc=   1.0000p       
+.nodeset
++ a0 =   1.0000        
++ a1 =   1.0000        
++ a2 =   1.0000        
++ a3 =   1.0000        
++ a4 =   1.0000        
++ a5 =   1.0000        
++ a6 =   1.0000        
++ a7 =   1.0000        
++ b0 =   0.            
++ b1 =   0.            
++ b2 =   0.            
++ b3 =   0.            
++ b4 =   0.            
++ b5 =   0.            
++ b6 =   0.            
++ b7 =   0.            
++ cin =   0.            
++ cout =   1.5954u       
++ s0 = 999.9884m       
++ s1 = 999.9884m       
++ s2 = 999.9884m       
++ s3 = 999.9884m       
++ s4 = 999.9884m       
++ s5 = 999.9884m       
++ s6 = 999.9884m       
++ s7 = 999.9884m       
++ vdd =   1.0000        
++ vss =   0.            
++ xrca.cmid =  11.9055u       
++ xrca.xrca_l.cmid =  11.9055u       
++ xrca.xrca_h.cmid =  11.9055u       
++ xrca.xrca_l.xrca_l.cmid =  11.9055u       
++ xrca.xrca_l.xrca_h.cmid =  11.9055u       
++ xrca.xrca_h.xrca_l.cmid =  11.9055u       
++ xrca.xrca_h.xrca_h.cmid =  11.9055u       
++ xrca.xrca_l.xrca_l.xfa_l.a_bar =  11.4600u       
++ xrca.xrca_l.xrca_l.xfa_l.c_bar = 999.9589m       
++ xrca.xrca_l.xrca_l.xfa_l.cout_bar = 999.9416m       
++ xrca.xrca_l.xrca_l.xfa_l.p = 999.9721m       
++ xrca.xrca_l.xrca_l.xfa_l.p_bar =   7.3207u       
++ xrca.xrca_l.xrca_l.xfa_l.s_bar =   7.7233u       
++ xrca.xrca_l.xrca_l.xfa_h.a_bar =  11.4600u       
++ xrca.xrca_l.xrca_l.xfa_h.c_bar = 999.9589m       
++ xrca.xrca_l.xrca_l.xfa_h.cout_bar = 999.9416m       
++ xrca.xrca_l.xrca_l.xfa_h.p = 999.9721m       
++ xrca.xrca_l.xrca_l.xfa_h.p_bar =   7.3207u       
++ xrca.xrca_l.xrca_l.xfa_h.s_bar =  19.6267u       
++ xrca.xrca_l.xrca_h.xfa_l.a_bar =  11.4600u       
++ xrca.xrca_l.xrca_h.xfa_l.c_bar = 999.9589m       
++ xrca.xrca_l.xrca_h.xfa_l.cout_bar = 999.9416m       
++ xrca.xrca_l.xrca_h.xfa_l.p = 999.9721m       
++ xrca.xrca_l.xrca_h.xfa_l.p_bar =   7.3207u       
++ xrca.xrca_l.xrca_h.xfa_l.s_bar =  19.6267u       
++ xrca.xrca_l.xrca_h.xfa_h.a_bar =  11.4600u       
++ xrca.xrca_l.xrca_h.xfa_h.c_bar = 999.9589m       
++ xrca.xrca_l.xrca_h.xfa_h.cout_bar = 999.9416m       
++ xrca.xrca_l.xrca_h.xfa_h.p = 999.9721m       
++ xrca.xrca_l.xrca_h.xfa_h.p_bar =   7.3207u       
++ xrca.xrca_l.xrca_h.xfa_h.s_bar =  19.6267u       
++ xrca.xrca_h.xrca_l.xfa_l.a_bar =  11.4600u       
++ xrca.xrca_h.xrca_l.xfa_l.c_bar = 999.9589m       
++ xrca.xrca_h.xrca_l.xfa_l.cout_bar = 999.9416m       
++ xrca.xrca_h.xrca_l.xfa_l.p = 999.9721m       
++ xrca.xrca_h.xrca_l.xfa_l.p_bar =   7.3207u       
++ xrca.xrca_h.xrca_l.xfa_l.s_bar =  19.6267u       
++ xrca.xrca_h.xrca_l.xfa_h.a_bar =  11.4600u       
++ xrca.xrca_h.xrca_l.xfa_h.c_bar = 999.9589m       
++ xrca.xrca_h.xrca_l.xfa_h.cout_bar = 999.9416m       
++ xrca.xrca_h.xrca_l.xfa_h.p = 999.9721m       
++ xrca.xrca_h.xrca_l.xfa_h.p_bar =   7.3207u       
++ xrca.xrca_h.xrca_l.xfa_h.s_bar =  19.6267u       
++ xrca.xrca_h.xrca_h.xfa_l.a_bar =  11.4600u       
++ xrca.xrca_h.xrca_h.xfa_l.c_bar = 999.9589m       
++ xrca.xrca_h.xrca_h.xfa_l.cout_bar = 999.9416m       
++ xrca.xrca_h.xrca_h.xfa_l.p = 999.9721m       
++ xrca.xrca_h.xrca_h.xfa_l.p_bar =   7.3207u       
++ xrca.xrca_h.xrca_h.xfa_l.s_bar =  19.6267u       
++ xrca.xrca_h.xrca_h.xfa_h.a_bar =  11.4600u       
++ xrca.xrca_h.xrca_h.xfa_h.c_bar = 999.9589m       
++ xrca.xrca_h.xrca_h.xfa_h.cout_bar = 999.9416m       
++ xrca.xrca_h.xrca_h.xfa_h.p = 999.9721m       
++ xrca.xrca_h.xrca_h.xfa_h.p_bar =   7.3207u       
++ xrca.xrca_h.xrca_h.xfa_h.s_bar =  19.6267u       
+***   END: Saved Operating Point ***                     

@@ -1,0 +1,1092 @@
+ ****** HSPICE -- P-2019.06-SP1-1 win64 (Sep 27 2019) ******                    
+  Copyright (c) 1986 - 2026 by Synopsys, Inc. All Rights Reserved.              
+  This software and the associated documentation are proprietary
+  to Synopsys, Inc. This software may only be used in accordance
+  with the terms and conditions of a written license agreement with
+  Synopsys, Inc. All other use, reproduction, or distribution of
+  this software is strictly prohibited.
+  Input File: sim.sp                                                            
+  Command line options: C:\synopsys\Hspice_P-2019.06-SP1-1\WIN64\hspice.com -i sim.sp -o D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\RCA\temperature\sim.lis
+  Start time: Sat Jun  6 01:22:07 2026
+  lic:  
+  lic: FLEXlm: SDK_12.3 
+  lic: USER:   Mohammad-Khohsroo    HOSTNAME: DESKTOP-GMQQFUO 
+  lic: HOSTID: "d03957231987"       PID:      18188 
+  lic: Using FLEXlm license file: 
+  lic: 27000@DESKTOP-GMQQFUO 
+  lic: Checkout 1 hspice 
+  lic: License/Maintenance for hspice will expire on 30-dec-2030/2020.12 
+  lic: 1(in_use)/99(total) FLOATING license(s) on SERVER 27000@DESKTOP-GMQQFUO 
+  lic:   
+1****** HSPICE -- P-2019.06-SP1-1 win64 (Sep 27 2019) ******                    
+ ******  
+ ************************* hspice rca modeling ***********************
+
+ ****** circuit name directory
+ circuit number to circuit name directory
+   number circuitname                     definition         multiplier
+        0 main circuit
+        1 xrca.                           rca8               1.00 
+        2 xrca.xrca_l.                    rca4               1.00 
+        3 xrca.xrca_h.                    rca4               1.00 
+        4 xrca.xrca_l.xrca_l.             rca2               1.00 
+        5 xrca.xrca_l.xrca_h.             rca2               1.00 
+        6 xrca.xrca_h.xrca_l.             rca2               1.00 
+        7 xrca.xrca_h.xrca_h.             rca2               1.00 
+        8 xrca.xrca_l.xrca_l.xfa_l.       fa_t               1.00 
+        9 xrca.xrca_l.xrca_l.xfa_h.       fa_t               1.00 
+       10 xrca.xrca_l.xrca_h.xfa_l.       fa_t               1.00 
+       11 xrca.xrca_l.xrca_h.xfa_h.       fa_t               1.00 
+       12 xrca.xrca_h.xrca_l.xfa_l.       fa_t               1.00 
+       13 xrca.xrca_h.xrca_l.xfa_h.       fa_t               1.00 
+       14 xrca.xrca_h.xrca_h.xfa_l.       fa_t               1.00 
+       15 xrca.xrca_h.xrca_h.xfa_h.       fa_t               1.00 
+       16 xrca.xrca_l.xrca_l.xfa_l.xinva. inv                1.00 
+       17 xrca.xrca_l.xrca_l.xfa_l.xinvc. inv                1.00 
+       18 xrca.xrca_l.xrca_l.xfa_l.xtg_p. tg                 1.00 
+       19 xrca.xrca_l.xrca_l.xfa_l.xtg_pb.
+                                            tg                 1.00 
+       20 xrca.xrca_l.xrca_l.xfa_l.xtg_s1.
+                                            tg                 1.00 
+       21 xrca.xrca_l.xrca_l.xfa_l.xtg_s2.
+                                            tg                 1.00 
+       22 xrca.xrca_l.xrca_l.xfa_l.xtg_c1.
+                                            tg                 1.00 
+       23 xrca.xrca_l.xrca_l.xfa_l.xtg_c2.
+                                            tg                 1.00 
+       24 xrca.xrca_l.xrca_l.xfa_l.xinvs. inv                1.00 
+       25 xrca.xrca_l.xrca_l.xfa_l.xinvco.
+                                            inv                1.00 
+       26 xrca.xrca_l.xrca_l.xfa_h.xinva. inv                1.00 
+       27 xrca.xrca_l.xrca_l.xfa_h.xinvc. inv                1.00 
+       28 xrca.xrca_l.xrca_l.xfa_h.xtg_p. tg                 1.00 
+       29 xrca.xrca_l.xrca_l.xfa_h.xtg_pb.
+                                            tg                 1.00 
+       30 xrca.xrca_l.xrca_l.xfa_h.xtg_s1.
+                                            tg                 1.00 
+       31 xrca.xrca_l.xrca_l.xfa_h.xtg_s2.
+                                            tg                 1.00 
+       32 xrca.xrca_l.xrca_l.xfa_h.xtg_c1.
+                                            tg                 1.00 
+       33 xrca.xrca_l.xrca_l.xfa_h.xtg_c2.
+                                            tg                 1.00 
+       34 xrca.xrca_l.xrca_l.xfa_h.xinvs. inv                1.00 
+       35 xrca.xrca_l.xrca_l.xfa_h.xinvco.
+                                            inv                1.00 
+       36 xrca.xrca_l.xrca_h.xfa_l.xinva. inv                1.00 
+       37 xrca.xrca_l.xrca_h.xfa_l.xinvc. inv                1.00 
+       38 xrca.xrca_l.xrca_h.xfa_l.xtg_p. tg                 1.00 
+       39 xrca.xrca_l.xrca_h.xfa_l.xtg_pb.
+                                            tg                 1.00 
+       40 xrca.xrca_l.xrca_h.xfa_l.xtg_s1.
+                                            tg                 1.00 
+       41 xrca.xrca_l.xrca_h.xfa_l.xtg_s2.
+                                            tg                 1.00 
+       42 xrca.xrca_l.xrca_h.xfa_l.xtg_c1.
+                                            tg                 1.00 
+       43 xrca.xrca_l.xrca_h.xfa_l.xtg_c2.
+                                            tg                 1.00 
+       44 xrca.xrca_l.xrca_h.xfa_l.xinvs. inv                1.00 
+       45 xrca.xrca_l.xrca_h.xfa_l.xinvco.
+                                            inv                1.00 
+       46 xrca.xrca_l.xrca_h.xfa_h.xinva. inv                1.00 
+       47 xrca.xrca_l.xrca_h.xfa_h.xinvc. inv                1.00 
+       48 xrca.xrca_l.xrca_h.xfa_h.xtg_p. tg                 1.00 
+       49 xrca.xrca_l.xrca_h.xfa_h.xtg_pb.
+                                            tg                 1.00 
+       50 xrca.xrca_l.xrca_h.xfa_h.xtg_s1.
+                                            tg                 1.00 
+       51 xrca.xrca_l.xrca_h.xfa_h.xtg_s2.
+                                            tg                 1.00 
+       52 xrca.xrca_l.xrca_h.xfa_h.xtg_c1.
+                                            tg                 1.00 
+       53 xrca.xrca_l.xrca_h.xfa_h.xtg_c2.
+                                            tg                 1.00 
+       54 xrca.xrca_l.xrca_h.xfa_h.xinvs. inv                1.00 
+       55 xrca.xrca_l.xrca_h.xfa_h.xinvco.
+                                            inv                1.00 
+       56 xrca.xrca_h.xrca_l.xfa_l.xinva. inv                1.00 
+       57 xrca.xrca_h.xrca_l.xfa_l.xinvc. inv                1.00 
+       58 xrca.xrca_h.xrca_l.xfa_l.xtg_p. tg                 1.00 
+       59 xrca.xrca_h.xrca_l.xfa_l.xtg_pb.
+                                            tg                 1.00 
+       60 xrca.xrca_h.xrca_l.xfa_l.xtg_s1.
+                                            tg                 1.00 
+       61 xrca.xrca_h.xrca_l.xfa_l.xtg_s2.
+                                            tg                 1.00 
+       62 xrca.xrca_h.xrca_l.xfa_l.xtg_c1.
+                                            tg                 1.00 
+       63 xrca.xrca_h.xrca_l.xfa_l.xtg_c2.
+                                            tg                 1.00 
+       64 xrca.xrca_h.xrca_l.xfa_l.xinvs. inv                1.00 
+       65 xrca.xrca_h.xrca_l.xfa_l.xinvco.
+                                            inv                1.00 
+       66 xrca.xrca_h.xrca_l.xfa_h.xinva. inv                1.00 
+       67 xrca.xrca_h.xrca_l.xfa_h.xinvc. inv                1.00 
+       68 xrca.xrca_h.xrca_l.xfa_h.xtg_p. tg                 1.00 
+       69 xrca.xrca_h.xrca_l.xfa_h.xtg_pb.
+                                            tg                 1.00 
+       70 xrca.xrca_h.xrca_l.xfa_h.xtg_s1.
+                                            tg                 1.00 
+       71 xrca.xrca_h.xrca_l.xfa_h.xtg_s2.
+                                            tg                 1.00 
+       72 xrca.xrca_h.xrca_l.xfa_h.xtg_c1.
+                                            tg                 1.00 
+       73 xrca.xrca_h.xrca_l.xfa_h.xtg_c2.
+                                            tg                 1.00 
+       74 xrca.xrca_h.xrca_l.xfa_h.xinvs. inv                1.00 
+       75 xrca.xrca_h.xrca_l.xfa_h.xinvco.
+                                            inv                1.00 
+       76 xrca.xrca_h.xrca_h.xfa_l.xinva. inv                1.00 
+       77 xrca.xrca_h.xrca_h.xfa_l.xinvc. inv                1.00 
+       78 xrca.xrca_h.xrca_h.xfa_l.xtg_p. tg                 1.00 
+       79 xrca.xrca_h.xrca_h.xfa_l.xtg_pb.
+                                            tg                 1.00 
+       80 xrca.xrca_h.xrca_h.xfa_l.xtg_s1.
+                                            tg                 1.00 
+       81 xrca.xrca_h.xrca_h.xfa_l.xtg_s2.
+                                            tg                 1.00 
+       82 xrca.xrca_h.xrca_h.xfa_l.xtg_c1.
+                                            tg                 1.00 
+       83 xrca.xrca_h.xrca_h.xfa_l.xtg_c2.
+                                            tg                 1.00 
+       84 xrca.xrca_h.xrca_h.xfa_l.xinvs. inv                1.00 
+       85 xrca.xrca_h.xrca_h.xfa_l.xinvco.
+                                            inv                1.00 
+       86 xrca.xrca_h.xrca_h.xfa_h.xinva. inv                1.00 
+       87 xrca.xrca_h.xrca_h.xfa_h.xinvc. inv                1.00 
+       88 xrca.xrca_h.xrca_h.xfa_h.xtg_p. tg                 1.00 
+       89 xrca.xrca_h.xrca_h.xfa_h.xtg_pb.
+                                            tg                 1.00 
+       90 xrca.xrca_h.xrca_h.xfa_h.xtg_s1.
+                                            tg                 1.00 
+       91 xrca.xrca_h.xrca_h.xfa_h.xtg_s2.
+                                            tg                 1.00 
+       92 xrca.xrca_h.xrca_h.xfa_h.xtg_c1.
+                                            tg                 1.00 
+       93 xrca.xrca_h.xrca_h.xfa_h.xtg_c2.
+                                            tg                 1.00 
+       94 xrca.xrca_h.xrca_h.xfa_h.xinvs. inv                1.00 
+       95 xrca.xrca_h.xrca_h.xfa_h.xinvco.
+                                            inv                1.00 
+  
+      
+ **info** set option symb=1 internally to help for convergence.
+ *****************************************************************
+ ******  option summary
+ ******
+ runlvl  = 6         bypass  = 2.0000    
+  Opening plot unit= 79
+ file=D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\RCA\temperature\sim.pa0
+
+ **info** dc convergence successful at GMINDC ramping method 
+ ******  
+ ************************* hspice rca modeling ***********************
+
+ ****** operating point information tnom=  25.000 temp=  15.000 ******
+ ****** operating point status is voltage   simulation time is     0.     
+     node    =voltage       node    =voltage       node    =voltage
+
+ + 0:a0      =   1.0000   0:a1      =   1.0000   0:a2      =   1.0000 
+ + 0:a3      =   1.0000   0:a4      =   1.0000   0:a5      =   1.0000 
+ + 0:a6      =   1.0000   0:a7      =   1.0000   0:b0      =   0.     
+ + 0:b1      =   0.       0:b2      =   0.       0:b3      =   0.     
+ + 0:b4      =   0.       0:b5      =   0.       0:b6      =   0.     
+ + 0:b7      =   0.       0:cin     =   0.       0:cout    =   1.8333u
+ + 0:s0      = 999.9966m  0:s1      = 999.9966m  0:s2      = 999.9966m
+ + 0:s3      = 999.9966m  0:s4      = 999.9966m  0:s5      = 999.9966m
+ + 0:s6      = 999.9966m  0:s7      = 999.9966m  0:vdd     =   1.0000 
+ + 0:vss     =   0.       1:cmid    =   8.7736u  2:cmid    =   8.7736u
+ + 3:cmid    =   8.7736u  4:cmid    =   8.7736u  5:cmid    =   8.7736u
+ + 6:cmid    =   8.7736u  7:cmid    =   8.7736u  8:a_bar   =   4.5512u
+ + 8:c_bar   = 999.9834m  8:cout_bar= 999.9747m  8:p       = 999.9890m
+ + 8:p_bar   =   3.5802u  8:s_bar   =   4.3398u  9:a_bar   =   4.5512u
+ + 9:c_bar   = 999.9834m  9:cout_bar= 999.9747m  9:p       = 999.9890m
+ + 9:p_bar   =   3.5802u  9:s_bar   =  13.1131u 10:a_bar   =   4.5512u
+ +10:c_bar   = 999.9834m 10:cout_bar= 999.9747m 10:p       = 999.9890m
+ +10:p_bar   =   3.5802u 10:s_bar   =  13.1131u 11:a_bar   =   4.5512u
+ +11:c_bar   = 999.9834m 11:cout_bar= 999.9747m 11:p       = 999.9890m
+ +11:p_bar   =   3.5802u 11:s_bar   =  13.1131u 12:a_bar   =   4.5512u
+ +12:c_bar   = 999.9834m 12:cout_bar= 999.9747m 12:p       = 999.9890m
+ +12:p_bar   =   3.5802u 12:s_bar   =  13.1131u 13:a_bar   =   4.5512u
+ +13:c_bar   = 999.9834m 13:cout_bar= 999.9747m 13:p       = 999.9890m
+ +13:p_bar   =   3.5802u 13:s_bar   =  13.1131u 14:a_bar   =   4.5512u
+ +14:c_bar   = 999.9834m 14:cout_bar= 999.9747m 14:p       = 999.9890m
+ +14:p_bar   =   3.5802u 14:s_bar   =  13.1131u 15:a_bar   =   4.5512u
+ +15:c_bar   = 999.9834m 15:cout_bar= 999.9747m 15:p       = 999.9890m
+ +15:p_bar   =   3.5802u 15:s_bar   =  13.1131u
+
+ ******
+ ************************* hspice rca modeling ***********************
+
+ ****** transient analysis tnom=  25.000 temp=  15.000 ******
+ tp_s7_fall= 912.8614p  targ=   2.4379n   trig=   1.5250n
+ tp_cout_rise= 958.3153p  targ=   2.4833n   trig=   1.5250n
+ tp_s7_rise= 907.7193p  targ=   3.9327n   trig=   3.0250n
+ tp_cout_fall= 960.8245p  targ=   3.9858n   trig=   3.0250n
+ tp_max= 960.8245p
+ tp_avg= 934.9301p
+ p_avg= 127.5973u  from=   0.             to=   8.5000n
+ p_max=   4.5131m    at=   7.5500n
+             from=   0.            to=   8.5000n
+ pdp= 122.5986f
+ i_avg=-108.8189u  from=   0.             to=   8.5000n
+ i_peak=  -1.7010m    at=   6.1150n
+             from=   0.            to=   8.5000n
+ **info** dc convergence successful at Newton-Raphson method 
+ ******  
+ ************************* hspice rca modeling ***********************
+
+ ****** operating point information tnom=  25.000 temp=  20.000 ******
+ ****** operating point status is voltage   simulation time is     0.     
+     node    =voltage       node    =voltage       node    =voltage
+
+ + 0:a0      =   1.0000   0:a1      =   1.0000   0:a2      =   1.0000 
+ + 0:a3      =   1.0000   0:a4      =   1.0000   0:a5      =   1.0000 
+ + 0:a6      =   1.0000   0:a7      =   1.0000   0:b0      =   0.     
+ + 0:b1      =   0.       0:b2      =   0.       0:b3      =   0.     
+ + 0:b4      =   0.       0:b5      =   0.       0:b6      =   0.     
+ + 0:b7      =   0.       0:cin     =   0.       0:cout    =   2.0454u
+ + 0:s0      = 999.9962m  0:s1      = 999.9962m  0:s2      = 999.9962m
+ + 0:s3      = 999.9962m  0:s4      = 999.9962m  0:s5      = 999.9962m
+ + 0:s6      = 999.9962m  0:s7      = 999.9962m  0:vdd     =   1.0000 
+ + 0:vss     =   0.       1:cmid    =   9.5232u  2:cmid    =   9.5232u
+ + 3:cmid    =   9.5232u  4:cmid    =   9.5232u  5:cmid    =   9.5232u
+ + 6:cmid    =   9.5232u  7:cmid    =   9.5232u  8:a_bar   =   5.4028u
+ + 8:c_bar   = 999.9813m  8:cout_bar= 999.9717m  8:p       = 999.9877m
+ + 8:p_bar   =   3.8697u  8:s_bar   =   4.8150u  9:a_bar   =   5.4028u
+ + 9:c_bar   = 999.9813m  9:cout_bar= 999.9717m  9:p       = 999.9877m
+ + 9:p_bar   =   3.8697u  9:s_bar   =  14.3378u 10:a_bar   =   5.4028u
+ +10:c_bar   = 999.9813m 10:cout_bar= 999.9717m 10:p       = 999.9877m
+ +10:p_bar   =   3.8697u 10:s_bar   =  14.3378u 11:a_bar   =   5.4028u
+ +11:c_bar   = 999.9813m 11:cout_bar= 999.9717m 11:p       = 999.9877m
+ +11:p_bar   =   3.8697u 11:s_bar   =  14.3378u 12:a_bar   =   5.4028u
+ +12:c_bar   = 999.9813m 12:cout_bar= 999.9717m 12:p       = 999.9877m
+ +12:p_bar   =   3.8697u 12:s_bar   =  14.3378u 13:a_bar   =   5.4028u
+ +13:c_bar   = 999.9813m 13:cout_bar= 999.9717m 13:p       = 999.9877m
+ +13:p_bar   =   3.8697u 13:s_bar   =  14.3378u 14:a_bar   =   5.4028u
+ +14:c_bar   = 999.9813m 14:cout_bar= 999.9717m 14:p       = 999.9877m
+ +14:p_bar   =   3.8697u 14:s_bar   =  14.3378u 15:a_bar   =   5.4028u
+ +15:c_bar   = 999.9813m 15:cout_bar= 999.9717m 15:p       = 999.9877m
+ +15:p_bar   =   3.8697u 15:s_bar   =  14.3378u
+
+ ******
+ ************************* hspice rca modeling ***********************
+
+ ****** transient analysis tnom=  25.000 temp=  20.000 ******
+ tp_s7_fall= 921.7989p  targ=   2.4468n   trig=   1.5250n
+ tp_cout_rise= 967.8252p  targ=   2.4928n   trig=   1.5250n
+ tp_s7_rise= 916.1167p  targ=   3.9411n   trig=   3.0250n
+ tp_cout_fall= 969.6063p  targ=   3.9946n   trig=   3.0250n
+ tp_max= 969.6063p
+ tp_avg= 943.8368p
+ p_avg= 128.3768u  from=   0.             to=   8.5000n
+ p_max=   4.4990m    at=   7.5500n
+             from=   0.            to=   8.5000n
+ pdp= 124.4749f
+ i_avg=-109.4702u  from=   0.             to=   8.5000n
+ i_peak=  -1.6954m    at=   6.1148n
+             from=   0.            to=   8.5000n
+ **info** dc convergence successful at Newton-Raphson method 
+ ******  
+ ************************* hspice rca modeling ***********************
+
+ ****** operating point information tnom=  25.000 temp=  25.000 ******
+ ****** operating point status is voltage   simulation time is     0.     
+     node    =voltage       node    =voltage       node    =voltage
+
+ + 0:a0      =   1.0000   0:a1      =   1.0000   0:a2      =   1.0000 
+ + 0:a3      =   1.0000   0:a4      =   1.0000   0:a5      =   1.0000 
+ + 0:a6      =   1.0000   0:a7      =   1.0000   0:b0      =   0.     
+ + 0:b1      =   0.       0:b2      =   0.       0:b3      =   0.     
+ + 0:b4      =   0.       0:b5      =   0.       0:b6      =   0.     
+ + 0:b7      =   0.       0:cin     =   0.       0:cout    =   2.3015u
+ + 0:s0      = 999.9957m  0:s1      = 999.9957m  0:s2      = 999.9957m
+ + 0:s3      = 999.9957m  0:s4      = 999.9957m  0:s5      = 999.9957m
+ + 0:s6      = 999.9957m  0:s7      = 999.9957m  0:vdd     =   1.0000 
+ + 0:vss     =   0.       1:cmid    =  10.4127u  2:cmid    =  10.4127u
+ + 3:cmid    =  10.4127u  4:cmid    =  10.4127u  5:cmid    =  10.4127u
+ + 6:cmid    =  10.4127u  7:cmid    =  10.4127u  8:a_bar   =   6.4423u
+ + 8:c_bar   = 999.9787m  8:cout_bar= 999.9682m  8:p       = 999.9861m
+ + 8:p_bar   =   4.2107u  8:s_bar   =   5.3851u  9:a_bar   =   6.4423u
+ + 9:c_bar   = 999.9787m  9:cout_bar= 999.9682m  9:p       = 999.9861m
+ + 9:p_bar   =   4.2107u  9:s_bar   =  15.7972u 10:a_bar   =   6.4423u
+ +10:c_bar   = 999.9787m 10:cout_bar= 999.9682m 10:p       = 999.9861m
+ +10:p_bar   =   4.2107u 10:s_bar   =  15.7972u 11:a_bar   =   6.4423u
+ +11:c_bar   = 999.9787m 11:cout_bar= 999.9682m 11:p       = 999.9861m
+ +11:p_bar   =   4.2107u 11:s_bar   =  15.7972u 12:a_bar   =   6.4423u
+ +12:c_bar   = 999.9787m 12:cout_bar= 999.9682m 12:p       = 999.9861m
+ +12:p_bar   =   4.2107u 12:s_bar   =  15.7972u 13:a_bar   =   6.4423u
+ +13:c_bar   = 999.9787m 13:cout_bar= 999.9682m 13:p       = 999.9861m
+ +13:p_bar   =   4.2107u 13:s_bar   =  15.7972u 14:a_bar   =   6.4423u
+ +14:c_bar   = 999.9787m 14:cout_bar= 999.9682m 14:p       = 999.9861m
+ +14:p_bar   =   4.2107u 14:s_bar   =  15.7972u 15:a_bar   =   6.4423u
+ +15:c_bar   = 999.9787m 15:cout_bar= 999.9682m 15:p       = 999.9861m
+ +15:p_bar   =   4.2107u 15:s_bar   =  15.7972u
+
+ ******
+ ************************* hspice rca modeling ***********************
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+ tp_s7_fall= 930.7167p  targ=   2.4557n   trig=   1.5250n
+ tp_cout_rise= 977.3346p  targ=   2.5023n   trig=   1.5250n
+ tp_s7_rise= 924.5018p  targ=   3.9495n   trig=   3.0250n
+ tp_cout_fall= 978.3911p  targ=   4.0034n   trig=   3.0250n
+ tp_max= 978.3911p
+ tp_avg= 952.7361p
+ p_avg= 129.1096u  from=   0.             to=   8.5000n
+ p_max=   4.4847m    at=   7.5500n
+             from=   0.            to=   8.5000n
+ pdp= 126.3197f
+ i_avg=-110.1127u  from=   0.             to=   8.5000n
+ i_peak=  -1.6915m    at=   6.1153n
+             from=   0.            to=   8.5000n
+ **info** dc convergence successful at Newton-Raphson method 
+ ******  
+ ************************* hspice rca modeling ***********************
+
+ ****** operating point information tnom=  25.000 temp=  30.000 ******
+ ****** operating point status is voltage   simulation time is     0.     
+     node    =voltage       node    =voltage       node    =voltage
+
+ + 0:a0      =   1.0000   0:a1      =   1.0000   0:a2      =   1.0000 
+ + 0:a3      =   1.0000   0:a4      =   1.0000   0:a5      =   1.0000 
+ + 0:a6      =   1.0000   0:a7      =   1.0000   0:b0      =   0.     
+ + 0:b1      =   0.       0:b2      =   0.       0:b3      =   0.     
+ + 0:b4      =   0.       0:b5      =   0.       0:b6      =   0.     
+ + 0:b7      =   0.       0:cin     =   0.       0:cout    =   2.6096u
+ + 0:s0      = 999.9950m  0:s1      = 999.9950m  0:s2      = 999.9950m
+ + 0:s3      = 999.9950m  0:s4      = 999.9950m  0:s5      = 999.9950m
+ + 0:s6      = 999.9950m  0:s7      = 999.9950m  0:vdd     =   1.0000 
+ + 0:vss     =   0.       1:cmid    =  11.4674u  2:cmid    =  11.4674u
+ + 3:cmid    =  11.4674u  4:cmid    =  11.4674u  5:cmid    =  11.4674u
+ + 6:cmid    =  11.4674u  7:cmid    =  11.4674u  8:a_bar   =   7.7038u
+ + 8:c_bar   = 999.9757m  8:cout_bar= 999.9639m  8:p       = 999.9843m
+ + 8:p_bar   =   4.6122u  8:s_bar   =   6.0670u  9:a_bar   =   7.7038u
+ + 9:c_bar   = 999.9757m  9:cout_bar= 999.9639m  9:p       = 999.9843m
+ + 9:p_bar   =   4.6122u  9:s_bar   =  17.5337u 10:a_bar   =   7.7038u
+ +10:c_bar   = 999.9757m 10:cout_bar= 999.9639m 10:p       = 999.9843m
+ +10:p_bar   =   4.6122u 10:s_bar   =  17.5337u 11:a_bar   =   7.7038u
+ +11:c_bar   = 999.9757m 11:cout_bar= 999.9639m 11:p       = 999.9843m
+ +11:p_bar   =   4.6122u 11:s_bar   =  17.5337u 12:a_bar   =   7.7038u
+ +12:c_bar   = 999.9757m 12:cout_bar= 999.9639m 12:p       = 999.9843m
+ +12:p_bar   =   4.6122u 12:s_bar   =  17.5337u 13:a_bar   =   7.7038u
+ +13:c_bar   = 999.9757m 13:cout_bar= 999.9639m 13:p       = 999.9843m
+ +13:p_bar   =   4.6122u 13:s_bar   =  17.5337u 14:a_bar   =   7.7038u
+ +14:c_bar   = 999.9757m 14:cout_bar= 999.9639m 14:p       = 999.9843m
+ +14:p_bar   =   4.6122u 14:s_bar   =  17.5337u 15:a_bar   =   7.7038u
+ +15:c_bar   = 999.9757m 15:cout_bar= 999.9639m 15:p       = 999.9843m
+ +15:p_bar   =   4.6122u 15:s_bar   =  17.5337u
+
+ ******
+ ************************* hspice rca modeling ***********************
+
+ ****** transient analysis tnom=  25.000 temp=  30.000 ******
+ tp_s7_fall= 939.6474p  targ=   2.4646n   trig=   1.5250n
+ tp_cout_rise= 986.8554p  targ=   2.5119n   trig=   1.5250n
+ tp_s7_rise= 932.9229p  targ=   3.9579n   trig=   3.0250n
+ tp_cout_fall= 987.2138p  targ=   4.0122n   trig=   3.0250n
+ tp_max= 987.2138p
+ tp_avg= 961.6599p
+ p_avg= 129.8797u  from=   0.             to=   8.5000n
+ p_max=   4.4701m    at=   7.5500n
+             from=   0.            to=   8.5000n
+ pdp= 128.2190f
+ i_avg=-110.7787u  from=   0.             to=   8.5000n
+ i_peak=  -1.6901m    at=   6.1152n
+             from=   0.            to=   8.5000n
+ **info** dc convergence successful at Newton-Raphson method 
+ ******  
+ ************************* hspice rca modeling ***********************
+
+ ****** operating point information tnom=  25.000 temp=  35.000 ******
+ ****** operating point status is voltage   simulation time is     0.     
+     node    =voltage       node    =voltage       node    =voltage
+
+ + 0:a0      =   1.0000   0:a1      =   1.0000   0:a2      =   1.0000 
+ + 0:a3      =   1.0000   0:a4      =   1.0000   0:a5      =   1.0000 
+ + 0:a6      =   1.0000   0:a7      =   1.0000   0:b0      =   0.     
+ + 0:b1      =   0.       0:b2      =   0.       0:b3      =   0.     
+ + 0:b4      =   0.       0:b5      =   0.       0:b6      =   0.     
+ + 0:b7      =   0.       0:cin     =   0.       0:cout    =   2.9794u
+ + 0:s0      = 999.9942m  0:s1      = 999.9942m  0:s2      = 999.9942m
+ + 0:s3      = 999.9942m  0:s4      = 999.9942m  0:s5      = 999.9942m
+ + 0:s6      = 999.9942m  0:s7      = 999.9942m  0:vdd     =   1.0000 
+ + 0:vss     =   0.       1:cmid    =  12.7161u  2:cmid    =  12.7161u
+ + 3:cmid    =  12.7161u  4:cmid    =  12.7161u  5:cmid    =  12.7161u
+ + 6:cmid    =  12.7161u  7:cmid    =  12.7161u  8:a_bar   =   9.2259u
+ + 8:c_bar   = 999.9721m  8:cout_bar= 999.9588m  8:p       = 999.9821m
+ + 8:p_bar   =   5.0842u  8:s_bar   =   6.8803u  9:a_bar   =   9.2259u
+ + 9:c_bar   = 999.9721m  9:cout_bar= 999.9588m  9:p       = 999.9821m
+ + 9:p_bar   =   5.0842u  9:s_bar   =  19.5953u 10:a_bar   =   9.2259u
+ +10:c_bar   = 999.9721m 10:cout_bar= 999.9588m 10:p       = 999.9821m
+ +10:p_bar   =   5.0842u 10:s_bar   =  19.5953u 11:a_bar   =   9.2259u
+ +11:c_bar   = 999.9721m 11:cout_bar= 999.9588m 11:p       = 999.9821m
+ +11:p_bar   =   5.0842u 11:s_bar   =  19.5953u 12:a_bar   =   9.2259u
+ +12:c_bar   = 999.9721m 12:cout_bar= 999.9588m 12:p       = 999.9821m
+ +12:p_bar   =   5.0842u 12:s_bar   =  19.5953u 13:a_bar   =   9.2259u
+ +13:c_bar   = 999.9721m 13:cout_bar= 999.9588m 13:p       = 999.9821m
+ +13:p_bar   =   5.0842u 13:s_bar   =  19.5953u 14:a_bar   =   9.2259u
+ +14:c_bar   = 999.9721m 14:cout_bar= 999.9588m 14:p       = 999.9821m
+ +14:p_bar   =   5.0842u 14:s_bar   =  19.5953u 15:a_bar   =   9.2259u
+ +15:c_bar   = 999.9721m 15:cout_bar= 999.9588m 15:p       = 999.9821m
+ +15:p_bar   =   5.0842u 15:s_bar   =  19.5953u
+
+ ******
+ ************************* hspice rca modeling ***********************
+
+ ****** transient analysis tnom=  25.000 temp=  35.000 ******
+ tp_s7_fall= 948.5908p  targ=   2.4736n   trig=   1.5250n
+ tp_cout_rise= 996.3896p  targ=   2.5214n   trig=   1.5250n
+ tp_s7_rise= 941.3001p  targ=   3.9663n   trig=   3.0250n
+ tp_cout_fall= 995.9832p  targ=   4.0210n   trig=   3.0250n
+ tp_max= 996.3896p
+ tp_avg= 970.5659p
+ p_avg= 130.6543u  from=   0.             to=   8.5000n
+ p_max=   4.4570m    at=   7.5500n
+             from=   0.            to=   8.5000n
+ pdp= 130.1826f
+ i_avg=-111.4319u  from=   0.             to=   8.5000n
+ i_peak=  -1.6895m    at=   6.1154n
+             from=   0.            to=   8.5000n
+ **info** dc convergence successful at Newton-Raphson method 
+ ******  
+ ************************* hspice rca modeling ***********************
+
+ ****** operating point information tnom=  25.000 temp=  40.000 ******
+ ****** operating point status is voltage   simulation time is     0.     
+     node    =voltage       node    =voltage       node    =voltage
+
+ + 0:a0      =   1.0000   0:a1      =   1.0000   0:a2      =   1.0000 
+ + 0:a3      =   1.0000   0:a4      =   1.0000   0:a5      =   1.0000 
+ + 0:a6      =   1.0000   0:a7      =   1.0000   0:b0      =   0.     
+ + 0:b1      =   0.       0:b2      =   0.       0:b3      =   0.     
+ + 0:b4      =   0.       0:b5      =   0.       0:b6      =   0.     
+ + 0:b7      =   0.       0:cin     =   0.       0:cout    =   3.4212u
+ + 0:s0      = 999.9933m  0:s1      = 999.9933m  0:s2      = 999.9933m
+ + 0:s3      = 999.9933m  0:s4      = 999.9933m  0:s5      = 999.9933m
+ + 0:s6      = 999.9933m  0:s7      = 999.9933m  0:vdd     =   1.0000 
+ + 0:vss     =   0.       1:cmid    =  14.1911u  2:cmid    =  14.1911u
+ + 3:cmid    =  14.1911u  4:cmid    =  14.1911u  5:cmid    =  14.1911u
+ + 6:cmid    =  14.1911u  7:cmid    =  14.1911u  8:a_bar   =  11.0521u
+ + 8:c_bar   = 999.9678m  8:cout_bar= 999.9528m  8:p       = 999.9794m
+ + 8:p_bar   =   5.6379u  8:s_bar   =   7.8466u  9:a_bar   =  11.0521u
+ + 9:c_bar   = 999.9678m  9:cout_bar= 999.9528m  9:p       = 999.9794m
+ + 9:p_bar   =   5.6379u  9:s_bar   =  22.0363u 10:a_bar   =  11.0521u
+ +10:c_bar   = 999.9678m 10:cout_bar= 999.9528m 10:p       = 999.9794m
+ +10:p_bar   =   5.6379u 10:s_bar   =  22.0363u 11:a_bar   =  11.0521u
+ +11:c_bar   = 999.9678m 11:cout_bar= 999.9528m 11:p       = 999.9794m
+ +11:p_bar   =   5.6379u 11:s_bar   =  22.0363u 12:a_bar   =  11.0521u
+ +12:c_bar   = 999.9678m 12:cout_bar= 999.9528m 12:p       = 999.9794m
+ +12:p_bar   =   5.6379u 12:s_bar   =  22.0363u 13:a_bar   =  11.0521u
+ +13:c_bar   = 999.9678m 13:cout_bar= 999.9528m 13:p       = 999.9794m
+ +13:p_bar   =   5.6379u 13:s_bar   =  22.0363u 14:a_bar   =  11.0521u
+ +14:c_bar   = 999.9678m 14:cout_bar= 999.9528m 14:p       = 999.9794m
+ +14:p_bar   =   5.6379u 14:s_bar   =  22.0363u 15:a_bar   =  11.0521u
+ +15:c_bar   = 999.9678m 15:cout_bar= 999.9528m 15:p       = 999.9794m
+ +15:p_bar   =   5.6379u 15:s_bar   =  22.0363u
+
+ ******
+ ************************* hspice rca modeling ***********************
+
+ ****** transient analysis tnom=  25.000 temp=  40.000 ******
+ tp_s7_fall= 957.5634p  targ=   2.4826n   trig=   1.5250n
+ tp_cout_rise=   1.0059n  targ=   2.5309n   trig=   1.5250n
+ tp_s7_rise= 949.6848p  targ=   3.9747n   trig=   3.0250n
+ tp_cout_fall=   1.0048n  targ=   4.0298n   trig=   3.0250n
+ tp_max=   1.0059n
+ tp_avg= 979.4899p
+ p_avg= 131.4462u  from=   0.             to=   8.5000n
+ p_max=   4.4429m    at=   7.5500n
+             from=   0.            to=   8.5000n
+ pdp= 132.2266f
+ i_avg=-112.1156u  from=   0.             to=   8.5000n
+ i_peak=  -1.6754m    at=   6.1159n
+             from=   0.            to=   8.5000n
+ **info** dc convergence successful at Newton-Raphson method 
+ ******  
+ ************************* hspice rca modeling ***********************
+
+ ****** operating point information tnom=  25.000 temp=  45.000 ******
+ ****** operating point status is voltage   simulation time is     0.     
+     node    =voltage       node    =voltage       node    =voltage
+
+ + 0:a0      =   1.0000   0:a1      =   1.0000   0:a2      =   1.0000 
+ + 0:a3      =   1.0000   0:a4      =   1.0000   0:a5      =   1.0000 
+ + 0:a6      =   1.0000   0:a7      =   1.0000   0:b0      =   0.     
+ + 0:b1      =   0.       0:b2      =   0.       0:b3      =   0.     
+ + 0:b4      =   0.       0:b5      =   0.       0:b6      =   0.     
+ + 0:b7      =   0.       0:cin     =   0.       0:cout    =   3.9472u
+ + 0:s0      = 999.9923m  0:s1      = 999.9923m  0:s2      = 999.9923m
+ + 0:s3      = 999.9923m  0:s4      = 999.9923m  0:s5      = 999.9923m
+ + 0:s6      = 999.9923m  0:s7      = 999.9923m  0:vdd     =   1.0000 
+ + 0:vss     =   0.       1:cmid    =  15.9288u  2:cmid    =  15.9288u
+ + 3:cmid    =  15.9288u  4:cmid    =  15.9288u  5:cmid    =  15.9288u
+ + 6:cmid    =  15.9288u  7:cmid    =  15.9288u  8:a_bar   =  13.2310u
+ + 8:c_bar   = 999.9628m  8:cout_bar= 999.9457m  8:p       = 999.9764m
+ + 8:p_bar   =   6.2860u  8:s_bar   =   8.9903u  9:a_bar   =  13.2310u
+ + 9:c_bar   = 999.9628m  9:cout_bar= 999.9457m  9:p       = 999.9764m
+ + 9:p_bar   =   6.2860u  9:s_bar   =  24.9173u 10:a_bar   =  13.2310u
+ +10:c_bar   = 999.9628m 10:cout_bar= 999.9457m 10:p       = 999.9764m
+ +10:p_bar   =   6.2860u 10:s_bar   =  24.9173u 11:a_bar   =  13.2310u
+ +11:c_bar   = 999.9628m 11:cout_bar= 999.9457m 11:p       = 999.9764m
+ +11:p_bar   =   6.2860u 11:s_bar   =  24.9173u 12:a_bar   =  13.2310u
+ +12:c_bar   = 999.9628m 12:cout_bar= 999.9457m 12:p       = 999.9764m
+ +12:p_bar   =   6.2860u 12:s_bar   =  24.9173u 13:a_bar   =  13.2310u
+ +13:c_bar   = 999.9628m 13:cout_bar= 999.9457m 13:p       = 999.9764m
+ +13:p_bar   =   6.2860u 13:s_bar   =  24.9173u 14:a_bar   =  13.2310u
+ +14:c_bar   = 999.9628m 14:cout_bar= 999.9457m 14:p       = 999.9764m
+ +14:p_bar   =   6.2860u 14:s_bar   =  24.9173u 15:a_bar   =  13.2310u
+ +15:c_bar   = 999.9628m 15:cout_bar= 999.9457m 15:p       = 999.9764m
+ +15:p_bar   =   6.2860u 15:s_bar   =  24.9173u
+
+ ******
+ ************************* hspice rca modeling ***********************
+
+ ****** transient analysis tnom=  25.000 temp=  45.000 ******
+ tp_s7_fall= 966.5767p  targ=   2.4916n   trig=   1.5250n
+ tp_cout_rise=   1.0155n  targ=   2.5405n   trig=   1.5250n
+ tp_s7_rise= 958.1302p  targ=   3.9831n   trig=   3.0250n
+ tp_cout_fall=   1.0136n  targ=   4.0386n   trig=   3.0250n
+ tp_max=   1.0155n
+ tp_avg= 988.4686p
+ p_avg= 132.2662u  from=   0.             to=   8.5000n
+ p_max=   4.4285m    at=   7.5500n
+             from=   0.            to=   8.5000n
+ pdp= 134.3206f
+ i_avg=-112.8144u  from=   0.             to=   8.5000n
+ i_peak=  -1.6772m    at=   6.1165n
+             from=   0.            to=   8.5000n
+ **info** dc convergence successful at Newton-Raphson method 
+ ******  
+ ************************* hspice rca modeling ***********************
+
+ ****** operating point information tnom=  25.000 temp=  50.000 ******
+ ****** operating point status is voltage   simulation time is     0.     
+     node    =voltage       node    =voltage       node    =voltage
+
+ + 0:a0      =   1.0000   0:a1      =   1.0000   0:a2      =   1.0000 
+ + 0:a3      =   1.0000   0:a4      =   1.0000   0:a5      =   1.0000 
+ + 0:a6      =   1.0000   0:a7      =   1.0000   0:b0      =   0.     
+ + 0:b1      =   0.       0:b2      =   0.       0:b3      =   0.     
+ + 0:b4      =   0.       0:b5      =   0.       0:b6      =   0.     
+ + 0:b7      =   0.       0:cin     =   0.       0:cout    =   4.5708u
+ + 0:s0      = 999.9910m  0:s1      = 999.9910m  0:s2      = 999.9910m
+ + 0:s3      = 999.9910m  0:s4      = 999.9910m  0:s5      = 999.9910m
+ + 0:s6      = 999.9910m  0:s7      = 999.9910m  0:vdd     =   1.0000 
+ + 0:vss     =   0.       1:cmid    =  17.9698u  2:cmid    =  17.9698u
+ + 3:cmid    =  17.9698u  4:cmid    =  17.9698u  5:cmid    =  17.9698u
+ + 6:cmid    =  17.9698u  7:cmid    =  17.9698u  8:a_bar   =  15.8169u
+ + 8:c_bar   = 999.9568m  8:cout_bar= 999.9374m  8:p       = 999.9727m
+ + 8:p_bar   =   7.0421u  8:s_bar   =  10.3386u  9:a_bar   =  15.8169u
+ + 9:c_bar   = 999.9568m  9:cout_bar= 999.9374m  9:p       = 999.9727m
+ + 9:p_bar   =   7.0421u  9:s_bar   =  28.3060u 10:a_bar   =  15.8169u
+ +10:c_bar   = 999.9568m 10:cout_bar= 999.9374m 10:p       = 999.9727m
+ +10:p_bar   =   7.0421u 10:s_bar   =  28.3060u 11:a_bar   =  15.8169u
+ +11:c_bar   = 999.9568m 11:cout_bar= 999.9374m 11:p       = 999.9727m
+ +11:p_bar   =   7.0421u 11:s_bar   =  28.3060u 12:a_bar   =  15.8169u
+ +12:c_bar   = 999.9568m 12:cout_bar= 999.9374m 12:p       = 999.9727m
+ +12:p_bar   =   7.0421u 12:s_bar   =  28.3060u 13:a_bar   =  15.8169u
+ +13:c_bar   = 999.9568m 13:cout_bar= 999.9374m 13:p       = 999.9727m
+ +13:p_bar   =   7.0421u 13:s_bar   =  28.3060u 14:a_bar   =  15.8169u
+ +14:c_bar   = 999.9568m 14:cout_bar= 999.9374m 14:p       = 999.9727m
+ +14:p_bar   =   7.0421u 14:s_bar   =  28.3060u 15:a_bar   =  15.8169u
+ +15:c_bar   = 999.9568m 15:cout_bar= 999.9374m 15:p       = 999.9727m
+ +15:p_bar   =   7.0421u 15:s_bar   =  28.3060u
+
+ ******
+ ************************* hspice rca modeling ***********************
+
+ ****** transient analysis tnom=  25.000 temp=  50.000 ******
+ tp_s7_fall= 975.5761p  targ=   2.5006n   trig=   1.5250n
+ tp_cout_rise=   1.0251n  targ=   2.5501n   trig=   1.5250n
+ tp_s7_rise= 966.5999p  targ=   3.9916n   trig=   3.0250n
+ tp_cout_fall=   1.0225n  targ=   4.0475n   trig=   3.0250n
+ tp_max=   1.0251n
+ tp_avg= 997.4536p
+ p_avg= 133.0888u  from=   0.             to=   8.5000n
+ p_max=   4.4150m    at=   7.5500n
+             from=   0.            to=   8.5000n
+ pdp= 136.4322f
+ i_avg=-113.5212u  from=   0.             to=   8.5000n
+ i_peak=  -1.6688m    at=   6.1169n
+             from=   0.            to=   8.5000n
+ **info** dc convergence successful at Newton-Raphson method 
+ ******  
+ ************************* hspice rca modeling ***********************
+
+ ****** operating point information tnom=  25.000 temp=  55.000 ******
+ ****** operating point status is voltage   simulation time is     0.     
+     node    =voltage       node    =voltage       node    =voltage
+
+ + 0:a0      =   1.0000   0:a1      =   1.0000   0:a2      =   1.0000 
+ + 0:a3      =   1.0000   0:a4      =   1.0000   0:a5      =   1.0000 
+ + 0:a6      =   1.0000   0:a7      =   1.0000   0:b0      =   0.     
+ + 0:b1      =   0.       0:b2      =   0.       0:b3      =   0.     
+ + 0:b4      =   0.       0:b5      =   0.       0:b6      =   0.     
+ + 0:b7      =   0.       0:cin     =   0.       0:cout    =   5.3069u
+ + 0:s0      = 999.9896m  0:s1      = 999.9896m  0:s2      = 999.9896m
+ + 0:s3      = 999.9896m  0:s4      = 999.9896m  0:s5      = 999.9896m
+ + 0:s6      = 999.9896m  0:s7      = 999.9896m  0:vdd     =   1.0000 
+ + 0:vss     =   0.       1:cmid    =  20.3592u  2:cmid    =  20.3592u
+ + 3:cmid    =  20.3592u  4:cmid    =  20.3592u  5:cmid    =  20.3592u
+ + 6:cmid    =  20.3592u  7:cmid    =  20.3592u  8:a_bar   =  18.8700u
+ + 8:c_bar   = 999.9499m  8:cout_bar= 999.9277m  8:p       = 999.9685m
+ + 8:p_bar   =   7.9218u  8:s_bar   =  11.9217u  9:a_bar   =  18.8700u
+ + 9:c_bar   = 999.9499m  9:cout_bar= 999.9277m  9:p       = 999.9685m
+ + 9:p_bar   =   7.9218u  9:s_bar   =  32.2777u 10:a_bar   =  18.8700u
+ +10:c_bar   = 999.9499m 10:cout_bar= 999.9277m 10:p       = 999.9685m
+ +10:p_bar   =   7.9218u 10:s_bar   =  32.2777u 11:a_bar   =  18.8700u
+ +11:c_bar   = 999.9499m 11:cout_bar= 999.9277m 11:p       = 999.9685m
+ +11:p_bar   =   7.9218u 11:s_bar   =  32.2777u 12:a_bar   =  18.8700u
+ +12:c_bar   = 999.9499m 12:cout_bar= 999.9277m 12:p       = 999.9685m
+ +12:p_bar   =   7.9218u 12:s_bar   =  32.2777u 13:a_bar   =  18.8700u
+ +13:c_bar   = 999.9499m 13:cout_bar= 999.9277m 13:p       = 999.9685m
+ +13:p_bar   =   7.9218u 13:s_bar   =  32.2777u 14:a_bar   =  18.8700u
+ +14:c_bar   = 999.9499m 14:cout_bar= 999.9277m 14:p       = 999.9685m
+ +14:p_bar   =   7.9218u 14:s_bar   =  32.2777u 15:a_bar   =  18.8700u
+ +15:c_bar   = 999.9499m 15:cout_bar= 999.9277m 15:p       = 999.9685m
+ +15:p_bar   =   7.9218u 15:s_bar   =  32.2777u
+
+ ******
+ ************************* hspice rca modeling ***********************
+
+ ****** transient analysis tnom=  25.000 temp=  55.000 ******
+ tp_s7_fall= 984.5973p  targ=   2.5096n   trig=   1.5250n
+ tp_cout_rise=   1.0347n  targ=   2.5597n   trig=   1.5250n
+ tp_s7_rise= 975.0564p  targ=   4.0001n   trig=   3.0250n
+ tp_cout_fall=   1.0314n  targ=   4.0564n   trig=   3.0250n
+ tp_max=   1.0347n
+ tp_avg=   1.0064n
+ p_avg= 133.9319u  from=   0.             to=   8.5000n
+ p_max=   4.4013m    at=   7.5500n
+             from=   0.            to=   8.5000n
+ pdp= 138.5831f
+ i_avg=-114.2371u  from=   0.             to=   8.5000n
+ i_peak=  -1.6726m    at=   6.1176n
+             from=   0.            to=   8.5000n
+ **info** dc convergence successful at Newton-Raphson method 
+ ******  
+ ************************* hspice rca modeling ***********************
+
+ ****** operating point information tnom=  25.000 temp=  60.000 ******
+ ****** operating point status is voltage   simulation time is     0.     
+     node    =voltage       node    =voltage       node    =voltage
+
+ + 0:a0      =   1.0000   0:a1      =   1.0000   0:a2      =   1.0000 
+ + 0:a3      =   1.0000   0:a4      =   1.0000   0:a5      =   1.0000 
+ + 0:a6      =   1.0000   0:a7      =   1.0000   0:b0      =   0.     
+ + 0:b1      =   0.       0:b2      =   0.       0:b3      =   0.     
+ + 0:b4      =   0.       0:b5      =   0.       0:b6      =   0.     
+ + 0:b7      =   0.       0:cin     =   0.       0:cout    =   6.1723u
+ + 0:s0      = 999.9879m  0:s1      = 999.9879m  0:s2      = 999.9879m
+ + 0:s3      = 999.9879m  0:s4      = 999.9879m  0:s5      = 999.9879m
+ + 0:s6      = 999.9879m  0:s7      = 999.9879m  0:vdd     =   1.0000 
+ + 0:vss     =   0.       1:cmid    =  23.1469u  2:cmid    =  23.1469u
+ + 3:cmid    =  23.1469u  4:cmid    =  23.1469u  5:cmid    =  23.1469u
+ + 6:cmid    =  23.1469u  7:cmid    =  23.1469u  8:a_bar   =  22.4565u
+ + 8:c_bar   = 999.9418m  8:cout_bar= 999.9164m  8:p       = 999.9636m
+ + 8:p_bar   =   8.9418u  8:s_bar   =  13.7727u  9:a_bar   =  22.4565u
+ + 9:c_bar   = 999.9418m  9:cout_bar= 999.9164m  9:p       = 999.9636m
+ + 9:p_bar   =   8.9418u  9:s_bar   =  36.9153u 10:a_bar   =  22.4565u
+ +10:c_bar   = 999.9418m 10:cout_bar= 999.9164m 10:p       = 999.9636m
+ +10:p_bar   =   8.9418u 10:s_bar   =  36.9153u 11:a_bar   =  22.4565u
+ +11:c_bar   = 999.9418m 11:cout_bar= 999.9164m 11:p       = 999.9636m
+ +11:p_bar   =   8.9418u 11:s_bar   =  36.9153u 12:a_bar   =  22.4565u
+ +12:c_bar   = 999.9418m 12:cout_bar= 999.9164m 12:p       = 999.9636m
+ +12:p_bar   =   8.9418u 12:s_bar   =  36.9153u 13:a_bar   =  22.4565u
+ +13:c_bar   = 999.9418m 13:cout_bar= 999.9164m 13:p       = 999.9636m
+ +13:p_bar   =   8.9418u 13:s_bar   =  36.9153u 14:a_bar   =  22.4565u
+ +14:c_bar   = 999.9418m 14:cout_bar= 999.9164m 14:p       = 999.9636m
+ +14:p_bar   =   8.9418u 14:s_bar   =  36.9153u 15:a_bar   =  22.4565u
+ +15:c_bar   = 999.9418m 15:cout_bar= 999.9164m 15:p       = 999.9636m
+ +15:p_bar   =   8.9418u 15:s_bar   =  36.9153u
+
+ ******
+ ************************* hspice rca modeling ***********************
+
+ ****** transient analysis tnom=  25.000 temp=  60.000 ******
+ tp_s7_fall= 993.6803p  targ=   2.5187n   trig=   1.5250n
+ tp_cout_rise=   1.0444n  targ=   2.5694n   trig=   1.5250n
+ tp_s7_rise= 983.5749p  targ=   4.0086n   trig=   3.0250n
+ tp_cout_fall=   1.0403n  targ=   4.0653n   trig=   3.0250n
+ tp_max=   1.0444n
+ tp_avg=   1.0155n
+ p_avg= 134.7783u  from=   0.             to=   8.5000n
+ p_max=   4.3872m    at=   7.5500n
+             from=   0.            to=   8.5000n
+ pdp= 140.7611f
+ i_avg=-114.9695u  from=   0.             to=   8.5000n
+ i_peak=  -1.6645m    at=   6.1187n
+             from=   0.            to=   8.5000n
+ **info** dc convergence successful at Newton-Raphson method 
+ ******  
+ ************************* hspice rca modeling ***********************
+
+ ****** operating point information tnom=  25.000 temp=  65.000 ******
+ ****** operating point status is voltage   simulation time is     0.     
+     node    =voltage       node    =voltage       node    =voltage
+
+ + 0:a0      =   1.0000   0:a1      =   1.0000   0:a2      =   1.0000 
+ + 0:a3      =   1.0000   0:a4      =   1.0000   0:a5      =   1.0000 
+ + 0:a6      =   1.0000   0:a7      =   1.0000   0:b0      =   0.     
+ + 0:b1      =   0.       0:b2      =   0.       0:b3      =   0.     
+ + 0:b4      =   0.       0:b5      =   0.       0:b6      =   0.     
+ + 0:b7      =   0.       0:cin     =   0.       0:cout    =   7.1855u
+ + 0:s0      = 999.9859m  0:s1      = 999.9859m  0:s2      = 999.9859m
+ + 0:s3      = 999.9859m  0:s4      = 999.9859m  0:s5      = 999.9859m
+ + 0:s6      = 999.9859m  0:s7      = 999.9859m  0:vdd     =   1.0000 
+ + 0:vss     =   0.       1:cmid    =  26.3878u  2:cmid    =  26.3878u
+ + 3:cmid    =  26.3878u  4:cmid    =  26.3878u  5:cmid    =  26.3878u
+ + 6:cmid    =  26.3878u  7:cmid    =  26.3878u  8:a_bar   =  26.6492u
+ + 8:c_bar   = 999.9325m  8:cout_bar= 999.9033m  8:p       = 999.9580m
+ + 8:p_bar   =  10.1206u  8:s_bar   =  15.9281u  9:a_bar   =  26.6492u
+ + 9:c_bar   = 999.9325m  9:cout_bar= 999.9033m  9:p       = 999.9580m
+ + 9:p_bar   =  10.1206u  9:s_bar   =  42.3102u 10:a_bar   =  26.6492u
+ +10:c_bar   = 999.9325m 10:cout_bar= 999.9033m 10:p       = 999.9580m
+ +10:p_bar   =  10.1206u 10:s_bar   =  42.3102u 11:a_bar   =  26.6492u
+ +11:c_bar   = 999.9325m 11:cout_bar= 999.9033m 11:p       = 999.9580m
+ +11:p_bar   =  10.1206u 11:s_bar   =  42.3102u 12:a_bar   =  26.6492u
+ +12:c_bar   = 999.9325m 12:cout_bar= 999.9033m 12:p       = 999.9580m
+ +12:p_bar   =  10.1206u 12:s_bar   =  42.3102u 13:a_bar   =  26.6492u
+ +13:c_bar   = 999.9325m 13:cout_bar= 999.9033m 13:p       = 999.9580m
+ +13:p_bar   =  10.1206u 13:s_bar   =  42.3102u 14:a_bar   =  26.6492u
+ +14:c_bar   = 999.9325m 14:cout_bar= 999.9033m 14:p       = 999.9580m
+ +14:p_bar   =  10.1206u 14:s_bar   =  42.3102u 15:a_bar   =  26.6492u
+ +15:c_bar   = 999.9325m 15:cout_bar= 999.9033m 15:p       = 999.9580m
+ +15:p_bar   =  10.1206u 15:s_bar   =  42.3102u
+
+ ******
+ ************************* hspice rca modeling ***********************
+
+ ****** transient analysis tnom=  25.000 temp=  65.000 ******
+ tp_s7_fall=   1.0028n  targ=   2.5278n   trig=   1.5250n
+ tp_cout_rise=   1.0541n  targ=   2.5791n   trig=   1.5250n
+ tp_s7_rise= 992.1193p  targ=   4.0171n   trig=   3.0250n
+ tp_cout_fall=   1.0493n  targ=   4.0743n   trig=   3.0250n
+ tp_max=   1.0541n
+ tp_avg=   1.0246n
+ p_avg= 135.6389u  from=   0.             to=   8.5000n
+ p_max=   4.3729m    at=   7.5500n
+             from=   0.            to=   8.5000n
+ pdp= 142.9726f
+ i_avg=-115.7209u  from=   0.             to=   8.5000n
+ i_peak=  -1.6555m    at=   6.1193n
+             from=   0.            to=   8.5000n
+ **info** dc convergence successful at Newton-Raphson method 
+ ******  
+ ************************* hspice rca modeling ***********************
+
+ ****** operating point information tnom=  25.000 temp=  70.000 ******
+ ****** operating point status is voltage   simulation time is     0.     
+     node    =voltage       node    =voltage       node    =voltage
+
+ + 0:a0      =   1.0000   0:a1      =   1.0000   0:a2      =   1.0000 
+ + 0:a3      =   1.0000   0:a4      =   1.0000   0:a5      =   1.0000 
+ + 0:a6      =   1.0000   0:a7      =   1.0000   0:b0      =   0.     
+ + 0:b1      =   0.       0:b2      =   0.       0:b3      =   0.     
+ + 0:b4      =   0.       0:b5      =   0.       0:b6      =   0.     
+ + 0:b7      =   0.       0:cin     =   0.       0:cout    =   8.3668u
+ + 0:s0      = 999.9837m  0:s1      = 999.9836m  0:s2      = 999.9836m
+ + 0:s3      = 999.9836m  0:s4      = 999.9836m  0:s5      = 999.9836m
+ + 0:s6      = 999.9836m  0:s7      = 999.9836m  0:vdd     =   1.0000 
+ + 0:vss     =   0.       1:cmid    =  30.1424u  2:cmid    =  30.1424u
+ + 3:cmid    =  30.1424u  4:cmid    =  30.1424u  5:cmid    =  30.1424u
+ + 6:cmid    =  30.1424u  7:cmid    =  30.1424u  8:a_bar   =  31.5280u
+ + 8:c_bar   = 999.9217m  8:cout_bar= 999.8883m  8:p       = 999.9514m
+ + 8:p_bar   =  11.4781u  8:s_bar   =  18.4280u  9:a_bar   =  31.5280u
+ + 9:c_bar   = 999.9217m  9:cout_bar= 999.8883m  9:p       = 999.9514m
+ + 9:p_bar   =  11.4781u  9:s_bar   =  48.5627u 10:a_bar   =  31.5280u
+ +10:c_bar   = 999.9217m 10:cout_bar= 999.8883m 10:p       = 999.9514m
+ +10:p_bar   =  11.4781u 10:s_bar   =  48.5627u 11:a_bar   =  31.5280u
+ +11:c_bar   = 999.9217m 11:cout_bar= 999.8883m 11:p       = 999.9514m
+ +11:p_bar   =  11.4781u 11:s_bar   =  48.5627u 12:a_bar   =  31.5280u
+ +12:c_bar   = 999.9217m 12:cout_bar= 999.8883m 12:p       = 999.9514m
+ +12:p_bar   =  11.4781u 12:s_bar   =  48.5627u 13:a_bar   =  31.5280u
+ +13:c_bar   = 999.9217m 13:cout_bar= 999.8883m 13:p       = 999.9514m
+ +13:p_bar   =  11.4781u 13:s_bar   =  48.5627u 14:a_bar   =  31.5280u
+ +14:c_bar   = 999.9217m 14:cout_bar= 999.8883m 14:p       = 999.9514m
+ +14:p_bar   =  11.4781u 14:s_bar   =  48.5627u 15:a_bar   =  31.5280u
+ +15:c_bar   = 999.9217m 15:cout_bar= 999.8883m 15:p       = 999.9514m
+ +15:p_bar   =  11.4781u 15:s_bar   =  48.5627u
+
+ ******
+ ************************* hspice rca modeling ***********************
+
+ ****** transient analysis tnom=  25.000 temp=  70.000 ******
+ tp_s7_fall=   1.0119n  targ=   2.5369n   trig=   1.5250n
+ tp_cout_rise=   1.0638n  targ=   2.5888n   trig=   1.5250n
+ tp_s7_rise=   1.0007n  targ=   4.0257n   trig=   3.0250n
+ tp_cout_fall=   1.0583n  targ=   4.0833n   trig=   3.0250n
+ tp_max=   1.0638n
+ tp_avg=   1.0337n
+ p_avg= 136.5714u  from=   0.             to=   8.5000n
+ p_max=   4.3589m    at=   7.5500n
+             from=   0.            to=   8.5000n
+ pdp= 145.2861f
+ i_avg=-116.4795u  from=   0.             to=   8.5000n
+ i_peak=  -1.6450m    at=   6.1206n
+             from=   0.            to=   8.5000n
+ **info** dc convergence successful at Newton-Raphson method 
+ ******  
+ ************************* hspice rca modeling ***********************
+
+ ****** operating point information tnom=  25.000 temp=  75.000 ******
+ ****** operating point status is voltage   simulation time is     0.     
+     node    =voltage       node    =voltage       node    =voltage
+
+ + 0:a0      =   1.0000   0:a1      =   1.0000   0:a2      =   1.0000 
+ + 0:a3      =   1.0000   0:a4      =   1.0000   0:a5      =   1.0000 
+ + 0:a6      =   1.0000   0:a7      =   1.0000   0:b0      =   0.     
+ + 0:b1      =   0.       0:b2      =   0.       0:b3      =   0.     
+ + 0:b4      =   0.       0:b5      =   0.       0:b6      =   0.     
+ + 0:b7      =   0.       0:cin     =   0.       0:cout    =   9.7388u
+ + 0:s0      = 999.9811m  0:s1      = 999.9811m  0:s2      = 999.9811m
+ + 0:s3      = 999.9811m  0:s4      = 999.9811m  0:s5      = 999.9811m
+ + 0:s6      = 999.9811m  0:s7      = 999.9811m  0:vdd     =   1.0000 
+ + 0:vss     =   0.       1:cmid    =  34.4763u  2:cmid    =  34.4763u
+ + 3:cmid    =  34.4763u  4:cmid    =  34.4763u  5:cmid    =  34.4763u
+ + 6:cmid    =  34.4763u  7:cmid    =  34.4763u  8:a_bar   =  37.1796u
+ + 8:c_bar   = 999.9093m  8:cout_bar= 999.8710m  8:p       = 999.9439m
+ + 8:p_bar   =  13.0361u  8:s_bar   =  21.3158u  9:a_bar   =  37.1796u
+ + 9:c_bar   = 999.9093m  9:cout_bar= 999.8710m  9:p       = 999.9439m
+ + 9:p_bar   =  13.0361u  9:s_bar   =  55.7821u 10:a_bar   =  37.1796u
+ +10:c_bar   = 999.9093m 10:cout_bar= 999.8710m 10:p       = 999.9439m
+ +10:p_bar   =  13.0361u 10:s_bar   =  55.7821u 11:a_bar   =  37.1796u
+ +11:c_bar   = 999.9093m 11:cout_bar= 999.8710m 11:p       = 999.9439m
+ +11:p_bar   =  13.0361u 11:s_bar   =  55.7821u 12:a_bar   =  37.1796u
+ +12:c_bar   = 999.9093m 12:cout_bar= 999.8710m 12:p       = 999.9439m
+ +12:p_bar   =  13.0361u 12:s_bar   =  55.7821u 13:a_bar   =  37.1796u
+ +13:c_bar   = 999.9093m 13:cout_bar= 999.8710m 13:p       = 999.9439m
+ +13:p_bar   =  13.0361u 13:s_bar   =  55.7821u 14:a_bar   =  37.1796u
+ +14:c_bar   = 999.9093m 14:cout_bar= 999.8710m 14:p       = 999.9439m
+ +14:p_bar   =  13.0361u 14:s_bar   =  55.7821u 15:a_bar   =  37.1796u
+ +15:c_bar   = 999.9093m 15:cout_bar= 999.8710m 15:p       = 999.9439m
+ +15:p_bar   =  13.0361u 15:s_bar   =  55.7821u
+
+ ******
+ ************************* hspice rca modeling ***********************
+
+ ****** transient analysis tnom=  25.000 temp=  75.000 ******
+ tp_s7_fall=   1.0211n  targ=   2.5461n   trig=   1.5250n
+ tp_cout_rise=   1.0736n  targ=   2.5986n   trig=   1.5250n
+ tp_s7_rise=   1.0093n  targ=   4.0343n   trig=   3.0250n
+ tp_cout_fall=   1.0673n  targ=   4.0923n   trig=   3.0250n
+ tp_max=   1.0736n
+ tp_avg=   1.0428n
+ p_avg= 137.4842u  from=   0.             to=   8.5000n
+ p_max=   4.3444m    at=   7.5500n
+             from=   0.            to=   8.5000n
+ pdp= 147.6041f
+ i_avg=-117.2680u  from=   0.             to=   8.5000n
+ i_peak=  -1.6401m    at=   6.1208n
+             from=   0.            to=   8.5000n
+ **info** dc convergence successful at Newton-Raphson method 
+ ******  
+ ************************* hspice rca modeling ***********************
+
+ ****** operating point information tnom=  25.000 temp=  80.000 ******
+ ****** operating point status is voltage   simulation time is     0.     
+     node    =voltage       node    =voltage       node    =voltage
+
+ + 0:a0      =   1.0000   0:a1      =   1.0000   0:a2      =   1.0000 
+ + 0:a3      =   1.0000   0:a4      =   1.0000   0:a5      =   1.0000 
+ + 0:a6      =   1.0000   0:a7      =   1.0000   0:b0      =   0.     
+ + 0:b1      =   0.       0:b2      =   0.       0:b3      =   0.     
+ + 0:b4      =   0.       0:b5      =   0.       0:b6      =   0.     
+ + 0:b7      =   0.       0:cin     =   0.       0:cout    =  11.3261u
+ + 0:s0      = 999.9781m  0:s1      = 999.9781m  0:s2      = 999.9781m
+ + 0:s3      = 999.9781m  0:s4      = 999.9781m  0:s5      = 999.9781m
+ + 0:s6      = 999.9781m  0:s7      = 999.9781m  0:vdd     =   1.0000 
+ + 0:vss     =   0.       1:cmid    =  39.4616u  2:cmid    =  39.4616u
+ + 3:cmid    =  39.4616u  4:cmid    =  39.4616u  5:cmid    =  39.4616u
+ + 6:cmid    =  39.4616u  7:cmid    =  39.4616u  8:a_bar   =  43.6984u
+ + 8:c_bar   = 999.8952m  8:cout_bar= 999.8512m  8:p       = 999.9354m
+ + 8:p_bar   =  14.8180u  8:s_bar   =  24.6389u  9:a_bar   =  43.6984u
+ + 9:c_bar   = 999.8952m  9:cout_bar= 999.8512m  9:p       = 999.9354m
+ + 9:p_bar   =  14.8180u  9:s_bar   =  64.0872u 10:a_bar   =  43.6984u
+ +10:c_bar   = 999.8952m 10:cout_bar= 999.8512m 10:p       = 999.9354m
+ +10:p_bar   =  14.8180u 10:s_bar   =  64.0872u 11:a_bar   =  43.6984u
+ +11:c_bar   = 999.8952m 11:cout_bar= 999.8512m 11:p       = 999.9354m
+ +11:p_bar   =  14.8180u 11:s_bar   =  64.0872u 12:a_bar   =  43.6984u
+ +12:c_bar   = 999.8952m 12:cout_bar= 999.8512m 12:p       = 999.9354m
+ +12:p_bar   =  14.8180u 12:s_bar   =  64.0872u 13:a_bar   =  43.6984u
+ +13:c_bar   = 999.8952m 13:cout_bar= 999.8512m 13:p       = 999.9354m
+ +13:p_bar   =  14.8180u 13:s_bar   =  64.0872u 14:a_bar   =  43.6984u
+ +14:c_bar   = 999.8952m 14:cout_bar= 999.8512m 14:p       = 999.9354m
+ +14:p_bar   =  14.8180u 14:s_bar   =  64.0872u 15:a_bar   =  43.6984u
+ +15:c_bar   = 999.8952m 15:cout_bar= 999.8512m 15:p       = 999.9354m
+ +15:p_bar   =  14.8180u 15:s_bar   =  64.0872u
+
+ ******
+ ************************* hspice rca modeling ***********************
+
+ ****** transient analysis tnom=  25.000 temp=  80.000 ******
+ tp_s7_fall=   1.0303n  targ=   2.5553n   trig=   1.5250n
+ tp_cout_rise=   1.0834n  targ=   2.6084n   trig=   1.5250n
+ tp_s7_rise=   1.0180n  targ=   4.0430n   trig=   3.0250n
+ tp_cout_fall=   1.0764n  targ=   4.1014n   trig=   3.0250n
+ tp_max=   1.0834n
+ tp_avg=   1.0520n
+ p_avg= 138.4470u  from=   0.             to=   8.5000n
+ p_max=   4.3300m    at=   7.5500n
+             from=   0.            to=   8.5000n
+ pdp= 149.9972f
+ i_avg=-118.0673u  from=   0.             to=   8.5000n
+ i_peak=  -1.6362m    at=   6.1204n
+             from=   0.            to=   8.5000n
+ **info** dc convergence successful at Newton-Raphson method 
+ ******  
+ ************************* hspice rca modeling ***********************
+
+ ****** operating point information tnom=  25.000 temp=  85.000 ******
+ ****** operating point status is voltage   simulation time is     0.     
+     node    =voltage       node    =voltage       node    =voltage
+
+ + 0:a0      =   1.0000   0:a1      =   1.0000   0:a2      =   1.0000 
+ + 0:a3      =   1.0000   0:a4      =   1.0000   0:a5      =   1.0000 
+ + 0:a6      =   1.0000   0:a7      =   1.0000   0:b0      =   0.     
+ + 0:b1      =   0.       0:b2      =   0.       0:b3      =   0.     
+ + 0:b4      =   0.       0:b5      =   0.       0:b6      =   0.     
+ + 0:b7      =   0.       0:cin     =   0.       0:cout    =  13.1556u
+ + 0:s0      = 999.9748m  0:s1      = 999.9748m  0:s2      = 999.9748m
+ + 0:s3      = 999.9748m  0:s4      = 999.9748m  0:s5      = 999.9748m
+ + 0:s6      = 999.9748m  0:s7      = 999.9748m  0:vdd     =   1.0000 
+ + 0:vss     =   0.       1:cmid    =  45.1762u  2:cmid    =  45.1762u
+ + 3:cmid    =  45.1762u  4:cmid    =  45.1762u  5:cmid    =  45.1762u
+ + 6:cmid    =  45.1762u  7:cmid    =  45.1762u  8:a_bar   =  51.1865u
+ + 8:c_bar   = 999.8791m  8:cout_bar= 999.8287m  8:p       = 999.9256m
+ + 8:p_bar   =  16.8492u  8:s_bar   =  28.4485u  9:a_bar   =  51.1865u
+ + 9:c_bar   = 999.8791m  9:cout_bar= 999.8287m  9:p       = 999.9257m
+ + 9:p_bar   =  16.8492u  9:s_bar   =  73.6072u 10:a_bar   =  51.1865u
+ +10:c_bar   = 999.8791m 10:cout_bar= 999.8287m 10:p       = 999.9257m
+ +10:p_bar   =  16.8492u 10:s_bar   =  73.6072u 11:a_bar   =  51.1865u
+ +11:c_bar   = 999.8791m 11:cout_bar= 999.8287m 11:p       = 999.9257m
+ +11:p_bar   =  16.8492u 11:s_bar   =  73.6072u 12:a_bar   =  51.1865u
+ +12:c_bar   = 999.8791m 12:cout_bar= 999.8287m 12:p       = 999.9257m
+ +12:p_bar   =  16.8492u 12:s_bar   =  73.6072u 13:a_bar   =  51.1865u
+ +13:c_bar   = 999.8791m 13:cout_bar= 999.8287m 13:p       = 999.9257m
+ +13:p_bar   =  16.8492u 13:s_bar   =  73.6072u 14:a_bar   =  51.1865u
+ +14:c_bar   = 999.8791m 14:cout_bar= 999.8287m 14:p       = 999.9257m
+ +14:p_bar   =  16.8492u 14:s_bar   =  73.6072u 15:a_bar   =  51.1865u
+ +15:c_bar   = 999.8791m 15:cout_bar= 999.8287m 15:p       = 999.9257m
+ +15:p_bar   =  16.8492u 15:s_bar   =  73.6072u
+
+ ******
+ ************************* hspice rca modeling ***********************
+
+ ****** transient analysis tnom=  25.000 temp=  85.000 ******
+ tp_s7_fall=   1.0397n  targ=   2.5647n   trig=   1.5250n
+ tp_cout_rise=   1.0933n  targ=   2.6183n   trig=   1.5250n
+ tp_s7_rise=   1.0267n  targ=   4.0517n   trig=   3.0250n
+ tp_cout_fall=   1.0856n  targ=   4.1106n   trig=   3.0250n
+ tp_max=   1.0933n
+ tp_avg=   1.0613n
+ p_avg= 139.4181u  from=   0.             to=   8.5000n
+ p_max=   4.3157m    at=   7.5500n
+             from=   0.            to=   8.5000n
+ pdp= 152.4322f
+ i_avg=-118.8880u  from=   0.             to=   8.5000n
+ i_peak=  -1.6309m    at=   6.1220n
+             from=   0.            to=   8.5000n
+ **info** dc convergence successful at Newton-Raphson method 
+ ******  
+ ************************* hspice rca modeling ***********************
+
+ ****** operating point information tnom=  25.000 temp=  90.000 ******
+ ****** operating point status is voltage   simulation time is     0.     
+     node    =voltage       node    =voltage       node    =voltage
+
+ + 0:a0      =   1.0000   0:a1      =   1.0000   0:a2      =   1.0000 
+ + 0:a3      =   1.0000   0:a4      =   1.0000   0:a5      =   1.0000 
+ + 0:a6      =   1.0000   0:a7      =   1.0000   0:b0      =   0.     
+ + 0:b1      =   0.       0:b2      =   0.       0:b3      =   0.     
+ + 0:b4      =   0.       0:b5      =   0.       0:b6      =   0.     
+ + 0:b7      =   0.       0:cin     =   0.       0:cout    =  15.2566u
+ + 0:s0      = 999.9710m  0:s1      = 999.9710m  0:s2      = 999.9710m
+ + 0:s3      = 999.9710m  0:s4      = 999.9710m  0:s5      = 999.9710m
+ + 0:s6      = 999.9710m  0:s7      = 999.9710m  0:vdd     =   1.0000 
+ + 0:vss     =   0.       1:cmid    =  51.7046u  2:cmid    =  51.7046u
+ + 3:cmid    =  51.7046u  4:cmid    =  51.7046u  5:cmid    =  51.7046u
+ + 6:cmid    =  51.7046u  7:cmid    =  51.7046u  8:a_bar   =  59.7539u
+ + 8:c_bar   = 999.8608m  8:cout_bar= 999.8032m  8:p       = 999.9146m
+ + 8:p_bar   =  19.1569u  8:s_bar   =  32.8000u  9:a_bar   =  59.7539u
+ + 9:c_bar   = 999.8609m  9:cout_bar= 999.8032m  9:p       = 999.9146m
+ + 9:p_bar   =  19.1569u  9:s_bar   =  84.4815u 10:a_bar   =  59.7539u
+ +10:c_bar   = 999.8609m 10:cout_bar= 999.8032m 10:p       = 999.9146m
+ +10:p_bar   =  19.1569u 10:s_bar   =  84.4815u 11:a_bar   =  59.7539u
+ +11:c_bar   = 999.8609m 11:cout_bar= 999.8032m 11:p       = 999.9146m
+ +11:p_bar   =  19.1569u 11:s_bar   =  84.4815u 12:a_bar   =  59.7539u
+ +12:c_bar   = 999.8609m 12:cout_bar= 999.8032m 12:p       = 999.9146m
+ +12:p_bar   =  19.1569u 12:s_bar   =  84.4815u 13:a_bar   =  59.7539u
+ +13:c_bar   = 999.8609m 13:cout_bar= 999.8032m 13:p       = 999.9146m
+ +13:p_bar   =  19.1569u 13:s_bar   =  84.4815u 14:a_bar   =  59.7539u
+ +14:c_bar   = 999.8609m 14:cout_bar= 999.8032m 14:p       = 999.9146m
+ +14:p_bar   =  19.1569u 14:s_bar   =  84.4815u 15:a_bar   =  59.7539u
+ +15:c_bar   = 999.8609m 15:cout_bar= 999.8032m 15:p       = 999.9146m
+ +15:p_bar   =  19.1569u 15:s_bar   =  84.4815u
+
+ ******
+ ************************* hspice rca modeling ***********************
+
+ ****** transient analysis tnom=  25.000 temp=  90.000 ******
+ tp_s7_fall=   1.0490n  targ=   2.5740n   trig=   1.5250n
+ tp_cout_rise=   1.1033n  targ=   2.6283n   trig=   1.5250n
+ tp_s7_rise=   1.0355n  targ=   4.0605n   trig=   3.0250n
+ tp_cout_fall=   1.0948n  targ=   4.1198n   trig=   3.0250n
+ tp_max=   1.1033n
+ tp_avg=   1.0707n
+ p_avg= 140.4037u  from=   0.             to=   8.5000n
+ p_max=   4.3009m    at=   7.5500n
+             from=   0.            to=   8.5000n
+ pdp= 154.9097f
+ i_avg=-119.7325u  from=   0.             to=   8.5000n
+ i_peak=  -1.6269m    at=   6.1230n
+             from=   0.            to=   8.5000n
+
+          ***** job concluded
+ ******  
+ ************************* hspice rca modeling ***********************
+
+ ****** job statistics summary tnom=  25.000 temp=  90.000 ******
+
+  ******  HSPICE Threads Information  ******
+
+  Command Line Threads Count :     1
+  Available CPU Count        :    16
+  Actual Threads Count       :     1
+
+
+  ******  Circuit Statistics  ******
+  # nodes       =      84 # elements   =     211
+  # resistors   =       0 # capacitors =       0 # inductors   =       0
+  # mutual_inds =       0 # vccs       =       0 # vcvs        =       0
+  # cccs        =       0 # ccvs       =       0 # volt_srcs   =       3
+  # curr_srcs   =       0 # diodes     =       0 # bjts        =       0
+  # jfets       =       0 # mosfets    =     192 # U elements  =       0
+  # T elements  =       0 # W elements =       0 # B elements  =       0
+  # S elements  =       0 # P elements =       0 # va device   =       0
+  # vector_srcs =      16 # N elements =       0
+
+
+  ******  Runtime Statistics (seconds)  ******
+
+  analysis           time    # points   tot. iter  conv.iter
+  op point           0.09           1         275
+  transient          8.15       85001       62483       22297 rev=      2032
+  readin             0.13
+  errchk             0.04
+  setup              0.00
+  output             0.00
+
+
+           peak memory used         74.17 megabytes
+           total cpu time            8.59 seconds
+           total elapsed time        8.64 seconds
+           job started at     01:22:07 06/06/2026
+           job ended   at     01:22:16 06/06/2026
+           job total runtime         8.64 seconds
+
+
+  lic: Release hspice token(s) 
+ lic: total license checkout elapse time:        0.03(s)

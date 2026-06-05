@@ -1,0 +1,369 @@
+ ****** HSPICE -- P-2019.06-SP1-1 win64 (Sep 27 2019) ******                    
+  Copyright (c) 1986 - 2026 by Synopsys, Inc. All Rights Reserved.              
+  This software and the associated documentation are proprietary
+  to Synopsys, Inc. This software may only be used in accordance
+  with the terms and conditions of a written license agreement with
+  Synopsys, Inc. All other use, reproduction, or distribution of
+  this software is strictly prohibited.
+  Input File: sim.sp                                                            
+  Command line options: C:\synopsys\Hspice_P-2019.06-SP1-1\WIN64\hspice.com -i sim.sp -o D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\RCA\power\static\sim.lis
+  Start time: Fri Jun  5 18:30:58 2026
+  lic:  
+  lic: FLEXlm: SDK_12.3 
+  lic: USER:   Mohammad-Khohsroo    HOSTNAME: DESKTOP-GMQQFUO 
+  lic: HOSTID: "d03957231987"       PID:      8336 
+  lic: Using FLEXlm license file: 
+  lic: 27000@DESKTOP-GMQQFUO 
+  lic: Checkout 1 hspice 
+  lic: License/Maintenance for hspice will expire on 30-dec-2030/2020.12 
+  lic: 1(in_use)/99(total) FLOATING license(s) on SERVER 27000@DESKTOP-GMQQFUO 
+  lic:   
+1****** HSPICE -- P-2019.06-SP1-1 win64 (Sep 27 2019) ******                    
+ ******  
+ ******************** hspice basic gates modeling ********************
+
+ ****** circuit name directory
+ circuit number to circuit name directory
+   number circuitname                     definition         multiplier
+        0 main circuit
+        1 xrca.                           rca8               1.00 
+        2 xrca.xrca_l.                    rca4               1.00 
+        3 xrca.xrca_h.                    rca4               1.00 
+        4 xrca.xrca_l.xrca_l.             rca2               1.00 
+        5 xrca.xrca_l.xrca_h.             rca2               1.00 
+        6 xrca.xrca_h.xrca_l.             rca2               1.00 
+        7 xrca.xrca_h.xrca_h.             rca2               1.00 
+        8 xrca.xrca_l.xrca_l.xfa_l.       fa_t               1.00 
+        9 xrca.xrca_l.xrca_l.xfa_h.       fa_t               1.00 
+       10 xrca.xrca_l.xrca_h.xfa_l.       fa_t               1.00 
+       11 xrca.xrca_l.xrca_h.xfa_h.       fa_t               1.00 
+       12 xrca.xrca_h.xrca_l.xfa_l.       fa_t               1.00 
+       13 xrca.xrca_h.xrca_l.xfa_h.       fa_t               1.00 
+       14 xrca.xrca_h.xrca_h.xfa_l.       fa_t               1.00 
+       15 xrca.xrca_h.xrca_h.xfa_h.       fa_t               1.00 
+       16 xrca.xrca_l.xrca_l.xfa_l.xinva. inv                1.00 
+       17 xrca.xrca_l.xrca_l.xfa_l.xinvc. inv                1.00 
+       18 xrca.xrca_l.xrca_l.xfa_l.xtg_p. tg                 1.00 
+       19 xrca.xrca_l.xrca_l.xfa_l.xtg_pb.
+                                            tg                 1.00 
+       20 xrca.xrca_l.xrca_l.xfa_l.xtg_s1.
+                                            tg                 1.00 
+       21 xrca.xrca_l.xrca_l.xfa_l.xtg_s2.
+                                            tg                 1.00 
+       22 xrca.xrca_l.xrca_l.xfa_l.xtg_c1.
+                                            tg                 1.00 
+       23 xrca.xrca_l.xrca_l.xfa_l.xtg_c2.
+                                            tg                 1.00 
+       24 xrca.xrca_l.xrca_l.xfa_l.xinvs. inv                1.00 
+       25 xrca.xrca_l.xrca_l.xfa_l.xinvco.
+                                            inv                1.00 
+       26 xrca.xrca_l.xrca_l.xfa_h.xinva. inv                1.00 
+       27 xrca.xrca_l.xrca_l.xfa_h.xinvc. inv                1.00 
+       28 xrca.xrca_l.xrca_l.xfa_h.xtg_p. tg                 1.00 
+       29 xrca.xrca_l.xrca_l.xfa_h.xtg_pb.
+                                            tg                 1.00 
+       30 xrca.xrca_l.xrca_l.xfa_h.xtg_s1.
+                                            tg                 1.00 
+       31 xrca.xrca_l.xrca_l.xfa_h.xtg_s2.
+                                            tg                 1.00 
+       32 xrca.xrca_l.xrca_l.xfa_h.xtg_c1.
+                                            tg                 1.00 
+       33 xrca.xrca_l.xrca_l.xfa_h.xtg_c2.
+                                            tg                 1.00 
+       34 xrca.xrca_l.xrca_l.xfa_h.xinvs. inv                1.00 
+       35 xrca.xrca_l.xrca_l.xfa_h.xinvco.
+                                            inv                1.00 
+       36 xrca.xrca_l.xrca_h.xfa_l.xinva. inv                1.00 
+       37 xrca.xrca_l.xrca_h.xfa_l.xinvc. inv                1.00 
+       38 xrca.xrca_l.xrca_h.xfa_l.xtg_p. tg                 1.00 
+       39 xrca.xrca_l.xrca_h.xfa_l.xtg_pb.
+                                            tg                 1.00 
+       40 xrca.xrca_l.xrca_h.xfa_l.xtg_s1.
+                                            tg                 1.00 
+       41 xrca.xrca_l.xrca_h.xfa_l.xtg_s2.
+                                            tg                 1.00 
+       42 xrca.xrca_l.xrca_h.xfa_l.xtg_c1.
+                                            tg                 1.00 
+       43 xrca.xrca_l.xrca_h.xfa_l.xtg_c2.
+                                            tg                 1.00 
+       44 xrca.xrca_l.xrca_h.xfa_l.xinvs. inv                1.00 
+       45 xrca.xrca_l.xrca_h.xfa_l.xinvco.
+                                            inv                1.00 
+       46 xrca.xrca_l.xrca_h.xfa_h.xinva. inv                1.00 
+       47 xrca.xrca_l.xrca_h.xfa_h.xinvc. inv                1.00 
+       48 xrca.xrca_l.xrca_h.xfa_h.xtg_p. tg                 1.00 
+       49 xrca.xrca_l.xrca_h.xfa_h.xtg_pb.
+                                            tg                 1.00 
+       50 xrca.xrca_l.xrca_h.xfa_h.xtg_s1.
+                                            tg                 1.00 
+       51 xrca.xrca_l.xrca_h.xfa_h.xtg_s2.
+                                            tg                 1.00 
+       52 xrca.xrca_l.xrca_h.xfa_h.xtg_c1.
+                                            tg                 1.00 
+       53 xrca.xrca_l.xrca_h.xfa_h.xtg_c2.
+                                            tg                 1.00 
+       54 xrca.xrca_l.xrca_h.xfa_h.xinvs. inv                1.00 
+       55 xrca.xrca_l.xrca_h.xfa_h.xinvco.
+                                            inv                1.00 
+       56 xrca.xrca_h.xrca_l.xfa_l.xinva. inv                1.00 
+       57 xrca.xrca_h.xrca_l.xfa_l.xinvc. inv                1.00 
+       58 xrca.xrca_h.xrca_l.xfa_l.xtg_p. tg                 1.00 
+       59 xrca.xrca_h.xrca_l.xfa_l.xtg_pb.
+                                            tg                 1.00 
+       60 xrca.xrca_h.xrca_l.xfa_l.xtg_s1.
+                                            tg                 1.00 
+       61 xrca.xrca_h.xrca_l.xfa_l.xtg_s2.
+                                            tg                 1.00 
+       62 xrca.xrca_h.xrca_l.xfa_l.xtg_c1.
+                                            tg                 1.00 
+       63 xrca.xrca_h.xrca_l.xfa_l.xtg_c2.
+                                            tg                 1.00 
+       64 xrca.xrca_h.xrca_l.xfa_l.xinvs. inv                1.00 
+       65 xrca.xrca_h.xrca_l.xfa_l.xinvco.
+                                            inv                1.00 
+       66 xrca.xrca_h.xrca_l.xfa_h.xinva. inv                1.00 
+       67 xrca.xrca_h.xrca_l.xfa_h.xinvc. inv                1.00 
+       68 xrca.xrca_h.xrca_l.xfa_h.xtg_p. tg                 1.00 
+       69 xrca.xrca_h.xrca_l.xfa_h.xtg_pb.
+                                            tg                 1.00 
+       70 xrca.xrca_h.xrca_l.xfa_h.xtg_s1.
+                                            tg                 1.00 
+       71 xrca.xrca_h.xrca_l.xfa_h.xtg_s2.
+                                            tg                 1.00 
+       72 xrca.xrca_h.xrca_l.xfa_h.xtg_c1.
+                                            tg                 1.00 
+       73 xrca.xrca_h.xrca_l.xfa_h.xtg_c2.
+                                            tg                 1.00 
+       74 xrca.xrca_h.xrca_l.xfa_h.xinvs. inv                1.00 
+       75 xrca.xrca_h.xrca_l.xfa_h.xinvco.
+                                            inv                1.00 
+       76 xrca.xrca_h.xrca_h.xfa_l.xinva. inv                1.00 
+       77 xrca.xrca_h.xrca_h.xfa_l.xinvc. inv                1.00 
+       78 xrca.xrca_h.xrca_h.xfa_l.xtg_p. tg                 1.00 
+       79 xrca.xrca_h.xrca_h.xfa_l.xtg_pb.
+                                            tg                 1.00 
+       80 xrca.xrca_h.xrca_h.xfa_l.xtg_s1.
+                                            tg                 1.00 
+       81 xrca.xrca_h.xrca_h.xfa_l.xtg_s2.
+                                            tg                 1.00 
+       82 xrca.xrca_h.xrca_h.xfa_l.xtg_c1.
+                                            tg                 1.00 
+       83 xrca.xrca_h.xrca_h.xfa_l.xtg_c2.
+                                            tg                 1.00 
+       84 xrca.xrca_h.xrca_h.xfa_l.xinvs. inv                1.00 
+       85 xrca.xrca_h.xrca_h.xfa_l.xinvco.
+                                            inv                1.00 
+       86 xrca.xrca_h.xrca_h.xfa_h.xinva. inv                1.00 
+       87 xrca.xrca_h.xrca_h.xfa_h.xinvc. inv                1.00 
+       88 xrca.xrca_h.xrca_h.xfa_h.xtg_p. tg                 1.00 
+       89 xrca.xrca_h.xrca_h.xfa_h.xtg_pb.
+                                            tg                 1.00 
+       90 xrca.xrca_h.xrca_h.xfa_h.xtg_s1.
+                                            tg                 1.00 
+       91 xrca.xrca_h.xrca_h.xfa_h.xtg_s2.
+                                            tg                 1.00 
+       92 xrca.xrca_h.xrca_h.xfa_h.xtg_c1.
+                                            tg                 1.00 
+       93 xrca.xrca_h.xrca_h.xfa_h.xtg_c2.
+                                            tg                 1.00 
+       94 xrca.xrca_h.xrca_h.xfa_h.xinvs. inv                1.00 
+       95 xrca.xrca_h.xrca_h.xfa_h.xinvco.
+                                            inv                1.00 
+  
+      
+ **info** set option symb=1 internally to help for convergence.
+ *****************************************************************
+ ******  option summary
+ ******
+ runlvl  = 3         bypass  = 2.0000    
+  Opening plot unit= 79
+ file=D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\RCA\power\static\sim.pa0
+
+ **info** dc convergence successful at GMINDC ramping method 
+ ******  
+ ******************** hspice basic gates modeling ********************
+
+ ****** operating point information tnom=  25.000 temp=  25.000 ******
+ ****** operating point status is voltage   simulation time is     0.     
+     node    =voltage       node    =voltage       node    =voltage
+
+ + 0:a0      =   0.       0:a1      =   1.0000   0:a2      =   1.0000 
+ + 0:a3      =   0.       0:a4      =   0.       0:a5      =   0.     
+ + 0:a6      =   1.0000   0:a7      =   0.       0:b0      =   1.0000 
+ + 0:b1      =   0.       0:b2      =   1.0000   0:b3      =   1.0000 
+ + 0:b4      =   1.0000   0:b5      =   0.       0:b6      =   0.     
+ + 0:b7      =   1.0000   0:cin     =   0.       0:cout    =   2.3012u
+ + 0:s0      = 999.9957m  0:s1      = 999.9957m  0:s2      =   2.3015u
+ + 0:s3      =   2.3014u  0:s4      =   2.3014u  0:s5      = 999.9957m
+ + 0:s6      = 999.9957m  0:s7      = 999.9957m  0:vdd     =   1.0000 
+ + 0:vss     =   0.       1:cmid    = 999.9794m  2:cmid    =   6.7171u
+ + 3:cmid    =  10.4134u  4:cmid    =  10.4124u  5:cmid    = 999.9794m
+ + 6:cmid    = 999.9866m  7:cmid    =  10.4128u  8:a_bar   = 999.9928m
+ + 8:c_bar   = 999.9833m  8:cout_bar= 999.9773m  8:p       = 999.9923m
+ + 8:p_bar   =   7.0282u  8:s_bar   =   5.3851u  9:a_bar   =   6.4423u
+ + 9:c_bar   = 999.9787m  9:cout_bar= 999.9682m  9:p       = 999.9861m
+ + 9:p_bar   =   4.2107u  9:s_bar   =  15.7968u 10:a_bar   =  19.5836u
+ +10:c_bar   = 999.9787m 10:cout_bar=  24.9683u 10:p       =  26.4553u
+ +10:p_bar   = 999.9918m 10:s_bar   = 999.9682m 11:a_bar   = 999.9883m
+ +11:c_bar   =  11.3132u 11:cout_bar=  16.6979u 11:p       = 999.9918m
+ +11:p_bar   =   6.8719u 11:s_bar   = 999.9688m 12:a_bar   = 999.9883m
+ +12:c_bar   =  11.3132u 12:cout_bar=  16.6980u 12:p       = 999.9918m
+ +12:p_bar   =   6.8719u 12:s_bar   = 999.9688m 13:a_bar   = 999.9612m
+ +13:c_bar   =  11.3145u 13:cout_bar= 999.9506m 13:p       =   4.2106u
+ +13:p_bar   = 999.9473m 13:s_bar   =  16.7005u 14:a_bar   =   6.4423u
+ +14:c_bar   = 999.9787m 14:cout_bar= 999.9682m 14:p       = 999.9861m
+ +14:p_bar   =   4.2107u 14:s_bar   =  15.7978u 15:a_bar   = 999.9928m
+ +15:c_bar   = 999.9833m 15:cout_bar= 999.9773m 15:p       = 999.9923m
+ +15:p_bar   =   7.0282u 15:s_bar   =  15.7974u
+
+ ******
+ ******************** hspice basic gates modeling ********************
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+ p_static_0= 402.1115n  from=   1.0000n     to=   1.3000n
+ p_static_1= 383.8172n  from=   2.3000n     to=   2.6000n
+ p_static_2= 395.9554n  from=   3.6000n     to=   3.9000n
+ p_static_3= 394.2086n  from=   4.9000n     to=   5.2000n
+ p_static_4= 392.9730n  from=   6.2000n     to=   6.5000n
+ p_static_5= 406.0636n  from=   7.5000n     to=   7.8000n
+ p_static_6= 397.1947n  from=   8.8000n     to=   9.1000n
+ p_static_7= 393.2302n  from=  10.1000n     to=  10.4000n
+ p_static_8= 388.5345n  from=  11.4000n     to=  11.7000n
+ p_static_9= 400.4138n  from=  12.7000n     to=  13.0000n
+ p_static_10= 387.5375n  from=  14.0000n     to=  14.3000n
+ p_static_11= 404.6071n  from=  15.3000n     to=  15.6000n
+ p_static_12= 402.8816n  from=  16.6000n     to=  16.9000n
+ p_static_13= 397.9294n  from=  17.9000n     to=  18.2000n
+ p_static_14= 393.2179n  from=  19.2000n     to=  19.5000n
+ p_static_15= 392.7253n  from=  20.5000n     to=  20.8000n
+ p_static_16= 393.7346n  from=  21.8000n     to=  22.1000n
+ p_static_17= 391.2533n  from=  23.1000n     to=  23.4000n
+ p_static_18= 402.1290n  from=  24.4000n     to=  24.7000n
+ p_static_19= 396.9413n  from=  25.7000n     to=  26.0000n
+ p_static_20= 389.5373n  from=  27.0000n     to=  27.3000n
+ p_static_21= 395.7009n  from=  28.3000n     to=  28.6000n
+ p_static_22= 386.2966n  from=  29.6000n     to=  29.9000n
+ p_static_23= 399.6704n  from=  30.9000n     to=  31.2000n
+ p_static_24= 392.2410n  from=  32.2000n     to=  32.5000n
+ p_static_25= 401.3963n  from=  33.5000n     to=  33.8000n
+ p_static_26= 379.6290n  from=  34.8000n     to=  35.1000n
+ p_static_27= 400.3830n  from=  36.1000n     to=  36.4000n
+ p_static_28= 390.7715n  from=  37.4000n     to=  37.7000n
+ p_static_29= 394.2378n  from=  38.7000n     to=  39.0000n
+ p_static_30= 399.3918n  from=  40.0000n     to=  40.3000n
+ p_static_31= 403.1372n  from=  41.3000n     to=  41.6000n
+ p_static_32= 395.0616n  from=  42.6000n     to=  42.9000n
+ p_static_33= 399.6438n  from=  43.9000n     to=  44.2000n
+ p_static_34= 395.7102n  from=  45.2000n     to=  45.5000n
+ p_static_35= 389.0335n  from=  46.5000n     to=  46.8000n
+ p_static_36= 391.5052n  from=  47.8000n     to=  48.1000n
+ p_static_37= 392.7485n  from=  49.1000n     to=  49.4000n
+ p_static_38= 389.2516n  from=  50.4000n     to=  50.7000n
+ p_static_39= 392.4871n  from=  51.7000n     to=  52.0000n
+ p_static_40= 391.7364n  from=  53.0000n     to=  53.3000n
+ p_static_41= 397.6789n  from=  54.3000n     to=  54.6000n
+ p_static_42= 397.9341n  from=  55.6000n     to=  55.9000n
+ p_static_43= 402.8805n  from=  56.9000n     to=  57.2000n
+ p_static_44= 401.1417n  from=  58.2000n     to=  58.5000n
+ p_static_45= 392.9715n  from=  59.5000n     to=  59.8000n
+ p_static_46= 390.9976n  from=  60.8000n     to=  61.1000n
+ p_static_47= 393.9835n  from=  62.1000n     to=  62.4000n
+ p_static_48= 398.9545n  from=  63.4000n     to=  63.7000n
+ p_static_49= 395.4577n  from=  64.7000n     to=  65.0000n
+ p_static_50= 400.1501n  from=  66.0000n     to=  66.3000n
+ p_static_51= 397.6952n  from=  67.3000n     to=  67.6000n
+ p_static_52= 393.7021n  from=  68.6000n     to=  68.9000n
+ p_static_53= 386.0435n  from=  69.9000n     to=  70.2000n
+ p_static_54= 398.6911n  from=  71.2000n     to=  71.5000n
+ p_static_55= 393.9956n  from=  72.5000n     to=  72.8000n
+ p_static_56= 399.8995n  from=  73.8000n     to=  74.1000n
+ p_static_57= 384.0739n  from=  75.1000n     to=  75.4000n
+ p_static_58= 393.4830n  from=  76.4000n     to=  76.7000n
+ p_static_59= 398.6875n  from=  77.7000n     to=  78.0000n
+ p_static_60= 399.9248n  from=  79.0000n     to=  79.3000n
+ p_static_61= 397.4256n  from=  80.3000n     to=  80.6000n
+ p_static_62= 396.9474n  from=  81.6000n     to=  81.9000n
+ p_static_63= 393.4763n  from=  82.9000n     to=  83.2000n
+ p_static_64= 402.4191n  from=  84.2000n     to=  84.5000n
+ p_static_65= 396.4302n  from=  85.5000n     to=  85.8000n
+ p_static_66= 386.5602n  from=  86.8000n     to=  87.1000n
+ p_static_67= 389.2836n  from=  88.1000n     to=  88.4000n
+ p_static_68= 399.4235n  from=  89.4000n     to=  89.7000n
+ p_static_69= 398.6847n  from=  90.7000n     to=  91.0000n
+ p_static_70= 397.4191n  from=  92.0000n     to=  92.3000n
+ p_static_71= 398.4379n  from=  93.3000n     to=  93.6000n
+ p_static_72= 394.7213n  from=  94.6000n     to=  94.9000n
+ p_static_73= 389.3819n  from=  95.9000n     to=  96.2000n
+ p_static_74= 395.7018n  from=  97.2000n     to=  97.5000n
+ p_static_75= 399.9143n  from=  98.5000n     to=  98.8000n
+ p_static_76= 398.6568n  from=  99.8000n     to= 100.1000n
+ p_static_77= 398.4320n  from= 101.1000n     to= 101.4000n
+ p_static_78= 396.6912n  from= 102.4000n     to= 102.7000n
+ p_static_79= 390.2668n  from= 103.7000n     to= 104.0000n
+ p_static_80= 390.2661n  from= 105.0000n     to= 105.3000n
+ p_static_81= 393.7323n  from= 106.3000n     to= 106.6000n
+ p_static_82= 394.2359n  from= 107.6000n     to= 107.9000n
+ p_static_83= 398.4288n  from= 108.9000n     to= 109.2000n
+ p_static_84= 395.2303n  from= 110.2000n     to= 110.5000n
+ p_static_85= 396.2153n  from= 111.5000n     to= 111.8000n
+ p_static_86= 399.1411n  from= 112.8000n     to= 113.1000n
+ p_static_87= 396.2100n  from= 114.1000n     to= 114.4000n
+ p_static_88= 395.1972n  from= 115.4000n     to= 115.7000n
+ p_static_89= 397.6858n  from= 116.7000n     to= 117.0000n
+ p_static_90= 393.2228n  from= 118.0000n     to= 118.3000n
+ p_static_91= 393.2321n  from= 119.3000n     to= 119.6000n
+ p_static_92= 394.2356n  from= 120.6000n     to= 120.9000n
+ p_static_93= 400.1464n  from= 121.9000n     to= 122.2000n
+ p_static_94= 396.9371n  from= 123.2000n     to= 123.5000n
+ p_static_95= 391.7559n  from= 124.5000n     to= 124.8000n
+ p_static_96= 393.7080n  from= 125.8000n     to= 126.1000n
+ p_static_97= 401.8766n  from= 127.1000n     to= 127.4000n
+ p_static_98= 397.9332n  from= 128.4000n     to= 128.7000n
+ p_static_99= 400.4124n  from= 129.7000n     to= 130.0000n
+
+          ***** job concluded
+ ******  
+ ******************** hspice basic gates modeling ********************
+
+ ****** job statistics summary tnom=  25.000 temp=  25.000 ******
+
+  ******  HSPICE Threads Information  ******
+
+  Command Line Threads Count :     1
+  Available CPU Count        :    16
+  Actual Threads Count       :     1
+
+
+  ******  Circuit Statistics  ******
+  # nodes       =      84 # elements   =     220
+  # resistors   =       0 # capacitors =       0 # inductors   =       0
+  # mutual_inds =       0 # vccs       =       0 # vcvs        =       0
+  # cccs        =       0 # ccvs       =       0 # volt_srcs   =       2
+  # curr_srcs   =       0 # diodes     =       0 # bjts        =       0
+  # jfets       =       0 # mosfets    =     192 # U elements  =       0
+  # T elements  =       0 # W elements =       0 # B elements  =       0
+  # S elements  =       0 # P elements =       0 # va device   =       0
+  # vector_srcs =      26 # N elements =       0
+
+
+  ******  Runtime Statistics (seconds)  ******
+
+  analysis           time    # points   tot. iter  conv.iter
+  op point           0.08           1         124
+  transient          3.65      130001       19029        6623 rev=       100
+  readin             0.11
+  errchk             0.01
+  setup              0.00
+  output             0.00
+
+
+           peak memory used         74.42 megabytes
+           total cpu time            3.85 seconds
+           total elapsed time        3.88 seconds
+           job started at     18:30:58 06/05/2026
+           job ended   at     18:31:02 06/05/2026
+           job total runtime         3.88 seconds
+
+
+  lic: Release hspice token(s) 
+ lic: total license checkout elapse time:        0.02(s)

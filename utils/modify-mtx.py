@@ -8,7 +8,7 @@ import logging
 # CONFIG
 # ==========================================================
 
-BASE_DIR = "./simulation/FA/TG-based/delay/"
+BASE_DIR = "./simulation/RCA/temperature/"
 FILE_PATTERN = r"\.mt[a-zA-Z0-9]+$"
 OUTPUT_JSON_NAME = "measure.json"
 
@@ -393,50 +393,47 @@ def process_records(records):
 
 
 def main():
-
     print("=== Processing HSPICE Results ===")
 
     target_dir = os.path.abspath(BASE_DIR)
 
     if not os.path.isdir(target_dir):
-
         print(f"Directory not found:\n{target_dir}")
-
         return
 
-    all_records = []
+    processed_count = 0
 
+    # حرکت درختی در تمام دایرکتوری‌ها
     for root, _, files in os.walk(target_dir):
-
         for file in files:
-
+            # بررسی پسوند فایل
             if not re.search(FILE_PATTERN, file.lower()):
                 continue
 
             filepath = os.path.join(root, file)
+            print(f"Parsing: {filepath}")
 
-            print(f"Parsing: {file}")
-
+            # پارس کردن فایل پیدا شده
             recs = parse_single_mt_file(filepath)
 
             if recs:
-                all_records.extend(recs)
+                # پردازش رکوردهای همین فایل به صورت مجزا
+                result = process_records(recs)
 
-    if not all_records:
+                # تعیین مسیر ذخیره سازی فایل خروجی دقیقاً در کنار فایل ورودی
+                output_path = os.path.join(root, OUTPUT_JSON_NAME)
 
-        print("No MT results found.")
-        return
+                # ذخیره فایل json در پوشه مربوطه
+                with open(output_path, "w", encoding="utf-8") as f:
+                    json.dump(result, f, indent=4, ensure_ascii=False)
 
-    result = process_records(all_records)
+                print(f"-> Saved JSON to: {output_path}")
+                processed_count += 1
 
-    output_path = os.path.join(target_dir, OUTPUT_JSON_NAME)
-
-    with open(output_path, "w", encoding="utf-8") as f:
-
-        json.dump(result, f, indent=4, ensure_ascii=False)
-
-    print(f"JSON saved to:\n{output_path}")
-
+    if processed_count == 0:
+        print("No MT results found to process.")
+    else:
+        print(f"\nSuccessfully processed {processed_count} files.")
 
 if __name__ == "__main__":
     main()

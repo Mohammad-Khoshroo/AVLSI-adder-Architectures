@@ -1,0 +1,10 @@
+$DATA1 SOURCE='HSPICE' VERSION='P-2019.06-SP1-1 win64' PARAM_COUNT=0
+.TITLE '************************* hspice rca modeling ***********************'
+ tp_s7_fall       tp_cout_rise     tp_s7_rise       tp_cout_fall    
+ tp_max           tp_avg           p_avg            p_max           
+ pdp              i_avg            i_peak           temper          
+ alter#          
+  1.040e-09        1.093e-09        1.027e-09        1.086e-09      
+  1.093e-09        1.061e-09        1.394e-04        4.316e-03      
+  1.524e-13       -1.189e-04       -1.631e-03         85.0000       
+1               
