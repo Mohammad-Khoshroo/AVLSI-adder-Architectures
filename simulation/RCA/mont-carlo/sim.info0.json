@@ -1,0 +1,41 @@
+{
+"Copyright":" ****** HSPICE -- P-2019.06-SP1-1 win64 (Sep 27 2019) ******  Copyright (c) 1986 - 2026 by Synopsys, Inc. All Rights Reserved.  This software and the associated documentation are proprietary  to Synopsys, Inc. This software may only be used in accordance  with the terms and conditions of a written license agreement with  Synopsys, Inc. All other use, reproduction, or distribution of  this software is strictly prohibited.",
+"Comment" : "File format and content subject to change.",
+"Measure_File":"D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\RCA\mont-carlo/D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\RCA\mont-carlo\sim.mt0",
+"Histogram_File":"D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\RCA\mont-carlo/D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\RCA\mont-carlo\sim.hmt0.csv",
+"QQ_plot_File":"D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\RCA\mont-carlo/D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\RCA\mont-carlo\sim.qqt0.csv",
+"MPP_File":"D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\RCA\mont-carlo/D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\RCA\mont-carlo\sim.mpp0",
+"Summary_Statistics":{
+"Total_Random_Variable":1,
+"Normal_Distribution_Variable":1,
+"Non_Normal_Distribution_Variable":0,
+"MC_Samples":500,
+"Meas_Failure_Number":0,
+"Job_Abortion_Number":0,
+"Sigma_Amplification_Factor":1,
+"Confidence_Level":0.95,
+"Measure_Names":["i_avg","i_peak","p_avg","p_max","pdp","tp_avg","tp_cout_fall","tp_cout_rise","tp_max","tp_s7_fall","tp_s7_rise","vdd_actual"]
+  },
+"VB_options":{
+"Sampling_Method":"SRS",
+"Random_Generator":"MCG",
+"Normal_Limit":20
+  },
+"Percentiles":{
+"Auto_Percentiles":[0.01,0.05,0.25,0.5,0.75,0.95,0.99]
+  },
+"Measure_Statistics":{
+"i_avg":{"Nominal":-0.000110113,"Mean":-0.000112346,"Stddev":1.79027e-05,"Skewness":-1.4584,"Kurtosis":9.72955},
+"i_peak":{"Nominal":-0.00169147,"Mean":-0.00166443,"Stddev":0.000241499,"Skewness":0.973457,"Kurtosis":3.75586},
+"p_avg":{"Nominal":0.00012911,"Mean":0.000133781,"Stddev":2.93865e-05,"Skewness":1.40771,"Kurtosis":8.16898},
+"p_max":{"Nominal":0.00448474,"Mean":0.00452612,"Stddev":0.000540208,"Skewness":0.0645302,"Kurtosis":3.01455},
+"pdp":{"Nominal":1.2632e-13,"Mean":1.30527e-13,"Stddev":1.42372e-14,"Skewness":3.0312,"Kurtosis":19.1721},
+"tp_avg":{"Nominal":9.52736e-10,"Mean":9.69419e-10,"Stddev":1.28111e-10,"Skewness":1.64197,"Kurtosis":8.51248},
+"tp_cout_fall":{"Nominal":9.78391e-10,"Mean":9.94865e-10,"Stddev":1.38352e-10,"Skewness":1.50546,"Kurtosis":7.704},
+"tp_cout_rise":{"Nominal":9.77335e-10,"Mean":9.95565e-10,"Stddev":1.27916e-10,"Skewness":1.79408,"Kurtosis":9.46187},
+"tp_max":{"Nominal":9.78391e-10,"Mean":1.00027e-09,"Stddev":1.33097e-10,"Skewness":1.69872,"Kurtosis":8.51097},
+"tp_s7_fall":{"Nominal":9.30717e-10,"Mean":9.46934e-10,"Stddev":1.15504e-10,"Skewness":1.77769,"Kurtosis":9.36908},
+"tp_s7_rise":{"Nominal":9.24502e-10,"Mean":9.40313e-10,"Stddev":1.30786e-10,"Skewness":1.52562,"Kurtosis":7.82143},
+"vdd_actual":{"Nominal":1,"Mean":1.00406,"Stddev":0.101904,"Skewness":-0.146883,"Kurtosis":3.03486}
+  }
+}

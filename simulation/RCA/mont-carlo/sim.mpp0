@@ -1,0 +1,318 @@
+ ****** HSPICE -- P-2019.06-SP1-1 win64 (Sep 27 2019) ******
+  Copyright (c) 1986 - 2026 by Synopsys, Inc. All Rights Reserved.
+  This software and the associated documentation are proprietary
+  to Synopsys, Inc. This software may only be used in accordance
+  with the terms and conditions of a written license agreement with
+  Synopsys, Inc. All other use, reproduction, or distribution of
+  this software is strictly prohibited.
+
+##================================================================
+*** This file format is subject to change **
+
+Measure File: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\RCA\mont-carlo\sim.mt0
+
+##Variation_Options
+#------------------
+option ignore_global_variation = no
+option ignore_local_variation = no
+option ignore_interconnect_variation = no
+option ignore_spatial_variation = no
+option ignore_variation = no
+option normal_limit     = 20
+option replicates       = 1
+option seed             = 1
+option stream           = 1
+option sensitivity_analysis  = yes
+option output_sigma_value = 1
+option use_agauss_format = yes
+option screening_method = pearson
+option set_missing_value = yes
+option large_scale_mc = no
+option qqnorm_file = yes
+option histogram_file = yes
+option sampling_method = SRS 
+option random_generator =  MCG
+##end_of_Variation_Options
+
+##Summary_Statistics
+#-------------------
+Total number of independent random variables = 1
+Number of independent global random variables = 1
+Number of independent local random variables = 0
+Number of Samples:  500
+Number of Meas Failure: 0
+Number of Job Abortion: 0
+##sampling_method = SRS|LHS, the first MC sample is nominal value and is excluded in Monte Carlo data mining.
+##end_of_Sumary_Statistics
+
+##Sample_Moments
+#---------------
+#CI: 95% Bootstrap confidence intervals based on 500 re-samples
+                 CI          mean       median     stdDev     mad        skewness   kurtosis   
+                2.5%       -1.140e-04 -1.139e-04  1.566e-05  1.345e-05 -2.186e+00   3.846e+00
+i_avg                      -1.123e-04 -1.119e-04  1.790e-05  1.505e-05 -1.458e+00   9.730e+00
+                97.5%      -1.109e-04 -1.088e-04  2.038e-05  1.666e-05 -4.270e-01   1.323e+01
+
+                2.5%       -1.685e-03 -1.753e-03  2.238e-04  1.788e-04  7.759e-01   3.221e+00
+i_peak                     -1.664e-03 -1.713e-03  2.415e-04  2.007e-04  9.735e-01   3.756e+00
+                97.5%      -1.643e-03 -1.677e-03  2.600e-04  2.276e-04  1.150e+00   4.288e+00
+
+                2.5%        1.313e-04  1.259e-04  2.600e-05  2.282e-05  6.382e-01   3.451e+00
+p_avg                       1.338e-04  1.322e-04  2.939e-05  2.624e-05  1.408e+00   8.169e+00
+                97.5%       1.364e-04  1.345e-04  3.308e-05  2.840e-05  1.907e+00   1.045e+01
+
+                2.5%        4.478e-03  4.416e-03  5.075e-04  4.821e-04 -1.681e-01   2.632e+00
+p_max                       4.526e-03  4.548e-03  5.402e-04  5.398e-04  6.453e-02   3.015e+00
+                97.5%       4.572e-03  4.595e-03  5.763e-04  5.892e-04  2.832e-01   3.378e+00
+
+                2.5%        1.294e-13  1.252e-13  1.159e-14  8.530e-15  1.483e+00   5.915e+00
+pdp                         1.305e-13  1.278e-13  1.424e-14  1.008e-14  3.031e+00   1.917e+01
+                97.5%       1.318e-13  1.286e-13  1.708e-14  1.123e-14  3.570e+00   2.337e+01
+
+                2.5%        9.591e-10  9.264e-10  1.129e-10  9.817e-11  9.510e-01   4.311e+00
+tp_avg                      9.694e-10  9.401e-10  1.281e-10  1.099e-10  1.642e+00   8.512e+00
+                97.5%       9.802e-10  9.630e-10  1.446e-10  1.177e-10  2.228e+00   1.243e+01
+
+                2.5%        9.836e-10  9.494e-10  1.229e-10  1.083e-10  8.689e-01   4.098e+00
+tp_cout_fall                9.949e-10  9.644e-10  1.384e-10  1.207e-10  1.505e+00   7.704e+00
+                97.5%       1.007e-09  9.897e-10  1.553e-10  1.298e-10  2.043e+00   1.119e+01
+
+                2.5%        9.854e-10  9.517e-10  1.120e-10  9.555e-11  1.045e+00   4.570e+00
+tp_cout_rise                9.956e-10  9.650e-10  1.279e-10  1.077e-10  1.794e+00   9.462e+00
+                97.5%       1.006e-09  9.873e-10  1.454e-10  1.149e-10  2.409e+00   1.401e+01
+
+                2.5%        9.898e-10  9.517e-10  1.174e-10  1.005e-10  1.034e+00   4.397e+00
+tp_max                      1.000e-09  9.650e-10  1.331e-10  1.134e-10  1.699e+00   8.511e+00
+                97.5%       1.011e-09  9.897e-10  1.498e-10  1.213e-10  2.254e+00   1.238e+01
+
+                2.5%        9.378e-10  9.075e-10  1.012e-10  8.644e-11  1.033e+00   4.547e+00
+tp_s7_fall                  9.469e-10  9.196e-10  1.155e-10  9.766e-11  1.778e+00   9.369e+00
+                97.5%       9.566e-10  9.397e-10  1.312e-10  1.042e-10  2.390e+00   1.386e+01
+
+                2.5%        9.297e-10  8.971e-10  1.160e-10  1.022e-10  8.805e-01   4.124e+00
+tp_s7_rise                  9.403e-10  9.113e-10  1.308e-10  1.139e-10  1.526e+00   7.821e+00
+                97.5%       9.513e-10  9.351e-10  1.469e-10  1.224e-10  2.072e+00   1.137e+01
+
+                2.5%        9.950e-01  9.870e-01  9.590e-02  9.169e-02 -3.906e-01   2.637e+00
+vdd_actual                  1.004e+00  1.012e+00  1.019e-01  1.015e-01 -1.469e-01   3.035e+00
+                97.5%       1.013e+00  1.021e+00  1.088e-01  1.117e-01  7.456e-02   3.504e+00
+
+##end_of_Sample_Moments
+
+##Quantiles
+#----------
+#(Percentile table adds appropriate percentile points as the number of samples increases.)
+#Percentile_Value                                 Equivalent_Sigma_Value 
+#(Q15.86552539,    Q84.134473607)                 (-1, 1)
+#(Q2.275013195,    Q97.724986805)                 (-2, 2)
+#(Q0.134989803,    Q99.865010197)                 (-3, 3)
+#(Q3.167124183e-3, Q99.996832876)                 (-4, 4)
+#(Q2.866515719e-5, Q99.999971335)                 (-5, 5)
+#(Q9.865876450e-8, Q99.999999901)                 (-6, 6)
+                CI              Q1              Q5              Q25             Q75             Q95             Q99             
+                2.5%            -2.234041e-04   -1.470726e-04   -1.229304e-04   -1.022865e-04   -9.027449e-05   -8.002275e-05   
+i_avg                           -1.657936e-04   -1.404092e-04   -1.214513e-04   -1.011924e-04   -8.818024e-05   -7.808289e-05   
+                97.5%           -1.505469e-04   -1.355255e-04   -1.195775e-04   -9.989298e-05   -8.294473e-05   -6.451406e-05   
+
+                2.5%            -2.180502e-03   -1.985922e-03   -1.849997e-03   -1.580318e-03   -1.231987e-03   -1.011171e-03   
+i_peak                          -2.056448e-03   -1.960670e-03   -1.838152e-03   -1.550795e-03   -1.173490e-03   -9.802721e-04   
+                97.5%           -2.007247e-03   -1.940097e-03   -1.823093e-03   -1.519362e-03   -1.061104e-03   -8.050102e-04   
+
+                2.5%            8.092061e-05    8.763525e-05    1.120169e-04    1.458474e-04    1.742358e-04    1.987107e-04    
+p_avg                           8.414545e-05    9.427541e-05    1.140957e-04    1.492222e-04    1.824613e-04    2.219014e-04    
+                97.5%           8.527670e-05    9.724129e-05    1.158821e-04    1.518768e-04    1.932510e-04    3.056821e-04    
+
+                2.5%            2.877202e-03    3.487570e-03    4.115120e-03    4.821695e-03    5.312208e-03    5.605332e-03    
+p_max                           3.308332e-03    3.683456e-03    4.161326e-03    4.886856e-03    5.424825e-03    5.792342e-03    
+                97.5%           3.378812e-03    3.761824e-03    4.201377e-03    4.936545e-03    5.550294e-03    6.172736e-03    
+
+                2.5%            1.159767e-13    1.164145e-13    1.205210e-13    1.339314e-13    1.492428e-13    1.642872e-13    
+pdp                             1.160451e-13    1.168725e-13    1.212362e-13    1.356427e-13    1.541791e-13    1.798622e-13    
+                97.5%           1.162095e-13    1.171516e-13    1.218206e-13    1.370454e-13    1.616567e-13    2.387151e-13    
+
+                2.5%            7.461117e-10    8.002968e-10    8.742803e-10    1.018414e-09    1.158245e-09    1.338403e-09    
+tp_avg                          7.775214e-10    8.132683e-10    8.816858e-10    1.029012e-09    1.189485e-09    1.380972e-09    
+                97.5%           7.948655e-10    8.256838e-10    8.917462e-10    1.041709e-09    1.279705e-09    1.772358e-09    
+
+                2.5%            7.457615e-10    8.072462e-10    8.911257e-10    1.050118e-09    1.199660e-09    1.387892e-09    
+tp_cout_fall                    7.812765e-10    8.220567e-10    8.994412e-10    1.061601e-09    1.232609e-09    1.431847e-09    
+                97.5%           8.010507e-10    8.361858e-10    9.107237e-10    1.075297e-09    1.326975e-09    1.830543e-09    
+
+                2.5%            7.809453e-10    8.318428e-10    9.015957e-10    1.042111e-09    1.183186e-09    1.369319e-09    
+tp_cout_rise                    8.105553e-10    8.439447e-10    9.086622e-10    1.052649e-09    1.215158e-09    1.413801e-09    
+                97.5%           8.267715e-10    8.555992e-10    9.182843e-10    1.065341e-09    1.308259e-09    1.827930e-09    
+
+                2.5%            7.809453e-10    8.318428e-10    9.015957e-10    1.050118e-09    1.199660e-09    1.387892e-09    
+tp_max                          8.105553e-10    8.439447e-10    9.086622e-10    1.061601e-09    1.232609e-09    1.431847e-09    
+                97.5%           8.267715e-10    8.555992e-10    9.182843e-10    1.075297e-09    1.326975e-09    1.830825e-09    
+
+                2.5%            7.515018e-10    7.983668e-10    8.620566e-10    9.891829e-10    1.116279e-09    1.283935e-09    
+tp_s7_fall                      7.788287e-10    8.094784e-10    8.684725e-10    9.986970e-10    1.145086e-09    1.323996e-09    
+                97.5%           7.936973e-10    8.201284e-10    8.772213e-10    1.010131e-09    1.228970e-09    1.695902e-09    
+
+                2.5%            7.062385e-10    7.637315e-10    8.423431e-10    9.922434e-10    1.133854e-09    1.312467e-09    
+tp_s7_rise                      7.394256e-10    7.775933e-10    8.501674e-10    1.003102e-09    1.165089e-09    1.354244e-09    
+                97.5%           7.579426e-10    7.908215e-10    8.607556e-10    1.016069e-09    1.254616e-09    1.735058e-09    
+
+                2.5%            6.618648e-01    7.986328e-01    9.277472e-01    1.062555e+00    1.148214e+00    1.196816e+00    
+vdd_actual                      7.603301e-01    8.396455e-01    9.369642e-01    1.074225e+00    1.167030e+00    1.226983e+00    
+                97.5%           7.755552e-01    8.557868e-01    9.449124e-01    1.083101e+00    1.187795e+00    1.286505e+00    
+
+##end_of_Quantiles
+
+##Extremes_and_Corners
+#---------------------
+                 min             max             minIndex          maxIndex        
+i_avg           -2.251e-04 -6.244e-05     254            253
+i_peak          -2.184e-03 -7.782e-04     254            253
+p_avg            8.091e-05  3.081e-04     475            254
+p_max            2.816e-03  6.181e-03     253            254
+pdp              1.160e-13  2.404e-13      10            254
+tp_avg           7.455e-10  1.837e-09     254            253
+tp_cout_fall     7.451e-10  1.896e-09     254            253
+tp_cout_rise     7.804e-10  1.897e-09     254            253
+tp_max           7.804e-10  1.897e-09     254            253
+tp_s7_fall       7.510e-10  1.757e-09     254            253
+tp_s7_rise       7.056e-10  1.798e-09     254            253
+vdd_actual       6.474e-01  1.288e+00     253            254
+##end_of_Extremes_and_Corners
+
+##Response_Correlation_Matrix (%)
+#--------------------------------
+                i_avg  i_peak p_avg  p_max  pdp    tp_avg 
+i_avg            100.0   89.3  -99.6  -96.2  -93.7   86.9 
+i_peak            89.3  100.0  -88.5  -96.1  -71.7   98.0 
+p_avg            -99.6  -88.5  100.0   96.4   95.1  -85.1 
+p_max            -96.2  -96.1   96.4  100.0   84.6  -94.3 
+pdp              -93.7  -71.7   95.1   84.6  100.0  -65.3 
+tp_avg            86.9   98.0  -85.1  -94.3  -65.3  100.0 
+tp_cout_fall      87.7   98.3  -86.1  -95.0  -66.7   99.9 
+tp_cout_rise      85.9   97.7  -84.0  -93.6  -63.8   99.9 
+tp_max            86.0   98.0  -84.2  -93.8  -64.0   99.9 
+tp_s7_fall        86.1   97.7  -84.2  -93.7  -64.0   99.9 
+tp_s7_rise        87.6   98.2  -85.9  -94.9  -66.5   99.9 
+vdd_actual       -95.2  -97.2   95.2   99.8   82.1  -95.7 
+                tp_cout_fall tp_cout_rise tp_max tp_s7_fall tp_s7_rise vdd_actual 
+i_avg             87.7         85.9         86.0   86.1       87.6      -95.2     
+i_peak            98.3         97.7         98.0   97.7       98.2      -97.2     
+p_avg            -86.1        -84.0        -84.2  -84.2      -85.9       95.2     
+p_max            -95.0        -93.6        -93.8  -93.7      -94.9       99.8     
+pdp              -66.7        -63.8        -64.0  -64.0      -66.5       82.1     
+tp_avg            99.9         99.9         99.9   99.9       99.9      -95.7     
+tp_cout_fall     100.0         99.8         99.8   99.8      100.0      -96.3     
+tp_cout_rise      99.8        100.0         99.9  100.0       99.8      -95.1     
+tp_max            99.8         99.9        100.0   99.9       99.8      -95.3     
+tp_s7_fall        99.8        100.0         99.9  100.0       99.8      -95.1     
+tp_s7_rise       100.0         99.8         99.8   99.8      100.0      -96.2     
+vdd_actual       -96.3        -95.1        -95.3  -95.1      -96.2      100.0     
+##end_of_Response_Correlation_Matrix
+
+##Selective_Simulation:
+#----------------------
+#To simulate corners only:
+Use: ... Monte = list(10, 253, 254, 475)
+##end_of_Selective_Simulation
+
+##Variables_Screened_by_Importance
+#---------------------------------
+Method: Pearson Correlation
+#Print threshold: 95%
+#(elements with EquivVar smaller than 0.05% will not be printed.) 
+#(parameters with ParVar smaller than 0.01% will not be printed.) 
+
+Response: i_avg
+Global Variation = 1.790e-05,  Local Variation = 0.000e+00
+
+Element         Model           EquivVar CumVar   MatchGrp  Par      ID   Corr  ParVar 
+.               vdd_val         100.0%    100.0%    .          
+.               .               .          .          .     dev      IGNC -0.95 100.0%
+
+Response: i_peak
+Global Variation = 2.415e-04,  Local Variation = 0.000e+00
+
+Element         Model           EquivVar CumVar   MatchGrp  Par      ID   Corr  ParVar 
+.               vdd_val         100.0%    100.0%    .          
+.               .               .          .          .     dev      IGNC -0.97 100.0%
+
+Response: p_avg
+Global Variation = 2.939e-05,  Local Variation = 0.000e+00
+
+Element         Model           EquivVar CumVar   MatchGrp  Par      ID   Corr  ParVar 
+.               vdd_val         100.0%    100.0%    .          
+.               .               .          .          .     dev      IGNC  0.95 100.0%
+
+Response: p_max
+Global Variation = 5.402e-04,  Local Variation = 0.000e+00
+
+Element         Model           EquivVar CumVar   MatchGrp  Par      ID   Corr  ParVar 
+.               vdd_val         100.0%    100.0%    .          
+.               .               .          .          .     dev      IGNC  1.00 100.0%
+
+Response: pdp
+Global Variation = 1.424e-14,  Local Variation = 0.000e+00
+
+Element         Model           EquivVar CumVar   MatchGrp  Par      ID   Corr  ParVar 
+.               vdd_val         100.0%    100.0%    .          
+.               .               .          .          .     dev      IGNC  0.82 100.0%
+
+Response: tp_avg
+Global Variation = 1.281e-10,  Local Variation = 0.000e+00
+
+Element         Model           EquivVar CumVar   MatchGrp  Par      ID   Corr  ParVar 
+.               vdd_val         100.0%    100.0%    .          
+.               .               .          .          .     dev      IGNC -0.96 100.0%
+
+Response: tp_cout_fall
+Global Variation = 1.384e-10,  Local Variation = 0.000e+00
+
+Element         Model           EquivVar CumVar   MatchGrp  Par      ID   Corr  ParVar 
+.               vdd_val         100.0%    100.0%    .          
+.               .               .          .          .     dev      IGNC -0.96 100.0%
+
+Response: tp_cout_rise
+Global Variation = 1.279e-10,  Local Variation = 0.000e+00
+
+Element         Model           EquivVar CumVar   MatchGrp  Par      ID   Corr  ParVar 
+.               vdd_val         100.0%    100.0%    .          
+.               .               .          .          .     dev      IGNC -0.95 100.0%
+
+Response: tp_max
+Global Variation = 1.331e-10,  Local Variation = 0.000e+00
+
+Element         Model           EquivVar CumVar   MatchGrp  Par      ID   Corr  ParVar 
+.               vdd_val         100.0%    100.0%    .          
+.               .               .          .          .     dev      IGNC -0.95 100.0%
+
+Response: tp_s7_fall
+Global Variation = 1.155e-10,  Local Variation = 0.000e+00
+
+Element         Model           EquivVar CumVar   MatchGrp  Par      ID   Corr  ParVar 
+.               vdd_val         100.0%    100.0%    .          
+.               .               .          .          .     dev      IGNC -0.95 100.0%
+
+Response: tp_s7_rise
+Global Variation = 1.308e-10,  Local Variation = 0.000e+00
+
+Element         Model           EquivVar CumVar   MatchGrp  Par      ID   Corr  ParVar 
+.               vdd_val         100.0%    100.0%    .          
+.               .               .          .          .     dev      IGNC -0.96 100.0%
+
+Response: vdd_actual
+Global Variation = 1.019e-01,  Local Variation = 0.000e+00
+
+Element         Model           EquivVar CumVar   MatchGrp  Par      ID   Corr  ParVar 
+.               vdd_val         100.0%    100.0%    .          
+.               .               .          .          .     dev      IGNC  1.0 100.0%
+##end_of_Variables_Screened_by_Importance
+
+##Important_Elements_or_Models
+#------------------------------
+vdd_val
+##end_of_Important_Elements_or_Models
+##end_of_Instance_Parameters
+
+##Subcircuit_Encoding
+#--------------------
+Key Subckt
+
+##end_of_Subcircuit_Encoding
