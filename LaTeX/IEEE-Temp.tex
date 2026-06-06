@@ -141,6 +141,46 @@
     basicstyle=\ttfamily\color{black},
 }
 
+% تعریف رنگ‌ها
+\definecolor{jsonKey}{HTML}{1A5276}      % آبی تیره برای کلیدها (برای تفکیک کامل از مقادیر)
+\definecolor{jsonValue}{HTML}{27AE60}    % سبز برای مقادیر متنی (Value)
+\definecolor{jsonDigit}{HTML}{D35400}    % نارنجی/قرمز برای اعداد
+\definecolor{jsonBool}{HTML}{C0392B}     % قرمز تیره برای true/false/null
+\definecolor{jsonBrackets}{HTML}{7F8C8D} % خاکستری برای {} و []
+
+\lstdefinelanguage{json}{
+    % مقادیر خاص
+    keywords=[1]{true, false, null},
+    keywordstyle=[1]\color{jsonBool}\bfseries,
+    %
+    sensitive=true,
+    %
+    % به طور پیش‌فرض تمام رشته‌ها رنگ کلید (آبی تیره) را می‌گیرند
+    morestring=[b]",
+    stringstyle=\color{jsonKey},
+    %
+    % با این ترفند، بعد از علامت دو نقطه (:) رنگ رشته‌ها به سبز (Value) تغییر می‌کند
+    literate=
+     *{0}{{{\color{jsonDigit}0}}}{1}
+      {1}{{{\color{jsonDigit}1}}}{1}
+      {2}{{{\color{jsonDigit}2}}}{1}
+      {3}{{{\color{jsonDigit}3}}}{1}
+      {4}{{{\color{jsonDigit}4}}}{1}
+      {5}{{{\color{jsonDigit}5}}}{1}
+      {6}{{{\color{jsonDigit}6}}}{1}
+      {7}{{{\color{jsonDigit}7}}}{1}
+      {8}{{{\color{jsonDigit}8}}}{1}
+      {9}{{{\color{jsonDigit}9}}}{1}
+      {.}{{{\color{jsonDigit}.}}}{1}
+      {\{}{{{\color{jsonBrackets}{\{}}}}{1}
+      {\}}{{{\color{jsonBrackets}{\}}}}}{1}
+      {[}{{{\color{jsonBrackets}{[}}}}{1}
+      {]}{{{\color{jsonBrackets}{]}}}}{1}
+      {:}{{{\color{black}{:}\color{jsonValue}}}}{1} % ترفند تغییر رنگ پس از دو نقطه به سبز
+      {,}{{{\color{black}{,}\color{jsonKey}}}}{1},  % ترفند بازگرداندن رنگ به رنگ کلید پس از کاما
+    basicstyle=\ttfamily\color{jsonKey}
+}
+
 \lstdefinelanguage{DirTree}{
 basicstyle=\ttfamily\color{black},
 % تبدیل خطوط گرافیکی به علائم ساده کیبورد برای سازگاری ۱۰۰٪

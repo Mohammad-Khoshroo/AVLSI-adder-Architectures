@@ -1,0 +1,57 @@
+{
+  "Summary_Statistics": {
+    "Total_Random_Variable": 1,
+    "Normal_Distribution_Variable": 1,
+    "Non_Normal_Distribution_Variable": 0,
+    "MC_Samples": 500,
+    "Meas_Failure_Number": 0,
+    "Job_Abortion_Number": 0,
+    "Measure_File"   :"sim.mt0",
+    "Histogram_File" :"sim.hmt0.csv",
+    "QQ_plot_File"   :"sim.qqt0.csv",
+    "MPP_File"       :"sim.mpp0",
+    "Tail_File"      :"sim.tail0.csv"
+    "Measure_Names": [
+      "p_avg",
+      "p_max",
+      "tp_cout_fall",
+      "tp_cout_rise",
+      "tp_s7_fall",
+      "tp_s7_rise",
+      "tp_avg",
+      "tp_max",
+      "vdd_actual"
+    ]
+  },
+  "Measure_Statistics": {
+    "p_avg": {
+      "Nominal": 0.00012911,
+      "Mean": 0.000133781,
+      "Stddev": 2.93865e-05, "Skewness": 1.40771, "Kurtosis": 8.16898
+    },
+    "p_max": {
+      "Nominal": 0.00448474,
+      "Mean": 0.00452612,
+      "Stddev": 0.000540208, "Skewness": 0.0645302, "Kurtosis": 3.01455
+    },
+    "tp_cout_fall": {...},
+    "tp_cout_rise": {...},
+    "tp_s7_fall":   {...},
+    "tp_s7_rise":   {...},
+    "tp_avg": {
+      "Nominal": 9.52736e-10,
+      "Mean": 9.69419e-10,
+      "Stddev": 1.28111e-10, "Skewness": 1.64197, "Kurtosis": 8.51248
+    },
+    "tp_max": {
+      "Nominal": 9.78391e-10,
+      "Mean": 1.00027e-09,
+      "Stddev": 1.33097e-10, "Skewness": 1.69872, "Kurtosis": 8.51097
+    },
+    "vdd_actual": {
+      "Nominal": 1,
+      "Mean": 1.00406,
+      "Stddev": 0.101904, "Skewness": -0.146883, "Kurtosis": 3.03486
+    }
+  }
+}
