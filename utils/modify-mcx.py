@@ -2,12 +2,20 @@ import json
 import os
 
 # ==========================================
+# CONFIGURATION
+# ==========================================
 # 1. Define your input file path here:
 FILE_PATH = r"./simulation/RCA/mont-carlo/sim.mc0"  # Supports any extension (e.g., .lis, .txt, .tr0)
+
+# 2. Define the nominal supply voltage (nominal Vdd):
+NOMINAL_VDD = 1.0  # Change this to match your nominal supply (e.g., 1.0, 1.2, etc.)
+
+# 3. Define the standard deviation (sigma) value:
+STD_DEV = 0.1  # Matches your .PARAM dev=agauss(0, 0.1)
 # ==========================================
 
 
-def parse_hspice_data(file_path):
+def parse_hspice_data(file_path, nominal_vdd, std_dev):
     data = []
     headers = []
     header_found = False
@@ -37,12 +45,15 @@ def parse_hspice_data(file_path):
                 if len(parts) == len(headers):
                     row_dict = {}
                     for col, val in zip(headers, parts):
-                        # Convert to appropriate numeric types (int or float)
                         try:
-                            if "." in val:
-                                row_dict[col] = float(val)
-                            else:
+                            if col.lower() == "index":
+                                # Keep index as an integer
                                 row_dict[col] = int(val)
+                            else:
+                                # Calculate the actual voltage: Vdd_actual = Nominal_Vdd + (Normalized_Val * Std_Dev)
+                                normalized_val = float(val)
+                                actual_val = nominal_vdd + (normalized_val * std_dev)
+                                row_dict[col] = actual_val
                         except ValueError:
                             row_dict[col] = val  # Keep as string if conversion fails
                     data.append(row_dict)
@@ -59,11 +70,13 @@ def main():
     directory, filename = os.path.split(FILE_PATH)
     name_without_ext, _ = os.path.splitext(filename)
 
-    json_filename = f"dev.json"
+    json_filename = f"{name_without_ext}.json"
     json_path = os.path.join(directory, json_filename)
 
-    print("Processing file...")
-    parsed_data = parse_hspice_data(FILE_PATH)
+    print(f"Processing file...")
+    print(f"Formula: Actual Vdd = {NOMINAL_VDD} + (Value * {STD_DEV})")
+    
+    parsed_data = parse_hspice_data(FILE_PATH, NOMINAL_VDD, STD_DEV)
 
     if not parsed_data:
         print("Error: No data extracted from the file.")
@@ -73,7 +86,7 @@ def main():
     with open(json_path, "w", encoding="utf-8") as json_file:
         json.dump(parsed_data, json_file, indent=4, ensure_ascii=False)
 
-    print("Success: File successfully converted to JSON!")
+    print("Success: File successfully converted to JSON with actual Vdd values!")
 
 
 if __name__ == "__main__":
