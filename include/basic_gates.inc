@@ -14,6 +14,16 @@ Mp      out     in   Vdd  Vdd  pch   L= 'L'    W= 'Wp_min * scale' $ PMOS transi
 
 .ENDS INV
 
+************************** BUFFER .SUBCKT *************************
+
+.SUBCKT BUF in out Vdd Vss scale=1 $ out = in
+
+Xinv1  in   mid  Vdd Vss  INV  scale=scale   
+Xinv2  mid  out  Vdd Vss  INV  scale=scale 
+
+.ENDS BUF
+
+
 ********************* Transmission Gate .SUBCKT *********************
 
 .SUBCKT TG in out ctrl ctrl_bar Vdd Vss scale=1
