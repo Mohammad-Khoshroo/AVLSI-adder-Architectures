@@ -5,7 +5,7 @@ import os
 # CONFIGURATION
 # ==========================================
 # 1. Define your input file path here:
-FILE_PATH = r"./simulation/RCA/mont-carlo/sim.mc0"  # Supports any extension (e.g., .lis, .txt, .tr0)
+FILE_PATH = r"./simulation/BKA/mont-carlo/sim.mc0"  # Supports any extension (e.g., .lis, .txt, .tr0)
 
 # 2. Define the nominal supply voltage (nominal Vdd):
 NOMINAL_VDD = 1.0  # Change this to match your nominal supply (e.g., 1.0, 1.2, etc.)

@@ -2,9 +2,9 @@ import io
 import matplotlib.pyplot as plt
 import pandas as pd
 
-FILE_PATH = r"./simulation/RCA/mont-carlo/sim.qqt0.csv"
+FILE_PATH = r"./simulation/BKA/mont-carlo/sim.qqt0.csv"
 
-PARAMETERS_TO_PLOT = ["tp_avg", "p_avg", "tp_max", "p_max", "vdd_actual"]
+PARAMETERS_TO_PLOT = ["tp_avg", "p_avg", "vdd_actual",]
 
 X_AXIS_PARAMETER = "StdNormalQuantiles"
 
@@ -24,18 +24,23 @@ def load_hspice_csv(file_path):
             break
             
     if start_idx == -1:
+        max_commas = 0
         for i, line in enumerate(lines):
             clean_line = line.strip()
-            if not clean_line.startswith(("#", "*", "=")) and "," in clean_line:
+            if clean_line.startswith(("#", "*", "=")):
+                continue
+            
+            comma_count = clean_line.count(",")
+            if comma_count > max_commas and comma_count >= 3: 
+                max_commas = comma_count
                 start_idx = i
-                break
 
     if start_idx == -1:
-        raise ValueError("header not found")
+        raise ValueError("Header with valid columns not found.")
 
     csv_data = "".join(lines[start_idx:])
-    return pd.read_csv(io.StringIO(csv_data))
-
+    
+    return pd.read_csv(io.StringIO(csv_data), on_bad_lines='skip')
 
 def main():
     try:

@@ -7,12 +7,12 @@ import matplotlib.pyplot as plt
 # =====================================================================
 # 1. INPUT CONFIGURATIONS
 # =====================================================================
-FILE_PATH = r"./simulation/RCA/mont-carlo/sim.hmt0.csv" 
+FILE_PATH = r"./simulation/BKA/mont-carlo/sim.hmt0.csv" 
 
 # Selected measures to plot (without '_count' suffix)
 # Examples: 'i_avg', 'i_peak', 'p_avg', 'p_max', 'pdp', 'tp_avg', 'tp_max', 'vdd_actual'
 # Note: Leave empty [] to plot all detected parameters in one figure.
-SELECTED_MEASURES = ['tp_avg', 'tp_max', 'vdd_actual','p_avg', 'p_max'] 
+SELECTED_MEASURES = ['tp_avg', 'tp_max', 'vdd_actual','p_avg', 'p_max', "tp_cout" ,"tp_s8"] 
 
 # Output directory and filename
 OUTPUT_DIR = "hspice_plots"
@@ -27,16 +27,30 @@ def load_hspice_csv(file_path):
     
     header_line_idx = -1
     for idx, line in enumerate(lines):
-        if "i_avg" in line and "i_avg_count" in line:
+        clean_line = line.strip().lower()
+        
+        if clean_line.startswith(("#", "*", "=")):
+            continue
+            
+        if "count" in clean_line and "," in clean_line:
             header_line_idx = idx
             break
             
+    if header_line_idx == -1:
+        for idx, line in enumerate(lines):
+            clean_line = line.strip()
+            if not clean_line.startswith(("#", "*", "=")) and "," in clean_line:
+                header_line_idx = idx
+                break
+    
     if header_line_idx == -1:
         raise ValueError("Header columns not found in the file. Please check the CSV structure.")
     
     data_str = "".join(lines[header_line_idx:])
     df = pd.read_csv(io.StringIO(data_str))
+    df.columns = df.columns.str.strip()
     return df
+
 
 try:
     # Read the data

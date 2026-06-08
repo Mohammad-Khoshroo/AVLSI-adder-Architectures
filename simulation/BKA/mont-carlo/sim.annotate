@@ -10,17 +10,16 @@
 *** This file format is subject to change **
 #Annotation for local variation contributors
 #=============
-<<i_avg>> # Global_Variation 100%  Local_Variation 0% IRV_Variation 0%
-<<i_peak>> # Global_Variation 100%  Local_Variation 0% IRV_Variation 0%
 <<p_avg>> # Global_Variation 100%  Local_Variation 0% IRV_Variation 0%
 <<p_max>> # Global_Variation 100%  Local_Variation 0% IRV_Variation 0%
-<<pdp>> # Global_Variation 100%  Local_Variation 0% IRV_Variation 0%
 <<tp_avg>> # Global_Variation 100%  Local_Variation 0% IRV_Variation 0%
+<<tp_cout>> # Global_Variation 100%  Local_Variation 0% IRV_Variation 0%
 <<tp_cout_fall>> # Global_Variation 100%  Local_Variation 0% IRV_Variation 0%
 <<tp_cout_rise>> # Global_Variation 100%  Local_Variation 0% IRV_Variation 0%
 <<tp_max>> # Global_Variation 100%  Local_Variation 0% IRV_Variation 0%
-<<tp_s7_fall>> # Global_Variation 100%  Local_Variation 0% IRV_Variation 0%
-<<tp_s7_rise>> # Global_Variation 100%  Local_Variation 0% IRV_Variation 0%
+<<tp_s8>> # Global_Variation 100%  Local_Variation 0% IRV_Variation 0%
+<<tp_s8_fall>> # Global_Variation 100%  Local_Variation 0% IRV_Variation 0%
+<<tp_s8_rise>> # Global_Variation 100%  Local_Variation 0% IRV_Variation 0%
 <<vdd_actual>> # Global_Variation 100%  Local_Variation 0% IRV_Variation 0%
 #=============
-#Selective simulation for extreme corners: Monte= list( 10, 253, 254, 475)
+#Selective simulation for extreme corners: Monte= list( 253, 254)

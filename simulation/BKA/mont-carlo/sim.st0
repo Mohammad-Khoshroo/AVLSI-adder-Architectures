@@ -1,0 +1,2545 @@
+****** HSPICE -- P-2019.06-SP1-1 win64 (Sep 27 2019) ******
+Input File: sim.sp
+lic:
+lic: FLEXlm: SDK_12.3
+lic: USER:   Mohammad-Khohsroo    HOSTNAME: DESKTOP-GMQQFUO
+lic: HOSTID: "088fc3e7a24d"       PID:      19928
+lic: Using FLEXlm license file:
+lic: 27000@DESKTOP-GMQQFUO
+lic: Checkout 1 hspice
+lic: License/Maintenance for hspice will expire on 30-dec-2030/2020.12
+lic: 1(in_use)/99(total) FLOATING license(s) on SERVER 27000@DESKTOP-GMQQFUO
+lic:
+
+ init: begin read circuit files, cpu clock= 1.23E-01
+       option search = C:/synopsys/Hspice_P-2019.06-SP1-1/parts/behave/
+       option search = C:/synopsys/Hspice_P-2019.06-SP1-1/parts/AD/
+       option search = C:/synopsys/Hspice_P-2019.06-SP1-1/parts/XILINX/
+       option search = C:/synopsys/Hspice_P-2019.06-SP1-1/parts/TLINE/
+       option search = C:/synopsys/Hspice_P-2019.06-SP1-1/parts/TI/
+       option search = C:/synopsys/Hspice_P-2019.06-SP1-1/parts/SIGNET/
+       option search = C:/synopsys/Hspice_P-2019.06-SP1-1/parts/PCI/
+       option search = C:/synopsys/Hspice_P-2019.06-SP1-1/parts/LIN_TEC
+                         H/
+       option search = C:/synopsys/Hspice_P-2019.06-SP1-1/parts/PET/
+       option search = C:/synopsys/Hspice_P-2019.06-SP1-1/parts/DI0/
+       option search = C:/synopsys/Hspice_P-2019.06-SP1-1/parts/COMLINE
+                         /
+       option search = C:/synopsys/Hspice_P-2019.06-SP1-1/parts/BURR_BR
+                         M/
+       option search = C:/synopsys/Hspice_P-2019.06-SP1-1/parts/BJT/
+       option nomod
+       option post =     2.00
+       option probe
+       option runlvl =     6.00
+ init: end read circuit files, cpu clock= 1.35E-01 peak memory=      65 mb
+ init: begin check errors, cpu clock= 1.35E-01
+ init: end check errors, cpu clock= 1.57E-01 peak memory=      69 mb
+ init: begin setup matrix, pivot=     0 cpu clock= 1.57E-01
+       establish matrix -- done, cpu clock= 1.58E-01 peak memory=      69 mb
+       re-order matrix -- done, cpu clock= 1.59E-01 peak memory=      69 mb
+ init: end setup matrix, cpu clock= 1.60E-01 peak memory=      70 mb
+ sweep: monte_carlo     monte_carlo1     begin, #sweeps = 500
+ dcop: begin dcop, cpu clock= 1.65E-01
+ dcop: end dcop, cpu clock= 3.25E-01 peak memory=      77 mb tot_iter=     286
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran1    begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 3.26E-01
+ sweep: tran tran1    end, cpu clock= 1.40E+00 peak memory=      76 mb
+ dcop: begin dcop, cpu clock= 1.40E+00
+ dcop: end dcop, cpu clock= 1.41E+00 peak memory=      76 mb tot_iter=     293
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran2    begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 1.41E+00
+ sweep: tran tran2    end, cpu clock= 2.49E+00 peak memory=      76 mb
+ dcop: begin dcop, cpu clock= 2.49E+00
+ dcop: end dcop, cpu clock= 2.50E+00 peak memory=      76 mb tot_iter=     300
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran3    begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 2.50E+00
+ sweep: tran tran3    end, cpu clock= 3.54E+00 peak memory=      76 mb
+ dcop: begin dcop, cpu clock= 3.55E+00
+ dcop: end dcop, cpu clock= 3.55E+00 peak memory=      76 mb tot_iter=     305
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran4    begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 3.55E+00
+ sweep: tran tran4    end, cpu clock= 4.61E+00 peak memory=      76 mb
+ dcop: begin dcop, cpu clock= 4.61E+00
+ dcop: end dcop, cpu clock= 4.61E+00 peak memory=      76 mb tot_iter=     310
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran5    begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 4.61E+00
+ sweep: tran tran5    end, cpu clock= 5.66E+00 peak memory=      76 mb
+ dcop: begin dcop, cpu clock= 5.66E+00
+ dcop: end dcop, cpu clock= 5.67E+00 peak memory=      76 mb tot_iter=     333
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran6    begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 5.67E+00
+ sweep: tran tran6    end, cpu clock= 6.69E+00 peak memory=      76 mb
+ dcop: begin dcop, cpu clock= 6.69E+00
+ dcop: end dcop, cpu clock= 6.70E+00 peak memory=      76 mb tot_iter=     350
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran7    begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 6.70E+00
+ sweep: tran tran7    end, cpu clock= 7.76E+00 peak memory=      76 mb
+ dcop: begin dcop, cpu clock= 7.76E+00
+ dcop: end dcop, cpu clock= 7.76E+00 peak memory=      76 mb tot_iter=     355
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran8    begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 7.76E+00
+ sweep: tran tran8    end, cpu clock= 8.84E+00 peak memory=      76 mb
+ dcop: begin dcop, cpu clock= 8.85E+00
+ dcop: end dcop, cpu clock= 8.86E+00 peak memory=      76 mb tot_iter=     372
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran9    begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 8.86E+00
+ sweep: tran tran9    end, cpu clock= 9.88E+00 peak memory=      76 mb
+ dcop: begin dcop, cpu clock= 9.89E+00
+ dcop: end dcop, cpu clock= 9.89E+00 peak memory=      76 mb tot_iter=     381
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran10   begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 9.89E+00
+ sweep: tran tran10   end, cpu clock= 1.09E+01 peak memory=      76 mb
+ dcop: begin dcop, cpu clock= 1.09E+01
+ dcop: end dcop, cpu clock= 1.10E+01 peak memory=      76 mb tot_iter=     408
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran11   begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 1.10E+01
+ sweep: tran tran11   end, cpu clock= 1.20E+01 peak memory=      76 mb
+ dcop: begin dcop, cpu clock= 1.20E+01
+ dcop: end dcop, cpu clock= 1.20E+01 peak memory=      76 mb tot_iter=     426
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran12   begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 1.20E+01
+ sweep: tran tran12   end, cpu clock= 1.31E+01 peak memory=      76 mb
+ dcop: begin dcop, cpu clock= 1.31E+01
+ dcop: end dcop, cpu clock= 1.31E+01 peak memory=      76 mb tot_iter=     434
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran13   begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 1.31E+01
+ sweep: tran tran13   end, cpu clock= 1.41E+01 peak memory=      76 mb
+ dcop: begin dcop, cpu clock= 1.41E+01
+ dcop: end dcop, cpu clock= 1.41E+01 peak memory=      76 mb tot_iter=     440
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran14   begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 1.41E+01
+ sweep: tran tran14   end, cpu clock= 1.52E+01 peak memory=      76 mb
+ dcop: begin dcop, cpu clock= 1.52E+01
+ dcop: end dcop, cpu clock= 1.52E+01 peak memory=      76 mb tot_iter=     450
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran15   begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 1.52E+01
+ sweep: tran tran15   end, cpu clock= 1.62E+01 peak memory=      76 mb
+ dcop: begin dcop, cpu clock= 1.62E+01
+ dcop: end dcop, cpu clock= 1.62E+01 peak memory=      76 mb tot_iter=     456
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran16   begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 1.62E+01
+ sweep: tran tran16   end, cpu clock= 1.75E+01 peak memory=      76 mb
+ dcop: begin dcop, cpu clock= 1.75E+01
+ dcop: end dcop, cpu clock= 1.75E+01 peak memory=      76 mb tot_iter=     476
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran17   begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 1.75E+01
+ sweep: tran tran17   end, cpu clock= 1.85E+01 peak memory=      76 mb
+ dcop: begin dcop, cpu clock= 1.85E+01
+ dcop: end dcop, cpu clock= 1.85E+01 peak memory=      76 mb tot_iter=     482
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran18   begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 1.85E+01
+ sweep: tran tran18   end, cpu clock= 1.96E+01 peak memory=      76 mb
+ dcop: begin dcop, cpu clock= 1.96E+01
+ dcop: end dcop, cpu clock= 1.96E+01 peak memory=      76 mb tot_iter=     488
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran19   begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 1.96E+01
+ sweep: tran tran19   end, cpu clock= 2.07E+01 peak memory=      76 mb
+ dcop: begin dcop, cpu clock= 2.07E+01
+ dcop: end dcop, cpu clock= 2.07E+01 peak memory=      76 mb tot_iter=     505
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran20   begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 2.07E+01
+ sweep: tran tran20   end, cpu clock= 2.18E+01 peak memory=      76 mb
+ dcop: begin dcop, cpu clock= 2.18E+01
+ dcop: end dcop, cpu clock= 2.18E+01 peak memory=      76 mb tot_iter=     512
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran21   begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 2.18E+01
+ sweep: tran tran21   end, cpu clock= 2.28E+01 peak memory=      76 mb
+ dcop: begin dcop, cpu clock= 2.28E+01
+ dcop: end dcop, cpu clock= 2.28E+01 peak memory=      76 mb tot_iter=     518
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran22   begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 2.28E+01
+ sweep: tran tran22   end, cpu clock= 2.38E+01 peak memory=      76 mb
+ dcop: begin dcop, cpu clock= 2.39E+01
+ dcop: end dcop, cpu clock= 2.39E+01 peak memory=      76 mb tot_iter=     523
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran23   begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 2.39E+01
+ sweep: tran tran23   end, cpu clock= 2.49E+01 peak memory=      76 mb
+ dcop: begin dcop, cpu clock= 2.49E+01
+ dcop: end dcop, cpu clock= 2.49E+01 peak memory=      76 mb tot_iter=     540
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran24   begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 2.49E+01
+ sweep: tran tran24   end, cpu clock= 2.60E+01 peak memory=      76 mb
+ dcop: begin dcop, cpu clock= 2.60E+01
+ dcop: end dcop, cpu clock= 2.60E+01 peak memory=      76 mb tot_iter=     547
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran25   begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 2.60E+01
+ sweep: tran tran25   end, cpu clock= 2.71E+01 peak memory=      76 mb
+ dcop: begin dcop, cpu clock= 2.71E+01
+ dcop: end dcop, cpu clock= 2.71E+01 peak memory=      76 mb tot_iter=     555
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran26   begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 2.71E+01
+ sweep: tran tran26   end, cpu clock= 2.81E+01 peak memory=      76 mb
+ dcop: begin dcop, cpu clock= 2.81E+01
+ dcop: end dcop, cpu clock= 2.81E+01 peak memory=      76 mb tot_iter=     573
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran27   begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 2.81E+01
+ sweep: tran tran27   end, cpu clock= 2.92E+01 peak memory=      76 mb
+ dcop: begin dcop, cpu clock= 2.92E+01
+ dcop: end dcop, cpu clock= 2.92E+01 peak memory=      76 mb tot_iter=     591
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran28   begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 2.92E+01
+ sweep: tran tran28   end, cpu clock= 3.03E+01 peak memory=      74 mb
+ dcop: begin dcop, cpu clock= 3.03E+01
+ dcop: end dcop, cpu clock= 3.03E+01 peak memory=      74 mb tot_iter=     599
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran29   begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 3.03E+01
+ sweep: tran tran29   end, cpu clock= 3.13E+01 peak memory=      74 mb
+ dcop: begin dcop, cpu clock= 3.13E+01
+ dcop: end dcop, cpu clock= 3.13E+01 peak memory=      74 mb tot_iter=     606
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran30   begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 3.13E+01
+ sweep: tran tran30   end, cpu clock= 3.24E+01 peak memory=      74 mb
+ dcop: begin dcop, cpu clock= 3.24E+01
+ dcop: end dcop, cpu clock= 3.24E+01 peak memory=      74 mb tot_iter=     623
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran31   begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 3.24E+01
+ sweep: tran tran31   end, cpu clock= 3.34E+01 peak memory=      74 mb
+ dcop: begin dcop, cpu clock= 3.34E+01
+ dcop: end dcop, cpu clock= 3.34E+01 peak memory=      74 mb tot_iter=     632
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran32   begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 3.34E+01
+ sweep: tran tran32   end, cpu clock= 3.45E+01 peak memory=      74 mb
+ dcop: begin dcop, cpu clock= 3.45E+01
+ dcop: end dcop, cpu clock= 3.45E+01 peak memory=      74 mb tot_iter=     650
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran33   begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 3.45E+01
+ sweep: tran tran33   end, cpu clock= 3.55E+01 peak memory=      74 mb
+ dcop: begin dcop, cpu clock= 3.55E+01
+ dcop: end dcop, cpu clock= 3.55E+01 peak memory=      74 mb tot_iter=     668
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran34   begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 3.55E+01
+ sweep: tran tran34   end, cpu clock= 3.66E+01 peak memory=      74 mb
+ dcop: begin dcop, cpu clock= 3.66E+01
+ dcop: end dcop, cpu clock= 3.66E+01 peak memory=      74 mb tot_iter=     674
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran35   begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 3.66E+01
+ sweep: tran tran35   end, cpu clock= 3.77E+01 peak memory=      74 mb
+ dcop: begin dcop, cpu clock= 3.77E+01
+ dcop: end dcop, cpu clock= 3.77E+01 peak memory=      74 mb tot_iter=     682
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran36   begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 3.77E+01
+ sweep: tran tran36   end, cpu clock= 3.88E+01 peak memory=      74 mb
+ dcop: begin dcop, cpu clock= 3.88E+01
+ dcop: end dcop, cpu clock= 3.88E+01 peak memory=      74 mb tot_iter=     700
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran37   begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 3.88E+01
+ sweep: tran tran37   end, cpu clock= 3.99E+01 peak memory=      74 mb
+ dcop: begin dcop, cpu clock= 3.99E+01
+ dcop: end dcop, cpu clock= 3.99E+01 peak memory=      74 mb tot_iter=     714
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran38   begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 3.99E+01
+ sweep: tran tran38   end, cpu clock= 4.09E+01 peak memory=      74 mb
+ dcop: begin dcop, cpu clock= 4.09E+01
+ dcop: end dcop, cpu clock= 4.09E+01 peak memory=      74 mb tot_iter=     722
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran39   begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 4.09E+01
+ sweep: tran tran39   end, cpu clock= 4.20E+01 peak memory=      74 mb
+ dcop: begin dcop, cpu clock= 4.20E+01
+ dcop: end dcop, cpu clock= 4.20E+01 peak memory=      74 mb tot_iter=     732
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran40   begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 4.20E+01
+ sweep: tran tran40   end, cpu clock= 4.31E+01 peak memory=      74 mb
+ dcop: begin dcop, cpu clock= 4.31E+01
+ dcop: end dcop, cpu clock= 4.31E+01 peak memory=      74 mb tot_iter=     750
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran41   begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 4.31E+01
+ sweep: tran tran41   end, cpu clock= 4.42E+01 peak memory=      74 mb
+ dcop: begin dcop, cpu clock= 4.42E+01
+ dcop: end dcop, cpu clock= 4.42E+01 peak memory=      74 mb tot_iter=     757
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran42   begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 4.42E+01
+ sweep: tran tran42   end, cpu clock= 4.52E+01 peak memory=      74 mb
+ dcop: begin dcop, cpu clock= 4.52E+01
+ dcop: end dcop, cpu clock= 4.52E+01 peak memory=      74 mb tot_iter=     762
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran43   begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 4.52E+01
+ sweep: tran tran43   end, cpu clock= 4.63E+01 peak memory=      74 mb
+ dcop: begin dcop, cpu clock= 4.63E+01
+ dcop: end dcop, cpu clock= 4.63E+01 peak memory=      74 mb tot_iter=     768
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran44   begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 4.63E+01
+ sweep: tran tran44   end, cpu clock= 4.74E+01 peak memory=      74 mb
+ dcop: begin dcop, cpu clock= 4.74E+01
+ dcop: end dcop, cpu clock= 4.74E+01 peak memory=      74 mb tot_iter=     776
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran45   begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 4.74E+01
+ sweep: tran tran45   end, cpu clock= 4.84E+01 peak memory=      74 mb
+ dcop: begin dcop, cpu clock= 4.84E+01
+ dcop: end dcop, cpu clock= 4.84E+01 peak memory=      74 mb tot_iter=     789
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran46   begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 4.84E+01
+ sweep: tran tran46   end, cpu clock= 4.95E+01 peak memory=      74 mb
+ dcop: begin dcop, cpu clock= 4.95E+01
+ dcop: end dcop, cpu clock= 4.95E+01 peak memory=      74 mb tot_iter=     813
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran47   begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 4.95E+01
+ sweep: tran tran47   end, cpu clock= 5.05E+01 peak memory=      75 mb
+ dcop: begin dcop, cpu clock= 5.05E+01
+ dcop: end dcop, cpu clock= 5.05E+01 peak memory=      75 mb tot_iter=     818
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran48   begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 5.05E+01
+ sweep: tran tran48   end, cpu clock= 5.16E+01 peak memory=      75 mb
+ dcop: begin dcop, cpu clock= 5.16E+01
+ dcop: end dcop, cpu clock= 5.16E+01 peak memory=      75 mb tot_iter=     844
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran49   begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 5.16E+01
+ sweep: tran tran49   end, cpu clock= 5.27E+01 peak memory=      75 mb
+ dcop: begin dcop, cpu clock= 5.27E+01
+ dcop: end dcop, cpu clock= 5.27E+01 peak memory=      75 mb tot_iter=     850
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran50   begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 5.27E+01
+ sweep: tran tran50   end, cpu clock= 5.37E+01 peak memory=      75 mb
+ dcop: begin dcop, cpu clock= 5.37E+01
+ dcop: end dcop, cpu clock= 5.37E+01 peak memory=      75 mb tot_iter=     859
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran51   begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 5.37E+01
+ sweep: tran tran51   end, cpu clock= 5.48E+01 peak memory=      75 mb
+ dcop: begin dcop, cpu clock= 5.48E+01
+ dcop: end dcop, cpu clock= 5.48E+01 peak memory=      75 mb tot_iter=     867
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran52   begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 5.48E+01
+ sweep: tran tran52   end, cpu clock= 5.59E+01 peak memory=      75 mb
+ dcop: begin dcop, cpu clock= 5.59E+01
+ dcop: end dcop, cpu clock= 5.59E+01 peak memory=      75 mb tot_iter=     874
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran53   begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 5.59E+01
+ sweep: tran tran53   end, cpu clock= 5.69E+01 peak memory=      75 mb
+ dcop: begin dcop, cpu clock= 5.69E+01
+ dcop: end dcop, cpu clock= 5.69E+01 peak memory=      75 mb tot_iter=     881
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran54   begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 5.69E+01
+ sweep: tran tran54   end, cpu clock= 5.80E+01 peak memory=      75 mb
+ dcop: begin dcop, cpu clock= 5.80E+01
+ dcop: end dcop, cpu clock= 5.80E+01 peak memory=      75 mb tot_iter=     888
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran55   begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 5.80E+01
+ sweep: tran tran55   end, cpu clock= 5.91E+01 peak memory=      75 mb
+ dcop: begin dcop, cpu clock= 5.91E+01
+ dcop: end dcop, cpu clock= 5.91E+01 peak memory=      75 mb tot_iter=     906
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran56   begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 5.91E+01
+ sweep: tran tran56   end, cpu clock= 6.02E+01 peak memory=      74 mb
+ dcop: begin dcop, cpu clock= 6.02E+01
+ dcop: end dcop, cpu clock= 6.02E+01 peak memory=      74 mb tot_iter=     930
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran57   begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 6.02E+01
+ sweep: tran tran57   end, cpu clock= 6.13E+01 peak memory=      74 mb
+ dcop: begin dcop, cpu clock= 6.13E+01
+ dcop: end dcop, cpu clock= 6.13E+01 peak memory=      74 mb tot_iter=     936
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran58   begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 6.13E+01
+ sweep: tran tran58   end, cpu clock= 6.24E+01 peak memory=      74 mb
+ dcop: begin dcop, cpu clock= 6.24E+01
+ dcop: end dcop, cpu clock= 6.24E+01 peak memory=      74 mb tot_iter=     954
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran59   begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 6.24E+01
+ sweep: tran tran59   end, cpu clock= 6.34E+01 peak memory=      74 mb
+ dcop: begin dcop, cpu clock= 6.34E+01
+ dcop: end dcop, cpu clock= 6.34E+01 peak memory=      74 mb tot_iter=     971
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran60   begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 6.34E+01
+ sweep: tran tran60   end, cpu clock= 6.45E+01 peak memory=      74 mb
+ dcop: begin dcop, cpu clock= 6.45E+01
+ dcop: end dcop, cpu clock= 6.45E+01 peak memory=      74 mb tot_iter=     985
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran61   begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 6.45E+01
+ sweep: tran tran61   end, cpu clock= 6.55E+01 peak memory=      74 mb
+ dcop: begin dcop, cpu clock= 6.55E+01
+ dcop: end dcop, cpu clock= 6.55E+01 peak memory=      74 mb tot_iter=     992
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran62   begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 6.55E+01
+ sweep: tran tran62   end, cpu clock= 6.66E+01 peak memory=      74 mb
+ dcop: begin dcop, cpu clock= 6.66E+01
+ dcop: end dcop, cpu clock= 6.66E+01 peak memory=      74 mb tot_iter=     997
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran63   begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 6.66E+01
+ sweep: tran tran63   end, cpu clock= 6.77E+01 peak memory=      74 mb
+ dcop: begin dcop, cpu clock= 6.77E+01
+ dcop: end dcop, cpu clock= 6.77E+01 peak memory=      74 mb tot_iter=    1004
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran64   begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 6.77E+01
+ sweep: tran tran64   end, cpu clock= 6.87E+01 peak memory=      74 mb
+ dcop: begin dcop, cpu clock= 6.87E+01
+ dcop: end dcop, cpu clock= 6.87E+01 peak memory=      74 mb tot_iter=    1012
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran65   begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 6.87E+01
+ sweep: tran tran65   end, cpu clock= 6.98E+01 peak memory=      74 mb
+ dcop: begin dcop, cpu clock= 6.98E+01
+ dcop: end dcop, cpu clock= 6.98E+01 peak memory=      74 mb tot_iter=    1018
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran66   begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 6.98E+01
+ sweep: tran tran66   end, cpu clock= 7.09E+01 peak memory=      74 mb
+ dcop: begin dcop, cpu clock= 7.09E+01
+ dcop: end dcop, cpu clock= 7.09E+01 peak memory=      74 mb tot_iter=    1025
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran67   begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 7.09E+01
+ sweep: tran tran67   end, cpu clock= 7.19E+01 peak memory=      74 mb
+ dcop: begin dcop, cpu clock= 7.19E+01
+ dcop: end dcop, cpu clock= 7.19E+01 peak memory=      74 mb tot_iter=    1033
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran68   begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 7.19E+01
+ sweep: tran tran68   end, cpu clock= 7.30E+01 peak memory=      74 mb
+ dcop: begin dcop, cpu clock= 7.30E+01
+ dcop: end dcop, cpu clock= 7.30E+01 peak memory=      74 mb tot_iter=    1039
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran69   begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 7.30E+01
+ sweep: tran tran69   end, cpu clock= 7.40E+01 peak memory=      74 mb
+ dcop: begin dcop, cpu clock= 7.41E+01
+ dcop: end dcop, cpu clock= 7.41E+01 peak memory=      74 mb tot_iter=    1045
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran70   begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 7.41E+01
+ sweep: tran tran70   end, cpu clock= 7.51E+01 peak memory=      74 mb
+ dcop: begin dcop, cpu clock= 7.51E+01
+ dcop: end dcop, cpu clock= 7.51E+01 peak memory=      74 mb tot_iter=    1065
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran71   begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 7.51E+01
+ sweep: tran tran71   end, cpu clock= 7.62E+01 peak memory=      74 mb
+ dcop: begin dcop, cpu clock= 7.62E+01
+ dcop: end dcop, cpu clock= 7.62E+01 peak memory=      74 mb tot_iter=    1070
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran72   begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 7.62E+01
+ sweep: tran tran72   end, cpu clock= 7.72E+01 peak memory=      74 mb
+ dcop: begin dcop, cpu clock= 7.72E+01
+ dcop: end dcop, cpu clock= 7.73E+01 peak memory=      74 mb tot_iter=    1096
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran73   begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 7.73E+01
+ sweep: tran tran73   end, cpu clock= 7.83E+01 peak memory=      74 mb
+ dcop: begin dcop, cpu clock= 7.83E+01
+ dcop: end dcop, cpu clock= 7.83E+01 peak memory=      74 mb tot_iter=    1100
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran74   begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 7.83E+01
+ sweep: tran tran74   end, cpu clock= 7.94E+01 peak memory=      74 mb
+ dcop: begin dcop, cpu clock= 7.94E+01
+ dcop: end dcop, cpu clock= 7.94E+01 peak memory=      74 mb tot_iter=    1106
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran75   begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 7.94E+01
+ sweep: tran tran75   end, cpu clock= 8.04E+01 peak memory=      74 mb
+ dcop: begin dcop, cpu clock= 8.04E+01
+ dcop: end dcop, cpu clock= 8.05E+01 peak memory=      74 mb tot_iter=    1123
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran76   begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 8.05E+01
+ sweep: tran tran76   end, cpu clock= 8.15E+01 peak memory=      74 mb
+ dcop: begin dcop, cpu clock= 8.15E+01
+ dcop: end dcop, cpu clock= 8.15E+01 peak memory=      74 mb tot_iter=    1131
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran77   begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 8.15E+01
+ sweep: tran tran77   end, cpu clock= 8.26E+01 peak memory=      74 mb
+ dcop: begin dcop, cpu clock= 8.26E+01
+ dcop: end dcop, cpu clock= 8.26E+01 peak memory=      74 mb tot_iter=    1137
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran78   begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 8.26E+01
+ sweep: tran tran78   end, cpu clock= 8.36E+01 peak memory=      74 mb
+ dcop: begin dcop, cpu clock= 8.37E+01
+ dcop: end dcop, cpu clock= 8.37E+01 peak memory=      74 mb tot_iter=    1141
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran79   begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 8.37E+01
+ sweep: tran tran79   end, cpu clock= 8.47E+01 peak memory=      74 mb
+ dcop: begin dcop, cpu clock= 8.47E+01
+ dcop: end dcop, cpu clock= 8.47E+01 peak memory=      74 mb tot_iter=    1158
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran80   begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 8.47E+01
+ sweep: tran tran80   end, cpu clock= 8.58E+01 peak memory=      74 mb
+ dcop: begin dcop, cpu clock= 8.58E+01
+ dcop: end dcop, cpu clock= 8.58E+01 peak memory=      74 mb tot_iter=    1167
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran81   begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 8.58E+01
+ sweep: tran tran81   end, cpu clock= 8.69E+01 peak memory=      74 mb
+ dcop: begin dcop, cpu clock= 8.69E+01
+ dcop: end dcop, cpu clock= 8.69E+01 peak memory=      74 mb tot_iter=    1185
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran82   begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 8.69E+01
+ sweep: tran tran82   end, cpu clock= 8.80E+01 peak memory=      74 mb
+ dcop: begin dcop, cpu clock= 8.80E+01
+ dcop: end dcop, cpu clock= 8.80E+01 peak memory=      74 mb tot_iter=    1200
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran83   begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 8.80E+01
+ sweep: tran tran83   end, cpu clock= 8.90E+01 peak memory=      74 mb
+ dcop: begin dcop, cpu clock= 8.90E+01
+ dcop: end dcop, cpu clock= 8.90E+01 peak memory=      74 mb tot_iter=    1207
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran84   begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 8.90E+01
+ sweep: tran tran84   end, cpu clock= 9.01E+01 peak memory=      74 mb
+ dcop: begin dcop, cpu clock= 9.01E+01
+ dcop: end dcop, cpu clock= 9.01E+01 peak memory=      74 mb tot_iter=    1214
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran85   begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 9.01E+01
+ sweep: tran tran85   end, cpu clock= 9.11E+01 peak memory=      74 mb
+ dcop: begin dcop, cpu clock= 9.11E+01
+ dcop: end dcop, cpu clock= 9.11E+01 peak memory=      74 mb tot_iter=    1219
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran86   begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 9.11E+01
+ sweep: tran tran86   end, cpu clock= 9.22E+01 peak memory=      74 mb
+ dcop: begin dcop, cpu clock= 9.22E+01
+ dcop: end dcop, cpu clock= 9.22E+01 peak memory=      74 mb tot_iter=    1226
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran87   begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 9.22E+01
+ sweep: tran tran87   end, cpu clock= 9.33E+01 peak memory=      74 mb
+ dcop: begin dcop, cpu clock= 9.33E+01
+ dcop: end dcop, cpu clock= 9.33E+01 peak memory=      74 mb tot_iter=    1231
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran88   begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 9.33E+01
+ sweep: tran tran88   end, cpu clock= 9.43E+01 peak memory=      74 mb
+ dcop: begin dcop, cpu clock= 9.43E+01
+ dcop: end dcop, cpu clock= 9.44E+01 peak memory=      74 mb tot_iter=    1249
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran89   begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 9.44E+01
+ sweep: tran tran89   end, cpu clock= 9.54E+01 peak memory=      74 mb
+ dcop: begin dcop, cpu clock= 9.54E+01
+ dcop: end dcop, cpu clock= 9.55E+01 peak memory=      74 mb tot_iter=    1255
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran90   begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 9.55E+01
+ sweep: tran tran90   end, cpu clock= 9.65E+01 peak memory=      74 mb
+ dcop: begin dcop, cpu clock= 9.65E+01
+ dcop: end dcop, cpu clock= 9.65E+01 peak memory=      74 mb tot_iter=    1276
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran91   begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 9.65E+01
+ sweep: tran tran91   end, cpu clock= 9.76E+01 peak memory=      74 mb
+ dcop: begin dcop, cpu clock= 9.76E+01
+ dcop: end dcop, cpu clock= 9.76E+01 peak memory=      74 mb tot_iter=    1282
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran92   begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 9.76E+01
+ sweep: tran tran92   end, cpu clock= 9.87E+01 peak memory=      74 mb
+ dcop: begin dcop, cpu clock= 9.87E+01
+ dcop: end dcop, cpu clock= 9.87E+01 peak memory=      74 mb tot_iter=    1302
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran93   begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 9.87E+01
+ sweep: tran tran93   end, cpu clock= 9.98E+01 peak memory=      74 mb
+ dcop: begin dcop, cpu clock= 9.98E+01
+ dcop: end dcop, cpu clock= 9.98E+01 peak memory=      74 mb tot_iter=    1307
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran94   begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 9.98E+01
+ sweep: tran tran94   end, cpu clock= 1.01E+02 peak memory=      74 mb
+ dcop: begin dcop, cpu clock= 1.01E+02
+ dcop: end dcop, cpu clock= 1.01E+02 peak memory=      74 mb tot_iter=    1313
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran95   begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 1.01E+02
+ sweep: tran tran95   end, cpu clock= 1.02E+02 peak memory=      74 mb
+ dcop: begin dcop, cpu clock= 1.02E+02
+ dcop: end dcop, cpu clock= 1.02E+02 peak memory=      74 mb tot_iter=    1330
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran96   begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 1.02E+02
+ sweep: tran tran96   end, cpu clock= 1.03E+02 peak memory=      74 mb
+ dcop: begin dcop, cpu clock= 1.03E+02
+ dcop: end dcop, cpu clock= 1.03E+02 peak memory=      74 mb tot_iter=    1335
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran97   begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 1.03E+02
+ sweep: tran tran97   end, cpu clock= 1.04E+02 peak memory=      74 mb
+ dcop: begin dcop, cpu clock= 1.04E+02
+ dcop: end dcop, cpu clock= 1.04E+02 peak memory=      74 mb tot_iter=    1352
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran98   begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 1.04E+02
+ sweep: tran tran98   end, cpu clock= 1.05E+02 peak memory=      74 mb
+ dcop: begin dcop, cpu clock= 1.05E+02
+ dcop: end dcop, cpu clock= 1.05E+02 peak memory=      74 mb tot_iter=    1358
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran99   begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 1.05E+02
+ sweep: tran tran99   end, cpu clock= 1.06E+02 peak memory=      74 mb
+ dcop: begin dcop, cpu clock= 1.06E+02
+ dcop: end dcop, cpu clock= 1.06E+02 peak memory=      74 mb tot_iter=    1365
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran100  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 1.06E+02
+ sweep: tran tran100  end, cpu clock= 1.07E+02 peak memory=      74 mb
+ dcop: begin dcop, cpu clock= 1.07E+02
+ dcop: end dcop, cpu clock= 1.07E+02 peak memory=      74 mb tot_iter=    1383
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran101  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 1.07E+02
+ sweep: tran tran101  end, cpu clock= 1.08E+02 peak memory=      74 mb
+ dcop: begin dcop, cpu clock= 1.08E+02
+ dcop: end dcop, cpu clock= 1.08E+02 peak memory=      74 mb tot_iter=    1389
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran102  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 1.08E+02
+ sweep: tran tran102  end, cpu clock= 1.09E+02 peak memory=      74 mb
+ dcop: begin dcop, cpu clock= 1.09E+02
+ dcop: end dcop, cpu clock= 1.09E+02 peak memory=      74 mb tot_iter=    1401
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran103  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 1.09E+02
+ sweep: tran tran103  end, cpu clock= 1.11E+02 peak memory=      74 mb
+ dcop: begin dcop, cpu clock= 1.11E+02
+ dcop: end dcop, cpu clock= 1.11E+02 peak memory=      74 mb tot_iter=    1408
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran104  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 1.11E+02
+ sweep: tran tran104  end, cpu clock= 1.12E+02 peak memory=      74 mb
+ dcop: begin dcop, cpu clock= 1.12E+02
+ dcop: end dcop, cpu clock= 1.12E+02 peak memory=      74 mb tot_iter=    1412
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran105  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 1.12E+02
+ sweep: tran tran105  end, cpu clock= 1.13E+02 peak memory=      74 mb
+ dcop: begin dcop, cpu clock= 1.13E+02
+ dcop: end dcop, cpu clock= 1.13E+02 peak memory=      74 mb tot_iter=    1417
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran106  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 1.13E+02
+ sweep: tran tran106  end, cpu clock= 1.14E+02 peak memory=      74 mb
+ dcop: begin dcop, cpu clock= 1.14E+02
+ dcop: end dcop, cpu clock= 1.14E+02 peak memory=      74 mb tot_iter=    1423
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran107  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 1.14E+02
+ sweep: tran tran107  end, cpu clock= 1.15E+02 peak memory=      74 mb
+ dcop: begin dcop, cpu clock= 1.15E+02
+ dcop: end dcop, cpu clock= 1.15E+02 peak memory=      74 mb tot_iter=    1434
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran108  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 1.15E+02
+ sweep: tran tran108  end, cpu clock= 1.16E+02 peak memory=      74 mb
+ dcop: begin dcop, cpu clock= 1.16E+02
+ dcop: end dcop, cpu clock= 1.16E+02 peak memory=      74 mb tot_iter=    1440
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran109  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 1.16E+02
+ sweep: tran tran109  end, cpu clock= 1.17E+02 peak memory=      74 mb
+ dcop: begin dcop, cpu clock= 1.17E+02
+ dcop: end dcop, cpu clock= 1.17E+02 peak memory=      74 mb tot_iter=    1458
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran110  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 1.17E+02
+ sweep: tran tran110  end, cpu clock= 1.18E+02 peak memory=      74 mb
+ dcop: begin dcop, cpu clock= 1.18E+02
+ dcop: end dcop, cpu clock= 1.18E+02 peak memory=      74 mb tot_iter=    1473
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran111  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 1.18E+02
+ sweep: tran tran111  end, cpu clock= 1.19E+02 peak memory=      74 mb
+ dcop: begin dcop, cpu clock= 1.19E+02
+ dcop: end dcop, cpu clock= 1.19E+02 peak memory=      74 mb tot_iter=    1478
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran112  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 1.19E+02
+ sweep: tran tran112  end, cpu clock= 1.20E+02 peak memory=      74 mb
+ dcop: begin dcop, cpu clock= 1.20E+02
+ dcop: end dcop, cpu clock= 1.20E+02 peak memory=      74 mb tot_iter=    1506
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran113  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 1.20E+02
+ sweep: tran tran113  end, cpu clock= 1.21E+02 peak memory=      74 mb
+ dcop: begin dcop, cpu clock= 1.21E+02
+ dcop: end dcop, cpu clock= 1.21E+02 peak memory=      74 mb tot_iter=    1512
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran114  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 1.21E+02
+ sweep: tran tran114  end, cpu clock= 1.22E+02 peak memory=      75 mb
+ dcop: begin dcop, cpu clock= 1.22E+02
+ dcop: end dcop, cpu clock= 1.22E+02 peak memory=      75 mb tot_iter=    1529
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran115  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 1.22E+02
+ sweep: tran tran115  end, cpu clock= 1.23E+02 peak memory=      75 mb
+ dcop: begin dcop, cpu clock= 1.23E+02
+ dcop: end dcop, cpu clock= 1.23E+02 peak memory=      75 mb tot_iter=    1536
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran116  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 1.23E+02
+ sweep: tran tran116  end, cpu clock= 1.24E+02 peak memory=      75 mb
+ dcop: begin dcop, cpu clock= 1.24E+02
+ dcop: end dcop, cpu clock= 1.24E+02 peak memory=      75 mb tot_iter=    1554
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran117  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 1.24E+02
+ sweep: tran tran117  end, cpu clock= 1.25E+02 peak memory=      75 mb
+ dcop: begin dcop, cpu clock= 1.25E+02
+ dcop: end dcop, cpu clock= 1.25E+02 peak memory=      75 mb tot_iter=    1567
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran118  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 1.25E+02
+ sweep: tran tran118  end, cpu clock= 1.26E+02 peak memory=      75 mb
+ dcop: begin dcop, cpu clock= 1.26E+02
+ dcop: end dcop, cpu clock= 1.26E+02 peak memory=      75 mb tot_iter=    1573
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran119  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 1.26E+02
+ sweep: tran tran119  end, cpu clock= 1.27E+02 peak memory=      75 mb
+ dcop: begin dcop, cpu clock= 1.27E+02
+ dcop: end dcop, cpu clock= 1.27E+02 peak memory=      75 mb tot_iter=    1579
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran120  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 1.27E+02
+ sweep: tran tran120  end, cpu clock= 1.29E+02 peak memory=      75 mb
+ dcop: begin dcop, cpu clock= 1.29E+02
+ dcop: end dcop, cpu clock= 1.29E+02 peak memory=      75 mb tot_iter=    1582
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran121  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 1.29E+02
+ sweep: tran tran121  end, cpu clock= 1.30E+02 peak memory=      75 mb
+ dcop: begin dcop, cpu clock= 1.30E+02
+ dcop: end dcop, cpu clock= 1.30E+02 peak memory=      75 mb tot_iter=    1589
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran122  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 1.30E+02
+ sweep: tran tran122  end, cpu clock= 1.31E+02 peak memory=      75 mb
+ dcop: begin dcop, cpu clock= 1.31E+02
+ dcop: end dcop, cpu clock= 1.31E+02 peak memory=      75 mb tot_iter=    1593
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran123  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 1.31E+02
+ sweep: tran tran123  end, cpu clock= 1.32E+02 peak memory=      75 mb
+ dcop: begin dcop, cpu clock= 1.32E+02
+ dcop: end dcop, cpu clock= 1.32E+02 peak memory=      75 mb tot_iter=    1611
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran124  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 1.32E+02
+ sweep: tran tran124  end, cpu clock= 1.33E+02 peak memory=      75 mb
+ dcop: begin dcop, cpu clock= 1.33E+02
+ dcop: end dcop, cpu clock= 1.33E+02 peak memory=      75 mb tot_iter=    1629
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran125  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 1.33E+02
+ sweep: tran tran125  end, cpu clock= 1.34E+02 peak memory=      75 mb
+ dcop: begin dcop, cpu clock= 1.34E+02
+ dcop: end dcop, cpu clock= 1.34E+02 peak memory=      75 mb tot_iter=    1634
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran126  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 1.34E+02
+ sweep: tran tran126  end, cpu clock= 1.35E+02 peak memory=      69 mb
+ dcop: begin dcop, cpu clock= 1.35E+02
+ dcop: end dcop, cpu clock= 1.35E+02 peak memory=      69 mb tot_iter=    1654
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran127  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 1.35E+02
+ sweep: tran tran127  end, cpu clock= 1.36E+02 peak memory=      69 mb
+ dcop: begin dcop, cpu clock= 1.36E+02
+ dcop: end dcop, cpu clock= 1.36E+02 peak memory=      69 mb tot_iter=    1660
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran128  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 1.36E+02
+ sweep: tran tran128  end, cpu clock= 1.37E+02 peak memory=      69 mb
+ dcop: begin dcop, cpu clock= 1.37E+02
+ dcop: end dcop, cpu clock= 1.37E+02 peak memory=      69 mb tot_iter=    1678
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran129  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 1.37E+02
+ sweep: tran tran129  end, cpu clock= 1.38E+02 peak memory=      69 mb
+ dcop: begin dcop, cpu clock= 1.38E+02
+ dcop: end dcop, cpu clock= 1.38E+02 peak memory=      69 mb tot_iter=    1695
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran130  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 1.38E+02
+ sweep: tran tran130  end, cpu clock= 1.39E+02 peak memory=      69 mb
+ dcop: begin dcop, cpu clock= 1.39E+02
+ dcop: end dcop, cpu clock= 1.39E+02 peak memory=      69 mb tot_iter=    1712
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran131  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 1.39E+02
+ sweep: tran tran131  end, cpu clock= 1.40E+02 peak memory=      69 mb
+ dcop: begin dcop, cpu clock= 1.40E+02
+ dcop: end dcop, cpu clock= 1.40E+02 peak memory=      69 mb tot_iter=    1732
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran132  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 1.40E+02
+ sweep: tran tran132  end, cpu clock= 1.41E+02 peak memory=      69 mb
+ dcop: begin dcop, cpu clock= 1.41E+02
+ dcop: end dcop, cpu clock= 1.41E+02 peak memory=      69 mb tot_iter=    1750
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran133  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 1.41E+02
+ sweep: tran tran133  end, cpu clock= 1.42E+02 peak memory=      69 mb
+ dcop: begin dcop, cpu clock= 1.42E+02
+ dcop: end dcop, cpu clock= 1.42E+02 peak memory=      69 mb tot_iter=    1760
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran134  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 1.42E+02
+ sweep: tran tran134  end, cpu clock= 1.43E+02 peak memory=      69 mb
+ dcop: begin dcop, cpu clock= 1.43E+02
+ dcop: end dcop, cpu clock= 1.43E+02 peak memory=      69 mb tot_iter=    1768
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran135  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 1.43E+02
+ sweep: tran tran135  end, cpu clock= 1.44E+02 peak memory=      69 mb
+ dcop: begin dcop, cpu clock= 1.44E+02
+ dcop: end dcop, cpu clock= 1.44E+02 peak memory=      69 mb tot_iter=    1773
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran136  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 1.44E+02
+ sweep: tran tran136  end, cpu clock= 1.45E+02 peak memory=      69 mb
+ dcop: begin dcop, cpu clock= 1.45E+02
+ dcop: end dcop, cpu clock= 1.45E+02 peak memory=      69 mb tot_iter=    1781
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran137  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 1.45E+02
+ sweep: tran tran137  end, cpu clock= 1.46E+02 peak memory=      69 mb
+ dcop: begin dcop, cpu clock= 1.46E+02
+ dcop: end dcop, cpu clock= 1.46E+02 peak memory=      69 mb tot_iter=    1788
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran138  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 1.46E+02
+ sweep: tran tran138  end, cpu clock= 1.48E+02 peak memory=      69 mb
+ dcop: begin dcop, cpu clock= 1.48E+02
+ dcop: end dcop, cpu clock= 1.48E+02 peak memory=      69 mb tot_iter=    1794
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran139  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 1.48E+02
+ sweep: tran tran139  end, cpu clock= 1.49E+02 peak memory=      69 mb
+ dcop: begin dcop, cpu clock= 1.49E+02
+ dcop: end dcop, cpu clock= 1.49E+02 peak memory=      69 mb tot_iter=    1805
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran140  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 1.49E+02
+ sweep: tran tran140  end, cpu clock= 1.50E+02 peak memory=      69 mb
+ dcop: begin dcop, cpu clock= 1.50E+02
+ dcop: end dcop, cpu clock= 1.50E+02 peak memory=      69 mb tot_iter=    1823
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran141  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 1.50E+02
+ sweep: tran tran141  end, cpu clock= 1.51E+02 peak memory=      69 mb
+ dcop: begin dcop, cpu clock= 1.51E+02
+ dcop: end dcop, cpu clock= 1.51E+02 peak memory=      69 mb tot_iter=    1828
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran142  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 1.51E+02
+ sweep: tran tran142  end, cpu clock= 1.52E+02 peak memory=      69 mb
+ dcop: begin dcop, cpu clock= 1.52E+02
+ dcop: end dcop, cpu clock= 1.52E+02 peak memory=      69 mb tot_iter=    1833
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran143  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 1.52E+02
+ sweep: tran tran143  end, cpu clock= 1.53E+02 peak memory=      69 mb
+ dcop: begin dcop, cpu clock= 1.53E+02
+ dcop: end dcop, cpu clock= 1.53E+02 peak memory=      69 mb tot_iter=    1847
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran144  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 1.53E+02
+ sweep: tran tran144  end, cpu clock= 1.54E+02 peak memory=      69 mb
+ dcop: begin dcop, cpu clock= 1.54E+02
+ dcop: end dcop, cpu clock= 1.54E+02 peak memory=      69 mb tot_iter=    1864
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran145  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 1.54E+02
+ sweep: tran tran145  end, cpu clock= 1.55E+02 peak memory=      69 mb
+ dcop: begin dcop, cpu clock= 1.55E+02
+ dcop: end dcop, cpu clock= 1.55E+02 peak memory=      69 mb tot_iter=    1870
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran146  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 1.55E+02
+ sweep: tran tran146  end, cpu clock= 1.56E+02 peak memory=      69 mb
+ dcop: begin dcop, cpu clock= 1.56E+02
+ dcop: end dcop, cpu clock= 1.56E+02 peak memory=      69 mb tot_iter=    1877
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran147  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 1.56E+02
+ sweep: tran tran147  end, cpu clock= 1.57E+02 peak memory=      69 mb
+ dcop: begin dcop, cpu clock= 1.57E+02
+ dcop: end dcop, cpu clock= 1.57E+02 peak memory=      69 mb tot_iter=    1888
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran148  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 1.57E+02
+ sweep: tran tran148  end, cpu clock= 1.58E+02 peak memory=      69 mb
+ dcop: begin dcop, cpu clock= 1.58E+02
+ dcop: end dcop, cpu clock= 1.58E+02 peak memory=      69 mb tot_iter=    1896
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran149  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 1.58E+02
+ sweep: tran tran149  end, cpu clock= 1.59E+02 peak memory=      69 mb
+ dcop: begin dcop, cpu clock= 1.59E+02
+ dcop: end dcop, cpu clock= 1.59E+02 peak memory=      69 mb tot_iter=    1902
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran150  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 1.59E+02
+ sweep: tran tran150  end, cpu clock= 1.60E+02 peak memory=      69 mb
+ dcop: begin dcop, cpu clock= 1.60E+02
+ dcop: end dcop, cpu clock= 1.60E+02 peak memory=      69 mb tot_iter=    1909
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran151  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 1.60E+02
+ sweep: tran tran151  end, cpu clock= 1.61E+02 peak memory=      69 mb
+ dcop: begin dcop, cpu clock= 1.61E+02
+ dcop: end dcop, cpu clock= 1.61E+02 peak memory=      69 mb tot_iter=    1916
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran152  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 1.61E+02
+ sweep: tran tran152  end, cpu clock= 1.62E+02 peak memory=      69 mb
+ dcop: begin dcop, cpu clock= 1.62E+02
+ dcop: end dcop, cpu clock= 1.62E+02 peak memory=      69 mb tot_iter=    1923
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran153  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 1.62E+02
+ sweep: tran tran153  end, cpu clock= 1.64E+02 peak memory=      69 mb
+ dcop: begin dcop, cpu clock= 1.64E+02
+ dcop: end dcop, cpu clock= 1.64E+02 peak memory=      69 mb tot_iter=    1948
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran154  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 1.64E+02
+ sweep: tran tran154  end, cpu clock= 1.65E+02 peak memory=      69 mb
+ dcop: begin dcop, cpu clock= 1.65E+02
+ dcop: end dcop, cpu clock= 1.65E+02 peak memory=      69 mb tot_iter=    1957
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran155  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 1.65E+02
+ sweep: tran tran155  end, cpu clock= 1.66E+02 peak memory=      69 mb
+ dcop: begin dcop, cpu clock= 1.66E+02
+ dcop: end dcop, cpu clock= 1.66E+02 peak memory=      69 mb tot_iter=    1983
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran156  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 1.66E+02
+ sweep: tran tran156  end, cpu clock= 1.67E+02 peak memory=      69 mb
+ dcop: begin dcop, cpu clock= 1.67E+02
+ dcop: end dcop, cpu clock= 1.67E+02 peak memory=      69 mb tot_iter=    1988
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran157  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 1.67E+02
+ sweep: tran tran157  end, cpu clock= 1.68E+02 peak memory=      69 mb
+ dcop: begin dcop, cpu clock= 1.68E+02
+ dcop: end dcop, cpu clock= 1.68E+02 peak memory=      69 mb tot_iter=    1997
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran158  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 1.68E+02
+ sweep: tran tran158  end, cpu clock= 1.69E+02 peak memory=      69 mb
+ dcop: begin dcop, cpu clock= 1.69E+02
+ dcop: end dcop, cpu clock= 1.69E+02 peak memory=      69 mb tot_iter=    2016
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran159  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 1.69E+02
+ sweep: tran tran159  end, cpu clock= 1.70E+02 peak memory=      69 mb
+ dcop: begin dcop, cpu clock= 1.70E+02
+ dcop: end dcop, cpu clock= 1.70E+02 peak memory=      69 mb tot_iter=    2029
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran160  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 1.70E+02
+ sweep: tran tran160  end, cpu clock= 1.71E+02 peak memory=      69 mb
+ dcop: begin dcop, cpu clock= 1.71E+02
+ dcop: end dcop, cpu clock= 1.71E+02 peak memory=      69 mb tot_iter=    2046
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran161  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 1.71E+02
+ sweep: tran tran161  end, cpu clock= 1.72E+02 peak memory=      69 mb
+ dcop: begin dcop, cpu clock= 1.72E+02
+ dcop: end dcop, cpu clock= 1.72E+02 peak memory=      69 mb tot_iter=    2052
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran162  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 1.72E+02
+ sweep: tran tran162  end, cpu clock= 1.73E+02 peak memory=      69 mb
+ dcop: begin dcop, cpu clock= 1.73E+02
+ dcop: end dcop, cpu clock= 1.73E+02 peak memory=      69 mb tot_iter=    2070
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran163  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 1.73E+02
+ sweep: tran tran163  end, cpu clock= 1.74E+02 peak memory=      69 mb
+ dcop: begin dcop, cpu clock= 1.74E+02
+ dcop: end dcop, cpu clock= 1.74E+02 peak memory=      69 mb tot_iter=    2087
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran164  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 1.74E+02
+ sweep: tran tran164  end, cpu clock= 1.75E+02 peak memory=      69 mb
+ dcop: begin dcop, cpu clock= 1.75E+02
+ dcop: end dcop, cpu clock= 1.75E+02 peak memory=      69 mb tot_iter=    2092
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran165  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 1.75E+02
+ sweep: tran tran165  end, cpu clock= 1.76E+02 peak memory=      69 mb
+ dcop: begin dcop, cpu clock= 1.76E+02
+ dcop: end dcop, cpu clock= 1.76E+02 peak memory=      69 mb tot_iter=    2105
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran166  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 1.76E+02
+ sweep: tran tran166  end, cpu clock= 1.77E+02 peak memory=      69 mb
+ dcop: begin dcop, cpu clock= 1.77E+02
+ dcop: end dcop, cpu clock= 1.77E+02 peak memory=      69 mb tot_iter=    2121
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran167  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 1.77E+02
+ sweep: tran tran167  end, cpu clock= 1.78E+02 peak memory=      69 mb
+ dcop: begin dcop, cpu clock= 1.78E+02
+ dcop: end dcop, cpu clock= 1.78E+02 peak memory=      69 mb tot_iter=    2128
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran168  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 1.78E+02
+ sweep: tran tran168  end, cpu clock= 1.79E+02 peak memory=      69 mb
+ dcop: begin dcop, cpu clock= 1.79E+02
+ dcop: end dcop, cpu clock= 1.79E+02 peak memory=      69 mb tot_iter=    2133
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran169  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 1.79E+02
+ sweep: tran tran169  end, cpu clock= 1.81E+02 peak memory=      69 mb
+ dcop: begin dcop, cpu clock= 1.81E+02
+ dcop: end dcop, cpu clock= 1.81E+02 peak memory=      69 mb tot_iter=    2138
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran170  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 1.81E+02
+ sweep: tran tran170  end, cpu clock= 1.82E+02 peak memory=      69 mb
+ dcop: begin dcop, cpu clock= 1.82E+02
+ dcop: end dcop, cpu clock= 1.82E+02 peak memory=      69 mb tot_iter=    2147
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran171  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 1.82E+02
+ sweep: tran tran171  end, cpu clock= 1.83E+02 peak memory=      69 mb
+ dcop: begin dcop, cpu clock= 1.83E+02
+ dcop: end dcop, cpu clock= 1.83E+02 peak memory=      69 mb tot_iter=    2155
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran172  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 1.83E+02
+ sweep: tran tran172  end, cpu clock= 1.84E+02 peak memory=      69 mb
+ dcop: begin dcop, cpu clock= 1.84E+02
+ dcop: end dcop, cpu clock= 1.84E+02 peak memory=      69 mb tot_iter=    2168
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran173  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 1.84E+02
+ sweep: tran tran173  end, cpu clock= 1.85E+02 peak memory=      69 mb
+ dcop: begin dcop, cpu clock= 1.85E+02
+ dcop: end dcop, cpu clock= 1.85E+02 peak memory=      69 mb tot_iter=    2177
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran174  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 1.85E+02
+ sweep: tran tran174  end, cpu clock= 1.86E+02 peak memory=      69 mb
+ dcop: begin dcop, cpu clock= 1.86E+02
+ dcop: end dcop, cpu clock= 1.86E+02 peak memory=      69 mb tot_iter=    2183
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran175  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 1.86E+02
+ sweep: tran tran175  end, cpu clock= 1.87E+02 peak memory=      69 mb
+ dcop: begin dcop, cpu clock= 1.87E+02
+ dcop: end dcop, cpu clock= 1.87E+02 peak memory=      69 mb tot_iter=    2192
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran176  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 1.87E+02
+ sweep: tran tran176  end, cpu clock= 1.88E+02 peak memory=      69 mb
+ dcop: begin dcop, cpu clock= 1.88E+02
+ dcop: end dcop, cpu clock= 1.88E+02 peak memory=      69 mb tot_iter=    2212
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran177  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 1.88E+02
+ sweep: tran tran177  end, cpu clock= 1.89E+02 peak memory=      69 mb
+ dcop: begin dcop, cpu clock= 1.89E+02
+ dcop: end dcop, cpu clock= 1.89E+02 peak memory=      69 mb tot_iter=    2218
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran178  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 1.89E+02
+ sweep: tran tran178  end, cpu clock= 1.90E+02 peak memory=      69 mb
+ dcop: begin dcop, cpu clock= 1.90E+02
+ dcop: end dcop, cpu clock= 1.90E+02 peak memory=      69 mb tot_iter=    2224
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran179  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 1.90E+02
+ sweep: tran tran179  end, cpu clock= 1.91E+02 peak memory=      69 mb
+ dcop: begin dcop, cpu clock= 1.91E+02
+ dcop: end dcop, cpu clock= 1.91E+02 peak memory=      69 mb tot_iter=    2241
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran180  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 1.91E+02
+ sweep: tran tran180  end, cpu clock= 1.92E+02 peak memory=      69 mb
+ dcop: begin dcop, cpu clock= 1.92E+02
+ dcop: end dcop, cpu clock= 1.92E+02 peak memory=      69 mb tot_iter=    2247
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran181  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 1.92E+02
+ sweep: tran tran181  end, cpu clock= 1.93E+02 peak memory=      69 mb
+ dcop: begin dcop, cpu clock= 1.93E+02
+ dcop: end dcop, cpu clock= 1.93E+02 peak memory=      69 mb tot_iter=    2251
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran182  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 1.93E+02
+ sweep: tran tran182  end, cpu clock= 1.94E+02 peak memory=      69 mb
+ dcop: begin dcop, cpu clock= 1.94E+02
+ dcop: end dcop, cpu clock= 1.94E+02 peak memory=      69 mb tot_iter=    2259
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran183  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 1.94E+02
+ sweep: tran tran183  end, cpu clock= 1.95E+02 peak memory=      69 mb
+ dcop: begin dcop, cpu clock= 1.95E+02
+ dcop: end dcop, cpu clock= 1.95E+02 peak memory=      69 mb tot_iter=    2272
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran184  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 1.95E+02
+ sweep: tran tran184  end, cpu clock= 1.97E+02 peak memory=      69 mb
+ dcop: begin dcop, cpu clock= 1.97E+02
+ dcop: end dcop, cpu clock= 1.97E+02 peak memory=      69 mb tot_iter=    2279
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran185  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 1.97E+02
+ sweep: tran tran185  end, cpu clock= 1.98E+02 peak memory=      69 mb
+ dcop: begin dcop, cpu clock= 1.98E+02
+ dcop: end dcop, cpu clock= 1.98E+02 peak memory=      69 mb tot_iter=    2286
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran186  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 1.98E+02
+ sweep: tran tran186  end, cpu clock= 1.99E+02 peak memory=      69 mb
+ dcop: begin dcop, cpu clock= 1.99E+02
+ dcop: end dcop, cpu clock= 1.99E+02 peak memory=      69 mb tot_iter=    2294
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran187  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 1.99E+02
+ sweep: tran tran187  end, cpu clock= 2.00E+02 peak memory=      69 mb
+ dcop: begin dcop, cpu clock= 2.00E+02
+ dcop: end dcop, cpu clock= 2.00E+02 peak memory=      69 mb tot_iter=    2300
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran188  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 2.00E+02
+ sweep: tran tran188  end, cpu clock= 2.01E+02 peak memory=      69 mb
+ dcop: begin dcop, cpu clock= 2.01E+02
+ dcop: end dcop, cpu clock= 2.01E+02 peak memory=      69 mb tot_iter=    2305
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran189  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 2.01E+02
+ sweep: tran tran189  end, cpu clock= 2.02E+02 peak memory=      69 mb
+ dcop: begin dcop, cpu clock= 2.02E+02
+ dcop: end dcop, cpu clock= 2.02E+02 peak memory=      69 mb tot_iter=    2310
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran190  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 2.02E+02
+ sweep: tran tran190  end, cpu clock= 2.03E+02 peak memory=      69 mb
+ dcop: begin dcop, cpu clock= 2.03E+02
+ dcop: end dcop, cpu clock= 2.03E+02 peak memory=      69 mb tot_iter=    2316
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran191  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 2.03E+02
+ sweep: tran tran191  end, cpu clock= 2.04E+02 peak memory=      69 mb
+ dcop: begin dcop, cpu clock= 2.04E+02
+ dcop: end dcop, cpu clock= 2.04E+02 peak memory=      69 mb tot_iter=    2320
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran192  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 2.04E+02
+ sweep: tran tran192  end, cpu clock= 2.05E+02 peak memory=      69 mb
+ dcop: begin dcop, cpu clock= 2.05E+02
+ dcop: end dcop, cpu clock= 2.05E+02 peak memory=      69 mb tot_iter=    2328
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran193  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 2.05E+02
+ sweep: tran tran193  end, cpu clock= 2.06E+02 peak memory=      69 mb
+ dcop: begin dcop, cpu clock= 2.06E+02
+ dcop: end dcop, cpu clock= 2.06E+02 peak memory=      69 mb tot_iter=    2333
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran194  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 2.06E+02
+ sweep: tran tran194  end, cpu clock= 2.07E+02 peak memory=      69 mb
+ dcop: begin dcop, cpu clock= 2.07E+02
+ dcop: end dcop, cpu clock= 2.07E+02 peak memory=      69 mb tot_iter=    2339
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran195  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 2.07E+02
+ sweep: tran tran195  end, cpu clock= 2.08E+02 peak memory=      69 mb
+ dcop: begin dcop, cpu clock= 2.08E+02
+ dcop: end dcop, cpu clock= 2.08E+02 peak memory=      69 mb tot_iter=    2346
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran196  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 2.08E+02
+ sweep: tran tran196  end, cpu clock= 2.09E+02 peak memory=      69 mb
+ dcop: begin dcop, cpu clock= 2.09E+02
+ dcop: end dcop, cpu clock= 2.09E+02 peak memory=      69 mb tot_iter=    2364
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran197  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 2.09E+02
+ sweep: tran tran197  end, cpu clock= 2.10E+02 peak memory=      69 mb
+ dcop: begin dcop, cpu clock= 2.10E+02
+ dcop: end dcop, cpu clock= 2.10E+02 peak memory=      69 mb tot_iter=    2372
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran198  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 2.10E+02
+ sweep: tran tran198  end, cpu clock= 2.11E+02 peak memory=      69 mb
+ dcop: begin dcop, cpu clock= 2.11E+02
+ dcop: end dcop, cpu clock= 2.11E+02 peak memory=      69 mb tot_iter=    2378
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran199  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 2.11E+02
+ sweep: tran tran199  end, cpu clock= 2.12E+02 peak memory=      69 mb
+ dcop: begin dcop, cpu clock= 2.12E+02
+ dcop: end dcop, cpu clock= 2.12E+02 peak memory=      69 mb tot_iter=    2391
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran200  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 2.12E+02
+ sweep: tran tran200  end, cpu clock= 2.14E+02 peak memory=      69 mb
+ dcop: begin dcop, cpu clock= 2.14E+02
+ dcop: end dcop, cpu clock= 2.14E+02 peak memory=      69 mb tot_iter=    2408
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran201  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 2.14E+02
+ sweep: tran tran201  end, cpu clock= 2.15E+02 peak memory=      69 mb
+ dcop: begin dcop, cpu clock= 2.15E+02
+ dcop: end dcop, cpu clock= 2.15E+02 peak memory=      69 mb tot_iter=    2425
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran202  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 2.15E+02
+ sweep: tran tran202  end, cpu clock= 2.16E+02 peak memory=      69 mb
+ dcop: begin dcop, cpu clock= 2.16E+02
+ dcop: end dcop, cpu clock= 2.16E+02 peak memory=      69 mb tot_iter=    2433
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran203  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 2.16E+02
+ sweep: tran tran203  end, cpu clock= 2.17E+02 peak memory=      69 mb
+ dcop: begin dcop, cpu clock= 2.17E+02
+ dcop: end dcop, cpu clock= 2.17E+02 peak memory=      69 mb tot_iter=    2438
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran204  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 2.17E+02
+ sweep: tran tran204  end, cpu clock= 2.18E+02 peak memory=      69 mb
+ dcop: begin dcop, cpu clock= 2.18E+02
+ dcop: end dcop, cpu clock= 2.18E+02 peak memory=      69 mb tot_iter=    2448
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran205  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 2.18E+02
+ sweep: tran tran205  end, cpu clock= 2.19E+02 peak memory=      69 mb
+ dcop: begin dcop, cpu clock= 2.19E+02
+ dcop: end dcop, cpu clock= 2.19E+02 peak memory=      69 mb tot_iter=    2453
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran206  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 2.19E+02
+ sweep: tran tran206  end, cpu clock= 2.20E+02 peak memory=      69 mb
+ dcop: begin dcop, cpu clock= 2.20E+02
+ dcop: end dcop, cpu clock= 2.20E+02 peak memory=      69 mb tot_iter=    2458
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran207  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 2.20E+02
+ sweep: tran tran207  end, cpu clock= 2.21E+02 peak memory=      69 mb
+ dcop: begin dcop, cpu clock= 2.21E+02
+ dcop: end dcop, cpu clock= 2.21E+02 peak memory=      69 mb tot_iter=    2466
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran208  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 2.21E+02
+ sweep: tran tran208  end, cpu clock= 2.22E+02 peak memory=      69 mb
+ dcop: begin dcop, cpu clock= 2.22E+02
+ dcop: end dcop, cpu clock= 2.22E+02 peak memory=      69 mb tot_iter=    2484
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran209  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 2.22E+02
+ sweep: tran tran209  end, cpu clock= 2.23E+02 peak memory=      69 mb
+ dcop: begin dcop, cpu clock= 2.23E+02
+ dcop: end dcop, cpu clock= 2.23E+02 peak memory=      69 mb tot_iter=    2489
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran210  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 2.23E+02
+ sweep: tran tran210  end, cpu clock= 2.24E+02 peak memory=      69 mb
+ dcop: begin dcop, cpu clock= 2.24E+02
+ dcop: end dcop, cpu clock= 2.24E+02 peak memory=      69 mb tot_iter=    2497
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran211  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 2.24E+02
+ sweep: tran tran211  end, cpu clock= 2.25E+02 peak memory=      69 mb
+ dcop: begin dcop, cpu clock= 2.25E+02
+ dcop: end dcop, cpu clock= 2.25E+02 peak memory=      69 mb tot_iter=    2502
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran212  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 2.25E+02
+ sweep: tran tran212  end, cpu clock= 2.26E+02 peak memory=      69 mb
+ dcop: begin dcop, cpu clock= 2.26E+02
+ dcop: end dcop, cpu clock= 2.27E+02 peak memory=      69 mb tot_iter=    2509
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran213  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 2.27E+02
+ sweep: tran tran213  end, cpu clock= 2.28E+02 peak memory=      69 mb
+ dcop: begin dcop, cpu clock= 2.28E+02
+ dcop: end dcop, cpu clock= 2.28E+02 peak memory=      69 mb tot_iter=    2518
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran214  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 2.28E+02
+ sweep: tran tran214  end, cpu clock= 2.29E+02 peak memory=      69 mb
+ dcop: begin dcop, cpu clock= 2.29E+02
+ dcop: end dcop, cpu clock= 2.29E+02 peak memory=      69 mb tot_iter=    2535
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran215  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 2.29E+02
+ sweep: tran tran215  end, cpu clock= 2.30E+02 peak memory=      69 mb
+ dcop: begin dcop, cpu clock= 2.30E+02
+ dcop: end dcop, cpu clock= 2.30E+02 peak memory=      69 mb tot_iter=    2553
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran216  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 2.30E+02
+ sweep: tran tran216  end, cpu clock= 2.31E+02 peak memory=      69 mb
+ dcop: begin dcop, cpu clock= 2.31E+02
+ dcop: end dcop, cpu clock= 2.31E+02 peak memory=      69 mb tot_iter=    2560
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran217  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 2.31E+02
+ sweep: tran tran217  end, cpu clock= 2.32E+02 peak memory=      69 mb
+ dcop: begin dcop, cpu clock= 2.32E+02
+ dcop: end dcop, cpu clock= 2.32E+02 peak memory=      69 mb tot_iter=    2565
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran218  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 2.32E+02
+ sweep: tran tran218  end, cpu clock= 2.33E+02 peak memory=      69 mb
+ dcop: begin dcop, cpu clock= 2.33E+02
+ dcop: end dcop, cpu clock= 2.33E+02 peak memory=      69 mb tot_iter=    2570
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran219  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 2.33E+02
+ sweep: tran tran219  end, cpu clock= 2.34E+02 peak memory=      69 mb
+ dcop: begin dcop, cpu clock= 2.34E+02
+ dcop: end dcop, cpu clock= 2.34E+02 peak memory=      69 mb tot_iter=    2577
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran220  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 2.34E+02
+ sweep: tran tran220  end, cpu clock= 2.35E+02 peak memory=      69 mb
+ dcop: begin dcop, cpu clock= 2.35E+02
+ dcop: end dcop, cpu clock= 2.35E+02 peak memory=      69 mb tot_iter=    2585
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran221  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 2.35E+02
+ sweep: tran tran221  end, cpu clock= 2.36E+02 peak memory=      69 mb
+ dcop: begin dcop, cpu clock= 2.36E+02
+ dcop: end dcop, cpu clock= 2.36E+02 peak memory=      69 mb tot_iter=    2602
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran222  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 2.36E+02
+ sweep: tran tran222  end, cpu clock= 2.37E+02 peak memory=      69 mb
+ dcop: begin dcop, cpu clock= 2.37E+02
+ dcop: end dcop, cpu clock= 2.37E+02 peak memory=      69 mb tot_iter=    2608
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran223  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 2.37E+02
+ sweep: tran tran223  end, cpu clock= 2.38E+02 peak memory=      70 mb
+ dcop: begin dcop, cpu clock= 2.38E+02
+ dcop: end dcop, cpu clock= 2.38E+02 peak memory=      70 mb tot_iter=    2630
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran224  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 2.38E+02
+ sweep: tran tran224  end, cpu clock= 2.39E+02 peak memory=      69 mb
+ dcop: begin dcop, cpu clock= 2.39E+02
+ dcop: end dcop, cpu clock= 2.39E+02 peak memory=      69 mb tot_iter=    2635
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran225  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 2.39E+02
+ sweep: tran tran225  end, cpu clock= 2.40E+02 peak memory=      70 mb
+ dcop: begin dcop, cpu clock= 2.40E+02
+ dcop: end dcop, cpu clock= 2.40E+02 peak memory=      70 mb tot_iter=    2642
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran226  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 2.40E+02
+ sweep: tran tran226  end, cpu clock= 2.42E+02 peak memory=      69 mb
+ dcop: begin dcop, cpu clock= 2.42E+02
+ dcop: end dcop, cpu clock= 2.42E+02 peak memory=      69 mb tot_iter=    2650
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran227  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 2.42E+02
+ sweep: tran tran227  end, cpu clock= 2.43E+02 peak memory=      70 mb
+ dcop: begin dcop, cpu clock= 2.43E+02
+ dcop: end dcop, cpu clock= 2.43E+02 peak memory=      70 mb tot_iter=    2658
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran228  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 2.43E+02
+ sweep: tran tran228  end, cpu clock= 2.44E+02 peak memory=      70 mb
+ dcop: begin dcop, cpu clock= 2.44E+02
+ dcop: end dcop, cpu clock= 2.44E+02 peak memory=      70 mb tot_iter=    2665
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran229  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 2.44E+02
+ sweep: tran tran229  end, cpu clock= 2.45E+02 peak memory=      70 mb
+ dcop: begin dcop, cpu clock= 2.45E+02
+ dcop: end dcop, cpu clock= 2.45E+02 peak memory=      70 mb tot_iter=    2672
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran230  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 2.45E+02
+ sweep: tran tran230  end, cpu clock= 2.46E+02 peak memory=      69 mb
+ dcop: begin dcop, cpu clock= 2.46E+02
+ dcop: end dcop, cpu clock= 2.46E+02 peak memory=      69 mb tot_iter=    2679
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran231  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 2.46E+02
+ sweep: tran tran231  end, cpu clock= 2.47E+02 peak memory=      69 mb
+ dcop: begin dcop, cpu clock= 2.47E+02
+ dcop: end dcop, cpu clock= 2.47E+02 peak memory=      69 mb tot_iter=    2685
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran232  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 2.47E+02
+ sweep: tran tran232  end, cpu clock= 2.48E+02 peak memory=      70 mb
+ dcop: begin dcop, cpu clock= 2.48E+02
+ dcop: end dcop, cpu clock= 2.48E+02 peak memory=      70 mb tot_iter=    2691
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran233  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 2.48E+02
+ sweep: tran tran233  end, cpu clock= 2.49E+02 peak memory=      69 mb
+ dcop: begin dcop, cpu clock= 2.49E+02
+ dcop: end dcop, cpu clock= 2.49E+02 peak memory=      69 mb tot_iter=    2704
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran234  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 2.49E+02
+ sweep: tran tran234  end, cpu clock= 2.50E+02 peak memory=      70 mb
+ dcop: begin dcop, cpu clock= 2.50E+02
+ dcop: end dcop, cpu clock= 2.50E+02 peak memory=      70 mb tot_iter=    2721
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran235  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 2.50E+02
+ sweep: tran tran235  end, cpu clock= 2.51E+02 peak memory=      70 mb
+ dcop: begin dcop, cpu clock= 2.51E+02
+ dcop: end dcop, cpu clock= 2.51E+02 peak memory=      70 mb tot_iter=    2738
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran236  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 2.51E+02
+ sweep: tran tran236  end, cpu clock= 2.52E+02 peak memory=      69 mb
+ dcop: begin dcop, cpu clock= 2.52E+02
+ dcop: end dcop, cpu clock= 2.52E+02 peak memory=      69 mb tot_iter=    2755
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran237  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 2.52E+02
+ sweep: tran tran237  end, cpu clock= 2.53E+02 peak memory=      70 mb
+ dcop: begin dcop, cpu clock= 2.53E+02
+ dcop: end dcop, cpu clock= 2.53E+02 peak memory=      70 mb tot_iter=    2762
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran238  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 2.53E+02
+ sweep: tran tran238  end, cpu clock= 2.54E+02 peak memory=      70 mb
+ dcop: begin dcop, cpu clock= 2.54E+02
+ dcop: end dcop, cpu clock= 2.54E+02 peak memory=      70 mb tot_iter=    2770
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran239  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 2.54E+02
+ sweep: tran tran239  end, cpu clock= 2.55E+02 peak memory=      69 mb
+ dcop: begin dcop, cpu clock= 2.55E+02
+ dcop: end dcop, cpu clock= 2.55E+02 peak memory=      69 mb tot_iter=    2788
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran240  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 2.55E+02
+ sweep: tran tran240  end, cpu clock= 2.56E+02 peak memory=      70 mb
+ dcop: begin dcop, cpu clock= 2.56E+02
+ dcop: end dcop, cpu clock= 2.56E+02 peak memory=      70 mb tot_iter=    2796
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran241  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 2.56E+02
+ sweep: tran tran241  end, cpu clock= 2.58E+02 peak memory=      70 mb
+ dcop: begin dcop, cpu clock= 2.58E+02
+ dcop: end dcop, cpu clock= 2.58E+02 peak memory=      70 mb tot_iter=    2802
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran242  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 2.58E+02
+ sweep: tran tran242  end, cpu clock= 2.59E+02 peak memory=      69 mb
+ dcop: begin dcop, cpu clock= 2.59E+02
+ dcop: end dcop, cpu clock= 2.59E+02 peak memory=      69 mb tot_iter=    2819
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran243  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 2.59E+02
+ sweep: tran tran243  end, cpu clock= 2.60E+02 peak memory=      70 mb
+ dcop: begin dcop, cpu clock= 2.60E+02
+ dcop: end dcop, cpu clock= 2.60E+02 peak memory=      70 mb tot_iter=    2836
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran244  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 2.60E+02
+ sweep: tran tran244  end, cpu clock= 2.61E+02 peak memory=      70 mb
+ dcop: begin dcop, cpu clock= 2.61E+02
+ dcop: end dcop, cpu clock= 2.61E+02 peak memory=      70 mb tot_iter=    2853
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran245  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 2.61E+02
+ sweep: tran tran245  end, cpu clock= 2.62E+02 peak memory=      69 mb
+ dcop: begin dcop, cpu clock= 2.62E+02
+ dcop: end dcop, cpu clock= 2.62E+02 peak memory=      69 mb tot_iter=    2868
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran246  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 2.62E+02
+ sweep: tran tran246  end, cpu clock= 2.63E+02 peak memory=      70 mb
+ dcop: begin dcop, cpu clock= 2.63E+02
+ dcop: end dcop, cpu clock= 2.63E+02 peak memory=      70 mb tot_iter=    2880
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran247  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 2.63E+02
+ sweep: tran tran247  end, cpu clock= 2.64E+02 peak memory=      70 mb
+ dcop: begin dcop, cpu clock= 2.64E+02
+ dcop: end dcop, cpu clock= 2.64E+02 peak memory=      70 mb tot_iter=    2895
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran248  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 2.64E+02
+ sweep: tran tran248  end, cpu clock= 2.67E+02 peak memory=      69 mb
+ dcop: begin dcop, cpu clock= 2.67E+02
+ dcop: end dcop, cpu clock= 2.67E+02 peak memory=      69 mb tot_iter=    2904
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran249  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 2.67E+02
+ sweep: tran tran249  end, cpu clock= 2.69E+02 peak memory=      70 mb
+ dcop: begin dcop, cpu clock= 2.69E+02
+ dcop: end dcop, cpu clock= 2.69E+02 peak memory=      70 mb tot_iter=    2921
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran250  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 2.69E+02
+ sweep: tran tran250  end, cpu clock= 2.70E+02 peak memory=      70 mb
+ dcop: begin dcop, cpu clock= 2.70E+02
+ dcop: end dcop, cpu clock= 2.70E+02 peak memory=      70 mb tot_iter=    2929
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran251  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 2.70E+02
+ sweep: tran tran251  end, cpu clock= 2.71E+02 peak memory=      69 mb
+ dcop: begin dcop, cpu clock= 2.71E+02
+ dcop: end dcop, cpu clock= 2.71E+02 peak memory=      69 mb tot_iter=    2947
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran252  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 2.71E+02
+ sweep: tran tran252  end, cpu clock= 2.72E+02 peak memory=      70 mb
+ dcop: begin dcop, cpu clock= 2.72E+02
+ dcop: end dcop, cpu clock= 2.72E+02 peak memory=      70 mb tot_iter=    3176
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran253  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 2.72E+02
+ sweep: tran tran253  end, cpu clock= 2.73E+02 peak memory=      70 mb
+ dcop: begin dcop, cpu clock= 2.73E+02
+ dcop: end dcop, cpu clock= 2.73E+02 peak memory=      70 mb tot_iter=    3201
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran254  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 2.73E+02
+ sweep: tran tran254  end, cpu clock= 2.75E+02 peak memory=      69 mb
+ dcop: begin dcop, cpu clock= 2.75E+02
+ dcop: end dcop, cpu clock= 2.75E+02 peak memory=      69 mb tot_iter=    3208
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran255  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 2.75E+02
+ sweep: tran tran255  end, cpu clock= 2.76E+02 peak memory=      69 mb
+ dcop: begin dcop, cpu clock= 2.76E+02
+ dcop: end dcop, cpu clock= 2.76E+02 peak memory=      69 mb tot_iter=    3214
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran256  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 2.76E+02
+ sweep: tran tran256  end, cpu clock= 2.77E+02 peak memory=      69 mb
+ dcop: begin dcop, cpu clock= 2.77E+02
+ dcop: end dcop, cpu clock= 2.77E+02 peak memory=      69 mb tot_iter=    3226
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran257  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 2.77E+02
+ sweep: tran tran257  end, cpu clock= 2.78E+02 peak memory=      69 mb
+ dcop: begin dcop, cpu clock= 2.78E+02
+ dcop: end dcop, cpu clock= 2.78E+02 peak memory=      69 mb tot_iter=    3232
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran258  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 2.78E+02
+ sweep: tran tran258  end, cpu clock= 2.79E+02 peak memory=      69 mb
+ dcop: begin dcop, cpu clock= 2.79E+02
+ dcop: end dcop, cpu clock= 2.79E+02 peak memory=      69 mb tot_iter=    3237
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran259  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 2.79E+02
+ sweep: tran tran259  end, cpu clock= 2.80E+02 peak memory=      69 mb
+ dcop: begin dcop, cpu clock= 2.80E+02
+ dcop: end dcop, cpu clock= 2.80E+02 peak memory=      69 mb tot_iter=    3244
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran260  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 2.80E+02
+ sweep: tran tran260  end, cpu clock= 2.81E+02 peak memory=      69 mb
+ dcop: begin dcop, cpu clock= 2.81E+02
+ dcop: end dcop, cpu clock= 2.81E+02 peak memory=      69 mb tot_iter=    3252
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran261  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 2.81E+02
+ sweep: tran tran261  end, cpu clock= 2.82E+02 peak memory=      69 mb
+ dcop: begin dcop, cpu clock= 2.82E+02
+ dcop: end dcop, cpu clock= 2.82E+02 peak memory=      69 mb tot_iter=    3278
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran262  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 2.82E+02
+ sweep: tran tran262  end, cpu clock= 2.83E+02 peak memory=      69 mb
+ dcop: begin dcop, cpu clock= 2.83E+02
+ dcop: end dcop, cpu clock= 2.83E+02 peak memory=      69 mb tot_iter=    3285
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran263  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 2.83E+02
+ sweep: tran tran263  end, cpu clock= 2.84E+02 peak memory=      69 mb
+ dcop: begin dcop, cpu clock= 2.84E+02
+ dcop: end dcop, cpu clock= 2.84E+02 peak memory=      69 mb tot_iter=    3313
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran264  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 2.84E+02
+ sweep: tran tran264  end, cpu clock= 2.85E+02 peak memory=      69 mb
+ dcop: begin dcop, cpu clock= 2.85E+02
+ dcop: end dcop, cpu clock= 2.85E+02 peak memory=      69 mb tot_iter=    3331
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran265  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 2.85E+02
+ sweep: tran tran265  end, cpu clock= 2.86E+02 peak memory=      69 mb
+ dcop: begin dcop, cpu clock= 2.86E+02
+ dcop: end dcop, cpu clock= 2.86E+02 peak memory=      69 mb tot_iter=    3338
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran266  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 2.86E+02
+ sweep: tran tran266  end, cpu clock= 2.87E+02 peak memory=      69 mb
+ dcop: begin dcop, cpu clock= 2.87E+02
+ dcop: end dcop, cpu clock= 2.87E+02 peak memory=      69 mb tot_iter=    3353
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran267  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 2.87E+02
+ sweep: tran tran267  end, cpu clock= 2.88E+02 peak memory=      69 mb
+ dcop: begin dcop, cpu clock= 2.88E+02
+ dcop: end dcop, cpu clock= 2.88E+02 peak memory=      69 mb tot_iter=    3359
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran268  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 2.88E+02
+ sweep: tran tran268  end, cpu clock= 2.89E+02 peak memory=      69 mb
+ dcop: begin dcop, cpu clock= 2.89E+02
+ dcop: end dcop, cpu clock= 2.89E+02 peak memory=      69 mb tot_iter=    3376
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran269  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 2.89E+02
+ sweep: tran tran269  end, cpu clock= 2.90E+02 peak memory=      69 mb
+ dcop: begin dcop, cpu clock= 2.90E+02
+ dcop: end dcop, cpu clock= 2.90E+02 peak memory=      69 mb tot_iter=    3389
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran270  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 2.90E+02
+ sweep: tran tran270  end, cpu clock= 2.91E+02 peak memory=      69 mb
+ dcop: begin dcop, cpu clock= 2.91E+02
+ dcop: end dcop, cpu clock= 2.91E+02 peak memory=      69 mb tot_iter=    3400
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran271  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 2.91E+02
+ sweep: tran tran271  end, cpu clock= 2.92E+02 peak memory=      69 mb
+ dcop: begin dcop, cpu clock= 2.92E+02
+ dcop: end dcop, cpu clock= 2.92E+02 peak memory=      69 mb tot_iter=    3426
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran272  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 2.92E+02
+ sweep: tran tran272  end, cpu clock= 2.93E+02 peak memory=      69 mb
+ dcop: begin dcop, cpu clock= 2.93E+02
+ dcop: end dcop, cpu clock= 2.93E+02 peak memory=      69 mb tot_iter=    3435
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran273  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 2.93E+02
+ sweep: tran tran273  end, cpu clock= 2.94E+02 peak memory=      69 mb
+ dcop: begin dcop, cpu clock= 2.94E+02
+ dcop: end dcop, cpu clock= 2.94E+02 peak memory=      69 mb tot_iter=    3442
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran274  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 2.94E+02
+ sweep: tran tran274  end, cpu clock= 2.95E+02 peak memory=      69 mb
+ dcop: begin dcop, cpu clock= 2.95E+02
+ dcop: end dcop, cpu clock= 2.95E+02 peak memory=      69 mb tot_iter=    3448
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran275  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 2.95E+02
+ sweep: tran tran275  end, cpu clock= 2.96E+02 peak memory=      69 mb
+ dcop: begin dcop, cpu clock= 2.96E+02
+ dcop: end dcop, cpu clock= 2.96E+02 peak memory=      69 mb tot_iter=    3462
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran276  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 2.96E+02
+ sweep: tran tran276  end, cpu clock= 2.97E+02 peak memory=      69 mb
+ dcop: begin dcop, cpu clock= 2.97E+02
+ dcop: end dcop, cpu clock= 2.97E+02 peak memory=      69 mb tot_iter=    3465
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran277  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 2.97E+02
+ sweep: tran tran277  end, cpu clock= 2.99E+02 peak memory=      69 mb
+ dcop: begin dcop, cpu clock= 2.99E+02
+ dcop: end dcop, cpu clock= 2.99E+02 peak memory=      69 mb tot_iter=    3482
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran278  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 2.99E+02
+ sweep: tran tran278  end, cpu clock= 3.00E+02 peak memory=      69 mb
+ dcop: begin dcop, cpu clock= 3.00E+02
+ dcop: end dcop, cpu clock= 3.00E+02 peak memory=      69 mb tot_iter=    3500
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran279  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 3.00E+02
+ sweep: tran tran279  end, cpu clock= 3.01E+02 peak memory=      70 mb
+ dcop: begin dcop, cpu clock= 3.01E+02
+ dcop: end dcop, cpu clock= 3.01E+02 peak memory=      70 mb tot_iter=    3505
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran280  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 3.01E+02
+ sweep: tran tran280  end, cpu clock= 3.02E+02 peak memory=      70 mb
+ dcop: begin dcop, cpu clock= 3.02E+02
+ dcop: end dcop, cpu clock= 3.02E+02 peak memory=      70 mb tot_iter=    3513
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran281  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 3.02E+02
+ sweep: tran tran281  end, cpu clock= 3.03E+02 peak memory=      70 mb
+ dcop: begin dcop, cpu clock= 3.03E+02
+ dcop: end dcop, cpu clock= 3.03E+02 peak memory=      70 mb tot_iter=    3520
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran282  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 3.03E+02
+ sweep: tran tran282  end, cpu clock= 3.04E+02 peak memory=      70 mb
+ dcop: begin dcop, cpu clock= 3.04E+02
+ dcop: end dcop, cpu clock= 3.04E+02 peak memory=      70 mb tot_iter=    3526
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran283  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 3.04E+02
+ sweep: tran tran283  end, cpu clock= 3.05E+02 peak memory=      70 mb
+ dcop: begin dcop, cpu clock= 3.05E+02
+ dcop: end dcop, cpu clock= 3.05E+02 peak memory=      70 mb tot_iter=    3532
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran284  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 3.05E+02
+ sweep: tran tran284  end, cpu clock= 3.06E+02 peak memory=      70 mb
+ dcop: begin dcop, cpu clock= 3.06E+02
+ dcop: end dcop, cpu clock= 3.06E+02 peak memory=      70 mb tot_iter=    3539
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran285  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 3.06E+02
+ sweep: tran tran285  end, cpu clock= 3.07E+02 peak memory=      70 mb
+ dcop: begin dcop, cpu clock= 3.07E+02
+ dcop: end dcop, cpu clock= 3.07E+02 peak memory=      70 mb tot_iter=    3558
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran286  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 3.07E+02
+ sweep: tran tran286  end, cpu clock= 3.08E+02 peak memory=      70 mb
+ dcop: begin dcop, cpu clock= 3.08E+02
+ dcop: end dcop, cpu clock= 3.08E+02 peak memory=      70 mb tot_iter=    3578
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran287  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 3.08E+02
+ sweep: tran tran287  end, cpu clock= 3.09E+02 peak memory=      70 mb
+ dcop: begin dcop, cpu clock= 3.09E+02
+ dcop: end dcop, cpu clock= 3.09E+02 peak memory=      70 mb tot_iter=    3582
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran288  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 3.09E+02
+ sweep: tran tran288  end, cpu clock= 3.10E+02 peak memory=      70 mb
+ dcop: begin dcop, cpu clock= 3.10E+02
+ dcop: end dcop, cpu clock= 3.10E+02 peak memory=      70 mb tot_iter=    3600
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran289  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 3.10E+02
+ sweep: tran tran289  end, cpu clock= 3.12E+02 peak memory=      70 mb
+ dcop: begin dcop, cpu clock= 3.12E+02
+ dcop: end dcop, cpu clock= 3.12E+02 peak memory=      70 mb tot_iter=    3606
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran290  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 3.12E+02
+ sweep: tran tran290  end, cpu clock= 3.13E+02 peak memory=      70 mb
+ dcop: begin dcop, cpu clock= 3.13E+02
+ dcop: end dcop, cpu clock= 3.13E+02 peak memory=      70 mb tot_iter=    3625
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran291  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 3.13E+02
+ sweep: tran tran291  end, cpu clock= 3.14E+02 peak memory=      70 mb
+ dcop: begin dcop, cpu clock= 3.14E+02
+ dcop: end dcop, cpu clock= 3.14E+02 peak memory=      70 mb tot_iter=    3642
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran292  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 3.14E+02
+ sweep: tran tran292  end, cpu clock= 3.15E+02 peak memory=      70 mb
+ dcop: begin dcop, cpu clock= 3.15E+02
+ dcop: end dcop, cpu clock= 3.15E+02 peak memory=      70 mb tot_iter=    3669
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran293  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 3.15E+02
+ sweep: tran tran293  end, cpu clock= 3.16E+02 peak memory=      70 mb
+ dcop: begin dcop, cpu clock= 3.16E+02
+ dcop: end dcop, cpu clock= 3.16E+02 peak memory=      70 mb tot_iter=    3687
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran294  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 3.16E+02
+ sweep: tran tran294  end, cpu clock= 3.17E+02 peak memory=      70 mb
+ dcop: begin dcop, cpu clock= 3.17E+02
+ dcop: end dcop, cpu clock= 3.17E+02 peak memory=      70 mb tot_iter=    3696
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran295  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 3.17E+02
+ sweep: tran tran295  end, cpu clock= 3.18E+02 peak memory=      70 mb
+ dcop: begin dcop, cpu clock= 3.18E+02
+ dcop: end dcop, cpu clock= 3.18E+02 peak memory=      70 mb tot_iter=    3701
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran296  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 3.18E+02
+ sweep: tran tran296  end, cpu clock= 3.19E+02 peak memory=      70 mb
+ dcop: begin dcop, cpu clock= 3.19E+02
+ dcop: end dcop, cpu clock= 3.19E+02 peak memory=      70 mb tot_iter=    3722
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran297  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 3.19E+02
+ sweep: tran tran297  end, cpu clock= 3.21E+02 peak memory=      70 mb
+ dcop: begin dcop, cpu clock= 3.21E+02
+ dcop: end dcop, cpu clock= 3.21E+02 peak memory=      70 mb tot_iter=    3730
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran298  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 3.21E+02
+ sweep: tran tran298  end, cpu clock= 3.22E+02 peak memory=      70 mb
+ dcop: begin dcop, cpu clock= 3.22E+02
+ dcop: end dcop, cpu clock= 3.22E+02 peak memory=      70 mb tot_iter=    3738
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran299  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 3.22E+02
+ sweep: tran tran299  end, cpu clock= 3.23E+02 peak memory=      70 mb
+ dcop: begin dcop, cpu clock= 3.23E+02
+ dcop: end dcop, cpu clock= 3.23E+02 peak memory=      70 mb tot_iter=    3756
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran300  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 3.23E+02
+ sweep: tran tran300  end, cpu clock= 3.24E+02 peak memory=      70 mb
+ dcop: begin dcop, cpu clock= 3.24E+02
+ dcop: end dcop, cpu clock= 3.24E+02 peak memory=      70 mb tot_iter=    3762
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran301  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 3.24E+02
+ sweep: tran tran301  end, cpu clock= 3.25E+02 peak memory=      70 mb
+ dcop: begin dcop, cpu clock= 3.25E+02
+ dcop: end dcop, cpu clock= 3.25E+02 peak memory=      70 mb tot_iter=    3767
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran302  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 3.25E+02
+ sweep: tran tran302  end, cpu clock= 3.26E+02 peak memory=      70 mb
+ dcop: begin dcop, cpu clock= 3.26E+02
+ dcop: end dcop, cpu clock= 3.26E+02 peak memory=      70 mb tot_iter=    3787
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran303  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 3.26E+02
+ sweep: tran tran303  end, cpu clock= 3.27E+02 peak memory=      70 mb
+ dcop: begin dcop, cpu clock= 3.27E+02
+ dcop: end dcop, cpu clock= 3.27E+02 peak memory=      70 mb tot_iter=    3793
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran304  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 3.27E+02
+ sweep: tran tran304  end, cpu clock= 3.28E+02 peak memory=      70 mb
+ dcop: begin dcop, cpu clock= 3.28E+02
+ dcop: end dcop, cpu clock= 3.28E+02 peak memory=      70 mb tot_iter=    3799
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran305  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 3.28E+02
+ sweep: tran tran305  end, cpu clock= 3.29E+02 peak memory=      70 mb
+ dcop: begin dcop, cpu clock= 3.29E+02
+ dcop: end dcop, cpu clock= 3.29E+02 peak memory=      70 mb tot_iter=    3818
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran306  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 3.29E+02
+ sweep: tran tran306  end, cpu clock= 3.30E+02 peak memory=      70 mb
+ dcop: begin dcop, cpu clock= 3.30E+02
+ dcop: end dcop, cpu clock= 3.30E+02 peak memory=      70 mb tot_iter=    3824
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran307  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 3.30E+02
+ sweep: tran tran307  end, cpu clock= 3.31E+02 peak memory=      70 mb
+ dcop: begin dcop, cpu clock= 3.31E+02
+ dcop: end dcop, cpu clock= 3.31E+02 peak memory=      70 mb tot_iter=    3828
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran308  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 3.31E+02
+ sweep: tran tran308  end, cpu clock= 3.32E+02 peak memory=      70 mb
+ dcop: begin dcop, cpu clock= 3.32E+02
+ dcop: end dcop, cpu clock= 3.32E+02 peak memory=      70 mb tot_iter=    3836
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran309  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 3.32E+02
+ sweep: tran tran309  end, cpu clock= 3.33E+02 peak memory=      70 mb
+ dcop: begin dcop, cpu clock= 3.33E+02
+ dcop: end dcop, cpu clock= 3.33E+02 peak memory=      70 mb tot_iter=    3853
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran310  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 3.33E+02
+ sweep: tran tran310  end, cpu clock= 3.34E+02 peak memory=      70 mb
+ dcop: begin dcop, cpu clock= 3.34E+02
+ dcop: end dcop, cpu clock= 3.34E+02 peak memory=      70 mb tot_iter=    3860
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran311  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 3.34E+02
+ sweep: tran tran311  end, cpu clock= 3.35E+02 peak memory=      70 mb
+ dcop: begin dcop, cpu clock= 3.35E+02
+ dcop: end dcop, cpu clock= 3.35E+02 peak memory=      70 mb tot_iter=    3866
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran312  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 3.35E+02
+ sweep: tran tran312  end, cpu clock= 3.36E+02 peak memory=      70 mb
+ dcop: begin dcop, cpu clock= 3.36E+02
+ dcop: end dcop, cpu clock= 3.36E+02 peak memory=      70 mb tot_iter=    3873
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran313  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 3.36E+02
+ sweep: tran tran313  end, cpu clock= 3.37E+02 peak memory=      70 mb
+ dcop: begin dcop, cpu clock= 3.37E+02
+ dcop: end dcop, cpu clock= 3.37E+02 peak memory=      70 mb tot_iter=    3898
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran314  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 3.37E+02
+ sweep: tran tran314  end, cpu clock= 3.38E+02 peak memory=      70 mb
+ dcop: begin dcop, cpu clock= 3.38E+02
+ dcop: end dcop, cpu clock= 3.38E+02 peak memory=      70 mb tot_iter=    3907
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran315  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 3.38E+02
+ sweep: tran tran315  end, cpu clock= 3.39E+02 peak memory=      70 mb
+ dcop: begin dcop, cpu clock= 3.39E+02
+ dcop: end dcop, cpu clock= 3.39E+02 peak memory=      70 mb tot_iter=    3913
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran316  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 3.39E+02
+ sweep: tran tran316  end, cpu clock= 3.40E+02 peak memory=      70 mb
+ dcop: begin dcop, cpu clock= 3.40E+02
+ dcop: end dcop, cpu clock= 3.40E+02 peak memory=      70 mb tot_iter=    3935
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran317  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 3.40E+02
+ sweep: tran tran317  end, cpu clock= 3.42E+02 peak memory=      70 mb
+ dcop: begin dcop, cpu clock= 3.42E+02
+ dcop: end dcop, cpu clock= 3.42E+02 peak memory=      70 mb tot_iter=    3940
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran318  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 3.42E+02
+ sweep: tran tran318  end, cpu clock= 3.43E+02 peak memory=      70 mb
+ dcop: begin dcop, cpu clock= 3.43E+02
+ dcop: end dcop, cpu clock= 3.43E+02 peak memory=      70 mb tot_iter=    3955
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran319  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 3.43E+02
+ sweep: tran tran319  end, cpu clock= 3.44E+02 peak memory=      70 mb
+ dcop: begin dcop, cpu clock= 3.44E+02
+ dcop: end dcop, cpu clock= 3.44E+02 peak memory=      70 mb tot_iter=    3961
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran320  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 3.44E+02
+ sweep: tran tran320  end, cpu clock= 3.45E+02 peak memory=      70 mb
+ dcop: begin dcop, cpu clock= 3.45E+02
+ dcop: end dcop, cpu clock= 3.45E+02 peak memory=      70 mb tot_iter=    3966
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran321  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 3.45E+02
+ sweep: tran tran321  end, cpu clock= 3.46E+02 peak memory=      70 mb
+ dcop: begin dcop, cpu clock= 3.46E+02
+ dcop: end dcop, cpu clock= 3.46E+02 peak memory=      70 mb tot_iter=    3975
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran322  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 3.46E+02
+ sweep: tran tran322  end, cpu clock= 3.47E+02 peak memory=      70 mb
+ dcop: begin dcop, cpu clock= 3.47E+02
+ dcop: end dcop, cpu clock= 3.47E+02 peak memory=      70 mb tot_iter=    3982
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran323  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 3.47E+02
+ sweep: tran tran323  end, cpu clock= 3.48E+02 peak memory=      70 mb
+ dcop: begin dcop, cpu clock= 3.48E+02
+ dcop: end dcop, cpu clock= 3.48E+02 peak memory=      70 mb tot_iter=    4001
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran324  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 3.48E+02
+ sweep: tran tran324  end, cpu clock= 3.49E+02 peak memory=      70 mb
+ dcop: begin dcop, cpu clock= 3.49E+02
+ dcop: end dcop, cpu clock= 3.49E+02 peak memory=      70 mb tot_iter=    4008
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran325  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 3.49E+02
+ sweep: tran tran325  end, cpu clock= 3.50E+02 peak memory=      70 mb
+ dcop: begin dcop, cpu clock= 3.50E+02
+ dcop: end dcop, cpu clock= 3.50E+02 peak memory=      70 mb tot_iter=    4013
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran326  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 3.50E+02
+ sweep: tran tran326  end, cpu clock= 3.51E+02 peak memory=      70 mb
+ dcop: begin dcop, cpu clock= 3.51E+02
+ dcop: end dcop, cpu clock= 3.51E+02 peak memory=      70 mb tot_iter=    4031
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran327  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 3.51E+02
+ sweep: tran tran327  end, cpu clock= 3.52E+02 peak memory=      70 mb
+ dcop: begin dcop, cpu clock= 3.52E+02
+ dcop: end dcop, cpu clock= 3.52E+02 peak memory=      70 mb tot_iter=    4042
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran328  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 3.52E+02
+ sweep: tran tran328  end, cpu clock= 3.53E+02 peak memory=      70 mb
+ dcop: begin dcop, cpu clock= 3.53E+02
+ dcop: end dcop, cpu clock= 3.53E+02 peak memory=      70 mb tot_iter=    4047
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran329  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 3.53E+02
+ sweep: tran tran329  end, cpu clock= 3.54E+02 peak memory=      70 mb
+ dcop: begin dcop, cpu clock= 3.54E+02
+ dcop: end dcop, cpu clock= 3.54E+02 peak memory=      70 mb tot_iter=    4054
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran330  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 3.54E+02
+ sweep: tran tran330  end, cpu clock= 3.55E+02 peak memory=      70 mb
+ dcop: begin dcop, cpu clock= 3.55E+02
+ dcop: end dcop, cpu clock= 3.55E+02 peak memory=      70 mb tot_iter=    4072
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran331  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 3.55E+02
+ sweep: tran tran331  end, cpu clock= 3.56E+02 peak memory=      70 mb
+ dcop: begin dcop, cpu clock= 3.56E+02
+ dcop: end dcop, cpu clock= 3.56E+02 peak memory=      70 mb tot_iter=    4078
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran332  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 3.56E+02
+ sweep: tran tran332  end, cpu clock= 3.57E+02 peak memory=      70 mb
+ dcop: begin dcop, cpu clock= 3.57E+02
+ dcop: end dcop, cpu clock= 3.57E+02 peak memory=      70 mb tot_iter=    4085
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran333  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 3.57E+02
+ sweep: tran tran333  end, cpu clock= 3.58E+02 peak memory=      70 mb
+ dcop: begin dcop, cpu clock= 3.58E+02
+ dcop: end dcop, cpu clock= 3.58E+02 peak memory=      70 mb tot_iter=    4089
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran334  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 3.58E+02
+ sweep: tran tran334  end, cpu clock= 3.59E+02 peak memory=      70 mb
+ dcop: begin dcop, cpu clock= 3.59E+02
+ dcop: end dcop, cpu clock= 3.59E+02 peak memory=      70 mb tot_iter=    4106
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran335  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 3.59E+02
+ sweep: tran tran335  end, cpu clock= 3.60E+02 peak memory=      70 mb
+ dcop: begin dcop, cpu clock= 3.60E+02
+ dcop: end dcop, cpu clock= 3.60E+02 peak memory=      70 mb tot_iter=    4111
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran336  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 3.60E+02
+ sweep: tran tran336  end, cpu clock= 3.61E+02 peak memory=      70 mb
+ dcop: begin dcop, cpu clock= 3.61E+02
+ dcop: end dcop, cpu clock= 3.62E+02 peak memory=      70 mb tot_iter=    4118
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran337  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 3.62E+02
+ sweep: tran tran337  end, cpu clock= 3.63E+02 peak memory=      70 mb
+ dcop: begin dcop, cpu clock= 3.63E+02
+ dcop: end dcop, cpu clock= 3.63E+02 peak memory=      70 mb tot_iter=    4123
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran338  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 3.63E+02
+ sweep: tran tran338  end, cpu clock= 3.64E+02 peak memory=      70 mb
+ dcop: begin dcop, cpu clock= 3.64E+02
+ dcop: end dcop, cpu clock= 3.64E+02 peak memory=      70 mb tot_iter=    4140
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran339  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 3.64E+02
+ sweep: tran tran339  end, cpu clock= 3.65E+02 peak memory=      70 mb
+ dcop: begin dcop, cpu clock= 3.65E+02
+ dcop: end dcop, cpu clock= 3.65E+02 peak memory=      70 mb tot_iter=    4167
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran340  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 3.65E+02
+ sweep: tran tran340  end, cpu clock= 3.66E+02 peak memory=      70 mb
+ dcop: begin dcop, cpu clock= 3.66E+02
+ dcop: end dcop, cpu clock= 3.66E+02 peak memory=      70 mb tot_iter=    4173
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran341  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 3.66E+02
+ sweep: tran tran341  end, cpu clock= 3.67E+02 peak memory=      70 mb
+ dcop: begin dcop, cpu clock= 3.67E+02
+ dcop: end dcop, cpu clock= 3.67E+02 peak memory=      70 mb tot_iter=    4191
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran342  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 3.67E+02
+ sweep: tran tran342  end, cpu clock= 3.68E+02 peak memory=      70 mb
+ dcop: begin dcop, cpu clock= 3.68E+02
+ dcop: end dcop, cpu clock= 3.68E+02 peak memory=      70 mb tot_iter=    4197
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran343  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 3.68E+02
+ sweep: tran tran343  end, cpu clock= 3.69E+02 peak memory=      70 mb
+ dcop: begin dcop, cpu clock= 3.69E+02
+ dcop: end dcop, cpu clock= 3.69E+02 peak memory=      70 mb tot_iter=    4201
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran344  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 3.69E+02
+ sweep: tran tran344  end, cpu clock= 3.70E+02 peak memory=      70 mb
+ dcop: begin dcop, cpu clock= 3.70E+02
+ dcop: end dcop, cpu clock= 3.70E+02 peak memory=      70 mb tot_iter=    4208
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran345  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 3.70E+02
+ sweep: tran tran345  end, cpu clock= 3.71E+02 peak memory=      70 mb
+ dcop: begin dcop, cpu clock= 3.71E+02
+ dcop: end dcop, cpu clock= 3.71E+02 peak memory=      70 mb tot_iter=    4226
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran346  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 3.71E+02
+ sweep: tran tran346  end, cpu clock= 3.72E+02 peak memory=      70 mb
+ dcop: begin dcop, cpu clock= 3.72E+02
+ dcop: end dcop, cpu clock= 3.72E+02 peak memory=      70 mb tot_iter=    4231
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran347  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 3.72E+02
+ sweep: tran tran347  end, cpu clock= 3.73E+02 peak memory=      70 mb
+ dcop: begin dcop, cpu clock= 3.73E+02
+ dcop: end dcop, cpu clock= 3.73E+02 peak memory=      70 mb tot_iter=    4238
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran348  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 3.73E+02
+ sweep: tran tran348  end, cpu clock= 3.74E+02 peak memory=      70 mb
+ dcop: begin dcop, cpu clock= 3.74E+02
+ dcop: end dcop, cpu clock= 3.74E+02 peak memory=      70 mb tot_iter=    4248
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran349  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 3.74E+02
+ sweep: tran tran349  end, cpu clock= 3.75E+02 peak memory=      70 mb
+ dcop: begin dcop, cpu clock= 3.75E+02
+ dcop: end dcop, cpu clock= 3.75E+02 peak memory=      70 mb tot_iter=    4255
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran350  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 3.75E+02
+ sweep: tran tran350  end, cpu clock= 3.76E+02 peak memory=      70 mb
+ dcop: begin dcop, cpu clock= 3.76E+02
+ dcop: end dcop, cpu clock= 3.76E+02 peak memory=      70 mb tot_iter=    4259
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran351  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 3.76E+02
+ sweep: tran tran351  end, cpu clock= 3.77E+02 peak memory=      70 mb
+ dcop: begin dcop, cpu clock= 3.77E+02
+ dcop: end dcop, cpu clock= 3.77E+02 peak memory=      70 mb tot_iter=    4263
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran352  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 3.77E+02
+ sweep: tran tran352  end, cpu clock= 3.78E+02 peak memory=      70 mb
+ dcop: begin dcop, cpu clock= 3.78E+02
+ dcop: end dcop, cpu clock= 3.78E+02 peak memory=      70 mb tot_iter=    4270
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran353  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 3.78E+02
+ sweep: tran tran353  end, cpu clock= 3.79E+02 peak memory=      70 mb
+ dcop: begin dcop, cpu clock= 3.79E+02
+ dcop: end dcop, cpu clock= 3.79E+02 peak memory=      70 mb tot_iter=    4289
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran354  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 3.79E+02
+ sweep: tran tran354  end, cpu clock= 3.80E+02 peak memory=      70 mb
+ dcop: begin dcop, cpu clock= 3.80E+02
+ dcop: end dcop, cpu clock= 3.80E+02 peak memory=      70 mb tot_iter=    4297
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran355  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 3.80E+02
+ sweep: tran tran355  end, cpu clock= 3.81E+02 peak memory=      70 mb
+ dcop: begin dcop, cpu clock= 3.81E+02
+ dcop: end dcop, cpu clock= 3.81E+02 peak memory=      70 mb tot_iter=    4302
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran356  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 3.81E+02
+ sweep: tran tran356  end, cpu clock= 3.82E+02 peak memory=      70 mb
+ dcop: begin dcop, cpu clock= 3.82E+02
+ dcop: end dcop, cpu clock= 3.82E+02 peak memory=      70 mb tot_iter=    4308
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran357  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 3.82E+02
+ sweep: tran tran357  end, cpu clock= 3.83E+02 peak memory=      70 mb
+ dcop: begin dcop, cpu clock= 3.84E+02
+ dcop: end dcop, cpu clock= 3.84E+02 peak memory=      70 mb tot_iter=    4313
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran358  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 3.84E+02
+ sweep: tran tran358  end, cpu clock= 3.85E+02 peak memory=      70 mb
+ dcop: begin dcop, cpu clock= 3.85E+02
+ dcop: end dcop, cpu clock= 3.85E+02 peak memory=      70 mb tot_iter=    4331
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran359  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 3.85E+02
+ sweep: tran tran359  end, cpu clock= 3.86E+02 peak memory=      70 mb
+ dcop: begin dcop, cpu clock= 3.86E+02
+ dcop: end dcop, cpu clock= 3.86E+02 peak memory=      70 mb tot_iter=    4336
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran360  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 3.86E+02
+ sweep: tran tran360  end, cpu clock= 3.87E+02 peak memory=      70 mb
+ dcop: begin dcop, cpu clock= 3.87E+02
+ dcop: end dcop, cpu clock= 3.87E+02 peak memory=      70 mb tot_iter=    4353
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran361  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 3.87E+02
+ sweep: tran tran361  end, cpu clock= 3.88E+02 peak memory=      70 mb
+ dcop: begin dcop, cpu clock= 3.88E+02
+ dcop: end dcop, cpu clock= 3.88E+02 peak memory=      70 mb tot_iter=    4359
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran362  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 3.88E+02
+ sweep: tran tran362  end, cpu clock= 3.89E+02 peak memory=      70 mb
+ dcop: begin dcop, cpu clock= 3.89E+02
+ dcop: end dcop, cpu clock= 3.89E+02 peak memory=      70 mb tot_iter=    4364
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran363  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 3.89E+02
+ sweep: tran tran363  end, cpu clock= 3.90E+02 peak memory=      70 mb
+ dcop: begin dcop, cpu clock= 3.90E+02
+ dcop: end dcop, cpu clock= 3.90E+02 peak memory=      70 mb tot_iter=    4373
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran364  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 3.90E+02
+ sweep: tran tran364  end, cpu clock= 3.91E+02 peak memory=      70 mb
+ dcop: begin dcop, cpu clock= 3.91E+02
+ dcop: end dcop, cpu clock= 3.91E+02 peak memory=      70 mb tot_iter=    4386
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran365  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 3.91E+02
+ sweep: tran tran365  end, cpu clock= 3.92E+02 peak memory=      70 mb
+ dcop: begin dcop, cpu clock= 3.92E+02
+ dcop: end dcop, cpu clock= 3.92E+02 peak memory=      70 mb tot_iter=    4392
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran366  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 3.92E+02
+ sweep: tran tran366  end, cpu clock= 3.93E+02 peak memory=      70 mb
+ dcop: begin dcop, cpu clock= 3.93E+02
+ dcop: end dcop, cpu clock= 3.93E+02 peak memory=      70 mb tot_iter=    4409
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran367  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 3.93E+02
+ sweep: tran tran367  end, cpu clock= 3.94E+02 peak memory=      70 mb
+ dcop: begin dcop, cpu clock= 3.94E+02
+ dcop: end dcop, cpu clock= 3.94E+02 peak memory=      70 mb tot_iter=    4416
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran368  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 3.94E+02
+ sweep: tran tran368  end, cpu clock= 3.95E+02 peak memory=      70 mb
+ dcop: begin dcop, cpu clock= 3.95E+02
+ dcop: end dcop, cpu clock= 3.95E+02 peak memory=      70 mb tot_iter=    4433
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran369  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 3.95E+02
+ sweep: tran tran369  end, cpu clock= 3.96E+02 peak memory=      70 mb
+ dcop: begin dcop, cpu clock= 3.96E+02
+ dcop: end dcop, cpu clock= 3.96E+02 peak memory=      70 mb tot_iter=    4441
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran370  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 3.96E+02
+ sweep: tran tran370  end, cpu clock= 3.97E+02 peak memory=      70 mb
+ dcop: begin dcop, cpu clock= 3.97E+02
+ dcop: end dcop, cpu clock= 3.97E+02 peak memory=      70 mb tot_iter=    4447
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran371  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 3.97E+02
+ sweep: tran tran371  end, cpu clock= 3.98E+02 peak memory=      70 mb
+ dcop: begin dcop, cpu clock= 3.98E+02
+ dcop: end dcop, cpu clock= 3.98E+02 peak memory=      70 mb tot_iter=    4461
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran372  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 3.98E+02
+ sweep: tran tran372  end, cpu clock= 3.99E+02 peak memory=      70 mb
+ dcop: begin dcop, cpu clock= 3.99E+02
+ dcop: end dcop, cpu clock= 3.99E+02 peak memory=      70 mb tot_iter=    4487
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran373  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 3.99E+02
+ sweep: tran tran373  end, cpu clock= 4.00E+02 peak memory=      70 mb
+ dcop: begin dcop, cpu clock= 4.00E+02
+ dcop: end dcop, cpu clock= 4.00E+02 peak memory=      70 mb tot_iter=    4494
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran374  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 4.00E+02
+ sweep: tran tran374  end, cpu clock= 4.02E+02 peak memory=      70 mb
+ dcop: begin dcop, cpu clock= 4.02E+02
+ dcop: end dcop, cpu clock= 4.02E+02 peak memory=      70 mb tot_iter=    4500
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran375  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 4.02E+02
+ sweep: tran tran375  end, cpu clock= 4.03E+02 peak memory=      68 mb
+ dcop: begin dcop, cpu clock= 4.03E+02
+ dcop: end dcop, cpu clock= 4.03E+02 peak memory=      68 mb tot_iter=    4506
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran376  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 4.03E+02
+ sweep: tran tran376  end, cpu clock= 4.04E+02 peak memory=      68 mb
+ dcop: begin dcop, cpu clock= 4.04E+02
+ dcop: end dcop, cpu clock= 4.04E+02 peak memory=      68 mb tot_iter=    4524
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran377  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 4.04E+02
+ sweep: tran tran377  end, cpu clock= 4.05E+02 peak memory=      68 mb
+ dcop: begin dcop, cpu clock= 4.05E+02
+ dcop: end dcop, cpu clock= 4.05E+02 peak memory=      68 mb tot_iter=    4530
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran378  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 4.05E+02
+ sweep: tran tran378  end, cpu clock= 4.06E+02 peak memory=      67 mb
+ dcop: begin dcop, cpu clock= 4.06E+02
+ dcop: end dcop, cpu clock= 4.06E+02 peak memory=      67 mb tot_iter=    4534
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran379  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 4.06E+02
+ sweep: tran tran379  end, cpu clock= 4.07E+02 peak memory=      67 mb
+ dcop: begin dcop, cpu clock= 4.07E+02
+ dcop: end dcop, cpu clock= 4.07E+02 peak memory=      67 mb tot_iter=    4555
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran380  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 4.07E+02
+ sweep: tran tran380  end, cpu clock= 4.08E+02 peak memory=      67 mb
+ dcop: begin dcop, cpu clock= 4.08E+02
+ dcop: end dcop, cpu clock= 4.08E+02 peak memory=      67 mb tot_iter=    4574
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran381  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 4.08E+02
+ sweep: tran tran381  end, cpu clock= 4.09E+02 peak memory=      67 mb
+ dcop: begin dcop, cpu clock= 4.09E+02
+ dcop: end dcop, cpu clock= 4.09E+02 peak memory=      67 mb tot_iter=    4582
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran382  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 4.09E+02
+ sweep: tran tran382  end, cpu clock= 4.10E+02 peak memory=      67 mb
+ dcop: begin dcop, cpu clock= 4.10E+02
+ dcop: end dcop, cpu clock= 4.10E+02 peak memory=      67 mb tot_iter=    4589
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran383  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 4.10E+02
+ sweep: tran tran383  end, cpu clock= 4.11E+02 peak memory=      67 mb
+ dcop: begin dcop, cpu clock= 4.11E+02
+ dcop: end dcop, cpu clock= 4.11E+02 peak memory=      67 mb tot_iter=    4595
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran384  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 4.11E+02
+ sweep: tran tran384  end, cpu clock= 4.12E+02 peak memory=      67 mb
+ dcop: begin dcop, cpu clock= 4.12E+02
+ dcop: end dcop, cpu clock= 4.12E+02 peak memory=      67 mb tot_iter=    4613
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran385  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 4.12E+02
+ sweep: tran tran385  end, cpu clock= 4.13E+02 peak memory=      67 mb
+ dcop: begin dcop, cpu clock= 4.13E+02
+ dcop: end dcop, cpu clock= 4.13E+02 peak memory=      67 mb tot_iter=    4630
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran386  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 4.13E+02
+ sweep: tran tran386  end, cpu clock= 4.14E+02 peak memory=      67 mb
+ dcop: begin dcop, cpu clock= 4.14E+02
+ dcop: end dcop, cpu clock= 4.14E+02 peak memory=      67 mb tot_iter=    4649
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran387  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 4.14E+02
+ sweep: tran tran387  end, cpu clock= 4.15E+02 peak memory=      67 mb
+ dcop: begin dcop, cpu clock= 4.15E+02
+ dcop: end dcop, cpu clock= 4.15E+02 peak memory=      67 mb tot_iter=    4667
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran388  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 4.15E+02
+ sweep: tran tran388  end, cpu clock= 4.16E+02 peak memory=      67 mb
+ dcop: begin dcop, cpu clock= 4.16E+02
+ dcop: end dcop, cpu clock= 4.16E+02 peak memory=      67 mb tot_iter=    4685
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran389  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 4.16E+02
+ sweep: tran tran389  end, cpu clock= 4.17E+02 peak memory=      67 mb
+ dcop: begin dcop, cpu clock= 4.17E+02
+ dcop: end dcop, cpu clock= 4.17E+02 peak memory=      67 mb tot_iter=    4692
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran390  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 4.17E+02
+ sweep: tran tran390  end, cpu clock= 4.18E+02 peak memory=      67 mb
+ dcop: begin dcop, cpu clock= 4.18E+02
+ dcop: end dcop, cpu clock= 4.18E+02 peak memory=      67 mb tot_iter=    4697
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran391  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 4.18E+02
+ sweep: tran tran391  end, cpu clock= 4.19E+02 peak memory=      67 mb
+ dcop: begin dcop, cpu clock= 4.19E+02
+ dcop: end dcop, cpu clock= 4.19E+02 peak memory=      67 mb tot_iter=    4707
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran392  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 4.19E+02
+ sweep: tran tran392  end, cpu clock= 4.20E+02 peak memory=      67 mb
+ dcop: begin dcop, cpu clock= 4.20E+02
+ dcop: end dcop, cpu clock= 4.20E+02 peak memory=      67 mb tot_iter=    4710
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran393  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 4.20E+02
+ sweep: tran tran393  end, cpu clock= 4.21E+02 peak memory=      67 mb
+ dcop: begin dcop, cpu clock= 4.21E+02
+ dcop: end dcop, cpu clock= 4.21E+02 peak memory=      67 mb tot_iter=    4719
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran394  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 4.21E+02
+ sweep: tran tran394  end, cpu clock= 4.22E+02 peak memory=      67 mb
+ dcop: begin dcop, cpu clock= 4.22E+02
+ dcop: end dcop, cpu clock= 4.22E+02 peak memory=      67 mb tot_iter=    4726
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran395  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 4.22E+02
+ sweep: tran tran395  end, cpu clock= 4.24E+02 peak memory=      67 mb
+ dcop: begin dcop, cpu clock= 4.24E+02
+ dcop: end dcop, cpu clock= 4.24E+02 peak memory=      67 mb tot_iter=    4734
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran396  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 4.24E+02
+ sweep: tran tran396  end, cpu clock= 4.25E+02 peak memory=      67 mb
+ dcop: begin dcop, cpu clock= 4.25E+02
+ dcop: end dcop, cpu clock= 4.25E+02 peak memory=      67 mb tot_iter=    4740
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran397  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 4.25E+02
+ sweep: tran tran397  end, cpu clock= 4.26E+02 peak memory=      67 mb
+ dcop: begin dcop, cpu clock= 4.26E+02
+ dcop: end dcop, cpu clock= 4.26E+02 peak memory=      67 mb tot_iter=    4747
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran398  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 4.26E+02
+ sweep: tran tran398  end, cpu clock= 4.27E+02 peak memory=      67 mb
+ dcop: begin dcop, cpu clock= 4.27E+02
+ dcop: end dcop, cpu clock= 4.27E+02 peak memory=      67 mb tot_iter=    4764
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran399  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 4.27E+02
+ sweep: tran tran399  end, cpu clock= 4.28E+02 peak memory=      67 mb
+ dcop: begin dcop, cpu clock= 4.28E+02
+ dcop: end dcop, cpu clock= 4.28E+02 peak memory=      67 mb tot_iter=    4777
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran400  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 4.28E+02
+ sweep: tran tran400  end, cpu clock= 4.29E+02 peak memory=      67 mb
+ dcop: begin dcop, cpu clock= 4.29E+02
+ dcop: end dcop, cpu clock= 4.29E+02 peak memory=      67 mb tot_iter=    4794
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran401  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 4.29E+02
+ sweep: tran tran401  end, cpu clock= 4.30E+02 peak memory=      67 mb
+ dcop: begin dcop, cpu clock= 4.30E+02
+ dcop: end dcop, cpu clock= 4.30E+02 peak memory=      67 mb tot_iter=    4801
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran402  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 4.30E+02
+ sweep: tran tran402  end, cpu clock= 4.31E+02 peak memory=      67 mb
+ dcop: begin dcop, cpu clock= 4.31E+02
+ dcop: end dcop, cpu clock= 4.31E+02 peak memory=      67 mb tot_iter=    4806
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran403  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 4.31E+02
+ sweep: tran tran403  end, cpu clock= 4.32E+02 peak memory=      67 mb
+ dcop: begin dcop, cpu clock= 4.32E+02
+ dcop: end dcop, cpu clock= 4.32E+02 peak memory=      67 mb tot_iter=    4817
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran404  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 4.32E+02
+ sweep: tran tran404  end, cpu clock= 4.33E+02 peak memory=      67 mb
+ dcop: begin dcop, cpu clock= 4.33E+02
+ dcop: end dcop, cpu clock= 4.33E+02 peak memory=      67 mb tot_iter=    4822
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran405  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 4.33E+02
+ sweep: tran tran405  end, cpu clock= 4.34E+02 peak memory=      67 mb
+ dcop: begin dcop, cpu clock= 4.34E+02
+ dcop: end dcop, cpu clock= 4.34E+02 peak memory=      67 mb tot_iter=    4828
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran406  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 4.34E+02
+ sweep: tran tran406  end, cpu clock= 4.35E+02 peak memory=      67 mb
+ dcop: begin dcop, cpu clock= 4.35E+02
+ dcop: end dcop, cpu clock= 4.35E+02 peak memory=      67 mb tot_iter=    4834
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran407  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 4.35E+02
+ sweep: tran tran407  end, cpu clock= 4.36E+02 peak memory=      67 mb
+ dcop: begin dcop, cpu clock= 4.36E+02
+ dcop: end dcop, cpu clock= 4.36E+02 peak memory=      67 mb tot_iter=    4839
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran408  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 4.36E+02
+ sweep: tran tran408  end, cpu clock= 4.37E+02 peak memory=      67 mb
+ dcop: begin dcop, cpu clock= 4.37E+02
+ dcop: end dcop, cpu clock= 4.37E+02 peak memory=      67 mb tot_iter=    4857
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran409  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 4.37E+02
+ sweep: tran tran409  end, cpu clock= 4.38E+02 peak memory=      67 mb
+ dcop: begin dcop, cpu clock= 4.38E+02
+ dcop: end dcop, cpu clock= 4.38E+02 peak memory=      67 mb tot_iter=    4874
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran410  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 4.38E+02
+ sweep: tran tran410  end, cpu clock= 4.39E+02 peak memory=      67 mb
+ dcop: begin dcop, cpu clock= 4.39E+02
+ dcop: end dcop, cpu clock= 4.39E+02 peak memory=      67 mb tot_iter=    4881
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran411  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 4.39E+02
+ sweep: tran tran411  end, cpu clock= 4.40E+02 peak memory=      67 mb
+ dcop: begin dcop, cpu clock= 4.40E+02
+ dcop: end dcop, cpu clock= 4.40E+02 peak memory=      67 mb tot_iter=    4885
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran412  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 4.40E+02
+ sweep: tran tran412  end, cpu clock= 4.42E+02 peak memory=      67 mb
+ dcop: begin dcop, cpu clock= 4.42E+02
+ dcop: end dcop, cpu clock= 4.42E+02 peak memory=      67 mb tot_iter=    4903
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran413  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 4.42E+02
+ sweep: tran tran413  end, cpu clock= 4.43E+02 peak memory=      67 mb
+ dcop: begin dcop, cpu clock= 4.43E+02
+ dcop: end dcop, cpu clock= 4.43E+02 peak memory=      67 mb tot_iter=    4923
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran414  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 4.43E+02
+ sweep: tran tran414  end, cpu clock= 4.44E+02 peak memory=      67 mb
+ dcop: begin dcop, cpu clock= 4.44E+02
+ dcop: end dcop, cpu clock= 4.44E+02 peak memory=      67 mb tot_iter=    4931
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran415  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 4.44E+02
+ sweep: tran tran415  end, cpu clock= 4.45E+02 peak memory=      67 mb
+ dcop: begin dcop, cpu clock= 4.45E+02
+ dcop: end dcop, cpu clock= 4.45E+02 peak memory=      67 mb tot_iter=    4958
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran416  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 4.45E+02
+ sweep: tran tran416  end, cpu clock= 4.46E+02 peak memory=      67 mb
+ dcop: begin dcop, cpu clock= 4.46E+02
+ dcop: end dcop, cpu clock= 4.46E+02 peak memory=      67 mb tot_iter=    4971
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran417  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 4.46E+02
+ sweep: tran tran417  end, cpu clock= 4.47E+02 peak memory=      67 mb
+ dcop: begin dcop, cpu clock= 4.47E+02
+ dcop: end dcop, cpu clock= 4.47E+02 peak memory=      67 mb tot_iter=    4988
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran418  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 4.47E+02
+ sweep: tran tran418  end, cpu clock= 4.48E+02 peak memory=      67 mb
+ dcop: begin dcop, cpu clock= 4.48E+02
+ dcop: end dcop, cpu clock= 4.48E+02 peak memory=      67 mb tot_iter=    5013
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran419  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 4.48E+02
+ sweep: tran tran419  end, cpu clock= 4.49E+02 peak memory=      67 mb
+ dcop: begin dcop, cpu clock= 4.49E+02
+ dcop: end dcop, cpu clock= 4.49E+02 peak memory=      67 mb tot_iter=    5020
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran420  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 4.49E+02
+ sweep: tran tran420  end, cpu clock= 4.50E+02 peak memory=      67 mb
+ dcop: begin dcop, cpu clock= 4.50E+02
+ dcop: end dcop, cpu clock= 4.50E+02 peak memory=      67 mb tot_iter=    5042
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran421  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 4.50E+02
+ sweep: tran tran421  end, cpu clock= 4.51E+02 peak memory=      67 mb
+ dcop: begin dcop, cpu clock= 4.51E+02
+ dcop: end dcop, cpu clock= 4.51E+02 peak memory=      67 mb tot_iter=    5050
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran422  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 4.51E+02
+ sweep: tran tran422  end, cpu clock= 4.52E+02 peak memory=      67 mb
+ dcop: begin dcop, cpu clock= 4.52E+02
+ dcop: end dcop, cpu clock= 4.52E+02 peak memory=      67 mb tot_iter=    5074
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran423  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 4.52E+02
+ sweep: tran tran423  end, cpu clock= 4.54E+02 peak memory=      67 mb
+ dcop: begin dcop, cpu clock= 4.54E+02
+ dcop: end dcop, cpu clock= 4.54E+02 peak memory=      67 mb tot_iter=    5079
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran424  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 4.54E+02
+ sweep: tran tran424  end, cpu clock= 4.55E+02 peak memory=      67 mb
+ dcop: begin dcop, cpu clock= 4.55E+02
+ dcop: end dcop, cpu clock= 4.55E+02 peak memory=      67 mb tot_iter=    5085
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran425  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 4.55E+02
+ sweep: tran tran425  end, cpu clock= 4.56E+02 peak memory=      67 mb
+ dcop: begin dcop, cpu clock= 4.56E+02
+ dcop: end dcop, cpu clock= 4.56E+02 peak memory=      67 mb tot_iter=    5102
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran426  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 4.56E+02
+ sweep: tran tran426  end, cpu clock= 4.57E+02 peak memory=      67 mb
+ dcop: begin dcop, cpu clock= 4.57E+02
+ dcop: end dcop, cpu clock= 4.57E+02 peak memory=      67 mb tot_iter=    5108
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran427  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 4.57E+02
+ sweep: tran tran427  end, cpu clock= 4.58E+02 peak memory=      67 mb
+ dcop: begin dcop, cpu clock= 4.58E+02
+ dcop: end dcop, cpu clock= 4.58E+02 peak memory=      67 mb tot_iter=    5125
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran428  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 4.58E+02
+ sweep: tran tran428  end, cpu clock= 4.59E+02 peak memory=      67 mb
+ dcop: begin dcop, cpu clock= 4.59E+02
+ dcop: end dcop, cpu clock= 4.59E+02 peak memory=      67 mb tot_iter=    5143
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran429  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 4.59E+02
+ sweep: tran tran429  end, cpu clock= 4.60E+02 peak memory=      67 mb
+ dcop: begin dcop, cpu clock= 4.60E+02
+ dcop: end dcop, cpu clock= 4.60E+02 peak memory=      67 mb tot_iter=    5150
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran430  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 4.60E+02
+ sweep: tran tran430  end, cpu clock= 4.61E+02 peak memory=      67 mb
+ dcop: begin dcop, cpu clock= 4.61E+02
+ dcop: end dcop, cpu clock= 4.61E+02 peak memory=      67 mb tot_iter=    5168
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran431  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 4.61E+02
+ sweep: tran tran431  end, cpu clock= 4.62E+02 peak memory=      67 mb
+ dcop: begin dcop, cpu clock= 4.62E+02
+ dcop: end dcop, cpu clock= 4.62E+02 peak memory=      67 mb tot_iter=    5177
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran432  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 4.62E+02
+ sweep: tran tran432  end, cpu clock= 4.63E+02 peak memory=      67 mb
+ dcop: begin dcop, cpu clock= 4.63E+02
+ dcop: end dcop, cpu clock= 4.63E+02 peak memory=      67 mb tot_iter=    5184
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran433  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 4.63E+02
+ sweep: tran tran433  end, cpu clock= 4.64E+02 peak memory=      67 mb
+ dcop: begin dcop, cpu clock= 4.64E+02
+ dcop: end dcop, cpu clock= 4.64E+02 peak memory=      67 mb tot_iter=    5192
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran434  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 4.64E+02
+ sweep: tran tran434  end, cpu clock= 4.65E+02 peak memory=      67 mb
+ dcop: begin dcop, cpu clock= 4.65E+02
+ dcop: end dcop, cpu clock= 4.65E+02 peak memory=      67 mb tot_iter=    5199
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran435  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 4.65E+02
+ sweep: tran tran435  end, cpu clock= 4.66E+02 peak memory=      67 mb
+ dcop: begin dcop, cpu clock= 4.67E+02
+ dcop: end dcop, cpu clock= 4.67E+02 peak memory=      67 mb tot_iter=    5216
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran436  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 4.67E+02
+ sweep: tran tran436  end, cpu clock= 4.68E+02 peak memory=      67 mb
+ dcop: begin dcop, cpu clock= 4.68E+02
+ dcop: end dcop, cpu clock= 4.68E+02 peak memory=      67 mb tot_iter=    5222
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran437  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 4.68E+02
+ sweep: tran tran437  end, cpu clock= 4.69E+02 peak memory=      67 mb
+ dcop: begin dcop, cpu clock= 4.69E+02
+ dcop: end dcop, cpu clock= 4.69E+02 peak memory=      67 mb tot_iter=    5228
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran438  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 4.69E+02
+ sweep: tran tran438  end, cpu clock= 4.70E+02 peak memory=      67 mb
+ dcop: begin dcop, cpu clock= 4.70E+02
+ dcop: end dcop, cpu clock= 4.70E+02 peak memory=      67 mb tot_iter=    5245
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran439  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 4.70E+02
+ sweep: tran tran439  end, cpu clock= 4.71E+02 peak memory=      67 mb
+ dcop: begin dcop, cpu clock= 4.71E+02
+ dcop: end dcop, cpu clock= 4.71E+02 peak memory=      67 mb tot_iter=    5254
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran440  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 4.71E+02
+ sweep: tran tran440  end, cpu clock= 4.72E+02 peak memory=      67 mb
+ dcop: begin dcop, cpu clock= 4.72E+02
+ dcop: end dcop, cpu clock= 4.72E+02 peak memory=      67 mb tot_iter=    5260
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran441  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 4.72E+02
+ sweep: tran tran441  end, cpu clock= 4.73E+02 peak memory=      67 mb
+ dcop: begin dcop, cpu clock= 4.73E+02
+ dcop: end dcop, cpu clock= 4.73E+02 peak memory=      67 mb tot_iter=    5267
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran442  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 4.73E+02
+ sweep: tran tran442  end, cpu clock= 4.74E+02 peak memory=      67 mb
+ dcop: begin dcop, cpu clock= 4.74E+02
+ dcop: end dcop, cpu clock= 4.74E+02 peak memory=      67 mb tot_iter=    5274
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran443  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 4.74E+02
+ sweep: tran tran443  end, cpu clock= 4.75E+02 peak memory=      67 mb
+ dcop: begin dcop, cpu clock= 4.75E+02
+ dcop: end dcop, cpu clock= 4.75E+02 peak memory=      67 mb tot_iter=    5279
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran444  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 4.75E+02
+ sweep: tran tran444  end, cpu clock= 4.76E+02 peak memory=      67 mb
+ dcop: begin dcop, cpu clock= 4.76E+02
+ dcop: end dcop, cpu clock= 4.76E+02 peak memory=      67 mb tot_iter=    5286
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran445  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 4.76E+02
+ sweep: tran tran445  end, cpu clock= 4.77E+02 peak memory=      67 mb
+ dcop: begin dcop, cpu clock= 4.77E+02
+ dcop: end dcop, cpu clock= 4.77E+02 peak memory=      67 mb tot_iter=    5290
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran446  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 4.77E+02
+ sweep: tran tran446  end, cpu clock= 4.79E+02 peak memory=      67 mb
+ dcop: begin dcop, cpu clock= 4.79E+02
+ dcop: end dcop, cpu clock= 4.79E+02 peak memory=      67 mb tot_iter=    5298
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran447  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 4.79E+02
+ sweep: tran tran447  end, cpu clock= 4.80E+02 peak memory=      67 mb
+ dcop: begin dcop, cpu clock= 4.80E+02
+ dcop: end dcop, cpu clock= 4.80E+02 peak memory=      67 mb tot_iter=    5302
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran448  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 4.80E+02
+ sweep: tran tran448  end, cpu clock= 4.81E+02 peak memory=      67 mb
+ dcop: begin dcop, cpu clock= 4.81E+02
+ dcop: end dcop, cpu clock= 4.81E+02 peak memory=      67 mb tot_iter=    5319
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran449  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 4.81E+02
+ sweep: tran tran449  end, cpu clock= 4.82E+02 peak memory=      67 mb
+ dcop: begin dcop, cpu clock= 4.82E+02
+ dcop: end dcop, cpu clock= 4.82E+02 peak memory=      67 mb tot_iter=    5331
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran450  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 4.82E+02
+ sweep: tran tran450  end, cpu clock= 4.83E+02 peak memory=      67 mb
+ dcop: begin dcop, cpu clock= 4.83E+02
+ dcop: end dcop, cpu clock= 4.83E+02 peak memory=      67 mb tot_iter=    5339
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran451  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 4.83E+02
+ sweep: tran tran451  end, cpu clock= 4.84E+02 peak memory=      67 mb
+ dcop: begin dcop, cpu clock= 4.84E+02
+ dcop: end dcop, cpu clock= 4.84E+02 peak memory=      67 mb tot_iter=    5356
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran452  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 4.84E+02
+ sweep: tran tran452  end, cpu clock= 4.85E+02 peak memory=      67 mb
+ dcop: begin dcop, cpu clock= 4.85E+02
+ dcop: end dcop, cpu clock= 4.85E+02 peak memory=      67 mb tot_iter=    5360
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran453  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 4.85E+02
+ sweep: tran tran453  end, cpu clock= 4.87E+02 peak memory=      67 mb
+ dcop: begin dcop, cpu clock= 4.87E+02
+ dcop: end dcop, cpu clock= 4.87E+02 peak memory=      67 mb tot_iter=    5365
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran454  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 4.87E+02
+ sweep: tran tran454  end, cpu clock= 4.88E+02 peak memory=      67 mb
+ dcop: begin dcop, cpu clock= 4.88E+02
+ dcop: end dcop, cpu clock= 4.88E+02 peak memory=      67 mb tot_iter=    5370
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran455  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 4.88E+02
+ sweep: tran tran455  end, cpu clock= 4.89E+02 peak memory=      67 mb
+ dcop: begin dcop, cpu clock= 4.89E+02
+ dcop: end dcop, cpu clock= 4.89E+02 peak memory=      67 mb tot_iter=    5379
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran456  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 4.89E+02
+ sweep: tran tran456  end, cpu clock= 4.90E+02 peak memory=      67 mb
+ dcop: begin dcop, cpu clock= 4.90E+02
+ dcop: end dcop, cpu clock= 4.90E+02 peak memory=      67 mb tot_iter=    5385
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran457  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 4.90E+02
+ sweep: tran tran457  end, cpu clock= 4.91E+02 peak memory=      67 mb
+ dcop: begin dcop, cpu clock= 4.91E+02
+ dcop: end dcop, cpu clock= 4.91E+02 peak memory=      67 mb tot_iter=    5395
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran458  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 4.91E+02
+ sweep: tran tran458  end, cpu clock= 4.92E+02 peak memory=      68 mb
+ dcop: begin dcop, cpu clock= 4.92E+02
+ dcop: end dcop, cpu clock= 4.92E+02 peak memory=      68 mb tot_iter=    5412
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran459  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 4.92E+02
+ sweep: tran tran459  end, cpu clock= 4.94E+02 peak memory=      68 mb
+ dcop: begin dcop, cpu clock= 4.94E+02
+ dcop: end dcop, cpu clock= 4.94E+02 peak memory=      68 mb tot_iter=    5417
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran460  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 4.94E+02
+ sweep: tran tran460  end, cpu clock= 4.95E+02 peak memory=      68 mb
+ dcop: begin dcop, cpu clock= 4.95E+02
+ dcop: end dcop, cpu clock= 4.95E+02 peak memory=      68 mb tot_iter=    5423
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran461  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 4.95E+02
+ sweep: tran tran461  end, cpu clock= 4.96E+02 peak memory=      68 mb
+ dcop: begin dcop, cpu clock= 4.96E+02
+ dcop: end dcop, cpu clock= 4.96E+02 peak memory=      68 mb tot_iter=    5436
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran462  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 4.96E+02
+ sweep: tran tran462  end, cpu clock= 4.97E+02 peak memory=      68 mb
+ dcop: begin dcop, cpu clock= 4.97E+02
+ dcop: end dcop, cpu clock= 4.97E+02 peak memory=      68 mb tot_iter=    5441
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran463  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 4.97E+02
+ sweep: tran tran463  end, cpu clock= 4.98E+02 peak memory=      68 mb
+ dcop: begin dcop, cpu clock= 4.98E+02
+ dcop: end dcop, cpu clock= 4.98E+02 peak memory=      68 mb tot_iter=    5445
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran464  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 4.98E+02
+ sweep: tran tran464  end, cpu clock= 4.99E+02 peak memory=      68 mb
+ dcop: begin dcop, cpu clock= 4.99E+02
+ dcop: end dcop, cpu clock= 4.99E+02 peak memory=      68 mb tot_iter=    5463
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran465  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 4.99E+02
+ sweep: tran tran465  end, cpu clock= 5.00E+02 peak memory=      68 mb
+ dcop: begin dcop, cpu clock= 5.00E+02
+ dcop: end dcop, cpu clock= 5.00E+02 peak memory=      68 mb tot_iter=    5469
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran466  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 5.00E+02
+ sweep: tran tran466  end, cpu clock= 5.01E+02 peak memory=      68 mb
+ dcop: begin dcop, cpu clock= 5.01E+02
+ dcop: end dcop, cpu clock= 5.01E+02 peak memory=      68 mb tot_iter=    5487
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran467  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 5.01E+02
+ sweep: tran tran467  end, cpu clock= 5.03E+02 peak memory=      68 mb
+ dcop: begin dcop, cpu clock= 5.03E+02
+ dcop: end dcop, cpu clock= 5.03E+02 peak memory=      68 mb tot_iter=    5507
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran468  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 5.03E+02
+ sweep: tran tran468  end, cpu clock= 5.04E+02 peak memory=      68 mb
+ dcop: begin dcop, cpu clock= 5.04E+02
+ dcop: end dcop, cpu clock= 5.04E+02 peak memory=      68 mb tot_iter=    5515
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran469  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 5.04E+02
+ sweep: tran tran469  end, cpu clock= 5.05E+02 peak memory=      68 mb
+ dcop: begin dcop, cpu clock= 5.05E+02
+ dcop: end dcop, cpu clock= 5.05E+02 peak memory=      68 mb tot_iter=    5533
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran470  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 5.05E+02
+ sweep: tran tran470  end, cpu clock= 5.06E+02 peak memory=      68 mb
+ dcop: begin dcop, cpu clock= 5.06E+02
+ dcop: end dcop, cpu clock= 5.06E+02 peak memory=      68 mb tot_iter=    5537
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran471  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 5.06E+02
+ sweep: tran tran471  end, cpu clock= 5.07E+02 peak memory=      68 mb
+ dcop: begin dcop, cpu clock= 5.07E+02
+ dcop: end dcop, cpu clock= 5.07E+02 peak memory=      68 mb tot_iter=    5542
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran472  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 5.07E+02
+ sweep: tran tran472  end, cpu clock= 5.08E+02 peak memory=      68 mb
+ dcop: begin dcop, cpu clock= 5.08E+02
+ dcop: end dcop, cpu clock= 5.08E+02 peak memory=      68 mb tot_iter=    5547
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran473  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 5.08E+02
+ sweep: tran tran473  end, cpu clock= 5.09E+02 peak memory=      68 mb
+ dcop: begin dcop, cpu clock= 5.09E+02
+ dcop: end dcop, cpu clock= 5.09E+02 peak memory=      68 mb tot_iter=    5551
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran474  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 5.09E+02
+ sweep: tran tran474  end, cpu clock= 5.10E+02 peak memory=      68 mb
+ dcop: begin dcop, cpu clock= 5.10E+02
+ dcop: end dcop, cpu clock= 5.10E+02 peak memory=      68 mb tot_iter=    5564
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran475  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 5.10E+02
+ sweep: tran tran475  end, cpu clock= 5.11E+02 peak memory=      68 mb
+ dcop: begin dcop, cpu clock= 5.11E+02
+ dcop: end dcop, cpu clock= 5.11E+02 peak memory=      68 mb tot_iter=    5577
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran476  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 5.11E+02
+ sweep: tran tran476  end, cpu clock= 5.12E+02 peak memory=      68 mb
+ dcop: begin dcop, cpu clock= 5.12E+02
+ dcop: end dcop, cpu clock= 5.12E+02 peak memory=      68 mb tot_iter=    5582
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran477  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 5.12E+02
+ sweep: tran tran477  end, cpu clock= 5.14E+02 peak memory=      68 mb
+ dcop: begin dcop, cpu clock= 5.14E+02
+ dcop: end dcop, cpu clock= 5.14E+02 peak memory=      68 mb tot_iter=    5591
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran478  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 5.14E+02
+ sweep: tran tran478  end, cpu clock= 5.15E+02 peak memory=      68 mb
+ dcop: begin dcop, cpu clock= 5.15E+02
+ dcop: end dcop, cpu clock= 5.15E+02 peak memory=      68 mb tot_iter=    5608
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran479  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 5.15E+02
+ sweep: tran tran479  end, cpu clock= 5.16E+02 peak memory=      68 mb
+ dcop: begin dcop, cpu clock= 5.16E+02
+ dcop: end dcop, cpu clock= 5.16E+02 peak memory=      68 mb tot_iter=    5614
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran480  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 5.16E+02
+ sweep: tran tran480  end, cpu clock= 5.17E+02 peak memory=      68 mb
+ dcop: begin dcop, cpu clock= 5.17E+02
+ dcop: end dcop, cpu clock= 5.17E+02 peak memory=      68 mb tot_iter=    5632
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran481  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 5.17E+02
+ sweep: tran tran481  end, cpu clock= 5.18E+02 peak memory=      68 mb
+ dcop: begin dcop, cpu clock= 5.18E+02
+ dcop: end dcop, cpu clock= 5.18E+02 peak memory=      68 mb tot_iter=    5639
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran482  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 5.18E+02
+ sweep: tran tran482  end, cpu clock= 5.19E+02 peak memory=      68 mb
+ dcop: begin dcop, cpu clock= 5.19E+02
+ dcop: end dcop, cpu clock= 5.19E+02 peak memory=      68 mb tot_iter=    5655
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran483  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 5.19E+02
+ sweep: tran tran483  end, cpu clock= 5.20E+02 peak memory=      68 mb
+ dcop: begin dcop, cpu clock= 5.20E+02
+ dcop: end dcop, cpu clock= 5.20E+02 peak memory=      68 mb tot_iter=    5663
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran484  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 5.20E+02
+ sweep: tran tran484  end, cpu clock= 5.21E+02 peak memory=      68 mb
+ dcop: begin dcop, cpu clock= 5.21E+02
+ dcop: end dcop, cpu clock= 5.21E+02 peak memory=      68 mb tot_iter=    5669
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran485  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 5.21E+02
+ sweep: tran tran485  end, cpu clock= 5.22E+02 peak memory=      68 mb
+ dcop: begin dcop, cpu clock= 5.22E+02
+ dcop: end dcop, cpu clock= 5.22E+02 peak memory=      68 mb tot_iter=    5686
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran486  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 5.22E+02
+ sweep: tran tran486  end, cpu clock= 5.23E+02 peak memory=      68 mb
+ dcop: begin dcop, cpu clock= 5.23E+02
+ dcop: end dcop, cpu clock= 5.23E+02 peak memory=      68 mb tot_iter=    5692
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran487  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 5.23E+02
+ sweep: tran tran487  end, cpu clock= 5.24E+02 peak memory=      68 mb
+ dcop: begin dcop, cpu clock= 5.24E+02
+ dcop: end dcop, cpu clock= 5.24E+02 peak memory=      68 mb tot_iter=    5698
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran488  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 5.24E+02
+ sweep: tran tran488  end, cpu clock= 5.25E+02 peak memory=      68 mb
+ dcop: begin dcop, cpu clock= 5.25E+02
+ dcop: end dcop, cpu clock= 5.25E+02 peak memory=      68 mb tot_iter=    5712
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran489  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 5.25E+02
+ sweep: tran tran489  end, cpu clock= 5.26E+02 peak memory=      68 mb
+ dcop: begin dcop, cpu clock= 5.26E+02
+ dcop: end dcop, cpu clock= 5.26E+02 peak memory=      68 mb tot_iter=    5718
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran490  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 5.26E+02
+ sweep: tran tran490  end, cpu clock= 5.28E+02 peak memory=      68 mb
+ dcop: begin dcop, cpu clock= 5.28E+02
+ dcop: end dcop, cpu clock= 5.28E+02 peak memory=      68 mb tot_iter=    5729
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran491  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 5.28E+02
+ sweep: tran tran491  end, cpu clock= 5.29E+02 peak memory=      68 mb
+ dcop: begin dcop, cpu clock= 5.29E+02
+ dcop: end dcop, cpu clock= 5.29E+02 peak memory=      68 mb tot_iter=    5735
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran492  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 5.29E+02
+ sweep: tran tran492  end, cpu clock= 5.30E+02 peak memory=      68 mb
+ dcop: begin dcop, cpu clock= 5.30E+02
+ dcop: end dcop, cpu clock= 5.30E+02 peak memory=      68 mb tot_iter=    5745
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran493  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 5.30E+02
+ sweep: tran tran493  end, cpu clock= 5.31E+02 peak memory=      68 mb
+ dcop: begin dcop, cpu clock= 5.31E+02
+ dcop: end dcop, cpu clock= 5.31E+02 peak memory=      68 mb tot_iter=    5752
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran494  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 5.31E+02
+ sweep: tran tran494  end, cpu clock= 5.32E+02 peak memory=      68 mb
+ dcop: begin dcop, cpu clock= 5.32E+02
+ dcop: end dcop, cpu clock= 5.32E+02 peak memory=      68 mb tot_iter=    5758
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran495  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 5.32E+02
+ sweep: tran tran495  end, cpu clock= 5.33E+02 peak memory=      68 mb
+ dcop: begin dcop, cpu clock= 5.33E+02
+ dcop: end dcop, cpu clock= 5.33E+02 peak memory=      68 mb tot_iter=    5775
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran496  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 5.33E+02
+ sweep: tran tran496  end, cpu clock= 5.34E+02 peak memory=      68 mb
+ dcop: begin dcop, cpu clock= 5.34E+02
+ dcop: end dcop, cpu clock= 5.34E+02 peak memory=      68 mb tot_iter=    5793
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran497  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 5.34E+02
+ sweep: tran tran497  end, cpu clock= 5.35E+02 peak memory=      68 mb
+ dcop: begin dcop, cpu clock= 5.35E+02
+ dcop: end dcop, cpu clock= 5.35E+02 peak memory=      68 mb tot_iter=    5800
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran498  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 5.35E+02
+ sweep: tran tran498  end, cpu clock= 5.36E+02 peak memory=      68 mb
+ dcop: begin dcop, cpu clock= 5.36E+02
+ dcop: end dcop, cpu clock= 5.36E+02 peak memory=      68 mb tot_iter=    5808
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran499  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 5.36E+02
+ sweep: tran tran499  end, cpu clock= 5.37E+02 peak memory=      68 mb
+ dcop: begin dcop, cpu clock= 5.37E+02
+ dcop: end dcop, cpu clock= 5.37E+02 peak memory=      68 mb tot_iter=    5814
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.mt0
+ sweep: tran tran500  begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 5.37E+02
+ sweep: tran tran500  end, cpu clock= 5.38E+02 peak memory=      68 mb
+ sweep: monte_carlo     monte_carlo     1 end
+>info:         ***** hspice job concluded
+ lic: Release hspice token(s)

@@ -1,0 +1,2002 @@
+[
+    {
+        "index": 1,
+        "vdd_val": 1.0
+    },
+    {
+        "index": 2,
+        "vdd_val": 0.91986
+    },
+    {
+        "index": 3,
+        "vdd_val": 0.91706
+    },
+    {
+        "index": 4,
+        "vdd_val": 0.97323
+    },
+    {
+        "index": 5,
+        "vdd_val": 1.0215
+    },
+    {
+        "index": 6,
+        "vdd_val": 1.16757
+    },
+    {
+        "index": 7,
+        "vdd_val": 1.08946
+    },
+    {
+        "index": 8,
+        "vdd_val": 1.02014
+    },
+    {
+        "index": 9,
+        "vdd_val": 1.10447
+    },
+    {
+        "index": 10,
+        "vdd_val": 0.82013
+    },
+    {
+        "index": 11,
+        "vdd_val": 1.27742
+    },
+    {
+        "index": 12,
+        "vdd_val": 1.0656
+    },
+    {
+        "index": 13,
+        "vdd_val": 0.87281
+    },
+    {
+        "index": 14,
+        "vdd_val": 0.95063
+    },
+    {
+        "index": 15,
+        "vdd_val": 1.04482
+    },
+    {
+        "index": 16,
+        "vdd_val": 1.03209
+    },
+    {
+        "index": 17,
+        "vdd_val": 1.14379
+    },
+    {
+        "index": 18,
+        "vdd_val": 0.94811
+    },
+    {
+        "index": 19,
+        "vdd_val": 0.9621999999999999
+    },
+    {
+        "index": 20,
+        "vdd_val": 1.05518
+    },
+    {
+        "index": 21,
+        "vdd_val": 1.03415
+    },
+    {
+        "index": 22,
+        "vdd_val": 1.029
+    },
+    {
+        "index": 23,
+        "vdd_val": 0.98159
+    },
+    {
+        "index": 24,
+        "vdd_val": 1.08485
+    },
+    {
+        "index": 25,
+        "vdd_val": 0.92554
+    },
+    {
+        "index": 26,
+        "vdd_val": 0.87562
+    },
+    {
+        "index": 27,
+        "vdd_val": 1.06697
+    },
+    {
+        "index": 28,
+        "vdd_val": 1.06131
+    },
+    {
+        "index": 29,
+        "vdd_val": 0.88089
+    },
+    {
+        "index": 30,
+        "vdd_val": 1.03824
+    },
+    {
+        "index": 31,
+        "vdd_val": 1.09694
+    },
+    {
+        "index": 32,
+        "vdd_val": 0.81151
+    },
+    {
+        "index": 33,
+        "vdd_val": 1.06073
+    },
+    {
+        "index": 34,
+        "vdd_val": 1.08013
+    },
+    {
+        "index": 35,
+        "vdd_val": 1.02451
+    },
+    {
+        "index": 36,
+        "vdd_val": 0.86791
+    },
+    {
+        "index": 37,
+        "vdd_val": 1.08362
+    },
+    {
+        "index": 38,
+        "vdd_val": 0.75498
+    },
+    {
+        "index": 39,
+        "vdd_val": 0.87103
+    },
+    {
+        "index": 40,
+        "vdd_val": 1.04527
+    },
+    {
+        "index": 41,
+        "vdd_val": 1.0724
+    },
+    {
+        "index": 42,
+        "vdd_val": 0.92777
+    },
+    {
+        "index": 43,
+        "vdd_val": 0.97828
+    },
+    {
+        "index": 44,
+        "vdd_val": 0.94796
+    },
+    {
+        "index": 45,
+        "vdd_val": 0.84243
+    },
+    {
+        "index": 46,
+        "vdd_val": 1.14914
+    },
+    {
+        "index": 47,
+        "vdd_val": 1.18448
+    },
+    {
+        "index": 48,
+        "vdd_val": 0.9749099999999999
+    },
+    {
+        "index": 49,
+        "vdd_val": 1.17263
+    },
+    {
+        "index": 50,
+        "vdd_val": 0.93529
+    },
+    {
+        "index": 51,
+        "vdd_val": 1.04233
+    },
+    {
+        "index": 52,
+        "vdd_val": 0.8619399999999999
+    },
+    {
+        "index": 53,
+        "vdd_val": 0.93048
+    },
+    {
+        "index": 54,
+        "vdd_val": 0.90354
+    },
+    {
+        "index": 55,
+        "vdd_val": 1.0383
+    },
+    {
+        "index": 56,
+        "vdd_val": 1.0667
+    },
+    {
+        "index": 57,
+        "vdd_val": 1.16099
+    },
+    {
+        "index": 58,
+        "vdd_val": 0.95873
+    },
+    {
+        "index": 59,
+        "vdd_val": 1.07432
+    },
+    {
+        "index": 60,
+        "vdd_val": 1.10667
+    },
+    {
+        "index": 61,
+        "vdd_val": 1.0506199999999999
+    },
+    {
+        "index": 62,
+        "vdd_val": 0.93113
+    },
+    {
+        "index": 63,
+        "vdd_val": 1.01982
+    },
+    {
+        "index": 64,
+        "vdd_val": 0.90307
+    },
+    {
+        "index": 65,
+        "vdd_val": 0.86604
+    },
+    {
+        "index": 66,
+        "vdd_val": 0.95446
+    },
+    {
+        "index": 67,
+        "vdd_val": 0.91091
+    },
+    {
+        "index": 68,
+        "vdd_val": 0.8606199999999999
+    },
+    {
+        "index": 69,
+        "vdd_val": 0.9372199999999999
+    },
+    {
+        "index": 70,
+        "vdd_val": 0.95503
+    },
+    {
+        "index": 71,
+        "vdd_val": 1.14317
+    },
+    {
+        "index": 72,
+        "vdd_val": 0.9742
+    },
+    {
+        "index": 73,
+        "vdd_val": 1.17744
+    },
+    {
+        "index": 74,
+        "vdd_val": 0.994212
+    },
+    {
+        "index": 75,
+        "vdd_val": 0.93867
+    },
+    {
+        "index": 76,
+        "vdd_val": 1.09223
+    },
+    {
+        "index": 77,
+        "vdd_val": 0.8565
+    },
+    {
+        "index": 78,
+        "vdd_val": 0.94219
+    },
+    {
+        "index": 79,
+        "vdd_val": 0.994723
+    },
+    {
+        "index": 80,
+        "vdd_val": 1.09878
+    },
+    {
+        "index": 81,
+        "vdd_val": 1.04383
+    },
+    {
+        "index": 82,
+        "vdd_val": 1.07875
+    },
+    {
+        "index": 83,
+        "vdd_val": 1.0518
+    },
+    {
+        "index": 84,
+        "vdd_val": 0.93236
+    },
+    {
+        "index": 85,
+        "vdd_val": 1.03506
+    },
+    {
+        "index": 86,
+        "vdd_val": 0.97362
+    },
+    {
+        "index": 87,
+        "vdd_val": 1.03708
+    },
+    {
+        "index": 88,
+        "vdd_val": 1.01919
+    },
+    {
+        "index": 89,
+        "vdd_val": 1.06274
+    },
+    {
+        "index": 90,
+        "vdd_val": 0.94649
+    },
+    {
+        "index": 91,
+        "vdd_val": 1.1532
+    },
+    {
+        "index": 92,
+        "vdd_val": 0.93546
+    },
+    {
+        "index": 93,
+        "vdd_val": 1.14374
+    },
+    {
+        "index": 94,
+        "vdd_val": 1.0196
+    },
+    {
+        "index": 95,
+        "vdd_val": 0.95949
+    },
+    {
+        "index": 96,
+        "vdd_val": 1.09222
+    },
+    {
+        "index": 97,
+        "vdd_val": 0.97372
+    },
+    {
+        "index": 98,
+        "vdd_val": 1.10165
+    },
+    {
+        "index": 99,
+        "vdd_val": 0.93672
+    },
+    {
+        "index": 100,
+        "vdd_val": 0.93216
+    },
+    {
+        "index": 101,
+        "vdd_val": 1.0624500000000001
+    },
+    {
+        "index": 102,
+        "vdd_val": 1.03053
+    },
+    {
+        "index": 103,
+        "vdd_val": 0.77507
+    },
+    {
+        "index": 104,
+        "vdd_val": 0.90408
+    },
+    {
+        "index": 105,
+        "vdd_val": 0.995785
+    },
+    {
+        "index": 106,
+        "vdd_val": 1.01657
+    },
+    {
+        "index": 107,
+        "vdd_val": 0.94575
+    },
+    {
+        "index": 108,
+        "vdd_val": 0.78258
+    },
+    {
+        "index": 109,
+        "vdd_val": 0.94649
+    },
+    {
+        "index": 110,
+        "vdd_val": 1.06256
+    },
+    {
+        "index": 111,
+        "vdd_val": 1.05162
+    },
+    {
+        "index": 112,
+        "vdd_val": 0.98484
+    },
+    {
+        "index": 113,
+        "vdd_val": 1.24311
+    },
+    {
+        "index": 114,
+        "vdd_val": 1.02435
+    },
+    {
+        "index": 115,
+        "vdd_val": 1.11689
+    },
+    {
+        "index": 116,
+        "vdd_val": 0.92775
+    },
+    {
+        "index": 117,
+        "vdd_val": 1.07134
+    },
+    {
+        "index": 118,
+        "vdd_val": 1.04908
+    },
+    {
+        "index": 119,
+        "vdd_val": 0.96301
+    },
+    {
+        "index": 120,
+        "vdd_val": 1.02538
+    },
+    {
+        "index": 121,
+        "vdd_val": 1.0007852
+    },
+    {
+        "index": 122,
+        "vdd_val": 0.91752
+    },
+    {
+        "index": 123,
+        "vdd_val": 1.009554
+    },
+    {
+        "index": 124,
+        "vdd_val": 1.07771
+    },
+    {
+        "index": 125,
+        "vdd_val": 1.08217
+    },
+    {
+        "index": 126,
+        "vdd_val": 0.98378
+    },
+    {
+        "index": 127,
+        "vdd_val": 1.14174
+    },
+    {
+        "index": 128,
+        "vdd_val": 0.9585
+    },
+    {
+        "index": 129,
+        "vdd_val": 1.07071
+    },
+    {
+        "index": 130,
+        "vdd_val": 1.09122
+    },
+    {
+        "index": 131,
+        "vdd_val": 1.11765
+    },
+    {
+        "index": 132,
+        "vdd_val": 1.13913
+    },
+    {
+        "index": 133,
+        "vdd_val": 1.22676
+    },
+    {
+        "index": 134,
+        "vdd_val": 1.04529
+    },
+    {
+        "index": 135,
+        "vdd_val": 1.03937
+    },
+    {
+        "index": 136,
+        "vdd_val": 0.98266
+    },
+    {
+        "index": 137,
+        "vdd_val": 0.88398
+    },
+    {
+        "index": 138,
+        "vdd_val": 0.90443
+    },
+    {
+        "index": 139,
+        "vdd_val": 0.9588099999999999
+    },
+    {
+        "index": 140,
+        "vdd_val": 0.78801
+    },
+    {
+        "index": 141,
+        "vdd_val": 1.06712
+    },
+    {
+        "index": 142,
+        "vdd_val": 0.98425
+    },
+    {
+        "index": 143,
+        "vdd_val": 1.01568
+    },
+    {
+        "index": 144,
+        "vdd_val": 1.19248
+    },
+    {
+        "index": 145,
+        "vdd_val": 1.11457
+    },
+    {
+        "index": 146,
+        "vdd_val": 1.02998
+    },
+    {
+        "index": 147,
+        "vdd_val": 0.894
+    },
+    {
+        "index": 148,
+        "vdd_val": 1.04708
+    },
+    {
+        "index": 149,
+        "vdd_val": 0.8477
+    },
+    {
+        "index": 150,
+        "vdd_val": 0.93803
+    },
+    {
+        "index": 151,
+        "vdd_val": 0.9117299999999999
+    },
+    {
+        "index": 152,
+        "vdd_val": 0.90229
+    },
+    {
+        "index": 153,
+        "vdd_val": 0.9269499999999999
+    },
+    {
+        "index": 154,
+        "vdd_val": 1.17038
+    },
+    {
+        "index": 155,
+        "vdd_val": 0.83873
+    },
+    {
+        "index": 156,
+        "vdd_val": 1.17432
+    },
+    {
+        "index": 157,
+        "vdd_val": 1.01625
+    },
+    {
+        "index": 158,
+        "vdd_val": 0.83596
+    },
+    {
+        "index": 159,
+        "vdd_val": 1.13187
+    },
+    {
+        "index": 160,
+        "vdd_val": 1.04913
+    },
+    {
+        "index": 161,
+        "vdd_val": 1.05441
+    },
+    {
+        "index": 162,
+        "vdd_val": 0.94514
+    },
+    {
+        "index": 163,
+        "vdd_val": 1.07632
+    },
+    {
+        "index": 164,
+        "vdd_val": 1.05488
+    },
+    {
+        "index": 165,
+        "vdd_val": 0.98122
+    },
+    {
+        "index": 166,
+        "vdd_val": 1.1263
+    },
+    {
+        "index": 167,
+        "vdd_val": 1.1697
+    },
+    {
+        "index": 168,
+        "vdd_val": 0.90666
+    },
+    {
+        "index": 169,
+        "vdd_val": 0.97058
+    },
+    {
+        "index": 170,
+        "vdd_val": 0.98371
+    },
+    {
+        "index": 171,
+        "vdd_val": 0.82507
+    },
+    {
+        "index": 172,
+        "vdd_val": 0.8643799999999999
+    },
+    {
+        "index": 173,
+        "vdd_val": 1.1256599999999999
+    },
+    {
+        "index": 174,
+        "vdd_val": 0.83975
+    },
+    {
+        "index": 175,
+        "vdd_val": 0.95278
+    },
+    {
+        "index": 176,
+        "vdd_val": 0.8408
+    },
+    {
+        "index": 177,
+        "vdd_val": 1.14255
+    },
+    {
+        "index": 178,
+        "vdd_val": 0.96215
+    },
+    {
+        "index": 179,
+        "vdd_val": 0.95659
+    },
+    {
+        "index": 180,
+        "vdd_val": 1.08754
+    },
+    {
+        "index": 181,
+        "vdd_val": 0.93886
+    },
+    {
+        "index": 182,
+        "vdd_val": 1.006024
+    },
+    {
+        "index": 183,
+        "vdd_val": 1.04087
+    },
+    {
+        "index": 184,
+        "vdd_val": 1.04984
+    },
+    {
+        "index": 185,
+        "vdd_val": 0.92266
+    },
+    {
+        "index": 186,
+        "vdd_val": 0.92857
+    },
+    {
+        "index": 187,
+        "vdd_val": 0.87031
+    },
+    {
+        "index": 188,
+        "vdd_val": 0.93497
+    },
+    {
+        "index": 189,
+        "vdd_val": 0.97765
+    },
+    {
+        "index": 190,
+        "vdd_val": 0.97642
+    },
+    {
+        "index": 191,
+        "vdd_val": 0.94179
+    },
+    {
+        "index": 192,
+        "vdd_val": 0.990275
+    },
+    {
+        "index": 193,
+        "vdd_val": 1.03892
+    },
+    {
+        "index": 194,
+        "vdd_val": 1.02101
+    },
+    {
+        "index": 195,
+        "vdd_val": 0.95885
+    },
+    {
+        "index": 196,
+        "vdd_val": 0.89827
+    },
+    {
+        "index": 197,
+        "vdd_val": 1.08232
+    },
+    {
+        "index": 198,
+        "vdd_val": 0.85249
+    },
+    {
+        "index": 199,
+        "vdd_val": 0.95958
+    },
+    {
+        "index": 200,
+        "vdd_val": 0.77172
+    },
+    {
+        "index": 201,
+        "vdd_val": 1.1192
+    },
+    {
+        "index": 202,
+        "vdd_val": 1.12686
+    },
+    {
+        "index": 203,
+        "vdd_val": 1.04169
+    },
+    {
+        "index": 204,
+        "vdd_val": 0.97619
+    },
+    {
+        "index": 205,
+        "vdd_val": 1.04594
+    },
+    {
+        "index": 206,
+        "vdd_val": 1.01837
+    },
+    {
+        "index": 207,
+        "vdd_val": 0.98696
+    },
+    {
+        "index": 208,
+        "vdd_val": 1.04164
+    },
+    {
+        "index": 209,
+        "vdd_val": 1.08075
+    },
+    {
+        "index": 210,
+        "vdd_val": 1.01774
+    },
+    {
+        "index": 211,
+        "vdd_val": 0.86209
+    },
+    {
+        "index": 212,
+        "vdd_val": 0.98446
+    },
+    {
+        "index": 213,
+        "vdd_val": 0.9232199999999999
+    },
+    {
+        "index": 214,
+        "vdd_val": 1.04342
+    },
+    {
+        "index": 215,
+        "vdd_val": 1.05586
+    },
+    {
+        "index": 216,
+        "vdd_val": 1.06397
+    },
+    {
+        "index": 217,
+        "vdd_val": 0.89915
+    },
+    {
+        "index": 218,
+        "vdd_val": 1.01196
+    },
+    {
+        "index": 219,
+        "vdd_val": 1.01942
+    },
+    {
+        "index": 220,
+        "vdd_val": 0.89695
+    },
+    {
+        "index": 221,
+        "vdd_val": 0.86503
+    },
+    {
+        "index": 222,
+        "vdd_val": 1.08521
+    },
+    {
+        "index": 223,
+        "vdd_val": 0.94738
+    },
+    {
+        "index": 224,
+        "vdd_val": 1.15743
+    },
+    {
+        "index": 225,
+        "vdd_val": 0.97243
+    },
+    {
+        "index": 226,
+        "vdd_val": 0.9198999999999999
+    },
+    {
+        "index": 227,
+        "vdd_val": 0.86984
+    },
+    {
+        "index": 228,
+        "vdd_val": 0.85073
+    },
+    {
+        "index": 229,
+        "vdd_val": 1.03603
+    },
+    {
+        "index": 230,
+        "vdd_val": 0.91721
+    },
+    {
+        "index": 231,
+        "vdd_val": 0.91389
+    },
+    {
+        "index": 232,
+        "vdd_val": 1.02955
+    },
+    {
+        "index": 233,
+        "vdd_val": 0.93614
+    },
+    {
+        "index": 234,
+        "vdd_val": 0.72512
+    },
+    {
+        "index": 235,
+        "vdd_val": 1.05718
+    },
+    {
+        "index": 236,
+        "vdd_val": 1.10946
+    },
+    {
+        "index": 237,
+        "vdd_val": 1.12164
+    },
+    {
+        "index": 238,
+        "vdd_val": 0.91643
+    },
+    {
+        "index": 239,
+        "vdd_val": 0.88112
+    },
+    {
+        "index": 240,
+        "vdd_val": 1.07226
+    },
+    {
+        "index": 241,
+        "vdd_val": 0.88361
+    },
+    {
+        "index": 242,
+        "vdd_val": 0.94424
+    },
+    {
+        "index": 243,
+        "vdd_val": 1.09979
+    },
+    {
+        "index": 244,
+        "vdd_val": 1.10143
+    },
+    {
+        "index": 245,
+        "vdd_val": 1.10029
+    },
+    {
+        "index": 246,
+        "vdd_val": 1.12415
+    },
+    {
+        "index": 247,
+        "vdd_val": 1.04762
+    },
+    {
+        "index": 248,
+        "vdd_val": 1.05195
+    },
+    {
+        "index": 249,
+        "vdd_val": 1.04417
+    },
+    {
+        "index": 250,
+        "vdd_val": 1.05674
+    },
+    {
+        "index": 251,
+        "vdd_val": 1.04177
+    },
+    {
+        "index": 252,
+        "vdd_val": 1.06897
+    },
+    {
+        "index": 253,
+        "vdd_val": 0.64735
+    },
+    {
+        "index": 254,
+        "vdd_val": 1.28774
+    },
+    {
+        "index": 255,
+        "vdd_val": 0.89162
+    },
+    {
+        "index": 256,
+        "vdd_val": 0.94496
+    },
+    {
+        "index": 257,
+        "vdd_val": 0.77495
+    },
+    {
+        "index": 258,
+        "vdd_val": 0.95617
+    },
+    {
+        "index": 259,
+        "vdd_val": 0.96875
+    },
+    {
+        "index": 260,
+        "vdd_val": 0.93357
+    },
+    {
+        "index": 261,
+        "vdd_val": 0.88184
+    },
+    {
+        "index": 262,
+        "vdd_val": 1.17385
+    },
+    {
+        "index": 263,
+        "vdd_val": 1.03563
+    },
+    {
+        "index": 264,
+        "vdd_val": 1.23772
+    },
+    {
+        "index": 265,
+        "vdd_val": 1.08027
+    },
+    {
+        "index": 266,
+        "vdd_val": 0.91339
+    },
+    {
+        "index": 267,
+        "vdd_val": 1.19169
+    },
+    {
+        "index": 268,
+        "vdd_val": 0.96486
+    },
+    {
+        "index": 269,
+        "vdd_val": 1.09557
+    },
+    {
+        "index": 270,
+        "vdd_val": 0.76044
+    },
+    {
+        "index": 271,
+        "vdd_val": 1.04657
+    },
+    {
+        "index": 272,
+        "vdd_val": 1.19581
+    },
+    {
+        "index": 273,
+        "vdd_val": 0.83762
+    },
+    {
+        "index": 274,
+        "vdd_val": 1.0377
+    },
+    {
+        "index": 275,
+        "vdd_val": 1.02889
+    },
+    {
+        "index": 276,
+        "vdd_val": 1.12459
+    },
+    {
+        "index": 277,
+        "vdd_val": 0.9998376
+    },
+    {
+        "index": 278,
+        "vdd_val": 1.10237
+    },
+    {
+        "index": 279,
+        "vdd_val": 1.19011
+    },
+    {
+        "index": 280,
+        "vdd_val": 0.96805
+    },
+    {
+        "index": 281,
+        "vdd_val": 0.85189
+    },
+    {
+        "index": 282,
+        "vdd_val": 0.91196
+    },
+    {
+        "index": 283,
+        "vdd_val": 0.94398
+    },
+    {
+        "index": 284,
+        "vdd_val": 0.95607
+    },
+    {
+        "index": 285,
+        "vdd_val": 0.91693
+    },
+    {
+        "index": 286,
+        "vdd_val": 1.13217
+    },
+    {
+        "index": 287,
+        "vdd_val": 1.14493
+    },
+    {
+        "index": 288,
+        "vdd_val": 0.997874
+    },
+    {
+        "index": 289,
+        "vdd_val": 1.06369
+    },
+    {
+        "index": 290,
+        "vdd_val": 1.02517
+    },
+    {
+        "index": 291,
+        "vdd_val": 1.13023
+    },
+    {
+        "index": 292,
+        "vdd_val": 1.0894
+    },
+    {
+        "index": 293,
+        "vdd_val": 1.20131
+    },
+    {
+        "index": 294,
+        "vdd_val": 1.07522
+    },
+    {
+        "index": 295,
+        "vdd_val": 1.04198
+    },
+    {
+        "index": 296,
+        "vdd_val": 1.02302
+    },
+    {
+        "index": 297,
+        "vdd_val": 1.18744
+    },
+    {
+        "index": 298,
+        "vdd_val": 0.88405
+    },
+    {
+        "index": 299,
+        "vdd_val": 1.0415
+    },
+    {
+        "index": 300,
+        "vdd_val": 1.07487
+    },
+    {
+        "index": 301,
+        "vdd_val": 0.95305
+    },
+    {
+        "index": 302,
+        "vdd_val": 1.01727
+    },
+    {
+        "index": 303,
+        "vdd_val": 1.1392
+    },
+    {
+        "index": 304,
+        "vdd_val": 1.03072
+    },
+    {
+        "index": 305,
+        "vdd_val": 0.95394
+    },
+    {
+        "index": 306,
+        "vdd_val": 1.13191
+    },
+    {
+        "index": 307,
+        "vdd_val": 0.96196
+    },
+    {
+        "index": 308,
+        "vdd_val": 0.995644
+    },
+    {
+        "index": 309,
+        "vdd_val": 0.86673
+    },
+    {
+        "index": 310,
+        "vdd_val": 1.1031
+    },
+    {
+        "index": 311,
+        "vdd_val": 1.03634
+    },
+    {
+        "index": 312,
+        "vdd_val": 0.95781
+    },
+    {
+        "index": 313,
+        "vdd_val": 0.90217
+    },
+    {
+        "index": 314,
+        "vdd_val": 1.21758
+    },
+    {
+        "index": 315,
+        "vdd_val": 0.82728
+    },
+    {
+        "index": 316,
+        "vdd_val": 1.03235
+    },
+    {
+        "index": 317,
+        "vdd_val": 1.18672
+    },
+    {
+        "index": 318,
+        "vdd_val": 0.98232
+    },
+    {
+        "index": 319,
+        "vdd_val": 1.12381
+    },
+    {
+        "index": 320,
+        "vdd_val": 0.9618599999999999
+    },
+    {
+        "index": 321,
+        "vdd_val": 0.96894
+    },
+    {
+        "index": 322,
+        "vdd_val": 0.80024
+    },
+    {
+        "index": 323,
+        "vdd_val": 0.90564
+    },
+    {
+        "index": 324,
+        "vdd_val": 1.13209
+    },
+    {
+        "index": 325,
+        "vdd_val": 1.03313
+    },
+    {
+        "index": 326,
+        "vdd_val": 0.9831
+    },
+    {
+        "index": 327,
+        "vdd_val": 1.08041
+    },
+    {
+        "index": 328,
+        "vdd_val": 0.78306
+    },
+    {
+        "index": 329,
+        "vdd_val": 1.02083
+    },
+    {
+        "index": 330,
+        "vdd_val": 0.91781
+    },
+    {
+        "index": 331,
+        "vdd_val": 1.0792
+    },
+    {
+        "index": 332,
+        "vdd_val": 0.94729
+    },
+    {
+        "index": 333,
+        "vdd_val": 0.93094
+    },
+    {
+        "index": 334,
+        "vdd_val": 1.007249
+    },
+    {
+        "index": 335,
+        "vdd_val": 1.0951
+    },
+    {
+        "index": 336,
+        "vdd_val": 0.97224
+    },
+    {
+        "index": 337,
+        "vdd_val": 0.93305
+    },
+    {
+        "index": 338,
+        "vdd_val": 0.98052
+    },
+    {
+        "index": 339,
+        "vdd_val": 1.10381
+    },
+    {
+        "index": 340,
+        "vdd_val": 1.19981
+    },
+    {
+        "index": 341,
+        "vdd_val": 0.9628099999999999
+    },
+    {
+        "index": 342,
+        "vdd_val": 1.12708
+    },
+    {
+        "index": 343,
+        "vdd_val": 0.9437
+    },
+    {
+        "index": 344,
+        "vdd_val": 1.007283
+    },
+    {
+        "index": 345,
+        "vdd_val": 0.90404
+    },
+    {
+        "index": 346,
+        "vdd_val": 1.0786
+    },
+    {
+        "index": 347,
+        "vdd_val": 0.97681
+    },
+    {
+        "index": 348,
+        "vdd_val": 1.03355
+    },
+    {
+        "index": 349,
+        "vdd_val": 1.04526
+    },
+    {
+        "index": 350,
+        "vdd_val": 1.03293
+    },
+    {
+        "index": 351,
+        "vdd_val": 1.0035
+    },
+    {
+        "index": 352,
+        "vdd_val": 0.98955
+    },
+    {
+        "index": 353,
+        "vdd_val": 0.89642
+    },
+    {
+        "index": 354,
+        "vdd_val": 1.14622
+    },
+    {
+        "index": 355,
+        "vdd_val": 1.0393
+    },
+    {
+        "index": 356,
+        "vdd_val": 0.98168
+    },
+    {
+        "index": 357,
+        "vdd_val": 0.96035
+    },
+    {
+        "index": 358,
+        "vdd_val": 0.98537
+    },
+    {
+        "index": 359,
+        "vdd_val": 1.06326
+    },
+    {
+        "index": 360,
+        "vdd_val": 1.01878
+    },
+    {
+        "index": 361,
+        "vdd_val": 1.05789
+    },
+    {
+        "index": 362,
+        "vdd_val": 0.94948
+    },
+    {
+        "index": 363,
+        "vdd_val": 1.01873
+    },
+    {
+        "index": 364,
+        "vdd_val": 1.04201
+    },
+    {
+        "index": 365,
+        "vdd_val": 0.77135
+    },
+    {
+        "index": 366,
+        "vdd_val": 1.02697
+    },
+    {
+        "index": 367,
+        "vdd_val": 1.1117
+    },
+    {
+        "index": 368,
+        "vdd_val": 0.92932
+    },
+    {
+        "index": 369,
+        "vdd_val": 1.1210499999999999
+    },
+    {
+        "index": 370,
+        "vdd_val": 0.85446
+    },
+    {
+        "index": 371,
+        "vdd_val": 0.93681
+    },
+    {
+        "index": 372,
+        "vdd_val": 1.14812
+    },
+    {
+        "index": 373,
+        "vdd_val": 1.28137
+    },
+    {
+        "index": 374,
+        "vdd_val": 0.90379
+    },
+    {
+        "index": 375,
+        "vdd_val": 1.02624
+    },
+    {
+        "index": 376,
+        "vdd_val": 0.94118
+    },
+    {
+        "index": 377,
+        "vdd_val": 1.08269
+    },
+    {
+        "index": 378,
+        "vdd_val": 0.95697
+    },
+    {
+        "index": 379,
+        "vdd_val": 0.990686
+    },
+    {
+        "index": 380,
+        "vdd_val": 1.15016
+    },
+    {
+        "index": 381,
+        "vdd_val": 1.13009
+    },
+    {
+        "index": 382,
+        "vdd_val": 0.8652
+    },
+    {
+        "index": 383,
+        "vdd_val": 1.03378
+    },
+    {
+        "index": 384,
+        "vdd_val": 1.03183
+    },
+    {
+        "index": 385,
+        "vdd_val": 1.07737
+    },
+    {
+        "index": 386,
+        "vdd_val": 1.11106
+    },
+    {
+        "index": 387,
+        "vdd_val": 1.1365
+    },
+    {
+        "index": 388,
+        "vdd_val": 1.06679
+    },
+    {
+        "index": 389,
+        "vdd_val": 1.06911
+    },
+    {
+        "index": 390,
+        "vdd_val": 0.9193899999999999
+    },
+    {
+        "index": 391,
+        "vdd_val": 1.01572
+    },
+    {
+        "index": 392,
+        "vdd_val": 1.0446900000000001
+    },
+    {
+        "index": 393,
+        "vdd_val": 0.9994322
+    },
+    {
+        "index": 394,
+        "vdd_val": 0.8221
+    },
+    {
+        "index": 395,
+        "vdd_val": 0.92562
+    },
+    {
+        "index": 396,
+        "vdd_val": 0.8775999999999999
+    },
+    {
+        "index": 397,
+        "vdd_val": 0.94904
+    },
+    {
+        "index": 398,
+        "vdd_val": 0.9063
+    },
+    {
+        "index": 399,
+        "vdd_val": 1.05669
+    },
+    {
+        "index": 400,
+        "vdd_val": 1.13518
+    },
+    {
+        "index": 401,
+        "vdd_val": 1.08826
+    },
+    {
+        "index": 402,
+        "vdd_val": 0.92824
+    },
+    {
+        "index": 403,
+        "vdd_val": 0.97921
+    },
+    {
+        "index": 404,
+        "vdd_val": 0.78452
+    },
+    {
+        "index": 405,
+        "vdd_val": 0.97015
+    },
+    {
+        "index": 406,
+        "vdd_val": 0.94135
+    },
+    {
+        "index": 407,
+        "vdd_val": 0.9398299999999999
+    },
+    {
+        "index": 408,
+        "vdd_val": 0.98441
+    },
+    {
+        "index": 409,
+        "vdd_val": 1.08312
+    },
+    {
+        "index": 410,
+        "vdd_val": 1.12775
+    },
+    {
+        "index": 411,
+        "vdd_val": 0.9333899999999999
+    },
+    {
+        "index": 412,
+        "vdd_val": 1.008786
+    },
+    {
+        "index": 413,
+        "vdd_val": 1.07566
+    },
+    {
+        "index": 414,
+        "vdd_val": 1.14146
+    },
+    {
+        "index": 415,
+        "vdd_val": 1.04081
+    },
+    {
+        "index": 416,
+        "vdd_val": 1.20629
+    },
+    {
+        "index": 417,
+        "vdd_val": 1.13523
+    },
+    {
+        "index": 418,
+        "vdd_val": 1.10694
+    },
+    {
+        "index": 419,
+        "vdd_val": 1.16467
+    },
+    {
+        "index": 420,
+        "vdd_val": 0.92582
+    },
+    {
+        "index": 421,
+        "vdd_val": 1.15059
+    },
+    {
+        "index": 422,
+        "vdd_val": 1.03894
+    },
+    {
+        "index": 423,
+        "vdd_val": 1.16697
+    },
+    {
+        "index": 424,
+        "vdd_val": 1.01549
+    },
+    {
+        "index": 425,
+        "vdd_val": 0.9402200000000001
+    },
+    {
+        "index": 426,
+        "vdd_val": 1.05625
+    },
+    {
+        "index": 427,
+        "vdd_val": 0.93712
+    },
+    {
+        "index": 428,
+        "vdd_val": 1.12171
+    },
+    {
+        "index": 429,
+        "vdd_val": 1.07413
+    },
+    {
+        "index": 430,
+        "vdd_val": 0.91955
+    },
+    {
+        "index": 431,
+        "vdd_val": 1.06256
+    },
+    {
+        "index": 432,
+        "vdd_val": 0.83104
+    },
+    {
+        "index": 433,
+        "vdd_val": 0.91233
+    },
+    {
+        "index": 434,
+        "vdd_val": 0.8460799999999999
+    },
+    {
+        "index": 435,
+        "vdd_val": 0.9286
+    },
+    {
+        "index": 436,
+        "vdd_val": 1.05544
+    },
+    {
+        "index": 437,
+        "vdd_val": 1.03266
+    },
+    {
+        "index": 438,
+        "vdd_val": 0.94397
+    },
+    {
+        "index": 439,
+        "vdd_val": 1.10344
+    },
+    {
+        "index": 440,
+        "vdd_val": 0.8406899999999999
+    },
+    {
+        "index": 441,
+        "vdd_val": 0.95306
+    },
+    {
+        "index": 442,
+        "vdd_val": 0.8985799999999999
+    },
+    {
+        "index": 443,
+        "vdd_val": 0.91544
+    },
+    {
+        "index": 444,
+        "vdd_val": 1.01473
+    },
+    {
+        "index": 445,
+        "vdd_val": 1.03573
+    },
+    {
+        "index": 446,
+        "vdd_val": 1.00131
+    },
+    {
+        "index": 447,
+        "vdd_val": 0.87864
+    },
+    {
+        "index": 448,
+        "vdd_val": 0.997931
+    },
+    {
+        "index": 449,
+        "vdd_val": 1.19081
+    },
+    {
+        "index": 450,
+        "vdd_val": 0.77572
+    },
+    {
+        "index": 451,
+        "vdd_val": 0.85595
+    },
+    {
+        "index": 452,
+        "vdd_val": 1.1151200000000001
+    },
+    {
+        "index": 453,
+        "vdd_val": 1.001561
+    },
+    {
+        "index": 454,
+        "vdd_val": 0.98761
+    },
+    {
+        "index": 455,
+        "vdd_val": 0.97846
+    },
+    {
+        "index": 456,
+        "vdd_val": 1.04292
+    },
+    {
+        "index": 457,
+        "vdd_val": 0.93939
+    },
+    {
+        "index": 458,
+        "vdd_val": 1.04519
+    },
+    {
+        "index": 459,
+        "vdd_val": 1.1042
+    },
+    {
+        "index": 460,
+        "vdd_val": 0.98789
+    },
+    {
+        "index": 461,
+        "vdd_val": 0.9435
+    },
+    {
+        "index": 462,
+        "vdd_val": 0.7301
+    },
+    {
+        "index": 463,
+        "vdd_val": 0.98312
+    },
+    {
+        "index": 464,
+        "vdd_val": 0.990323
+    },
+    {
+        "index": 465,
+        "vdd_val": 1.07737
+    },
+    {
+        "index": 466,
+        "vdd_val": 0.96553
+    },
+    {
+        "index": 467,
+        "vdd_val": 1.0629
+    },
+    {
+        "index": 468,
+        "vdd_val": 1.13914
+    },
+    {
+        "index": 469,
+        "vdd_val": 0.86972
+    },
+    {
+        "index": 470,
+        "vdd_val": 1.1630500000000001
+    },
+    {
+        "index": 471,
+        "vdd_val": 0.995506
+    },
+    {
+        "index": 472,
+        "vdd_val": 1.01378
+    },
+    {
+        "index": 473,
+        "vdd_val": 1.01913
+    },
+    {
+        "index": 474,
+        "vdd_val": 1.004768
+    },
+    {
+        "index": 475,
+        "vdd_val": 0.72224
+    },
+    {
+        "index": 476,
+        "vdd_val": 1.14894
+    },
+    {
+        "index": 477,
+        "vdd_val": 0.97301
+    },
+    {
+        "index": 478,
+        "vdd_val": 1.04337
+    },
+    {
+        "index": 479,
+        "vdd_val": 1.10553
+    },
+    {
+        "index": 480,
+        "vdd_val": 0.95291
+    },
+    {
+        "index": 481,
+        "vdd_val": 1.07687
+    },
+    {
+        "index": 482,
+        "vdd_val": 0.91783
+    },
+    {
+        "index": 483,
+        "vdd_val": 1.12295
+    },
+    {
+        "index": 484,
+        "vdd_val": 0.87974
+    },
+    {
+        "index": 485,
+        "vdd_val": 0.94795
+    },
+    {
+        "index": 486,
+        "vdd_val": 1.10875
+    },
+    {
+        "index": 487,
+        "vdd_val": 0.94169
+    },
+    {
+        "index": 488,
+        "vdd_val": 0.94325
+    },
+    {
+        "index": 489,
+        "vdd_val": 1.05037
+    },
+    {
+        "index": 490,
+        "vdd_val": 0.94658
+    },
+    {
+        "index": 491,
+        "vdd_val": 1.04701
+    },
+    {
+        "index": 492,
+        "vdd_val": 0.94845
+    },
+    {
+        "index": 493,
+        "vdd_val": 1.04442
+    },
+    {
+        "index": 494,
+        "vdd_val": 1.0373
+    },
+    {
+        "index": 495,
+        "vdd_val": 0.95813
+    },
+    {
+        "index": 496,
+        "vdd_val": 1.10182
+    },
+    {
+        "index": 497,
+        "vdd_val": 1.06286
+    },
+    {
+        "index": 498,
+        "vdd_val": 0.89388
+    },
+    {
+        "index": 499,
+        "vdd_val": 0.88312
+    },
+    {
+        "index": 500,
+        "vdd_val": 0.95091
+    }
+]

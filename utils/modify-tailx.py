@@ -7,8 +7,8 @@ import pandas as pd
 # =====================================================================
 # File Paths and Target Parameters Setup
 # =====================================================================
-CSV_FILE_PATH = "./simulation/RCA/mont-carlo/sim.tail0.csv"  # Path to HSPICE data file
-JSON_FILE_PATH = "./simulation/RCA/mont-carlo/vdd_val.json"  # Path to JSON file (list of dicts)
+CSV_FILE_PATH = "./simulation/BKA/mont-carlo/sim.tail0.csv"  # Path to HSPICE data file
+JSON_FILE_PATH = "./simulation/BKA/mont-carlo/vdd_val.json"  # Path to JSON file (list of dicts)
 
 TARGET_MEASURES = ["p_max", "p_avg", "tp_max", "tp_avg", "vdd_actual"]
 
