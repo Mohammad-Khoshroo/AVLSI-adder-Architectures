@@ -4,18 +4,18 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 TARGET_DIRS = [
-    r"./simulation/RCA/corners/FF/power/",
-    r"./simulation/RCA/corners/FS/power/",
-    r"./simulation/RCA/corners/SF/power/",
-    r"./simulation/RCA/corners/SS/power/",
-    r"./simulation/RCA/corners/TT/power/"
+    r"./simulation/BKA/corners/FF/delay/",
+    r"./simulation/BKA/corners/FS/delay/",
+    r"./simulation/BKA/corners/SF/delay/",
+    r"./simulation/BKA/corners/SS/delay/",
+    r"./simulation/BKA/corners/TT/delay/",
 ]
 
 # پارامترهایی که می‌خواهید رسم کنید
-PARAM_KEYS = ["p_avg", "p_static_avg",  "p_dynamic_avg"]
-PARAM_LABELS = ["p_total", "p_static",  "p_dynamic"]
+PARAM_KEYS = ["tp_max", "tp_cout", "tp_s8"]
+PARAM_LABELS = ["tp(max)", "tp(cout)", "tp(s8)"]
 
-PARAM_PATHS = [key for key in PARAM_KEYS]
+PARAM_PATHS = [["measurements", key] for key in PARAM_KEYS]
 
 COLORS = [
     "#636EFA",
@@ -56,7 +56,7 @@ for d in TARGET_DIRS:
             file_data = json.load(f)
 
         for path in PARAM_PATHS:
-            val = get_nested_value(file_data, [path])
+            val = get_nested_value(file_data, path)
             data_points.append(val)
     else:
         print(f"Warning: File not found -> {file_path}")
@@ -68,7 +68,7 @@ for d in TARGET_DIRS:
 all_non_zero_values = []
 for vals in raw_extracted_data.values():
     for v in vals:
-        if abs(v) > 1e-20:  
+        if abs(v) > 1e-20:
             all_non_zero_values.append(abs(v))
 
 if not all_non_zero_values:
@@ -116,11 +116,11 @@ for p_idx in range(num_params):
     if max_val > 1e-15:
         # نسبت فیزیکی ستون به ماکزیمم کل نمودار (مثلاً برای ۱.۵۶ نسبت به ۲۱۵.۶، این نسبت حدود ۰.۰۰۷۲ است)
         ratio = max_val / global_max
-        
+
         # محاسبه اختلاف توان فیزیکی واقعی بر مبنای پایه ۱۰
         # برای نسبت ۰.۰۰۷۲، لگاریتم پایه ۱۰ حدود -۲.۱۴ است، پس اختلاف توان واقعی (diff) برابر ۳ است.
         diff = int(np.ceil(-np.log10(ratio))) if ratio < 1.0 else 0
-        
+
         # اعمال فرمول شما: اگر اختلاف توان ۲ یا بیشتر بود، به اندازه (diff - 1) توانِ ۱۰ تقویت شود.
         if diff >= 2:
             boost = 10 ** (diff - 1)
@@ -131,7 +131,7 @@ for p_idx in range(num_params):
     else:
         boost = 1.0
         alpha = 1.0
-        
+
     param_boost_factors.append(boost)
     param_alphas.append(alpha)
 
@@ -170,11 +170,13 @@ for i, (arch_name, values) in enumerate(visual_data.items()):
             edgecolor="black",
             linewidth=0.5,
             alpha=param_alphas[j],
-            label=arch_name if j == 0 else ""
+            label=arch_name if j == 0 else "",
         )
-        ax.bar_label(rect, labels=[labels_to_show[j]], padding=3, fontsize=8, rotation=45)
+        ax.bar_label(
+            rect, labels=[labels_to_show[j]], padding=3, fontsize=8, rotation=45
+        )
 
-ax.set_ylabel(f"power({unit_prefix})", fontweight="bold", fontsize=11)
+ax.set_ylabel(f"delay({unit_prefix})", fontweight="bold", fontsize=11)
 ax.set_title("Parameters Comparison", fontweight="bold", fontsize=14, pad=15)
 ax.set_xticks(x)
 ax.set_xticklabels(PARAM_LABELS, fontweight="bold", fontsize=10)

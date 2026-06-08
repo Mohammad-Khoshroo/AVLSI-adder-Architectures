@@ -11,8 +11,8 @@
 **************************** PARAMETERS *****************************
 
 .OPTION NOMOD
-.LIB "../../../include/crn90g_2d5_lk_v1d2p1.lib" TT
-.INC "../../../include/BKA.inc"
+.LIB "../../../../../include/crn90g_2d5_lk_v1d2p1.lib" TT
+.INC "../../../../../include/BKA.inc"
 .VEC "input.vec"
 
 .PARAM Vdd_val = 1                  $ supply-1 voltage
@@ -42,45 +42,48 @@ VCin Cin 0 DC 'Vss_val'
 * ===================================================================
 * Timing & Delay
 
-.MEASURE TRAN tp_S7_fall 
-+ TRIG V(B0) VAL=0.5 RISE=1 TD=1.4n 
-+ TARG V(S7) VAL=0.5 FALL=1 TD=1.4n
+.MEASURE TRAN tp_S8_fall 
++ TRIG V(B1) VAL=0.5 RISE=1 TD=1.4n 
++ TARG V(S8) VAL=0.5 FALL=1 TD=1.4n
 
 .MEASURE TRAN tp_Cout_rise 
-+ TRIG V(B0) VAL=0.5 RISE=1 TD=1.4n 
++ TRIG V(B1) VAL=0.5 RISE=1 TD=1.4n 
 + TARG V(Cout) VAL=0.5 RISE=1 TD=1.4n
 
-.MEASURE TRAN tp_S7_rise
-+ TRIG V(B0) VAL=0.5 FALL=1 TD=2.9n 
-+ TARG V(S7) VAL=0.5 RISE=1 TD=2.9n
+.MEASURE TRAN tp_S8_rise
++ TRIG V(B1) VAL=0.5 FALL=1 TD=2.9n 
++ TARG V(S8) VAL=0.5 RISE=1 TD=2.9n
 
 .MEASURE TRAN tp_Cout_fall
-+ TRIG V(B0) VAL=0.5 FALL=1 TD=2.9n 
++ TRIG V(B1) VAL=0.5 FALL=1 TD=2.9n 
 + TARG V(Cout) VAL=0.5 FALL=1 TD=2.9n
 
 * Maximum delay calculation
-.MEASURE TRAN tp_max PARAM='MAX(MAX(tp_S7_fall, tp_Cout_rise), MAX(tp_S7_rise, tp_Cout_fall))'
+
+.MEASURE TRAN tp_cout PARAM='(tp_S8_fall + tp_S8_rise) / 2'
+.MEASURE TRAN tp_s8   PARAM='(tp_Cout_rise + tp_Cout_fall) / 2'
+.MEASURE TRAN tp_max  PARAM='MAX(MAX(tp_S8_fall, tp_Cout_rise), MAX(tp_S8_rise, tp_Cout_fall))'
 
 * ===================================================================
 * Power (P)
 
 .MEASURE TRAN P_avg AVG POWER               $ Average Power
 .MEASURE TRAN P_max MAX POWER               $ Maximum (Peak) Power
-.MEASURE TRAN PDP PARAM='P_avg * tp_max'    $ Worst-Case Power-Delay Product (PDP)
+* .MEASURE TRAN PDP PARAM='P_avg * tp_max'    $ Worst-Case Power-Delay Product (PDP)
 
 * ===================================================================
 * Current (I)
 
-.MEASURE TRAN I_avg AVG  I(Vdd)
-.MEASURE TRAN I_peak MIN I(Vdd)
+* .MEASURE TRAN I_avg AVG  I(Vdd)
+* .MEASURE TRAN I_peak MIN I(Vdd)
 
 
 *************************** OUTPUT SETTING **************************
 
 .OPTION POST=2 PROBE RUNLVL=6
 .PROBE V(Cout) V(Cin)
-+      V(A0) V(A1) V(A2) V(A3) V(A4) V(A5) V(A6) V(A7)
-+      V(B0) V(B1) V(B2) V(B3) V(B4) V(B5) V(B6) V(B7)
-+      V(S0) V(S1) V(S2) V(S3) V(S4) V(S5) V(S6) V(S7)
++      V(A8) V(A1) V(A2) V(A3) V(A4) V(A5) V(A6) V(A7)
++      V(B8) V(B1) V(B2) V(B3) V(B4) V(B5) V(B6) V(B7)
++      V(S8) V(S1) V(S2) V(S3) V(S4) V(S5) V(S6) V(S7)
 
 .END

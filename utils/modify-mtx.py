@@ -8,7 +8,7 @@ import logging
 # CONFIG
 # ==========================================================
 
-BASE_DIR = "./simulation/RCA/temperature/"
+BASE_DIR = "./simulation/BKA/corners/FF/delay/"
 FILE_PATTERN = r"\.mt[a-zA-Z0-9]+$"
 OUTPUT_JSON_NAME = "measure.json"
 

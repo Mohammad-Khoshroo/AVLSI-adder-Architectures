@@ -3,7 +3,7 @@ Input File: sim.sp
 lic:
 lic: FLEXlm: SDK_12.3
 lic: USER:   Mohammad-Khohsroo    HOSTNAME: DESKTOP-GMQQFUO
-lic: HOSTID: "d03957231987"       PID:      10980
+lic: HOSTID: "088fc3e7a24d"       PID:      22532
 lic: Using FLEXlm license file:
 lic: 27000@DESKTOP-GMQQFUO
 lic: Checkout 1 hspice
@@ -11,7 +11,7 @@ lic: License/Maintenance for hspice will expire on 30-dec-2030/2020.12
 lic: 1(in_use)/99(total) FLOATING license(s) on SERVER 27000@DESKTOP-GMQQFUO
 lic:
 
- init: begin read circuit files, cpu clock= 1.53E-01
+ init: begin read circuit files, cpu clock= 1.49E-01
        option search = C:/synopsys/Hspice_P-2019.06-SP1-1/parts/behave/
        option search = C:/synopsys/Hspice_P-2019.06-SP1-1/parts/AD/
        option search = C:/synopsys/Hspice_P-2019.06-SP1-1/parts/XILINX/
@@ -32,27 +32,27 @@ lic:
        option post =     2.00
        option probe
        option runlvl =     6.00
- init: end read circuit files, cpu clock= 1.59E-01 peak memory=      65 mb
- init: begin check errors, cpu clock= 1.59E-01
- init: end check errors, cpu clock= 1.71E-01 peak memory=      66 mb
- init: begin setup matrix, pivot=     0 cpu clock= 1.71E-01
-       establish matrix -- done, cpu clock= 1.71E-01 peak memory=      66 mb
-       re-order matrix -- done, cpu clock= 1.71E-01 peak memory=      66 mb
- init: end setup matrix, cpu clock= 1.72E-01 peak memory=      66 mb
- dcop: begin dcop, cpu clock= 1.73E-01
- dcop: end dcop, cpu clock= 2.31E-01 peak memory=      66 mb tot_iter=     228
+ init: end read circuit files, cpu clock= 1.55E-01 peak memory=      65 mb
+ init: begin check errors, cpu clock= 1.55E-01
+ init: end check errors, cpu clock= 1.73E-01 peak memory=      67 mb
+ init: begin setup matrix, pivot=     0 cpu clock= 1.73E-01
+       establish matrix -- done, cpu clock= 1.74E-01 peak memory=      68 mb
+       re-order matrix -- done, cpu clock= 1.75E-01 peak memory=      68 mb
+ init: end setup matrix, cpu clock= 1.76E-01 peak memory=      68 mb
+ dcop: begin dcop, cpu clock= 1.77E-01
+ dcop: end dcop, cpu clock= 3.17E-01 peak memory=      74 mb tot_iter=     262
  output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\corners\SF\delay\sim.mt0
- sweep: tran tran0    begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 2.32E-01
- tran: time= 9.1361E-10 tot_iter=      14 conv_iter=       7 cpu clock= 2.33E-01
- tran: time= 1.7017E-09 tot_iter=     252 conv_iter=      92 cpu clock= 2.56E-01
- tran: time= 2.5542E-09 tot_iter=    1270 conv_iter=     451 cpu clock= 3.65E-01
- tran: time= 3.4049E-09 tot_iter=    1819 conv_iter=     648 cpu clock= 4.20E-01
- tran: time= 4.2527E-09 tot_iter=    2577 conv_iter=     920 cpu clock= 4.97E-01
- tran: time= 5.1565E-09 tot_iter=    2798 conv_iter=    1002 cpu clock= 5.29E-01
- tran: time= 6.0000E-09 tot_iter=    2804 conv_iter=    1005 cpu clock= 5.29E-01
- tran: time= 6.9154E-09 tot_iter=    3296 conv_iter=    1175 cpu clock= 6.32E-01
- tran: time= 7.6505E-09 tot_iter=    3587 conv_iter=    1277 cpu clock= 6.90E-01
- tran: time= 8.5000E-09 tot_iter=    4085 conv_iter=    1449 cpu clock= 7.57E-01
- sweep: tran tran0    end, cpu clock= 7.58E-01 peak memory=      73 mb
+ sweep: tran tran0    begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 3.18E-01
+ tran: time= 9.1361E-10 tot_iter=      14 conv_iter=       7 cpu clock= 3.21E-01
+ tran: time= 1.7004E-09 tot_iter=     272 conv_iter=      98 cpu clock= 3.63E-01
+ tran: time= 2.5805E-09 tot_iter=    1200 conv_iter=     423 cpu clock= 5.59E-01
+ tran: time= 3.4002E-09 tot_iter=    1750 conv_iter=     616 cpu clock= 6.62E-01
+ tran: time= 4.2549E-09 tot_iter=    2355 conv_iter=     826 cpu clock= 7.99E-01
+ tran: time= 5.1875E-09 tot_iter=    2579 conv_iter=     908 cpu clock= 8.53E-01
+ tran: time= 6.0000E-09 tot_iter=    2596 conv_iter=     915 cpu clock= 8.55E-01
+ tran: time= 6.8574E-09 tot_iter=    3325 conv_iter=    1168 cpu clock= 1.08E+00
+ tran: time= 7.6507E-09 tot_iter=    3602 conv_iter=    1268 cpu clock= 1.17E+00
+ tran: time= 8.5000E-09 tot_iter=    4387 conv_iter=    1539 cpu clock= 1.37E+00
+ sweep: tran tran0    end, cpu clock= 1.37E+00 peak memory=      74 mb
 >info:         ***** hspice job concluded
  lic: Release hspice token(s)
