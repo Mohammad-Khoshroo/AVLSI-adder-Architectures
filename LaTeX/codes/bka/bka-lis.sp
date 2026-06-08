@@ -1,5 +1,4 @@
-          ***** job concluded
- ******  
+ ***** job concluded ******  
  ******************** hspice basic gates modeling ********************
 
  ****** job statistics summary tnom=  25.000 temp=  25.000 ******
