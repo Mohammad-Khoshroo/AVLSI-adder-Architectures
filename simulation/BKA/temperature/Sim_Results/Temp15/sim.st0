@@ -43,7 +43,7 @@ lic:
  temperature: temperature=  1.50E+01
  dcop: begin dcop, cpu clock= 2.25E-01
  dcop: end dcop, cpu clock= 2.88E-01 peak memory=      67 mb tot_iter=     230
- output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\RCA\temperature\sim.mt0
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\temperature\sim.mt0
  sweep: tran tran0    begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 2.88E-01
  tran: time= 9.1361E-10 tot_iter=      14 conv_iter=       7 cpu clock= 2.90E-01
  tran: time= 1.7029E-09 tot_iter=     258 conv_iter=      92 cpu clock= 3.14E-01
@@ -59,7 +59,7 @@ lic:
  temperature: temperature=  2.00E+01
  dcop: begin dcop, cpu clock= 8.29E-01
  dcop: end dcop, cpu clock= 8.30E-01 peak memory=      73 mb tot_iter=     233
- output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\RCA\temperature\sim.mt1
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\temperature\sim.mt1
  sweep: tran tran0    begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 8.31E-01
  tran: time= 9.1361E-10 tot_iter=      14 conv_iter=       7 cpu clock= 8.32E-01
  tran: time= 1.7013E-09 tot_iter=     254 conv_iter=      91 cpu clock= 8.55E-01
@@ -75,7 +75,7 @@ lic:
  temperature: temperature=  2.50E+01
  dcop: begin dcop, cpu clock= 1.34E+00
  dcop: end dcop, cpu clock= 1.34E+00 peak memory=      73 mb tot_iter=     236
- output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\RCA\temperature\sim.mt2
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\temperature\sim.mt2
  sweep: tran tran0    begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 1.34E+00
  tran: time= 9.1361E-10 tot_iter=      14 conv_iter=       7 cpu clock= 1.34E+00
  tran: time= 1.7005E-09 tot_iter=     245 conv_iter=      89 cpu clock= 1.37E+00
@@ -91,7 +91,7 @@ lic:
  temperature: temperature=  3.00E+01
  dcop: begin dcop, cpu clock= 1.96E+00
  dcop: end dcop, cpu clock= 1.96E+00 peak memory=      73 mb tot_iter=     239
- output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\RCA\temperature\sim.mt3
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\temperature\sim.mt3
  sweep: tran tran0    begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 1.96E+00
  tran: time= 9.1361E-10 tot_iter=      14 conv_iter=       7 cpu clock= 1.96E+00
  tran: time= 1.7020E-09 tot_iter=     249 conv_iter=      91 cpu clock= 2.00E+00
@@ -107,7 +107,7 @@ lic:
  temperature: temperature=  3.50E+01
  dcop: begin dcop, cpu clock= 2.49E+00
  dcop: end dcop, cpu clock= 2.49E+00 peak memory=      73 mb tot_iter=     242
- output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\RCA\temperature\sim.mt4
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\temperature\sim.mt4
  sweep: tran tran0    begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 2.49E+00
  tran: time= 9.1361E-10 tot_iter=      14 conv_iter=       7 cpu clock= 2.49E+00
  tran: time= 1.7003E-09 tot_iter=     251 conv_iter=      92 cpu clock= 2.52E+00
@@ -123,7 +123,7 @@ lic:
  temperature: temperature=  4.00E+01
  dcop: begin dcop, cpu clock= 3.01E+00
  dcop: end dcop, cpu clock= 3.01E+00 peak memory=      73 mb tot_iter=     245
- output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\RCA\temperature\sim.mt5
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\temperature\sim.mt5
  sweep: tran tran0    begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 3.02E+00
  tran: time= 9.1361E-10 tot_iter=      14 conv_iter=       7 cpu clock= 3.02E+00
  tran: time= 1.7011E-09 tot_iter=     238 conv_iter=      87 cpu clock= 3.04E+00
@@ -139,7 +139,7 @@ lic:
  temperature: temperature=  4.50E+01
  dcop: begin dcop, cpu clock= 3.52E+00
  dcop: end dcop, cpu clock= 3.52E+00 peak memory=      73 mb tot_iter=     248
- output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\RCA\temperature\sim.mt6
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\temperature\sim.mt6
  sweep: tran tran0    begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 3.52E+00
  tran: time= 9.1361E-10 tot_iter=      14 conv_iter=       7 cpu clock= 3.52E+00
  tran: time= 1.7035E-09 tot_iter=     248 conv_iter=      91 cpu clock= 3.54E+00
@@ -155,7 +155,7 @@ lic:
  temperature: temperature=  5.00E+01
  dcop: begin dcop, cpu clock= 4.03E+00
  dcop: end dcop, cpu clock= 4.03E+00 peak memory=      73 mb tot_iter=     251
- output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\RCA\temperature\sim.mt7
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\temperature\sim.mt7
  sweep: tran tran0    begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 4.03E+00
  tran: time= 9.1361E-10 tot_iter=      14 conv_iter=       7 cpu clock= 4.03E+00
  tran: time= 1.7005E-09 tot_iter=     246 conv_iter=      90 cpu clock= 4.06E+00
@@ -171,7 +171,7 @@ lic:
  temperature: temperature=  5.50E+01
  dcop: begin dcop, cpu clock= 4.54E+00
  dcop: end dcop, cpu clock= 4.54E+00 peak memory=      73 mb tot_iter=     254
- output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\RCA\temperature\sim.mt8
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\temperature\sim.mt8
  sweep: tran tran0    begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 4.54E+00
  tran: time= 9.1361E-10 tot_iter=      14 conv_iter=       7 cpu clock= 4.54E+00
  tran: time= 1.7001E-09 tot_iter=     236 conv_iter=      87 cpu clock= 4.57E+00
@@ -187,7 +187,7 @@ lic:
  temperature: temperature=  6.00E+01
  dcop: begin dcop, cpu clock= 5.04E+00
  dcop: end dcop, cpu clock= 5.04E+00 peak memory=      73 mb tot_iter=     257
- output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\RCA\temperature\sim.mt9
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\temperature\sim.mt9
  sweep: tran tran0    begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 5.04E+00
  tran: time= 9.1361E-10 tot_iter=      14 conv_iter=       7 cpu clock= 5.05E+00
  tran: time= 1.7009E-09 tot_iter=     236 conv_iter=      87 cpu clock= 5.07E+00
@@ -203,7 +203,7 @@ lic:
  temperature: temperature=  6.50E+01
  dcop: begin dcop, cpu clock= 5.56E+00
  dcop: end dcop, cpu clock= 5.56E+00 peak memory=      73 mb tot_iter=     260
- output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\RCA\temperature\sim.mt10
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\temperature\sim.mt10
  sweep: tran tran0    begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 5.56E+00
  tran: time= 9.1361E-10 tot_iter=      14 conv_iter=       7 cpu clock= 5.56E+00
  tran: time= 1.7037E-09 tot_iter=     240 conv_iter=      88 cpu clock= 5.59E+00
@@ -219,7 +219,7 @@ lic:
  temperature: temperature=  7.00E+01
  dcop: begin dcop, cpu clock= 6.07E+00
  dcop: end dcop, cpu clock= 6.07E+00 peak memory=      73 mb tot_iter=     263
- output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\RCA\temperature\sim.mt11
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\temperature\sim.mt11
  sweep: tran tran0    begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 6.07E+00
  tran: time= 9.1361E-10 tot_iter=      14 conv_iter=       7 cpu clock= 6.07E+00
  tran: time= 1.7037E-09 tot_iter=     237 conv_iter=      88 cpu clock= 6.10E+00
@@ -235,7 +235,7 @@ lic:
  temperature: temperature=  7.50E+01
  dcop: begin dcop, cpu clock= 6.58E+00
  dcop: end dcop, cpu clock= 6.58E+00 peak memory=      73 mb tot_iter=     266
- output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\RCA\temperature\sim.mt12
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\temperature\sim.mt12
  sweep: tran tran0    begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 6.59E+00
  tran: time= 9.1361E-10 tot_iter=      14 conv_iter=       7 cpu clock= 6.59E+00
  tran: time= 1.7009E-09 tot_iter=     235 conv_iter=      87 cpu clock= 6.61E+00
@@ -251,7 +251,7 @@ lic:
  temperature: temperature=  8.00E+01
  dcop: begin dcop, cpu clock= 7.11E+00
  dcop: end dcop, cpu clock= 7.11E+00 peak memory=      73 mb tot_iter=     269
- output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\RCA\temperature\sim.mt13
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\temperature\sim.mt13
  sweep: tran tran0    begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 7.11E+00
  tran: time= 9.1361E-10 tot_iter=      14 conv_iter=       7 cpu clock= 7.11E+00
  tran: time= 1.7005E-09 tot_iter=     239 conv_iter=      89 cpu clock= 7.14E+00
@@ -267,7 +267,7 @@ lic:
  temperature: temperature=  8.50E+01
  dcop: begin dcop, cpu clock= 7.61E+00
  dcop: end dcop, cpu clock= 7.61E+00 peak memory=      73 mb tot_iter=     272
- output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\RCA\temperature\sim.mt14
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\temperature\sim.mt14
  sweep: tran tran0    begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 7.61E+00
  tran: time= 9.1361E-10 tot_iter=      14 conv_iter=       7 cpu clock= 7.61E+00
  tran: time= 1.7007E-09 tot_iter=     242 conv_iter=      91 cpu clock= 7.64E+00
@@ -283,7 +283,7 @@ lic:
  temperature: temperature=  9.00E+01
  dcop: begin dcop, cpu clock= 8.13E+00
  dcop: end dcop, cpu clock= 8.13E+00 peak memory=      73 mb tot_iter=     275
- output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\RCA\temperature\sim.mt15
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\temperature\sim.mt15
  sweep: tran tran0    begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 8.13E+00
  tran: time= 9.1361E-10 tot_iter=      14 conv_iter=       7 cpu clock= 8.13E+00
  tran: time= 1.7003E-09 tot_iter=     230 conv_iter=      86 cpu clock= 8.16E+00

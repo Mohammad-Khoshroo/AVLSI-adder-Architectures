@@ -19,7 +19,7 @@ VEC_SETTINGS = {
 
 OUTPUT_VEC_PATH = "input.vec"
 OUTPUT_MEAS_PATH = "static_measures.sp"
-NUM_RANDOM_VECTORS = 100
+NUM_RANDOM_VECTORS = 1000
 
 def translate_verilog_to_python(expr):
     def replace_slice(m):

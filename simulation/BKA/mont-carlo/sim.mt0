@@ -1,7 +1,7 @@
 $DATA1 SOURCE='HSPICE' VERSION='P-2019.06-SP1-1 win64' PARAM_COUNT=1
 $OPTION MEASFORM=1
 $index=1 is a nominal sample in Monte Carlo.
-.TITLE '************************* hspice rca modeling ***********************'
+.TITLE '************************* hspice BKA modeling ***********************'
 index tp_s7_fall tp_cout_rise tp_s7_rise tp_cout_fall tp_max tp_avg p_avg p_max pdp i_avg i_peak vdd_actual temper alter#
 1  9.307167e-10  9.773346e-10  9.245018e-10  9.783911e-10  9.783911e-10  9.527361e-10  1.291096e-04  4.484739e-03  1.263197e-13 -1.101127e-04 -1.691471e-03    1.0000000   25.0000000 1
 2  1.020236e-09  1.076557e-09  1.027511e-09  1.087410e-09  1.087410e-09  1.052928e-09  1.102860e-04  4.075764e-03  1.199261e-13 -9.882500e-05 -1.483786e-03    0.9198582   25.0000000 1

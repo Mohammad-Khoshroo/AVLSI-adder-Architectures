@@ -1,18 +1,18 @@
-************************* HSPICE RCA MODELING ***********************
+************************* HSPICE BKA MODELING ***********************
 *
 *   Mohammad Khoshroo - 810102441 
 *   Spring 2026
 *   AVLSI Course - by Dr. Vahdat
 *   Technology - crn90g_2d5_lk_v1d2p1.l (90nm)
 *   Standard MOSFET Model Name : nch , pch
-*   Ripple Carry Adder 8-bit SIMULATION - WORST CASE DELAY
+*   Brent-Kung Adder 8-bit SIMULATION - WORST CASE DELAY
 *   CORNER SS
 *
 **************************** PARAMETERS *****************************
 
 .OPTION NOMOD
 .LIB "../../../../../include/crn90g_2d5_lk_v1d2p1.lib" SS
-.INC "../../../../../include/RCA.inc"
+.INC "../../../../../include/BKA.inc"
 .VEC "input.vec"
 
 .PARAM Vdd_val = 1                  $ supply-1 voltage
@@ -25,9 +25,9 @@
 
 ****************************** CIRCUIT ******************************
 
-Xrca A7 A6 A5 A4 A3 A2 A1 A0 
-+    B7 B6 B5 B4 B3 B2 B1 B0 Cin 
-+    S7 S6 S5 S4 S3 S2 S1 S0 Cout Vdd Vss RCA8 
+XBKA A8 A7 A6 A5 A4 A3 A2 A1 
++    B8 B7 B6 B5 B4 B3 B2 B1 Cin 
++    S8 S7 S6 S5 S4 S3 S2 S1 Cout Vdd Vss BKA8 
 
 ************************* SIMULATION SETTING ************************
 

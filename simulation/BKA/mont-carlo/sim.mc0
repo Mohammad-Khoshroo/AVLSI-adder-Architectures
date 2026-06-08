@@ -19,7 +19,7 @@ $option use_agauss_format = yes
 $option screening_method = pearson  
 $Global Variable number:        1                               
 $Local Variable number:        0                                
-.TITLE '************************* hspice rca modeling ***********************'
+.TITLE '************************* hspice BKA modeling ***********************'
 index vdd_val:@:dev:@:IGNC
 1    0. 
 2   -0.8014 

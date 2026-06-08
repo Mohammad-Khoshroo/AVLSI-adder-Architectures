@@ -6,7 +6,7 @@
   Synopsys, Inc. All other use, reproduction, or distribution of
   this software is strictly prohibited.
   Input File: sim.sp                                                            
-  Command line options: C:\synopsys\Hspice_P-2019.06-SP1-1\WIN64\hspice.com -i sim.sp -o D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\RCA\mont-carlo\sim.lis
+  Command line options: C:\synopsys\Hspice_P-2019.06-SP1-1\WIN64\hspice.com -i sim.sp -o D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.lis
   Start time: Sat Jun  6 20:55:57 2026
   lic:  
   lic: FLEXlm: SDK_12.3 
@@ -22,154 +22,154 @@
   **info** option measform has been reset to 1 to reduce measure file storage and enable advanced Monte Carlo data mining.
 1****** HSPICE -- P-2019.06-SP1-1 win64 (Sep 27 2019) ******                    
  ******  
- ************************* hspice rca modeling ***********************
+ ************************* hspice BKA modeling ***********************
 
  ****** circuit name directory
  circuit number to circuit name directory
    number circuitname                     definition         multiplier
         0 main circuit
-        1 xrca.                           rca8               1.00 
-        2 xrca.xrca_l.                    rca4               1.00 
-        3 xrca.xrca_h.                    rca4               1.00 
-        4 xrca.xrca_l.xrca_l.             rca2               1.00 
-        5 xrca.xrca_l.xrca_h.             rca2               1.00 
-        6 xrca.xrca_h.xrca_l.             rca2               1.00 
-        7 xrca.xrca_h.xrca_h.             rca2               1.00 
-        8 xrca.xrca_l.xrca_l.xfa_l.       fa_t               1.00 
-        9 xrca.xrca_l.xrca_l.xfa_h.       fa_t               1.00 
-       10 xrca.xrca_l.xrca_h.xfa_l.       fa_t               1.00 
-       11 xrca.xrca_l.xrca_h.xfa_h.       fa_t               1.00 
-       12 xrca.xrca_h.xrca_l.xfa_l.       fa_t               1.00 
-       13 xrca.xrca_h.xrca_l.xfa_h.       fa_t               1.00 
-       14 xrca.xrca_h.xrca_h.xfa_l.       fa_t               1.00 
-       15 xrca.xrca_h.xrca_h.xfa_h.       fa_t               1.00 
-       16 xrca.xrca_l.xrca_l.xfa_l.xinva. inv                1.00 
-       17 xrca.xrca_l.xrca_l.xfa_l.xinvc. inv                1.00 
-       18 xrca.xrca_l.xrca_l.xfa_l.xtg_p. tg                 1.00 
-       19 xrca.xrca_l.xrca_l.xfa_l.xtg_pb.
+        1 xBKA.                           BKA8               1.00 
+        2 xBKA.xBKA_l.                    BKA4               1.00 
+        3 xBKA.xBKA_h.                    BKA4               1.00 
+        4 xBKA.xBKA_l.xBKA_l.             BKA2               1.00 
+        5 xBKA.xBKA_l.xBKA_h.             BKA2               1.00 
+        6 xBKA.xBKA_h.xBKA_l.             BKA2               1.00 
+        7 xBKA.xBKA_h.xBKA_h.             BKA2               1.00 
+        8 xBKA.xBKA_l.xBKA_l.xfa_l.       fa_t               1.00 
+        9 xBKA.xBKA_l.xBKA_l.xfa_h.       fa_t               1.00 
+       10 xBKA.xBKA_l.xBKA_h.xfa_l.       fa_t               1.00 
+       11 xBKA.xBKA_l.xBKA_h.xfa_h.       fa_t               1.00 
+       12 xBKA.xBKA_h.xBKA_l.xfa_l.       fa_t               1.00 
+       13 xBKA.xBKA_h.xBKA_l.xfa_h.       fa_t               1.00 
+       14 xBKA.xBKA_h.xBKA_h.xfa_l.       fa_t               1.00 
+       15 xBKA.xBKA_h.xBKA_h.xfa_h.       fa_t               1.00 
+       16 xBKA.xBKA_l.xBKA_l.xfa_l.xinva. inv                1.00 
+       17 xBKA.xBKA_l.xBKA_l.xfa_l.xinvc. inv                1.00 
+       18 xBKA.xBKA_l.xBKA_l.xfa_l.xtg_p. tg                 1.00 
+       19 xBKA.xBKA_l.xBKA_l.xfa_l.xtg_pb.
                                             tg                 1.00 
-       20 xrca.xrca_l.xrca_l.xfa_l.xtg_s1.
+       20 xBKA.xBKA_l.xBKA_l.xfa_l.xtg_s1.
                                             tg                 1.00 
-       21 xrca.xrca_l.xrca_l.xfa_l.xtg_s2.
+       21 xBKA.xBKA_l.xBKA_l.xfa_l.xtg_s2.
                                             tg                 1.00 
-       22 xrca.xrca_l.xrca_l.xfa_l.xtg_c1.
+       22 xBKA.xBKA_l.xBKA_l.xfa_l.xtg_c1.
                                             tg                 1.00 
-       23 xrca.xrca_l.xrca_l.xfa_l.xtg_c2.
+       23 xBKA.xBKA_l.xBKA_l.xfa_l.xtg_c2.
                                             tg                 1.00 
-       24 xrca.xrca_l.xrca_l.xfa_l.xinvs. inv                1.00 
-       25 xrca.xrca_l.xrca_l.xfa_l.xinvco.
+       24 xBKA.xBKA_l.xBKA_l.xfa_l.xinvs. inv                1.00 
+       25 xBKA.xBKA_l.xBKA_l.xfa_l.xinvco.
                                             inv                1.00 
-       26 xrca.xrca_l.xrca_l.xfa_h.xinva. inv                1.00 
-       27 xrca.xrca_l.xrca_l.xfa_h.xinvc. inv                1.00 
-       28 xrca.xrca_l.xrca_l.xfa_h.xtg_p. tg                 1.00 
-       29 xrca.xrca_l.xrca_l.xfa_h.xtg_pb.
+       26 xBKA.xBKA_l.xBKA_l.xfa_h.xinva. inv                1.00 
+       27 xBKA.xBKA_l.xBKA_l.xfa_h.xinvc. inv                1.00 
+       28 xBKA.xBKA_l.xBKA_l.xfa_h.xtg_p. tg                 1.00 
+       29 xBKA.xBKA_l.xBKA_l.xfa_h.xtg_pb.
                                             tg                 1.00 
-       30 xrca.xrca_l.xrca_l.xfa_h.xtg_s1.
+       30 xBKA.xBKA_l.xBKA_l.xfa_h.xtg_s1.
                                             tg                 1.00 
-       31 xrca.xrca_l.xrca_l.xfa_h.xtg_s2.
+       31 xBKA.xBKA_l.xBKA_l.xfa_h.xtg_s2.
                                             tg                 1.00 
-       32 xrca.xrca_l.xrca_l.xfa_h.xtg_c1.
+       32 xBKA.xBKA_l.xBKA_l.xfa_h.xtg_c1.
                                             tg                 1.00 
-       33 xrca.xrca_l.xrca_l.xfa_h.xtg_c2.
+       33 xBKA.xBKA_l.xBKA_l.xfa_h.xtg_c2.
                                             tg                 1.00 
-       34 xrca.xrca_l.xrca_l.xfa_h.xinvs. inv                1.00 
-       35 xrca.xrca_l.xrca_l.xfa_h.xinvco.
+       34 xBKA.xBKA_l.xBKA_l.xfa_h.xinvs. inv                1.00 
+       35 xBKA.xBKA_l.xBKA_l.xfa_h.xinvco.
                                             inv                1.00 
-       36 xrca.xrca_l.xrca_h.xfa_l.xinva. inv                1.00 
-       37 xrca.xrca_l.xrca_h.xfa_l.xinvc. inv                1.00 
-       38 xrca.xrca_l.xrca_h.xfa_l.xtg_p. tg                 1.00 
-       39 xrca.xrca_l.xrca_h.xfa_l.xtg_pb.
+       36 xBKA.xBKA_l.xBKA_h.xfa_l.xinva. inv                1.00 
+       37 xBKA.xBKA_l.xBKA_h.xfa_l.xinvc. inv                1.00 
+       38 xBKA.xBKA_l.xBKA_h.xfa_l.xtg_p. tg                 1.00 
+       39 xBKA.xBKA_l.xBKA_h.xfa_l.xtg_pb.
                                             tg                 1.00 
-       40 xrca.xrca_l.xrca_h.xfa_l.xtg_s1.
+       40 xBKA.xBKA_l.xBKA_h.xfa_l.xtg_s1.
                                             tg                 1.00 
-       41 xrca.xrca_l.xrca_h.xfa_l.xtg_s2.
+       41 xBKA.xBKA_l.xBKA_h.xfa_l.xtg_s2.
                                             tg                 1.00 
-       42 xrca.xrca_l.xrca_h.xfa_l.xtg_c1.
+       42 xBKA.xBKA_l.xBKA_h.xfa_l.xtg_c1.
                                             tg                 1.00 
-       43 xrca.xrca_l.xrca_h.xfa_l.xtg_c2.
+       43 xBKA.xBKA_l.xBKA_h.xfa_l.xtg_c2.
                                             tg                 1.00 
-       44 xrca.xrca_l.xrca_h.xfa_l.xinvs. inv                1.00 
-       45 xrca.xrca_l.xrca_h.xfa_l.xinvco.
+       44 xBKA.xBKA_l.xBKA_h.xfa_l.xinvs. inv                1.00 
+       45 xBKA.xBKA_l.xBKA_h.xfa_l.xinvco.
                                             inv                1.00 
-       46 xrca.xrca_l.xrca_h.xfa_h.xinva. inv                1.00 
-       47 xrca.xrca_l.xrca_h.xfa_h.xinvc. inv                1.00 
-       48 xrca.xrca_l.xrca_h.xfa_h.xtg_p. tg                 1.00 
-       49 xrca.xrca_l.xrca_h.xfa_h.xtg_pb.
+       46 xBKA.xBKA_l.xBKA_h.xfa_h.xinva. inv                1.00 
+       47 xBKA.xBKA_l.xBKA_h.xfa_h.xinvc. inv                1.00 
+       48 xBKA.xBKA_l.xBKA_h.xfa_h.xtg_p. tg                 1.00 
+       49 xBKA.xBKA_l.xBKA_h.xfa_h.xtg_pb.
                                             tg                 1.00 
-       50 xrca.xrca_l.xrca_h.xfa_h.xtg_s1.
+       50 xBKA.xBKA_l.xBKA_h.xfa_h.xtg_s1.
                                             tg                 1.00 
-       51 xrca.xrca_l.xrca_h.xfa_h.xtg_s2.
+       51 xBKA.xBKA_l.xBKA_h.xfa_h.xtg_s2.
                                             tg                 1.00 
-       52 xrca.xrca_l.xrca_h.xfa_h.xtg_c1.
+       52 xBKA.xBKA_l.xBKA_h.xfa_h.xtg_c1.
                                             tg                 1.00 
-       53 xrca.xrca_l.xrca_h.xfa_h.xtg_c2.
+       53 xBKA.xBKA_l.xBKA_h.xfa_h.xtg_c2.
                                             tg                 1.00 
-       54 xrca.xrca_l.xrca_h.xfa_h.xinvs. inv                1.00 
-       55 xrca.xrca_l.xrca_h.xfa_h.xinvco.
+       54 xBKA.xBKA_l.xBKA_h.xfa_h.xinvs. inv                1.00 
+       55 xBKA.xBKA_l.xBKA_h.xfa_h.xinvco.
                                             inv                1.00 
-       56 xrca.xrca_h.xrca_l.xfa_l.xinva. inv                1.00 
-       57 xrca.xrca_h.xrca_l.xfa_l.xinvc. inv                1.00 
-       58 xrca.xrca_h.xrca_l.xfa_l.xtg_p. tg                 1.00 
-       59 xrca.xrca_h.xrca_l.xfa_l.xtg_pb.
+       56 xBKA.xBKA_h.xBKA_l.xfa_l.xinva. inv                1.00 
+       57 xBKA.xBKA_h.xBKA_l.xfa_l.xinvc. inv                1.00 
+       58 xBKA.xBKA_h.xBKA_l.xfa_l.xtg_p. tg                 1.00 
+       59 xBKA.xBKA_h.xBKA_l.xfa_l.xtg_pb.
                                             tg                 1.00 
-       60 xrca.xrca_h.xrca_l.xfa_l.xtg_s1.
+       60 xBKA.xBKA_h.xBKA_l.xfa_l.xtg_s1.
                                             tg                 1.00 
-       61 xrca.xrca_h.xrca_l.xfa_l.xtg_s2.
+       61 xBKA.xBKA_h.xBKA_l.xfa_l.xtg_s2.
                                             tg                 1.00 
-       62 xrca.xrca_h.xrca_l.xfa_l.xtg_c1.
+       62 xBKA.xBKA_h.xBKA_l.xfa_l.xtg_c1.
                                             tg                 1.00 
-       63 xrca.xrca_h.xrca_l.xfa_l.xtg_c2.
+       63 xBKA.xBKA_h.xBKA_l.xfa_l.xtg_c2.
                                             tg                 1.00 
-       64 xrca.xrca_h.xrca_l.xfa_l.xinvs. inv                1.00 
-       65 xrca.xrca_h.xrca_l.xfa_l.xinvco.
+       64 xBKA.xBKA_h.xBKA_l.xfa_l.xinvs. inv                1.00 
+       65 xBKA.xBKA_h.xBKA_l.xfa_l.xinvco.
                                             inv                1.00 
-       66 xrca.xrca_h.xrca_l.xfa_h.xinva. inv                1.00 
-       67 xrca.xrca_h.xrca_l.xfa_h.xinvc. inv                1.00 
-       68 xrca.xrca_h.xrca_l.xfa_h.xtg_p. tg                 1.00 
-       69 xrca.xrca_h.xrca_l.xfa_h.xtg_pb.
+       66 xBKA.xBKA_h.xBKA_l.xfa_h.xinva. inv                1.00 
+       67 xBKA.xBKA_h.xBKA_l.xfa_h.xinvc. inv                1.00 
+       68 xBKA.xBKA_h.xBKA_l.xfa_h.xtg_p. tg                 1.00 
+       69 xBKA.xBKA_h.xBKA_l.xfa_h.xtg_pb.
                                             tg                 1.00 
-       70 xrca.xrca_h.xrca_l.xfa_h.xtg_s1.
+       70 xBKA.xBKA_h.xBKA_l.xfa_h.xtg_s1.
                                             tg                 1.00 
-       71 xrca.xrca_h.xrca_l.xfa_h.xtg_s2.
+       71 xBKA.xBKA_h.xBKA_l.xfa_h.xtg_s2.
                                             tg                 1.00 
-       72 xrca.xrca_h.xrca_l.xfa_h.xtg_c1.
+       72 xBKA.xBKA_h.xBKA_l.xfa_h.xtg_c1.
                                             tg                 1.00 
-       73 xrca.xrca_h.xrca_l.xfa_h.xtg_c2.
+       73 xBKA.xBKA_h.xBKA_l.xfa_h.xtg_c2.
                                             tg                 1.00 
-       74 xrca.xrca_h.xrca_l.xfa_h.xinvs. inv                1.00 
-       75 xrca.xrca_h.xrca_l.xfa_h.xinvco.
+       74 xBKA.xBKA_h.xBKA_l.xfa_h.xinvs. inv                1.00 
+       75 xBKA.xBKA_h.xBKA_l.xfa_h.xinvco.
                                             inv                1.00 
-       76 xrca.xrca_h.xrca_h.xfa_l.xinva. inv                1.00 
-       77 xrca.xrca_h.xrca_h.xfa_l.xinvc. inv                1.00 
-       78 xrca.xrca_h.xrca_h.xfa_l.xtg_p. tg                 1.00 
-       79 xrca.xrca_h.xrca_h.xfa_l.xtg_pb.
+       76 xBKA.xBKA_h.xBKA_h.xfa_l.xinva. inv                1.00 
+       77 xBKA.xBKA_h.xBKA_h.xfa_l.xinvc. inv                1.00 
+       78 xBKA.xBKA_h.xBKA_h.xfa_l.xtg_p. tg                 1.00 
+       79 xBKA.xBKA_h.xBKA_h.xfa_l.xtg_pb.
                                             tg                 1.00 
-       80 xrca.xrca_h.xrca_h.xfa_l.xtg_s1.
+       80 xBKA.xBKA_h.xBKA_h.xfa_l.xtg_s1.
                                             tg                 1.00 
-       81 xrca.xrca_h.xrca_h.xfa_l.xtg_s2.
+       81 xBKA.xBKA_h.xBKA_h.xfa_l.xtg_s2.
                                             tg                 1.00 
-       82 xrca.xrca_h.xrca_h.xfa_l.xtg_c1.
+       82 xBKA.xBKA_h.xBKA_h.xfa_l.xtg_c1.
                                             tg                 1.00 
-       83 xrca.xrca_h.xrca_h.xfa_l.xtg_c2.
+       83 xBKA.xBKA_h.xBKA_h.xfa_l.xtg_c2.
                                             tg                 1.00 
-       84 xrca.xrca_h.xrca_h.xfa_l.xinvs. inv                1.00 
-       85 xrca.xrca_h.xrca_h.xfa_l.xinvco.
+       84 xBKA.xBKA_h.xBKA_h.xfa_l.xinvs. inv                1.00 
+       85 xBKA.xBKA_h.xBKA_h.xfa_l.xinvco.
                                             inv                1.00 
-       86 xrca.xrca_h.xrca_h.xfa_h.xinva. inv                1.00 
-       87 xrca.xrca_h.xrca_h.xfa_h.xinvc. inv                1.00 
-       88 xrca.xrca_h.xrca_h.xfa_h.xtg_p. tg                 1.00 
-       89 xrca.xrca_h.xrca_h.xfa_h.xtg_pb.
+       86 xBKA.xBKA_h.xBKA_h.xfa_h.xinva. inv                1.00 
+       87 xBKA.xBKA_h.xBKA_h.xfa_h.xinvc. inv                1.00 
+       88 xBKA.xBKA_h.xBKA_h.xfa_h.xtg_p. tg                 1.00 
+       89 xBKA.xBKA_h.xBKA_h.xfa_h.xtg_pb.
                                             tg                 1.00 
-       90 xrca.xrca_h.xrca_h.xfa_h.xtg_s1.
+       90 xBKA.xBKA_h.xBKA_h.xfa_h.xtg_s1.
                                             tg                 1.00 
-       91 xrca.xrca_h.xrca_h.xfa_h.xtg_s2.
+       91 xBKA.xBKA_h.xBKA_h.xfa_h.xtg_s2.
                                             tg                 1.00 
-       92 xrca.xrca_h.xrca_h.xfa_h.xtg_c1.
+       92 xBKA.xBKA_h.xBKA_h.xfa_h.xtg_c1.
                                             tg                 1.00 
-       93 xrca.xrca_h.xrca_h.xfa_h.xtg_c2.
+       93 xBKA.xBKA_h.xBKA_h.xfa_h.xtg_c2.
                                             tg                 1.00 
-       94 xrca.xrca_h.xrca_h.xfa_h.xinvs. inv                1.00 
-       95 xrca.xrca_h.xrca_h.xfa_h.xinvco.
+       94 xBKA.xBKA_h.xBKA_h.xfa_h.xinvs. inv                1.00 
+       95 xBKA.xBKA_h.xBKA_h.xfa_h.xinvco.
                                             inv                1.00 
 *** info *** index=1 is a nominal sample in Monte Carlo.
 *** info *** The MCG Random Number Generator and .Option Use_Agauss_Format = Yes are set as defaults starting with HSPICE L-2016.06 to address the needs of advanced technology nodes with large samples and/or large circuits, particularly for distributed processing.
@@ -191,13 +191,13 @@ Random number generator is MCG            , and seed =      1, stream =   1
  ******
  runlvl  = 6         bypass  = 2.0000    
   Opening plot unit= 79
- file=D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\RCA\mont-carlo\sim.pa0
+ file=D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\mont-carlo\sim.pa0
 
 
    *** monte carlo  index =                       1 ***
 
  ******
- ************************* hspice rca modeling ***********************
+ ************************* hspice BKA modeling ***********************
 
  ****** transient analysis tnom=  25.000 temp=  25.000 ******
  tp_s7_fall= 930.7167p  targ=   2.4557n   trig=   1.5250n
@@ -9770,7 +9770,7 @@ Random number generator is MCG            , and seed =      1, stream =   1
 
           ***** job concluded
  ******  
- ************************* hspice rca modeling ***********************
+ ************************* hspice BKA modeling ***********************
 
  ****** job statistics summary tnom=  25.000 temp=  25.000 ******
 

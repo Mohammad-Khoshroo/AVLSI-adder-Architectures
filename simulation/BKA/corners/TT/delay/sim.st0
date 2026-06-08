@@ -41,7 +41,7 @@ lic:
  init: end setup matrix, cpu clock= 3.87E-01 peak memory=      74 mb
  dcop: begin dcop, cpu clock= 3.88E-01
  dcop: end dcop, cpu clock= 4.78E-01 peak memory=      73 mb tot_iter=     230
- output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\RCA\delay\sim.mt0
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\delay\sim.mt0
  sweep: tran tran0    begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 4.79E-01
  tran: time= 9.1361E-10 tot_iter=      14 conv_iter=       7 cpu clock= 4.85E-01
  tran: time= 1.7005E-09 tot_iter=     245 conv_iter=      89 cpu clock= 5.21E-01

@@ -40,7 +40,7 @@ lic:
  init: end setup matrix, cpu clock= 1.53E-01 peak memory=      66 mb
  dcop: begin dcop, cpu clock= 1.54E-01
  dcop: end dcop, cpu clock= 1.59E-01 peak memory=      66 mb tot_iter=      15
- output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\RCA\corners\FS\power\static\s
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\corners\FS\power\static\s
  sweep: tran tran0    begin, stop_t=  1.30E-07 #sweeps=**** cpu clock= 1.59E-01
  tran: time= 1.3001E-08 tot_iter=    1700 conv_iter=     600 cpu clock= 4.81E-01
  tran: time= 2.6001E-08 tot_iter=    3572 conv_iter=    1250 cpu clock= 8.55E-01
