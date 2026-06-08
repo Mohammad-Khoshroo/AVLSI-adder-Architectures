@@ -4,22 +4,22 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 TARGET_DIRS = [
-    r"./simulation/RCA/temperature/Sim_Results/Temp15/",
-    r"./simulation/RCA/temperature/Sim_Results/Temp20/",
-    r"./simulation/RCA/temperature/Sim_Results/Temp25/",
-    r"./simulation/RCA/temperature/Sim_Results/Temp30/",
-    r"./simulation/RCA/temperature/Sim_Results/Temp35/",
-    r"./simulation/RCA/temperature/Sim_Results/Temp40/",
-    r"./simulation/RCA/temperature/Sim_Results/Temp45/",
-    r"./simulation/RCA/temperature/Sim_Results/Temp50/",
-    r"./simulation/RCA/temperature/Sim_Results/Temp55/",
-    r"./simulation/RCA/temperature/Sim_Results/Temp60/",
-    r"./simulation/RCA/temperature/Sim_Results/Temp65/",
-    r"./simulation/RCA/temperature/Sim_Results/Temp70/",
-    r"./simulation/RCA/temperature/Sim_Results/Temp75/",
-    r"./simulation/RCA/temperature/Sim_Results/Temp80/",
-    r"./simulation/RCA/temperature/Sim_Results/Temp85/",
-    r"./simulation/RCA/temperature/Sim_Results/Temp90/",
+    r"./simulation/BKA/temperature/Sim_Results/Temp15/",
+    r"./simulation/BKA/temperature/Sim_Results/Temp20/",
+    r"./simulation/BKA/temperature/Sim_Results/Temp25/",
+    r"./simulation/BKA/temperature/Sim_Results/Temp30/",
+    r"./simulation/BKA/temperature/Sim_Results/Temp35/",
+    r"./simulation/BKA/temperature/Sim_Results/Temp40/",
+    r"./simulation/BKA/temperature/Sim_Results/Temp45/",
+    r"./simulation/BKA/temperature/Sim_Results/Temp50/",
+    r"./simulation/BKA/temperature/Sim_Results/Temp55/",
+    r"./simulation/BKA/temperature/Sim_Results/Temp60/",
+    r"./simulation/BKA/temperature/Sim_Results/Temp65/",
+    r"./simulation/BKA/temperature/Sim_Results/Temp70/",
+    r"./simulation/BKA/temperature/Sim_Results/Temp75/",
+    r"./simulation/BKA/temperature/Sim_Results/Temp80/",
+    r"./simulation/BKA/temperature/Sim_Results/Temp85/",
+    r"./simulation/BKA/temperature/Sim_Results/Temp90/",
 ]
 
 X_AXIS_LABELS = [
@@ -41,15 +41,13 @@ X_AXIS_LABELS = [
     "90°C",
 ]
 
-PARAM_LABELS = ["tp_cout_fall", "tp_cout_rise", "tp_s7_fall", "tp_s7_rise", "tp_max", "tp_avg"]
+PARAM_LABELS = ["p_max", "p_avg"]
 
 PARAM_PATHS = [
-    ["1", "measurements", "tp_cout_fall"],
-    ["1", "measurements", "tp_cout_rise"],
-    ["1", "measurements", "tp_s7_fall"],
-    ["1", "measurements", "tp_cout_rise"],
-    ["1", "measurements", "tp_max"],
-    ["1", "measurements", "tp_avg"]
+    # ["1", "measurements", "tp_cout"],
+    # ["1", "measurements", "tp_s8"],
+    ["1", "measurements", "p_max"],
+    ["1", "measurements", "p_avg"]
 ]
 
 COLORS = [
@@ -125,13 +123,19 @@ scaled_data_matrix = {
 
 
 n_params = len(PARAM_LABELS)
-nrows = 3
 ncols = 2
+nrows = int(np.ceil(n_params / ncols)) 
 
-fig, axes = plt.subplots(nrows=nrows, ncols=ncols, figsize=(16, 14))
-axes_flat = (
-    axes.flatten()
-)
+height_per_row = 4.5
+fig_height = max(5, nrows * height_per_row)
+
+fig, axes = plt.subplots(nrows=nrows, ncols=ncols, figsize=(16, fig_height))
+
+if nrows == 1:
+    axes_flat = axes
+else:
+    axes_flat = axes.flatten()
+
 
 x_indices = np.arange(len(x_labels))
 

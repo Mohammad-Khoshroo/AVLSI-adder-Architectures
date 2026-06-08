@@ -1,0 +1,301 @@
+****** HSPICE -- P-2019.06-SP1-1 win64 (Sep 27 2019) ******
+Input File: sim.sp
+lic:
+lic: FLEXlm: SDK_12.3
+lic: USER:   Mohammad-Khohsroo    HOSTNAME: DESKTOP-GMQQFUO
+lic: HOSTID: "088fc3e7a24d"       PID:      8920
+lic: Using FLEXlm license file:
+lic: 27000@DESKTOP-GMQQFUO
+lic: Checkout 1 hspice
+lic: License/Maintenance for hspice will expire on 30-dec-2030/2020.12
+lic: 1(in_use)/99(total) FLOATING license(s) on SERVER 27000@DESKTOP-GMQQFUO
+lic:
+
+ init: begin read circuit files, cpu clock= 1.27E-01
+       option search = C:/synopsys/Hspice_P-2019.06-SP1-1/parts/behave/
+       option search = C:/synopsys/Hspice_P-2019.06-SP1-1/parts/AD/
+       option search = C:/synopsys/Hspice_P-2019.06-SP1-1/parts/XILINX/
+       option search = C:/synopsys/Hspice_P-2019.06-SP1-1/parts/TLINE/
+       option search = C:/synopsys/Hspice_P-2019.06-SP1-1/parts/TI/
+       option search = C:/synopsys/Hspice_P-2019.06-SP1-1/parts/SIGNET/
+       option search = C:/synopsys/Hspice_P-2019.06-SP1-1/parts/PCI/
+       option search = C:/synopsys/Hspice_P-2019.06-SP1-1/parts/LIN_TEC
+                         H/
+       option search = C:/synopsys/Hspice_P-2019.06-SP1-1/parts/PET/
+       option search = C:/synopsys/Hspice_P-2019.06-SP1-1/parts/DI0/
+       option search = C:/synopsys/Hspice_P-2019.06-SP1-1/parts/COMLINE
+                         /
+       option search = C:/synopsys/Hspice_P-2019.06-SP1-1/parts/BURR_BR
+                         M/
+       option search = C:/synopsys/Hspice_P-2019.06-SP1-1/parts/BJT/
+       option nomod
+       option post =     2.00
+       option probe
+       option runlvl =     6.00
+ init: end read circuit files, cpu clock= 1.34E-01 peak memory=      65 mb
+ init: begin check errors, cpu clock= 1.34E-01
+ init: end check errors, cpu clock= 1.63E-01 peak memory=      67 mb
+ init: begin setup matrix, pivot=     0 cpu clock= 1.63E-01
+       establish matrix -- done, cpu clock= 1.64E-01 peak memory=      68 mb
+       re-order matrix -- done, cpu clock= 1.65E-01 peak memory=      68 mb
+ init: end setup matrix, cpu clock= 1.67E-01 peak memory=      68 mb
+ sweep: temp temp1 begin, start=  1.50E+01 stop=  9.00E+01 #sweeps =  16
+ temperature: temperature=  1.50E+01
+ dcop: begin dcop, cpu clock= 1.70E-01
+ dcop: end dcop, cpu clock= 3.21E-01 peak memory=      75 mb tot_iter=     282
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\temperature\sim.mt0
+ sweep: tran tran0    begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 3.22E-01
+ tran: time= 9.1361E-10 tot_iter=      14 conv_iter=       7 cpu clock= 3.25E-01
+ tran: time= 1.7001E-09 tot_iter=     302 conv_iter=     109 cpu clock= 3.81E-01
+ tran: time= 2.5902E-09 tot_iter=    1214 conv_iter=     431 cpu clock= 5.82E-01
+ tran: time= 3.4029E-09 tot_iter=    1756 conv_iter=     622 cpu clock= 6.88E-01
+ tran: time= 4.2639E-09 tot_iter=    2325 conv_iter=     823 cpu clock= 8.14E-01
+ tran: time= 5.1170E-09 tot_iter=    2560 conv_iter=     908 cpu clock= 8.70E-01
+ tran: time= 6.0000E-09 tot_iter=    2577 conv_iter=     915 cpu clock= 8.73E-01
+ tran: time= 6.8625E-09 tot_iter=    3270 conv_iter=    1155 cpu clock= 1.09E+00
+ tran: time= 7.6514E-09 tot_iter=    3560 conv_iter=    1259 cpu clock= 1.18E+00
+ tran: time= 8.5000E-09 tot_iter=    4324 conv_iter=    1523 cpu clock= 1.37E+00
+ sweep: tran tran0    end, cpu clock= 1.37E+00 peak memory=      74 mb
+ temperature: temperature=  2.00E+01
+ dcop: begin dcop, cpu clock= 1.38E+00
+ dcop: end dcop, cpu clock= 1.38E+00 peak memory=      74 mb tot_iter=     285
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\temperature\sim.mt1
+ sweep: tran tran0    begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 1.38E+00
+ tran: time= 9.1361E-10 tot_iter=      14 conv_iter=       7 cpu clock= 1.38E+00
+ tran: time= 1.7011E-09 tot_iter=     303 conv_iter=     110 cpu clock= 1.43E+00
+ tran: time= 2.5699E-09 tot_iter=    1220 conv_iter=     434 cpu clock= 1.63E+00
+ tran: time= 3.4005E-09 tot_iter=    1798 conv_iter=     640 cpu clock= 1.74E+00
+ tran: time= 4.2693E-09 tot_iter=    2392 conv_iter=     849 cpu clock= 1.88E+00
+ tran: time= 5.1838E-09 tot_iter=    2643 conv_iter=     942 cpu clock= 1.94E+00
+ tran: time= 6.0000E-09 tot_iter=    2654 conv_iter=     946 cpu clock= 1.94E+00
+ tran: time= 6.8065E-09 tot_iter=    3354 conv_iter=    1190 cpu clock= 2.17E+00
+ tran: time= 7.6514E-09 tot_iter=    3639 conv_iter=    1291 cpu clock= 2.26E+00
+ tran: time= 8.5000E-09 tot_iter=    4441 conv_iter=    1569 cpu clock= 2.46E+00
+ sweep: tran tran0    end, cpu clock= 2.46E+00 peak memory=      74 mb
+ temperature: temperature=  2.50E+01
+ dcop: begin dcop, cpu clock= 2.46E+00
+ dcop: end dcop, cpu clock= 2.47E+00 peak memory=      74 mb tot_iter=     288
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\temperature\sim.mt2
+ sweep: tran tran0    begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 2.47E+00
+ tran: time= 9.1361E-10 tot_iter=      14 conv_iter=       7 cpu clock= 2.47E+00
+ tran: time= 1.7013E-09 tot_iter=     270 conv_iter=      98 cpu clock= 2.51E+00
+ tran: time= 2.5710E-09 tot_iter=    1198 conv_iter=     428 cpu clock= 2.71E+00
+ tran: time= 3.4016E-09 tot_iter=    1765 conv_iter=     629 cpu clock= 2.83E+00
+ tran: time= 4.3136E-09 tot_iter=    2329 conv_iter=     826 cpu clock= 2.95E+00
+ tran: time= 5.1003E-09 tot_iter=    2563 conv_iter=     912 cpu clock= 3.01E+00
+ tran: time= 6.0000E-09 tot_iter=    2579 conv_iter=     919 cpu clock= 3.01E+00
+ tran: time= 6.8451E-09 tot_iter=    3250 conv_iter=    1153 cpu clock= 3.22E+00
+ tran: time= 7.6509E-09 tot_iter=    3549 conv_iter=    1258 cpu clock= 3.32E+00
+ tran: time= 8.5000E-09 tot_iter=    4325 conv_iter=    1528 cpu clock= 3.51E+00
+ sweep: tran tran0    end, cpu clock= 3.51E+00 peak memory=      74 mb
+ temperature: temperature=  3.00E+01
+ dcop: begin dcop, cpu clock= 3.51E+00
+ dcop: end dcop, cpu clock= 3.51E+00 peak memory=      74 mb tot_iter=     291
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\temperature\sim.mt3
+ sweep: tran tran0    begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 3.52E+00
+ tran: time= 9.1361E-10 tot_iter=      14 conv_iter=       7 cpu clock= 3.52E+00
+ tran: time= 1.7011E-09 tot_iter=     262 conv_iter=      95 cpu clock= 3.56E+00
+ tran: time= 2.5754E-09 tot_iter=    1159 conv_iter=     412 cpu clock= 3.76E+00
+ tran: time= 3.4018E-09 tot_iter=    1696 conv_iter=     601 cpu clock= 3.86E+00
+ tran: time= 4.3191E-09 tot_iter=    2268 conv_iter=     801 cpu clock= 3.98E+00
+ tran: time= 5.1506E-09 tot_iter=    2492 conv_iter=     883 cpu clock= 4.04E+00
+ tran: time= 6.0000E-09 tot_iter=    2506 conv_iter=     888 cpu clock= 4.04E+00
+ tran: time= 6.8190E-09 tot_iter=    3185 conv_iter=    1124 cpu clock= 4.26E+00
+ tran: time= 7.6527E-09 tot_iter=    3471 conv_iter=    1225 cpu clock= 4.35E+00
+ tran: time= 8.5000E-09 tot_iter=    4242 conv_iter=    1492 cpu clock= 4.55E+00
+ sweep: tran tran0    end, cpu clock= 4.55E+00 peak memory=      74 mb
+ temperature: temperature=  3.50E+01
+ dcop: begin dcop, cpu clock= 4.55E+00
+ dcop: end dcop, cpu clock= 4.55E+00 peak memory=      74 mb tot_iter=     294
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\temperature\sim.mt4
+ sweep: tran tran0    begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 4.55E+00
+ tran: time= 9.1361E-10 tot_iter=      14 conv_iter=       7 cpu clock= 4.56E+00
+ tran: time= 1.7012E-09 tot_iter=     271 conv_iter=      98 cpu clock= 4.60E+00
+ tran: time= 2.5713E-09 tot_iter=    1168 conv_iter=     415 cpu clock= 4.80E+00
+ tran: time= 3.4023E-09 tot_iter=    1738 conv_iter=     618 cpu clock= 4.91E+00
+ tran: time= 4.3111E-09 tot_iter=    2363 conv_iter=     836 cpu clock= 5.05E+00
+ tran: time= 5.2014E-09 tot_iter=    2609 conv_iter=     927 cpu clock= 5.11E+00
+ tran: time= 6.0000E-09 tot_iter=    2621 conv_iter=     931 cpu clock= 5.12E+00
+ tran: time= 6.8026E-09 tot_iter=    3324 conv_iter=    1174 cpu clock= 5.34E+00
+ tran: time= 7.6503E-09 tot_iter=    3604 conv_iter=    1273 cpu clock= 5.43E+00
+ tran: time= 8.5000E-09 tot_iter=    4392 conv_iter=    1545 cpu clock= 5.63E+00
+ sweep: tran tran0    end, cpu clock= 5.63E+00 peak memory=      74 mb
+ temperature: temperature=  4.00E+01
+ dcop: begin dcop, cpu clock= 5.63E+00
+ dcop: end dcop, cpu clock= 5.64E+00 peak memory=      74 mb tot_iter=     297
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\temperature\sim.mt5
+ sweep: tran tran0    begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 5.64E+00
+ tran: time= 9.1361E-10 tot_iter=      14 conv_iter=       7 cpu clock= 5.64E+00
+ tran: time= 1.7026E-09 tot_iter=     268 conv_iter=      97 cpu clock= 5.69E+00
+ tran: time= 2.5788E-09 tot_iter=    1166 conv_iter=     415 cpu clock= 5.88E+00
+ tran: time= 3.4004E-09 tot_iter=    1697 conv_iter=     603 cpu clock= 5.98E+00
+ tran: time= 4.2735E-09 tot_iter=    2292 conv_iter=     811 cpu clock= 6.12E+00
+ tran: time= 5.1205E-09 tot_iter=    2521 conv_iter=     894 cpu clock= 6.17E+00
+ tran: time= 6.0000E-09 tot_iter=    2535 conv_iter=     899 cpu clock= 6.18E+00
+ tran: time= 6.8294E-09 tot_iter=    3246 conv_iter=    1146 cpu clock= 6.40E+00
+ tran: time= 7.6509E-09 tot_iter=    3544 conv_iter=    1253 cpu clock= 6.49E+00
+ tran: time= 8.5000E-09 tot_iter=    4293 conv_iter=    1512 cpu clock= 6.68E+00
+ sweep: tran tran0    end, cpu clock= 6.68E+00 peak memory=      74 mb
+ temperature: temperature=  4.50E+01
+ dcop: begin dcop, cpu clock= 6.69E+00
+ dcop: end dcop, cpu clock= 6.69E+00 peak memory=      74 mb tot_iter=     300
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\temperature\sim.mt6
+ sweep: tran tran0    begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 6.69E+00
+ tran: time= 9.1361E-10 tot_iter=      14 conv_iter=       7 cpu clock= 6.69E+00
+ tran: time= 1.7016E-09 tot_iter=     269 conv_iter=      97 cpu clock= 6.74E+00
+ tran: time= 2.5681E-09 tot_iter=    1159 conv_iter=     411 cpu clock= 6.93E+00
+ tran: time= 3.4030E-09 tot_iter=    1685 conv_iter=     596 cpu clock= 7.03E+00
+ tran: time= 4.3152E-09 tot_iter=    2262 conv_iter=     800 cpu clock= 7.16E+00
+ tran: time= 5.1297E-09 tot_iter=    2509 conv_iter=     891 cpu clock= 7.22E+00
+ tran: time= 6.0000E-09 tot_iter=    2523 conv_iter=     896 cpu clock= 7.22E+00
+ tran: time= 6.8362E-09 tot_iter=    3219 conv_iter=    1137 cpu clock= 7.45E+00
+ tran: time= 7.6517E-09 tot_iter=    3496 conv_iter=    1235 cpu clock= 7.54E+00
+ tran: time= 8.5000E-09 tot_iter=    4298 conv_iter=    1515 cpu clock= 7.74E+00
+ sweep: tran tran0    end, cpu clock= 7.74E+00 peak memory=      74 mb
+ temperature: temperature=  5.00E+01
+ dcop: begin dcop, cpu clock= 7.75E+00
+ dcop: end dcop, cpu clock= 7.75E+00 peak memory=      74 mb tot_iter=     303
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\temperature\sim.mt7
+ sweep: tran tran0    begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 7.75E+00
+ tran: time= 9.1361E-10 tot_iter=      14 conv_iter=       7 cpu clock= 7.75E+00
+ tran: time= 1.7024E-09 tot_iter=     256 conv_iter=      91 cpu clock= 7.79E+00
+ tran: time= 2.5676E-09 tot_iter=    1144 conv_iter=     401 cpu clock= 7.99E+00
+ tran: time= 3.4000E-09 tot_iter=    1665 conv_iter=     584 cpu clock= 8.09E+00
+ tran: time= 4.2685E-09 tot_iter=    2280 conv_iter=     799 cpu clock= 8.23E+00
+ tran: time= 5.1966E-09 tot_iter=    2513 conv_iter=     884 cpu clock= 8.28E+00
+ tran: time= 6.0000E-09 tot_iter=    2527 conv_iter=     889 cpu clock= 8.29E+00
+ tran: time= 6.8135E-09 tot_iter=    3244 conv_iter=    1140 cpu clock= 8.51E+00
+ tran: time= 7.6525E-09 tot_iter=    3515 conv_iter=    1235 cpu clock= 8.59E+00
+ tran: time= 8.5000E-09 tot_iter=    4296 conv_iter=    1506 cpu clock= 8.79E+00
+ sweep: tran tran0    end, cpu clock= 8.79E+00 peak memory=      74 mb
+ temperature: temperature=  5.50E+01
+ dcop: begin dcop, cpu clock= 8.79E+00
+ dcop: end dcop, cpu clock= 8.80E+00 peak memory=      74 mb tot_iter=     306
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\temperature\sim.mt8
+ sweep: tran tran0    begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 8.80E+00
+ tran: time= 9.1361E-10 tot_iter=      14 conv_iter=       7 cpu clock= 8.80E+00
+ tran: time= 1.7008E-09 tot_iter=     276 conv_iter=      99 cpu clock= 8.85E+00
+ tran: time= 2.5708E-09 tot_iter=    1186 conv_iter=     423 cpu clock= 9.05E+00
+ tran: time= 3.4022E-09 tot_iter=    1676 conv_iter=     595 cpu clock= 9.14E+00
+ tran: time= 4.3073E-09 tot_iter=    2284 conv_iter=     810 cpu clock= 9.28E+00
+ tran: time= 5.1271E-09 tot_iter=    2518 conv_iter=     895 cpu clock= 9.34E+00
+ tran: time= 6.0000E-09 tot_iter=    2532 conv_iter=     900 cpu clock= 9.34E+00
+ tran: time= 6.8442E-09 tot_iter=    3206 conv_iter=    1133 cpu clock= 9.56E+00
+ tran: time= 7.6500E-09 tot_iter=    3496 conv_iter=    1235 cpu clock= 9.65E+00
+ tran: time= 8.5000E-09 tot_iter=    4258 conv_iter=    1498 cpu clock= 9.85E+00
+ sweep: tran tran0    end, cpu clock= 9.85E+00 peak memory=      74 mb
+ temperature: temperature=  6.00E+01
+ dcop: begin dcop, cpu clock= 9.85E+00
+ dcop: end dcop, cpu clock= 9.85E+00 peak memory=      74 mb tot_iter=     309
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\temperature\sim.mt9
+ sweep: tran tran0    begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 9.86E+00
+ tran: time= 9.1361E-10 tot_iter=      14 conv_iter=       7 cpu clock= 9.86E+00
+ tran: time= 1.7023E-09 tot_iter=     277 conv_iter=      99 cpu clock= 9.90E+00
+ tran: time= 2.5601E-09 tot_iter=    1184 conv_iter=     418 cpu clock= 1.01E+01
+ tran: time= 3.4013E-09 tot_iter=    1689 conv_iter=     599 cpu clock= 1.02E+01
+ tran: time= 4.3134E-09 tot_iter=    2291 conv_iter=     810 cpu clock= 1.03E+01
+ tran: time= 5.1896E-09 tot_iter=    2526 conv_iter=     896 cpu clock= 1.04E+01
+ tran: time= 6.0000E-09 tot_iter=    2542 conv_iter=     903 cpu clock= 1.04E+01
+ tran: time= 6.8202E-09 tot_iter=    3219 conv_iter=    1138 cpu clock= 1.06E+01
+ tran: time= 7.6527E-09 tot_iter=    3499 conv_iter=    1237 cpu clock= 1.07E+01
+ tran: time= 8.5000E-09 tot_iter=    4267 conv_iter=    1503 cpu clock= 1.09E+01
+ sweep: tran tran0    end, cpu clock= 1.09E+01 peak memory=      74 mb
+ temperature: temperature=  6.50E+01
+ dcop: begin dcop, cpu clock= 1.09E+01
+ dcop: end dcop, cpu clock= 1.09E+01 peak memory=      74 mb tot_iter=     312
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\temperature\sim.mt10
+ sweep: tran tran0    begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 1.09E+01
+ tran: time= 9.1361E-10 tot_iter=      14 conv_iter=       7 cpu clock= 1.09E+01
+ tran: time= 1.7041E-09 tot_iter=     259 conv_iter=      93 cpu clock= 1.09E+01
+ tran: time= 2.5742E-09 tot_iter=    1128 conv_iter=     401 cpu clock= 1.11E+01
+ tran: time= 3.4007E-09 tot_iter=    1635 conv_iter=     581 cpu clock= 1.12E+01
+ tran: time= 4.3042E-09 tot_iter=    2234 conv_iter=     792 cpu clock= 1.14E+01
+ tran: time= 5.1383E-09 tot_iter=    2481 conv_iter=     882 cpu clock= 1.14E+01
+ tran: time= 6.0000E-09 tot_iter=    2495 conv_iter=     887 cpu clock= 1.14E+01
+ tran: time= 6.8108E-09 tot_iter=    3184 conv_iter=    1126 cpu clock= 1.16E+01
+ tran: time= 7.6511E-09 tot_iter=    3460 conv_iter=    1224 cpu clock= 1.17E+01
+ tran: time= 8.5000E-09 tot_iter=    4227 conv_iter=    1491 cpu clock= 1.19E+01
+ sweep: tran tran0    end, cpu clock= 1.19E+01 peak memory=      74 mb
+ temperature: temperature=  7.00E+01
+ dcop: begin dcop, cpu clock= 1.19E+01
+ dcop: end dcop, cpu clock= 1.19E+01 peak memory=      74 mb tot_iter=     315
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\temperature\sim.mt11
+ sweep: tran tran0    begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 1.19E+01
+ tran: time= 9.1361E-10 tot_iter=      14 conv_iter=       7 cpu clock= 1.19E+01
+ tran: time= 1.7031E-09 tot_iter=     277 conv_iter=      99 cpu clock= 1.20E+01
+ tran: time= 2.5544E-09 tot_iter=    1125 conv_iter=     399 cpu clock= 1.22E+01
+ tran: time= 3.4018E-09 tot_iter=    1650 conv_iter=     585 cpu clock= 1.23E+01
+ tran: time= 4.2522E-09 tot_iter=    2252 conv_iter=     800 cpu clock= 1.24E+01
+ tran: time= 5.1308E-09 tot_iter=    2490 conv_iter=     887 cpu clock= 1.25E+01
+ tran: time= 6.0000E-09 tot_iter=    2504 conv_iter=     892 cpu clock= 1.25E+01
+ tran: time= 6.8190E-09 tot_iter=    3180 conv_iter=    1129 cpu clock= 1.27E+01
+ tran: time= 7.6511E-09 tot_iter=    3461 conv_iter=    1229 cpu clock= 1.28E+01
+ tran: time= 8.5000E-09 tot_iter=    4224 conv_iter=    1494 cpu clock= 1.30E+01
+ sweep: tran tran0    end, cpu clock= 1.30E+01 peak memory=      74 mb
+ temperature: temperature=  7.50E+01
+ dcop: begin dcop, cpu clock= 1.30E+01
+ dcop: end dcop, cpu clock= 1.30E+01 peak memory=      74 mb tot_iter=     318
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\temperature\sim.mt12
+ sweep: tran tran0    begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 1.30E+01
+ tran: time= 9.1361E-10 tot_iter=      14 conv_iter=       7 cpu clock= 1.30E+01
+ tran: time= 1.7003E-09 tot_iter=     272 conv_iter=      97 cpu clock= 1.31E+01
+ tran: time= 2.5618E-09 tot_iter=    1125 conv_iter=     398 cpu clock= 1.33E+01
+ tran: time= 3.4012E-09 tot_iter=    1624 conv_iter=     574 cpu clock= 1.34E+01
+ tran: time= 4.2664E-09 tot_iter=    2237 conv_iter=     791 cpu clock= 1.35E+01
+ tran: time= 5.1042E-09 tot_iter=    2465 conv_iter=     875 cpu clock= 1.36E+01
+ tran: time= 6.0000E-09 tot_iter=    2482 conv_iter=     881 cpu clock= 1.36E+01
+ tran: time= 6.8263E-09 tot_iter=    3158 conv_iter=    1117 cpu clock= 1.38E+01
+ tran: time= 7.6519E-09 tot_iter=    3433 conv_iter=    1215 cpu clock= 1.39E+01
+ tran: time= 8.5000E-09 tot_iter=    4210 conv_iter=    1482 cpu clock= 1.41E+01
+ sweep: tran tran0    end, cpu clock= 1.41E+01 peak memory=      74 mb
+ temperature: temperature=  8.00E+01
+ dcop: begin dcop, cpu clock= 1.41E+01
+ dcop: end dcop, cpu clock= 1.41E+01 peak memory=      74 mb tot_iter=     321
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\temperature\sim.mt13
+ sweep: tran tran0    begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 1.41E+01
+ tran: time= 9.1361E-10 tot_iter=      14 conv_iter=       7 cpu clock= 1.41E+01
+ tran: time= 1.7007E-09 tot_iter=     276 conv_iter=      99 cpu clock= 1.42E+01
+ tran: time= 2.5779E-09 tot_iter=    1150 conv_iter=     409 cpu clock= 1.44E+01
+ tran: time= 3.4000E-09 tot_iter=    1662 conv_iter=     591 cpu clock= 1.45E+01
+ tran: time= 4.2881E-09 tot_iter=    2324 conv_iter=     825 cpu clock= 1.46E+01
+ tran: time= 5.1355E-09 tot_iter=    2551 conv_iter=     909 cpu clock= 1.47E+01
+ tran: time= 6.0000E-09 tot_iter=    2565 conv_iter=     914 cpu clock= 1.47E+01
+ tran: time= 6.8007E-09 tot_iter=    3231 conv_iter=    1145 cpu clock= 1.49E+01
+ tran: time= 7.6505E-09 tot_iter=    3513 conv_iter=    1244 cpu clock= 1.50E+01
+ tran: time= 8.5000E-09 tot_iter=    4264 conv_iter=    1506 cpu clock= 1.52E+01
+ sweep: tran tran0    end, cpu clock= 1.52E+01 peak memory=      74 mb
+ temperature: temperature=  8.50E+01
+ dcop: begin dcop, cpu clock= 1.52E+01
+ dcop: end dcop, cpu clock= 1.52E+01 peak memory=      74 mb tot_iter=     324
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\temperature\sim.mt14
+ sweep: tran tran0    begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 1.52E+01
+ tran: time= 9.1361E-10 tot_iter=      14 conv_iter=       7 cpu clock= 1.52E+01
+ tran: time= 1.7001E-09 tot_iter=     258 conv_iter=      93 cpu clock= 1.53E+01
+ tran: time= 2.5569E-09 tot_iter=    1155 conv_iter=     412 cpu clock= 1.55E+01
+ tran: time= 3.4028E-09 tot_iter=    1656 conv_iter=     589 cpu clock= 1.56E+01
+ tran: time= 4.2648E-09 tot_iter=    2278 conv_iter=     809 cpu clock= 1.57E+01
+ tran: time= 5.1068E-09 tot_iter=    2515 conv_iter=     895 cpu clock= 1.58E+01
+ tran: time= 6.0000E-09 tot_iter=    2532 conv_iter=     901 cpu clock= 1.58E+01
+ tran: time= 6.8158E-09 tot_iter=    3187 conv_iter=    1131 cpu clock= 1.60E+01
+ tran: time= 7.6515E-09 tot_iter=    3458 conv_iter=    1226 cpu clock= 1.61E+01
+ tran: time= 8.5000E-09 tot_iter=    4211 conv_iter=    1488 cpu clock= 1.63E+01
+ sweep: tran tran0    end, cpu clock= 1.63E+01 peak memory=      74 mb
+ temperature: temperature=  9.00E+01
+ dcop: begin dcop, cpu clock= 1.63E+01
+ dcop: end dcop, cpu clock= 1.63E+01 peak memory=      74 mb tot_iter=     327
+ output: D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\temperature\sim.mt15
+ sweep: tran tran0    begin, stop_t=  8.50E-09 #sweeps=**** cpu clock= 1.63E+01
+ tran: time= 9.1361E-10 tot_iter=      14 conv_iter=       7 cpu clock= 1.63E+01
+ tran: time= 1.7027E-09 tot_iter=     287 conv_iter=     103 cpu clock= 1.63E+01
+ tran: time= 2.5626E-09 tot_iter=    1148 conv_iter=     409 cpu clock= 1.65E+01
+ tran: time= 3.4021E-09 tot_iter=    1620 conv_iter=     576 cpu clock= 1.66E+01
+ tran: time= 4.2580E-09 tot_iter=    2241 conv_iter=     798 cpu clock= 1.68E+01
+ tran: time= 5.1218E-09 tot_iter=    2477 conv_iter=     884 cpu clock= 1.69E+01
+ tran: time= 6.0000E-09 tot_iter=    2496 conv_iter=     892 cpu clock= 1.69E+01
+ tran: time= 6.8486E-09 tot_iter=    3189 conv_iter=    1132 cpu clock= 1.71E+01
+ tran: time= 7.6511E-09 tot_iter=    3476 conv_iter=    1233 cpu clock= 1.72E+01
+ tran: time= 8.5000E-09 tot_iter=    4219 conv_iter=    1491 cpu clock= 1.74E+01
+ sweep: tran tran0    end, cpu clock= 1.74E+01 peak memory=      74 mb
+ sweep: temp temp1 end
+>info:         ***** hspice job concluded
+ lic: Release hspice token(s)

@@ -40,7 +40,6 @@ def get_nested_value(data_dict, path_list):
     return float(temp)
 
 
-# ۱. خواندن داده‌های خام
 raw_extracted_data = {}
 
 for d in TARGET_DIRS:

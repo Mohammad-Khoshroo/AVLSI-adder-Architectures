@@ -1,0 +1,74 @@
+{
+    "1": {
+        "transition": {},
+        "state": {},
+        "delay": {},
+        "measurements": {
+            "p_avg": 0.0003107,
+            "p_max": 0.004719,
+            "tp_avg": 6.395e-10,
+            "tp_cout": 6.819e-10,
+            "tp_cout_fall": 6.866e-10,
+            "tp_cout_rise": 6.772e-10,
+            "tp_max": 6.866e-10,
+            "tp_s8": 5.971e-10,
+            "tp_s8_fall": 5.942e-10,
+            "tp_s8_rise": 6e-10
+        }
+    },
+    "summary": {
+        "delay": {},
+        "measurements": {
+            "p_avg": {
+                "min": 0.0003107,
+                "max": 0.0003107,
+                "avg": 0.0003107
+            },
+            "p_max": {
+                "min": 0.004719,
+                "max": 0.004719,
+                "avg": 0.004719
+            },
+            "tp_avg": {
+                "min": 6.395e-10,
+                "max": 6.395e-10,
+                "avg": 6.395e-10
+            },
+            "tp_cout": {
+                "min": 6.819e-10,
+                "max": 6.819e-10,
+                "avg": 6.819e-10
+            },
+            "tp_cout_fall": {
+                "min": 6.866e-10,
+                "max": 6.866e-10,
+                "avg": 6.866e-10
+            },
+            "tp_cout_rise": {
+                "min": 6.772e-10,
+                "max": 6.772e-10,
+                "avg": 6.772e-10
+            },
+            "tp_max": {
+                "min": 6.866e-10,
+                "max": 6.866e-10,
+                "avg": 6.866e-10
+            },
+            "tp_s8": {
+                "min": 5.971e-10,
+                "max": 5.971e-10,
+                "avg": 5.971e-10
+            },
+            "tp_s8_fall": {
+                "min": 5.942e-10,
+                "max": 5.942e-10,
+                "avg": 5.942e-10
+            },
+            "tp_s8_rise": {
+                "min": 6e-10,
+                "max": 6e-10,
+                "avg": 6e-10
+            }
+        }
+    }
+}

@@ -7,11 +7,11 @@
   this software is strictly prohibited.
   Input File: sim.sp                                                            
   Command line options: C:\synopsys\Hspice_P-2019.06-SP1-1\WIN64\hspice.com -i sim.sp -o D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\temperature\sim.lis
-  Start time: Sat Jun  6 01:22:07 2026
+  Start time: Tue Jun  9 01:23:34 2026
   lic:  
   lic: FLEXlm: SDK_12.3 
   lic: USER:   Mohammad-Khohsroo    HOSTNAME: DESKTOP-GMQQFUO 
-  lic: HOSTID: "d03957231987"       PID:      18188 
+  lic: HOSTID: "088fc3e7a24d"       PID:      8920 
   lic: Using FLEXlm license file: 
   lic: 27000@DESKTOP-GMQQFUO 
   lic: Checkout 1 hspice 
@@ -20,156 +20,265 @@
   lic:   
 1****** HSPICE -- P-2019.06-SP1-1 win64 (Sep 27 2019) ******                    
  ******  
- ************************* hspice BKA modeling ***********************
+ ************************* hspice bka modeling ***********************
 
  ****** circuit name directory
  circuit number to circuit name directory
    number circuitname                     definition         multiplier
         0 main circuit
-        1 xBKA.                           BKA8               1.00 
-        2 xBKA.xBKA_l.                    BKA4               1.00 
-        3 xBKA.xBKA_h.                    BKA4               1.00 
-        4 xBKA.xBKA_l.xBKA_l.             BKA2               1.00 
-        5 xBKA.xBKA_l.xBKA_h.             BKA2               1.00 
-        6 xBKA.xBKA_h.xBKA_l.             BKA2               1.00 
-        7 xBKA.xBKA_h.xBKA_h.             BKA2               1.00 
-        8 xBKA.xBKA_l.xBKA_l.xfa_l.       fa_t               1.00 
-        9 xBKA.xBKA_l.xBKA_l.xfa_h.       fa_t               1.00 
-       10 xBKA.xBKA_l.xBKA_h.xfa_l.       fa_t               1.00 
-       11 xBKA.xBKA_l.xBKA_h.xfa_h.       fa_t               1.00 
-       12 xBKA.xBKA_h.xBKA_l.xfa_l.       fa_t               1.00 
-       13 xBKA.xBKA_h.xBKA_l.xfa_h.       fa_t               1.00 
-       14 xBKA.xBKA_h.xBKA_h.xfa_l.       fa_t               1.00 
-       15 xBKA.xBKA_h.xBKA_h.xfa_h.       fa_t               1.00 
-       16 xBKA.xBKA_l.xBKA_l.xfa_l.xinva. inv                1.00 
-       17 xBKA.xBKA_l.xBKA_l.xfa_l.xinvc. inv                1.00 
-       18 xBKA.xBKA_l.xBKA_l.xfa_l.xtg_p. tg                 1.00 
-       19 xBKA.xBKA_l.xBKA_l.xfa_l.xtg_pb.
-                                            tg                 1.00 
-       20 xBKA.xBKA_l.xBKA_l.xfa_l.xtg_s1.
-                                            tg                 1.00 
-       21 xBKA.xBKA_l.xBKA_l.xfa_l.xtg_s2.
-                                            tg                 1.00 
-       22 xBKA.xBKA_l.xBKA_l.xfa_l.xtg_c1.
-                                            tg                 1.00 
-       23 xBKA.xBKA_l.xBKA_l.xfa_l.xtg_c2.
-                                            tg                 1.00 
-       24 xBKA.xBKA_l.xBKA_l.xfa_l.xinvs. inv                1.00 
-       25 xBKA.xBKA_l.xBKA_l.xfa_l.xinvco.
+        1 xbka.                           bka8               1.00 
+        2 xbka.x_pg8.                     pg8                1.00 
+        3 xbka.x_bk8.                     bk8                1.00 
+        4 xbka.x_sum1.                    xor2_sym           1.00 
+        5 xbka.x_sum2.                    xor2_sym           1.00 
+        6 xbka.x_sum3.                    xor2_sym           1.00 
+        7 xbka.x_sum4.                    xor2_sym           1.00 
+        8 xbka.x_sum5.                    xor2_sym           1.00 
+        9 xbka.x_sum6.                    xor2_sym           1.00 
+       10 xbka.x_sum7.                    xor2_sym           1.00 
+       11 xbka.x_sum8.                    xor2_sym           1.00 
+       12 xbka.x_pg8.xbit1.               pg                 1.00 
+       13 xbka.x_pg8.xbit2.               pg                 1.00 
+       14 xbka.x_pg8.xbit3.               pg                 1.00 
+       15 xbka.x_pg8.xbit4.               pg                 1.00 
+       16 xbka.x_pg8.xbit5.               pg                 1.00 
+       17 xbka.x_pg8.xbit6.               pg                 1.00 
+       18 xbka.x_pg8.xbit7.               pg                 1.00 
+       19 xbka.x_pg8.xbit8.               pg                 1.00 
+       20 xbka.x_bk8.xlevel1_bit1.        gen_block          1.00 
+       21 xbka.x_bk8.xlevel1_bit3.        genpro_block       1.00 
+       22 xbka.x_bk8.xlevel1_bit5.        genpro_block       1.00 
+       23 xbka.x_bk8.xlevel1_bit7.        genpro_block       1.00 
+       24 xbka.x_bk8.xlevel2_bit3.        gen_block          1.00 
+       25 xbka.x_bk8.xlevel2_bit7.        genpro_block       1.00 
+       26 xbka.x_bk8.xlevel3_bit7.        gen_block          1.00 
+       27 xbka.x_bk8.xlevel4_bit5.        gen_block          1.00 
+       28 xbka.x_bk8.xlevel5_bit2.        gen_block          1.00 
+       29 xbka.x_bk8.xlevel5_bit4.        gen_block          1.00 
+       30 xbka.x_bk8.xlevel5_bit6.        gen_block          1.00 
+       31 xbka.x_bk8.xlevel5_bit8.        gen_block          1.00 
+       32 xbka.x_sum1.xinv1.              inv                1.00 
+       33 xbka.x_sum1.xinv2.              inv                1.00 
+       34 xbka.x_sum2.xinv1.              inv                1.00 
+       35 xbka.x_sum2.xinv2.              inv                1.00 
+       36 xbka.x_sum3.xinv1.              inv                1.00 
+       37 xbka.x_sum3.xinv2.              inv                1.00 
+       38 xbka.x_sum4.xinv1.              inv                1.00 
+       39 xbka.x_sum4.xinv2.              inv                1.00 
+       40 xbka.x_sum5.xinv1.              inv                1.00 
+       41 xbka.x_sum5.xinv2.              inv                1.00 
+       42 xbka.x_sum6.xinv1.              inv                1.00 
+       43 xbka.x_sum6.xinv2.              inv                1.00 
+       44 xbka.x_sum7.xinv1.              inv                1.00 
+       45 xbka.x_sum7.xinv2.              inv                1.00 
+       46 xbka.x_sum8.xinv1.              inv                1.00 
+       47 xbka.x_sum8.xinv2.              inv                1.00 
+       48 xbka.x_pg8.xbit1.xand1.         and2               1.00 
+       49 xbka.x_pg8.xbit1.xxor1.         xor2               1.00 
+       50 xbka.x_pg8.xbit2.xand1.         and2               1.00 
+       51 xbka.x_pg8.xbit2.xxor1.         xor2               1.00 
+       52 xbka.x_pg8.xbit3.xand1.         and2               1.00 
+       53 xbka.x_pg8.xbit3.xxor1.         xor2               1.00 
+       54 xbka.x_pg8.xbit4.xand1.         and2               1.00 
+       55 xbka.x_pg8.xbit4.xxor1.         xor2               1.00 
+       56 xbka.x_pg8.xbit5.xand1.         and2               1.00 
+       57 xbka.x_pg8.xbit5.xxor1.         xor2               1.00 
+       58 xbka.x_pg8.xbit6.xand1.         and2               1.00 
+       59 xbka.x_pg8.xbit6.xxor1.         xor2               1.00 
+       60 xbka.x_pg8.xbit7.xand1.         and2               1.00 
+       61 xbka.x_pg8.xbit7.xxor1.         xor2               1.00 
+       62 xbka.x_pg8.xbit8.xand1.         and2               1.00 
+       63 xbka.x_pg8.xbit8.xxor1.         xor2               1.00 
+       64 xbka.x_bk8.xlevel1_bit1.xand.   and2               1.00 
+       65 xbka.x_bk8.xlevel1_bit1.xor.    or2                1.00 
+       66 xbka.x_bk8.xlevel1_bit3.xgen.   gen_block          1.00 
+       67 xbka.x_bk8.xlevel1_bit3.xand.   and2               1.00 
+       68 xbka.x_bk8.xlevel1_bit5.xgen.   gen_block          1.00 
+       69 xbka.x_bk8.xlevel1_bit5.xand.   and2               1.00 
+       70 xbka.x_bk8.xlevel1_bit7.xgen.   gen_block          1.00 
+       71 xbka.x_bk8.xlevel1_bit7.xand.   and2               1.00 
+       72 xbka.x_bk8.xlevel2_bit3.xand.   and2               1.00 
+       73 xbka.x_bk8.xlevel2_bit3.xor.    or2                1.00 
+       74 xbka.x_bk8.xlevel2_bit7.xgen.   gen_block          1.00 
+       75 xbka.x_bk8.xlevel2_bit7.xand.   and2               1.00 
+       76 xbka.x_bk8.xlevel3_bit7.xand.   and2               1.00 
+       77 xbka.x_bk8.xlevel3_bit7.xor.    or2                1.00 
+       78 xbka.x_bk8.xlevel4_bit5.xand.   and2               1.00 
+       79 xbka.x_bk8.xlevel4_bit5.xor.    or2                1.00 
+       80 xbka.x_bk8.xlevel5_bit2.xand.   and2               1.00 
+       81 xbka.x_bk8.xlevel5_bit2.xor.    or2                1.00 
+       82 xbka.x_bk8.xlevel5_bit4.xand.   and2               1.00 
+       83 xbka.x_bk8.xlevel5_bit4.xor.    or2                1.00 
+       84 xbka.x_bk8.xlevel5_bit6.xand.   and2               1.00 
+       85 xbka.x_bk8.xlevel5_bit6.xor.    or2                1.00 
+       86 xbka.x_bk8.xlevel5_bit8.xand.   and2               1.00 
+       87 xbka.x_bk8.xlevel5_bit8.xor.    or2                1.00 
+       88 xbka.x_pg8.xbit1.xand1.xinv.    inv                1.00 
+       89 xbka.x_pg8.xbit1.xand1.xnand.   nand2              1.00 
+       90 xbka.x_pg8.xbit1.xxor1.xinv1.   inv                1.00 
+       91 xbka.x_pg8.xbit1.xxor1.xinv2.   inv                1.00 
+       92 xbka.x_pg8.xbit2.xand1.xinv.    inv                1.00 
+       93 xbka.x_pg8.xbit2.xand1.xnand.   nand2              1.00 
+       94 xbka.x_pg8.xbit2.xxor1.xinv1.   inv                1.00 
+       95 xbka.x_pg8.xbit2.xxor1.xinv2.   inv                1.00 
+       96 xbka.x_pg8.xbit3.xand1.xinv.    inv                1.00 
+       97 xbka.x_pg8.xbit3.xand1.xnand.   nand2              1.00 
+       98 xbka.x_pg8.xbit3.xxor1.xinv1.   inv                1.00 
+       99 xbka.x_pg8.xbit3.xxor1.xinv2.   inv                1.00 
+      100 xbka.x_pg8.xbit4.xand1.xinv.    inv                1.00 
+      101 xbka.x_pg8.xbit4.xand1.xnand.   nand2              1.00 
+      102 xbka.x_pg8.xbit4.xxor1.xinv1.   inv                1.00 
+      103 xbka.x_pg8.xbit4.xxor1.xinv2.   inv                1.00 
+      104 xbka.x_pg8.xbit5.xand1.xinv.    inv                1.00 
+      105 xbka.x_pg8.xbit5.xand1.xnand.   nand2              1.00 
+      106 xbka.x_pg8.xbit5.xxor1.xinv1.   inv                1.00 
+      107 xbka.x_pg8.xbit5.xxor1.xinv2.   inv                1.00 
+      108 xbka.x_pg8.xbit6.xand1.xinv.    inv                1.00 
+      109 xbka.x_pg8.xbit6.xand1.xnand.   nand2              1.00 
+      110 xbka.x_pg8.xbit6.xxor1.xinv1.   inv                1.00 
+      111 xbka.x_pg8.xbit6.xxor1.xinv2.   inv                1.00 
+      112 xbka.x_pg8.xbit7.xand1.xinv.    inv                1.00 
+      113 xbka.x_pg8.xbit7.xand1.xnand.   nand2              1.00 
+      114 xbka.x_pg8.xbit7.xxor1.xinv1.   inv                1.00 
+      115 xbka.x_pg8.xbit7.xxor1.xinv2.   inv                1.00 
+      116 xbka.x_pg8.xbit8.xand1.xinv.    inv                1.00 
+      117 xbka.x_pg8.xbit8.xand1.xnand.   nand2              1.00 
+      118 xbka.x_pg8.xbit8.xxor1.xinv1.   inv                1.00 
+      119 xbka.x_pg8.xbit8.xxor1.xinv2.   inv                1.00 
+      120 xbka.x_bk8.xlevel1_bit1.xand.xinv.
                                             inv                1.00 
-       26 xBKA.xBKA_l.xBKA_l.xfa_h.xinva. inv                1.00 
-       27 xBKA.xBKA_l.xBKA_l.xfa_h.xinvc. inv                1.00 
-       28 xBKA.xBKA_l.xBKA_l.xfa_h.xtg_p. tg                 1.00 
-       29 xBKA.xBKA_l.xBKA_l.xfa_h.xtg_pb.
-                                            tg                 1.00 
-       30 xBKA.xBKA_l.xBKA_l.xfa_h.xtg_s1.
-                                            tg                 1.00 
-       31 xBKA.xBKA_l.xBKA_l.xfa_h.xtg_s2.
-                                            tg                 1.00 
-       32 xBKA.xBKA_l.xBKA_l.xfa_h.xtg_c1.
-                                            tg                 1.00 
-       33 xBKA.xBKA_l.xBKA_l.xfa_h.xtg_c2.
-                                            tg                 1.00 
-       34 xBKA.xBKA_l.xBKA_l.xfa_h.xinvs. inv                1.00 
-       35 xBKA.xBKA_l.xBKA_l.xfa_h.xinvco.
+      121 xbka.x_bk8.xlevel1_bit1.xand.xnand.
+                                            nand2              1.00 
+      122 xbka.x_bk8.xlevel1_bit1.xor.xinv.
                                             inv                1.00 
-       36 xBKA.xBKA_l.xBKA_h.xfa_l.xinva. inv                1.00 
-       37 xBKA.xBKA_l.xBKA_h.xfa_l.xinvc. inv                1.00 
-       38 xBKA.xBKA_l.xBKA_h.xfa_l.xtg_p. tg                 1.00 
-       39 xBKA.xBKA_l.xBKA_h.xfa_l.xtg_pb.
-                                            tg                 1.00 
-       40 xBKA.xBKA_l.xBKA_h.xfa_l.xtg_s1.
-                                            tg                 1.00 
-       41 xBKA.xBKA_l.xBKA_h.xfa_l.xtg_s2.
-                                            tg                 1.00 
-       42 xBKA.xBKA_l.xBKA_h.xfa_l.xtg_c1.
-                                            tg                 1.00 
-       43 xBKA.xBKA_l.xBKA_h.xfa_l.xtg_c2.
-                                            tg                 1.00 
-       44 xBKA.xBKA_l.xBKA_h.xfa_l.xinvs. inv                1.00 
-       45 xBKA.xBKA_l.xBKA_h.xfa_l.xinvco.
+      123 xbka.x_bk8.xlevel1_bit1.xor.xnor.
+                                            nor2               1.00 
+      124 xbka.x_bk8.xlevel1_bit3.xgen.xand.
+                                            and2               1.00 
+      125 xbka.x_bk8.xlevel1_bit3.xgen.xor.
+                                            or2                1.00 
+      126 xbka.x_bk8.xlevel1_bit3.xand.xinv.
                                             inv                1.00 
-       46 xBKA.xBKA_l.xBKA_h.xfa_h.xinva. inv                1.00 
-       47 xBKA.xBKA_l.xBKA_h.xfa_h.xinvc. inv                1.00 
-       48 xBKA.xBKA_l.xBKA_h.xfa_h.xtg_p. tg                 1.00 
-       49 xBKA.xBKA_l.xBKA_h.xfa_h.xtg_pb.
-                                            tg                 1.00 
-       50 xBKA.xBKA_l.xBKA_h.xfa_h.xtg_s1.
-                                            tg                 1.00 
-       51 xBKA.xBKA_l.xBKA_h.xfa_h.xtg_s2.
-                                            tg                 1.00 
-       52 xBKA.xBKA_l.xBKA_h.xfa_h.xtg_c1.
-                                            tg                 1.00 
-       53 xBKA.xBKA_l.xBKA_h.xfa_h.xtg_c2.
-                                            tg                 1.00 
-       54 xBKA.xBKA_l.xBKA_h.xfa_h.xinvs. inv                1.00 
-       55 xBKA.xBKA_l.xBKA_h.xfa_h.xinvco.
+      127 xbka.x_bk8.xlevel1_bit3.xand.xnand.
+                                            nand2              1.00 
+      128 xbka.x_bk8.xlevel1_bit5.xgen.xand.
+                                            and2               1.00 
+      129 xbka.x_bk8.xlevel1_bit5.xgen.xor.
+                                            or2                1.00 
+      130 xbka.x_bk8.xlevel1_bit5.xand.xinv.
                                             inv                1.00 
-       56 xBKA.xBKA_h.xBKA_l.xfa_l.xinva. inv                1.00 
-       57 xBKA.xBKA_h.xBKA_l.xfa_l.xinvc. inv                1.00 
-       58 xBKA.xBKA_h.xBKA_l.xfa_l.xtg_p. tg                 1.00 
-       59 xBKA.xBKA_h.xBKA_l.xfa_l.xtg_pb.
-                                            tg                 1.00 
-       60 xBKA.xBKA_h.xBKA_l.xfa_l.xtg_s1.
-                                            tg                 1.00 
-       61 xBKA.xBKA_h.xBKA_l.xfa_l.xtg_s2.
-                                            tg                 1.00 
-       62 xBKA.xBKA_h.xBKA_l.xfa_l.xtg_c1.
-                                            tg                 1.00 
-       63 xBKA.xBKA_h.xBKA_l.xfa_l.xtg_c2.
-                                            tg                 1.00 
-       64 xBKA.xBKA_h.xBKA_l.xfa_l.xinvs. inv                1.00 
-       65 xBKA.xBKA_h.xBKA_l.xfa_l.xinvco.
+      131 xbka.x_bk8.xlevel1_bit5.xand.xnand.
+                                            nand2              1.00 
+      132 xbka.x_bk8.xlevel1_bit7.xgen.xand.
+                                            and2               1.00 
+      133 xbka.x_bk8.xlevel1_bit7.xgen.xor.
+                                            or2                1.00 
+      134 xbka.x_bk8.xlevel1_bit7.xand.xinv.
                                             inv                1.00 
-       66 xBKA.xBKA_h.xBKA_l.xfa_h.xinva. inv                1.00 
-       67 xBKA.xBKA_h.xBKA_l.xfa_h.xinvc. inv                1.00 
-       68 xBKA.xBKA_h.xBKA_l.xfa_h.xtg_p. tg                 1.00 
-       69 xBKA.xBKA_h.xBKA_l.xfa_h.xtg_pb.
-                                            tg                 1.00 
-       70 xBKA.xBKA_h.xBKA_l.xfa_h.xtg_s1.
-                                            tg                 1.00 
-       71 xBKA.xBKA_h.xBKA_l.xfa_h.xtg_s2.
-                                            tg                 1.00 
-       72 xBKA.xBKA_h.xBKA_l.xfa_h.xtg_c1.
-                                            tg                 1.00 
-       73 xBKA.xBKA_h.xBKA_l.xfa_h.xtg_c2.
-                                            tg                 1.00 
-       74 xBKA.xBKA_h.xBKA_l.xfa_h.xinvs. inv                1.00 
-       75 xBKA.xBKA_h.xBKA_l.xfa_h.xinvco.
+      135 xbka.x_bk8.xlevel1_bit7.xand.xnand.
+                                            nand2              1.00 
+      136 xbka.x_bk8.xlevel2_bit3.xand.xinv.
                                             inv                1.00 
-       76 xBKA.xBKA_h.xBKA_h.xfa_l.xinva. inv                1.00 
-       77 xBKA.xBKA_h.xBKA_h.xfa_l.xinvc. inv                1.00 
-       78 xBKA.xBKA_h.xBKA_h.xfa_l.xtg_p. tg                 1.00 
-       79 xBKA.xBKA_h.xBKA_h.xfa_l.xtg_pb.
-                                            tg                 1.00 
-       80 xBKA.xBKA_h.xBKA_h.xfa_l.xtg_s1.
-                                            tg                 1.00 
-       81 xBKA.xBKA_h.xBKA_h.xfa_l.xtg_s2.
-                                            tg                 1.00 
-       82 xBKA.xBKA_h.xBKA_h.xfa_l.xtg_c1.
-                                            tg                 1.00 
-       83 xBKA.xBKA_h.xBKA_h.xfa_l.xtg_c2.
-                                            tg                 1.00 
-       84 xBKA.xBKA_h.xBKA_h.xfa_l.xinvs. inv                1.00 
-       85 xBKA.xBKA_h.xBKA_h.xfa_l.xinvco.
+      137 xbka.x_bk8.xlevel2_bit3.xand.xnand.
+                                            nand2              1.00 
+      138 xbka.x_bk8.xlevel2_bit3.xor.xinv.
                                             inv                1.00 
-       86 xBKA.xBKA_h.xBKA_h.xfa_h.xinva. inv                1.00 
-       87 xBKA.xBKA_h.xBKA_h.xfa_h.xinvc. inv                1.00 
-       88 xBKA.xBKA_h.xBKA_h.xfa_h.xtg_p. tg                 1.00 
-       89 xBKA.xBKA_h.xBKA_h.xfa_h.xtg_pb.
-                                            tg                 1.00 
-       90 xBKA.xBKA_h.xBKA_h.xfa_h.xtg_s1.
-                                            tg                 1.00 
-       91 xBKA.xBKA_h.xBKA_h.xfa_h.xtg_s2.
-                                            tg                 1.00 
-       92 xBKA.xBKA_h.xBKA_h.xfa_h.xtg_c1.
-                                            tg                 1.00 
-       93 xBKA.xBKA_h.xBKA_h.xfa_h.xtg_c2.
-                                            tg                 1.00 
-       94 xBKA.xBKA_h.xBKA_h.xfa_h.xinvs. inv                1.00 
-       95 xBKA.xBKA_h.xBKA_h.xfa_h.xinvco.
+      139 xbka.x_bk8.xlevel2_bit3.xor.xnor.
+                                            nor2               1.00 
+      140 xbka.x_bk8.xlevel2_bit7.xgen.xand.
+                                            and2               1.00 
+      141 xbka.x_bk8.xlevel2_bit7.xgen.xor.
+                                            or2                1.00 
+      142 xbka.x_bk8.xlevel2_bit7.xand.xinv.
                                             inv                1.00 
+      143 xbka.x_bk8.xlevel2_bit7.xand.xnand.
+                                            nand2              1.00 
+      144 xbka.x_bk8.xlevel3_bit7.xand.xinv.
+                                            inv                1.00 
+      145 xbka.x_bk8.xlevel3_bit7.xand.xnand.
+                                            nand2              1.00 
+      146 xbka.x_bk8.xlevel3_bit7.xor.xinv.
+                                            inv                1.00 
+      147 xbka.x_bk8.xlevel3_bit7.xor.xnor.
+                                            nor2               1.00 
+      148 xbka.x_bk8.xlevel4_bit5.xand.xinv.
+                                            inv                1.00 
+      149 xbka.x_bk8.xlevel4_bit5.xand.xnand.
+                                            nand2              1.00 
+      150 xbka.x_bk8.xlevel4_bit5.xor.xinv.
+                                            inv                1.00 
+      151 xbka.x_bk8.xlevel4_bit5.xor.xnor.
+                                            nor2               1.00 
+      152 xbka.x_bk8.xlevel5_bit2.xand.xinv.
+                                            inv                1.00 
+      153 xbka.x_bk8.xlevel5_bit2.xand.xnand.
+                                            nand2              1.00 
+      154 xbka.x_bk8.xlevel5_bit2.xor.xinv.
+                                            inv                1.00 
+      155 xbka.x_bk8.xlevel5_bit2.xor.xnor.
+                                            nor2               1.00 
+      156 xbka.x_bk8.xlevel5_bit4.xand.xinv.
+                                            inv                1.00 
+      157 xbka.x_bk8.xlevel5_bit4.xand.xnand.
+                                            nand2              1.00 
+      158 xbka.x_bk8.xlevel5_bit4.xor.xinv.
+                                            inv                1.00 
+      159 xbka.x_bk8.xlevel5_bit4.xor.xnor.
+                                            nor2               1.00 
+      160 xbka.x_bk8.xlevel5_bit6.xand.xinv.
+                                            inv                1.00 
+      161 xbka.x_bk8.xlevel5_bit6.xand.xnand.
+                                            nand2              1.00 
+      162 xbka.x_bk8.xlevel5_bit6.xor.xinv.
+                                            inv                1.00 
+      163 xbka.x_bk8.xlevel5_bit6.xor.xnor.
+                                            nor2               1.00 
+      164 xbka.x_bk8.xlevel5_bit8.xand.xinv.
+                                            inv                1.00 
+      165 xbka.x_bk8.xlevel5_bit8.xand.xnand.
+                                            nand2              1.00 
+      166 xbka.x_bk8.xlevel5_bit8.xor.xinv.
+                                            inv                1.00 
+      167 xbka.x_bk8.xlevel5_bit8.xor.xnor.
+                                            nor2               1.00 
+      168 xbka.x_bk8.xlevel1_bit3.xgen.xand.xinv.
+                                            inv                1.00 
+      169 xbka.x_bk8.xlevel1_bit3.xgen.xand.xnand.
+                                            nand2              1.00 
+      170 xbka.x_bk8.xlevel1_bit3.xgen.xor.xinv.
+                                            inv                1.00 
+      171 xbka.x_bk8.xlevel1_bit3.xgen.xor.xnor.
+                                            nor2               1.00 
+      172 xbka.x_bk8.xlevel1_bit5.xgen.xand.xinv.
+                                            inv                1.00 
+      173 xbka.x_bk8.xlevel1_bit5.xgen.xand.xnand.
+                                            nand2              1.00 
+      174 xbka.x_bk8.xlevel1_bit5.xgen.xor.xinv.
+                                            inv                1.00 
+      175 xbka.x_bk8.xlevel1_bit5.xgen.xor.xnor.
+                                            nor2               1.00 
+      176 xbka.x_bk8.xlevel1_bit7.xgen.xand.xinv.
+                                            inv                1.00 
+      177 xbka.x_bk8.xlevel1_bit7.xgen.xand.xnand.
+                                            nand2              1.00 
+      178 xbka.x_bk8.xlevel1_bit7.xgen.xor.xinv.
+                                            inv                1.00 
+      179 xbka.x_bk8.xlevel1_bit7.xgen.xor.xnor.
+                                            nor2               1.00 
+      180 xbka.x_bk8.xlevel2_bit7.xgen.xand.xinv.
+                                            inv                1.00 
+      181 xbka.x_bk8.xlevel2_bit7.xgen.xand.xnand.
+                                            nand2              1.00 
+      182 xbka.x_bk8.xlevel2_bit7.xgen.xor.xinv.
+                                            inv                1.00 
+      183 xbka.x_bk8.xlevel2_bit7.xgen.xor.xnor.
+                                            nor2               1.00 
   
+
+  **warning** the following singular supplies were terminated to 1 meg resistor 
+          supply       node1            node2
+(..\..\..\include\BK.inc:111)v_c8                    0:cout             defined in subckt 0                     3:g80              defined in subckt bk8             
+(..\..\..\include\PG.inc:96)v_p0                    1:p0               defined in subckt bka8                  0:vss              defined in subckt 0               
       
  **info** set option symb=1 internally to help for convergence.
  *****************************************************************
@@ -181,872 +290,1688 @@
 
  **info** dc convergence successful at GMINDC ramping method 
  ******  
- ************************* hspice BKA modeling ***********************
+ ************************* hspice bka modeling ***********************
 
  ****** operating point information tnom=  25.000 temp=  15.000 ******
  ****** operating point status is voltage   simulation time is     0.     
-     node    =voltage       node    =voltage       node    =voltage
+      node    =voltage        node    =voltage        node    =voltage
 
- + 0:a0      =   1.0000   0:a1      =   1.0000   0:a2      =   1.0000 
- + 0:a3      =   1.0000   0:a4      =   1.0000   0:a5      =   1.0000 
- + 0:a6      =   1.0000   0:a7      =   1.0000   0:b0      =   0.     
- + 0:b1      =   0.       0:b2      =   0.       0:b3      =   0.     
- + 0:b4      =   0.       0:b5      =   0.       0:b6      =   0.     
- + 0:b7      =   0.       0:cin     =   0.       0:cout    =   1.8333u
- + 0:s0      = 999.9966m  0:s1      = 999.9966m  0:s2      = 999.9966m
- + 0:s3      = 999.9966m  0:s4      = 999.9966m  0:s5      = 999.9966m
- + 0:s6      = 999.9966m  0:s7      = 999.9966m  0:vdd     =   1.0000 
- + 0:vss     =   0.       1:cmid    =   8.7736u  2:cmid    =   8.7736u
- + 3:cmid    =   8.7736u  4:cmid    =   8.7736u  5:cmid    =   8.7736u
- + 6:cmid    =   8.7736u  7:cmid    =   8.7736u  8:a_bar   =   4.5512u
- + 8:c_bar   = 999.9834m  8:cout_bar= 999.9747m  8:p       = 999.9890m
- + 8:p_bar   =   3.5802u  8:s_bar   =   4.3398u  9:a_bar   =   4.5512u
- + 9:c_bar   = 999.9834m  9:cout_bar= 999.9747m  9:p       = 999.9890m
- + 9:p_bar   =   3.5802u  9:s_bar   =  13.1131u 10:a_bar   =   4.5512u
- +10:c_bar   = 999.9834m 10:cout_bar= 999.9747m 10:p       = 999.9890m
- +10:p_bar   =   3.5802u 10:s_bar   =  13.1131u 11:a_bar   =   4.5512u
- +11:c_bar   = 999.9834m 11:cout_bar= 999.9747m 11:p       = 999.9890m
- +11:p_bar   =   3.5802u 11:s_bar   =  13.1131u 12:a_bar   =   4.5512u
- +12:c_bar   = 999.9834m 12:cout_bar= 999.9747m 12:p       = 999.9890m
- +12:p_bar   =   3.5802u 12:s_bar   =  13.1131u 13:a_bar   =   4.5512u
- +13:c_bar   = 999.9834m 13:cout_bar= 999.9747m 13:p       = 999.9890m
- +13:p_bar   =   3.5802u 13:s_bar   =  13.1131u 14:a_bar   =   4.5512u
- +14:c_bar   = 999.9834m 14:cout_bar= 999.9747m 14:p       = 999.9890m
- +14:p_bar   =   3.5802u 14:s_bar   =  13.1131u 15:a_bar   =   4.5512u
- +15:c_bar   = 999.9834m 15:cout_bar= 999.9747m 15:p       = 999.9890m
- +15:p_bar   =   3.5802u 15:s_bar   =  13.1131u
+ +  0:a1      =   1.0000    0:a2      =   1.0000    0:a3      =   1.0000 
+ +  0:a4      =   1.0000    0:a5      =   1.0000    0:a6      =   1.0000 
+ +  0:a7      =   1.0000    0:a8      =   1.0000    0:b1      =   0.     
+ +  0:b2      =   0.        0:b3      =   0.        0:b4      =   0.     
+ +  0:b5      =   0.        0:b6      =   0.        0:b7      =   0.     
+ +  0:b8      =   0.        0:cin     =   0.        0:cout    =   1.8331u
+ +  0:s1      = 999.9874m   0:s2      = 999.9874m   0:s3      = 999.9874m
+ +  0:s4      = 999.9874m   0:s5      = 999.9874m   0:s6      = 999.9874m
+ +  0:s7      = 999.9874m   0:s8      = 999.9874m   0:vdd     =   1.0000 
+ +  0:vss     =   0.        1:c0      =   0.        1:c1      =  10.2978u
+ +  1:c2      =   6.8215u   1:c3      =  12.0360u   1:c4      =   6.8215u
+ +  1:c5      =   8.5596u   1:c6      =   6.8215u   1:c7      =   8.5597u
+ +  1:g0      =   0.        1:g1      =   5.0833u   1:g2      =   6.8215u
+ +  1:g3      =   5.0833u   1:g4      =   6.8215u   1:g5      =   5.0833u
+ +  1:g6      =   6.8215u   1:g7      =   5.0833u   1:g8      =   5.0833u
+ +  1:p0      =   0.        1:p1      = 999.9839m   1:p2      = 999.9765m
+ +  1:p3      = 999.9765m   1:p4      = 999.9765m   1:p5      = 999.9765m
+ +  1:p6      = 999.9765m   1:p7      = 999.9765m   1:p8      = 999.9839m
+ +  3:g10     =  10.2978u   3:g20     =   6.8215u   3:g30     =  12.0360u
+ +  3:g32     =   5.0834u   3:g40     =   6.8215u   3:g50     =   8.5596u
+ +  3:g54     =   6.8216u   3:g60     =   6.8215u   3:g70     =   8.5597u
+ +  3:g74     =   5.0834u   3:g76     =   5.0834u   3:g80     =   1.8331u
+ +  3:p32     = 999.9966m   3:p54     = 999.9890m   3:p74     = 999.9966m
+ +  3:p76     = 999.9890m   4:in1_bar =   5.2495u   4:in2_bar = 999.9895m
+ +  4:x1      = 853.8428m   4:x2      =   1.7334u   4:y1      = 999.9937m
+ +  4:y2      = 999.9923m   5:in1_bar =   5.2496u   5:in2_bar = 999.9895m
+ +  5:x1      = 853.8293m   5:x2      =   1.7334u   5:y1      = 999.9937m
+ +  5:y2      = 999.9923m   6:in1_bar =   5.2496u   6:in2_bar = 999.9895m
+ +  6:x1      = 853.8318m   6:x2      =   1.7334u   6:y1      = 999.9937m
+ +  6:y2      = 999.9923m   7:in1_bar =   5.2496u   7:in2_bar = 999.9895m
+ +  7:x1      = 853.8281m   7:x2      =   1.7334u   7:y1      = 999.9937m
+ +  7:y2      = 999.9923m   8:in1_bar =   5.2496u   8:in2_bar = 999.9895m
+ +  8:x1      = 853.8318m   8:x2      =   1.7334u   8:y1      = 999.9937m
+ +  8:y2      = 999.9923m   9:in1_bar =   5.2496u   9:in2_bar = 999.9895m
+ +  9:x1      = 853.8306m   9:x2      =   1.7334u   9:y1      = 999.9937m
+ +  9:y2      = 999.9923m  10:in1_bar =   5.2496u  10:in2_bar = 999.9895m
+ + 10:x1      = 853.8318m  10:x2      =   1.7334u  10:y1      = 999.9937m
+ + 10:y2      = 999.9923m  11:in1_bar =   5.2495u  11:in2_bar = 999.9895m
+ + 11:x1      = 853.8367m  11:x2      =   1.7334u  11:y1      = 999.9937m
+ + 11:y2      = 999.9923m  20:mid     =   5.0832u  24:mid     =   5.0832u
+ + 26:mid     =   5.0832u  27:mid     =   5.0832u  28:mid     =   5.0832u
+ + 29:mid     =   5.0832u  30:mid     =   5.0832u  31:mid     =   5.0832u
+ + 48:out_bar = 999.9911m  49:in1_bar =   5.1426u  49:in2_bar = 999.9966m
+ + 49:x       = 853.8528m  49:yl      = 999.9905m  49:yr      = 999.9920m
+ + 50:out_bar = 999.9911m  51:in1_bar =   5.1426u  51:in2_bar = 999.9966m
+ + 51:x       = 853.8524m  51:yl      = 999.9868m  51:yr      = 999.9883m
+ + 52:out_bar = 999.9911m  53:in1_bar =   5.1426u  53:in2_bar = 999.9966m
+ + 53:x       = 853.8524m  53:yl      = 999.9868m  53:yr      = 999.9883m
+ + 54:out_bar = 999.9911m  55:in1_bar =   5.1426u  55:in2_bar = 999.9966m
+ + 55:x       = 853.8524m  55:yl      = 999.9868m  55:yr      = 999.9883m
+ + 56:out_bar = 999.9911m  57:in1_bar =   5.1426u  57:in2_bar = 999.9966m
+ + 57:x       = 853.8524m  57:yl      = 999.9868m  57:yr      = 999.9883m
+ + 58:out_bar = 999.9911m  59:in1_bar =   5.1426u  59:in2_bar = 999.9966m
+ + 59:x       = 853.8524m  59:yl      = 999.9868m  59:yr      = 999.9883m
+ + 60:out_bar = 999.9911m  61:in1_bar =   5.1426u  61:in2_bar = 999.9966m
+ + 61:x       = 853.8524m  61:yl      = 999.9868m  61:yr      = 999.9883m
+ + 62:out_bar = 999.9911m  63:in1_bar =   5.1426u  63:in2_bar = 999.9966m
+ + 63:x       = 853.8528m  63:yl      = 999.9905m  63:yr      = 999.9920m
+ + 64:out_bar = 999.9911m  65:out_bar = 999.9867m  66:mid     =   5.0832u
+ + 67:out_bar =   7.1386u  68:mid     =   5.0832u  69:out_bar =   7.1386u
+ + 70:mid     =   5.0832u  71:out_bar =   7.1386u  72:out_bar = 999.9911m
+ + 73:out_bar = 999.9867m  74:mid     =   5.0832u  75:out_bar =   7.1382u
+ + 76:out_bar = 999.9911m  77:out_bar = 999.9867m  78:out_bar = 999.9911m
+ + 79:out_bar = 999.9867m  80:out_bar = 999.9911m  81:out_bar = 999.9867m
+ + 82:out_bar = 999.9911m  83:out_bar = 999.9867m  84:out_bar = 999.9911m
+ + 85:out_bar = 999.9867m  86:out_bar = 999.9911m  87:out_bar = 999.9867m
+ + 89:x       = 853.8563m  93:x       = 853.8563m  97:x       = 853.8563m
+ +101:x       = 853.8563m 105:x       = 853.8563m 109:x       = 853.8563m
+ +113:x       = 853.8563m 117:x       = 853.8563m 121:x       = 853.8430m
+ +123:x       = 999.9919m 124:out_bar = 999.9911m 125:out_bar = 999.9867m
+ +127:x       =   4.4868u 128:out_bar = 999.9911m 129:out_bar = 999.9867m
+ +131:x       =   4.4868u 132:out_bar = 999.9911m 133:out_bar = 999.9867m
+ +135:x       =   4.4868u 137:x       = 853.8462m 139:x       = 999.9919m
+ +140:out_bar = 999.9911m 141:out_bar = 999.9867m 143:x       =   4.4867u
+ +145:x       = 853.8450m 147:x       = 999.9919m 149:x       = 853.8386m
+ +151:x       = 999.9919m 153:x       = 853.8295m 155:x       = 999.9919m
+ +157:x       = 853.8283m 159:x       = 999.9919m 161:x       = 853.8307m
+ +163:x       = 999.9919m 165:x       = 853.8369m 167:x       = 999.9919m
+ +169:x       = 853.8320m 171:x       = 999.9919m 173:x       = 853.8320m
+ +175:x       = 999.9919m 177:x       = 853.8320m 179:x       = 999.9919m
+ +181:x       = 853.8423m 183:x       = 999.9919m
 
  ******
- ************************* hspice BKA modeling ***********************
+ ************************* hspice bka modeling ***********************
 
  ****** transient analysis tnom=  25.000 temp=  15.000 ******
- tp_s7_fall= 912.8614p  targ=   2.4379n   trig=   1.5250n
- tp_cout_rise= 958.3153p  targ=   2.4833n   trig=   1.5250n
- tp_s7_rise= 907.7193p  targ=   3.9327n   trig=   3.0250n
- tp_cout_fall= 960.8245p  targ=   3.9858n   trig=   3.0250n
- tp_max= 960.8245p
- tp_avg= 934.9301p
- p_avg= 127.5973u  from=   0.             to=   8.5000n
- p_max=   4.5131m    at=   7.5500n
-             from=   0.            to=   8.5000n
- pdp= 122.5986f
- i_avg=-108.8189u  from=   0.             to=   8.5000n
- i_peak=  -1.7010m    at=   6.1150n
+ tp_s8_fall= 570.9743p  targ=   2.0960n   trig=   1.5250n
+ tp_cout_rise= 650.7216p  targ=   2.1757n   trig=   1.5250n
+ tp_s8_rise= 573.6659p  targ=   3.5987n   trig=   3.0250n
+ tp_cout_fall= 656.4255p  targ=   3.6814n   trig=   3.0250n
+ tp_max= 656.4255p
+ tp_s8= 572.3201p
+ tp_cout= 653.5736p
+ tp_avg= 612.9468p
+ p_avg= 303.0776u  from=   0.             to=   8.5000n
+ p_max=   4.8200m    at=   6.0463n
              from=   0.            to=   8.5000n
  **info** dc convergence successful at Newton-Raphson method 
  ******  
- ************************* hspice BKA modeling ***********************
+ ************************* hspice bka modeling ***********************
 
  ****** operating point information tnom=  25.000 temp=  20.000 ******
  ****** operating point status is voltage   simulation time is     0.     
-     node    =voltage       node    =voltage       node    =voltage
+      node    =voltage        node    =voltage        node    =voltage
 
- + 0:a0      =   1.0000   0:a1      =   1.0000   0:a2      =   1.0000 
- + 0:a3      =   1.0000   0:a4      =   1.0000   0:a5      =   1.0000 
- + 0:a6      =   1.0000   0:a7      =   1.0000   0:b0      =   0.     
- + 0:b1      =   0.       0:b2      =   0.       0:b3      =   0.     
- + 0:b4      =   0.       0:b5      =   0.       0:b6      =   0.     
- + 0:b7      =   0.       0:cin     =   0.       0:cout    =   2.0454u
- + 0:s0      = 999.9962m  0:s1      = 999.9962m  0:s2      = 999.9962m
- + 0:s3      = 999.9962m  0:s4      = 999.9962m  0:s5      = 999.9962m
- + 0:s6      = 999.9962m  0:s7      = 999.9962m  0:vdd     =   1.0000 
- + 0:vss     =   0.       1:cmid    =   9.5232u  2:cmid    =   9.5232u
- + 3:cmid    =   9.5232u  4:cmid    =   9.5232u  5:cmid    =   9.5232u
- + 6:cmid    =   9.5232u  7:cmid    =   9.5232u  8:a_bar   =   5.4028u
- + 8:c_bar   = 999.9813m  8:cout_bar= 999.9717m  8:p       = 999.9877m
- + 8:p_bar   =   3.8697u  8:s_bar   =   4.8150u  9:a_bar   =   5.4028u
- + 9:c_bar   = 999.9813m  9:cout_bar= 999.9717m  9:p       = 999.9877m
- + 9:p_bar   =   3.8697u  9:s_bar   =  14.3378u 10:a_bar   =   5.4028u
- +10:c_bar   = 999.9813m 10:cout_bar= 999.9717m 10:p       = 999.9877m
- +10:p_bar   =   3.8697u 10:s_bar   =  14.3378u 11:a_bar   =   5.4028u
- +11:c_bar   = 999.9813m 11:cout_bar= 999.9717m 11:p       = 999.9877m
- +11:p_bar   =   3.8697u 11:s_bar   =  14.3378u 12:a_bar   =   5.4028u
- +12:c_bar   = 999.9813m 12:cout_bar= 999.9717m 12:p       = 999.9877m
- +12:p_bar   =   3.8697u 12:s_bar   =  14.3378u 13:a_bar   =   5.4028u
- +13:c_bar   = 999.9813m 13:cout_bar= 999.9717m 13:p       = 999.9877m
- +13:p_bar   =   3.8697u 13:s_bar   =  14.3378u 14:a_bar   =   5.4028u
- +14:c_bar   = 999.9813m 14:cout_bar= 999.9717m 14:p       = 999.9877m
- +14:p_bar   =   3.8697u 14:s_bar   =  14.3378u 15:a_bar   =   5.4028u
- +15:c_bar   = 999.9813m 15:cout_bar= 999.9717m 15:p       = 999.9877m
- +15:p_bar   =   3.8697u 15:s_bar   =  14.3378u
+ +  0:a1      =   1.0000    0:a2      =   1.0000    0:a3      =   1.0000 
+ +  0:a4      =   1.0000    0:a5      =   1.0000    0:a6      =   1.0000 
+ +  0:a7      =   1.0000    0:a8      =   1.0000    0:b1      =   0.     
+ +  0:b2      =   0.        0:b3      =   0.        0:b4      =   0.     
+ +  0:b5      =   0.        0:b6      =   0.        0:b7      =   0.     
+ +  0:b8      =   0.        0:cin     =   0.        0:cout    =   2.0451u
+ +  0:s1      = 999.9857m   0:s2      = 999.9857m   0:s3      = 999.9857m
+ +  0:s4      = 999.9857m   0:s5      = 999.9857m   0:s6      = 999.9857m
+ +  0:s7      = 999.9857m   0:s8      = 999.9857m   0:vdd     =   1.0000 
+ +  0:vss     =   0.        1:c0      =   0.        1:c1      =  10.7046u
+ +  1:c2      =   7.1487u   1:c3      =  12.4825u   1:c4      =   7.1487u
+ +  1:c5      =   8.9267u   1:c6      =   7.1487u   1:c7      =   8.9267u
+ +  1:g0      =   0.        1:g1      =   5.3708u   1:g2      =   7.1487u
+ +  1:g3      =   5.3708u   1:g4      =   7.1487u   1:g5      =   5.3708u
+ +  1:g6      =   7.1487u   1:g7      =   5.3708u   1:g8      =   5.3708u
+ +  1:p0      =   0.        1:p1      = 999.9822m   1:p2      = 999.9747m
+ +  1:p3      = 999.9747m   1:p4      = 999.9747m   1:p5      = 999.9747m
+ +  1:p6      = 999.9747m   1:p7      = 999.9747m   1:p8      = 999.9822m
+ +  3:g10     =  10.7046u   3:g20     =   7.1487u   3:g30     =  12.4825u
+ +  3:g32     =   5.3709u   3:g40     =   7.1487u   3:g50     =   8.9267u
+ +  3:g54     =   7.1488u   3:g60     =   7.1487u   3:g70     =   8.9267u
+ +  3:g74     =   5.3709u   3:g76     =   5.3709u   3:g80     =   2.0451u
+ +  3:p32     = 999.9962m   3:p54     = 999.9884m   3:p74     = 999.9962m
+ +  3:p76     = 999.9884m   4:in1_bar =   5.5398u   4:in2_bar = 999.9889m
+ +  4:x1      = 853.7704m   4:x2      =   1.9801u   4:y1      = 999.9929m
+ +  4:y2      = 999.9914m   5:in1_bar =   5.5400u   5:in2_bar = 999.9889m
+ +  5:x1      = 853.7563m   5:x2      =   1.9801u   5:y1      = 999.9929m
+ +  5:y2      = 999.9914m   6:in1_bar =   5.5400u   6:in2_bar = 999.9889m
+ +  6:x1      = 853.7589m   6:x2      =   1.9801u   6:y1      = 999.9929m
+ +  6:y2      = 999.9914m   7:in1_bar =   5.5400u   7:in2_bar = 999.9889m
+ +  7:x1      = 853.7550m   7:x2      =   1.9801u   7:y1      = 999.9929m
+ +  7:y2      = 999.9914m   8:in1_bar =   5.5400u   8:in2_bar = 999.9889m
+ +  8:x1      = 853.7589m   8:x2      =   1.9801u   8:y1      = 999.9929m
+ +  8:y2      = 999.9914m   9:in1_bar =   5.5400u   9:in2_bar = 999.9889m
+ +  9:x1      = 853.7576m   9:x2      =   1.9801u   9:y1      = 999.9929m
+ +  9:y2      = 999.9914m  10:in1_bar =   5.5400u  10:in2_bar = 999.9889m
+ + 10:x1      = 853.7589m  10:x2      =   1.9801u  10:y1      = 999.9929m
+ + 10:y2      = 999.9914m  11:in1_bar =   5.5398u  11:in2_bar = 999.9889m
+ + 11:x1      = 853.7639m  11:x2      =   1.9801u  11:y1      = 999.9929m
+ + 11:y2      = 999.9914m  20:mid     =   5.3707u  24:mid     =   5.3707u
+ + 26:mid     =   5.3707u  27:mid     =   5.3707u  28:mid     =   5.3707u
+ + 29:mid     =   5.3707u  30:mid     =   5.3707u  31:mid     =   5.3707u
+ + 48:out_bar = 999.9903m  49:in1_bar =   5.4310u  49:in2_bar = 999.9962m
+ + 49:x       = 853.7814m  49:yl      = 999.9896m  49:yr      = 999.9911m
+ + 50:out_bar = 999.9903m  51:in1_bar =   5.4310u  51:in2_bar = 999.9962m
+ + 51:x       = 853.7811m  51:yl      = 999.9859m  51:yr      = 999.9874m
+ + 52:out_bar = 999.9903m  53:in1_bar =   5.4310u  53:in2_bar = 999.9962m
+ + 53:x       = 853.7811m  53:yl      = 999.9859m  53:yr      = 999.9874m
+ + 54:out_bar = 999.9903m  55:in1_bar =   5.4310u  55:in2_bar = 999.9962m
+ + 55:x       = 853.7811m  55:yl      = 999.9859m  55:yr      = 999.9874m
+ + 56:out_bar = 999.9903m  57:in1_bar =   5.4310u  57:in2_bar = 999.9962m
+ + 57:x       = 853.7811m  57:yl      = 999.9859m  57:yr      = 999.9874m
+ + 58:out_bar = 999.9903m  59:in1_bar =   5.4310u  59:in2_bar = 999.9962m
+ + 59:x       = 853.7811m  59:yl      = 999.9859m  59:yr      = 999.9874m
+ + 60:out_bar = 999.9903m  61:in1_bar =   5.4310u  61:in2_bar = 999.9962m
+ + 61:x       = 853.7811m  61:yl      = 999.9859m  61:yr      = 999.9874m
+ + 62:out_bar = 999.9903m  63:in1_bar =   5.4310u  63:in2_bar = 999.9962m
+ + 63:x       = 853.7814m  63:yl      = 999.9896m  63:yr      = 999.9911m
+ + 64:out_bar = 999.9903m  65:out_bar = 999.9857m  66:mid     =   5.3707u
+ + 67:out_bar =   7.6410u  68:mid     =   5.3707u  69:out_bar =   7.6410u
+ + 70:mid     =   5.3707u  71:out_bar =   7.6410u  72:out_bar = 999.9903m
+ + 73:out_bar = 999.9857m  74:mid     =   5.3707u  75:out_bar =   7.6405u
+ + 76:out_bar = 999.9903m  77:out_bar = 999.9857m  78:out_bar = 999.9903m
+ + 79:out_bar = 999.9857m  80:out_bar = 999.9903m  81:out_bar = 999.9857m
+ + 82:out_bar = 999.9903m  83:out_bar = 999.9857m  84:out_bar = 999.9903m
+ + 85:out_bar = 999.9857m  86:out_bar = 999.9903m  87:out_bar = 999.9857m
+ + 89:x       = 853.7854m  93:x       = 853.7854m  97:x       = 853.7854m
+ +101:x       = 853.7854m 105:x       = 853.7854m 109:x       = 853.7854m
+ +113:x       = 853.7854m 117:x       = 853.7854m 121:x       = 853.7706m
+ +123:x       = 999.9914m 124:out_bar = 999.9903m 125:out_bar = 999.9857m
+ +127:x       =   4.7611u 128:out_bar = 999.9903m 129:out_bar = 999.9857m
+ +131:x       =   4.7611u 132:out_bar = 999.9903m 133:out_bar = 999.9857m
+ +135:x       =   4.7611u 137:x       = 853.7744m 139:x       = 999.9914m
+ +140:out_bar = 999.9903m 141:out_bar = 999.9857m 143:x       =   4.7609u
+ +145:x       = 853.7731m 147:x       = 999.9914m 149:x       = 853.7667m
+ +151:x       = 999.9914m 153:x       = 853.7566m 155:x       = 999.9914m
+ +157:x       = 853.7553m 159:x       = 999.9914m 161:x       = 853.7579m
+ +163:x       = 999.9914m 165:x       = 853.7641m 167:x       = 999.9914m
+ +169:x       = 853.7592m 171:x       = 999.9914m 173:x       = 853.7592m
+ +175:x       = 999.9914m 177:x       = 853.7592m 179:x       = 999.9914m
+ +181:x       = 853.7706m 183:x       = 999.9914m
 
  ******
- ************************* hspice BKA modeling ***********************
+ ************************* hspice bka modeling ***********************
 
  ****** transient analysis tnom=  25.000 temp=  20.000 ******
- tp_s7_fall= 921.7989p  targ=   2.4468n   trig=   1.5250n
- tp_cout_rise= 967.8252p  targ=   2.4928n   trig=   1.5250n
- tp_s7_rise= 916.1167p  targ=   3.9411n   trig=   3.0250n
- tp_cout_fall= 969.6063p  targ=   3.9946n   trig=   3.0250n
- tp_max= 969.6063p
- tp_avg= 943.8368p
- p_avg= 128.3768u  from=   0.             to=   8.5000n
- p_max=   4.4990m    at=   7.5500n
-             from=   0.            to=   8.5000n
- pdp= 124.4749f
- i_avg=-109.4702u  from=   0.             to=   8.5000n
- i_peak=  -1.6954m    at=   6.1148n
+ tp_s8_fall= 575.6015p  targ=   2.1006n   trig=   1.5250n
+ tp_cout_rise= 655.9956p  targ=   2.1810n   trig=   1.5250n
+ tp_s8_rise= 578.9322p  targ=   3.6039n   trig=   3.0250n
+ tp_cout_fall= 662.4442p  targ=   3.6874n   trig=   3.0250n
+ tp_max= 662.4442p
+ tp_s8= 577.2668p
+ tp_cout= 659.2199p
+ tp_avg= 618.2434p
+ p_avg= 304.5654u  from=   0.             to=   8.5000n
+ p_max=   4.7990m    at=   6.0464n
              from=   0.            to=   8.5000n
  **info** dc convergence successful at Newton-Raphson method 
  ******  
- ************************* hspice BKA modeling ***********************
+ ************************* hspice bka modeling ***********************
 
  ****** operating point information tnom=  25.000 temp=  25.000 ******
  ****** operating point status is voltage   simulation time is     0.     
-     node    =voltage       node    =voltage       node    =voltage
+      node    =voltage        node    =voltage        node    =voltage
 
- + 0:a0      =   1.0000   0:a1      =   1.0000   0:a2      =   1.0000 
- + 0:a3      =   1.0000   0:a4      =   1.0000   0:a5      =   1.0000 
- + 0:a6      =   1.0000   0:a7      =   1.0000   0:b0      =   0.     
- + 0:b1      =   0.       0:b2      =   0.       0:b3      =   0.     
- + 0:b4      =   0.       0:b5      =   0.       0:b6      =   0.     
- + 0:b7      =   0.       0:cin     =   0.       0:cout    =   2.3015u
- + 0:s0      = 999.9957m  0:s1      = 999.9957m  0:s2      = 999.9957m
- + 0:s3      = 999.9957m  0:s4      = 999.9957m  0:s5      = 999.9957m
- + 0:s6      = 999.9957m  0:s7      = 999.9957m  0:vdd     =   1.0000 
- + 0:vss     =   0.       1:cmid    =  10.4127u  2:cmid    =  10.4127u
- + 3:cmid    =  10.4127u  4:cmid    =  10.4127u  5:cmid    =  10.4127u
- + 6:cmid    =  10.4127u  7:cmid    =  10.4127u  8:a_bar   =   6.4423u
- + 8:c_bar   = 999.9787m  8:cout_bar= 999.9682m  8:p       = 999.9861m
- + 8:p_bar   =   4.2107u  8:s_bar   =   5.3851u  9:a_bar   =   6.4423u
- + 9:c_bar   = 999.9787m  9:cout_bar= 999.9682m  9:p       = 999.9861m
- + 9:p_bar   =   4.2107u  9:s_bar   =  15.7972u 10:a_bar   =   6.4423u
- +10:c_bar   = 999.9787m 10:cout_bar= 999.9682m 10:p       = 999.9861m
- +10:p_bar   =   4.2107u 10:s_bar   =  15.7972u 11:a_bar   =   6.4423u
- +11:c_bar   = 999.9787m 11:cout_bar= 999.9682m 11:p       = 999.9861m
- +11:p_bar   =   4.2107u 11:s_bar   =  15.7972u 12:a_bar   =   6.4423u
- +12:c_bar   = 999.9787m 12:cout_bar= 999.9682m 12:p       = 999.9861m
- +12:p_bar   =   4.2107u 12:s_bar   =  15.7972u 13:a_bar   =   6.4423u
- +13:c_bar   = 999.9787m 13:cout_bar= 999.9682m 13:p       = 999.9861m
- +13:p_bar   =   4.2107u 13:s_bar   =  15.7972u 14:a_bar   =   6.4423u
- +14:c_bar   = 999.9787m 14:cout_bar= 999.9682m 14:p       = 999.9861m
- +14:p_bar   =   4.2107u 14:s_bar   =  15.7972u 15:a_bar   =   6.4423u
- +15:c_bar   = 999.9787m 15:cout_bar= 999.9682m 15:p       = 999.9861m
- +15:p_bar   =   4.2107u 15:s_bar   =  15.7972u
+ +  0:a1      =   1.0000    0:a2      =   1.0000    0:a3      =   1.0000 
+ +  0:a4      =   1.0000    0:a5      =   1.0000    0:a6      =   1.0000 
+ +  0:a7      =   1.0000    0:a8      =   1.0000    0:b1      =   0.     
+ +  0:b2      =   0.        0:b3      =   0.        0:b4      =   0.     
+ +  0:b5      =   0.        0:b6      =   0.        0:b7      =   0.     
+ +  0:b8      =   0.        0:cin     =   0.        0:cout    =   2.3010u
+ +  0:s1      = 999.9837m   0:s2      = 999.9837m   0:s3      = 999.9837m
+ +  0:s4      = 999.9837m   0:s5      = 999.9837m   0:s6      = 999.9837m
+ +  0:s7      = 999.9837m   0:s8      = 999.9837m   0:vdd     =   1.0000 
+ +  0:vss     =   0.        1:c0      =   0.        1:c1      =  11.1584u
+ +  1:c2      =   7.5219u   1:c3      =  12.9766u   1:c4      =   7.5219u
+ +  1:c5      =   9.3401u   1:c6      =   7.5219u   1:c7      =   9.3401u
+ +  1:g0      =   0.        1:g1      =   5.7035u   1:g2      =   7.5218u
+ +  1:g3      =   5.7035u   1:g4      =   7.5218u   1:g5      =   5.7035u
+ +  1:g6      =   7.5218u   1:g7      =   5.7035u   1:g8      =   5.7035u
+ +  1:p0      =   0.        1:p1      = 999.9802m   1:p2      = 999.9725m
+ +  1:p3      = 999.9725m   1:p4      = 999.9725m   1:p5      = 999.9725m
+ +  1:p6      = 999.9725m   1:p7      = 999.9725m   1:p8      = 999.9802m
+ +  3:g10     =  11.1584u   3:g20     =   7.5219u   3:g30     =  12.9766u
+ +  3:g32     =   5.7037u   3:g40     =   7.5219u   3:g50     =   9.3401u
+ +  3:g54     =   7.5220u   3:g60     =   7.5219u   3:g70     =   9.3401u
+ +  3:g74     =   5.7037u   3:g76     =   5.7037u   3:g80     =   2.3010u
+ +  3:p32     = 999.9957m   3:p54     = 999.9877m   3:p74     = 999.9957m
+ +  3:p76     = 999.9877m   4:in1_bar =   5.8755u   4:in2_bar = 999.9882m
+ +  4:x1      = 853.5852m   4:x2      =   2.2780u   4:y1      = 999.9918m
+ +  4:y2      = 999.9903m   5:in1_bar =   5.8758u   5:in2_bar = 999.9882m
+ +  5:x1      = 853.5705m   5:x2      =   2.2780u   5:y1      = 999.9918m
+ +  5:y2      = 999.9903m   6:in1_bar =   5.8758u   6:in2_bar = 999.9882m
+ +  6:x1      = 853.5732m   6:x2      =   2.2780u   6:y1      = 999.9918m
+ +  6:y2      = 999.9903m   7:in1_bar =   5.8758u   7:in2_bar = 999.9882m
+ +  7:x1      = 853.5691m   7:x2      =   2.2780u   7:y1      = 999.9918m
+ +  7:y2      = 999.9903m   8:in1_bar =   5.8758u   8:in2_bar = 999.9882m
+ +  8:x1      = 853.5732m   8:x2      =   2.2780u   8:y1      = 999.9918m
+ +  8:y2      = 999.9903m   9:in1_bar =   5.8758u   9:in2_bar = 999.9882m
+ +  9:x1      = 853.5718m   9:x2      =   2.2780u   9:y1      = 999.9918m
+ +  9:y2      = 999.9903m  10:in1_bar =   5.8758u  10:in2_bar = 999.9882m
+ + 10:x1      = 853.5732m  10:x2      =   2.2780u  10:y1      = 999.9918m
+ + 10:y2      = 999.9903m  11:in1_bar =   5.8755u  11:in2_bar = 999.9882m
+ + 11:x1      = 853.5782m  11:x2      =   2.2780u  11:y1      = 999.9918m
+ + 11:y2      = 999.9903m  20:mid     =   5.7034u  24:mid     =   5.7034u
+ + 26:mid     =   5.7034u  27:mid     =   5.7034u  28:mid     =   5.7034u
+ + 29:mid     =   5.7034u  30:mid     =   5.7034u  31:mid     =   5.7034u
+ + 48:out_bar = 999.9892m  49:in1_bar =   5.7645u  49:in2_bar = 999.9957m
+ + 49:x       = 853.5975m  49:yl      = 999.9886m  49:yr      = 999.9901m
+ + 50:out_bar = 999.9892m  51:in1_bar =   5.7645u  51:in2_bar = 999.9957m
+ + 51:x       = 853.5971m  51:yl      = 999.9848m  51:yr      = 999.9863m
+ + 52:out_bar = 999.9892m  53:in1_bar =   5.7645u  53:in2_bar = 999.9957m
+ + 53:x       = 853.5971m  53:yl      = 999.9848m  53:yr      = 999.9863m
+ + 54:out_bar = 999.9892m  55:in1_bar =   5.7645u  55:in2_bar = 999.9957m
+ + 55:x       = 853.5971m  55:yl      = 999.9848m  55:yr      = 999.9863m
+ + 56:out_bar = 999.9892m  57:in1_bar =   5.7645u  57:in2_bar = 999.9957m
+ + 57:x       = 853.5971m  57:yl      = 999.9848m  57:yr      = 999.9863m
+ + 58:out_bar = 999.9892m  59:in1_bar =   5.7645u  59:in2_bar = 999.9957m
+ + 59:x       = 853.5971m  59:yl      = 999.9848m  59:yr      = 999.9863m
+ + 60:out_bar = 999.9892m  61:in1_bar =   5.7645u  61:in2_bar = 999.9957m
+ + 61:x       = 853.5971m  61:yl      = 999.9848m  61:yr      = 999.9863m
+ + 62:out_bar = 999.9892m  63:in1_bar =   5.7645u  63:in2_bar = 999.9957m
+ + 63:x       = 853.5975m  63:yl      = 999.9886m  63:yr      = 999.9901m
+ + 64:out_bar = 999.9892m  65:out_bar = 999.9846m  66:mid     =   5.7034u
+ + 67:out_bar =   8.2315u  68:mid     =   5.7034u  69:out_bar =   8.2315u
+ + 70:mid     =   5.7034u  71:out_bar =   8.2315u  72:out_bar = 999.9892m
+ + 73:out_bar = 999.9846m  74:mid     =   5.7034u  75:out_bar =   8.2307u
+ + 76:out_bar = 999.9892m  77:out_bar = 999.9846m  78:out_bar = 999.9892m
+ + 79:out_bar = 999.9846m  80:out_bar = 999.9892m  81:out_bar = 999.9846m
+ + 82:out_bar = 999.9892m  83:out_bar = 999.9846m  84:out_bar = 999.9892m
+ + 85:out_bar = 999.9846m  86:out_bar = 999.9892m  87:out_bar = 999.9846m
+ + 89:x       = 853.6019m  93:x       = 853.6019m  97:x       = 853.6019m
+ +101:x       = 853.6019m 105:x       = 853.6019m 109:x       = 853.6019m
+ +113:x       = 853.6019m 117:x       = 853.6019m 121:x       = 853.5854m
+ +123:x       = 999.9908m 124:out_bar = 999.9892m 125:out_bar = 999.9846m
+ +127:x       =   5.0799u 128:out_bar = 999.9892m 129:out_bar = 999.9846m
+ +131:x       =   5.0799u 132:out_bar = 999.9892m 133:out_bar = 999.9846m
+ +135:x       =   5.0799u 137:x       = 853.5900m 139:x       = 999.9908m
+ +140:out_bar = 999.9892m 141:out_bar = 999.9846m 143:x       =   5.0795u
+ +145:x       = 853.5886m 147:x       = 999.9908m 149:x       = 853.5820m
+ +151:x       = 999.9908m 153:x       = 853.5708m 155:x       = 999.9908m
+ +157:x       = 853.5694m 159:x       = 999.9908m 161:x       = 853.5721m
+ +163:x       = 999.9908m 165:x       = 853.5785m 167:x       = 999.9908m
+ +169:x       = 853.5735m 171:x       = 999.9908m 173:x       = 853.5735m
+ +175:x       = 999.9908m 177:x       = 853.5735m 179:x       = 999.9908m
+ +181:x       = 853.5861m 183:x       = 999.9908m
 
  ******
- ************************* hspice BKA modeling ***********************
+ ************************* hspice bka modeling ***********************
 
  ****** transient analysis tnom=  25.000 temp=  25.000 ******
- tp_s7_fall= 930.7167p  targ=   2.4557n   trig=   1.5250n
- tp_cout_rise= 977.3346p  targ=   2.5023n   trig=   1.5250n
- tp_s7_rise= 924.5018p  targ=   3.9495n   trig=   3.0250n
- tp_cout_fall= 978.3911p  targ=   4.0034n   trig=   3.0250n
- tp_max= 978.3911p
- tp_avg= 952.7361p
- p_avg= 129.1096u  from=   0.             to=   8.5000n
- p_max=   4.4847m    at=   7.5500n
-             from=   0.            to=   8.5000n
- pdp= 126.3197f
- i_avg=-110.1127u  from=   0.             to=   8.5000n
- i_peak=  -1.6915m    at=   6.1153n
+ tp_s8_fall= 580.2624p  targ=   2.1053n   trig=   1.5250n
+ tp_cout_rise= 661.2894p  targ=   2.1863n   trig=   1.5250n
+ tp_s8_rise= 584.1859p  targ=   3.6092n   trig=   3.0250n
+ tp_cout_fall= 668.4656p  targ=   3.6935n   trig=   3.0250n
+ tp_max= 668.4656p
+ tp_s8= 582.2242p
+ tp_cout= 664.8775p
+ tp_avg= 623.5508p
+ p_avg= 306.0731u  from=   0.             to=   8.5000n
+ p_max=   4.7789m    at=   6.0466n
              from=   0.            to=   8.5000n
  **info** dc convergence successful at Newton-Raphson method 
  ******  
- ************************* hspice BKA modeling ***********************
+ ************************* hspice bka modeling ***********************
 
  ****** operating point information tnom=  25.000 temp=  30.000 ******
  ****** operating point status is voltage   simulation time is     0.     
-     node    =voltage       node    =voltage       node    =voltage
+      node    =voltage        node    =voltage        node    =voltage
 
- + 0:a0      =   1.0000   0:a1      =   1.0000   0:a2      =   1.0000 
- + 0:a3      =   1.0000   0:a4      =   1.0000   0:a5      =   1.0000 
- + 0:a6      =   1.0000   0:a7      =   1.0000   0:b0      =   0.     
- + 0:b1      =   0.       0:b2      =   0.       0:b3      =   0.     
- + 0:b4      =   0.       0:b5      =   0.       0:b6      =   0.     
- + 0:b7      =   0.       0:cin     =   0.       0:cout    =   2.6096u
- + 0:s0      = 999.9950m  0:s1      = 999.9950m  0:s2      = 999.9950m
- + 0:s3      = 999.9950m  0:s4      = 999.9950m  0:s5      = 999.9950m
- + 0:s6      = 999.9950m  0:s7      = 999.9950m  0:vdd     =   1.0000 
- + 0:vss     =   0.       1:cmid    =  11.4674u  2:cmid    =  11.4674u
- + 3:cmid    =  11.4674u  4:cmid    =  11.4674u  5:cmid    =  11.4674u
- + 6:cmid    =  11.4674u  7:cmid    =  11.4674u  8:a_bar   =   7.7038u
- + 8:c_bar   = 999.9757m  8:cout_bar= 999.9639m  8:p       = 999.9843m
- + 8:p_bar   =   4.6122u  8:s_bar   =   6.0670u  9:a_bar   =   7.7038u
- + 9:c_bar   = 999.9757m  9:cout_bar= 999.9639m  9:p       = 999.9843m
- + 9:p_bar   =   4.6122u  9:s_bar   =  17.5337u 10:a_bar   =   7.7038u
- +10:c_bar   = 999.9757m 10:cout_bar= 999.9639m 10:p       = 999.9843m
- +10:p_bar   =   4.6122u 10:s_bar   =  17.5337u 11:a_bar   =   7.7038u
- +11:c_bar   = 999.9757m 11:cout_bar= 999.9639m 11:p       = 999.9843m
- +11:p_bar   =   4.6122u 11:s_bar   =  17.5337u 12:a_bar   =   7.7038u
- +12:c_bar   = 999.9757m 12:cout_bar= 999.9639m 12:p       = 999.9843m
- +12:p_bar   =   4.6122u 12:s_bar   =  17.5337u 13:a_bar   =   7.7038u
- +13:c_bar   = 999.9757m 13:cout_bar= 999.9639m 13:p       = 999.9843m
- +13:p_bar   =   4.6122u 13:s_bar   =  17.5337u 14:a_bar   =   7.7038u
- +14:c_bar   = 999.9757m 14:cout_bar= 999.9639m 14:p       = 999.9843m
- +14:p_bar   =   4.6122u 14:s_bar   =  17.5337u 15:a_bar   =   7.7038u
- +15:c_bar   = 999.9757m 15:cout_bar= 999.9639m 15:p       = 999.9843m
- +15:p_bar   =   4.6122u 15:s_bar   =  17.5337u
+ +  0:a1      =   1.0000    0:a2      =   1.0000    0:a3      =   1.0000 
+ +  0:a4      =   1.0000    0:a5      =   1.0000    0:a6      =   1.0000 
+ +  0:a7      =   1.0000    0:a8      =   1.0000    0:b1      =   0.     
+ +  0:b2      =   0.        0:b3      =   0.        0:b4      =   0.     
+ +  0:b5      =   0.        0:b6      =   0.        0:b7      =   0.     
+ +  0:b8      =   0.        0:cin     =   0.        0:cout    =   2.6089u
+ +  0:s1      = 999.9812m   0:s2      = 999.9812m   0:s3      = 999.9812m
+ +  0:s4      = 999.9812m   0:s5      = 999.9812m   0:s6      = 999.9812m
+ +  0:s7      = 999.9812m   0:s8      = 999.9812m   0:vdd     =   1.0000 
+ +  0:vss     =   0.        1:c0      =   0.        1:c1      =  11.6675u
+ +  1:c2      =   7.9490u   1:c3      =  13.5268u   1:c4      =   7.9490u
+ +  1:c5      =   9.8083u   1:c6      =   7.9490u   1:c7      =   9.8083u
+ +  1:g0      =   0.        1:g1      =   6.0897u   1:g2      =   7.9489u
+ +  1:g3      =   6.0897u   1:g4      =   7.9489u   1:g5      =   6.0897u
+ +  1:g6      =   7.9489u   1:g7      =   6.0897u   1:g8      =   6.0897u
+ +  1:p0      =   0.        1:p1      = 999.9778m   1:p2      = 999.9700m
+ +  1:p3      = 999.9700m   1:p4      = 999.9700m   1:p5      = 999.9700m
+ +  1:p6      = 999.9700m   1:p7      = 999.9700m   1:p8      = 999.9778m
+ +  3:g10     =  11.6675u   3:g20     =   7.9490u   3:g30     =  13.5268u
+ +  3:g32     =   6.0899u   3:g40     =   7.9490u   3:g50     =   9.8083u
+ +  3:g54     =   7.9492u   3:g60     =   7.9490u   3:g70     =   9.8083u
+ +  3:g74     =   6.0899u   3:g76     =   6.0899u   3:g80     =   2.6089u
+ +  3:p32     = 999.9950m   3:p54     = 999.9869m   3:p74     = 999.9950m
+ +  3:p76     = 999.9869m   4:in1_bar =   6.2646u   4:in2_bar = 999.9875m
+ +  4:x1      = 853.3099m   4:x2      =   2.6362u   4:y1      = 999.9906m
+ +  4:y2      = 999.9891m   5:in1_bar =   6.2650u   5:in2_bar = 999.9875m
+ +  5:x1      = 853.2945m   5:x2      =   2.6362u   5:y1      = 999.9906m
+ +  5:y2      = 999.9891m   6:in1_bar =   6.2650u   6:in2_bar = 999.9875m
+ +  6:x1      = 853.2974m   6:x2      =   2.6362u   6:y1      = 999.9906m
+ +  6:y2      = 999.9891m   7:in1_bar =   6.2650u   7:in2_bar = 999.9875m
+ +  7:x1      = 853.2931m   7:x2      =   2.6362u   7:y1      = 999.9906m
+ +  7:y2      = 999.9891m   8:in1_bar =   6.2650u   8:in2_bar = 999.9875m
+ +  8:x1      = 853.2974m   8:x2      =   2.6362u   8:y1      = 999.9906m
+ +  8:y2      = 999.9891m   9:in1_bar =   6.2650u   9:in2_bar = 999.9875m
+ +  9:x1      = 853.2960m   9:x2      =   2.6362u   9:y1      = 999.9906m
+ +  9:y2      = 999.9891m  10:in1_bar =   6.2650u  10:in2_bar = 999.9875m
+ + 10:x1      = 853.2974m  10:x2      =   2.6362u  10:y1      = 999.9906m
+ + 10:y2      = 999.9891m  11:in1_bar =   6.2646u  11:in2_bar = 999.9875m
+ + 11:x1      = 853.3024m  11:x2      =   2.6362u  11:y1      = 999.9906m
+ + 11:y2      = 999.9891m  20:mid     =   6.0896u  24:mid     =   6.0896u
+ + 26:mid     =   6.0896u  27:mid     =   6.0896u  28:mid     =   6.0896u
+ + 29:mid     =   6.0896u  30:mid     =   6.0896u  31:mid     =   6.0896u
+ + 48:out_bar = 999.9879m  49:in1_bar =   6.1514u  49:in2_bar = 999.9950m
+ + 49:x       = 853.3238m  49:yl      = 999.9874m  49:yr      = 999.9889m
+ + 50:out_bar = 999.9879m  51:in1_bar =   6.1514u  51:in2_bar = 999.9950m
+ + 51:x       = 853.3234m  51:yl      = 999.9835m  51:yr      = 999.9850m
+ + 52:out_bar = 999.9879m  53:in1_bar =   6.1514u  53:in2_bar = 999.9950m
+ + 53:x       = 853.3234m  53:yl      = 999.9835m  53:yr      = 999.9850m
+ + 54:out_bar = 999.9879m  55:in1_bar =   6.1514u  55:in2_bar = 999.9950m
+ + 55:x       = 853.3234m  55:yl      = 999.9835m  55:yr      = 999.9850m
+ + 56:out_bar = 999.9879m  57:in1_bar =   6.1514u  57:in2_bar = 999.9950m
+ + 57:x       = 853.3234m  57:yl      = 999.9835m  57:yr      = 999.9850m
+ + 58:out_bar = 999.9879m  59:in1_bar =   6.1514u  59:in2_bar = 999.9950m
+ + 59:x       = 853.3234m  59:yl      = 999.9835m  59:yr      = 999.9850m
+ + 60:out_bar = 999.9879m  61:in1_bar =   6.1514u  61:in2_bar = 999.9950m
+ + 61:x       = 853.3234m  61:yl      = 999.9835m  61:yr      = 999.9850m
+ + 62:out_bar = 999.9879m  63:in1_bar =   6.1514u  63:in2_bar = 999.9950m
+ + 63:x       = 853.3238m  63:yl      = 999.9874m  63:yr      = 999.9889m
+ + 64:out_bar = 999.9879m  65:out_bar = 999.9832m  66:mid     =   6.0896u
+ + 67:out_bar =   8.9262u  68:mid     =   6.0896u  69:out_bar =   8.9262u
+ + 70:mid     =   6.0896u  71:out_bar =   8.9262u  72:out_bar = 999.9879m
+ + 73:out_bar = 999.9832m  74:mid     =   6.0896u  75:out_bar =   8.9250u
+ + 76:out_bar = 999.9879m  77:out_bar = 999.9832m  78:out_bar = 999.9879m
+ + 79:out_bar = 999.9832m  80:out_bar = 999.9879m  81:out_bar = 999.9832m
+ + 82:out_bar = 999.9879m  83:out_bar = 999.9832m  84:out_bar = 999.9879m
+ + 85:out_bar = 999.9832m  86:out_bar = 999.9879m  87:out_bar = 999.9832m
+ + 89:x       = 853.3287m  93:x       = 853.3287m  97:x       = 853.3287m
+ +101:x       = 853.3287m 105:x       = 853.3287m 109:x       = 853.3287m
+ +113:x       = 853.3287m 117:x       = 853.3287m 121:x       = 853.3102m
+ +123:x       = 999.9901m 124:out_bar = 999.9879m 125:out_bar = 999.9832m
+ +127:x       =   5.4512u 128:out_bar = 999.9879m 129:out_bar = 999.9832m
+ +131:x       =   5.4512u 132:out_bar = 999.9879m 133:out_bar = 999.9832m
+ +135:x       =   5.4512u 137:x       = 853.3157m 139:x       = 999.9901m
+ +140:out_bar = 999.9879m 141:out_bar = 999.9832m 143:x       =   5.4507u
+ +145:x       = 853.3143m 147:x       = 999.9901m 149:x       = 853.3076m
+ +151:x       = 999.9901m 153:x       = 853.2949m 155:x       = 999.9901m
+ +157:x       = 853.2935m 159:x       = 999.9901m 161:x       = 853.2963m
+ +163:x       = 999.9901m 165:x       = 853.3028m 167:x       = 999.9901m
+ +169:x       = 853.2977m 171:x       = 999.9901m 173:x       = 853.2977m
+ +175:x       = 999.9901m 177:x       = 853.2977m 179:x       = 999.9901m
+ +181:x       = 853.3118m 183:x       = 999.9901m
 
  ******
- ************************* hspice BKA modeling ***********************
+ ************************* hspice bka modeling ***********************
 
  ****** transient analysis tnom=  25.000 temp=  30.000 ******
- tp_s7_fall= 939.6474p  targ=   2.4646n   trig=   1.5250n
- tp_cout_rise= 986.8554p  targ=   2.5119n   trig=   1.5250n
- tp_s7_rise= 932.9229p  targ=   3.9579n   trig=   3.0250n
- tp_cout_fall= 987.2138p  targ=   4.0122n   trig=   3.0250n
- tp_max= 987.2138p
- tp_avg= 961.6599p
- p_avg= 129.8797u  from=   0.             to=   8.5000n
- p_max=   4.4701m    at=   7.5500n
-             from=   0.            to=   8.5000n
- pdp= 128.2190f
- i_avg=-110.7787u  from=   0.             to=   8.5000n
- i_peak=  -1.6901m    at=   6.1152n
+ tp_s8_fall= 584.9179p  targ=   2.1099n   trig=   1.5250n
+ tp_cout_rise= 666.5876p  targ=   2.1916n   trig=   1.5250n
+ tp_s8_rise= 589.4607p  targ=   3.6145n   trig=   3.0250n
+ tp_cout_fall= 674.4893p  targ=   3.6995n   trig=   3.0250n
+ tp_max= 674.4893p
+ tp_s8= 587.1893p
+ tp_cout= 670.5384p
+ tp_avg= 628.8639p
+ p_avg= 307.6952u  from=   0.             to=   8.5000n
+ p_max=   4.7554m    at=   6.0472n
              from=   0.            to=   8.5000n
  **info** dc convergence successful at Newton-Raphson method 
  ******  
- ************************* hspice BKA modeling ***********************
+ ************************* hspice bka modeling ***********************
 
  ****** operating point information tnom=  25.000 temp=  35.000 ******
  ****** operating point status is voltage   simulation time is     0.     
-     node    =voltage       node    =voltage       node    =voltage
+      node    =voltage        node    =voltage        node    =voltage
 
- + 0:a0      =   1.0000   0:a1      =   1.0000   0:a2      =   1.0000 
- + 0:a3      =   1.0000   0:a4      =   1.0000   0:a5      =   1.0000 
- + 0:a6      =   1.0000   0:a7      =   1.0000   0:b0      =   0.     
- + 0:b1      =   0.       0:b2      =   0.       0:b3      =   0.     
- + 0:b4      =   0.       0:b5      =   0.       0:b6      =   0.     
- + 0:b7      =   0.       0:cin     =   0.       0:cout    =   2.9794u
- + 0:s0      = 999.9942m  0:s1      = 999.9942m  0:s2      = 999.9942m
- + 0:s3      = 999.9942m  0:s4      = 999.9942m  0:s5      = 999.9942m
- + 0:s6      = 999.9942m  0:s7      = 999.9942m  0:vdd     =   1.0000 
- + 0:vss     =   0.       1:cmid    =  12.7161u  2:cmid    =  12.7161u
- + 3:cmid    =  12.7161u  4:cmid    =  12.7161u  5:cmid    =  12.7161u
- + 6:cmid    =  12.7161u  7:cmid    =  12.7161u  8:a_bar   =   9.2259u
- + 8:c_bar   = 999.9721m  8:cout_bar= 999.9588m  8:p       = 999.9821m
- + 8:p_bar   =   5.0842u  8:s_bar   =   6.8803u  9:a_bar   =   9.2259u
- + 9:c_bar   = 999.9721m  9:cout_bar= 999.9588m  9:p       = 999.9821m
- + 9:p_bar   =   5.0842u  9:s_bar   =  19.5953u 10:a_bar   =   9.2259u
- +10:c_bar   = 999.9721m 10:cout_bar= 999.9588m 10:p       = 999.9821m
- +10:p_bar   =   5.0842u 10:s_bar   =  19.5953u 11:a_bar   =   9.2259u
- +11:c_bar   = 999.9721m 11:cout_bar= 999.9588m 11:p       = 999.9821m
- +11:p_bar   =   5.0842u 11:s_bar   =  19.5953u 12:a_bar   =   9.2259u
- +12:c_bar   = 999.9721m 12:cout_bar= 999.9588m 12:p       = 999.9821m
- +12:p_bar   =   5.0842u 12:s_bar   =  19.5953u 13:a_bar   =   9.2259u
- +13:c_bar   = 999.9721m 13:cout_bar= 999.9588m 13:p       = 999.9821m
- +13:p_bar   =   5.0842u 13:s_bar   =  19.5953u 14:a_bar   =   9.2259u
- +14:c_bar   = 999.9721m 14:cout_bar= 999.9588m 14:p       = 999.9821m
- +14:p_bar   =   5.0842u 14:s_bar   =  19.5953u 15:a_bar   =   9.2259u
- +15:c_bar   = 999.9721m 15:cout_bar= 999.9588m 15:p       = 999.9821m
- +15:p_bar   =   5.0842u 15:s_bar   =  19.5953u
+ +  0:a1      =   1.0000    0:a2      =   1.0000    0:a3      =   1.0000 
+ +  0:a4      =   1.0000    0:a5      =   1.0000    0:a6      =   1.0000 
+ +  0:a7      =   1.0000    0:a8      =   1.0000    0:b1      =   0.     
+ +  0:b2      =   0.        0:b3      =   0.        0:b4      =   0.     
+ +  0:b5      =   0.        0:b6      =   0.        0:b7      =   0.     
+ +  0:b8      =   0.        0:cin     =   0.        0:cout    =   2.9783u
+ +  0:s1      = 999.9783m   0:s2      = 999.9783m   0:s3      = 999.9783m
+ +  0:s4      = 999.9783m   0:s5      = 999.9783m   0:s6      = 999.9783m
+ +  0:s7      = 999.9783m   0:s8      = 999.9783m   0:vdd     =   1.0000 
+ +  0:vss     =   0.        1:c0      =   0.        1:c1      =  12.2414u
+ +  1:c2      =   8.4397u   1:c3      =  14.1423u   1:c4      =   8.4397u
+ +  1:c5      =  10.3406u   1:c6      =   8.4397u   1:c7      =  10.3406u
+ +  1:g0      =   0.        1:g1      =   6.5386u   1:g2      =   8.4395u
+ +  1:g3      =   6.5386u   1:g4      =   8.4395u   1:g5      =   6.5386u
+ +  1:g6      =   8.4395u   1:g7      =   6.5386u   1:g8      =   6.5386u
+ +  1:p0      =   0.        1:p1      = 999.9749m   1:p2      = 999.9670m
+ +  1:p3      = 999.9670m   1:p4      = 999.9670m   1:p5      = 999.9670m
+ +  1:p6      = 999.9670m   1:p7      = 999.9670m   1:p8      = 999.9749m
+ +  3:g10     =  12.2414u   3:g20     =   8.4397u   3:g30     =  14.1423u
+ +  3:g32     =   6.5389u   3:g40     =   8.4397u   3:g50     =  10.3406u
+ +  3:g54     =   8.4398u   3:g60     =   8.4397u   3:g70     =  10.3406u
+ +  3:g74     =   6.5389u   3:g76     =   6.5389u   3:g80     =   2.9783u
+ +  3:p32     = 999.9942m   3:p54     = 999.9860m   3:p74     = 999.9942m
+ +  3:p76     = 999.9860m   4:in1_bar =   6.7166u   4:in2_bar = 999.9866m
+ +  4:x1      = 852.9626m   4:x2      =   3.0649u   4:y1      = 999.9892m
+ +  4:y2      = 999.9876m   5:in1_bar =   6.7170u   5:in2_bar = 999.9866m
+ +  5:x1      = 852.9466m   5:x2      =   3.0649u   5:y1      = 999.9892m
+ +  5:y2      = 999.9876m   6:in1_bar =   6.7170u   6:in2_bar = 999.9866m
+ +  6:x1      = 852.9496m   6:x2      =   3.0649u   6:y1      = 999.9892m
+ +  6:y2      = 999.9876m   7:in1_bar =   6.7170u   7:in2_bar = 999.9866m
+ +  7:x1      = 852.9452m   7:x2      =   3.0649u   7:y1      = 999.9892m
+ +  7:y2      = 999.9876m   8:in1_bar =   6.7170u   8:in2_bar = 999.9866m
+ +  8:x1      = 852.9496m   8:x2      =   3.0649u   8:y1      = 999.9892m
+ +  8:y2      = 999.9876m   9:in1_bar =   6.7170u   9:in2_bar = 999.9866m
+ +  9:x1      = 852.9481m   9:x2      =   3.0649u   9:y1      = 999.9892m
+ +  9:y2      = 999.9876m  10:in1_bar =   6.7170u  10:in2_bar = 999.9866m
+ + 10:x1      = 852.9496m  10:x2      =   3.0649u  10:y1      = 999.9892m
+ + 10:y2      = 999.9876m  11:in1_bar =   6.7166u  11:in2_bar = 999.9866m
+ + 11:x1      = 852.9547m  11:x2      =   3.0649u  11:y1      = 999.9892m
+ + 11:y2      = 999.9876m  20:mid     =   6.5385u  24:mid     =   6.5385u
+ + 26:mid     =   6.5385u  27:mid     =   6.5385u  28:mid     =   6.5385u
+ + 29:mid     =   6.5385u  30:mid     =   6.5385u  31:mid     =   6.5385u
+ + 48:out_bar = 999.9864m  49:in1_bar =   6.6009u  49:in2_bar = 999.9942m
+ + 49:x       = 852.9784m  49:yl      = 999.9859m  49:yr      = 999.9875m
+ + 50:out_bar = 999.9864m  51:in1_bar =   6.6009u  51:in2_bar = 999.9942m
+ + 51:x       = 852.9780m  51:yl      = 999.9820m  51:yr      = 999.9835m
+ + 52:out_bar = 999.9864m  53:in1_bar =   6.6009u  53:in2_bar = 999.9942m
+ + 53:x       = 852.9780m  53:yl      = 999.9820m  53:yr      = 999.9835m
+ + 54:out_bar = 999.9864m  55:in1_bar =   6.6009u  55:in2_bar = 999.9942m
+ + 55:x       = 852.9780m  55:yl      = 999.9820m  55:yr      = 999.9835m
+ + 56:out_bar = 999.9864m  57:in1_bar =   6.6009u  57:in2_bar = 999.9942m
+ + 57:x       = 852.9780m  57:yl      = 999.9820m  57:yr      = 999.9835m
+ + 58:out_bar = 999.9864m  59:in1_bar =   6.6009u  59:in2_bar = 999.9942m
+ + 59:x       = 852.9780m  59:yl      = 999.9820m  59:yr      = 999.9835m
+ + 60:out_bar = 999.9864m  61:in1_bar =   6.6009u  61:in2_bar = 999.9942m
+ + 61:x       = 852.9780m  61:yl      = 999.9820m  61:yr      = 999.9835m
+ + 62:out_bar = 999.9864m  63:in1_bar =   6.6009u  63:in2_bar = 999.9942m
+ + 63:x       = 852.9784m  63:yl      = 999.9859m  63:yr      = 999.9875m
+ + 64:out_bar = 999.9864m  65:out_bar = 999.9816m  66:mid     =   6.5385u
+ + 67:out_bar =   9.7434u  68:mid     =   6.5385u  69:out_bar =   9.7434u
+ + 70:mid     =   6.5385u  71:out_bar =   9.7434u  72:out_bar = 999.9864m
+ + 73:out_bar = 999.9816m  74:mid     =   6.5385u  75:out_bar =   9.7417u
+ + 76:out_bar = 999.9864m  77:out_bar = 999.9816m  78:out_bar = 999.9864m
+ + 79:out_bar = 999.9816m  80:out_bar = 999.9864m  81:out_bar = 999.9816m
+ + 82:out_bar = 999.9864m  83:out_bar = 999.9816m  84:out_bar = 999.9864m
+ + 85:out_bar = 999.9816m  86:out_bar = 999.9864m  87:out_bar = 999.9816m
+ + 89:x       = 852.9839m  93:x       = 852.9839m  97:x       = 852.9839m
+ +101:x       = 852.9839m 105:x       = 852.9839m 109:x       = 852.9839m
+ +113:x       = 852.9839m 117:x       = 852.9839m 121:x       = 852.9630m
+ +123:x       = 999.9893m 124:out_bar = 999.9864m 125:out_bar = 999.9816m
+ +127:x       =   5.8842u 128:out_bar = 999.9864m 129:out_bar = 999.9816m
+ +131:x       =   5.8842u 132:out_bar = 999.9864m 133:out_bar = 999.9816m
+ +135:x       =   5.8842u 137:x       = 852.9697m 139:x       = 999.9893m
+ +140:out_bar = 999.9864m 141:out_bar = 999.9816m 143:x       =   5.8835u
+ +145:x       = 852.9682m 147:x       = 999.9893m 149:x       = 852.9614m
+ +151:x       = 999.9893m 153:x       = 852.9470m 155:x       = 999.9893m
+ +157:x       = 852.9456m 159:x       = 999.9893m 161:x       = 852.9485m
+ +163:x       = 999.9893m 165:x       = 852.9551m 167:x       = 999.9893m
+ +169:x       = 852.9500m 171:x       = 999.9893m 173:x       = 852.9500m
+ +175:x       = 999.9893m 177:x       = 852.9500m 179:x       = 999.9893m
+ +181:x       = 852.9658m 183:x       = 999.9893m
 
  ******
- ************************* hspice BKA modeling ***********************
+ ************************* hspice bka modeling ***********************
 
  ****** transient analysis tnom=  25.000 temp=  35.000 ******
- tp_s7_fall= 948.5908p  targ=   2.4736n   trig=   1.5250n
- tp_cout_rise= 996.3896p  targ=   2.5214n   trig=   1.5250n
- tp_s7_rise= 941.3001p  targ=   3.9663n   trig=   3.0250n
- tp_cout_fall= 995.9832p  targ=   4.0210n   trig=   3.0250n
- tp_max= 996.3896p
- tp_avg= 970.5659p
- p_avg= 130.6543u  from=   0.             to=   8.5000n
- p_max=   4.4570m    at=   7.5500n
-             from=   0.            to=   8.5000n
- pdp= 130.1826f
- i_avg=-111.4319u  from=   0.             to=   8.5000n
- i_peak=  -1.6895m    at=   6.1154n
+ tp_s8_fall= 589.5639p  targ=   2.1146n   trig=   1.5250n
+ tp_cout_rise= 671.8799p  targ=   2.1969n   trig=   1.5250n
+ tp_s8_rise= 594.7080p  targ=   3.6197n   trig=   3.0250n
+ tp_cout_fall= 680.4983p  targ=   3.7055n   trig=   3.0250n
+ tp_max= 680.4983p
+ tp_s8= 592.1360p
+ tp_cout= 676.1891p
+ tp_avg= 634.1625p
+ p_avg= 309.1467u  from=   0.             to=   8.5000n
+ p_max=   4.7374m    at=   6.0462n
              from=   0.            to=   8.5000n
  **info** dc convergence successful at Newton-Raphson method 
  ******  
- ************************* hspice BKA modeling ***********************
+ ************************* hspice bka modeling ***********************
 
  ****** operating point information tnom=  25.000 temp=  40.000 ******
  ****** operating point status is voltage   simulation time is     0.     
-     node    =voltage       node    =voltage       node    =voltage
+      node    =voltage        node    =voltage        node    =voltage
 
- + 0:a0      =   1.0000   0:a1      =   1.0000   0:a2      =   1.0000 
- + 0:a3      =   1.0000   0:a4      =   1.0000   0:a5      =   1.0000 
- + 0:a6      =   1.0000   0:a7      =   1.0000   0:b0      =   0.     
- + 0:b1      =   0.       0:b2      =   0.       0:b3      =   0.     
- + 0:b4      =   0.       0:b5      =   0.       0:b6      =   0.     
- + 0:b7      =   0.       0:cin     =   0.       0:cout    =   3.4212u
- + 0:s0      = 999.9933m  0:s1      = 999.9933m  0:s2      = 999.9933m
- + 0:s3      = 999.9933m  0:s4      = 999.9933m  0:s5      = 999.9933m
- + 0:s6      = 999.9933m  0:s7      = 999.9933m  0:vdd     =   1.0000 
- + 0:vss     =   0.       1:cmid    =  14.1911u  2:cmid    =  14.1911u
- + 3:cmid    =  14.1911u  4:cmid    =  14.1911u  5:cmid    =  14.1911u
- + 6:cmid    =  14.1911u  7:cmid    =  14.1911u  8:a_bar   =  11.0521u
- + 8:c_bar   = 999.9678m  8:cout_bar= 999.9528m  8:p       = 999.9794m
- + 8:p_bar   =   5.6379u  8:s_bar   =   7.8466u  9:a_bar   =  11.0521u
- + 9:c_bar   = 999.9678m  9:cout_bar= 999.9528m  9:p       = 999.9794m
- + 9:p_bar   =   5.6379u  9:s_bar   =  22.0363u 10:a_bar   =  11.0521u
- +10:c_bar   = 999.9678m 10:cout_bar= 999.9528m 10:p       = 999.9794m
- +10:p_bar   =   5.6379u 10:s_bar   =  22.0363u 11:a_bar   =  11.0521u
- +11:c_bar   = 999.9678m 11:cout_bar= 999.9528m 11:p       = 999.9794m
- +11:p_bar   =   5.6379u 11:s_bar   =  22.0363u 12:a_bar   =  11.0521u
- +12:c_bar   = 999.9678m 12:cout_bar= 999.9528m 12:p       = 999.9794m
- +12:p_bar   =   5.6379u 12:s_bar   =  22.0363u 13:a_bar   =  11.0521u
- +13:c_bar   = 999.9678m 13:cout_bar= 999.9528m 13:p       = 999.9794m
- +13:p_bar   =   5.6379u 13:s_bar   =  22.0363u 14:a_bar   =  11.0521u
- +14:c_bar   = 999.9678m 14:cout_bar= 999.9528m 14:p       = 999.9794m
- +14:p_bar   =   5.6379u 14:s_bar   =  22.0363u 15:a_bar   =  11.0521u
- +15:c_bar   = 999.9678m 15:cout_bar= 999.9528m 15:p       = 999.9794m
- +15:p_bar   =   5.6379u 15:s_bar   =  22.0363u
+ +  0:a1      =   1.0000    0:a2      =   1.0000    0:a3      =   1.0000 
+ +  0:a4      =   1.0000    0:a5      =   1.0000    0:a6      =   1.0000 
+ +  0:a7      =   1.0000    0:a8      =   1.0000    0:b1      =   0.     
+ +  0:b2      =   0.        0:b3      =   0.        0:b4      =   0.     
+ +  0:b5      =   0.        0:b6      =   0.        0:b7      =   0.     
+ +  0:b8      =   0.        0:cin     =   0.        0:cout    =   3.4196u
+ +  0:s1      = 999.9749m   0:s2      = 999.9749m   0:s3      = 999.9749m
+ +  0:s4      = 999.9749m   0:s5      = 999.9749m   0:s6      = 999.9749m
+ +  0:s7      = 999.9749m   0:s8      = 999.9749m   0:vdd     =   1.0000 
+ +  0:vss     =   0.        1:c0      =   0.        1:c1      =  12.8908u
+ +  1:c2      =   9.0044u   1:c3      =  14.8340u   1:c4      =   9.0044u
+ +  1:c5      =  10.9476u   1:c6      =   9.0044u   1:c7      =  10.9476u
+ +  1:g0      =   0.        1:g1      =   7.0610u   1:g2      =   9.0042u
+ +  1:g3      =   7.0610u   1:g4      =   9.0042u   1:g5      =   7.0610u
+ +  1:g6      =   9.0042u   1:g7      =   7.0610u   1:g8      =   7.0610u
+ +  1:p0      =   0.        1:p1      = 999.9715m   1:p2      = 999.9634m
+ +  1:p3      = 999.9634m   1:p4      = 999.9634m   1:p5      = 999.9634m
+ +  1:p6      = 999.9634m   1:p7      = 999.9634m   1:p8      = 999.9715m
+ +  3:g10     =  12.8908u   3:g20     =   9.0044u   3:g30     =  14.8340u
+ +  3:g32     =   7.0613u   3:g40     =   9.0044u   3:g50     =  10.9476u
+ +  3:g54     =   9.0045u   3:g60     =   9.0044u   3:g70     =  10.9476u
+ +  3:g74     =   7.0613u   3:g76     =   7.0613u   3:g80     =   3.4196u
+ +  3:p32     = 999.9933m   3:p54     = 999.9850m   3:p74     = 999.9933m
+ +  3:p76     = 999.9850m   4:in1_bar =   7.2421u   4:in2_bar = 999.9855m
+ +  4:x1      = 852.5577m   4:x2      =   3.5757u   4:y1      = 999.9875m
+ +  4:y2      = 999.9859m   5:in1_bar =   7.2426u   5:in2_bar = 999.9855m
+ +  5:x1      = 852.5410m   5:x2      =   3.5757u   5:y1      = 999.9875m
+ +  5:y2      = 999.9859m   6:in1_bar =   7.2426u   6:in2_bar = 999.9855m
+ +  6:x1      = 852.5440m   6:x2      =   3.5757u   6:y1      = 999.9875m
+ +  6:y2      = 999.9859m   7:in1_bar =   7.2426u   7:in2_bar = 999.9855m
+ +  7:x1      = 852.5395m   7:x2      =   3.5757u   7:y1      = 999.9875m
+ +  7:y2      = 999.9859m   8:in1_bar =   7.2426u   8:in2_bar = 999.9855m
+ +  8:x1      = 852.5440m   8:x2      =   3.5757u   8:y1      = 999.9875m
+ +  8:y2      = 999.9859m   9:in1_bar =   7.2426u   9:in2_bar = 999.9855m
+ +  9:x1      = 852.5425m   9:x2      =   3.5757u   9:y1      = 999.9875m
+ +  9:y2      = 999.9859m  10:in1_bar =   7.2426u  10:in2_bar = 999.9855m
+ + 10:x1      = 852.5440m  10:x2      =   3.5757u  10:y1      = 999.9875m
+ + 10:y2      = 999.9859m  11:in1_bar =   7.2421u  11:in2_bar = 999.9855m
+ + 11:x1      = 852.5492m  11:x2      =   3.5757u  11:y1      = 999.9875m
+ + 11:y2      = 999.9859m  20:mid     =   7.0608u  24:mid     =   7.0608u
+ + 26:mid     =   7.0608u  27:mid     =   7.0608u  28:mid     =   7.0608u
+ + 29:mid     =   7.0608u  30:mid     =   7.0608u  31:mid     =   7.0608u
+ + 48:out_bar = 999.9847m  49:in1_bar =   7.1238u  49:in2_bar = 999.9933m
+ + 49:x       = 852.5757m  49:yl      = 999.9842m  49:yr      = 999.9858m
+ + 50:out_bar = 999.9847m  51:in1_bar =   7.1237u  51:in2_bar = 999.9933m
+ + 51:x       = 852.5752m  51:yl      = 999.9802m  51:yr      = 999.9817m
+ + 52:out_bar = 999.9847m  53:in1_bar =   7.1237u  53:in2_bar = 999.9933m
+ + 53:x       = 852.5752m  53:yl      = 999.9802m  53:yr      = 999.9817m
+ + 54:out_bar = 999.9847m  55:in1_bar =   7.1237u  55:in2_bar = 999.9933m
+ + 55:x       = 852.5752m  55:yl      = 999.9802m  55:yr      = 999.9817m
+ + 56:out_bar = 999.9847m  57:in1_bar =   7.1237u  57:in2_bar = 999.9933m
+ + 57:x       = 852.5752m  57:yl      = 999.9802m  57:yr      = 999.9817m
+ + 58:out_bar = 999.9847m  59:in1_bar =   7.1237u  59:in2_bar = 999.9933m
+ + 59:x       = 852.5752m  59:yl      = 999.9802m  59:yr      = 999.9817m
+ + 60:out_bar = 999.9847m  61:in1_bar =   7.1237u  61:in2_bar = 999.9933m
+ + 61:x       = 852.5752m  61:yl      = 999.9802m  61:yr      = 999.9817m
+ + 62:out_bar = 999.9847m  63:in1_bar =   7.1238u  63:in2_bar = 999.9933m
+ + 63:x       = 852.5757m  63:yl      = 999.9842m  63:yr      = 999.9858m
+ + 64:out_bar = 999.9847m  65:out_bar = 999.9797m  66:mid     =   7.0608u
+ + 67:out_bar =  10.7040u  68:mid     =   7.0608u  69:out_bar =  10.7040u
+ + 70:mid     =   7.0608u  71:out_bar =  10.7040u  72:out_bar = 999.9847m
+ + 73:out_bar = 999.9797m  74:mid     =   7.0608u  75:out_bar =  10.7016u
+ + 76:out_bar = 999.9847m  77:out_bar = 999.9797m  78:out_bar = 999.9847m
+ + 79:out_bar = 999.9797m  80:out_bar = 999.9847m  81:out_bar = 999.9797m
+ + 82:out_bar = 999.9847m  83:out_bar = 999.9797m  84:out_bar = 999.9847m
+ + 85:out_bar = 999.9797m  86:out_bar = 999.9847m  87:out_bar = 999.9797m
+ + 89:x       = 852.5819m  93:x       = 852.5819m  97:x       = 852.5819m
+ +101:x       = 852.5819m 105:x       = 852.5819m 109:x       = 852.5819m
+ +113:x       = 852.5819m 117:x       = 852.5819m 121:x       = 852.5582m
+ +123:x       = 999.9883m 124:out_bar = 999.9847m 125:out_bar = 999.9797m
+ +127:x       =   6.3894u 128:out_bar = 999.9847m 129:out_bar = 999.9797m
+ +131:x       =   6.3894u 132:out_bar = 999.9847m 133:out_bar = 999.9797m
+ +135:x       =   6.3894u 137:x       = 852.5663m 139:x       = 999.9883m
+ +140:out_bar = 999.9847m 141:out_bar = 999.9797m 143:x       =   6.3883u
+ +145:x       = 852.5648m 147:x       = 999.9883m 149:x       = 852.5578m
+ +151:x       = 999.9883m 153:x       = 852.5415m 155:x       = 999.9883m
+ +157:x       = 852.5400m 159:x       = 999.9883m 161:x       = 852.5430m
+ +163:x       = 999.9883m 165:x       = 852.5497m 167:x       = 999.9883m
+ +169:x       = 852.5445m 171:x       = 999.9883m 173:x       = 852.5445m
+ +175:x       = 999.9883m 177:x       = 852.5445m 179:x       = 999.9883m
+ +181:x       = 852.5624m 183:x       = 999.9883m
 
  ******
- ************************* hspice BKA modeling ***********************
+ ************************* hspice bka modeling ***********************
 
  ****** transient analysis tnom=  25.000 temp=  40.000 ******
- tp_s7_fall= 957.5634p  targ=   2.4826n   trig=   1.5250n
- tp_cout_rise=   1.0059n  targ=   2.5309n   trig=   1.5250n
- tp_s7_rise= 949.6848p  targ=   3.9747n   trig=   3.0250n
- tp_cout_fall=   1.0048n  targ=   4.0298n   trig=   3.0250n
- tp_max=   1.0059n
- tp_avg= 979.4899p
- p_avg= 131.4462u  from=   0.             to=   8.5000n
- p_max=   4.4429m    at=   7.5500n
-             from=   0.            to=   8.5000n
- pdp= 132.2266f
- i_avg=-112.1156u  from=   0.             to=   8.5000n
- i_peak=  -1.6754m    at=   6.1159n
+ tp_s8_fall= 594.2403p  targ=   2.1192n   trig=   1.5250n
+ tp_cout_rise= 677.1923p  targ=   2.2022n   trig=   1.5250n
+ tp_s8_rise= 600.0089p  targ=   3.6250n   trig=   3.0250n
+ tp_cout_fall= 686.5705p  targ=   3.7116n   trig=   3.0250n
+ tp_max= 686.5705p
+ tp_s8= 597.1246p
+ tp_cout= 681.8814p
+ tp_avg= 639.5030p
+ p_avg= 310.7495u  from=   0.             to=   8.5000n
+ p_max=   4.7189m    at=   6.0467n
              from=   0.            to=   8.5000n
  **info** dc convergence successful at Newton-Raphson method 
  ******  
- ************************* hspice BKA modeling ***********************
+ ************************* hspice bka modeling ***********************
 
  ****** operating point information tnom=  25.000 temp=  45.000 ******
  ****** operating point status is voltage   simulation time is     0.     
-     node    =voltage       node    =voltage       node    =voltage
+      node    =voltage        node    =voltage        node    =voltage
 
- + 0:a0      =   1.0000   0:a1      =   1.0000   0:a2      =   1.0000 
- + 0:a3      =   1.0000   0:a4      =   1.0000   0:a5      =   1.0000 
- + 0:a6      =   1.0000   0:a7      =   1.0000   0:b0      =   0.     
- + 0:b1      =   0.       0:b2      =   0.       0:b3      =   0.     
- + 0:b4      =   0.       0:b5      =   0.       0:b6      =   0.     
- + 0:b7      =   0.       0:cin     =   0.       0:cout    =   3.9472u
- + 0:s0      = 999.9923m  0:s1      = 999.9923m  0:s2      = 999.9923m
- + 0:s3      = 999.9923m  0:s4      = 999.9923m  0:s5      = 999.9923m
- + 0:s6      = 999.9923m  0:s7      = 999.9923m  0:vdd     =   1.0000 
- + 0:vss     =   0.       1:cmid    =  15.9288u  2:cmid    =  15.9288u
- + 3:cmid    =  15.9288u  4:cmid    =  15.9288u  5:cmid    =  15.9288u
- + 6:cmid    =  15.9288u  7:cmid    =  15.9288u  8:a_bar   =  13.2310u
- + 8:c_bar   = 999.9628m  8:cout_bar= 999.9457m  8:p       = 999.9764m
- + 8:p_bar   =   6.2860u  8:s_bar   =   8.9903u  9:a_bar   =  13.2310u
- + 9:c_bar   = 999.9628m  9:cout_bar= 999.9457m  9:p       = 999.9764m
- + 9:p_bar   =   6.2860u  9:s_bar   =  24.9173u 10:a_bar   =  13.2310u
- +10:c_bar   = 999.9628m 10:cout_bar= 999.9457m 10:p       = 999.9764m
- +10:p_bar   =   6.2860u 10:s_bar   =  24.9173u 11:a_bar   =  13.2310u
- +11:c_bar   = 999.9628m 11:cout_bar= 999.9457m 11:p       = 999.9764m
- +11:p_bar   =   6.2860u 11:s_bar   =  24.9173u 12:a_bar   =  13.2310u
- +12:c_bar   = 999.9628m 12:cout_bar= 999.9457m 12:p       = 999.9764m
- +12:p_bar   =   6.2860u 12:s_bar   =  24.9173u 13:a_bar   =  13.2310u
- +13:c_bar   = 999.9628m 13:cout_bar= 999.9457m 13:p       = 999.9764m
- +13:p_bar   =   6.2860u 13:s_bar   =  24.9173u 14:a_bar   =  13.2310u
- +14:c_bar   = 999.9628m 14:cout_bar= 999.9457m 14:p       = 999.9764m
- +14:p_bar   =   6.2860u 14:s_bar   =  24.9173u 15:a_bar   =  13.2310u
- +15:c_bar   = 999.9628m 15:cout_bar= 999.9457m 15:p       = 999.9764m
- +15:p_bar   =   6.2860u 15:s_bar   =  24.9173u
+ +  0:a1      =   1.0000    0:a2      =   1.0000    0:a3      =   1.0000 
+ +  0:a4      =   1.0000    0:a5      =   1.0000    0:a6      =   1.0000 
+ +  0:a7      =   1.0000    0:a8      =   1.0000    0:b1      =   0.     
+ +  0:b2      =   0.        0:b3      =   0.        0:b4      =   0.     
+ +  0:b5      =   0.        0:b6      =   0.        0:b7      =   0.     
+ +  0:b8      =   0.        0:cin     =   0.        0:cout    =   3.9449u
+ +  0:s1      = 999.9708m   0:s2      = 999.9708m   0:s3      = 999.9708m
+ +  0:s4      = 999.9708m   0:s5      = 999.9708m   0:s6      = 999.9708m
+ +  0:s7      = 999.9708m   0:s8      = 999.9708m   0:vdd     =   1.0000 
+ +  0:vss     =   0.        1:c0      =   0.        1:c1      =  13.6276u
+ +  1:c2      =   9.6551u   1:c3      =  15.6138u   1:c4      =   9.6551u
+ +  1:c5      =  11.6414u   1:c6      =   9.6551u   1:c7      =  11.6414u
+ +  1:g0      =   0.        1:g1      =   7.6686u   1:g2      =   9.6549u
+ +  1:g3      =   7.6686u   1:g4      =   9.6549u   1:g5      =   7.6686u
+ +  1:g6      =   9.6549u   1:g7      =   7.6686u   1:g8      =   7.6686u
+ +  1:p0      =   0.        1:p1      = 999.9675m   1:p2      = 999.9593m
+ +  1:p3      = 999.9593m   1:p4      = 999.9593m   1:p5      = 999.9593m
+ +  1:p6      = 999.9593m   1:p7      = 999.9593m   1:p8      = 999.9675m
+ +  3:g10     =  13.6276u   3:g20     =   9.6551u   3:g30     =  15.6138u
+ +  3:g32     =   7.6690u   3:g40     =   9.6551u   3:g50     =  11.6414u
+ +  3:g54     =   9.6553u   3:g60     =   9.6551u   3:g70     =  11.6414u
+ +  3:g74     =   7.6690u   3:g76     =   7.6690u   3:g80     =   3.9449u
+ +  3:p32     = 999.9923m   3:p54     = 999.9838m   3:p74     = 999.9923m
+ +  3:p76     = 999.9838m   4:in1_bar =   7.8530u   4:in2_bar = 999.9843m
+ +  4:x1      = 852.1064m   4:x2      =   4.1813u   4:y1      = 999.9854m
+ +  4:y2      = 999.9838m   5:in1_bar =   7.8537u   5:in2_bar = 999.9843m
+ +  5:x1      = 852.0889m   5:x2      =   4.1813u   5:y1      = 999.9854m
+ +  5:y2      = 999.9838m   6:in1_bar =   7.8537u   6:in2_bar = 999.9843m
+ +  6:x1      = 852.0920m   6:x2      =   4.1813u   6:y1      = 999.9854m
+ +  6:y2      = 999.9838m   7:in1_bar =   7.8537u   7:in2_bar = 999.9843m
+ +  7:x1      = 852.0873m   7:x2      =   4.1813u   7:y1      = 999.9854m
+ +  7:y2      = 999.9838m   8:in1_bar =   7.8537u   8:in2_bar = 999.9843m
+ +  8:x1      = 852.0920m   8:x2      =   4.1813u   8:y1      = 999.9854m
+ +  8:y2      = 999.9838m   9:in1_bar =   7.8537u   9:in2_bar = 999.9843m
+ +  9:x1      = 852.0904m   9:x2      =   4.1813u   9:y1      = 999.9854m
+ +  9:y2      = 999.9838m  10:in1_bar =   7.8537u  10:in2_bar = 999.9843m
+ + 10:x1      = 852.0920m  10:x2      =   4.1813u  10:y1      = 999.9854m
+ + 10:y2      = 999.9838m  11:in1_bar =   7.8530u  11:in2_bar = 999.9843m
+ + 11:x1      = 852.0972m  11:x2      =   4.1813u  11:y1      = 999.9854m
+ + 11:y2      = 999.9838m  20:mid     =   7.6685u  24:mid     =   7.6685u
+ + 26:mid     =   7.6685u  27:mid     =   7.6685u  28:mid     =   7.6685u
+ + 29:mid     =   7.6685u  30:mid     =   7.6685u  31:mid     =   7.6685u
+ + 48:out_bar = 999.9826m  49:in1_bar =   7.7318u  49:in2_bar = 999.9923m
+ + 49:x       = 852.1269m  49:yl      = 999.9822m  49:yr      = 999.9838m
+ + 50:out_bar = 999.9826m  51:in1_bar =   7.7318u  51:in2_bar = 999.9923m
+ + 51:x       = 852.1265m  51:yl      = 999.9781m  51:yr      = 999.9797m
+ + 52:out_bar = 999.9826m  53:in1_bar =   7.7318u  53:in2_bar = 999.9923m
+ + 53:x       = 852.1265m  53:yl      = 999.9781m  53:yr      = 999.9797m
+ + 54:out_bar = 999.9826m  55:in1_bar =   7.7318u  55:in2_bar = 999.9923m
+ + 55:x       = 852.1265m  55:yl      = 999.9781m  55:yr      = 999.9797m
+ + 56:out_bar = 999.9826m  57:in1_bar =   7.7318u  57:in2_bar = 999.9923m
+ + 57:x       = 852.1265m  57:yl      = 999.9781m  57:yr      = 999.9797m
+ + 58:out_bar = 999.9826m  59:in1_bar =   7.7318u  59:in2_bar = 999.9923m
+ + 59:x       = 852.1265m  59:yl      = 999.9781m  59:yr      = 999.9797m
+ + 60:out_bar = 999.9826m  61:in1_bar =   7.7318u  61:in2_bar = 999.9923m
+ + 61:x       = 852.1265m  61:yl      = 999.9781m  61:yr      = 999.9797m
+ + 62:out_bar = 999.9826m  63:in1_bar =   7.7318u  63:in2_bar = 999.9923m
+ + 63:x       = 852.1269m  63:yl      = 999.9822m  63:yr      = 999.9838m
+ + 64:out_bar = 999.9826m  65:out_bar = 999.9775m  66:mid     =   7.6685u
+ + 67:out_bar =  11.8313u  68:mid     =   7.6685u  69:out_bar =  11.8313u
+ + 70:mid     =   7.6685u  71:out_bar =  11.8313u  72:out_bar = 999.9826m
+ + 73:out_bar = 999.9775m  74:mid     =   7.6685u  75:out_bar =  11.8280u
+ + 76:out_bar = 999.9826m  77:out_bar = 999.9775m  78:out_bar = 999.9826m
+ + 79:out_bar = 999.9775m  80:out_bar = 999.9826m  81:out_bar = 999.9775m
+ + 82:out_bar = 999.9826m  83:out_bar = 999.9775m  84:out_bar = 999.9826m
+ + 85:out_bar = 999.9775m  86:out_bar = 999.9826m  87:out_bar = 999.9775m
+ + 89:x       = 852.1339m  93:x       = 852.1339m  97:x       = 852.1339m
+ +101:x       = 852.1339m 105:x       = 852.1339m 109:x       = 852.1339m
+ +113:x       = 852.1339m 117:x       = 852.1339m 121:x       = 852.1070m
+ +123:x       = 999.9872m 124:out_bar = 999.9826m 125:out_bar = 999.9775m
+ +127:x       =   6.9785u 128:out_bar = 999.9826m 129:out_bar = 999.9775m
+ +131:x       =   6.9785u 132:out_bar = 999.9826m 133:out_bar = 999.9775m
+ +135:x       =   6.9785u 137:x       = 852.1168m 139:x       = 999.9872m
+ +140:out_bar = 999.9826m 141:out_bar = 999.9775m 143:x       =   6.9769u
+ +145:x       = 852.1152m 147:x       = 999.9872m 149:x       = 852.1082m
+ +151:x       = 999.9872m 153:x       = 852.0895m 155:x       = 999.9872m
+ +157:x       = 852.0879m 159:x       = 999.9872m 161:x       = 852.0910m
+ +163:x       = 999.9872m 165:x       = 852.0978m 167:x       = 999.9872m
+ +169:x       = 852.0926m 171:x       = 999.9872m 173:x       = 852.0926m
+ +175:x       = 999.9872m 177:x       = 852.0926m 179:x       = 999.9872m
+ +181:x       = 852.1129m 183:x       = 999.9872m
 
  ******
- ************************* hspice BKA modeling ***********************
+ ************************* hspice bka modeling ***********************
 
  ****** transient analysis tnom=  25.000 temp=  45.000 ******
- tp_s7_fall= 966.5767p  targ=   2.4916n   trig=   1.5250n
- tp_cout_rise=   1.0155n  targ=   2.5405n   trig=   1.5250n
- tp_s7_rise= 958.1302p  targ=   3.9831n   trig=   3.0250n
- tp_cout_fall=   1.0136n  targ=   4.0386n   trig=   3.0250n
- tp_max=   1.0155n
- tp_avg= 988.4686p
- p_avg= 132.2662u  from=   0.             to=   8.5000n
- p_max=   4.4285m    at=   7.5500n
-             from=   0.            to=   8.5000n
- pdp= 134.3206f
- i_avg=-112.8144u  from=   0.             to=   8.5000n
- i_peak=  -1.6772m    at=   6.1165n
+ tp_s8_fall= 598.9302p  targ=   2.1239n   trig=   1.5250n
+ tp_cout_rise= 682.5160p  targ=   2.2075n   trig=   1.5250n
+ tp_s8_rise= 605.2891p  targ=   3.6303n   trig=   3.0250n
+ tp_cout_fall= 692.6178p  targ=   3.7176n   trig=   3.0250n
+ tp_max= 692.6178p
+ tp_s8= 602.1097p
+ tp_cout= 687.5669p
+ tp_avg= 644.8383p
+ p_avg= 312.3475u  from=   0.             to=   8.5000n
+ p_max=   4.6985m    at=   6.0464n
              from=   0.            to=   8.5000n
  **info** dc convergence successful at Newton-Raphson method 
  ******  
- ************************* hspice BKA modeling ***********************
+ ************************* hspice bka modeling ***********************
 
  ****** operating point information tnom=  25.000 temp=  50.000 ******
  ****** operating point status is voltage   simulation time is     0.     
-     node    =voltage       node    =voltage       node    =voltage
+      node    =voltage        node    =voltage        node    =voltage
 
- + 0:a0      =   1.0000   0:a1      =   1.0000   0:a2      =   1.0000 
- + 0:a3      =   1.0000   0:a4      =   1.0000   0:a5      =   1.0000 
- + 0:a6      =   1.0000   0:a7      =   1.0000   0:b0      =   0.     
- + 0:b1      =   0.       0:b2      =   0.       0:b3      =   0.     
- + 0:b4      =   0.       0:b5      =   0.       0:b6      =   0.     
- + 0:b7      =   0.       0:cin     =   0.       0:cout    =   4.5708u
- + 0:s0      = 999.9910m  0:s1      = 999.9910m  0:s2      = 999.9910m
- + 0:s3      = 999.9910m  0:s4      = 999.9910m  0:s5      = 999.9910m
- + 0:s6      = 999.9910m  0:s7      = 999.9910m  0:vdd     =   1.0000 
- + 0:vss     =   0.       1:cmid    =  17.9698u  2:cmid    =  17.9698u
- + 3:cmid    =  17.9698u  4:cmid    =  17.9698u  5:cmid    =  17.9698u
- + 6:cmid    =  17.9698u  7:cmid    =  17.9698u  8:a_bar   =  15.8169u
- + 8:c_bar   = 999.9568m  8:cout_bar= 999.9374m  8:p       = 999.9727m
- + 8:p_bar   =   7.0421u  8:s_bar   =  10.3386u  9:a_bar   =  15.8169u
- + 9:c_bar   = 999.9568m  9:cout_bar= 999.9374m  9:p       = 999.9727m
- + 9:p_bar   =   7.0421u  9:s_bar   =  28.3060u 10:a_bar   =  15.8169u
- +10:c_bar   = 999.9568m 10:cout_bar= 999.9374m 10:p       = 999.9727m
- +10:p_bar   =   7.0421u 10:s_bar   =  28.3060u 11:a_bar   =  15.8169u
- +11:c_bar   = 999.9568m 11:cout_bar= 999.9374m 11:p       = 999.9727m
- +11:p_bar   =   7.0421u 11:s_bar   =  28.3060u 12:a_bar   =  15.8169u
- +12:c_bar   = 999.9568m 12:cout_bar= 999.9374m 12:p       = 999.9727m
- +12:p_bar   =   7.0421u 12:s_bar   =  28.3060u 13:a_bar   =  15.8169u
- +13:c_bar   = 999.9568m 13:cout_bar= 999.9374m 13:p       = 999.9727m
- +13:p_bar   =   7.0421u 13:s_bar   =  28.3060u 14:a_bar   =  15.8169u
- +14:c_bar   = 999.9568m 14:cout_bar= 999.9374m 14:p       = 999.9727m
- +14:p_bar   =   7.0421u 14:s_bar   =  28.3060u 15:a_bar   =  15.8169u
- +15:c_bar   = 999.9568m 15:cout_bar= 999.9374m 15:p       = 999.9727m
- +15:p_bar   =   7.0421u 15:s_bar   =  28.3060u
+ +  0:a1      =   1.0000    0:a2      =   1.0000    0:a3      =   1.0000 
+ +  0:a4      =   1.0000    0:a5      =   1.0000    0:a6      =   1.0000 
+ +  0:a7      =   1.0000    0:a8      =   1.0000    0:b1      =   0.     
+ +  0:b2      =   0.        0:b3      =   0.        0:b4      =   0.     
+ +  0:b5      =   0.        0:b6      =   0.        0:b7      =   0.     
+ +  0:b8      =   0.        0:cin     =   0.        0:cout    =   4.5674u
+ +  0:s1      = 999.9661m   0:s2      = 999.9661m   0:s3      = 999.9661m
+ +  0:s4      = 999.9661m   0:s5      = 999.9661m   0:s6      = 999.9661m
+ +  0:s7      = 999.9661m   0:s8      = 999.9661m   0:vdd     =   1.0000 
+ +  0:vss     =   0.        1:c0      =   0.        1:c1      =  14.4653u
+ +  1:c2      =  10.4053u   1:c3      =  16.4953u   1:c4      =  10.4053u
+ +  1:c5      =  12.4353u   1:c6      =  10.4053u   1:c7      =  12.4353u
+ +  1:g0      =   0.        1:g1      =   8.3750u   1:g2      =  10.4050u
+ +  1:g3      =   8.3750u   1:g4      =  10.4050u   1:g5      =   8.3750u
+ +  1:g6      =  10.4050u   1:g7      =   8.3750u   1:g8      =   8.3750u
+ +  1:p0      =   0.        1:p1      = 999.9628m   1:p2      = 999.9545m
+ +  1:p3      = 999.9545m   1:p4      = 999.9545m   1:p5      = 999.9545m
+ +  1:p6      = 999.9545m   1:p7      = 999.9545m   1:p8      = 999.9628m
+ +  3:g10     =  14.4653u   3:g20     =  10.4053u   3:g30     =  16.4953u
+ +  3:g32     =   8.3755u   3:g40     =  10.4053u   3:g50     =  12.4353u
+ +  3:g54     =  10.4055u   3:g60     =  10.4053u   3:g70     =  12.4353u
+ +  3:g74     =   8.3755u   3:g76     =   8.3755u   3:g80     =   4.5674u
+ +  3:p32     = 999.9910m   3:p54     = 999.9824m   3:p74     = 999.9910m
+ +  3:p76     = 999.9824m   4:in1_bar =   8.5628u   4:in2_bar = 999.9829m
+ +  4:x1      = 851.6174m   4:x2      =   4.8961u   4:y1      = 999.9830m
+ +  4:y2      = 999.9814m   5:in1_bar =   8.5636u   5:in2_bar = 999.9829m
+ +  5:x1      = 851.5990m   5:x2      =   4.8961u   5:y1      = 999.9830m
+ +  5:y2      = 999.9814m   6:in1_bar =   8.5636u   6:in2_bar = 999.9829m
+ +  6:x1      = 851.6022m   6:x2      =   4.8961u   6:y1      = 999.9830m
+ +  6:y2      = 999.9814m   7:in1_bar =   8.5636u   7:in2_bar = 999.9829m
+ +  7:x1      = 851.5974m   7:x2      =   4.8961u   7:y1      = 999.9830m
+ +  7:y2      = 999.9814m   8:in1_bar =   8.5636u   8:in2_bar = 999.9829m
+ +  8:x1      = 851.6022m   8:x2      =   4.8961u   8:y1      = 999.9830m
+ +  8:y2      = 999.9814m   9:in1_bar =   8.5636u   9:in2_bar = 999.9829m
+ +  9:x1      = 851.6006m   9:x2      =   4.8961u   9:y1      = 999.9830m
+ +  9:y2      = 999.9814m  10:in1_bar =   8.5636u  10:in2_bar = 999.9829m
+ + 10:x1      = 851.6022m  10:x2      =   4.8961u  10:y1      = 999.9830m
+ + 10:y2      = 999.9814m  11:in1_bar =   8.5628u  11:in2_bar = 999.9829m
+ + 11:x1      = 851.6076m  11:x2      =   4.8961u  11:y1      = 999.9830m
+ + 11:y2      = 999.9814m  20:mid     =   8.3749u  24:mid     =   8.3749u
+ + 26:mid     =   8.3749u  27:mid     =   8.3749u  28:mid     =   8.3749u
+ + 29:mid     =   8.3749u  30:mid     =   8.3749u  31:mid     =   8.3749u
+ + 48:out_bar = 999.9802m  49:in1_bar =   8.4384u  49:in2_bar = 999.9910m
+ + 49:x       = 851.6410m  49:yl      = 999.9798m  49:yr      = 999.9814m
+ + 50:out_bar = 999.9802m  51:in1_bar =   8.4384u  51:in2_bar = 999.9910m
+ + 51:x       = 851.6405m  51:yl      = 999.9756m  51:yr      = 999.9773m
+ + 52:out_bar = 999.9802m  53:in1_bar =   8.4384u  53:in2_bar = 999.9910m
+ + 53:x       = 851.6405m  53:yl      = 999.9756m  53:yr      = 999.9773m
+ + 54:out_bar = 999.9802m  55:in1_bar =   8.4384u  55:in2_bar = 999.9910m
+ + 55:x       = 851.6405m  55:yl      = 999.9756m  55:yr      = 999.9773m
+ + 56:out_bar = 999.9802m  57:in1_bar =   8.4384u  57:in2_bar = 999.9910m
+ + 57:x       = 851.6405m  57:yl      = 999.9756m  57:yr      = 999.9773m
+ + 58:out_bar = 999.9802m  59:in1_bar =   8.4384u  59:in2_bar = 999.9910m
+ + 59:x       = 851.6405m  59:yl      = 999.9756m  59:yr      = 999.9773m
+ + 60:out_bar = 999.9802m  61:in1_bar =   8.4384u  61:in2_bar = 999.9910m
+ + 61:x       = 851.6405m  61:yl      = 999.9756m  61:yr      = 999.9773m
+ + 62:out_bar = 999.9802m  63:in1_bar =   8.4384u  63:in2_bar = 999.9910m
+ + 63:x       = 851.6410m  63:yl      = 999.9798m  63:yr      = 999.9814m
+ + 64:out_bar = 999.9802m  65:out_bar = 999.9750m  66:mid     =   8.3749u
+ + 67:out_bar =  13.1518u  68:mid     =   8.3749u  69:out_bar =  13.1518u
+ + 70:mid     =   8.3749u  71:out_bar =  13.1518u  72:out_bar = 999.9802m
+ + 73:out_bar = 999.9750m  74:mid     =   8.3749u  75:out_bar =  13.1470u
+ + 76:out_bar = 999.9802m  77:out_bar = 999.9750m  78:out_bar = 999.9802m
+ + 79:out_bar = 999.9750m  80:out_bar = 999.9802m  81:out_bar = 999.9750m
+ + 82:out_bar = 999.9802m  83:out_bar = 999.9750m  84:out_bar = 999.9802m
+ + 85:out_bar = 999.9750m  86:out_bar = 999.9802m  87:out_bar = 999.9750m
+ + 89:x       = 851.6489m  93:x       = 851.6489m  97:x       = 851.6489m
+ +101:x       = 851.6489m 105:x       = 851.6489m 109:x       = 851.6489m
+ +113:x       = 851.6489m 117:x       = 851.6489m 121:x       = 851.6181m
+ +123:x       = 999.9859m 124:out_bar = 999.9802m 125:out_bar = 999.9750m
+ +127:x       =   7.6645u 128:out_bar = 999.9802m 129:out_bar = 999.9750m
+ +131:x       =   7.6645u 132:out_bar = 999.9802m 133:out_bar = 999.9750m
+ +135:x       =   7.6645u 137:x       = 851.6300m 139:x       = 999.9859m
+ +140:out_bar = 999.9802m 141:out_bar = 999.9750m 143:x       =   7.6623u
+ +145:x       = 851.6284m 147:x       = 999.9859m 149:x       = 851.6213m
+ +151:x       = 999.9859m 153:x       = 851.5998m 155:x       = 999.9859m
+ +157:x       = 851.5982m 159:x       = 999.9859m 161:x       = 851.6014m
+ +163:x       = 999.9859m 165:x       = 851.6083m 167:x       = 999.9859m
+ +169:x       = 851.6030m 171:x       = 999.9859m 173:x       = 851.6030m
+ +175:x       = 999.9859m 177:x       = 851.6030m 179:x       = 999.9859m
+ +181:x       = 851.6261m 183:x       = 999.9859m
 
  ******
- ************************* hspice BKA modeling ***********************
+ ************************* hspice bka modeling ***********************
 
  ****** transient analysis tnom=  25.000 temp=  50.000 ******
- tp_s7_fall= 975.5761p  targ=   2.5006n   trig=   1.5250n
- tp_cout_rise=   1.0251n  targ=   2.5501n   trig=   1.5250n
- tp_s7_rise= 966.5999p  targ=   3.9916n   trig=   3.0250n
- tp_cout_fall=   1.0225n  targ=   4.0475n   trig=   3.0250n
- tp_max=   1.0251n
- tp_avg= 997.4536p
- p_avg= 133.0888u  from=   0.             to=   8.5000n
- p_max=   4.4150m    at=   7.5500n
-             from=   0.            to=   8.5000n
- pdp= 136.4322f
- i_avg=-113.5212u  from=   0.             to=   8.5000n
- i_peak=  -1.6688m    at=   6.1169n
+ tp_s8_fall= 603.6387p  targ=   2.1286n   trig=   1.5250n
+ tp_cout_rise= 687.8670p  targ=   2.2129n   trig=   1.5250n
+ tp_s8_rise= 610.6098p  targ=   3.6356n   trig=   3.0250n
+ tp_cout_fall= 698.7161p  targ=   3.7237n   trig=   3.0250n
+ tp_max= 698.7161p
+ tp_s8= 607.1242p
+ tp_cout= 693.2915p
+ tp_avg= 650.2079p
+ p_avg= 314.0269u  from=   0.             to=   8.5000n
+ p_max=   4.6773m    at=   6.0463n
              from=   0.            to=   8.5000n
  **info** dc convergence successful at Newton-Raphson method 
  ******  
- ************************* hspice BKA modeling ***********************
+ ************************* hspice bka modeling ***********************
 
  ****** operating point information tnom=  25.000 temp=  55.000 ******
  ****** operating point status is voltage   simulation time is     0.     
-     node    =voltage       node    =voltage       node    =voltage
+      node    =voltage        node    =voltage        node    =voltage
 
- + 0:a0      =   1.0000   0:a1      =   1.0000   0:a2      =   1.0000 
- + 0:a3      =   1.0000   0:a4      =   1.0000   0:a5      =   1.0000 
- + 0:a6      =   1.0000   0:a7      =   1.0000   0:b0      =   0.     
- + 0:b1      =   0.       0:b2      =   0.       0:b3      =   0.     
- + 0:b4      =   0.       0:b5      =   0.       0:b6      =   0.     
- + 0:b7      =   0.       0:cin     =   0.       0:cout    =   5.3069u
- + 0:s0      = 999.9896m  0:s1      = 999.9896m  0:s2      = 999.9896m
- + 0:s3      = 999.9896m  0:s4      = 999.9896m  0:s5      = 999.9896m
- + 0:s6      = 999.9896m  0:s7      = 999.9896m  0:vdd     =   1.0000 
- + 0:vss     =   0.       1:cmid    =  20.3592u  2:cmid    =  20.3592u
- + 3:cmid    =  20.3592u  4:cmid    =  20.3592u  5:cmid    =  20.3592u
- + 6:cmid    =  20.3592u  7:cmid    =  20.3592u  8:a_bar   =  18.8700u
- + 8:c_bar   = 999.9499m  8:cout_bar= 999.9277m  8:p       = 999.9685m
- + 8:p_bar   =   7.9218u  8:s_bar   =  11.9217u  9:a_bar   =  18.8700u
- + 9:c_bar   = 999.9499m  9:cout_bar= 999.9277m  9:p       = 999.9685m
- + 9:p_bar   =   7.9218u  9:s_bar   =  32.2777u 10:a_bar   =  18.8700u
- +10:c_bar   = 999.9499m 10:cout_bar= 999.9277m 10:p       = 999.9685m
- +10:p_bar   =   7.9218u 10:s_bar   =  32.2777u 11:a_bar   =  18.8700u
- +11:c_bar   = 999.9499m 11:cout_bar= 999.9277m 11:p       = 999.9685m
- +11:p_bar   =   7.9218u 11:s_bar   =  32.2777u 12:a_bar   =  18.8700u
- +12:c_bar   = 999.9499m 12:cout_bar= 999.9277m 12:p       = 999.9685m
- +12:p_bar   =   7.9218u 12:s_bar   =  32.2777u 13:a_bar   =  18.8700u
- +13:c_bar   = 999.9499m 13:cout_bar= 999.9277m 13:p       = 999.9685m
- +13:p_bar   =   7.9218u 13:s_bar   =  32.2777u 14:a_bar   =  18.8700u
- +14:c_bar   = 999.9499m 14:cout_bar= 999.9277m 14:p       = 999.9685m
- +14:p_bar   =   7.9218u 14:s_bar   =  32.2777u 15:a_bar   =  18.8700u
- +15:c_bar   = 999.9499m 15:cout_bar= 999.9277m 15:p       = 999.9685m
- +15:p_bar   =   7.9218u 15:s_bar   =  32.2777u
+ +  0:a1      =   1.0000    0:a2      =   1.0000    0:a3      =   1.0000 
+ +  0:a4      =   1.0000    0:a5      =   1.0000    0:a6      =   1.0000 
+ +  0:a7      =   1.0000    0:a8      =   1.0000    0:b1      =   0.     
+ +  0:b2      =   0.        0:b3      =   0.        0:b4      =   0.     
+ +  0:b5      =   0.        0:b6      =   0.        0:b7      =   0.     
+ +  0:b8      =   0.        0:cin     =   0.        0:cout    =   5.3021u
+ +  0:s1      = 999.9605m   0:s2      = 999.9605m   0:s3      = 999.9605m
+ +  0:s4      = 999.9605m   0:s5      = 999.9605m   0:s6      = 999.9605m
+ +  0:s7      = 999.9605m   0:s8      = 999.9605m   0:vdd     =   1.0000 
+ +  0:vss     =   0.        1:c0      =   0.        1:c1      =  15.4188u
+ +  1:c2      =  11.2699u   1:c3      =  17.4933u   1:c4      =  11.2699u
+ +  1:c5      =  13.3444u   1:c6      =  11.2699u   1:c7      =  13.3444u
+ +  1:g0      =   0.        1:g1      =   9.1951u   1:g2      =  11.2695u
+ +  1:g3      =   9.1951u   1:g4      =  11.2695u   1:g5      =   9.1951u
+ +  1:g6      =  11.2695u   1:g7      =   9.1951u   1:g8      =   9.1951u
+ +  1:p0      =   0.        1:p1      = 999.9574m   1:p2      = 999.9489m
+ +  1:p3      = 999.9489m   1:p4      = 999.9489m   1:p5      = 999.9489m
+ +  1:p6      = 999.9489m   1:p7      = 999.9489m   1:p8      = 999.9574m
+ +  3:g10     =  15.4188u   3:g20     =  11.2699u   3:g30     =  17.4933u
+ +  3:g32     =   9.1957u   3:g40     =  11.2699u   3:g50     =  13.3444u
+ +  3:g54     =  11.2702u   3:g60     =  11.2699u   3:g70     =  13.3444u
+ +  3:g74     =   9.1957u   3:g76     =   9.1957u   3:g80     =   5.3021u
+ +  3:p32     = 999.9896m   3:p54     = 999.9807m   3:p74     = 999.9896m
+ +  3:p76     = 999.9807m   4:in1_bar =   9.3864u   4:in2_bar = 999.9813m
+ +  4:x1      = 851.0976m   4:x2      =   5.7359u   4:y1      = 999.9803m
+ +  4:y2      = 999.9786m   5:in1_bar =   9.3874u   5:in2_bar = 999.9813m
+ +  5:x1      = 851.0783m   5:x2      =   5.7359u   5:y1      = 999.9803m
+ +  5:y2      = 999.9786m   6:in1_bar =   9.3874u   6:in2_bar = 999.9813m
+ +  6:x1      = 851.0816m   6:x2      =   5.7359u   6:y1      = 999.9803m
+ +  6:y2      = 999.9786m   7:in1_bar =   9.3874u   7:in2_bar = 999.9813m
+ +  7:x1      = 851.0767m   7:x2      =   5.7359u   7:y1      = 999.9803m
+ +  7:y2      = 999.9786m   8:in1_bar =   9.3874u   8:in2_bar = 999.9813m
+ +  8:x1      = 851.0816m   8:x2      =   5.7359u   8:y1      = 999.9803m
+ +  8:y2      = 999.9786m   9:in1_bar =   9.3874u   9:in2_bar = 999.9813m
+ +  9:x1      = 851.0800m   9:x2      =   5.7359u   9:y1      = 999.9803m
+ +  9:y2      = 999.9786m  10:in1_bar =   9.3874u  10:in2_bar = 999.9813m
+ + 10:x1      = 851.0816m  10:x2      =   5.7359u  10:y1      = 999.9803m
+ + 10:y2      = 999.9786m  11:in1_bar =   9.3864u  11:in2_bar = 999.9813m
+ + 11:x1      = 851.0870m  11:x2      =   5.7359u  11:y1      = 999.9803m
+ + 11:y2      = 999.9786m  20:mid     =   9.1949u  24:mid     =   9.1949u
+ + 26:mid     =   9.1949u  27:mid     =   9.1949u  28:mid     =   9.1949u
+ + 29:mid     =   9.1949u  30:mid     =   9.1949u  31:mid     =   9.1949u
+ + 48:out_bar = 999.9774m  49:in1_bar =   9.2584u  49:in2_bar = 999.9896m
+ + 49:x       = 851.1247m  49:yl      = 999.9771m  49:yr      = 999.9787m
+ + 50:out_bar = 999.9774m  51:in1_bar =   9.2584u  51:in2_bar = 999.9896m
+ + 51:x       = 851.1243m  51:yl      = 999.9728m  51:yr      = 999.9745m
+ + 52:out_bar = 999.9774m  53:in1_bar =   9.2584u  53:in2_bar = 999.9896m
+ + 53:x       = 851.1243m  53:yl      = 999.9728m  53:yr      = 999.9745m
+ + 54:out_bar = 999.9774m  55:in1_bar =   9.2584u  55:in2_bar = 999.9896m
+ + 55:x       = 851.1243m  55:yl      = 999.9728m  55:yr      = 999.9745m
+ + 56:out_bar = 999.9774m  57:in1_bar =   9.2584u  57:in2_bar = 999.9896m
+ + 57:x       = 851.1243m  57:yl      = 999.9728m  57:yr      = 999.9745m
+ + 58:out_bar = 999.9774m  59:in1_bar =   9.2584u  59:in2_bar = 999.9896m
+ + 59:x       = 851.1243m  59:yl      = 999.9728m  59:yr      = 999.9745m
+ + 60:out_bar = 999.9774m  61:in1_bar =   9.2584u  61:in2_bar = 999.9896m
+ + 61:x       = 851.1243m  61:yl      = 999.9728m  61:yr      = 999.9745m
+ + 62:out_bar = 999.9774m  63:in1_bar =   9.2584u  63:in2_bar = 999.9896m
+ + 63:x       = 851.1247m  63:yl      = 999.9771m  63:yr      = 999.9787m
+ + 64:out_bar = 999.9774m  65:out_bar = 999.9720m  66:mid     =   9.1949u
+ + 67:out_bar =  14.6945u  68:mid     =   9.1949u  69:out_bar =  14.6945u
+ + 70:mid     =   9.1949u  71:out_bar =  14.6945u  72:out_bar = 999.9774m
+ + 73:out_bar = 999.9720m  74:mid     =   9.1949u  75:out_bar =  14.6879u
+ + 76:out_bar = 999.9774m  77:out_bar = 999.9720m  78:out_bar = 999.9774m
+ + 79:out_bar = 999.9720m  80:out_bar = 999.9774m  81:out_bar = 999.9720m
+ + 82:out_bar = 999.9774m  83:out_bar = 999.9720m  84:out_bar = 999.9774m
+ + 85:out_bar = 999.9720m  86:out_bar = 999.9774m  87:out_bar = 999.9720m
+ + 89:x       = 851.1338m  93:x       = 851.1338m  97:x       = 851.1338m
+ +101:x       = 851.1338m 105:x       = 851.1338m 109:x       = 851.1338m
+ +113:x       = 851.1338m 117:x       = 851.1338m 121:x       = 851.0985m
+ +123:x       = 999.9844m 124:out_bar = 999.9774m 125:out_bar = 999.9720m
+ +127:x       =   8.4622u 128:out_bar = 999.9774m 129:out_bar = 999.9720m
+ +131:x       =   8.4622u 132:out_bar = 999.9774m 133:out_bar = 999.9720m
+ +135:x       =   8.4622u 137:x       = 851.1129m 139:x       = 999.9844m
+ +140:out_bar = 999.9774m 141:out_bar = 999.9720m 143:x       =   8.4591u
+ +145:x       = 851.1112m 147:x       = 999.9844m 149:x       = 851.1039m
+ +151:x       = 999.9844m 153:x       = 851.0792m 155:x       = 999.9844m
+ +157:x       = 851.0776m 159:x       = 999.9844m 161:x       = 851.0809m
+ +163:x       = 999.9844m 165:x       = 851.0879m 167:x       = 999.9844m
+ +169:x       = 851.0825m 171:x       = 999.9844m 173:x       = 851.0825m
+ +175:x       = 999.9844m 177:x       = 851.0825m 179:x       = 999.9844m
+ +181:x       = 851.1089m 183:x       = 999.9844m
 
  ******
- ************************* hspice BKA modeling ***********************
+ ************************* hspice bka modeling ***********************
 
  ****** transient analysis tnom=  25.000 temp=  55.000 ******
- tp_s7_fall= 984.5973p  targ=   2.5096n   trig=   1.5250n
- tp_cout_rise=   1.0347n  targ=   2.5597n   trig=   1.5250n
- tp_s7_rise= 975.0564p  targ=   4.0001n   trig=   3.0250n
- tp_cout_fall=   1.0314n  targ=   4.0564n   trig=   3.0250n
- tp_max=   1.0347n
- tp_avg=   1.0064n
- p_avg= 133.9319u  from=   0.             to=   8.5000n
- p_max=   4.4013m    at=   7.5500n
-             from=   0.            to=   8.5000n
- pdp= 138.5831f
- i_avg=-114.2371u  from=   0.             to=   8.5000n
- i_peak=  -1.6726m    at=   6.1176n
+ tp_s8_fall= 608.3676p  targ=   2.1334n   trig=   1.5250n
+ tp_cout_rise= 693.2353p  targ=   2.2182n   trig=   1.5250n
+ tp_s8_rise= 615.9611p  targ=   3.6410n   trig=   3.0250n
+ tp_cout_fall= 704.8328p  targ=   3.7298n   trig=   3.0250n
+ tp_max= 704.8328p
+ tp_s8= 612.1643p
+ tp_cout= 699.0341p
+ tp_avg= 655.5992p
+ p_avg= 315.6816u  from=   0.             to=   8.5000n
+ p_max=   4.6631m    at=   6.0468n
              from=   0.            to=   8.5000n
  **info** dc convergence successful at Newton-Raphson method 
  ******  
- ************************* hspice BKA modeling ***********************
+ ************************* hspice bka modeling ***********************
 
  ****** operating point information tnom=  25.000 temp=  60.000 ******
  ****** operating point status is voltage   simulation time is     0.     
-     node    =voltage       node    =voltage       node    =voltage
+      node    =voltage        node    =voltage        node    =voltage
 
- + 0:a0      =   1.0000   0:a1      =   1.0000   0:a2      =   1.0000 
- + 0:a3      =   1.0000   0:a4      =   1.0000   0:a5      =   1.0000 
- + 0:a6      =   1.0000   0:a7      =   1.0000   0:b0      =   0.     
- + 0:b1      =   0.       0:b2      =   0.       0:b3      =   0.     
- + 0:b4      =   0.       0:b5      =   0.       0:b6      =   0.     
- + 0:b7      =   0.       0:cin     =   0.       0:cout    =   6.1723u
- + 0:s0      = 999.9879m  0:s1      = 999.9879m  0:s2      = 999.9879m
- + 0:s3      = 999.9879m  0:s4      = 999.9879m  0:s5      = 999.9879m
- + 0:s6      = 999.9879m  0:s7      = 999.9879m  0:vdd     =   1.0000 
- + 0:vss     =   0.       1:cmid    =  23.1469u  2:cmid    =  23.1469u
- + 3:cmid    =  23.1469u  4:cmid    =  23.1469u  5:cmid    =  23.1469u
- + 6:cmid    =  23.1469u  7:cmid    =  23.1469u  8:a_bar   =  22.4565u
- + 8:c_bar   = 999.9418m  8:cout_bar= 999.9164m  8:p       = 999.9636m
- + 8:p_bar   =   8.9418u  8:s_bar   =  13.7727u  9:a_bar   =  22.4565u
- + 9:c_bar   = 999.9418m  9:cout_bar= 999.9164m  9:p       = 999.9636m
- + 9:p_bar   =   8.9418u  9:s_bar   =  36.9153u 10:a_bar   =  22.4565u
- +10:c_bar   = 999.9418m 10:cout_bar= 999.9164m 10:p       = 999.9636m
- +10:p_bar   =   8.9418u 10:s_bar   =  36.9153u 11:a_bar   =  22.4565u
- +11:c_bar   = 999.9418m 11:cout_bar= 999.9164m 11:p       = 999.9636m
- +11:p_bar   =   8.9418u 11:s_bar   =  36.9153u 12:a_bar   =  22.4565u
- +12:c_bar   = 999.9418m 12:cout_bar= 999.9164m 12:p       = 999.9636m
- +12:p_bar   =   8.9418u 12:s_bar   =  36.9153u 13:a_bar   =  22.4565u
- +13:c_bar   = 999.9418m 13:cout_bar= 999.9164m 13:p       = 999.9636m
- +13:p_bar   =   8.9418u 13:s_bar   =  36.9153u 14:a_bar   =  22.4565u
- +14:c_bar   = 999.9418m 14:cout_bar= 999.9164m 14:p       = 999.9636m
- +14:p_bar   =   8.9418u 14:s_bar   =  36.9153u 15:a_bar   =  22.4565u
- +15:c_bar   = 999.9418m 15:cout_bar= 999.9164m 15:p       = 999.9636m
- +15:p_bar   =   8.9418u 15:s_bar   =  36.9153u
+ +  0:a1      =   1.0000    0:a2      =   1.0000    0:a3      =   1.0000 
+ +  0:a4      =   1.0000    0:a5      =   1.0000    0:a6      =   1.0000 
+ +  0:a7      =   1.0000    0:a8      =   1.0000    0:b1      =   0.     
+ +  0:b2      =   0.        0:b3      =   0.        0:b4      =   0.     
+ +  0:b5      =   0.        0:b6      =   0.        0:b7      =   0.     
+ +  0:b8      =   0.        0:cin     =   0.        0:cout    =   6.1655u
+ +  0:s1      = 999.9540m   0:s2      = 999.9540m   0:s3      = 999.9540m
+ +  0:s4      = 999.9540m   0:s5      = 999.9540m   0:s6      = 999.9540m
+ +  0:s7      = 999.9540m   0:s8      = 999.9540m   0:vdd     =   1.0000 
+ +  0:vss     =   0.        1:c0      =   0.        1:c1      =  16.5049u
+ +  1:c2      =  12.2655u   1:c3      =  18.6245u   1:c4      =  12.2655u
+ +  1:c5      =  14.3852u   1:c6      =  12.2655u   1:c7      =  14.3852u
+ +  1:g0      =   0.        1:g1      =  10.1453u   1:g2      =  12.2650u
+ +  1:g3      =  10.1453u   1:g4      =  12.2650u   1:g5      =  10.1453u
+ +  1:g6      =  12.2650u   1:g7      =  10.1453u   1:g8      =  10.1453u
+ +  1:p0      =   0.        1:p1      = 999.9511m   1:p2      = 999.9424m
+ +  1:p3      = 999.9424m   1:p4      = 999.9424m   1:p5      = 999.9424m
+ +  1:p6      = 999.9424m   1:p7      = 999.9424m   1:p8      = 999.9511m
+ +  3:g10     =  16.5049u   3:g20     =  12.2655u   3:g30     =  18.6245u
+ +  3:g32     =  10.1461u   3:g40     =  12.2655u   3:g50     =  14.3852u
+ +  3:g54     =  12.2658u   3:g60     =  12.2655u   3:g70     =  14.3852u
+ +  3:g74     =  10.1461u   3:g76     =  10.1461u   3:g80     =   6.1655u
+ +  3:p32     = 999.9879m   3:p54     = 999.9789m   3:p74     = 999.9879m
+ +  3:p76     = 999.9789m   4:in1_bar =  10.3405u   4:in2_bar = 999.9795m
+ +  4:x1      = 850.5525m   4:x2      =   6.7179u   4:y1      = 999.9770m
+ +  4:y2      = 999.9753m   5:in1_bar =  10.3417u   5:in2_bar = 999.9795m
+ +  5:x1      = 850.5322m   5:x2      =   6.7179u   5:y1      = 999.9770m
+ +  5:y2      = 999.9753m   6:in1_bar =  10.3417u   6:in2_bar = 999.9795m
+ +  6:x1      = 850.5355m   6:x2      =   6.7179u   6:y1      = 999.9770m
+ +  6:y2      = 999.9753m   7:in1_bar =  10.3417u   7:in2_bar = 999.9795m
+ +  7:x1      = 850.5305m   7:x2      =   6.7179u   7:y1      = 999.9770m
+ +  7:y2      = 999.9753m   8:in1_bar =  10.3417u   8:in2_bar = 999.9795m
+ +  8:x1      = 850.5355m   8:x2      =   6.7179u   8:y1      = 999.9770m
+ +  8:y2      = 999.9753m   9:in1_bar =  10.3417u   9:in2_bar = 999.9795m
+ +  9:x1      = 850.5339m   9:x2      =   6.7179u   9:y1      = 999.9770m
+ +  9:y2      = 999.9753m  10:in1_bar =  10.3417u  10:in2_bar = 999.9795m
+ + 10:x1      = 850.5355m  10:x2      =   6.7179u  10:y1      = 999.9770m
+ + 10:y2      = 999.9753m  11:in1_bar =  10.3405u  11:in2_bar = 999.9795m
+ + 11:x1      = 850.5410m  11:x2      =   6.7179u  11:y1      = 999.9770m
+ + 11:y2      = 999.9753m  20:mid     =  10.1451u  24:mid     =  10.1451u
+ + 26:mid     =  10.1451u  27:mid     =  10.1451u  28:mid     =  10.1451u
+ + 29:mid     =  10.1451u  30:mid     =  10.1451u  31:mid     =  10.1451u
+ + 48:out_bar = 999.9741m  49:in1_bar =  10.2084u  49:in2_bar = 999.9879m
+ + 49:x       = 850.5837m  49:yl      = 999.9739m  49:yr      = 999.9755m
+ + 50:out_bar = 999.9741m  51:in1_bar =  10.2083u  51:in2_bar = 999.9879m
+ + 51:x       = 850.5833m  51:yl      = 999.9695m  51:yr      = 999.9712m
+ + 52:out_bar = 999.9741m  53:in1_bar =  10.2083u  53:in2_bar = 999.9879m
+ + 53:x       = 850.5833m  53:yl      = 999.9695m  53:yr      = 999.9712m
+ + 54:out_bar = 999.9741m  55:in1_bar =  10.2083u  55:in2_bar = 999.9879m
+ + 55:x       = 850.5833m  55:yl      = 999.9695m  55:yr      = 999.9712m
+ + 56:out_bar = 999.9741m  57:in1_bar =  10.2083u  57:in2_bar = 999.9879m
+ + 57:x       = 850.5833m  57:yl      = 999.9695m  57:yr      = 999.9712m
+ + 58:out_bar = 999.9741m  59:in1_bar =  10.2083u  59:in2_bar = 999.9879m
+ + 59:x       = 850.5833m  59:yl      = 999.9695m  59:yr      = 999.9712m
+ + 60:out_bar = 999.9741m  61:in1_bar =  10.2083u  61:in2_bar = 999.9879m
+ + 61:x       = 850.5833m  61:yl      = 999.9695m  61:yr      = 999.9712m
+ + 62:out_bar = 999.9741m  63:in1_bar =  10.2084u  63:in2_bar = 999.9879m
+ + 63:x       = 850.5837m  63:yl      = 999.9739m  63:yr      = 999.9755m
+ + 64:out_bar = 999.9741m  65:out_bar = 999.9686m  66:mid     =  10.1451u
+ + 67:out_bar =  16.4920u  68:mid     =  10.1451u  69:out_bar =  16.4920u
+ + 70:mid     =  10.1451u  71:out_bar =  16.4920u  72:out_bar = 999.9741m
+ + 73:out_bar = 999.9686m  74:mid     =  10.1451u  75:out_bar =  16.4829u
+ + 76:out_bar = 999.9741m  77:out_bar = 999.9686m  78:out_bar = 999.9741m
+ + 79:out_bar = 999.9686m  80:out_bar = 999.9741m  81:out_bar = 999.9686m
+ + 82:out_bar = 999.9741m  83:out_bar = 999.9686m  84:out_bar = 999.9741m
+ + 85:out_bar = 999.9686m  86:out_bar = 999.9741m  87:out_bar = 999.9686m
+ + 89:x       = 850.5940m  93:x       = 850.5940m  97:x       = 850.5940m
+ +101:x       = 850.5940m 105:x       = 850.5940m 109:x       = 850.5940m
+ +113:x       = 850.5940m 117:x       = 850.5940m 121:x       = 850.5535m
+ +123:x       = 999.9826m 124:out_bar = 999.9741m 125:out_bar = 999.9686m
+ +127:x       =   9.3878u 128:out_bar = 999.9741m 129:out_bar = 999.9686m
+ +131:x       =   9.3878u 132:out_bar = 999.9741m 133:out_bar = 999.9686m
+ +135:x       =   9.3878u 137:x       = 850.5708m 139:x       = 999.9826m
+ +140:out_bar = 999.9741m 141:out_bar = 999.9686m 143:x       =   9.3834u
+ +145:x       = 850.5691m 147:x       = 999.9826m 149:x       = 850.5617m
+ +151:x       = 999.9826m 153:x       = 850.5332m 155:x       = 999.9826m
+ +157:x       = 850.5315m 159:x       = 999.9826m 161:x       = 850.5349m
+ +163:x       = 999.9826m 165:x       = 850.5421m 167:x       = 999.9826m
+ +169:x       = 850.5366m 171:x       = 999.9826m 173:x       = 850.5366m
+ +175:x       = 999.9826m 177:x       = 850.5366m 179:x       = 999.9826m
+ +181:x       = 850.5668m 183:x       = 999.9826m
 
  ******
- ************************* hspice BKA modeling ***********************
+ ************************* hspice bka modeling ***********************
 
  ****** transient analysis tnom=  25.000 temp=  60.000 ******
- tp_s7_fall= 993.6803p  targ=   2.5187n   trig=   1.5250n
- tp_cout_rise=   1.0444n  targ=   2.5694n   trig=   1.5250n
- tp_s7_rise= 983.5749p  targ=   4.0086n   trig=   3.0250n
- tp_cout_fall=   1.0403n  targ=   4.0653n   trig=   3.0250n
- tp_max=   1.0444n
- tp_avg=   1.0155n
- p_avg= 134.7783u  from=   0.             to=   8.5000n
- p_max=   4.3872m    at=   7.5500n
-             from=   0.            to=   8.5000n
- pdp= 140.7611f
- i_avg=-114.9695u  from=   0.             to=   8.5000n
- i_peak=  -1.6645m    at=   6.1187n
+ tp_s8_fall= 613.1180p  targ=   2.1381n   trig=   1.5250n
+ tp_cout_rise= 698.6297p  targ=   2.2236n   trig=   1.5250n
+ tp_s8_rise= 621.2928p  targ=   3.6463n   trig=   3.0250n
+ tp_cout_fall= 710.9497p  targ=   3.7359n   trig=   3.0250n
+ tp_max= 710.9497p
+ tp_s8= 617.2054p
+ tp_cout= 704.7897p
+ tp_avg= 660.9976p
+ p_avg= 317.3801u  from=   0.             to=   8.5000n
+ p_max=   4.6437m    at=   6.0467n
              from=   0.            to=   8.5000n
  **info** dc convergence successful at Newton-Raphson method 
  ******  
- ************************* hspice BKA modeling ***********************
+ ************************* hspice bka modeling ***********************
 
  ****** operating point information tnom=  25.000 temp=  65.000 ******
  ****** operating point status is voltage   simulation time is     0.     
-     node    =voltage       node    =voltage       node    =voltage
+      node    =voltage        node    =voltage        node    =voltage
 
- + 0:a0      =   1.0000   0:a1      =   1.0000   0:a2      =   1.0000 
- + 0:a3      =   1.0000   0:a4      =   1.0000   0:a5      =   1.0000 
- + 0:a6      =   1.0000   0:a7      =   1.0000   0:b0      =   0.     
- + 0:b1      =   0.       0:b2      =   0.       0:b3      =   0.     
- + 0:b4      =   0.       0:b5      =   0.       0:b6      =   0.     
- + 0:b7      =   0.       0:cin     =   0.       0:cout    =   7.1855u
- + 0:s0      = 999.9859m  0:s1      = 999.9859m  0:s2      = 999.9859m
- + 0:s3      = 999.9859m  0:s4      = 999.9859m  0:s5      = 999.9859m
- + 0:s6      = 999.9859m  0:s7      = 999.9859m  0:vdd     =   1.0000 
- + 0:vss     =   0.       1:cmid    =  26.3878u  2:cmid    =  26.3878u
- + 3:cmid    =  26.3878u  4:cmid    =  26.3878u  5:cmid    =  26.3878u
- + 6:cmid    =  26.3878u  7:cmid    =  26.3878u  8:a_bar   =  26.6492u
- + 8:c_bar   = 999.9325m  8:cout_bar= 999.9033m  8:p       = 999.9580m
- + 8:p_bar   =  10.1206u  8:s_bar   =  15.9281u  9:a_bar   =  26.6492u
- + 9:c_bar   = 999.9325m  9:cout_bar= 999.9033m  9:p       = 999.9580m
- + 9:p_bar   =  10.1206u  9:s_bar   =  42.3102u 10:a_bar   =  26.6492u
- +10:c_bar   = 999.9325m 10:cout_bar= 999.9033m 10:p       = 999.9580m
- +10:p_bar   =  10.1206u 10:s_bar   =  42.3102u 11:a_bar   =  26.6492u
- +11:c_bar   = 999.9325m 11:cout_bar= 999.9033m 11:p       = 999.9580m
- +11:p_bar   =  10.1206u 11:s_bar   =  42.3102u 12:a_bar   =  26.6492u
- +12:c_bar   = 999.9325m 12:cout_bar= 999.9033m 12:p       = 999.9580m
- +12:p_bar   =  10.1206u 12:s_bar   =  42.3102u 13:a_bar   =  26.6492u
- +13:c_bar   = 999.9325m 13:cout_bar= 999.9033m 13:p       = 999.9580m
- +13:p_bar   =  10.1206u 13:s_bar   =  42.3102u 14:a_bar   =  26.6492u
- +14:c_bar   = 999.9325m 14:cout_bar= 999.9033m 14:p       = 999.9580m
- +14:p_bar   =  10.1206u 14:s_bar   =  42.3102u 15:a_bar   =  26.6492u
- +15:c_bar   = 999.9325m 15:cout_bar= 999.9033m 15:p       = 999.9580m
- +15:p_bar   =  10.1206u 15:s_bar   =  42.3102u
+ +  0:a1      =   1.0000    0:a2      =   1.0000    0:a3      =   1.0000 
+ +  0:a4      =   1.0000    0:a5      =   1.0000    0:a6      =   1.0000 
+ +  0:a7      =   1.0000    0:a8      =   1.0000    0:b1      =   0.     
+ +  0:b2      =   0.        0:b3      =   0.        0:b4      =   0.     
+ +  0:b5      =   0.        0:b6      =   0.        0:b7      =   0.     
+ +  0:b8      =   0.        0:cin     =   0.        0:cout    =   7.1759u
+ +  0:s1      = 999.9465m   0:s2      = 999.9465m   0:s3      = 999.9465m
+ +  0:s4      = 999.9465m   0:s5      = 999.9465m   0:s6      = 999.9465m
+ +  0:s7      = 999.9465m   0:s8      = 999.9465m   0:vdd     =   1.0000 
+ +  0:vss     =   0.        1:c0      =   0.        1:c1      =  17.7418u
+ +  1:c2      =  13.4104u   1:c3      =  19.9075u   1:c4      =  13.4104u
+ +  1:c5      =  15.5761u   1:c6      =  13.4104u   1:c7      =  15.5761u
+ +  1:g0      =   0.        1:g1      =  11.2441u   1:g2      =  13.4098u
+ +  1:g3      =  11.2441u   1:g4      =  13.4098u   1:g5      =  11.2441u
+ +  1:g6      =  13.4098u   1:g7      =  11.2441u   1:g8      =  11.2441u
+ +  1:p0      =   0.        1:p1      = 999.9438m   1:p2      = 999.9350m
+ +  1:p3      = 999.9350m   1:p4      = 999.9350m   1:p5      = 999.9350m
+ +  1:p6      = 999.9350m   1:p7      = 999.9350m   1:p8      = 999.9438m
+ +  3:g10     =  17.7418u   3:g20     =  13.4104u   3:g30     =  19.9075u
+ +  3:g32     =  11.2450u   3:g40     =  13.4104u   3:g50     =  15.5761u
+ +  3:g54     =  13.4108u   3:g60     =  13.4104u   3:g70     =  15.5761u
+ +  3:g74     =  11.2450u   3:g76     =  11.2450u   3:g80     =   7.1759u
+ +  3:p32     = 999.9859m   3:p54     = 999.9768m   3:p74     = 999.9859m
+ +  3:p76     = 999.9768m   4:in1_bar =  11.4435u   4:in2_bar = 999.9774m
+ +  4:x1      = 849.9861m   4:x2      =   7.8610u   4:y1      = 999.9733m
+ +  4:y2      = 999.9716m   5:in1_bar =  11.4449u   5:in2_bar = 999.9773m
+ +  5:x1      = 849.9647m   5:x2      =   7.8610u   5:y1      = 999.9733m
+ +  5:y2      = 999.9715m   6:in1_bar =  11.4449u   6:in2_bar = 999.9774m
+ +  6:x1      = 849.9681m   6:x2      =   7.8610u   6:y1      = 999.9733m
+ +  6:y2      = 999.9715m   7:in1_bar =  11.4449u   7:in2_bar = 999.9773m
+ +  7:x1      = 849.9629m   7:x2      =   7.8610u   7:y1      = 999.9733m
+ +  7:y2      = 999.9715m   8:in1_bar =  11.4449u   8:in2_bar = 999.9774m
+ +  8:x1      = 849.9681m   8:x2      =   7.8610u   8:y1      = 999.9733m
+ +  8:y2      = 999.9715m   9:in1_bar =  11.4449u   9:in2_bar = 999.9773m
+ +  9:x1      = 849.9664m   9:x2      =   7.8610u   9:y1      = 999.9733m
+ +  9:y2      = 999.9715m  10:in1_bar =  11.4449u  10:in2_bar = 999.9774m
+ + 10:x1      = 849.9681m  10:x2      =   7.8610u  10:y1      = 999.9733m
+ + 10:y2      = 999.9715m  11:in1_bar =  11.4435u  11:in2_bar = 999.9773m
+ + 11:x1      = 849.9737m  11:x2      =   7.8610u  11:y1      = 999.9733m
+ + 11:y2      = 999.9715m  20:mid     =  11.2439u  24:mid     =  11.2439u
+ + 26:mid     =  11.2439u  27:mid     =  11.2439u  28:mid     =  11.2439u
+ + 29:mid     =  11.2439u  30:mid     =  11.2439u  31:mid     =  11.2439u
+ + 48:out_bar = 999.9703m  49:in1_bar =  11.3065u  49:in2_bar = 999.9859m
+ + 49:x       = 850.0221m  49:yl      = 999.9702m  49:yr      = 999.9719m
+ + 50:out_bar = 999.9703m  51:in1_bar =  11.3065u  51:in2_bar = 999.9859m
+ + 51:x       = 850.0217m  51:yl      = 999.9658m  51:yr      = 999.9675m
+ + 52:out_bar = 999.9703m  53:in1_bar =  11.3065u  53:in2_bar = 999.9859m
+ + 53:x       = 850.0217m  53:yl      = 999.9658m  53:yr      = 999.9675m
+ + 54:out_bar = 999.9703m  55:in1_bar =  11.3065u  55:in2_bar = 999.9859m
+ + 55:x       = 850.0217m  55:yl      = 999.9658m  55:yr      = 999.9675m
+ + 56:out_bar = 999.9703m  57:in1_bar =  11.3065u  57:in2_bar = 999.9859m
+ + 57:x       = 850.0217m  57:yl      = 999.9658m  57:yr      = 999.9675m
+ + 58:out_bar = 999.9703m  59:in1_bar =  11.3065u  59:in2_bar = 999.9859m
+ + 59:x       = 850.0217m  59:yl      = 999.9658m  59:yr      = 999.9675m
+ + 60:out_bar = 999.9703m  61:in1_bar =  11.3065u  61:in2_bar = 999.9859m
+ + 61:x       = 850.0217m  61:yl      = 999.9658m  61:yr      = 999.9675m
+ + 62:out_bar = 999.9703m  63:in1_bar =  11.3065u  63:in2_bar = 999.9859m
+ + 63:x       = 850.0221m  63:yl      = 999.9702m  63:yr      = 999.9719m
+ + 64:out_bar = 999.9703m  65:out_bar = 999.9647m  66:mid     =  11.2439u
+ + 67:out_bar =  18.5802u  68:mid     =  11.2439u  69:out_bar =  18.5802u
+ + 70:mid     =  11.2439u  71:out_bar =  18.5802u  72:out_bar = 999.9703m
+ + 73:out_bar = 999.9647m  74:mid     =  11.2439u  75:out_bar =  18.5677u
+ + 76:out_bar = 999.9703m  77:out_bar = 999.9647m  78:out_bar = 999.9703m
+ + 79:out_bar = 999.9647m  80:out_bar = 999.9703m  81:out_bar = 999.9647m
+ + 82:out_bar = 999.9703m  83:out_bar = 999.9647m  84:out_bar = 999.9703m
+ + 85:out_bar = 999.9647m  86:out_bar = 999.9703m  87:out_bar = 999.9647m
+ + 89:x       = 850.0339m  93:x       = 850.0339m  97:x       = 850.0339m
+ +101:x       = 850.0339m 105:x       = 850.0339m 109:x       = 850.0339m
+ +113:x       = 850.0339m 117:x       = 850.0339m 121:x       = 849.9874m
+ +123:x       = 999.9806m 124:out_bar = 999.9703m 125:out_bar = 999.9647m
+ +127:x       =  10.4593u 128:out_bar = 999.9703m 129:out_bar = 999.9647m
+ +131:x       =  10.4593u 132:out_bar = 999.9703m 133:out_bar = 999.9647m
+ +135:x       =  10.4593u 137:x       = 850.0080m 139:x       = 999.9806m
+ +140:out_bar = 999.9703m 141:out_bar = 999.9647m 143:x       =  10.4532u
+ +145:x       = 850.0063m 147:x       = 999.9806m 149:x       = 849.9988m
+ +151:x       = 999.9806m 153:x       = 849.9659m 155:x       = 999.9806m
+ +157:x       = 849.9642m 159:x       = 999.9806m 161:x       = 849.9677m
+ +163:x       = 999.9806m 165:x       = 849.9749m 167:x       = 999.9806m
+ +169:x       = 849.9694m 171:x       = 999.9806m 173:x       = 849.9694m
+ +175:x       = 999.9806m 177:x       = 849.9694m 179:x       = 999.9806m
+ +181:x       = 850.0040m 183:x       = 999.9806m
 
  ******
- ************************* hspice BKA modeling ***********************
+ ************************* hspice bka modeling ***********************
 
  ****** transient analysis tnom=  25.000 temp=  65.000 ******
- tp_s7_fall=   1.0028n  targ=   2.5278n   trig=   1.5250n
- tp_cout_rise=   1.0541n  targ=   2.5791n   trig=   1.5250n
- tp_s7_rise= 992.1193p  targ=   4.0171n   trig=   3.0250n
- tp_cout_fall=   1.0493n  targ=   4.0743n   trig=   3.0250n
- tp_max=   1.0541n
- tp_avg=   1.0246n
- p_avg= 135.6389u  from=   0.             to=   8.5000n
- p_max=   4.3729m    at=   7.5500n
-             from=   0.            to=   8.5000n
- pdp= 142.9726f
- i_avg=-115.7209u  from=   0.             to=   8.5000n
- i_peak=  -1.6555m    at=   6.1193n
+ tp_s8_fall= 617.9110p  targ=   2.1429n   trig=   1.5250n
+ tp_cout_rise= 704.0728p  targ=   2.2291n   trig=   1.5250n
+ tp_s8_rise= 626.6823p  targ=   3.6517n   trig=   3.0250n
+ tp_cout_fall= 717.1175p  targ=   3.7421n   trig=   3.0250n
+ tp_max= 717.1175p
+ tp_s8= 622.2967p
+ tp_cout= 710.5952p
+ tp_avg= 666.4459p
+ p_avg= 319.1497u  from=   0.             to=   8.5000n
+ p_max=   4.6270m    at=   6.0480n
              from=   0.            to=   8.5000n
  **info** dc convergence successful at Newton-Raphson method 
  ******  
- ************************* hspice BKA modeling ***********************
+ ************************* hspice bka modeling ***********************
 
  ****** operating point information tnom=  25.000 temp=  70.000 ******
  ****** operating point status is voltage   simulation time is     0.     
-     node    =voltage       node    =voltage       node    =voltage
+      node    =voltage        node    =voltage        node    =voltage
 
- + 0:a0      =   1.0000   0:a1      =   1.0000   0:a2      =   1.0000 
- + 0:a3      =   1.0000   0:a4      =   1.0000   0:a5      =   1.0000 
- + 0:a6      =   1.0000   0:a7      =   1.0000   0:b0      =   0.     
- + 0:b1      =   0.       0:b2      =   0.       0:b3      =   0.     
- + 0:b4      =   0.       0:b5      =   0.       0:b6      =   0.     
- + 0:b7      =   0.       0:cin     =   0.       0:cout    =   8.3668u
- + 0:s0      = 999.9837m  0:s1      = 999.9836m  0:s2      = 999.9836m
- + 0:s3      = 999.9836m  0:s4      = 999.9836m  0:s5      = 999.9836m
- + 0:s6      = 999.9836m  0:s7      = 999.9836m  0:vdd     =   1.0000 
- + 0:vss     =   0.       1:cmid    =  30.1424u  2:cmid    =  30.1424u
- + 3:cmid    =  30.1424u  4:cmid    =  30.1424u  5:cmid    =  30.1424u
- + 6:cmid    =  30.1424u  7:cmid    =  30.1424u  8:a_bar   =  31.5280u
- + 8:c_bar   = 999.9217m  8:cout_bar= 999.8883m  8:p       = 999.9514m
- + 8:p_bar   =  11.4781u  8:s_bar   =  18.4280u  9:a_bar   =  31.5280u
- + 9:c_bar   = 999.9217m  9:cout_bar= 999.8883m  9:p       = 999.9514m
- + 9:p_bar   =  11.4781u  9:s_bar   =  48.5627u 10:a_bar   =  31.5280u
- +10:c_bar   = 999.9217m 10:cout_bar= 999.8883m 10:p       = 999.9514m
- +10:p_bar   =  11.4781u 10:s_bar   =  48.5627u 11:a_bar   =  31.5280u
- +11:c_bar   = 999.9217m 11:cout_bar= 999.8883m 11:p       = 999.9514m
- +11:p_bar   =  11.4781u 11:s_bar   =  48.5627u 12:a_bar   =  31.5280u
- +12:c_bar   = 999.9217m 12:cout_bar= 999.8883m 12:p       = 999.9514m
- +12:p_bar   =  11.4781u 12:s_bar   =  48.5627u 13:a_bar   =  31.5280u
- +13:c_bar   = 999.9217m 13:cout_bar= 999.8883m 13:p       = 999.9514m
- +13:p_bar   =  11.4781u 13:s_bar   =  48.5627u 14:a_bar   =  31.5280u
- +14:c_bar   = 999.9217m 14:cout_bar= 999.8883m 14:p       = 999.9514m
- +14:p_bar   =  11.4781u 14:s_bar   =  48.5627u 15:a_bar   =  31.5280u
- +15:c_bar   = 999.9217m 15:cout_bar= 999.8883m 15:p       = 999.9514m
- +15:p_bar   =  11.4781u 15:s_bar   =  48.5627u
+ +  0:a1      =   1.0000    0:a2      =   1.0000    0:a3      =   1.0000 
+ +  0:a4      =   1.0000    0:a5      =   1.0000    0:a6      =   1.0000 
+ +  0:a7      =   1.0000    0:a8      =   1.0000    0:b1      =   0.     
+ +  0:b2      =   0.        0:b3      =   0.        0:b4      =   0.     
+ +  0:b5      =   0.        0:b6      =   0.        0:b7      =   0.     
+ +  0:b8      =   0.        0:cin     =   0.        0:cout    =   8.3536u
+ +  0:s1      = 999.9378m   0:s2      = 999.9378m   0:s3      = 999.9378m
+ +  0:s4      = 999.9378m   0:s5      = 999.9378m   0:s6      = 999.9378m
+ +  0:s7      = 999.9378m   0:s8      = 999.9378m   0:vdd     =   1.0000 
+ +  0:vss     =   0.        1:c0      =   0.        1:c1      =  19.1498u
+ +  1:c2      =  14.7248u   1:c3      =  21.3623u   1:c4      =  14.7248u
+ +  1:c5      =  16.9373u   1:c6      =  14.7248u   1:c7      =  16.9373u
+ +  1:g0      =   0.        1:g1      =  12.5117u   1:g2      =  14.7242u
+ +  1:g3      =  12.5117u   1:g4      =  14.7242u   1:g5      =  12.5117u
+ +  1:g6      =  14.7242u   1:g7      =  12.5117u   1:g8      =  12.5117u
+ +  1:p0      =   0.        1:p1      = 999.9354m   1:p2      = 999.9264m
+ +  1:p3      = 999.9264m   1:p4      = 999.9264m   1:p5      = 999.9264m
+ +  1:p6      = 999.9264m   1:p7      = 999.9264m   1:p8      = 999.9354m
+ +  3:g10     =  19.1498u   3:g20     =  14.7248u   3:g30     =  21.3623u
+ +  3:g32     =  12.5128u   3:g40     =  14.7248u   3:g50     =  16.9373u
+ +  3:g54     =  14.7253u   3:g60     =  14.7248u   3:g70     =  16.9373u
+ +  3:g74     =  12.5128u   3:g76     =  12.5128u   3:g80     =   8.3536u
+ +  3:p32     = 999.9837m   3:p54     = 999.9744m   3:p74     = 999.9837m
+ +  3:p76     = 999.9744m   4:in1_bar =  12.7156u   4:in2_bar = 999.9750m
+ +  4:x1      = 849.4019m   4:x2      =   9.1861u   4:y1      = 999.9690m
+ +  4:y2      = 999.9672m   5:in1_bar =  12.7173u   5:in2_bar = 999.9749m
+ +  5:x1      = 849.3791m   5:x2      =   9.1861u   5:y1      = 999.9690m
+ +  5:y2      = 999.9672m   6:in1_bar =  12.7173u   6:in2_bar = 999.9749m
+ +  6:x1      = 849.3827m   6:x2      =   9.1861u   6:y1      = 999.9690m
+ +  6:y2      = 999.9672m   7:in1_bar =  12.7173u   7:in2_bar = 999.9749m
+ +  7:x1      = 849.3774m   7:x2      =   9.1861u   7:y1      = 999.9690m
+ +  7:y2      = 999.9672m   8:in1_bar =  12.7173u   8:in2_bar = 999.9749m
+ +  8:x1      = 849.3827m   8:x2      =   9.1861u   8:y1      = 999.9690m
+ +  8:y2      = 999.9672m   9:in1_bar =  12.7173u   9:in2_bar = 999.9749m
+ +  9:x1      = 849.3809m   9:x2      =   9.1861u   9:y1      = 999.9690m
+ +  9:y2      = 999.9672m  10:in1_bar =  12.7173u  10:in2_bar = 999.9749m
+ + 10:x1      = 849.3827m  10:x2      =   9.1861u  10:y1      = 999.9690m
+ + 10:y2      = 999.9672m  11:in1_bar =  12.7156u  11:in2_bar = 999.9749m
+ + 11:x1      = 849.3883m  11:x2      =   9.1861u  11:y1      = 999.9689m
+ + 11:y2      = 999.9672m  20:mid     =  12.5114u  24:mid     =  12.5114u
+ + 26:mid     =  12.5114u  27:mid     =  12.5114u  28:mid     =  12.5114u
+ + 29:mid     =  12.5114u  30:mid     =  12.5114u  31:mid     =  12.5114u
+ + 48:out_bar = 999.9659m  49:in1_bar =  12.5730u  49:in2_bar = 999.9837m
+ + 49:x       = 849.4433m  49:yl      = 999.9660m  49:yr      = 999.9677m
+ + 50:out_bar = 999.9659m  51:in1_bar =  12.5730u  51:in2_bar = 999.9837m
+ + 51:x       = 849.4429m  51:yl      = 999.9615m  51:yr      = 999.9632m
+ + 52:out_bar = 999.9659m  53:in1_bar =  12.5730u  53:in2_bar = 999.9837m
+ + 53:x       = 849.4429m  53:yl      = 999.9615m  53:yr      = 999.9632m
+ + 54:out_bar = 999.9659m  55:in1_bar =  12.5730u  55:in2_bar = 999.9837m
+ + 55:x       = 849.4429m  55:yl      = 999.9615m  55:yr      = 999.9632m
+ + 56:out_bar = 999.9659m  57:in1_bar =  12.5730u  57:in2_bar = 999.9837m
+ + 57:x       = 849.4429m  57:yl      = 999.9615m  57:yr      = 999.9632m
+ + 58:out_bar = 999.9659m  59:in1_bar =  12.5730u  59:in2_bar = 999.9837m
+ + 59:x       = 849.4429m  59:yl      = 999.9615m  59:yr      = 999.9632m
+ + 60:out_bar = 999.9659m  61:in1_bar =  12.5730u  61:in2_bar = 999.9837m
+ + 61:x       = 849.4429m  61:yl      = 999.9615m  61:yr      = 999.9632m
+ + 62:out_bar = 999.9659m  63:in1_bar =  12.5730u  63:in2_bar = 999.9837m
+ + 63:x       = 849.4433m  63:yl      = 999.9660m  63:yr      = 999.9677m
+ + 64:out_bar = 999.9659m  65:out_bar = 999.9602m  66:mid     =  12.5114u
+ + 67:out_bar =  20.9986u  68:mid     =  12.5114u  69:out_bar =  20.9986u
+ + 70:mid     =  12.5114u  71:out_bar =  20.9986u  72:out_bar = 999.9659m
+ + 73:out_bar = 999.9602m  74:mid     =  12.5114u  75:out_bar =  20.9816u
+ + 76:out_bar = 999.9659m  77:out_bar = 999.9602m  78:out_bar = 999.9659m
+ + 79:out_bar = 999.9602m  80:out_bar = 999.9659m  81:out_bar = 999.9602m
+ + 82:out_bar = 999.9659m  83:out_bar = 999.9602m  84:out_bar = 999.9659m
+ + 85:out_bar = 999.9602m  86:out_bar = 999.9659m  87:out_bar = 999.9602m
+ + 89:x       = 849.4567m  93:x       = 849.4567m  97:x       = 849.4567m
+ +101:x       = 849.4567m 105:x       = 849.4567m 109:x       = 849.4567m
+ +113:x       = 849.4567m 117:x       = 849.4567m 121:x       = 849.4034m
+ +123:x       = 999.9784m 124:out_bar = 999.9659m 125:out_bar = 999.9602m
+ +127:x       =  11.6964u 128:out_bar = 999.9659m 129:out_bar = 999.9602m
+ +131:x       =  11.6963u 132:out_bar = 999.9659m 133:out_bar = 999.9602m
+ +135:x       =  11.6963u 137:x       = 849.4279m 139:x       = 999.9784m
+ +140:out_bar = 999.9659m 141:out_bar = 999.9602m 143:x       =  11.6881u
+ +145:x       = 849.4261m 147:x       = 999.9784m 149:x       = 849.4185m
+ +151:x       = 999.9784m 153:x       = 849.3806m 155:x       = 999.9784m
+ +157:x       = 849.3788m 159:x       = 999.9784m 161:x       = 849.3824m
+ +163:x       = 999.9784m 165:x       = 849.3898m 167:x       = 999.9784m
+ +169:x       = 849.3842m 171:x       = 999.9784m 173:x       = 849.3842m
+ +175:x       = 999.9784m 177:x       = 849.3842m 179:x       = 999.9784m
+ +181:x       = 849.4238m 183:x       = 999.9784m
 
  ******
- ************************* hspice BKA modeling ***********************
+ ************************* hspice bka modeling ***********************
 
  ****** transient analysis tnom=  25.000 temp=  70.000 ******
- tp_s7_fall=   1.0119n  targ=   2.5369n   trig=   1.5250n
- tp_cout_rise=   1.0638n  targ=   2.5888n   trig=   1.5250n
- tp_s7_rise=   1.0007n  targ=   4.0257n   trig=   3.0250n
- tp_cout_fall=   1.0583n  targ=   4.0833n   trig=   3.0250n
- tp_max=   1.0638n
- tp_avg=   1.0337n
- p_avg= 136.5714u  from=   0.             to=   8.5000n
- p_max=   4.3589m    at=   7.5500n
-             from=   0.            to=   8.5000n
- pdp= 145.2861f
- i_avg=-116.4795u  from=   0.             to=   8.5000n
- i_peak=  -1.6450m    at=   6.1206n
+ tp_s8_fall= 622.7113p  targ=   2.1477n   trig=   1.5250n
+ tp_cout_rise= 709.5240p  targ=   2.2345n   trig=   1.5250n
+ tp_s8_rise= 632.0946p  targ=   3.6571n   trig=   3.0250n
+ tp_cout_fall= 723.3166p  targ=   3.7483n   trig=   3.0250n
+ tp_max= 723.3166p
+ tp_s8= 627.4029p
+ tp_cout= 716.4203p
+ tp_avg= 671.9116p
+ p_avg= 320.9142u  from=   0.             to=   8.5000n
+ p_max=   4.6117m    at=   6.0473n
              from=   0.            to=   8.5000n
  **info** dc convergence successful at Newton-Raphson method 
  ******  
- ************************* hspice BKA modeling ***********************
+ ************************* hspice bka modeling ***********************
 
  ****** operating point information tnom=  25.000 temp=  75.000 ******
  ****** operating point status is voltage   simulation time is     0.     
-     node    =voltage       node    =voltage       node    =voltage
+      node    =voltage        node    =voltage        node    =voltage
 
- + 0:a0      =   1.0000   0:a1      =   1.0000   0:a2      =   1.0000 
- + 0:a3      =   1.0000   0:a4      =   1.0000   0:a5      =   1.0000 
- + 0:a6      =   1.0000   0:a7      =   1.0000   0:b0      =   0.     
- + 0:b1      =   0.       0:b2      =   0.       0:b3      =   0.     
- + 0:b4      =   0.       0:b5      =   0.       0:b6      =   0.     
- + 0:b7      =   0.       0:cin     =   0.       0:cout    =   9.7388u
- + 0:s0      = 999.9811m  0:s1      = 999.9811m  0:s2      = 999.9811m
- + 0:s3      = 999.9811m  0:s4      = 999.9811m  0:s5      = 999.9811m
- + 0:s6      = 999.9811m  0:s7      = 999.9811m  0:vdd     =   1.0000 
- + 0:vss     =   0.       1:cmid    =  34.4763u  2:cmid    =  34.4763u
- + 3:cmid    =  34.4763u  4:cmid    =  34.4763u  5:cmid    =  34.4763u
- + 6:cmid    =  34.4763u  7:cmid    =  34.4763u  8:a_bar   =  37.1796u
- + 8:c_bar   = 999.9093m  8:cout_bar= 999.8710m  8:p       = 999.9439m
- + 8:p_bar   =  13.0361u  8:s_bar   =  21.3158u  9:a_bar   =  37.1796u
- + 9:c_bar   = 999.9093m  9:cout_bar= 999.8710m  9:p       = 999.9439m
- + 9:p_bar   =  13.0361u  9:s_bar   =  55.7821u 10:a_bar   =  37.1796u
- +10:c_bar   = 999.9093m 10:cout_bar= 999.8710m 10:p       = 999.9439m
- +10:p_bar   =  13.0361u 10:s_bar   =  55.7821u 11:a_bar   =  37.1796u
- +11:c_bar   = 999.9093m 11:cout_bar= 999.8710m 11:p       = 999.9439m
- +11:p_bar   =  13.0361u 11:s_bar   =  55.7821u 12:a_bar   =  37.1796u
- +12:c_bar   = 999.9093m 12:cout_bar= 999.8710m 12:p       = 999.9439m
- +12:p_bar   =  13.0361u 12:s_bar   =  55.7821u 13:a_bar   =  37.1796u
- +13:c_bar   = 999.9093m 13:cout_bar= 999.8710m 13:p       = 999.9439m
- +13:p_bar   =  13.0361u 13:s_bar   =  55.7821u 14:a_bar   =  37.1796u
- +14:c_bar   = 999.9093m 14:cout_bar= 999.8710m 14:p       = 999.9439m
- +14:p_bar   =  13.0361u 14:s_bar   =  55.7821u 15:a_bar   =  37.1796u
- +15:c_bar   = 999.9093m 15:cout_bar= 999.8710m 15:p       = 999.9439m
- +15:p_bar   =  13.0361u 15:s_bar   =  55.7821u
+ +  0:a1      =   1.0000    0:a2      =   1.0000    0:a3      =   1.0000 
+ +  0:a4      =   1.0000    0:a5      =   1.0000    0:a6      =   1.0000 
+ +  0:a7      =   1.0000    0:a8      =   1.0000    0:b1      =   0.     
+ +  0:b2      =   0.        0:b3      =   0.        0:b4      =   0.     
+ +  0:b5      =   0.        0:b6      =   0.        0:b7      =   0.     
+ +  0:b8      =   0.        0:cin     =   0.        0:cout    =   9.7205u
+ +  0:s1      = 999.9279m   0:s2      = 999.9279m   0:s3      = 999.9279m
+ +  0:s4      = 999.9279m   0:s5      = 999.9279m   0:s6      = 999.9279m
+ +  0:s7      = 999.9279m   0:s8      = 999.9279m   0:vdd     =   1.0000 
+ +  0:vss     =   0.        1:c0      =   0.        1:c1      =  20.7512u
+ +  1:c2      =  16.2310u   1:c3      =  23.0112u   1:c4      =  16.2310u
+ +  1:c5      =  18.4911u   1:c6      =  16.2310u   1:c7      =  18.4911u
+ +  1:g0      =   0.        1:g1      =  13.9702u   1:g2      =  16.2302u
+ +  1:g3      =  13.9702u   1:g4      =  16.2302u   1:g5      =  13.9702u
+ +  1:g6      =  16.2302u   1:g7      =  13.9702u   1:g8      =  13.9702u
+ +  1:p0      =   0.        1:p1      = 999.9257m   1:p2      = 999.9166m
+ +  1:p3      = 999.9166m   1:p4      = 999.9166m   1:p5      = 999.9166m
+ +  1:p6      = 999.9166m   1:p7      = 999.9166m   1:p8      = 999.9257m
+ +  3:g10     =  20.7512u   3:g20     =  16.2310u   3:g30     =  23.0112u
+ +  3:g32     =  13.9715u   3:g40     =  16.2310u   3:g50     =  18.4911u
+ +  3:g54     =  16.2316u   3:g60     =  16.2310u   3:g70     =  18.4911u
+ +  3:g74     =  13.9715u   3:g76     =  13.9715u   3:g80     =   9.7205u
+ +  3:p32     = 999.9811m   3:p54     = 999.9716m   3:p74     = 999.9811m
+ +  3:p76     = 999.9716m   4:in1_bar =  14.1792u   4:in2_bar = 999.9722m
+ +  4:x1      = 848.8023m   4:x2      =  10.7156u   4:y1      = 999.9640m
+ +  4:y2      = 999.9622m   5:in1_bar =  14.1812u   5:in2_bar = 999.9722m
+ +  5:x1      = 848.7781m   5:x2      =  10.7156u   5:y1      = 999.9640m
+ +  5:y2      = 999.9622m   6:in1_bar =  14.1812u   6:in2_bar = 999.9722m
+ +  6:x1      = 848.7817m   6:x2      =  10.7156u   6:y1      = 999.9640m
+ +  6:y2      = 999.9622m   7:in1_bar =  14.1812u   7:in2_bar = 999.9722m
+ +  7:x1      = 848.7763m   7:x2      =  10.7156u   7:y1      = 999.9640m
+ +  7:y2      = 999.9622m   8:in1_bar =  14.1812u   8:in2_bar = 999.9722m
+ +  8:x1      = 848.7817m   8:x2      =  10.7156u   8:y1      = 999.9640m
+ +  8:y2      = 999.9622m   9:in1_bar =  14.1812u   9:in2_bar = 999.9722m
+ +  9:x1      = 848.7799m   9:x2      =  10.7156u   9:y1      = 999.9640m
+ +  9:y2      = 999.9622m  10:in1_bar =  14.1812u  10:in2_bar = 999.9722m
+ + 10:x1      = 848.7817m  10:x2      =  10.7156u  10:y1      = 999.9640m
+ + 10:y2      = 999.9622m  11:in1_bar =  14.1792u  11:in2_bar = 999.9722m
+ + 11:x1      = 848.7874m  11:x2      =  10.7156u  11:y1      = 999.9640m
+ + 11:y2      = 999.9622m  20:mid     =  13.9698u  24:mid     =  13.9698u
+ + 26:mid     =  13.9698u  27:mid     =  13.9698u  28:mid     =  13.9698u
+ + 29:mid     =  13.9698u  30:mid     =  13.9698u  31:mid     =  13.9698u
+ + 48:out_bar = 999.9610m  49:in1_bar =  14.0299u  49:in2_bar = 999.9811m
+ + 49:x       = 848.8500m  49:yl      = 999.9611m  49:yr      = 999.9629m
+ + 50:out_bar = 999.9610m  51:in1_bar =  14.0299u  51:in2_bar = 999.9811m
+ + 51:x       = 848.8495m  51:yl      = 999.9565m  51:yr      = 999.9583m
+ + 52:out_bar = 999.9610m  53:in1_bar =  14.0299u  53:in2_bar = 999.9811m
+ + 53:x       = 848.8495m  53:yl      = 999.9565m  53:yr      = 999.9583m
+ + 54:out_bar = 999.9610m  55:in1_bar =  14.0299u  55:in2_bar = 999.9811m
+ + 55:x       = 848.8495m  55:yl      = 999.9565m  55:yr      = 999.9583m
+ + 56:out_bar = 999.9610m  57:in1_bar =  14.0299u  57:in2_bar = 999.9811m
+ + 57:x       = 848.8495m  57:yl      = 999.9565m  57:yr      = 999.9583m
+ + 58:out_bar = 999.9610m  59:in1_bar =  14.0299u  59:in2_bar = 999.9811m
+ + 59:x       = 848.8495m  59:yl      = 999.9565m  59:yr      = 999.9583m
+ + 60:out_bar = 999.9610m  61:in1_bar =  14.0299u  61:in2_bar = 999.9811m
+ + 61:x       = 848.8495m  61:yl      = 999.9565m  61:yr      = 999.9583m
+ + 62:out_bar = 999.9610m  63:in1_bar =  14.0299u  63:in2_bar = 999.9811m
+ + 63:x       = 848.8500m  63:yl      = 999.9611m  63:yr      = 999.9629m
+ + 64:out_bar = 999.9610m  65:out_bar = 999.9551m  66:mid     =  13.9698u
+ + 67:out_bar =  23.7908u  68:mid     =  13.9698u  69:out_bar =  23.7908u
+ + 70:mid     =  13.9698u  71:out_bar =  23.7908u  72:out_bar = 999.9609m
+ + 73:out_bar = 999.9551m  74:mid     =  13.9698u  75:out_bar =  23.7677u
+ + 76:out_bar = 999.9609m  77:out_bar = 999.9551m  78:out_bar = 999.9609m
+ + 79:out_bar = 999.9551m  80:out_bar = 999.9609m  81:out_bar = 999.9551m
+ + 82:out_bar = 999.9609m  83:out_bar = 999.9551m  84:out_bar = 999.9609m
+ + 85:out_bar = 999.9551m  86:out_bar = 999.9609m  87:out_bar = 999.9551m
+ + 89:x       = 848.8653m  93:x       = 848.8653m  97:x       = 848.8653m
+ +101:x       = 848.8653m 105:x       = 848.8653m 109:x       = 848.8653m
+ +113:x       = 848.8653m 117:x       = 848.8653m 121:x       = 848.8040m
+ +123:x       = 999.9758m 124:out_bar = 999.9609m 125:out_bar = 999.9551m
+ +127:x       =  13.1208u 128:out_bar = 999.9609m 129:out_bar = 999.9551m
+ +131:x       =  13.1208u 132:out_bar = 999.9609m 133:out_bar = 999.9551m
+ +135:x       =  13.1208u 137:x       = 848.8330m 139:x       = 999.9758m
+ +140:out_bar = 999.9609m 141:out_bar = 999.9551m 143:x       =  13.1095u
+ +145:x       = 848.8312m 147:x       = 999.9758m 149:x       = 848.8234m
+ +151:x       = 999.9758m 153:x       = 848.7798m 155:x       = 999.9758m
+ +157:x       = 848.7780m 159:x       = 999.9758m 161:x       = 848.7816m
+ +163:x       = 999.9758m 165:x       = 848.7892m 167:x       = 999.9758m
+ +169:x       = 848.7835m 171:x       = 999.9758m 173:x       = 848.7835m
+ +175:x       = 999.9758m 177:x       = 848.7835m 179:x       = 999.9758m
+ +181:x       = 848.8289m 183:x       = 999.9758m
 
  ******
- ************************* hspice BKA modeling ***********************
+ ************************* hspice bka modeling ***********************
 
  ****** transient analysis tnom=  25.000 temp=  75.000 ******
- tp_s7_fall=   1.0211n  targ=   2.5461n   trig=   1.5250n
- tp_cout_rise=   1.0736n  targ=   2.5986n   trig=   1.5250n
- tp_s7_rise=   1.0093n  targ=   4.0343n   trig=   3.0250n
- tp_cout_fall=   1.0673n  targ=   4.0923n   trig=   3.0250n
- tp_max=   1.0736n
- tp_avg=   1.0428n
- p_avg= 137.4842u  from=   0.             to=   8.5000n
- p_max=   4.3444m    at=   7.5500n
-             from=   0.            to=   8.5000n
- pdp= 147.6041f
- i_avg=-117.2680u  from=   0.             to=   8.5000n
- i_peak=  -1.6401m    at=   6.1208n
+ tp_s8_fall= 627.5750p  targ=   2.1526n   trig=   1.5250n
+ tp_cout_rise= 715.0373p  targ=   2.2400n   trig=   1.5250n
+ tp_s8_rise= 637.5517p  targ=   3.6626n   trig=   3.0250n
+ tp_cout_fall= 729.5599p  targ=   3.7546n   trig=   3.0250n
+ tp_max= 729.5599p
+ tp_s8= 632.5634p
+ tp_cout= 722.2986p
+ tp_avg= 677.4310p
+ p_avg= 322.7821u  from=   0.             to=   8.5000n
+ p_max=   4.5889m    at=   6.0467n
              from=   0.            to=   8.5000n
  **info** dc convergence successful at Newton-Raphson method 
  ******  
- ************************* hspice BKA modeling ***********************
+ ************************* hspice bka modeling ***********************
 
  ****** operating point information tnom=  25.000 temp=  80.000 ******
  ****** operating point status is voltage   simulation time is     0.     
-     node    =voltage       node    =voltage       node    =voltage
+      node    =voltage        node    =voltage        node    =voltage
 
- + 0:a0      =   1.0000   0:a1      =   1.0000   0:a2      =   1.0000 
- + 0:a3      =   1.0000   0:a4      =   1.0000   0:a5      =   1.0000 
- + 0:a6      =   1.0000   0:a7      =   1.0000   0:b0      =   0.     
- + 0:b1      =   0.       0:b2      =   0.       0:b3      =   0.     
- + 0:b4      =   0.       0:b5      =   0.       0:b6      =   0.     
- + 0:b7      =   0.       0:cin     =   0.       0:cout    =  11.3261u
- + 0:s0      = 999.9781m  0:s1      = 999.9781m  0:s2      = 999.9781m
- + 0:s3      = 999.9781m  0:s4      = 999.9781m  0:s5      = 999.9781m
- + 0:s6      = 999.9781m  0:s7      = 999.9781m  0:vdd     =   1.0000 
- + 0:vss     =   0.       1:cmid    =  39.4616u  2:cmid    =  39.4616u
- + 3:cmid    =  39.4616u  4:cmid    =  39.4616u  5:cmid    =  39.4616u
- + 6:cmid    =  39.4616u  7:cmid    =  39.4616u  8:a_bar   =  43.6984u
- + 8:c_bar   = 999.8952m  8:cout_bar= 999.8512m  8:p       = 999.9354m
- + 8:p_bar   =  14.8180u  8:s_bar   =  24.6389u  9:a_bar   =  43.6984u
- + 9:c_bar   = 999.8952m  9:cout_bar= 999.8512m  9:p       = 999.9354m
- + 9:p_bar   =  14.8180u  9:s_bar   =  64.0872u 10:a_bar   =  43.6984u
- +10:c_bar   = 999.8952m 10:cout_bar= 999.8512m 10:p       = 999.9354m
- +10:p_bar   =  14.8180u 10:s_bar   =  64.0872u 11:a_bar   =  43.6984u
- +11:c_bar   = 999.8952m 11:cout_bar= 999.8512m 11:p       = 999.9354m
- +11:p_bar   =  14.8180u 11:s_bar   =  64.0872u 12:a_bar   =  43.6984u
- +12:c_bar   = 999.8952m 12:cout_bar= 999.8512m 12:p       = 999.9354m
- +12:p_bar   =  14.8180u 12:s_bar   =  64.0872u 13:a_bar   =  43.6984u
- +13:c_bar   = 999.8952m 13:cout_bar= 999.8512m 13:p       = 999.9354m
- +13:p_bar   =  14.8180u 13:s_bar   =  64.0872u 14:a_bar   =  43.6984u
- +14:c_bar   = 999.8952m 14:cout_bar= 999.8512m 14:p       = 999.9354m
- +14:p_bar   =  14.8180u 14:s_bar   =  64.0872u 15:a_bar   =  43.6984u
- +15:c_bar   = 999.8952m 15:cout_bar= 999.8512m 15:p       = 999.9354m
- +15:p_bar   =  14.8180u 15:s_bar   =  64.0872u
+ +  0:a1      =   1.0000    0:a2      =   1.0000    0:a3      =   1.0000 
+ +  0:a4      =   1.0000    0:a5      =   1.0000    0:a6      =   1.0000 
+ +  0:a7      =   1.0000    0:a8      =   1.0000    0:b1      =   0.     
+ +  0:b2      =   0.        0:b3      =   0.        0:b4      =   0.     
+ +  0:b5      =   0.        0:b6      =   0.        0:b7      =   0.     
+ +  0:b8      =   0.        0:cin     =   0.        0:cout    =  11.3011u
+ +  0:s1      = 999.9166m   0:s2      = 999.9166m   0:s3      = 999.9166m
+ +  0:s4      = 999.9166m   0:s5      = 999.9166m   0:s6      = 999.9166m
+ +  0:s7      = 999.9166m   0:s8      = 999.9166m   0:vdd     =   1.0000 
+ +  0:vss     =   0.        1:c0      =   0.        1:c1      =  22.5702u
+ +  1:c2      =  17.9532u   1:c3      =  24.8786u   1:c4      =  17.9532u
+ +  1:c5      =  20.2617u   1:c6      =  17.9532u   1:c7      =  20.2617u
+ +  1:g0      =   0.        1:g1      =  15.6438u   1:g2      =  17.9522u
+ +  1:g3      =  15.6438u   1:g4      =  17.9522u   1:g5      =  15.6438u
+ +  1:g6      =  17.9522u   1:g7      =  15.6438u   1:g8      =  15.6438u
+ +  1:p0      =   0.        1:p1      = 999.9147m   1:p2      = 999.9054m
+ +  1:p3      = 999.9054m   1:p4      = 999.9054m   1:p5      = 999.9054m
+ +  1:p6      = 999.9054m   1:p7      = 999.9054m   1:p8      = 999.9147m
+ +  3:g10     =  22.5702u   3:g20     =  17.9532u   3:g30     =  24.8786u
+ +  3:g32     =  15.6453u   3:g40     =  17.9532u   3:g50     =  20.2617u
+ +  3:g54     =  17.9539u   3:g60     =  17.9532u   3:g70     =  20.2617u
+ +  3:g74     =  15.6453u   3:g76     =  15.6453u   3:g80     =  11.3011u
+ +  3:p32     = 999.9781m   3:p54     = 999.9686m   3:p74     = 999.9781m
+ +  3:p76     = 999.9686m   4:in1_bar =  15.8586u   4:in2_bar = 999.9691m
+ +  4:x1      = 848.1893m   4:x2      =  12.4736u   4:y1      = 999.9583m
+ +  4:y2      = 999.9565m   5:in1_bar =  15.8610u   5:in2_bar = 999.9691m
+ +  5:x1      = 848.1635m   5:x2      =  12.4736u   5:y1      = 999.9583m
+ +  5:y2      = 999.9565m   6:in1_bar =  15.8610u   6:in2_bar = 999.9691m
+ +  6:x1      = 848.1672m   6:x2      =  12.4736u   6:y1      = 999.9583m
+ +  6:y2      = 999.9565m   7:in1_bar =  15.8610u   7:in2_bar = 999.9691m
+ +  7:x1      = 848.1616m   7:x2      =  12.4736u   7:y1      = 999.9583m
+ +  7:y2      = 999.9565m   8:in1_bar =  15.8610u   8:in2_bar = 999.9691m
+ +  8:x1      = 848.1672m   8:x2      =  12.4736u   8:y1      = 999.9583m
+ +  8:y2      = 999.9565m   9:in1_bar =  15.8610u   9:in2_bar = 999.9691m
+ +  9:x1      = 848.1653m   9:x2      =  12.4736u   9:y1      = 999.9583m
+ +  9:y2      = 999.9565m  10:in1_bar =  15.8610u  10:in2_bar = 999.9691m
+ + 10:x1      = 848.1672m  10:x2      =  12.4736u  10:y1      = 999.9583m
+ + 10:y2      = 999.9565m  11:in1_bar =  15.8586u  11:in2_bar = 999.9691m
+ + 11:x1      = 848.1730m  11:x2      =  12.4736u  11:y1      = 999.9583m
+ + 11:y2      = 999.9565m  20:mid     =  15.6434u  24:mid     =  15.6434u
+ + 26:mid     =  15.6434u  27:mid     =  15.6434u  28:mid     =  15.6434u
+ + 29:mid     =  15.6434u  30:mid     =  15.6434u  31:mid     =  15.6434u
+ + 48:out_bar = 999.9553m  49:in1_bar =  15.7011u  49:in2_bar = 999.9782m
+ + 49:x       = 848.2441m  49:yl      = 999.9556m  49:yr      = 999.9574m
+ + 50:out_bar = 999.9553m  51:in1_bar =  15.7011u  51:in2_bar = 999.9782m
+ + 51:x       = 848.2436m  51:yl      = 999.9509m  51:yr      = 999.9527m
+ + 52:out_bar = 999.9553m  53:in1_bar =  15.7011u  53:in2_bar = 999.9782m
+ + 53:x       = 848.2436m  53:yl      = 999.9509m  53:yr      = 999.9527m
+ + 54:out_bar = 999.9553m  55:in1_bar =  15.7011u  55:in2_bar = 999.9782m
+ + 55:x       = 848.2436m  55:yl      = 999.9509m  55:yr      = 999.9527m
+ + 56:out_bar = 999.9553m  57:in1_bar =  15.7011u  57:in2_bar = 999.9782m
+ + 57:x       = 848.2436m  57:yl      = 999.9509m  57:yr      = 999.9527m
+ + 58:out_bar = 999.9553m  59:in1_bar =  15.7011u  59:in2_bar = 999.9782m
+ + 59:x       = 848.2436m  59:yl      = 999.9509m  59:yr      = 999.9527m
+ + 60:out_bar = 999.9553m  61:in1_bar =  15.7011u  61:in2_bar = 999.9782m
+ + 61:x       = 848.2436m  61:yl      = 999.9509m  61:yr      = 999.9527m
+ + 62:out_bar = 999.9553m  63:in1_bar =  15.7011u  63:in2_bar = 999.9782m
+ + 63:x       = 848.2441m  63:yl      = 999.9556m  63:yr      = 999.9574m
+ + 64:out_bar = 999.9553m  65:out_bar = 999.9492m  66:mid     =  15.6434u
+ + 67:out_bar =  27.0040u  68:mid     =  15.6434u  69:out_bar =  27.0040u
+ + 70:mid     =  15.6434u  71:out_bar =  27.0040u  72:out_bar = 999.9552m
+ + 73:out_bar = 999.9492m  74:mid     =  15.6434u  75:out_bar =  26.9729u
+ + 76:out_bar = 999.9552m  77:out_bar = 999.9492m  78:out_bar = 999.9552m
+ + 79:out_bar = 999.9492m  80:out_bar = 999.9552m  81:out_bar = 999.9492m
+ + 82:out_bar = 999.9552m  83:out_bar = 999.9492m  84:out_bar = 999.9552m
+ + 85:out_bar = 999.9492m  86:out_bar = 999.9552m  87:out_bar = 999.9492m
+ + 89:x       = 848.2616m  93:x       = 848.2616m  97:x       = 848.2616m
+ +101:x       = 848.2616m 105:x       = 848.2616m 109:x       = 848.2616m
+ +113:x       = 848.2616m 117:x       = 848.2616m 121:x       = 848.1913m
+ +123:x       = 999.9728m 124:out_bar = 999.9552m 125:out_bar = 999.9492m
+ +127:x       =  14.7563u 128:out_bar = 999.9552m 129:out_bar = 999.9492m
+ +131:x       =  14.7563u 132:out_bar = 999.9552m 133:out_bar = 999.9492m
+ +135:x       =  14.7563u 137:x       = 848.2254m 139:x       = 999.9728m
+ +140:out_bar = 999.9552m 141:out_bar = 999.9492m 143:x       =  14.7411u
+ +145:x       = 848.2236m 147:x       = 999.9728m 149:x       = 848.2157m
+ +151:x       = 999.9728m 153:x       = 848.1655m 155:x       = 999.9728m
+ +157:x       = 848.1637m 159:x       = 999.9728m 161:x       = 848.1674m
+ +163:x       = 999.9728m 165:x       = 848.1750m 167:x       = 999.9728m
+ +169:x       = 848.1692m 171:x       = 999.9728m 173:x       = 848.1692m
+ +175:x       = 999.9728m 177:x       = 848.1692m 179:x       = 999.9728m
+ +181:x       = 848.2212m 183:x       = 999.9728m
 
  ******
- ************************* hspice BKA modeling ***********************
+ ************************* hspice bka modeling ***********************
 
  ****** transient analysis tnom=  25.000 temp=  80.000 ******
- tp_s7_fall=   1.0303n  targ=   2.5553n   trig=   1.5250n
- tp_cout_rise=   1.0834n  targ=   2.6084n   trig=   1.5250n
- tp_s7_rise=   1.0180n  targ=   4.0430n   trig=   3.0250n
- tp_cout_fall=   1.0764n  targ=   4.1014n   trig=   3.0250n
- tp_max=   1.0834n
- tp_avg=   1.0520n
- p_avg= 138.4470u  from=   0.             to=   8.5000n
- p_max=   4.3300m    at=   7.5500n
-             from=   0.            to=   8.5000n
- pdp= 149.9972f
- i_avg=-118.0673u  from=   0.             to=   8.5000n
- i_peak=  -1.6362m    at=   6.1204n
+ tp_s8_fall= 632.4686p  targ=   2.1575n   trig=   1.5250n
+ tp_cout_rise= 720.5975p  targ=   2.2456n   trig=   1.5250n
+ tp_s8_rise= 643.0175p  targ=   3.6680n   trig=   3.0250n
+ tp_cout_fall= 735.8273p  targ=   3.7608n   trig=   3.0250n
+ tp_max= 735.8273p
+ tp_s8= 637.7430p
+ tp_cout= 728.2124p
+ tp_avg= 682.9777p
+ p_avg= 324.6763u  from=   0.             to=   8.5000n
+ p_max=   4.5771m    at=   6.0485n
              from=   0.            to=   8.5000n
  **info** dc convergence successful at Newton-Raphson method 
  ******  
- ************************* hspice BKA modeling ***********************
+ ************************* hspice bka modeling ***********************
 
  ****** operating point information tnom=  25.000 temp=  85.000 ******
  ****** operating point status is voltage   simulation time is     0.     
-     node    =voltage       node    =voltage       node    =voltage
+      node    =voltage        node    =voltage        node    =voltage
 
- + 0:a0      =   1.0000   0:a1      =   1.0000   0:a2      =   1.0000 
- + 0:a3      =   1.0000   0:a4      =   1.0000   0:a5      =   1.0000 
- + 0:a6      =   1.0000   0:a7      =   1.0000   0:b0      =   0.     
- + 0:b1      =   0.       0:b2      =   0.       0:b3      =   0.     
- + 0:b4      =   0.       0:b5      =   0.       0:b6      =   0.     
- + 0:b7      =   0.       0:cin     =   0.       0:cout    =  13.1556u
- + 0:s0      = 999.9748m  0:s1      = 999.9748m  0:s2      = 999.9748m
- + 0:s3      = 999.9748m  0:s4      = 999.9748m  0:s5      = 999.9748m
- + 0:s6      = 999.9748m  0:s7      = 999.9748m  0:vdd     =   1.0000 
- + 0:vss     =   0.       1:cmid    =  45.1762u  2:cmid    =  45.1762u
- + 3:cmid    =  45.1762u  4:cmid    =  45.1762u  5:cmid    =  45.1762u
- + 6:cmid    =  45.1762u  7:cmid    =  45.1762u  8:a_bar   =  51.1865u
- + 8:c_bar   = 999.8791m  8:cout_bar= 999.8287m  8:p       = 999.9256m
- + 8:p_bar   =  16.8492u  8:s_bar   =  28.4485u  9:a_bar   =  51.1865u
- + 9:c_bar   = 999.8791m  9:cout_bar= 999.8287m  9:p       = 999.9257m
- + 9:p_bar   =  16.8492u  9:s_bar   =  73.6072u 10:a_bar   =  51.1865u
- +10:c_bar   = 999.8791m 10:cout_bar= 999.8287m 10:p       = 999.9257m
- +10:p_bar   =  16.8492u 10:s_bar   =  73.6072u 11:a_bar   =  51.1865u
- +11:c_bar   = 999.8791m 11:cout_bar= 999.8287m 11:p       = 999.9257m
- +11:p_bar   =  16.8492u 11:s_bar   =  73.6072u 12:a_bar   =  51.1865u
- +12:c_bar   = 999.8791m 12:cout_bar= 999.8287m 12:p       = 999.9257m
- +12:p_bar   =  16.8492u 12:s_bar   =  73.6072u 13:a_bar   =  51.1865u
- +13:c_bar   = 999.8791m 13:cout_bar= 999.8287m 13:p       = 999.9257m
- +13:p_bar   =  16.8492u 13:s_bar   =  73.6072u 14:a_bar   =  51.1865u
- +14:c_bar   = 999.8791m 14:cout_bar= 999.8287m 14:p       = 999.9257m
- +14:p_bar   =  16.8492u 14:s_bar   =  73.6072u 15:a_bar   =  51.1865u
- +15:c_bar   = 999.8791m 15:cout_bar= 999.8287m 15:p       = 999.9257m
- +15:p_bar   =  16.8492u 15:s_bar   =  73.6072u
+ +  0:a1      =   1.0000    0:a2      =   1.0000    0:a3      =   1.0000 
+ +  0:a4      =   1.0000    0:a5      =   1.0000    0:a6      =   1.0000 
+ +  0:a7      =   1.0000    0:a8      =   1.0000    0:b1      =   0.     
+ +  0:b2      =   0.        0:b3      =   0.        0:b4      =   0.     
+ +  0:b5      =   0.        0:b6      =   0.        0:b7      =   0.     
+ +  0:b8      =   0.        0:cin     =   0.        0:cout    =  13.1216u
+ +  0:s1      = 999.9037m   0:s2      = 999.9037m   0:s3      = 999.9037m
+ +  0:s4      = 999.9036m   0:s5      = 999.9037m   0:s6      = 999.9037m
+ +  0:s7      = 999.9037m   0:s8      = 999.9037m   0:vdd     =   1.0000 
+ +  0:vss     =   0.        1:c0      =   0.        1:c1      =  24.6333u
+ +  1:c2      =  19.9178u   1:c3      =  26.9910u   1:c4      =  19.9178u
+ +  1:c5      =  22.2755u   1:c6      =  19.9178u   1:c7      =  22.2756u
+ +  1:g0      =   0.        1:g1      =  17.5590u   1:g2      =  19.9167u
+ +  1:g3      =  17.5590u   1:g4      =  19.9167u   1:g5      =  17.5590u
+ +  1:g6      =  19.9167u   1:g7      =  17.5590u   1:g8      =  17.5590u
+ +  1:p0      =   0.        1:p1      = 999.9022m   1:p2      = 999.8928m
+ +  1:p3      = 999.8928m   1:p4      = 999.8928m   1:p5      = 999.8928m
+ +  1:p6      = 999.8928m   1:p7      = 999.8928m   1:p8      = 999.9022m
+ +  3:g10     =  24.6333u   3:g20     =  19.9178u   3:g30     =  26.9910u
+ +  3:g32     =  17.5609u   3:g40     =  19.9178u   3:g50     =  22.2755u
+ +  3:g54     =  19.9186u   3:g60     =  19.9178u   3:g70     =  22.2756u
+ +  3:g74     =  17.5609u   3:g76     =  17.5609u   3:g80     =  13.1216u
+ +  3:p32     = 999.9748m   3:p54     = 999.9651m   3:p74     = 999.9748m
+ +  3:p76     = 999.9651m   4:in1_bar =  17.7805u   4:in2_bar = 999.9656m
+ +  4:x1      = 847.5644m   4:x2      =  14.4865u   4:y1      = 999.9519m
+ +  4:y2      = 999.9500m   5:in1_bar =  17.7834u   5:in2_bar = 999.9656m
+ +  5:x1      = 847.5368m   5:x2      =  14.4865u   5:y1      = 999.9519m
+ +  5:y2      = 999.9500m   6:in1_bar =  17.7834u   6:in2_bar = 999.9656m
+ +  6:x1      = 847.5406m   6:x2      =  14.4865u   6:y1      = 999.9519m
+ +  6:y2      = 999.9500m   7:in1_bar =  17.7834u   7:in2_bar = 999.9656m
+ +  7:x1      = 847.5349m   7:x2      =  14.4865u   7:y1      = 999.9519m
+ +  7:y2      = 999.9500m   8:in1_bar =  17.7834u   8:in2_bar = 999.9656m
+ +  8:x1      = 847.5406m   8:x2      =  14.4865u   8:y1      = 999.9519m
+ +  8:y2      = 999.9500m   9:in1_bar =  17.7834u   9:in2_bar = 999.9656m
+ +  9:x1      = 847.5387m   9:x2      =  14.4865u   9:y1      = 999.9519m
+ +  9:y2      = 999.9500m  10:in1_bar =  17.7834u  10:in2_bar = 999.9656m
+ + 10:x1      = 847.5406m  10:x2      =  14.4865u  10:y1      = 999.9519m
+ + 10:y2      = 999.9500m  11:in1_bar =  17.7805u  11:in2_bar = 999.9656m
+ + 11:x1      = 847.5465m  11:x2      =  14.4865u  11:y1      = 999.9519m
+ + 11:y2      = 999.9500m  20:mid     =  17.5585u  24:mid     =  17.5586u
+ + 26:mid     =  17.5586u  27:mid     =  17.5586u  28:mid     =  17.5586u
+ + 29:mid     =  17.5586u  30:mid     =  17.5586u  31:mid     =  17.5586u
+ + 48:out_bar = 999.9488m  49:in1_bar =  17.6130u  49:in2_bar = 999.9748m
+ + 49:x       = 847.6274m  49:yl      = 999.9493m  49:yr      = 999.9511m
+ + 50:out_bar = 999.9488m  51:in1_bar =  17.6130u  51:in2_bar = 999.9748m
+ + 51:x       = 847.6269m  51:yl      = 999.9446m  51:yr      = 999.9464m
+ + 52:out_bar = 999.9488m  53:in1_bar =  17.6130u  53:in2_bar = 999.9748m
+ + 53:x       = 847.6269m  53:yl      = 999.9446m  53:yr      = 999.9464m
+ + 54:out_bar = 999.9488m  55:in1_bar =  17.6130u  55:in2_bar = 999.9748m
+ + 55:x       = 847.6269m  55:yl      = 999.9446m  55:yr      = 999.9464m
+ + 56:out_bar = 999.9488m  57:in1_bar =  17.6130u  57:in2_bar = 999.9748m
+ + 57:x       = 847.6269m  57:yl      = 999.9446m  57:yr      = 999.9464m
+ + 58:out_bar = 999.9488m  59:in1_bar =  17.6130u  59:in2_bar = 999.9748m
+ + 59:x       = 847.6269m  59:yl      = 999.9446m  59:yr      = 999.9464m
+ + 60:out_bar = 999.9488m  61:in1_bar =  17.6130u  61:in2_bar = 999.9748m
+ + 61:x       = 847.6269m  61:yl      = 999.9446m  61:yr      = 999.9464m
+ + 62:out_bar = 999.9488m  63:in1_bar =  17.6130u  63:in2_bar = 999.9748m
+ + 63:x       = 847.6274m  63:yl      = 999.9493m  63:yr      = 999.9511m
+ + 64:out_bar = 999.9488m  65:out_bar = 999.9426m  66:mid     =  17.5586u
+ + 67:out_bar =  30.6902u  68:mid     =  17.5586u  69:out_bar =  30.6902u
+ + 70:mid     =  17.5586u  71:out_bar =  30.6902u  72:out_bar = 999.9488m
+ + 73:out_bar = 999.9426m  74:mid     =  17.5586u  75:out_bar =  30.6485u
+ + 76:out_bar = 999.9488m  77:out_bar = 999.9426m  78:out_bar = 999.9488m
+ + 79:out_bar = 999.9426m  80:out_bar = 999.9488m  81:out_bar = 999.9426m
+ + 82:out_bar = 999.9488m  83:out_bar = 999.9426m  84:out_bar = 999.9488m
+ + 85:out_bar = 999.9426m  86:out_bar = 999.9488m  87:out_bar = 999.9426m
+ + 89:x       = 847.6473m  93:x       = 847.6473m  97:x       = 847.6473m
+ +101:x       = 847.6473m 105:x       = 847.6473m 109:x       = 847.6473m
+ +113:x       = 847.6473m 117:x       = 847.6473m 121:x       = 847.5668m
+ +123:x       = 999.9695m 124:out_bar = 999.9488m 125:out_bar = 999.9426m
+ +127:x       =  16.6289u 128:out_bar = 999.9488m 129:out_bar = 999.9426m
+ +131:x       =  16.6289u 132:out_bar = 999.9488m 133:out_bar = 999.9426m
+ +135:x       =  16.6289u 137:x       = 847.6068m 139:x       = 999.9695m
+ +140:out_bar = 999.9488m 141:out_bar = 999.9426m 143:x       =  16.6084u
+ +145:x       = 847.6049m 147:x       = 999.9695m 149:x       = 847.5968m
+ +151:x       = 999.9695m 153:x       = 847.5392m 155:x       = 999.9695m
+ +157:x       = 847.5373m 159:x       = 999.9695m 161:x       = 847.5411m
+ +163:x       = 999.9695m 165:x       = 847.5489m 167:x       = 999.9695m
+ +169:x       = 847.5430m 171:x       = 999.9695m 173:x       = 847.5430m
+ +175:x       = 999.9695m 177:x       = 847.5430m 179:x       = 999.9695m
+ +181:x       = 847.6025m 183:x       = 999.9695m
 
  ******
- ************************* hspice BKA modeling ***********************
+ ************************* hspice bka modeling ***********************
 
  ****** transient analysis tnom=  25.000 temp=  85.000 ******
- tp_s7_fall=   1.0397n  targ=   2.5647n   trig=   1.5250n
- tp_cout_rise=   1.0933n  targ=   2.6183n   trig=   1.5250n
- tp_s7_rise=   1.0267n  targ=   4.0517n   trig=   3.0250n
- tp_cout_fall=   1.0856n  targ=   4.1106n   trig=   3.0250n
- tp_max=   1.0933n
- tp_avg=   1.0613n
- p_avg= 139.4181u  from=   0.             to=   8.5000n
- p_max=   4.3157m    at=   7.5500n
-             from=   0.            to=   8.5000n
- pdp= 152.4322f
- i_avg=-118.8880u  from=   0.             to=   8.5000n
- i_peak=  -1.6309m    at=   6.1220n
+ tp_s8_fall= 637.4061p  targ=   2.1624n   trig=   1.5250n
+ tp_cout_rise= 726.1781p  targ=   2.2512n   trig=   1.5250n
+ tp_s8_rise= 648.5155p  targ=   3.6735n   trig=   3.0250n
+ tp_cout_fall= 742.1236p  targ=   3.7671n   trig=   3.0250n
+ tp_max= 742.1236p
+ tp_s8= 642.9608p
+ tp_cout= 734.1509p
+ tp_avg= 688.5558p
+ p_avg= 326.6694u  from=   0.             to=   8.5000n
+ p_max=   4.5633m    at=   6.0481n
              from=   0.            to=   8.5000n
  **info** dc convergence successful at Newton-Raphson method 
  ******  
- ************************* hspice BKA modeling ***********************
+ ************************* hspice bka modeling ***********************
 
  ****** operating point information tnom=  25.000 temp=  90.000 ******
  ****** operating point status is voltage   simulation time is     0.     
-     node    =voltage       node    =voltage       node    =voltage
+      node    =voltage        node    =voltage        node    =voltage
 
- + 0:a0      =   1.0000   0:a1      =   1.0000   0:a2      =   1.0000 
- + 0:a3      =   1.0000   0:a4      =   1.0000   0:a5      =   1.0000 
- + 0:a6      =   1.0000   0:a7      =   1.0000   0:b0      =   0.     
- + 0:b1      =   0.       0:b2      =   0.       0:b3      =   0.     
- + 0:b4      =   0.       0:b5      =   0.       0:b6      =   0.     
- + 0:b7      =   0.       0:cin     =   0.       0:cout    =  15.2566u
- + 0:s0      = 999.9710m  0:s1      = 999.9710m  0:s2      = 999.9710m
- + 0:s3      = 999.9710m  0:s4      = 999.9710m  0:s5      = 999.9710m
- + 0:s6      = 999.9710m  0:s7      = 999.9710m  0:vdd     =   1.0000 
- + 0:vss     =   0.       1:cmid    =  51.7046u  2:cmid    =  51.7046u
- + 3:cmid    =  51.7046u  4:cmid    =  51.7046u  5:cmid    =  51.7046u
- + 6:cmid    =  51.7046u  7:cmid    =  51.7046u  8:a_bar   =  59.7539u
- + 8:c_bar   = 999.8608m  8:cout_bar= 999.8032m  8:p       = 999.9146m
- + 8:p_bar   =  19.1569u  8:s_bar   =  32.8000u  9:a_bar   =  59.7539u
- + 9:c_bar   = 999.8609m  9:cout_bar= 999.8032m  9:p       = 999.9146m
- + 9:p_bar   =  19.1569u  9:s_bar   =  84.4815u 10:a_bar   =  59.7539u
- +10:c_bar   = 999.8609m 10:cout_bar= 999.8032m 10:p       = 999.9146m
- +10:p_bar   =  19.1569u 10:s_bar   =  84.4815u 11:a_bar   =  59.7539u
- +11:c_bar   = 999.8609m 11:cout_bar= 999.8032m 11:p       = 999.9146m
- +11:p_bar   =  19.1569u 11:s_bar   =  84.4815u 12:a_bar   =  59.7539u
- +12:c_bar   = 999.8609m 12:cout_bar= 999.8032m 12:p       = 999.9146m
- +12:p_bar   =  19.1569u 12:s_bar   =  84.4815u 13:a_bar   =  59.7539u
- +13:c_bar   = 999.8609m 13:cout_bar= 999.8032m 13:p       = 999.9146m
- +13:p_bar   =  19.1569u 13:s_bar   =  84.4815u 14:a_bar   =  59.7539u
- +14:c_bar   = 999.8609m 14:cout_bar= 999.8032m 14:p       = 999.9146m
- +14:p_bar   =  19.1569u 14:s_bar   =  84.4815u 15:a_bar   =  59.7539u
- +15:c_bar   = 999.8609m 15:cout_bar= 999.8032m 15:p       = 999.9146m
- +15:p_bar   =  19.1569u 15:s_bar   =  84.4815u
+ +  0:a1      =   1.0000    0:a2      =   1.0000    0:a3      =   1.0000 
+ +  0:a4      =   1.0000    0:a5      =   1.0000    0:a6      =   1.0000 
+ +  0:a7      =   1.0000    0:a8      =   1.0000    0:b1      =   0.     
+ +  0:b2      =   0.        0:b3      =   0.        0:b4      =   0.     
+ +  0:b5      =   0.        0:b6      =   0.        0:b7      =   0.     
+ +  0:b8      =   0.        0:cin     =   0.        0:cout    =  15.2108u
+ +  0:s1      = 999.8891m   0:s2      = 999.8890m   0:s3      = 999.8890m
+ +  0:s4      = 999.8890m   0:s5      = 999.8890m   0:s6      = 999.8890m
+ +  0:s7      = 999.8890m   0:s8      = 999.8890m   0:vdd     =   1.0000 
+ +  0:vss     =   0.        1:c0      =   0.        1:c1      =  26.9693u
+ +  1:c2      =  22.1537u   1:c3      =  29.3771u   1:c4      =  22.1537u
+ +  1:c5      =  24.5615u   1:c6      =  22.1537u   1:c7      =  24.5615u
+ +  1:g0      =   0.        1:g1      =  19.7446u   1:g2      =  22.1524u
+ +  1:g3      =  19.7446u   1:g4      =  22.1524u   1:g5      =  19.7446u
+ +  1:g6      =  22.1524u   1:g7      =  19.7446u   1:g8      =  19.7446u
+ +  1:p0      =   0.        1:p1      = 999.8880m   1:p2      = 999.8784m
+ +  1:p3      = 999.8784m   1:p4      = 999.8784m   1:p5      = 999.8784m
+ +  1:p6      = 999.8784m   1:p7      = 999.8784m   1:p8      = 999.8880m
+ +  3:g10     =  26.9693u   3:g20     =  22.1537u   3:g30     =  29.3771u
+ +  3:g32     =  19.7468u   3:g40     =  22.1537u   3:g50     =  24.5615u
+ +  3:g54     =  22.1547u   3:g60     =  22.1537u   3:g70     =  24.5615u
+ +  3:g74     =  19.7468u   3:g76     =  19.7468u   3:g80     =  15.2108u
+ +  3:p32     = 999.9710m   3:p54     = 999.9611m   3:p74     = 999.9710m
+ +  3:p76     = 999.9611m   4:in1_bar =  19.9739u   4:in2_bar = 999.9617m
+ +  4:x1      = 846.9289m   4:x2      =  16.7823u   4:y1      = 999.9446m
+ +  4:y2      = 999.9427m   5:in1_bar =  19.9773u   5:in2_bar = 999.9617m
+ +  5:x1      = 846.8993m   5:x2      =  16.7823u   5:y1      = 999.9446m
+ +  5:y2      = 999.9427m   6:in1_bar =  19.9773u   6:in2_bar = 999.9617m
+ +  6:x1      = 846.9032m   6:x2      =  16.7823u   6:y1      = 999.9446m
+ +  6:y2      = 999.9427m   7:in1_bar =  19.9773u   7:in2_bar = 999.9617m
+ +  7:x1      = 846.8973m   7:x2      =  16.7823u   7:y1      = 999.9446m
+ +  7:y2      = 999.9427m   8:in1_bar =  19.9773u   8:in2_bar = 999.9617m
+ +  8:x1      = 846.9032m   8:x2      =  16.7823u   8:y1      = 999.9446m
+ +  8:y2      = 999.9427m   9:in1_bar =  19.9773u   9:in2_bar = 999.9617m
+ +  9:x1      = 846.9012m   9:x2      =  16.7823u   9:y1      = 999.9446m
+ +  9:y2      = 999.9427m  10:in1_bar =  19.9773u  10:in2_bar = 999.9617m
+ + 10:x1      = 846.9032m  10:x2      =  16.7823u  10:y1      = 999.9446m
+ + 10:y2      = 999.9427m  11:in1_bar =  19.9739u  11:in2_bar = 999.9617m
+ + 11:x1      = 846.9091m  11:x2      =  16.7823u  11:y1      = 999.9446m
+ + 11:y2      = 999.9427m  20:mid     =  19.7441u  24:mid     =  19.7441u
+ + 26:mid     =  19.7441u  27:mid     =  19.7441u  28:mid     =  19.7441u
+ + 29:mid     =  19.7441u  30:mid     =  19.7441u  31:mid     =  19.7441u
+ + 48:out_bar = 999.9415m  49:in1_bar =  19.7941u  49:in2_bar = 999.9710m
+ + 49:x       = 847.0010m  49:yl      = 999.9422m  49:yr      = 999.9440m
+ + 50:out_bar = 999.9415m  51:in1_bar =  19.7941u  51:in2_bar = 999.9710m
+ + 51:x       = 847.0005m  51:yl      = 999.9374m  51:yr      = 999.9392m
+ + 52:out_bar = 999.9415m  53:in1_bar =  19.7941u  53:in2_bar = 999.9710m
+ + 53:x       = 847.0005m  53:yl      = 999.9374m  53:yr      = 999.9392m
+ + 54:out_bar = 999.9415m  55:in1_bar =  19.7941u  55:in2_bar = 999.9710m
+ + 55:x       = 847.0005m  55:yl      = 999.9374m  55:yr      = 999.9392m
+ + 56:out_bar = 999.9415m  57:in1_bar =  19.7941u  57:in2_bar = 999.9710m
+ + 57:x       = 847.0005m  57:yl      = 999.9374m  57:yr      = 999.9392m
+ + 58:out_bar = 999.9415m  59:in1_bar =  19.7941u  59:in2_bar = 999.9710m
+ + 59:x       = 847.0005m  59:yl      = 999.9374m  59:yr      = 999.9392m
+ + 60:out_bar = 999.9415m  61:in1_bar =  19.7941u  61:in2_bar = 999.9710m
+ + 61:x       = 847.0005m  61:yl      = 999.9374m  61:yr      = 999.9392m
+ + 62:out_bar = 999.9415m  63:in1_bar =  19.7941u  63:in2_bar = 999.9710m
+ + 63:x       = 847.0010m  63:yl      = 999.9422m  63:yr      = 999.9440m
+ + 64:out_bar = 999.9415m  65:out_bar = 999.9352m  66:mid     =  19.7441u
+ + 67:out_bar =  34.9058u  68:mid     =  19.7441u  69:out_bar =  34.9058u
+ + 70:mid     =  19.7441u  71:out_bar =  34.9058u  72:out_bar = 999.9414m
+ + 73:out_bar = 999.9352m  74:mid     =  19.7441u  75:out_bar =  34.8503u
+ + 76:out_bar = 999.9414m  77:out_bar = 999.9352m  78:out_bar = 999.9414m
+ + 79:out_bar = 999.9352m  80:out_bar = 999.9414m  81:out_bar = 999.9352m
+ + 82:out_bar = 999.9414m  83:out_bar = 999.9352m  84:out_bar = 999.9414m
+ + 85:out_bar = 999.9352m  86:out_bar = 999.9414m  87:out_bar = 999.9352m
+ + 89:x       = 847.0238m  93:x       = 847.0238m  97:x       = 847.0238m
+ +101:x       = 847.0238m 105:x       = 847.0238m 109:x       = 847.0238m
+ +113:x       = 847.0238m 117:x       = 847.0238m 121:x       = 846.9317m
+ +123:x       = 999.9657m 124:out_bar = 999.9414m 125:out_bar = 999.9352m
+ +127:x       =  18.7667u 128:out_bar = 999.9414m 129:out_bar = 999.9352m
+ +131:x       =  18.7667u 132:out_bar = 999.9414m 133:out_bar = 999.9352m
+ +135:x       =  18.7667u 137:x       = 846.9782m 139:x       = 999.9657m
+ +140:out_bar = 999.9414m 141:out_bar = 999.9352m 143:x       =  18.7393u
+ +145:x       = 846.9763m 147:x       = 999.9657m 149:x       = 846.9681m
+ +151:x       = 999.9657m 153:x       = 846.9021m 155:x       = 999.9657m
+ +157:x       = 846.9002m 159:x       = 999.9657m 161:x       = 846.9040m
+ +163:x       = 999.9657m 165:x       = 846.9119m 167:x       = 999.9657m
+ +169:x       = 846.9060m 171:x       = 999.9657m 173:x       = 846.9060m
+ +175:x       = 999.9657m 177:x       = 846.9060m 179:x       = 999.9657m
+ +181:x       = 846.9740m 183:x       = 999.9657m
 
  ******
- ************************* hspice BKA modeling ***********************
+ ************************* hspice bka modeling ***********************
 
  ****** transient analysis tnom=  25.000 temp=  90.000 ******
- tp_s7_fall=   1.0490n  targ=   2.5740n   trig=   1.5250n
- tp_cout_rise=   1.1033n  targ=   2.6283n   trig=   1.5250n
- tp_s7_rise=   1.0355n  targ=   4.0605n   trig=   3.0250n
- tp_cout_fall=   1.0948n  targ=   4.1198n   trig=   3.0250n
- tp_max=   1.1033n
- tp_avg=   1.0707n
- p_avg= 140.4037u  from=   0.             to=   8.5000n
- p_max=   4.3009m    at=   7.5500n
-             from=   0.            to=   8.5000n
- pdp= 154.9097f
- i_avg=-119.7325u  from=   0.             to=   8.5000n
- i_peak=  -1.6269m    at=   6.1230n
+ tp_s8_fall= 642.4179p  targ=   2.1674n   trig=   1.5250n
+ tp_cout_rise= 731.8688p  targ=   2.2569n   trig=   1.5250n
+ tp_s8_rise= 654.0719p  targ=   3.6791n   trig=   3.0250n
+ tp_cout_fall= 748.4865p  targ=   3.7735n   trig=   3.0250n
+ tp_max= 748.4865p
+ tp_s8= 648.2449p
+ tp_cout= 740.1776p
+ tp_avg= 694.2113p
+ p_avg= 328.7044u  from=   0.             to=   8.5000n
+ p_max=   4.5480m    at=   6.0483n
              from=   0.            to=   8.5000n
 
           ***** job concluded
  ******  
- ************************* hspice BKA modeling ***********************
+ ************************* hspice bka modeling ***********************
 
  ****** job statistics summary tnom=  25.000 temp=  90.000 ******
 
@@ -1058,12 +1983,12 @@
 
 
   ******  Circuit Statistics  ******
-  # nodes       =      84 # elements   =     211
-  # resistors   =       0 # capacitors =       0 # inductors   =       0
+  # nodes       =     243 # elements   =     440
+  # resistors   =       2 # capacitors =       0 # inductors   =       0
   # mutual_inds =       0 # vccs       =       0 # vcvs        =       0
-  # cccs        =       0 # ccvs       =       0 # volt_srcs   =       3
+  # cccs        =       0 # ccvs       =       0 # volt_srcs   =      14
   # curr_srcs   =       0 # diodes     =       0 # bjts        =       0
-  # jfets       =       0 # mosfets    =     192 # U elements  =       0
+  # jfets       =       0 # mosfets    =     408 # U elements  =       0
   # T elements  =       0 # W elements =       0 # B elements  =       0
   # S elements  =       0 # P elements =       0 # va device   =       0
   # vector_srcs =      16 # N elements =       0
@@ -1072,21 +1997,21 @@
   ******  Runtime Statistics (seconds)  ******
 
   analysis           time    # points   tot. iter  conv.iter
-  op point           0.09           1         275
-  transient          8.15       85001       62483       22297 rev=      2032
-  readin             0.13
-  errchk             0.04
+  op point           0.20           1         327
+  transient         16.93       85001       68525       24159 rev=      1732
+  readin             0.11
+  errchk             0.03
   setup              0.00
   output             0.00
 
 
-           peak memory used         74.17 megabytes
-           total cpu time            8.59 seconds
-           total elapsed time        8.64 seconds
-           job started at     01:22:07 06/06/2026
-           job ended   at     01:22:16 06/06/2026
-           job total runtime         8.64 seconds
+           peak memory used         75.77 megabytes
+           total cpu time           17.35 seconds
+           total elapsed time       17.38 seconds
+           job started at     01:23:34 06/09/2026
+           job ended   at     01:23:51 06/09/2026
+           job total runtime        17.38 seconds
 
 
   lic: Release hspice token(s) 
- lic: total license checkout elapse time:        0.03(s)
+ lic: total license checkout elapse time:        0.02(s)
