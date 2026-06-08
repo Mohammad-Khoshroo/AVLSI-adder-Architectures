@@ -145,9 +145,9 @@ Vss  Vss 0 DC 'Vss_val'
 
 .OPTION POST=2 PROBE
 .PROBE V(Cout) V(Cin)
-+      V(A0) V(A1) V(A2) V(A3) V(A4) V(A5) V(A6) V(A7)
-+      V(B0) V(B1) V(B2) V(B3) V(B4) V(B5) V(B6) V(B7)
-+      V(S0) V(S1) V(S2) V(S3) V(S4) V(S5) V(S6) V(S7)
++      V(A8) V(A1) V(A2) V(A3) V(A4) V(A5) V(A6) V(A7)
++      V(B8) V(B1) V(B2) V(B3) V(B4) V(B5) V(B6) V(B7)
++      V(S8) V(S1) V(S2) V(S3) V(S4) V(S5) V(S6) V(S7)
 
 
 .END

@@ -1,6 +1,4 @@
 $DATA1 SOURCE='HSPICE' VERSION='P-2019.06-SP1-1 win64' PARAM_COUNT=0
 .TITLE '******************** hspice basic gates modeling ********************'
- p_avg            p_max            i_avg            i_peak          
- temper           alter#          
-  2.156e-04        5.935e-03       -1.749e-04       -2.621e-03      
-   25.0000        1               
+ p_avg            p_max            temper           alter#          
+  5.388e-04        8.677e-03         25.0000        1               

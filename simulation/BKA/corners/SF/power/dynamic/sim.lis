@@ -7,11 +7,11 @@
   this software is strictly prohibited.
   Input File: sim.sp                                                            
   Command line options: C:\synopsys\Hspice_P-2019.06-SP1-1\WIN64\hspice.com -i sim.sp -o D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\corners\SF\power\dynamic\sim.lis
-  Start time: Fri Jun  5 22:01:46 2026
+  Start time: Tue Jun  9 00:42:17 2026
   lic:  
   lic: FLEXlm: SDK_12.3 
   lic: USER:   Mohammad-Khohsroo    HOSTNAME: DESKTOP-GMQQFUO 
-  lic: HOSTID: "d03957231987"       PID:      3488 
+  lic: HOSTID: "088fc3e7a24d"       PID:      2620 
   lic: Using FLEXlm license file: 
   lic: 27000@DESKTOP-GMQQFUO 
   lic: Checkout 1 hspice 
@@ -26,150 +26,258 @@
  circuit number to circuit name directory
    number circuitname                     definition         multiplier
         0 main circuit
-        1 xBKA.                           BKA8               1.00 
-        2 xBKA.xBKA_l.                    BKA4               1.00 
-        3 xBKA.xBKA_h.                    BKA4               1.00 
-        4 xBKA.xBKA_l.xBKA_l.             BKA2               1.00 
-        5 xBKA.xBKA_l.xBKA_h.             BKA2               1.00 
-        6 xBKA.xBKA_h.xBKA_l.             BKA2               1.00 
-        7 xBKA.xBKA_h.xBKA_h.             BKA2               1.00 
-        8 xBKA.xBKA_l.xBKA_l.xfa_l.       fa_t               1.00 
-        9 xBKA.xBKA_l.xBKA_l.xfa_h.       fa_t               1.00 
-       10 xBKA.xBKA_l.xBKA_h.xfa_l.       fa_t               1.00 
-       11 xBKA.xBKA_l.xBKA_h.xfa_h.       fa_t               1.00 
-       12 xBKA.xBKA_h.xBKA_l.xfa_l.       fa_t               1.00 
-       13 xBKA.xBKA_h.xBKA_l.xfa_h.       fa_t               1.00 
-       14 xBKA.xBKA_h.xBKA_h.xfa_l.       fa_t               1.00 
-       15 xBKA.xBKA_h.xBKA_h.xfa_h.       fa_t               1.00 
-       16 xBKA.xBKA_l.xBKA_l.xfa_l.xinva. inv                1.00 
-       17 xBKA.xBKA_l.xBKA_l.xfa_l.xinvc. inv                1.00 
-       18 xBKA.xBKA_l.xBKA_l.xfa_l.xtg_p. tg                 1.00 
-       19 xBKA.xBKA_l.xBKA_l.xfa_l.xtg_pb.
-                                            tg                 1.00 
-       20 xBKA.xBKA_l.xBKA_l.xfa_l.xtg_s1.
-                                            tg                 1.00 
-       21 xBKA.xBKA_l.xBKA_l.xfa_l.xtg_s2.
-                                            tg                 1.00 
-       22 xBKA.xBKA_l.xBKA_l.xfa_l.xtg_c1.
-                                            tg                 1.00 
-       23 xBKA.xBKA_l.xBKA_l.xfa_l.xtg_c2.
-                                            tg                 1.00 
-       24 xBKA.xBKA_l.xBKA_l.xfa_l.xinvs. inv                1.00 
-       25 xBKA.xBKA_l.xBKA_l.xfa_l.xinvco.
+        1 xbka.                           bka8               1.00 
+        2 xbka.x_pg8.                     pg8                1.00 
+        3 xbka.x_bk8.                     bk8                1.00 
+        4 xbka.x_sum1.                    xor2_sym           1.00 
+        5 xbka.x_sum2.                    xor2_sym           1.00 
+        6 xbka.x_sum3.                    xor2_sym           1.00 
+        7 xbka.x_sum4.                    xor2_sym           1.00 
+        8 xbka.x_sum5.                    xor2_sym           1.00 
+        9 xbka.x_sum6.                    xor2_sym           1.00 
+       10 xbka.x_sum7.                    xor2_sym           1.00 
+       11 xbka.x_sum8.                    xor2_sym           1.00 
+       12 xbka.x_pg8.xbit1.               pg                 1.00 
+       13 xbka.x_pg8.xbit2.               pg                 1.00 
+       14 xbka.x_pg8.xbit3.               pg                 1.00 
+       15 xbka.x_pg8.xbit4.               pg                 1.00 
+       16 xbka.x_pg8.xbit5.               pg                 1.00 
+       17 xbka.x_pg8.xbit6.               pg                 1.00 
+       18 xbka.x_pg8.xbit7.               pg                 1.00 
+       19 xbka.x_pg8.xbit8.               pg                 1.00 
+       20 xbka.x_bk8.xlevel1_bit1.        gen_block          1.00 
+       21 xbka.x_bk8.xlevel1_bit3.        genpro_block       1.00 
+       22 xbka.x_bk8.xlevel1_bit5.        genpro_block       1.00 
+       23 xbka.x_bk8.xlevel1_bit7.        genpro_block       1.00 
+       24 xbka.x_bk8.xlevel2_bit3.        gen_block          1.00 
+       25 xbka.x_bk8.xlevel2_bit7.        genpro_block       1.00 
+       26 xbka.x_bk8.xlevel3_bit7.        gen_block          1.00 
+       27 xbka.x_bk8.xlevel4_bit5.        gen_block          1.00 
+       28 xbka.x_bk8.xlevel5_bit2.        gen_block          1.00 
+       29 xbka.x_bk8.xlevel5_bit4.        gen_block          1.00 
+       30 xbka.x_bk8.xlevel5_bit6.        gen_block          1.00 
+       31 xbka.x_bk8.xlevel5_bit8.        gen_block          1.00 
+       32 xbka.x_sum1.xinv1.              inv                1.00 
+       33 xbka.x_sum1.xinv2.              inv                1.00 
+       34 xbka.x_sum2.xinv1.              inv                1.00 
+       35 xbka.x_sum2.xinv2.              inv                1.00 
+       36 xbka.x_sum3.xinv1.              inv                1.00 
+       37 xbka.x_sum3.xinv2.              inv                1.00 
+       38 xbka.x_sum4.xinv1.              inv                1.00 
+       39 xbka.x_sum4.xinv2.              inv                1.00 
+       40 xbka.x_sum5.xinv1.              inv                1.00 
+       41 xbka.x_sum5.xinv2.              inv                1.00 
+       42 xbka.x_sum6.xinv1.              inv                1.00 
+       43 xbka.x_sum6.xinv2.              inv                1.00 
+       44 xbka.x_sum7.xinv1.              inv                1.00 
+       45 xbka.x_sum7.xinv2.              inv                1.00 
+       46 xbka.x_sum8.xinv1.              inv                1.00 
+       47 xbka.x_sum8.xinv2.              inv                1.00 
+       48 xbka.x_pg8.xbit1.xand1.         and2               1.00 
+       49 xbka.x_pg8.xbit1.xxor1.         xor2               1.00 
+       50 xbka.x_pg8.xbit2.xand1.         and2               1.00 
+       51 xbka.x_pg8.xbit2.xxor1.         xor2               1.00 
+       52 xbka.x_pg8.xbit3.xand1.         and2               1.00 
+       53 xbka.x_pg8.xbit3.xxor1.         xor2               1.00 
+       54 xbka.x_pg8.xbit4.xand1.         and2               1.00 
+       55 xbka.x_pg8.xbit4.xxor1.         xor2               1.00 
+       56 xbka.x_pg8.xbit5.xand1.         and2               1.00 
+       57 xbka.x_pg8.xbit5.xxor1.         xor2               1.00 
+       58 xbka.x_pg8.xbit6.xand1.         and2               1.00 
+       59 xbka.x_pg8.xbit6.xxor1.         xor2               1.00 
+       60 xbka.x_pg8.xbit7.xand1.         and2               1.00 
+       61 xbka.x_pg8.xbit7.xxor1.         xor2               1.00 
+       62 xbka.x_pg8.xbit8.xand1.         and2               1.00 
+       63 xbka.x_pg8.xbit8.xxor1.         xor2               1.00 
+       64 xbka.x_bk8.xlevel1_bit1.xand.   and2               1.00 
+       65 xbka.x_bk8.xlevel1_bit1.xor.    or2                1.00 
+       66 xbka.x_bk8.xlevel1_bit3.xgen.   gen_block          1.00 
+       67 xbka.x_bk8.xlevel1_bit3.xand.   and2               1.00 
+       68 xbka.x_bk8.xlevel1_bit5.xgen.   gen_block          1.00 
+       69 xbka.x_bk8.xlevel1_bit5.xand.   and2               1.00 
+       70 xbka.x_bk8.xlevel1_bit7.xgen.   gen_block          1.00 
+       71 xbka.x_bk8.xlevel1_bit7.xand.   and2               1.00 
+       72 xbka.x_bk8.xlevel2_bit3.xand.   and2               1.00 
+       73 xbka.x_bk8.xlevel2_bit3.xor.    or2                1.00 
+       74 xbka.x_bk8.xlevel2_bit7.xgen.   gen_block          1.00 
+       75 xbka.x_bk8.xlevel2_bit7.xand.   and2               1.00 
+       76 xbka.x_bk8.xlevel3_bit7.xand.   and2               1.00 
+       77 xbka.x_bk8.xlevel3_bit7.xor.    or2                1.00 
+       78 xbka.x_bk8.xlevel4_bit5.xand.   and2               1.00 
+       79 xbka.x_bk8.xlevel4_bit5.xor.    or2                1.00 
+       80 xbka.x_bk8.xlevel5_bit2.xand.   and2               1.00 
+       81 xbka.x_bk8.xlevel5_bit2.xor.    or2                1.00 
+       82 xbka.x_bk8.xlevel5_bit4.xand.   and2               1.00 
+       83 xbka.x_bk8.xlevel5_bit4.xor.    or2                1.00 
+       84 xbka.x_bk8.xlevel5_bit6.xand.   and2               1.00 
+       85 xbka.x_bk8.xlevel5_bit6.xor.    or2                1.00 
+       86 xbka.x_bk8.xlevel5_bit8.xand.   and2               1.00 
+       87 xbka.x_bk8.xlevel5_bit8.xor.    or2                1.00 
+       88 xbka.x_pg8.xbit1.xand1.xinv.    inv                1.00 
+       89 xbka.x_pg8.xbit1.xand1.xnand.   nand2              1.00 
+       90 xbka.x_pg8.xbit1.xxor1.xinv1.   inv                1.00 
+       91 xbka.x_pg8.xbit1.xxor1.xinv2.   inv                1.00 
+       92 xbka.x_pg8.xbit2.xand1.xinv.    inv                1.00 
+       93 xbka.x_pg8.xbit2.xand1.xnand.   nand2              1.00 
+       94 xbka.x_pg8.xbit2.xxor1.xinv1.   inv                1.00 
+       95 xbka.x_pg8.xbit2.xxor1.xinv2.   inv                1.00 
+       96 xbka.x_pg8.xbit3.xand1.xinv.    inv                1.00 
+       97 xbka.x_pg8.xbit3.xand1.xnand.   nand2              1.00 
+       98 xbka.x_pg8.xbit3.xxor1.xinv1.   inv                1.00 
+       99 xbka.x_pg8.xbit3.xxor1.xinv2.   inv                1.00 
+      100 xbka.x_pg8.xbit4.xand1.xinv.    inv                1.00 
+      101 xbka.x_pg8.xbit4.xand1.xnand.   nand2              1.00 
+      102 xbka.x_pg8.xbit4.xxor1.xinv1.   inv                1.00 
+      103 xbka.x_pg8.xbit4.xxor1.xinv2.   inv                1.00 
+      104 xbka.x_pg8.xbit5.xand1.xinv.    inv                1.00 
+      105 xbka.x_pg8.xbit5.xand1.xnand.   nand2              1.00 
+      106 xbka.x_pg8.xbit5.xxor1.xinv1.   inv                1.00 
+      107 xbka.x_pg8.xbit5.xxor1.xinv2.   inv                1.00 
+      108 xbka.x_pg8.xbit6.xand1.xinv.    inv                1.00 
+      109 xbka.x_pg8.xbit6.xand1.xnand.   nand2              1.00 
+      110 xbka.x_pg8.xbit6.xxor1.xinv1.   inv                1.00 
+      111 xbka.x_pg8.xbit6.xxor1.xinv2.   inv                1.00 
+      112 xbka.x_pg8.xbit7.xand1.xinv.    inv                1.00 
+      113 xbka.x_pg8.xbit7.xand1.xnand.   nand2              1.00 
+      114 xbka.x_pg8.xbit7.xxor1.xinv1.   inv                1.00 
+      115 xbka.x_pg8.xbit7.xxor1.xinv2.   inv                1.00 
+      116 xbka.x_pg8.xbit8.xand1.xinv.    inv                1.00 
+      117 xbka.x_pg8.xbit8.xand1.xnand.   nand2              1.00 
+      118 xbka.x_pg8.xbit8.xxor1.xinv1.   inv                1.00 
+      119 xbka.x_pg8.xbit8.xxor1.xinv2.   inv                1.00 
+      120 xbka.x_bk8.xlevel1_bit1.xand.xinv.
                                             inv                1.00 
-       26 xBKA.xBKA_l.xBKA_l.xfa_h.xinva. inv                1.00 
-       27 xBKA.xBKA_l.xBKA_l.xfa_h.xinvc. inv                1.00 
-       28 xBKA.xBKA_l.xBKA_l.xfa_h.xtg_p. tg                 1.00 
-       29 xBKA.xBKA_l.xBKA_l.xfa_h.xtg_pb.
-                                            tg                 1.00 
-       30 xBKA.xBKA_l.xBKA_l.xfa_h.xtg_s1.
-                                            tg                 1.00 
-       31 xBKA.xBKA_l.xBKA_l.xfa_h.xtg_s2.
-                                            tg                 1.00 
-       32 xBKA.xBKA_l.xBKA_l.xfa_h.xtg_c1.
-                                            tg                 1.00 
-       33 xBKA.xBKA_l.xBKA_l.xfa_h.xtg_c2.
-                                            tg                 1.00 
-       34 xBKA.xBKA_l.xBKA_l.xfa_h.xinvs. inv                1.00 
-       35 xBKA.xBKA_l.xBKA_l.xfa_h.xinvco.
+      121 xbka.x_bk8.xlevel1_bit1.xand.xnand.
+                                            nand2              1.00 
+      122 xbka.x_bk8.xlevel1_bit1.xor.xinv.
                                             inv                1.00 
-       36 xBKA.xBKA_l.xBKA_h.xfa_l.xinva. inv                1.00 
-       37 xBKA.xBKA_l.xBKA_h.xfa_l.xinvc. inv                1.00 
-       38 xBKA.xBKA_l.xBKA_h.xfa_l.xtg_p. tg                 1.00 
-       39 xBKA.xBKA_l.xBKA_h.xfa_l.xtg_pb.
-                                            tg                 1.00 
-       40 xBKA.xBKA_l.xBKA_h.xfa_l.xtg_s1.
-                                            tg                 1.00 
-       41 xBKA.xBKA_l.xBKA_h.xfa_l.xtg_s2.
-                                            tg                 1.00 
-       42 xBKA.xBKA_l.xBKA_h.xfa_l.xtg_c1.
-                                            tg                 1.00 
-       43 xBKA.xBKA_l.xBKA_h.xfa_l.xtg_c2.
-                                            tg                 1.00 
-       44 xBKA.xBKA_l.xBKA_h.xfa_l.xinvs. inv                1.00 
-       45 xBKA.xBKA_l.xBKA_h.xfa_l.xinvco.
+      123 xbka.x_bk8.xlevel1_bit1.xor.xnor.
+                                            nor2               1.00 
+      124 xbka.x_bk8.xlevel1_bit3.xgen.xand.
+                                            and2               1.00 
+      125 xbka.x_bk8.xlevel1_bit3.xgen.xor.
+                                            or2                1.00 
+      126 xbka.x_bk8.xlevel1_bit3.xand.xinv.
                                             inv                1.00 
-       46 xBKA.xBKA_l.xBKA_h.xfa_h.xinva. inv                1.00 
-       47 xBKA.xBKA_l.xBKA_h.xfa_h.xinvc. inv                1.00 
-       48 xBKA.xBKA_l.xBKA_h.xfa_h.xtg_p. tg                 1.00 
-       49 xBKA.xBKA_l.xBKA_h.xfa_h.xtg_pb.
-                                            tg                 1.00 
-       50 xBKA.xBKA_l.xBKA_h.xfa_h.xtg_s1.
-                                            tg                 1.00 
-       51 xBKA.xBKA_l.xBKA_h.xfa_h.xtg_s2.
-                                            tg                 1.00 
-       52 xBKA.xBKA_l.xBKA_h.xfa_h.xtg_c1.
-                                            tg                 1.00 
-       53 xBKA.xBKA_l.xBKA_h.xfa_h.xtg_c2.
-                                            tg                 1.00 
-       54 xBKA.xBKA_l.xBKA_h.xfa_h.xinvs. inv                1.00 
-       55 xBKA.xBKA_l.xBKA_h.xfa_h.xinvco.
+      127 xbka.x_bk8.xlevel1_bit3.xand.xnand.
+                                            nand2              1.00 
+      128 xbka.x_bk8.xlevel1_bit5.xgen.xand.
+                                            and2               1.00 
+      129 xbka.x_bk8.xlevel1_bit5.xgen.xor.
+                                            or2                1.00 
+      130 xbka.x_bk8.xlevel1_bit5.xand.xinv.
                                             inv                1.00 
-       56 xBKA.xBKA_h.xBKA_l.xfa_l.xinva. inv                1.00 
-       57 xBKA.xBKA_h.xBKA_l.xfa_l.xinvc. inv                1.00 
-       58 xBKA.xBKA_h.xBKA_l.xfa_l.xtg_p. tg                 1.00 
-       59 xBKA.xBKA_h.xBKA_l.xfa_l.xtg_pb.
-                                            tg                 1.00 
-       60 xBKA.xBKA_h.xBKA_l.xfa_l.xtg_s1.
-                                            tg                 1.00 
-       61 xBKA.xBKA_h.xBKA_l.xfa_l.xtg_s2.
-                                            tg                 1.00 
-       62 xBKA.xBKA_h.xBKA_l.xfa_l.xtg_c1.
-                                            tg                 1.00 
-       63 xBKA.xBKA_h.xBKA_l.xfa_l.xtg_c2.
-                                            tg                 1.00 
-       64 xBKA.xBKA_h.xBKA_l.xfa_l.xinvs. inv                1.00 
-       65 xBKA.xBKA_h.xBKA_l.xfa_l.xinvco.
+      131 xbka.x_bk8.xlevel1_bit5.xand.xnand.
+                                            nand2              1.00 
+      132 xbka.x_bk8.xlevel1_bit7.xgen.xand.
+                                            and2               1.00 
+      133 xbka.x_bk8.xlevel1_bit7.xgen.xor.
+                                            or2                1.00 
+      134 xbka.x_bk8.xlevel1_bit7.xand.xinv.
                                             inv                1.00 
-       66 xBKA.xBKA_h.xBKA_l.xfa_h.xinva. inv                1.00 
-       67 xBKA.xBKA_h.xBKA_l.xfa_h.xinvc. inv                1.00 
-       68 xBKA.xBKA_h.xBKA_l.xfa_h.xtg_p. tg                 1.00 
-       69 xBKA.xBKA_h.xBKA_l.xfa_h.xtg_pb.
-                                            tg                 1.00 
-       70 xBKA.xBKA_h.xBKA_l.xfa_h.xtg_s1.
-                                            tg                 1.00 
-       71 xBKA.xBKA_h.xBKA_l.xfa_h.xtg_s2.
-                                            tg                 1.00 
-       72 xBKA.xBKA_h.xBKA_l.xfa_h.xtg_c1.
-                                            tg                 1.00 
-       73 xBKA.xBKA_h.xBKA_l.xfa_h.xtg_c2.
-                                            tg                 1.00 
-       74 xBKA.xBKA_h.xBKA_l.xfa_h.xinvs. inv                1.00 
-       75 xBKA.xBKA_h.xBKA_l.xfa_h.xinvco.
+      135 xbka.x_bk8.xlevel1_bit7.xand.xnand.
+                                            nand2              1.00 
+      136 xbka.x_bk8.xlevel2_bit3.xand.xinv.
                                             inv                1.00 
-       76 xBKA.xBKA_h.xBKA_h.xfa_l.xinva. inv                1.00 
-       77 xBKA.xBKA_h.xBKA_h.xfa_l.xinvc. inv                1.00 
-       78 xBKA.xBKA_h.xBKA_h.xfa_l.xtg_p. tg                 1.00 
-       79 xBKA.xBKA_h.xBKA_h.xfa_l.xtg_pb.
-                                            tg                 1.00 
-       80 xBKA.xBKA_h.xBKA_h.xfa_l.xtg_s1.
-                                            tg                 1.00 
-       81 xBKA.xBKA_h.xBKA_h.xfa_l.xtg_s2.
-                                            tg                 1.00 
-       82 xBKA.xBKA_h.xBKA_h.xfa_l.xtg_c1.
-                                            tg                 1.00 
-       83 xBKA.xBKA_h.xBKA_h.xfa_l.xtg_c2.
-                                            tg                 1.00 
-       84 xBKA.xBKA_h.xBKA_h.xfa_l.xinvs. inv                1.00 
-       85 xBKA.xBKA_h.xBKA_h.xfa_l.xinvco.
+      137 xbka.x_bk8.xlevel2_bit3.xand.xnand.
+                                            nand2              1.00 
+      138 xbka.x_bk8.xlevel2_bit3.xor.xinv.
                                             inv                1.00 
-       86 xBKA.xBKA_h.xBKA_h.xfa_h.xinva. inv                1.00 
-       87 xBKA.xBKA_h.xBKA_h.xfa_h.xinvc. inv                1.00 
-       88 xBKA.xBKA_h.xBKA_h.xfa_h.xtg_p. tg                 1.00 
-       89 xBKA.xBKA_h.xBKA_h.xfa_h.xtg_pb.
-                                            tg                 1.00 
-       90 xBKA.xBKA_h.xBKA_h.xfa_h.xtg_s1.
-                                            tg                 1.00 
-       91 xBKA.xBKA_h.xBKA_h.xfa_h.xtg_s2.
-                                            tg                 1.00 
-       92 xBKA.xBKA_h.xBKA_h.xfa_h.xtg_c1.
-                                            tg                 1.00 
-       93 xBKA.xBKA_h.xBKA_h.xfa_h.xtg_c2.
-                                            tg                 1.00 
-       94 xBKA.xBKA_h.xBKA_h.xfa_h.xinvs. inv                1.00 
-       95 xBKA.xBKA_h.xBKA_h.xfa_h.xinvco.
+      139 xbka.x_bk8.xlevel2_bit3.xor.xnor.
+                                            nor2               1.00 
+      140 xbka.x_bk8.xlevel2_bit7.xgen.xand.
+                                            and2               1.00 
+      141 xbka.x_bk8.xlevel2_bit7.xgen.xor.
+                                            or2                1.00 
+      142 xbka.x_bk8.xlevel2_bit7.xand.xinv.
                                             inv                1.00 
+      143 xbka.x_bk8.xlevel2_bit7.xand.xnand.
+                                            nand2              1.00 
+      144 xbka.x_bk8.xlevel3_bit7.xand.xinv.
+                                            inv                1.00 
+      145 xbka.x_bk8.xlevel3_bit7.xand.xnand.
+                                            nand2              1.00 
+      146 xbka.x_bk8.xlevel3_bit7.xor.xinv.
+                                            inv                1.00 
+      147 xbka.x_bk8.xlevel3_bit7.xor.xnor.
+                                            nor2               1.00 
+      148 xbka.x_bk8.xlevel4_bit5.xand.xinv.
+                                            inv                1.00 
+      149 xbka.x_bk8.xlevel4_bit5.xand.xnand.
+                                            nand2              1.00 
+      150 xbka.x_bk8.xlevel4_bit5.xor.xinv.
+                                            inv                1.00 
+      151 xbka.x_bk8.xlevel4_bit5.xor.xnor.
+                                            nor2               1.00 
+      152 xbka.x_bk8.xlevel5_bit2.xand.xinv.
+                                            inv                1.00 
+      153 xbka.x_bk8.xlevel5_bit2.xand.xnand.
+                                            nand2              1.00 
+      154 xbka.x_bk8.xlevel5_bit2.xor.xinv.
+                                            inv                1.00 
+      155 xbka.x_bk8.xlevel5_bit2.xor.xnor.
+                                            nor2               1.00 
+      156 xbka.x_bk8.xlevel5_bit4.xand.xinv.
+                                            inv                1.00 
+      157 xbka.x_bk8.xlevel5_bit4.xand.xnand.
+                                            nand2              1.00 
+      158 xbka.x_bk8.xlevel5_bit4.xor.xinv.
+                                            inv                1.00 
+      159 xbka.x_bk8.xlevel5_bit4.xor.xnor.
+                                            nor2               1.00 
+      160 xbka.x_bk8.xlevel5_bit6.xand.xinv.
+                                            inv                1.00 
+      161 xbka.x_bk8.xlevel5_bit6.xand.xnand.
+                                            nand2              1.00 
+      162 xbka.x_bk8.xlevel5_bit6.xor.xinv.
+                                            inv                1.00 
+      163 xbka.x_bk8.xlevel5_bit6.xor.xnor.
+                                            nor2               1.00 
+      164 xbka.x_bk8.xlevel5_bit8.xand.xinv.
+                                            inv                1.00 
+      165 xbka.x_bk8.xlevel5_bit8.xand.xnand.
+                                            nand2              1.00 
+      166 xbka.x_bk8.xlevel5_bit8.xor.xinv.
+                                            inv                1.00 
+      167 xbka.x_bk8.xlevel5_bit8.xor.xnor.
+                                            nor2               1.00 
+      168 xbka.x_bk8.xlevel1_bit3.xgen.xand.xinv.
+                                            inv                1.00 
+      169 xbka.x_bk8.xlevel1_bit3.xgen.xand.xnand.
+                                            nand2              1.00 
+      170 xbka.x_bk8.xlevel1_bit3.xgen.xor.xinv.
+                                            inv                1.00 
+      171 xbka.x_bk8.xlevel1_bit3.xgen.xor.xnor.
+                                            nor2               1.00 
+      172 xbka.x_bk8.xlevel1_bit5.xgen.xand.xinv.
+                                            inv                1.00 
+      173 xbka.x_bk8.xlevel1_bit5.xgen.xand.xnand.
+                                            nand2              1.00 
+      174 xbka.x_bk8.xlevel1_bit5.xgen.xor.xinv.
+                                            inv                1.00 
+      175 xbka.x_bk8.xlevel1_bit5.xgen.xor.xnor.
+                                            nor2               1.00 
+      176 xbka.x_bk8.xlevel1_bit7.xgen.xand.xinv.
+                                            inv                1.00 
+      177 xbka.x_bk8.xlevel1_bit7.xgen.xand.xnand.
+                                            nand2              1.00 
+      178 xbka.x_bk8.xlevel1_bit7.xgen.xor.xinv.
+                                            inv                1.00 
+      179 xbka.x_bk8.xlevel1_bit7.xgen.xor.xnor.
+                                            nor2               1.00 
+      180 xbka.x_bk8.xlevel2_bit7.xgen.xand.xinv.
+                                            inv                1.00 
+      181 xbka.x_bk8.xlevel2_bit7.xgen.xand.xnand.
+                                            nand2              1.00 
+      182 xbka.x_bk8.xlevel2_bit7.xgen.xor.xinv.
+                                            inv                1.00 
+      183 xbka.x_bk8.xlevel2_bit7.xgen.xor.xnor.
+                                            nor2               1.00 
   
+
+  **warning** the following singular supplies were terminated to 1 meg resistor 
+          supply       node1            node2
+(..\..\..\..\..\..\include\PG.inc:96)v_p0                    1:p0               defined in subckt bka8                  0:vss              defined in subckt 0               
       
  **info** set option symb=1 internally to help for convergence.
  *****************************************************************
@@ -179,52 +287,102 @@
   Opening plot unit= 79
  file=D:\UT.CE\Term-06\AVLSI\CA\CA03\simulation\BKA\corners\SF\power\dynamic\sim.pa0
 
- **info** dc convergence successful at Newton-Raphson method 
+ **info** dc convergence successful at GMINDC ramping method 
  ******  
  ******************** hspice basic gates modeling ********************
 
  ****** operating point information tnom=  25.000 temp=  25.000 ******
  ****** operating point status is voltage   simulation time is     0.     
-     node    =voltage       node    =voltage       node    =voltage
+      node    =voltage        node    =voltage        node    =voltage
 
- + 0:a0      =   0.       0:a1      =   1.0000   0:a2      =   1.0000 
- + 0:a3      =   0.       0:a4      =   0.       0:a5      =   0.     
- + 0:a6      =   1.0000   0:a7      =   0.       0:b0      =   1.0000 
- + 0:b1      =   0.       0:b2      =   1.0000   0:b3      =   1.0000 
- + 0:b4      =   1.0000   0:b5      =   0.       0:b6      =   0.     
- + 0:b7      =   1.0000   0:cin     =   0.       0:cout    =   4.9161u
- + 0:s0      = 999.9975m  0:s1      = 999.9975m  0:s2      =   4.9177u
- + 0:s3      =   4.9173u  0:s4      =   4.9173u  0:s5      = 999.9975m
- + 0:s6      = 999.9975m  0:s7      = 999.9975m  0:vdd     =   1.0000 
- + 0:vss     =   0.       1:cmid    = 999.9801m  2:cmid    =  11.3141u
- + 3:cmid    =  15.1364u  4:cmid    =  15.1331u  5:cmid    = 999.9801m
- + 6:cmid    = 999.9868m  7:cmid    =  15.1356u  8:a_bar   = 999.9905m
- + 8:c_bar   = 999.9834m  8:cout_bar= 999.9780m  8:p       = 999.9886m
- + 8:p_bar   =  11.6451u  8:s_bar   =   7.3018u  9:a_bar   =   9.8393u
- + 9:c_bar   = 999.9765m  9:cout_bar= 999.9642m  9:p       = 999.9863m
- + 9:p_bar   =   3.4587u  9:s_bar   =  22.4339u 10:a_bar   =  31.5209u
- +10:c_bar   = 999.9765m 10:cout_bar=  38.8217u 10:p       =  42.9996u
- +10:p_bar   = 999.9881m 10:s_bar   = 999.9642m 11:a_bar   = 999.9835m
- +11:c_bar   =  17.5044u 11:cout_bar=  24.8059u 11:p       = 999.9881m
- +11:p_bar   =  11.4786u 11:s_bar   = 999.9678m 12:a_bar   = 999.9835m
- +12:c_bar   =  17.5044u 12:cout_bar=  24.8060u 12:p       = 999.9881m
- +12:p_bar   =  11.4786u 12:s_bar   = 999.9678m 13:a_bar   = 999.9639m
- +13:c_bar   =  17.5100u 13:cout_bar= 999.9516m 13:p       =   3.4586u
- +13:p_bar   = 999.9502m 13:s_bar   =  24.8163u 14:a_bar   =   9.8393u
- +14:c_bar   = 999.9765m 14:cout_bar= 999.9642m 14:p       = 999.9863m
- +14:p_bar   =   3.4587u 14:s_bar   =  22.4372u 15:a_bar   = 999.9905m
- +15:c_bar   = 999.9834m 15:cout_bar= 999.9780m 15:p       = 999.9886m
- +15:p_bar   =  11.6451u 15:s_bar   =  22.4372u
+ +  0:a1      =   0.        0:a2      =   1.0000    0:a3      =   1.0000 
+ +  0:a4      =   0.        0:a5      =   0.        0:a6      =   0.     
+ +  0:a7      =   1.0000    0:a8      =   0.        0:b1      =   1.0000 
+ +  0:b2      =   0.        0:b3      =   1.0000    0:b4      =   1.0000 
+ +  0:b5      =   1.0000    0:b6      =   0.        0:b7      =   0.     
+ +  0:b8      =   1.0000    0:cin     =   0.        0:cout    =   4.9149u
+ +  0:s1      = 999.9905m   0:s2      = 999.9905m   0:s3      =  19.4578u
+ +  0:s4      =  19.4683u   0:s5      =  19.4622u   0:s6      = 999.9905m
+ +  0:s7      = 999.9905m   0:s8      = 999.9905m   0:vdd     =   1.0000 
+ +  0:vss     =   0.        1:c0      =   0.        1:c1      =  14.8020u
+ +  1:c2      =   6.9399u   1:c3      = 999.9672m   1:c4      = 999.9867m
+ +  1:c5      = 999.9816m   1:c6      =  10.8831u   1:c7      =  12.9553u
+ +  1:g0      =   0.        1:g1      =   8.8105u   1:g2      =  10.6573u
+ +  1:g3      = 999.9937m   1:g4      =  10.7163u   1:g5      =   8.8105u
+ +  1:g6      =  10.8823u   1:g7      =   8.8105u   1:g8      =   8.8105u
+ +  1:p0      =   0.        1:p1      = 999.9867m   1:p2      = 999.9814m
+ +  1:p3      =  29.4495u   1:p4      = 999.9671m   1:p5      = 999.9735m
+ +  1:p6      =  29.6761u   1:p7      = 999.9874m   1:p8      = 999.9867m
+ +  3:g10     =  14.8020u   3:g20     =   6.9399u   3:g30     = 999.9672m
+ +  3:g32     = 999.9937m   3:g40     = 999.9867m   3:g50     = 999.9816m
+ +  3:g54     =  10.4915u   3:g60     =  10.8831u   3:g70     =  12.9553u
+ +  3:g74     =   8.8110u   3:g76     =   8.8110u   3:g80     =   4.9149u
+ +  3:p32     =   7.1118u   3:p54     = 999.9846m   3:p74     =   7.1114u
+ +  3:p76     =   9.3087u   4:in1_bar =   8.9954u   4:in2_bar = 999.9913m
+ +  4:x1      = 843.5876m   4:x2      =   1.2928u   4:y1      = 999.9952m
+ +  4:y2      = 999.9937m   5:in1_bar =   8.9960u   5:in2_bar = 999.9913m
+ +  5:x1      = 843.5743m   5:x2      =   1.2928u   5:y1      = 999.9952m
+ +  5:y2      = 999.9937m   6:in1_bar = 999.9905m   6:in2_bar = 999.9903m
+ +  6:x1      =   9.7348u   6:x2      =  10.6333u   6:y1      = 999.9921m
+ +  6:y2      = 127.9749m   7:in1_bar =   8.6472u   7:in2_bar =   4.9295u
+ +  7:x1      =  10.6385u   7:x2      =   9.7307u   7:y1      = 127.9919m
+ +  7:y2      = 999.9921m   8:in1_bar =   8.6464u   8:in2_bar =   4.9273u
+ +  8:x1      =  10.6354u   8:x2      =   9.7277u   8:y1      = 127.9868m
+ +  8:y2      = 999.9921m   9:in1_bar = 999.9975m   9:in2_bar =   8.8712u
+ +  9:x1      =   1.2930u   9:x2      = 843.5911m   9:y1      = 999.9937m
+ +  9:y2      = 999.9952m  10:in1_bar =   8.9953u  10:in2_bar = 999.9913m
+ + 10:x1      = 843.5816m  10:x2      =   1.2928u  10:y1      = 999.9952m
+ + 10:y2      = 999.9937m  11:in1_bar =   8.9954u  11:in2_bar = 999.9913m
+ + 11:x1      = 843.5798m  11:x2      =   1.2928u  11:y1      = 999.9952m
+ + 11:y2      = 999.9937m  20:mid     =   8.8104u  24:mid     =   4.9262u
+ + 26:mid     =   8.8104u  27:mid     = 999.9934m  28:mid     =   8.8104u
+ + 29:mid     = 999.9934m  30:mid     =   8.8104u  31:mid     =   8.8104u
+ + 48:out_bar = 999.9930m  49:in1_bar = 999.9913m  49:in2_bar =   8.9937u
+ + 49:x       =   1.2927u  49:yl      = 999.9934m  49:yr      = 999.9918m
+ + 50:out_bar = 999.9933m  51:in1_bar =   8.8691u  51:in2_bar = 999.9975m
+ + 51:x       = 843.5943m  51:yl      = 999.9892m  51:yr      = 999.9907m
+ + 52:out_bar =  13.5135u  53:in1_bar =   8.6433u  53:in2_bar =   4.9258u
+ + 53:x       =  15.6291u  53:yl      = 999.9921m  53:yr      = 127.9661m
+ + 54:out_bar = 999.9930m  55:in1_bar = 999.9913m  55:in2_bar =   8.9936u
+ + 55:x       =   1.2927u  55:yl      = 999.9835m  55:yr      = 999.9820m
+ + 56:out_bar = 999.9930m  57:in1_bar = 999.9913m  57:in2_bar =   8.9936u
+ + 57:x       =   1.2927u  57:yl      = 999.9868m  57:yr      = 999.9852m
+ + 58:out_bar = 999.9962m  59:in1_bar = 999.9905m  59:in2_bar = 999.9903m
+ + 59:x       =  15.7424u  59:yl      = 127.9695m  59:yr      = 999.9921m
+ + 60:out_bar = 999.9933m  61:in1_bar =   8.8691u  61:in2_bar = 999.9975m
+ + 61:x       = 843.5946m  61:yl      = 999.9922m  61:yr      = 999.9937m
+ + 62:out_bar = 999.9930m  63:in1_bar = 999.9913m  63:in2_bar =   8.9937u
+ + 63:x       =   1.2927u  63:yl      = 999.9934m  63:yr      = 999.9918m
+ + 64:out_bar = 999.9933m  65:out_bar = 999.9887m  66:mid     =   4.9262u
+ + 67:out_bar = 999.9930m  68:mid     =   8.8104u  69:out_bar =  13.5200u
+ + 70:mid     =   8.8104u  71:out_bar = 999.9933m  72:out_bar = 999.9962m
+ + 73:out_bar =  10.5696u  74:mid     =   8.8101u  75:out_bar = 999.9930m
+ + 76:out_bar = 999.9930m  77:out_bar = 999.9887m  78:out_bar =  13.5188u
+ + 79:out_bar =  11.3222u  80:out_bar = 999.9933m  81:out_bar = 999.9887m
+ + 82:out_bar =  13.5207u  83:out_bar =  11.3222u  84:out_bar = 999.9930m
+ + 85:out_bar = 999.9887m  86:out_bar = 999.9933m  87:out_bar = 999.9887m
+ + 89:x       =   1.2927u  93:x       = 843.5986m  97:x       =   7.6612u
+ +101:x       =   1.2927u 105:x       =   1.2927u 109:x       =  32.1730m
+ +113:x       = 843.5986m 117:x       =   1.2927u 121:x       = 843.5877m
+ +123:x       = 999.9928m 124:out_bar = 999.9962m 125:out_bar =  10.5696u
+ +127:x       =   1.2930u 128:out_bar = 999.9933m 129:out_bar = 999.9887m
+ +131:x       =   7.6644u 132:out_bar = 999.9933m 133:out_bar = 999.9887m
+ +135:x       = 843.5704m 137:x       =  32.1685m 139:x       = 127.9704m
+ +140:out_bar = 999.9962m 141:out_bar = 999.9887m 143:x       =   1.2928u
+ +145:x       =   1.2927u 147:x       = 999.9928m 149:x       =   7.6639u
+ +151:x       = 999.9921m 153:x       = 843.5744m 155:x       = 999.9928m
+ +157:x       =   7.6647u 159:x       = 999.9921m 161:x       =   1.2930u
+ +163:x       = 999.9928m 165:x       = 843.5799m 167:x       = 999.9928m
+ +169:x       =  32.1843m 171:x       = 127.9704m 173:x       = 843.5704m
+ +175:x       = 999.9928m 177:x       = 843.5817m 179:x       = 999.9928m
+ +181:x       =  32.1724m 183:x       = 999.9928m
 
  ******
  ******************** hspice basic gates modeling ********************
 
  ****** transient analysis tnom=  25.000 temp=  25.000 ******
- p_avg= 202.7345u  from=   0.             to= 130.0000n
- p_max=   5.3376m    at= 114.4500n
-             from=   0.            to= 130.0000n
- i_avg=-163.5355u  from=   0.             to= 130.0000n
- i_peak=  -2.3760m    at=  10.4500n
+ p_avg= 505.8061u  from=   0.             to= 130.0000n
+ p_max=   7.5911m    at=  50.7473n
              from=   0.            to= 130.0000n
 
           ***** job concluded
@@ -241,12 +399,12 @@
 
 
   ******  Circuit Statistics  ******
-  # nodes       =      84 # elements   =     220
-  # resistors   =       0 # capacitors =       0 # inductors   =       0
+  # nodes       =     243 # elements   =     448
+  # resistors   =       1 # capacitors =       0 # inductors   =       0
   # mutual_inds =       0 # vccs       =       0 # vcvs        =       0
-  # cccs        =       0 # ccvs       =       0 # volt_srcs   =       2
+  # cccs        =       0 # ccvs       =       0 # volt_srcs   =      13
   # curr_srcs   =       0 # diodes     =       0 # bjts        =       0
-  # jfets       =       0 # mosfets    =     192 # U elements  =       0
+  # jfets       =       0 # mosfets    =     408 # U elements  =       0
   # T elements  =       0 # W elements =       0 # B elements  =       0
   # S elements  =       0 # P elements =       0 # va device   =       0
   # vector_srcs =      26 # N elements =       0
@@ -255,20 +413,20 @@
   ******  Runtime Statistics (seconds)  ******
 
   analysis           time    # points   tot. iter  conv.iter
-  op point           0.01           1          23
-  transient          3.65      130001       19181        6657 rev=       101
+  op point           0.15           1         267
+  transient          7.98      130001       24667        8293 rev=        99
   readin             0.11
-  errchk             0.01
+  errchk             0.02
   setup              0.00
   output             0.00
 
 
-           peak memory used         74.07 megabytes
-           total cpu time            3.78 seconds
-           total elapsed time        3.81 seconds
-           job started at     22:01:46 06/05/2026
-           job ended   at     22:01:50 06/05/2026
-           job total runtime         3.81 seconds
+           peak memory used         75.84 megabytes
+           total cpu time            8.26 seconds
+           total elapsed time        8.29 seconds
+           job started at     00:42:17 06/09/2026
+           job ended   at     00:42:26 06/09/2026
+           job total runtime         8.29 seconds
 
 
   lic: Release hspice token(s) 

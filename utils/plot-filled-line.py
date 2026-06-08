@@ -22,7 +22,6 @@ TARGET_DIRS = [
     r"./simulation/RCA/temperature/Sim_Results/Temp90/",
 ]
 
-# لیبل‌های دلخواه شما برای محور X
 X_AXIS_LABELS = [
     "15°C",
     "20°C",
@@ -42,7 +41,6 @@ X_AXIS_LABELS = [
     "90°C",
 ]
 
-# پارامترهایی که می‌خواهید رسم کنید
 PARAM_LABELS = ["tp_cout_fall", "tp_cout_rise", "tp_s7_fall", "tp_s7_rise", "tp_max", "tp_avg"]
 
 PARAM_PATHS = [
@@ -73,7 +71,6 @@ def get_nested_value(data_dict, path_list):
     return float(temp)
 
 
-# ۱. خواندن داده‌ها
 x_labels = []
 raw_data_matrix = {key: [] for key in PARAM_LABELS}
 
@@ -99,7 +96,6 @@ for i, d in enumerate(TARGET_DIRS):
         for key in PARAM_LABELS:
             raw_data_matrix[key].append(0.0)
 
-# ۲. تعیین واحد مناسب برای مقیاس‌دهی داده‌ها
 all_values = [v for vals in raw_data_matrix.values() for v in vals if abs(v) > 1e-20]
 
 if not all_values:
@@ -128,8 +124,6 @@ scaled_data_matrix = {
 }
 
 
-# ۳. رسم نمودارهای چندگانه (Subplots) در یک عکس واحد
-# ایجاد یک ساختار گرید ۳ سطری و ۲ ستونی (مجموعاً ظرفیت ۶ نمودار)
 n_params = len(PARAM_LABELS)
 nrows = 3
 ncols = 2
@@ -137,7 +131,7 @@ ncols = 2
 fig, axes = plt.subplots(nrows=nrows, ncols=ncols, figsize=(16, 14))
 axes_flat = (
     axes.flatten()
-)  # تبدیل ماتریس ساب‌پلات‌ها به یک لیست خطی برای دسترسی راحت‌تر
+)
 
 x_indices = np.arange(len(x_labels))
 
@@ -146,13 +140,10 @@ for idx, key in enumerate(PARAM_LABELS):
     y_values = scaled_data_matrix[key]
     color = COLORS[idx % len(COLORS)]
 
-    # رسم خط
     ax.plot(x_indices, y_values, marker="o", linewidth=2, color=color, label=key)
 
-    # سایه زیر خط
     ax.fill_between(x_indices, y_values, color=color, alpha=0.1)
 
-    # نمایش اعداد روی نقاط
     for xi, yi in zip(x_indices, y_values):
         ax.text(
             xi,
@@ -165,20 +156,17 @@ for idx, key in enumerate(PARAM_LABELS):
             rotation=30,
         )
 
-    # تنظیمات اختصاصی هر ساب‌پلات
     ax.set_title(f"{key}", fontweight="bold", fontsize=11, color="#333333")
     ax.set_ylabel(f"Delay ({unit_prefix}s)", fontweight="bold", fontsize=9)
     ax.set_xticks(x_indices)
     ax.set_xticklabels(x_labels, fontweight="bold", fontsize=8, rotation=45)
 
-    # حذف قاب‌های بالایی و راستی برای زیبایی بیشتر
     ax.spines["top"].set_visible(False)
     ax.spines["right"].set_visible(False)
 
     ax.set_axisbelow(True)
     ax.grid(True, linestyle="--", alpha=0.5)
 
-    # اصلاح هوشمند مقیاس محور Y برای هر نمودار به صورت مجزا
     if y_values:
         y_min = min(y_values)
         y_max = max(y_values)
@@ -188,12 +176,10 @@ for idx, key in enumerate(PARAM_LABELS):
         else:
             ax.set_ylim(y_min - 0.05 * y_range, y_max + 0.3 * y_range)
 
-# از آنجا که ۵ پارامتر داریم و ظرفیت گرید ۶ خانه است، خانه ششم (آخرین ساب‌پلات) خالی می‌ماند. آن را مخفی می‌کنیم:
 if len(axes_flat) > n_params:
     for empty_idx in range(n_params, len(axes_flat)):
         fig.delaxes(axes_flat[empty_idx])
 
-# تنظیم عنوان کلی و فاصله قطعات نمودار
 plt.suptitle(
     "Parameters Comparison",
     fontweight="bold",
@@ -202,6 +188,5 @@ plt.suptitle(
 )
 plt.tight_layout()
 
-# ذخیره تک تصویر خروجی شامل تمام نمودارها
 plt.savefig("combined_subplots_plot.png", dpi=300, bbox_inches="tight")
 plt.show()

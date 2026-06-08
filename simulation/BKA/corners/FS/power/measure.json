@@ -1,8 +1,8 @@
 {
-    "p_avg": 0.0002021,
-    "p_max": 0.005346,
-    "p_static_avg": 6.12521e-07,
-    "p_static_max": 6.606e-07,
-    "p_dynamic_avg": 0.00020148747900000001,
-    "p_dynamic_max": 0.0053453394
+    "p_avg": 0.0005063,
+    "p_max": 0.007876,
+    "p_static_avg": 3.07013e-06,
+    "p_static_max": 3.61e-06,
+    "p_dynamic_avg": 0.00050322987,
+    "p_dynamic_max": 0.00787239
 }

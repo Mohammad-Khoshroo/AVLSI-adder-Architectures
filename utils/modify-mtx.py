@@ -8,13 +8,12 @@ import logging
 # CONFIG
 # ==========================================================
 
-BASE_DIR = "./simulation/BKA/corners/FF/delay/"
+BASE_DIR = "./simulation/BKA/corners/FS/power/dynamic/"
 FILE_PATTERN = r"\.mt[a-zA-Z0-9]+$"
 OUTPUT_JSON_NAME = "measure.json"
 
 SUMMARIZE = True
 
-# باید با generator یکی باشد
 SIGNALS = ["A", "B", "Cin"]
 
 CONTROL_HEADERS = {"index", "alter#", "temp", "temper", "is_fall_transition"}

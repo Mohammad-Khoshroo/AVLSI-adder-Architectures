@@ -4,18 +4,17 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 TARGET_DIRS = [
-    r"./simulation/BKA/corners/FF/delay/",
-    r"./simulation/BKA/corners/FS/delay/",
-    r"./simulation/BKA/corners/SF/delay/",
-    r"./simulation/BKA/corners/SS/delay/",
-    r"./simulation/BKA/corners/TT/delay/",
+    r"./simulation/BKA/corners/FF/power/",
+    r"./simulation/BKA/corners/FS/power/",
+    r"./simulation/BKA/corners/SF/power/",
+    r"./simulation/BKA/corners/SS/power/",
+    r"./simulation/BKA/corners/TT/power/"
 ]
 
-# پارامترهایی که می‌خواهید رسم کنید
-PARAM_KEYS = ["tp_max", "tp_cout", "tp_s8"]
-PARAM_LABELS = ["tp(max)", "tp(cout)", "tp(s8)"]
+PARAM_KEYS = ["p_avg", "p_static_avg",  "p_dynamic_avg","p_max", "p_static_max",  "p_dynamic_max"]
+PARAM_LABELS = ["p_total", "p_static",  "p_dynamic","p_peak", "p_static_peak",  "p_dynamic_peak"]
 
-PARAM_PATHS = [["measurements", key] for key in PARAM_KEYS]
+PARAM_PATHS = [key for key in PARAM_KEYS]
 
 COLORS = [
     "#636EFA",
@@ -56,7 +55,7 @@ for d in TARGET_DIRS:
             file_data = json.load(f)
 
         for path in PARAM_PATHS:
-            val = get_nested_value(file_data, path)
+            val = get_nested_value(file_data, [path])
             data_points.append(val)
     else:
         print(f"Warning: File not found -> {file_path}")
@@ -64,11 +63,10 @@ for d in TARGET_DIRS:
 
     raw_extracted_data[arch_name] = data_points
 
-# ۲. انتخاب واحد SI مرجع برای کل نمودار
 all_non_zero_values = []
 for vals in raw_extracted_data.values():
     for v in vals:
-        if abs(v) > 1e-20:
+        if abs(v) > 1e-20:  
             all_non_zero_values.append(abs(v))
 
 if not all_non_zero_values:
@@ -92,12 +90,10 @@ else:
         scale_factor = 1.0
         unit_prefix = ""
 
-# تبدیل داده‌ها به واحد SI انتخابی (مثلاً میکرو یا میلی)
 si_extracted_data = {}
 for arch, values in raw_extracted_data.items():
     si_extracted_data[arch] = [v * scale_factor for v in values]
 
-# ۳. محاسبه ماکزیمم‌ها برای تعیین نسبت فیزیکی دقیق
 num_params = len(PARAM_LABELS)
 max_val_per_param = []
 
@@ -107,35 +103,29 @@ for p_idx in range(num_params):
 
 global_max = max(max_val_per_param) if max_val_per_param else 1.0
 
-# محاسبه ضریب تقویت و آلفای هماهنگ بر اساس نسبت فیزیکی واقعی ستون‌ها نسبت به ماکزیمم کل
 param_boost_factors = []
 param_alphas = []
 
 for p_idx in range(num_params):
     max_val = max_val_per_param[p_idx]
     if max_val > 1e-15:
-        # نسبت فیزیکی ستون به ماکزیمم کل نمودار (مثلاً برای ۱.۵۶ نسبت به ۲۱۵.۶، این نسبت حدود ۰.۰۰۷۲ است)
         ratio = max_val / global_max
-
-        # محاسبه اختلاف توان فیزیکی واقعی بر مبنای پایه ۱۰
-        # برای نسبت ۰.۰۰۷۲، لگاریتم پایه ۱۰ حدود -۲.۱۴ است، پس اختلاف توان واقعی (diff) برابر ۳ است.
+        
         diff = int(np.ceil(-np.log10(ratio))) if ratio < 1.0 else 0
-
-        # اعمال فرمول شما: اگر اختلاف توان ۲ یا بیشتر بود، به اندازه (diff - 1) توانِ ۱۰ تقویت شود.
+        
         if diff >= 2:
             boost = 10 ** (diff - 1)
-            alpha = 0.45  # همراه با آلفا برای تمایز
+            alpha = 0.45
         else:
             boost = 1.0
             alpha = 1.0
     else:
         boost = 1.0
         alpha = 1.0
-
+        
     param_boost_factors.append(boost)
     param_alphas.append(alpha)
 
-# اعمال ضریب تقویت دقیق روی داده‌ها برای رسم بصری
 visual_data = {}
 original_text_labels = {}
 
@@ -150,7 +140,6 @@ for arch, values in si_extracted_data.items():
     original_text_labels[arch] = t_list
 
 
-# --- رسم نمودار ---
 fig, ax = plt.subplots(figsize=(12, 6))
 
 x = np.arange(len(PARAM_LABELS))
@@ -170,13 +159,11 @@ for i, (arch_name, values) in enumerate(visual_data.items()):
             edgecolor="black",
             linewidth=0.5,
             alpha=param_alphas[j],
-            label=arch_name if j == 0 else "",
+            label=arch_name if j == 0 else ""
         )
-        ax.bar_label(
-            rect, labels=[labels_to_show[j]], padding=3, fontsize=8, rotation=45
-        )
+        ax.bar_label(rect, labels=[labels_to_show[j]], padding=3, fontsize=8, rotation=45)
 
-ax.set_ylabel(f"delay({unit_prefix})", fontweight="bold", fontsize=11)
+ax.set_ylabel(f"power({unit_prefix})", fontweight="bold", fontsize=11)
 ax.set_title("Parameters Comparison", fontweight="bold", fontsize=14, pad=15)
 ax.set_xticks(x)
 ax.set_xticklabels(PARAM_LABELS, fontweight="bold", fontsize=10)
