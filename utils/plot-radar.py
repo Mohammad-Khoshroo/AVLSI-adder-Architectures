@@ -4,24 +4,25 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 TARGET_DIRS = [
-    r"./simulation/FA/gate-level/delay/",
-    r"./simulation/FA/nand-based/delay/",
-    r"./simulation/FA/mirror/delay/",
-    r"./simulation/FA/TG-based/delay/",
+    r"./simulation/RCA/corners/TT/delay/",
+    r"./simulation/BKA/corners/TT/delay/",
+    # r"./simulation/FA/nand-based/delay/",
+    # r"./simulation/FA/mirror/delay/",
+    # r"./simulation/FA/TG-based/delay/",
 ]
 
-DIR_LABELS = ["Gate-Level", "NAND-Based", "Mirror", "TG-Based"]
+DIR_LABELS = ["RCA", "BKA"]
 
 PARAM_PATHS = [
-    ["summary", "avg_case_delay"],                 
-    ["summary", "worst_case_delay"],               
-    ["summary", "delay", "t_p_s", "avg"],          
-    ["summary", "delay", "t_p_cout", "avg"],       
-    ["summary", "area"],                           
-    ["summary", "measurements", "p_avg", "avg"],   
+    ["measurements", "tp_max"],                 
+    ["measurements", "tp_cout"],               
+    ["measurements", "tp_s8"],          
+    ["measurements", "p_avg"],       
+    ["measurements", "p_max"],
+    ["measurements", "area"],                              
 ]
 
-PARAM_LABELS = ["tp(avg)", "tp(worst)", "tp_sum", "tp_cout", "area", "power(avg)"]
+PARAM_LABELS = ["tp(max)", "tp(cout)", "tp(sum)", "power(avg)", "power(max)", "area"]
 
 COLORS = ['#636EFA', '#EF553B', '#00CC96', '#AB63FA']
 
